@@ -1,0 +1,18 @@
+module STR
+{
+    item Vest_BulletPolice_Meade
+    {
+        Type = Clothing,
+        DisplayName = Meade County Sheriff Bulletproof Vest,
+        ClothingItem = Vest_BulletPolice_Meade,
+        BodyLocation = TorsoExtra,
+        Icon = BulletVestPoliceMeade,
+        BloodLocation = ShirtNoSleeves,
+        Insulation = 0.65,
+        WindResistance = 0.30,
+        BiteDefense = 30,
+        ScratchDefense = 55,
+        BulletDefense = 100,
+        WorldStaticModel = BulletVest_Ground,
+    }
+}
