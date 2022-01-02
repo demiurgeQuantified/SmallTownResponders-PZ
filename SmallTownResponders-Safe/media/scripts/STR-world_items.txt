@@ -1,0 +1,8 @@
+module Base
+ {
+	model PoliceDutyBelt_Ground
+	{
+		mesh = WorldItems/PoliceDutyBelt_Ground,
+		scale = 0.5,
+	}
+}

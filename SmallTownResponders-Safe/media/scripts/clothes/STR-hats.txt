@@ -1,0 +1,405 @@
+module STR
+{
+	item Hat_Police_Muldraugh
+	{
+		Type = Clothing,
+		DisplayName = Muldraugh Police Hat,
+		ClothingItem = Hat_Police_Muldraugh,
+		BodyLocation = Hat,
+		Icon = Hat_Police_Muldraugh,
+		CanHaveHoles = false,
+		ChanceToFall = 70,
+		WaterResistance = 0.2,
+	}
+	item Hat_Police_Meade
+	{
+		Type = Clothing,
+		DisplayName = Meade County Sheriff Hat,
+		ClothingItem = Hat_Police_Meade,
+		BodyLocation = Hat,
+		Icon = Hat_Police_Meade,
+		CanHaveHoles = false,
+		ChanceToFall = 70,
+		WaterResistance = 0.2,
+	}
+	item Hat_Police_WestPoint
+	{
+		Type = Clothing,
+		DisplayName = WestPoint Police Hat,
+		ClothingItem = Hat_Police_WestPoint,
+		BodyLocation = Hat,
+		Icon = Hat_Police_WestPoint,
+		CanHaveHoles = false,
+		ChanceToFall = 70,
+		WaterResistance = 0.2,
+	}
+	item Hat_Police_Riverside
+	{
+		Type = Clothing,
+		DisplayName = Riverside Police Hat,
+		ClothingItem = Hat_Police_Riverside,
+		BodyLocation = Hat,
+		Icon = Hat_Police_Riverside,
+		CanHaveHoles = false,
+		ChanceToFall = 70,
+		WaterResistance = 0.2,
+	}
+	item Hat_Police_Rosewood
+	{
+		Type = Clothing,
+		DisplayName = Rosewood Police Hat,
+		ClothingItem = Hat_Police_Rosewood,
+		BodyLocation = Hat,
+		Icon = Hat_Police_Rosewood,
+		CanHaveHoles = false,
+		ChanceToFall = 70,
+		WaterResistance = 0.2,
+	}
+	item Hat_Police_Louisville
+	{
+		Type = Clothing,
+		DisplayName = Louisville Police Hat,
+		ClothingItem = Hat_Police_Louisville,
+		BodyLocation = Hat,
+		Icon = Hat_Police_Louisville,
+		CanHaveHoles = false,
+		ChanceToFall = 70,
+		WaterResistance = 0.2,
+	}
+	item Hat_Police_JeffersonPD
+	{
+		Type = Clothing,
+		DisplayName = Jefferson County Police Hat,
+		ClothingItem = Hat_Police_JeffersonPD,
+		BodyLocation = Hat,
+		Icon = Hat_Police_JeffersonPD,
+		CanHaveHoles = false,
+		ChanceToFall = 70,
+		WaterResistance = 0.2,
+	}
+	item Hat_Police_JeffersonSD
+	{
+		Type = Clothing,
+		DisplayName = Jefferson County Sheriff Hat,
+		ClothingItem = Hat_Police_JeffersonSD,
+		BodyLocation = Hat,
+		Icon = Hat_Police_JeffersonSD,
+		CanHaveHoles = false,
+		ChanceToFall = 70,
+		WaterResistance = 0.2,
+	}
+	item Hat_PoliceKSP
+	{
+		Type = Clothing,
+		DisplayName = Kentucky State Patrol Campaign Hat,
+		ClothingItem = Hat_PoliceKSP,
+		BodyLocation = Hat,
+		Icon = Hat_PoliceKSP,
+		CanHaveHoles = false,
+		ChanceToFall = 70,
+		WaterResistance = 0.2,
+	}
+	item Hat_FederalRanger
+	{
+		Type = Clothing,
+		DisplayName = Federal Conservation Ranger Hat,
+		ClothingItem = Hat_FederalRanger,
+		BodyLocation = Hat,
+		Icon = Hat_FederalRanger,
+		CanHaveHoles = false,
+		ChanceToFall = 40,
+        BloodLocation = Head,
+        Insulation = 0.45,
+        WindResistance = 0.40,
+        WaterResistance = 0.25,
+    }
+	item Hat_StateLawRanger
+	{
+		Type = Clothing,
+		DisplayName = Kentucky State Park Ranger Hat,
+		ClothingItem = Hat_StateLawRanger,
+		BodyLocation = Hat,
+		Icon = Hat_StateLawRanger,
+		CanHaveHoles = false,
+		ChanceToFall = 40,
+        BloodLocation = Head,
+        Insulation = 0.45,
+        WindResistance = 0.40,
+        WaterResistance = 0.25,
+    }
+	item Hat_StateRanger
+	{
+		Type = Clothing,
+		DisplayName = Kentucky State Conservation Ranger Hat,
+		ClothingItem = Hat_StateRanger,
+		BodyLocation = Hat,
+		Icon = Hat_StateRanger,
+		CanHaveHoles = false,
+		ChanceToFall = 40,
+        BloodLocation = Head,
+        Insulation = 0.45,
+        WindResistance = 0.40,
+        WaterResistance = 0.25,
+    }
+	item Hat_BaseballCap_DOC_Meade
+	{
+		Type = Clothing,
+		DisplayName = Meade County Department Of Corrections Baseball Cap,
+		ClothingItem = Hat_BaseballCap_DOC_Meade,
+		ClothingItemExtra = Hat_BaseballCap_DOC_Meade_Reverse,
+        ClothingItemExtraOption = ReverseCap,
+		BodyLocation = Hat,
+		Icon = BaseballCap_DOC_Meade,
+		CanHaveHoles = false,
+		ChanceToFall = 80,
+		Insulation = 0.10,
+		Weight = 0.5,
+	}
+	item Hat_BaseballCap_DOC_Meade_Reverse
+    {
+        Type = Clothing,
+        DisplayName = Meade County Department Of Corrections Baseball Cap,
+        ClothingItem = Hat_BaseballCap_DOC_Meade_Reverse,
+        ClothingItemExtra = Hat_BaseballCap_DOC_Meade,
+        ClothingItemExtraOption = ForwardCap,
+        BodyLocation = Hat,
+        Icon = BaseballCap_DOC_Meade,
+        CanHaveHoles = false,
+        Insulation = 0.10,
+        Weight = 0.5,
+    }
+	item Hat_BaseballCap_DOC_Jefferson
+	{
+		Type = Clothing,
+		DisplayName = Jefferson County Department Of Corrections Baseball Cap,
+		ClothingItem = Hat_BaseballCap_DOC_Jefferson,
+		ClothingItemExtra = Hat_BaseballCap_DOC_Jefferson_Reverse,
+        ClothingItemExtraOption = ReverseCap,
+		BodyLocation = Hat,
+		Icon = BaseballCap_DOC_Jefferson,
+		CanHaveHoles = false,
+		ChanceToFall = 80,
+		Insulation = 0.10,
+		Weight = 0.5,
+	}
+	item Hat_BaseballCap_DOC_Jefferson_Reverse
+    {
+        Type = Clothing,
+        DisplayName = Jefferson County Department Of Corrections Baseball Cap,
+        ClothingItem = Hat_BaseballCap_DOC_Jefferson_Reverse,
+        ClothingItemExtra = Hat_BaseballCap_DOC_Jefferson,
+        ClothingItemExtraOption = ForwardCap,
+        BodyLocation = Hat,
+        Icon = BaseballCap_DOC_Jefferson,
+        CanHaveHoles = false,
+        Insulation = 0.10,
+        Weight = 0.5,
+    }
+	item Hat_BaseballCap_EMS_Meade
+	{
+		Type = Clothing,
+		DisplayName = Meade County EMS Baseball Cap,
+		ClothingItem = Hat_BaseballCap_EMS_Meade,
+		ClothingItemExtra = Hat_BaseballCap_EMS_Meade_Reverse,
+        ClothingItemExtraOption = ReverseCap,
+		BodyLocation = Hat,
+		Icon = BaseballCap_EMS_Meade,
+		CanHaveHoles = false,
+		ChanceToFall = 80,
+		Insulation = 0.10,
+		Weight = 0.5,
+	}
+	item Hat_BaseballCap_EMS_Meade_Reverse
+    {
+        Type = Clothing,
+        DisplayName = Meade County EMS Baseball Cap,
+        ClothingItem = Hat_BaseballCap_EMS_Meade_Reverse,
+        ClothingItemExtra = Hat_BaseballCap_EMS_Meade,
+        ClothingItemExtraOption = ForwardCap,
+        BodyLocation = Hat,
+        Icon = BaseballCap_EMS_Meade,
+        CanHaveHoles = false,
+        Insulation = 0.10,
+        Weight = 0.5,
+    }
+	item Hat_BaseballCap_EMS_Louisville
+	{
+		Type = Clothing,
+		DisplayName = Louisville EMS Baseball Cap,
+		ClothingItem = Hat_BaseballCap_EMS_Louisville,
+		ClothingItemExtra = Hat_BaseballCap_EMS_Louisville_Reverse,
+        ClothingItemExtraOption = ReverseCap,
+		BodyLocation = Hat,
+		Icon = BaseballCap_EMS_Louisville,
+		CanHaveHoles = false,
+		ChanceToFall = 80,
+		Insulation = 0.10,
+		Weight = 0.5,
+	}
+	item Hat_BaseballCap_EMS_Louisville_Reverse
+    {
+        Type = Clothing,
+        DisplayName = Louisville EMS Baseball Cap,
+        ClothingItem = Hat_BaseballCap_EMS_Louisville_Reverse,
+        ClothingItemExtra = Hat_BaseballCap_EMS_Louisville,
+        ClothingItemExtraOption = ForwardCap,
+        BodyLocation = Hat,
+        Icon = BaseballCap_EMS_Louisville,
+        CanHaveHoles = false,
+        Insulation = 0.10,
+        Weight = 0.5,
+    }
+	item Hat_Fireman_Meade_Black
+	{
+		Type = Clothing,
+		DisplayName = Black Meade County Firefighter Helmet,
+		ClothingItem = Hat_Fireman_Meade_Black,
+		BodyLocation = Hat,
+		Icon = Fireman_Hat_Black_Meade,
+		BloodLocation = Head,
+		CanHaveHoles = false,
+		BiteDefense = 100,
+        ScratchDefense = 100,
+        ChanceToFall = 0,
+        Insulation = 0.65,
+        WindResistance = 0.55,
+        WaterResistance = 0.60,
+        Weight = 1.5,
+    }
+	item Hat_Fireman_Meade_Red
+	{
+		Type = Clothing,
+		DisplayName = Red Meade County Firefighter Helmet,
+		ClothingItem = Hat_Fireman_Meade_Red,
+		BodyLocation = Hat,
+		Icon = Fireman_Hat_Red_Meade,
+		BloodLocation = Head,
+		CanHaveHoles = false,
+		BiteDefense = 100,
+        ScratchDefense = 100,
+        ChanceToFall = 0,
+        Insulation = 0.65,
+        WindResistance = 0.55,
+        WaterResistance = 0.60,
+        Weight = 1.5,
+    }
+	item Hat_Fireman_Meade_Yellow
+	{
+		Type = Clothing,
+		DisplayName = Yellow Meade County Firefighter Helmet,
+		ClothingItem = Hat_Fireman_Meade_Yellow,
+		BodyLocation = Hat,
+		Icon = Fireman_Hat_Yellow_Meade,
+		BloodLocation = Head,
+		CanHaveHoles = false,
+		BiteDefense = 100,
+        ScratchDefense = 100,
+        ChanceToFall = 0,
+        Insulation = 0.65,
+        WindResistance = 0.55,
+        WaterResistance = 0.60,
+        Weight = 1.5,
+    }
+	item Hat_Fireman_Rosewood_Black
+	{
+		Type = Clothing,
+		DisplayName = Black Rosewood Firefighter Helmet,
+		ClothingItem = Hat_Fireman_Rosewood_Black,
+		BodyLocation = Hat,
+		Icon = Fireman_Hat_Black_Rosewood,
+		BloodLocation = Head,
+		CanHaveHoles = false,
+		BiteDefense = 100,
+        ScratchDefense = 100,
+        ChanceToFall = 0,
+        Insulation = 0.65,
+        WindResistance = 0.55,
+        WaterResistance = 0.60,
+        Weight = 1.5,
+    }
+	item Hat_Fireman_Rosewood_Red
+	{
+		Type = Clothing,
+		DisplayName = Red Rosewood Firefighter Helmet,
+		ClothingItem = Hat_Fireman_Rosewood_Red,
+		BodyLocation = Hat,
+		Icon = Fireman_Hat_Red_Rosewood,
+		BloodLocation = Head,
+		CanHaveHoles = false,
+		BiteDefense = 100,
+        ScratchDefense = 100,
+        ChanceToFall = 0,
+        Insulation = 0.65,
+        WindResistance = 0.55,
+        WaterResistance = 0.60,
+        Weight = 1.5,
+    }
+	item Hat_Fireman_Rosewood_Yellow
+	{
+		Type = Clothing,
+		DisplayName = Yellow Rosewood Firefighter Helmet,
+		ClothingItem = Hat_Fireman_Rosewood_Yellow,
+		BodyLocation = Hat,
+		Icon = Fireman_Hat_Yellow_Rosewood,
+		BloodLocation = Head,
+		CanHaveHoles = false,
+		BiteDefense = 100,
+        ScratchDefense = 100,
+        ChanceToFall = 0,
+        Insulation = 0.65,
+        WindResistance = 0.55,
+        WaterResistance = 0.60,
+        Weight = 1.5,
+    }
+	item Hat_Fireman_Louisville_Black
+	{
+		Type = Clothing,
+		DisplayName = Black Louisville Firefighter Helmet,
+		ClothingItem = Hat_Fireman_Louisville_Black,
+		BodyLocation = Hat,
+		Icon = Fireman_Hat_Black_Louisville,
+		BloodLocation = Head,
+		CanHaveHoles = false,
+		BiteDefense = 100,
+        ScratchDefense = 100,
+        ChanceToFall = 0,
+        Insulation = 0.65,
+        WindResistance = 0.55,
+        WaterResistance = 0.60,
+        Weight = 1.5,
+    }
+	item Hat_Fireman_Louisville_Red
+	{
+		Type = Clothing,
+		DisplayName = Red Louisville Firefighter Helmet,
+		ClothingItem = Hat_Fireman_Louisville_Red,
+		BodyLocation = Hat,
+		Icon = Fireman_Hat_Red_Louisville,
+		BloodLocation = Head,
+		CanHaveHoles = false,
+		BiteDefense = 100,
+        ScratchDefense = 100,
+        ChanceToFall = 0,
+        Insulation = 0.65,
+        WindResistance = 0.55,
+        WaterResistance = 0.60,
+        Weight = 1.5,
+    }
+	item Hat_Fireman_Louisville_Yellow
+	{
+		Type = Clothing,
+		DisplayName = Yellow Louisville Firefighter Helmet,
+		ClothingItem = Hat_Fireman_Louisville_Yellow,
+		BodyLocation = Hat,
+		Icon = Fireman_Hat_Yellow_Louisville,
+		BloodLocation = Head,
+		CanHaveHoles = false,
+		BiteDefense = 100,
+        ScratchDefense = 100,
+        ChanceToFall = 0,
+        Insulation = 0.65,
+        WindResistance = 0.55,
+        WaterResistance = 0.60,
+        Weight = 1.5,
+    }
+}

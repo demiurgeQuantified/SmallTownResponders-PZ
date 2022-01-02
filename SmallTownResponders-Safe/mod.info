@@ -1,0 +1,4 @@
+name=Small Town Responders - Safe
+id=STRS
+poster=poster.png
+description=A separate version of SmallTownResponders without the sheriff vest, or all the cool custom spawning code. Mainly here for mod compat reasons.

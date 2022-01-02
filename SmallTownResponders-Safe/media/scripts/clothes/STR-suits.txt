@@ -1,0 +1,67 @@
+module STR
+{
+    item Boilersuit_MeadeGenPopPrisoner
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Meade County General Population Jumpsuit,
+        ClothingItem = Boilersuit_MeadeGenPopPrisoner,
+        BodyLocation = FullSuit,
+        Icon = MeadeGenPopPrisoner,
+        BloodLocation = Trousers;Jumper,
+        RunSpeedModifier = 0.9,
+        ScratchDefense = 10,
+        Insulation = 0.45,
+        WindResistance = 0.35,
+        FabricType = Cotton,
+        WorldStaticModel = BoilerSuit_Ground,
+    }
+    item Boilersuit_MeadeLowRiskPrisoner
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Meade County Low Risk Jumpsuit,
+        ClothingItem = Boilersuit_MeadeLowRiskPrisoner,
+        BodyLocation = FullSuit,
+        Icon = MeadeLowRiskPrisoner,
+        BloodLocation = Trousers;Jumper,
+        RunSpeedModifier = 0.9,
+        ScratchDefense = 10,
+        Insulation = 0.45,
+        WindResistance = 0.35,
+        FabricType = Cotton,
+        WorldStaticModel = BoilerSuit_Ground,
+    }
+    item Boilersuit_MeadeMaxPrisoner
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Meade County Supermax Jumpsuit,
+        ClothingItem = Boilersuit_MeadeMaxPrisoner,
+        BodyLocation = FullSuit,
+        Icon = MeadeMaxPrisoner,
+        BloodLocation = Trousers;Jumper,
+        RunSpeedModifier = 0.9,
+        ScratchDefense = 10,
+        Insulation = 0.45,
+        WindResistance = 0.35,
+        FabricType = Cotton,
+        WorldStaticModel = BoilerSuit_Ground,
+    }
+    item Boilersuit_JeffersonPrisoner
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Jefferson County Inmate Jumpsuit,
+        ClothingItem = Boilersuit_JeffersonPrisoner,
+        BodyLocation = FullSuit,
+        Icon = JeffersonPrisoner,
+        BloodLocation = Trousers;Jumper,
+        RunSpeedModifier = 0.9,
+        ScratchDefense = 10,
+        Insulation = 0.45,
+        WindResistance = 0.35,
+        FabricType = Cotton,
+        WorldStaticModel = BoilerSuit_Ground,
+    }
+}
