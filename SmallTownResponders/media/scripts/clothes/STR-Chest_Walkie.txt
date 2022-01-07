@@ -1,0 +1,13 @@
+module STR
+ {
+	item Chest_Walkie
+	{
+		Type = Clothing,
+		DisplayName = Security Walkie,
+		ClothingItem = Chest_Walkie,
+		BodyLocation = TorsoExtra,
+        	Weight	=	0.5,
+        	Icon = SecurityWalkie,
+		WorldStaticModel = SecurityWalkie_Ground,
+	}
+}

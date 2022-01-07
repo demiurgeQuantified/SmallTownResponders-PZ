@@ -795,13 +795,13 @@
 	</files>
 
 	<files>
-		<path>media/clothing/clothingItems/Holster.xml</path>
-		<guid>88f11c9e-e717-446c-82ec-f749320df25a</guid>
+		<path>media/clothing/clothingItems/Glasses_Normal.xml</path>
+		<guid>6d702d88-4ca0-4bcb-9aee-d88f2be29e69</guid>
 	</files>
 
 	<files>
-		<path>media/clothing/clothingItems/Glasses_Normal.xml</path>
-		<guid>6d702d88-4ca0-4bcb-9aee-d88f2be29e69</guid>
+		<path>media/clothing/clothingItems/Holster.xml</path>
+		<guid>88f11c9e-e717-446c-82ec-f749320df25a</guid>
 	</files>
 
 	<files>
@@ -819,4 +819,8 @@
 		<guid>227cb2d5-05a5-44ed-872d-ac4ca16e80bc</guid>
 	</files>
 
+	<files>
+		<path>media/clothing/clothingItems/Chest_Walkie.xml</path>
+		<guid>77d357c0-0a1b-44cb-b6fa-d3243e8627b3</guid>
+	</files>
 </fileGuidTable>
