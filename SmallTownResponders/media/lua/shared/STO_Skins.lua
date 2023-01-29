@@ -1,262 +1,287 @@
-if getActivatedMods():contains("VehicleTweakerAPI") then
-	require("VehicleTweaker_Core");
+---Like DoParam but for vehicles
+---@param vehicle string Name of the vehicle script
+---@param param string The parameter(s) to apply to this script
+---@param module string Optional: the module of the vehicle
+---@see Item#DoParam
+---@see VehicleScript#Load
+local DoVehicleParam = function(vehicle, param, module)
+	module = module or "Base"
+	local vehicleScript = ScriptManager.instance:getVehicle(module .. "." .. vehicle)
+	if not vehicleScript then return end
+	vehicleScript:Load(vehicle, "{" .. param .. "}")
+end
 
-	if getActivatedMods():contains("Time_Accurate_Sirens") then
+---Utility to add new skins to vehicles
+---@param vehicle string Name of the vehicle script
+---@param texture string The new skin's texture
+---@see DoVehicleParam
+local AddVehicleSkin = function(vehicle, texture)
+	DoVehicleParam(vehicle, "skin { texture = " .. texture .. ",}")
+end
 
-		TweakVehicle("Base.CarLightsPolice","lightbar", "MovieSiren");
-		TweakVehicle("Base.PickUpVanLightsPolice","lightbar", "MovieSiren");
+---Utility to change the siren sound of a vehicle
+---@param vehicle string Name of the vehicle script
+---@param sound string Name of a GameSound
+---@see DoVehicleParam
+local SetSirenSound = function(vehicle, sound)
+	DoVehicleParam(vehicle, "lightbar { soundSiren = " .. sound .. ",}")
+end
+
+if getActivatedMods():contains("Time_Accurate_Sirens") then
+
+	SetSirenSound("CarLightsPolice","MovieSiren");
+	SetSirenSound("PickUpVanLightsPolice","MovieSiren");
+
+end
+
+if getActivatedMods():contains("VVehicleEnhancer") and getActivatedMods():contains("Time_Accurate_Sirens") then
+
+	SetSirenSound("CarLightsSheriff","MovieSiren");
+	SetSirenSound("CarLightsStatepolice","MovieSiren");
+
+end
+
+if getActivatedMods():contains("SirenVariety") then
+
+	DoVehicleParam("85vicsheriff","horn = BullHorn,");
+	DoVehicleParam("92crownvicPD","horn = BullHorn,");
+	DoVehicleParam("91blazerpd","horn = BullHorn,");
+	DoVehicleParam("87capricePD","horn = BullHorn,");
+	DoVehicleParam("80f350ambulance","horn = BullHorn,");
+	DoVehicleParam("86econolineambulance","horn = BullHorn,");
+	DoVehicleParam("firepumper","horn = BullHorn,");
+	DoVehicleParam("87c10fire","horn = BullHorn,");
+
+	SetSirenSound("80f350ambulance","EmsSiren");
+	SetSirenSound("86econolineambulance","EmsSiren");
+	SetSirenSound("firepumper","FireSiren");
+	SetSirenSound("87c10fire","FireSiren");
+
+end
+
+if getActivatedMods():contains("VVehicleEnhancer") and getActivatedMods():contains("SirenVariety") then
+
+end
+
+if not getActivatedMods():contains("VVehicleEnhancer") then
+
+	AddVehicleSkin("CarLightsPolice","Vehicles/vehicle_kentuckystate")
+	AddVehicleSkin("CarLightsPolice","Vehicles/vehicle_meadesheriff")
+	AddVehicleSkin("CarLightsPolice","Vehicles/vehicle_rosewoodpolice")
+	AddVehicleSkin("CarLightsPolice","Vehicles/vehicle_westpointpolice")
+	AddVehicleSkin("CarLightsPolice","Vehicles/vehicle_muldraughpolice")
+	AddVehicleSkin("CarLightsPolice","Vehicles/vehicle_riversidepolice")
+	AddVehicleSkin("CarLightsPolice","Vehicles/vehicle_louisvillepolice")
+	AddVehicleSkin("CarLightsPolice","Vehicles/vehicle_jeffersonpolice")
+	AddVehicleSkin("CarLightsPolice","Vehicles/vehicle_jeffersonsheriff")
+
+	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vehicle_pickup_ksp");
+	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vehicle_pickup_meadesheriff");
+	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vehicle_pickup_rosewoodsheriff");
+	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vehicle_pickup_westpointpolice");
+	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vehicle_pickup_muldraughpolice");
+	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vehicle_pickup_riversidepolice");
+	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vehicle_pickup_louisvillepolice");
+	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vehicle_pickup_jeffersonpolice");
+	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vehicle_pickup_jeffersonsheriff");
+
+	AddVehicleSkin("VanAmbulance","Vehicles/vehicle_van_meadecountyambulance");
+	AddVehicleSkin("VanAmbulance","Vehicles/vehicle_van_louisvilleambulance");
+	AddVehicleSkin("VanAmbulance","Vehicles/vehicle_van_jeffersoncountyambulance");
+
+	AddVehicleSkin("PickUpTruckLightsFire","Vehicles/vehicle_pickupfireshell_rosewood");
+	AddVehicleSkin("PickUpTruckLightsFire","Vehicles/vehicle_pickupfireshell_meade");
+	AddVehicleSkin("PickUpTruckLightsFire","Vehicles/vehicle_pickupfireshell_louisville");
+
+	AddVehicleSkin("PickUpVanLightsFire","Vehicles/vehicle_pickupfireshell_rosewood");
+	AddVehicleSkin("PickUpVanLightsFire","Vehicles/vehicle_pickuptruckfireshell_meade");
+	AddVehicleSkin("PickUpVanLightsFire","Vehicles/vehicle_pickupfireshell_louisville");
+
+	AddVehicleSkin("PickUpTruckLights","Vehicles/vehicle_pickup_stateparkranger");
+	AddVehicleSkin("PickUpTruckLights","Vehicles/vehicle_pickup_fishandwildlife");
+	AddVehicleSkin("PickUpTruckLights","Vehicles/vehicle_pickup_nationalparkservice");
+
+	AddVehicleSkin("PickUpVanLights","Vehicles/vehicle_pickup_stateparkranger");
+	AddVehicleSkin("PickUpVanLights","Vehicles/vehicle_pickup_fishandwildlife");
+	AddVehicleSkin("PickUpVanLights","Vehicles/vehicle_pickup_nationalparkservice");
+
+	AddVehicleSkin("CarLights","Vehicles/vehicle_carnormal_stateparkranger");
+	AddVehicleSkin("CarLights","Vehicles/vehicle_carnormal_fishandwildlife");
+	AddVehicleSkin("CarLights","Vehicles/vehicle_carnormal_nationalparkservice");
+
+	AddVehicleSkin("StepVanMail","Vehicles/vehicle_stepvan_uspsmailshell");
+
+	AddVehicleSkin("VanSpecial","Vehicles/vehicle_van_uspsmailvan");
+
+	if getActivatedMods():contains("RavenCreek") then
+
+		AddVehicleSkin("CarLightsPolice","Vehicles/vehicle_ravencreekpolice");
+		AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vehicle_pickup_ravencreekpolice");
+
+		AddVehicleSkin("VanAmbulance","Vehicles/vehicle_van_ravencreekambulance");
+
+		AddVehicleSkin("PickUpTruckLightsFire","Vehicles/vehicle_pickupfireshell_ravencreek");
+
+		AddVehicleSkin("PickUpVanLightsFire","Vehicles/vehicle_pickuptruckfireshell_ravencreek");
 
 	end
+end
 
-	if getActivatedMods():contains("VVehicleEnhancer") and getActivatedMods():contains("Time_Accurate_Sirens") then
+if getActivatedMods():contains("FRUsedCars") then
 
-		TweakVehicle("Base.CarLightsSheriff","lightbar", "MovieSiren");
-		TweakVehicle("Base.CarLightsStatepolice","lightbar", "MovieSiren");
+	AddVehicleSkin("85vicsheriff","Vehicles/vehicle_85crownvic_kentuckystatepoliceshell");
+	AddVehicleSkin("85vicsheriff","Vehicles/vehicle_85crownvic_meadesheriffshell");
+	AddVehicleSkin("85vicsheriff","Vehicles/vehicle_85crownvic_rosewoodpoliceshell");
+	AddVehicleSkin("85vicsheriff","Vehicles/vehicle_85crownvic_westpointpoliceshell");
+	AddVehicleSkin("85vicsheriff","Vehicles/vehicle_85crownvic_muldraughpoliceshell");
+	AddVehicleSkin("85vicsheriff","Vehicles/vehicle_85crownvic_riversidepoliceshell");
+	AddVehicleSkin("85vicsheriff","Vehicles/vehicle_85crownvic_lousvillepoliceshell");
+	AddVehicleSkin("85vicsheriff","Vehicles/vehicle_85crownvic_jeffersonpoliceshell");
+	AddVehicleSkin("85vicsheriff","Vehicles/vehicle_85crownvic_jeffersonsheriffshell");
+
+	AddVehicleSkin("92crownvicPD","Vehicles/vehicle_92crownvic_kentuckystatepoliceshell");
+	AddVehicleSkin("92crownvicPD","Vehicles/vehicle_92crownvic_meadesheriffshell");
+	AddVehicleSkin("92crownvicPD","Vehicles/vehicle_92crownvic_rosewoodpoliceshell");
+	AddVehicleSkin("92crownvicPD","Vehicles/vehicle_92crownvic_westpoliceshell");
+	AddVehicleSkin("92crownvicPD","Vehicles/vehicle_92crownvic_muldraughpoliceshell");
+	AddVehicleSkin("92crownvicPD","Vehicles/vehicle_92crownvic_riversidepoliceshell");
+	AddVehicleSkin("92crownvicPD","Vehicles/vehicle_92crownvic_louisvillepoliceshell");
+	AddVehicleSkin("92crownvicPD","Vehicles/vehicle_92crownvic_jeffersonpoliceshell");
+	AddVehicleSkin("92crownvicPD","Vehicles/vehicle_92crownvic_jeffersoncountysheriffshell");
+
+	AddVehicleSkin("91blazerpd","Vehicles/vehicle_blazer_kspshell");
+	AddVehicleSkin("91blazerpd","Vehicles/vehicle_blazer_meadesheriffshell");
+	AddVehicleSkin("91blazerpd","Vehicles/vehicle_blazer_rosewoodpoliceshell");
+	AddVehicleSkin("91blazerpd","Vehicles/vehicle_blazer_westpointpoliceshell");
+	AddVehicleSkin("91blazerpd","Vehicles/vehicle_blazer_muldraughpoliceshell");
+	AddVehicleSkin("91blazerpd","Vehicles/vehicle_blazer_riversidepoliceshell");
+	AddVehicleSkin("91blazerpd","Vehicles/vehicle_blazer_louisvillepoliceshell");
+	AddVehicleSkin("91blazerpd","Vehicles/vehicle_blazer_jeffersoncountypoliceshell");
+	AddVehicleSkin("91blazerpd","Vehicles/vehicle_blazer_jeffersoncountysheriffshell");
+
+	AddVehicleSkin("87capricePD","Vehicles/vehicle_87caprice_kspshell");
+	AddVehicleSkin("87capricePD","Vehicles/vehicle_87caprice_meadesheriffshell");
+	AddVehicleSkin("87capricePD","Vehicles/vehicle_87caprice_rosewoodpoliceshell");
+	AddVehicleSkin("87capricePD","Vehicles/vehicle_87caprice_westpointpoliceshell");
+	AddVehicleSkin("87capricePD","Vehicles/vehicle_87caprice_muldraughpoliceshell");
+	AddVehicleSkin("87capricePD","Vehicles/vehicle_87caprice_riversidepoliceshell");
+	AddVehicleSkin("87capricePD","Vehicles/vehicle_87caprice_louisvillepoliceshell");
+	AddVehicleSkin("87capricePD","Vehicles/vehicle_87caprice_jeffersonpoliceshell");
+	AddVehicleSkin("87capricePD","Vehicles/vehicle_87caprice_jeffersonsheriffshell");
+
+	AddVehicleSkin("80f350ambulance","Vehicles/vehicle_80f350_meadecountymbulanceshell");
+	AddVehicleSkin("80f350ambulance","Vehicles/vehicle_80f350_louisvilleambulanceshell");
+	AddVehicleSkin("80f350ambulance","Vehicles/vehicle_80f350_jeffersoncountyambulanceshell");
+
+	AddVehicleSkin("86econolineambulance","Vehicles/vehicle_86econoline_meadecountyambulanceshell");
+	AddVehicleSkin("86econolineambulance","Vehicles/vehicle_86econoline_louisvilleambulanceshell");
+	AddVehicleSkin("86econolineambulance","Vehicles/vehicle_86econoline_jeffersoncountyambulanceshell");
+
+	AddVehicleSkin("firepumper","Vehicles/vehicle_firepumper_rosewood");
+	AddVehicleSkin("firepumper","Vehicles/vehicle_firepumper_meade");
+	AddVehicleSkin("firepumper","Vehicles/vehicle_firepumper_louisville");
+
+	AddVehicleSkin("87c10fire","Vehicles/vehicle_c10_utility_rosewood_fireshell");
+	AddVehicleSkin("87c10fire","Vehicles/vehicle_c10_utility_meade_fireshell");
+	AddVehicleSkin("87c10fire","Vehicles/vehicle_c10_utility_louisville_fireshell");
+
+	AddVehicleSkin("92wranglerranger","Vehicles/vehicle_92wrangler_stateparkrangershell");
+	AddVehicleSkin("92wranglerranger","Vehicles/vehicle_92wrangler_fishandwidlifeshell");
+	AddVehicleSkin("92wranglerranger","Vehicles/vehicle_92wrangler_nationalparkserviceshell");
+
+	AddVehicleSkin("85vicranger","Vehicles/vehicle_85crownvic_nationalparkserviceshell");
+	AddVehicleSkin("85vicranger","Vehicles/vehicle_85crownvic_fishandwildlifeshell");
+	AddVehicleSkin("85vicranger","Vehicles/vehicle_85crownvic_stateparkrangershell");
+
+	if getActivatedMods():contains("RavenCreek") then
+
+		AddVehicleSkin("85vicsheriff","Vehicles/vehicle_85crownvic_ravencreekpoliceshell");
+		AddVehicleSkin("92crownvicPD","Vehicles/vehicle_92crownvic_ravencreekpoliceshell");
+		AddVehicleSkin("91blazerpd","Vehicles/vehicle_blazer_ravencreekpoliceshell");
+		AddVehicleSkin("87capricePD","Vehicles/vehicle_87caprice_ravencreekpoliceshell");
+		AddVehicleSkin("87c10fire","Vehicles/vehicle_c10_utility_ravencreek_fireshell");
+		AddVehicleSkin("firepumper","Vehicles/vehicle_firepumper_ravencreek");
+		AddVehicleSkin("86econolineambulance","Vehicles/vehicle_86econoline_ravencreekambulanceshell");
+		AddVehicleSkin("80f350ambulance","Vehicles/vehicle_80f350_ravencreekmbulanceshell");
 
 	end
+end
 
-	if getActivatedMods():contains("SirenVariety") then
+if getActivatedMods():contains("VVehicleEnhancer") then
 
-		TweakVehicle("Base.85vicsheriff","horn", "BullHorn");
-		TweakVehicle("Base.92crownvicPD","horn", "BullHorn");
-		TweakVehicle("Base.91blazerpd","horn", "BullHorn");
-		TweakVehicle("Base.87capricePD","horn", "BullHorn");
-		TweakVehicle("Base.80f350ambulance","horn", "BullHorn");
-		TweakVehicle("Base.86econolineambulance","horn", "BullHorn");
-		TweakVehicle("Base.firepumper","horn", "BullHorn");
-		TweakVehicle("Base.87c10fire","horn", "BullHorn");
+	AddVehicleSkin("CarLightsPolice","Vehicles/vve/vehicle_kentuckystate_vve");
+	AddVehicleSkin("CarLightsPolice","Vehicles/vve/vehicle_meadesheriff_vve");
+	AddVehicleSkin("CarLightsPolice","Vehicles/vve/vehicle_rosewoodpolice_vve");
+	AddVehicleSkin("CarLightsPolice","Vehicles/vve/vehicle_westpointpolice_vve");
+	AddVehicleSkin("CarLightsPolice","Vehicles/vve/vehicle_muldraughpolice_vve");
+	AddVehicleSkin("CarLightsPolice","Vehicles/vve/vehicle_riversidepolice_vve");
+	AddVehicleSkin("CarLightsPolice","Vehicles/vve/vehicle_louisvillepolice_vve");
+	AddVehicleSkin("CarLightsPolice","Vehicles/vve/vehicle_jeffersonpolice_vve");
+	AddVehicleSkin("CarLightsPolice","Vehicles/vve/vehicle_jeffersonsheriff_vve");
 
-		TweakVehicle("Base.80f350ambulance","lightbar", "EmsSiren");
-		TweakVehicle("Base.86econolineambulance","lightbar", "EmsSiren");
-		TweakVehicle("Base.firepumper","lightbar", "FireSiren");
-		TweakVehicle("Base.87c10fire","lightbar", "FireSiren");
+	AddVehicleSkin("CarLightsSheriff","Vehicles/vve/vehicle_kentuckystate_vve");
+	AddVehicleSkin("CarLightsSheriff","Vehicles/vve/vehicle_meadesheriff_vve");
+	AddVehicleSkin("CarLightsSheriff","Vehicles/vve/vehicle_rosewoodpolice_vve");
+	AddVehicleSkin("CarLightsSheriff","Vehicles/vve/vehicle_westpointpolice_vve");
+	AddVehicleSkin("CarLightsSheriff","Vehicles/vve/vehicle_muldraughpolice_vve");
+	AddVehicleSkin("CarLightsSheriff","Vehicles/vve/vehicle_riversidepolice_vve");
+	AddVehicleSkin("CarLightsSheriff","Vehicles/vve/vehicle_louisvillepolice_vve");
+	AddVehicleSkin("CarLightsSheriff","Vehicles/vve/vehicle_jeffersonpolice_vve");
+	AddVehicleSkin("CarLightsSheriff","Vehicles/vve/vehicle_jeffersonsheriff_vve");
 
-	end
+	AddVehicleSkin("CarLightsStatepolice","Vehicles/vve/vehicle_kentuckystate_vve");
+	AddVehicleSkin("CarLightsStatepolice","Vehicles/vve/vehicle_meadesheriff_vve");
+	AddVehicleSkin("CarLightsStatepolice","Vehicles/vve/vehicle_rosewoodpolice_vve");
+	AddVehicleSkin("CarLightsStatepolice","Vehicles/vve/vehicle_westpointpolice_vve");
+	AddVehicleSkin("CarLightsStatepolice","Vehicles/vve/vehicle_muldraughpolice_vve");
+	AddVehicleSkin("CarLightsStatepolice","Vehicles/vve/vehicle_riversidepolice_vve");
+	AddVehicleSkin("CarLightsStatepolice","Vehicles/vve/vehicle_louisvillepolice_vve");
+	AddVehicleSkin("CarLightsStatepolice","Vehicles/vve/vehicle_jeffersonpolice_vve");
+	AddVehicleSkin("CarLightsStatepolice","Vehicles/vve/vehicle_jeffersonsheriff_vve");
 
-	if getActivatedMods():contains("VVehicleEnhancer") and getActivatedMods():contains("SirenVariety") then
+	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vve/vehicle_pickup_ksp_vve");
+	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vve/vehicle_pickup_meadesheriff_vve");
+	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vve/vehicle_pickup_rosewoodsheriff_vve");
+	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vve/vehicle_pickup_westpointpolice_vve");
+	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vve/vehicle_pickup_muldraughpolice_vve");
+	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vve/vehicle_pickup_riversidepolice_vve");
+	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vve/vehicle_pickup_louisvillepolice_vve");
+	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vve/vehicle_pickup_jeffersonpolice_vve");
+	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vve/vehicle_pickup_jeffersonsheriff_vve");
 
-	end
+	AddVehicleSkin("VanAmbulance","Vehicles/vve/vehicle_van_meadecountyambulance_vve");
+	AddVehicleSkin("VanAmbulance","Vehicles/vve/vehicle_van_louisvilleambulance_vve");
+	AddVehicleSkin("VanAmbulance","Vehicles/vve/vehicle_van_jeffersoncountyambulance_vve");
 
-	if not getActivatedMods():contains("VVehicleEnhancer") then
+	AddVehicleSkin("PickUpTruckLightsFire","Vehicles/vve/vehicle_pickupfireshell_rosewood_vve");
+	AddVehicleSkin("PickUpTruckLightsFire","Vehicles/vve/vehicle_pickupfireshell_meade_vve");
+	AddVehicleSkin("PickUpTruckLightsFire","Vehicles/vve/vehicle_pickupfireshell_louisville_vve");
 
-		TweakVehicle("Base.CarLightsPolice","skin1", "Vehicles/vehicle_kentuckystate");
-		TweakVehicle("Base.CarLightsPolice","skin2", "Vehicles/vehicle_meadesheriff");
-		TweakVehicle("Base.CarLightsPolice","skin3", "Vehicles/vehicle_rosewoodpolice");
-		TweakVehicle("Base.CarLightsPolice","skin4", "Vehicles/vehicle_westpointpolice");
-		TweakVehicle("Base.CarLightsPolice","skin5", "Vehicles/vehicle_muldraughpolice");
-		TweakVehicle("Base.CarLightsPolice","skin6", "Vehicles/vehicle_riversidepolice");
-		TweakVehicle("Base.CarLightsPolice","skin7", "Vehicles/vehicle_louisvillepolice");
-		TweakVehicle("Base.CarLightsPolice","skin8", "Vehicles/vehicle_jeffersonpolice");
-		TweakVehicle("Base.CarLightsPolice","skin9", "Vehicles/vehicle_jeffersonsheriff");
+	AddVehicleSkin("PickUpVanLightsFire","Vehicles/vve/vehicle_pickupfireshell_rosewood_vve");
+	AddVehicleSkin("PickUpVanLightsFire","Vehicles/vve/vehicle_pickupfireshell_meade_vve");
+	AddVehicleSkin("PickUpVanLightsFire","Vehicles/vve/vehicle_pickupfireshell_louisville_vve");
 
-		TweakVehicle("Base.PickUpVanLightsPolice","skin1", "Vehicles/vehicle_pickup_ksp");
-		TweakVehicle("Base.PickUpVanLightsPolice","skin2", "Vehicles/vehicle_pickup_meadesheriff");
-		TweakVehicle("Base.PickUpVanLightsPolice","skin3", "Vehicles/vehicle_pickup_rosewoodsheriff");
-		TweakVehicle("Base.PickUpVanLightsPolice","skin4", "Vehicles/vehicle_pickup_westpointpolice");
-		TweakVehicle("Base.PickUpVanLightsPolice","skin5", "Vehicles/vehicle_pickup_muldraughpolice");
-		TweakVehicle("Base.PickUpVanLightsPolice","skin6", "Vehicles/vehicle_pickup_riversidepolice");
-		TweakVehicle("Base.PickUpVanLightsPolice","skin7", "Vehicles/vehicle_pickup_louisvillepolice");
-		TweakVehicle("Base.PickUpVanLightsPolice","skin8", "Vehicles/vehicle_pickup_jeffersonpolice");
-		TweakVehicle("Base.PickUpVanLightsPolice","skin9", "Vehicles/vehicle_pickup_jeffersonsheriff");
+	AddVehicleSkin("CarLights","Vehicles/vve/vehicle_carnormal_stateparkranger_vve");
+	AddVehicleSkin("CarLights","Vehicles/vve/vehicle_carnormal_fishandwildlife_vve");
+	AddVehicleSkin("CarLights","Vehicles/vve/vehicle_carnormal_nationalparkservice_vve");
 
-		TweakVehicle("Base.VanAmbulance","skin1", "Vehicles/vehicle_van_meadecountyambulance");
-		TweakVehicle("Base.VanAmbulance","skin2", "Vehicles/vehicle_van_louisvilleambulance");
-		TweakVehicle("Base.VanAmbulance","skin3", "Vehicles/vehicle_van_jeffersoncountyambulance");
+	--TweakVehicle("Base.StepVanMail","skin1", "Vehicles/vve/vehicle_stepvan_uspsmailshell_vve");
+	AddVehicleSkin("StepVanMail","Vehicles/vehicle_stepvan_uspsmailshell");
 
-		TweakVehicle("Base.PickUpTruckLightsFire","skin1", "Vehicles/vehicle_pickupfireshell_rosewood");
-		TweakVehicle("Base.PickUpTruckLightsFire","skin2", "Vehicles/vehicle_pickupfireshell_meade");
-		TweakVehicle("Base.PickUpTruckLightsFire","skin3", "Vehicles/vehicle_pickupfireshell_louisville");
+	AddVehicleSkin("VanSpecial","Vehicles/vve/vehicle_van_uspsmailvan_vve");
 
-		TweakVehicle("Base.PickUpVanLightsFire","skin1", "Vehicles/vehicle_pickupfireshell_rosewood");
-		TweakVehicle("Base.PickUpVanLightsFire","skin2", "Vehicles/vehicle_pickuptruckfireshell_meade");
-		TweakVehicle("Base.PickUpVanLightsFire","skin3", "Vehicles/vehicle_pickupfireshell_louisville");
+	if getActivatedMods():contains("RavenCreek") then
 
-		TweakVehicle("Base.PickUpTruckLights","skin1", "Vehicles/vehicle_pickup_stateparkranger");
-		TweakVehicle("Base.PickUpTruckLights","skin2", "Vehicles/vehicle_pickup_fishandwildlife");
-		TweakVehicle("Base.PickUpTruckLights","skin3", "Vehicles/vehicle_pickup_nationalparkservice");
+		AddVehicleSkin("CarLightsPolice","Vehicles/vve/vehicle_ravencreekpolice_vve");
+		AddVehicleSkin("CarLightsSheriff","Vehicles/vve/vehicle_ravencreekpolice_vve");
+		AddVehicleSkin("CarLightsStatepolice","Vehicles/vve/vehicle_ravencreekpolice_vve");
+		--TweakVehicle("Base.PickUpVanLightsPolice","skin10", "Vehicles/vehicle_pickup_ravencreekpolice");
 
-		TweakVehicle("Base.PickUpVanLights","skin1", "Vehicles/vehicle_pickup_stateparkranger");
-		TweakVehicle("Base.PickUpVanLights","skin2", "Vehicles/vehicle_pickup_fishandwildlife");
-		TweakVehicle("Base.PickUpVanLights","skin3", "Vehicles/vehicle_pickup_nationalparkservice");
+		--TweakVehicle("Base.VanAmbulance","skin4", "Vehicles/vehicle_van_ravencreekambulance");
 
-		TweakVehicle("Base.CarLights","skin1", "Vehicles/vehicle_carnormal_stateparkranger");
-		TweakVehicle("Base.CarLights","skin2", "Vehicles/vehicle_carnormal_fishandwildlife");
-		TweakVehicle("Base.CarLights","skin3", "Vehicles/vehicle_carnormal_nationalparkservice");
+		--TweakVehicle("Base.PickUpTruckLightsFire","skin4", "Vehicles/vehicle_pickupfireshell_ravencreek");
 
-		TweakVehicle("Base.StepVanMail","skin1", "Vehicles/vehicle_stepvan_uspsmailshell");
+		--TweakVehicle("Base.PickUpVanLightsFire","skin4", "Vehicles/vehicle_pickuptruckfireshell_ravencreek");
 
-		TweakVehicle("Base.VanSpecial","skin1", "Vehicles/vehicle_van_uspsmailvan");
-
-		if getActivatedMods():contains("RavenCreek") then
-
-			TweakVehicle("Base.CarLightsPolice","skin10", "Vehicles/vehicle_ravencreekpolice");
-			TweakVehicle("Base.PickUpVanLightsPolice","skin10", "Vehicles/vehicle_pickup_ravencreekpolice");
-
-			TweakVehicle("Base.VanAmbulance","skin4", "Vehicles/vehicle_van_ravencreekambulance");
-
-			TweakVehicle("Base.PickUpTruckLightsFire","skin4", "Vehicles/vehicle_pickupfireshell_ravencreek");
-
-			TweakVehicle("Base.PickUpVanLightsFire","skin4", "Vehicles/vehicle_pickuptruckfireshell_ravencreek");
-
-		end
-	end
-
-	if getActivatedMods():contains("FRUsedCars") then
-
-		TweakVehicle("Base.85vicsheriff","skin1", "Vehicles/vehicle_85crownvic_kentuckystatepoliceshell");
-		TweakVehicle("Base.85vicsheriff","skin2", "Vehicles/vehicle_85crownvic_meadesheriffshell");
-		TweakVehicle("Base.85vicsheriff","skin3", "Vehicles/vehicle_85crownvic_rosewoodpoliceshell");
-		TweakVehicle("Base.85vicsheriff","skin4", "Vehicles/vehicle_85crownvic_westpointpoliceshell");
-		TweakVehicle("Base.85vicsheriff","skin5", "Vehicles/vehicle_85crownvic_muldraughpoliceshell");
-		TweakVehicle("Base.85vicsheriff","skin6", "Vehicles/vehicle_85crownvic_riversidepoliceshell");
-		TweakVehicle("Base.85vicsheriff","skin7", "Vehicles/vehicle_85crownvic_lousvillepoliceshell");
-		TweakVehicle("Base.85vicsheriff","skin8", "Vehicles/vehicle_85crownvic_jeffersonpoliceshell");
-		TweakVehicle("Base.85vicsheriff","skin9", "Vehicles/vehicle_85crownvic_jeffersonsheriffshell");
-
-		TweakVehicle("Base.92crownvicPD","skin1", "Vehicles/vehicle_92crownvic_kentuckystatepoliceshell");
-		TweakVehicle("Base.92crownvicPD","skin2", "Vehicles/vehicle_92crownvic_meadesheriffshell");
-		TweakVehicle("Base.92crownvicPD","skin3", "Vehicles/vehicle_92crownvic_rosewoodpoliceshell");
-		TweakVehicle("Base.92crownvicPD","skin4", "Vehicles/vehicle_92crownvic_westpoliceshell");
-		TweakVehicle("Base.92crownvicPD","skin5", "Vehicles/vehicle_92crownvic_muldraughpoliceshell");
-		TweakVehicle("Base.92crownvicPD","skin6", "Vehicles/vehicle_92crownvic_riversidepoliceshell");
-		TweakVehicle("Base.92crownvicPD","skin7", "Vehicles/vehicle_92crownvic_louisvillepoliceshell");
-		TweakVehicle("Base.92crownvicPD","skin8", "Vehicles/vehicle_92crownvic_jeffersonpoliceshell");
-		TweakVehicle("Base.92crownvicPD","skin9", "Vehicles/vehicle_92crownvic_jeffersoncountysheriffshell");
-
-		TweakVehicle("Base.91blazerpd","skin1", "Vehicles/vehicle_blazer_kspshell");
-		TweakVehicle("Base.91blazerpd","skin2", "Vehicles/vehicle_blazer_meadesheriffshell");
-		TweakVehicle("Base.91blazerpd","skin3", "Vehicles/vehicle_blazer_rosewoodpoliceshell");
-		TweakVehicle("Base.91blazerpd","skin4", "Vehicles/vehicle_blazer_westpointpoliceshell");
-		TweakVehicle("Base.91blazerpd","skin5", "Vehicles/vehicle_blazer_muldraughpoliceshell");
-		TweakVehicle("Base.91blazerpd","skin6", "Vehicles/vehicle_blazer_riversidepoliceshell");
-		TweakVehicle("Base.91blazerpd","skin7", "Vehicles/vehicle_blazer_louisvillepoliceshell");
-		TweakVehicle("Base.91blazerpd","skin8", "Vehicles/vehicle_blazer_jeffersoncountypoliceshell");
-		TweakVehicle("Base.91blazerpd","skin9", "Vehicles/vehicle_blazer_jeffersoncountysheriffshell");
-
-		TweakVehicle("Base.87capricePD","skin1", "Vehicles/vehicle_87caprice_kspshell");
-		TweakVehicle("Base.87capricePD","skin2", "Vehicles/vehicle_87caprice_meadesheriffshell");
-		TweakVehicle("Base.87capricePD","skin3", "Vehicles/vehicle_87caprice_rosewoodpoliceshell");
-		TweakVehicle("Base.87capricePD","skin4", "Vehicles/vehicle_87caprice_westpointpoliceshell");
-		TweakVehicle("Base.87capricePD","skin5", "Vehicles/vehicle_87caprice_muldraughpoliceshell");
-		TweakVehicle("Base.87capricePD","skin6", "Vehicles/vehicle_87caprice_riversidepoliceshell");
-		TweakVehicle("Base.87capricePD","skin7", "Vehicles/vehicle_87caprice_louisvillepoliceshell");
-		TweakVehicle("Base.87capricePD","skin8", "Vehicles/vehicle_87caprice_jeffersonpoliceshell");
-		TweakVehicle("Base.87capricePD","skin9", "Vehicles/vehicle_87caprice_jeffersonsheriffshell");
-
-		TweakVehicle("Base.80f350ambulance","skin1", "Vehicles/vehicle_80f350_meadecountymbulanceshell");
-		TweakVehicle("Base.80f350ambulance","skin2", "Vehicles/vehicle_80f350_louisvilleambulanceshell");
-		TweakVehicle("Base.80f350ambulance","skin3", "Vehicles/vehicle_80f350_jeffersoncountyambulanceshell");
-
-		TweakVehicle("Base.86econolineambulance","skin1", "Vehicles/vehicle_86econoline_meadecountyambulanceshell");
-		TweakVehicle("Base.86econolineambulance","skin2", "Vehicles/vehicle_86econoline_louisvilleambulanceshell");
-		TweakVehicle("Base.86econolineambulance","skin3", "Vehicles/vehicle_86econoline_jeffersoncountyambulanceshell");
-
-		TweakVehicle("Base.firepumper","skin1", "Vehicles/vehicle_firepumper_rosewood");
-		TweakVehicle("Base.firepumper","skin2", "Vehicles/vehicle_firepumper_meade");
-		TweakVehicle("Base.firepumper","skin3", "Vehicles/vehicle_firepumper_louisville");
-
-		TweakVehicle("Base.87c10fire","skin1", "Vehicles/vehicle_c10_utility_rosewood_fireshell");
-		TweakVehicle("Base.87c10fire","skin2", "Vehicles/vehicle_c10_utility_meade_fireshell");
-		TweakVehicle("Base.87c10fire","skin3", "Vehicles/vehicle_c10_utility_louisville_fireshell");
-
-		TweakVehicle("Base.92wranglerranger","skin1", "Vehicles/vehicle_92wrangler_stateparkrangershell");
-		TweakVehicle("Base.92wranglerranger","skin2", "Vehicles/vehicle_92wrangler_fishandwidlifeshell");
-		TweakVehicle("Base.92wranglerranger","skin3", "Vehicles/vehicle_92wrangler_nationalparkserviceshell");
-
-		TweakVehicle("Base.85vicranger","skin1", "Vehicles/vehicle_85crownvic_nationalparkserviceshell");
-		TweakVehicle("Base.85vicranger","skin2", "Vehicles/vehicle_85crownvic_fishandwildlifeshell");
-		TweakVehicle("Base.85vicranger","skin3", "Vehicles/vehicle_85crownvic_stateparkrangershell");
-
-		if getActivatedMods():contains("RavenCreek") then
-
-			TweakVehicle("Base.85vicsheriff","skin10", "Vehicles/vehicle_85crownvic_ravencreekpoliceshell");
-			TweakVehicle("Base.92crownvicPD","skin10", "Vehicles/vehicle_92crownvic_ravencreekpoliceshell");
-			TweakVehicle("Base.91blazerpd","skin10", "Vehicles/vehicle_blazer_ravencreekpoliceshell");
-			TweakVehicle("Base.87capricePD","skin10", "Vehicles/vehicle_87caprice_ravencreekpoliceshell");
-			TweakVehicle("Base.87c10fire","skin4", "Vehicles/vehicle_c10_utility_ravencreek_fireshell");
-			TweakVehicle("Base.firepumper","skin4", "Vehicles/vehicle_firepumper_ravencreek");
-			TweakVehicle("Base.86econolineambulance","skin4", "Vehicles/vehicle_86econoline_ravencreekambulanceshell");
-			TweakVehicle("Base.80f350ambulance","skin4", "Vehicles/vehicle_80f350_ravencreekmbulanceshell");
-
-		end
-	end
-
-	if getActivatedMods():contains("VVehicleEnhancer") then
-
-		TweakVehicle("Base.CarLightsPolice","skin1", "Vehicles/vve/vehicle_kentuckystate_vve");
-		TweakVehicle("Base.CarLightsPolice","skin2", "Vehicles/vve/vehicle_meadesheriff_vve");
-		TweakVehicle("Base.CarLightsPolice","skin3", "Vehicles/vve/vehicle_rosewoodpolice_vve");
-		TweakVehicle("Base.CarLightsPolice","skin4", "Vehicles/vve/vehicle_westpointpolice_vve");
-		TweakVehicle("Base.CarLightsPolice","skin5", "Vehicles/vve/vehicle_muldraughpolice_vve");
-		TweakVehicle("Base.CarLightsPolice","skin6", "Vehicles/vve/vehicle_riversidepolice_vve");
-		TweakVehicle("Base.CarLightsPolice","skin7", "Vehicles/vve/vehicle_louisvillepolice_vve");
-		TweakVehicle("Base.CarLightsPolice","skin8", "Vehicles/vve/vehicle_jeffersonpolice_vve");
-		TweakVehicle("Base.CarLightsPolice","skin9", "Vehicles/vve/vehicle_jeffersonsheriff_vve");
-
-		TweakVehicle("Base.CarLightsSheriff","skin1", "Vehicles/vve/vehicle_kentuckystate_vve");
-		TweakVehicle("Base.CarLightsSheriff","skin2", "Vehicles/vve/vehicle_meadesheriff_vve");
-		TweakVehicle("Base.CarLightsSheriff","skin3", "Vehicles/vve/vehicle_rosewoodpolice_vve");
-		TweakVehicle("Base.CarLightsSheriff","skin4", "Vehicles/vve/vehicle_westpointpolice_vve");
-		TweakVehicle("Base.CarLightsSheriff","skin5", "Vehicles/vve/vehicle_muldraughpolice_vve");
-		TweakVehicle("Base.CarLightsSheriff","skin6", "Vehicles/vve/vehicle_riversidepolice_vve");
-		TweakVehicle("Base.CarLightsSheriff","skin7", "Vehicles/vve/vehicle_louisvillepolice_vve");
-		TweakVehicle("Base.CarLightsSheriff","skin8", "Vehicles/vve/vehicle_jeffersonpolice_vve");
-		TweakVehicle("Base.CarLightsSheriff","skin9", "Vehicles/vve/vehicle_jeffersonsheriff_vve");
-
-		TweakVehicle("Base.CarLightsStatepolice","skin1", "Vehicles/vve/vehicle_kentuckystate_vve");
-		TweakVehicle("Base.CarLightsStatepolice","skin2", "Vehicles/vve/vehicle_meadesheriff_vve");
-		TweakVehicle("Base.CarLightsStatepolice","skin3", "Vehicles/vve/vehicle_rosewoodpolice_vve");
-		TweakVehicle("Base.CarLightsStatepolice","skin4", "Vehicles/vve/vehicle_westpointpolice_vve");
-		TweakVehicle("Base.CarLightsStatepolice","skin5", "Vehicles/vve/vehicle_muldraughpolice_vve");
-		TweakVehicle("Base.CarLightsStatepolice","skin6", "Vehicles/vve/vehicle_riversidepolice_vve");
-		TweakVehicle("Base.CarLightsStatepolice","skin7", "Vehicles/vve/vehicle_louisvillepolice_vve");
-		TweakVehicle("Base.CarLightsStatepolice","skin8", "Vehicles/vve/vehicle_jeffersonpolice_vve");
-		TweakVehicle("Base.CarLightsStatepolice","skin9", "Vehicles/vve/vehicle_jeffersonsheriff_vve");
-
-		TweakVehicle("Base.PickUpVanLightsPolice","skin1", "Vehicles/vve/vehicle_pickup_ksp_vve");
-		TweakVehicle("Base.PickUpVanLightsPolice","skin2", "Vehicles/vve/vehicle_pickup_meadesheriff_vve");
-		TweakVehicle("Base.PickUpVanLightsPolice","skin3", "Vehicles/vve/vehicle_pickup_rosewoodsheriff_vve");
-		TweakVehicle("Base.PickUpVanLightsPolice","skin4", "Vehicles/vve/vehicle_pickup_westpointpolice_vve");
-		TweakVehicle("Base.PickUpVanLightsPolice","skin5", "Vehicles/vve/vehicle_pickup_muldraughpolice_vve");
-		TweakVehicle("Base.PickUpVanLightsPolice","skin6", "Vehicles/vve/vehicle_pickup_riversidepolice_vve");
-		TweakVehicle("Base.PickUpVanLightsPolice","skin7", "Vehicles/vve/vehicle_pickup_louisvillepolice_vve");
-		TweakVehicle("Base.PickUpVanLightsPolice","skin8", "Vehicles/vve/vehicle_pickup_jeffersonpolice_vve");
-		TweakVehicle("Base.PickUpVanLightsPolice","skin9", "Vehicles/vve/vehicle_pickup_jeffersonsheriff_vve");
-
-		TweakVehicle("Base.VanAmbulance","skin1", "Vehicles/vve/vehicle_van_meadecountyambulance_vve");
-		TweakVehicle("Base.VanAmbulance","skin2", "Vehicles/vve/vehicle_van_louisvilleambulance_vve");
-		TweakVehicle("Base.VanAmbulance","skin3", "Vehicles/vve/vehicle_van_jeffersoncountyambulance_vve");
-
-		TweakVehicle("Base.PickUpTruckLightsFire","skin1", "Vehicles/vve/vehicle_pickupfireshell_rosewood_vve");
-		TweakVehicle("Base.PickUpTruckLightsFire","skin2", "Vehicles/vve/vehicle_pickupfireshell_meade_vve");
-		TweakVehicle("Base.PickUpTruckLightsFire","skin3", "Vehicles/vve/vehicle_pickupfireshell_louisville_vve");
-
-		TweakVehicle("Base.PickUpVanLightsFire","skin1", "Vehicles/vve/vehicle_pickupfireshell_rosewood_vve");
-		TweakVehicle("Base.PickUpVanLightsFire","skin2", "Vehicles/vve/vehicle_pickupfireshell_meade_vve");
-		TweakVehicle("Base.PickUpVanLightsFire","skin3", "Vehicles/vve/vehicle_pickupfireshell_louisville_vve");
-
-		TweakVehicle("Base.CarLights","skin1", "Vehicles/vve/vehicle_carnormal_stateparkranger_vve");
-		TweakVehicle("Base.CarLights","skin2", "Vehicles/vve/vehicle_carnormal_fishandwildlife_vve");
-		TweakVehicle("Base.CarLights","skin3", "Vehicles/vve/vehicle_carnormal_nationalparkservice_vve");
-
-		--TweakVehicle("Base.StepVanMail","skin1", "Vehicles/vve/vehicle_stepvan_uspsmailshell_vve");
-		TweakVehicle("Base.StepVanMail","skin1", "Vehicles/vehicle_stepvan_uspsmailshell");
-
-		TweakVehicle("Base.VanSpecial","skin1", "Vehicles/vve/vehicle_van_uspsmailvan_vve");
-
-		if getActivatedMods():contains("RavenCreek") then
-
-			TweakVehicle("Base.CarLightsPolice","skin10", "Vehicles/vve/vehicle_ravencreekpolice_vve");
-			TweakVehicle("Base.CarLightsSheriff","skin10", "Vehicles/vve/vehicle_ravencreekpolice_vve");
-			TweakVehicle("Base.CarLightsStatepolice","skin10", "Vehicles/vve/vehicle_ravencreekpolice_vve");
-			--TweakVehicle("Base.PickUpVanLightsPolice","skin10", "Vehicles/vehicle_pickup_ravencreekpolice");
-
-			--TweakVehicle("Base.VanAmbulance","skin4", "Vehicles/vehicle_van_ravencreekambulance");
-
-			--TweakVehicle("Base.PickUpTruckLightsFire","skin4", "Vehicles/vehicle_pickupfireshell_ravencreek");
-
-			--TweakVehicle("Base.PickUpVanLightsFire","skin4", "Vehicles/vehicle_pickuptruckfireshell_ravencreek");
-
-		end
 	end
 end
