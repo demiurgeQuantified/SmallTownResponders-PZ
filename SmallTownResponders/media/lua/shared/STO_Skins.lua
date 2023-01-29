@@ -27,6 +27,26 @@ local SetSirenSound = function(vehicle, sound)
 	DoVehicleParam(vehicle, "lightbar { soundSiren = " .. sound .. ",}")
 end
 
+if not isClient() then
+	local offsets = {}
+	local VehicleOverrides = require 'overrides/vehicleoverrides'
+	for script,skins in pairs(VehicleOverrides.vehicleToSkin) do
+		local first
+		if skins.police then
+			next(skins,"police")
+		else
+			first = next(skins)
+		end
+
+		local vehicle = ScriptManager.instance:getVehicle(script)
+		if vehicle then
+			offsets[script] = vehicle:getSkinCount() - first
+		end
+	end
+
+	VehicleOverrides.doOffsets(offsets)
+end
+
 if getActivatedMods():contains("Time_Accurate_Sirens") then
 
 	SetSirenSound("CarLightsPolice","MovieSiren");
@@ -64,7 +84,6 @@ if getActivatedMods():contains("VVehicleEnhancer") and getActivatedMods():contai
 end
 
 if not getActivatedMods():contains("VVehicleEnhancer") then
-
 	AddVehicleSkin("CarLightsPolice","Vehicles/vehicle_kentuckystate")
 	AddVehicleSkin("CarLightsPolice","Vehicles/vehicle_meadesheriff")
 	AddVehicleSkin("CarLightsPolice","Vehicles/vehicle_rosewoodpolice")
