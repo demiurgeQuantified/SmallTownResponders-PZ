@@ -106,14 +106,23 @@ ClothingOverrides.overrideOutfit = function(zombie)
     zombie:resetModel()
 end
 
+ClothingOverrides.lastReset = 0
+local zombieList = getCell():getZombieList()
+
 function ClothingOverrides.OnTick(tick)
-    if tick % Overrides.tickrate == 0 then
-        local zombies = getCell():getZombieList()
-        --print(zombies:size())
-        for i=0,zombies:size()-1 do
-            ClothingOverrides.overrideOutfit(zombies:get(i))
-        end
+    local zombie = zombieList:get(tick - ClothingOverrides.lastReset)
+    if zombie then
+        ClothingOverrides.overrideOutfit(zombie)
+    else
+        ClothingOverrides.lastReset = tick + 1 -- so we start from zero, not one
     end
+    --if tick % Overrides.tickrate == 0 then
+    --    local zombies = getCell():getZombieList()
+    --    --print(zombies:size())
+    --    for i=0,zombies:size()-1 do
+    --        ClothingOverrides.overrideOutfit(zombies:get(i))
+    --    end
+    --end
 end
 
 Events.OnGameStart.Add(function(check)
