@@ -144,16 +144,6 @@ option STR.TrunkOverrides
 	page = STR,
 	translation = STR_TrunkOverrides,
 }
-option STR.TickrateOverrides
-{
-	type = integer,
-	min = 50,
-	max = 250,
-	default = 150,
-
-	page = STR,
-	translation = STR_TickrateOverrides,
-}
 option STRS.Dress
 {
 	type = integer,

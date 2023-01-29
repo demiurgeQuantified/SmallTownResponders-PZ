@@ -83,7 +83,7 @@ ClothingOverrides.zonesToOutfit = {
 }
 
 ClothingOverrides.overrideOutfit = function(zombie)
-    local outfitType = ClothingOverrides.outfitsToSwap[zombie:getOutfitName()] or false
+    local outfitType = ClothingOverrides.outfitsToSwap[zombie:getOutfitName()]
     if not outfitType then return end
 
     local x = zombie:getX()
@@ -95,8 +95,7 @@ ClothingOverrides.overrideOutfit = function(zombie)
         zone = Overrides.getZone(x,y)
     end
     
-    local outfit = ClothingOverrides.zonesToOutfit[zone][outfitType]
-    if not outfit then outfit = ClothingOverrides.zonesToOutfit.Meade[outfitType] end
+    local outfit = ClothingOverrides.zonesToOutfit[zone][outfitType] or ClothingOverrides.zonesToOutfit.Meade[outfitType]
 
     if type(outfit) == 'table' then
         outfit = outfit[ZombRand(1, #outfit+1)]
@@ -116,13 +115,6 @@ function ClothingOverrides.OnTick(tick)
     else
         ClothingOverrides.zeroTick = tick + 1
     end
-    --if tick % Overrides.tickrate == 0 then
-    --    local zombies = getCell():getZombieList()
-    --    --print(zombies:size())
-    --    for i=0,zombies:size()-1 do
-    --        ClothingOverrides.overrideOutfit(zombies:get(i))
-    --    end
-    --end
 end
 
 Events.OnGameStart.Add(function(check)
