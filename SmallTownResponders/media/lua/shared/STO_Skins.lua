@@ -37,23 +37,25 @@ local SetHornSound = function(vehicle, sound)
 end
 
 if not isClient() then
-	local offsets = {}
-	local VehicleOverrides = require 'overrides/vehicleoverrides'
-	for script,skins in pairs(VehicleOverrides.vehicleToSkin) do
+	local vehicleToSkin = require "overrides/vehicledefinitions"
+	for script,skins in pairs(vehicleToSkin) do
 		local first
-		if skins.police then
-			next(skins,"police")
-		else
-			first = next(skins)
+		for _,v in pairs(skins) do -- no next() in pz??
+			if type(v) == "number" then
+				first = v
+				break
+			elseif type(v) == "table" then
+				first = v[1]
+			end
 		end
 
 		local vehicle = ScriptManager.instance:getVehicle(script)
 		if vehicle then
-			offsets[script] = vehicle:getSkinCount() - first
+			skins.offset = vehicle:getSkinCount() - first
+		else
+			skins.offset = 0
 		end
 	end
-
-	VehicleOverrides.doOffsets(offsets)
 end
 
 if getActivatedMods():contains("Time_Accurate_Sirens") then
