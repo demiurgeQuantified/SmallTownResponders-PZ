@@ -120,6 +120,14 @@ option STR.ZombieOverrides
 	page = STR,
 	translation = STR_ZombieOverrides,
 }
+option STR.WantSusceptibleOutfits
+{
+	type = boolean,
+	default = true,
+
+	page = STR,
+	translation = STR_WantSusceptibleOutfits,
+}
 option STR.VehicleOverrides
 {
 	type = boolean,

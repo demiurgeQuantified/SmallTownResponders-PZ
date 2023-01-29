@@ -170,6 +170,11 @@ Events.OnInitGlobalModData.Add(function()
     elseif not SandboxVars.STR.VestMeade then
         ClothingOverrides.zonesToOutfit.Meade.Police = "PoliceMeadeNoVest"
     end
+
+    if not SandboxVars.STR.WantSusceptibleOutfits then
+        ClothingOverrides.outfitsToSwap.SusceptiblePoliceGasmask = "Police"
+        ClothingOverrides.outfitsToSwap.SusceptibleFirefighter = "Fireman"
+    end
 end)
 
 return ClothingOverrides
