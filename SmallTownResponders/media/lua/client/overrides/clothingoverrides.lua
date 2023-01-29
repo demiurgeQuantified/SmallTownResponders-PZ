@@ -83,53 +83,6 @@ ClothingOverrides.zonesToOutfit = {
 }
 
 ClothingOverrides.overrideOutfit = function(zombie)
-
-	if SandboxVars.STR.VestRosewood then
-		ClothingOverrides.zonesToOutfit.Rosewood.Police = "PoliceRosewood"
-	elseif not SandboxVars.STR.VestRosewood then
-		ClothingOverrides.zonesToOutfit.Rosewood.Police = "PoliceRosewoodNoVest"
-	end
-	if SandboxVars.STR.VestRavenCreek then
-		ClothingOverrides.zonesToOutfit.RavenCreek.Police = "PoliceRavenCreek"
-	elseif not SandboxVars.STR.VestRavenCreek then
-		ClothingOverrides.zonesToOutfit.RavenCreek.Police = "PoliceRavenCreekNoVest"
-	end
-	if SandboxVars.STR.VestRiverside then
-		ClothingOverrides.zonesToOutfit.Riverside.Police = "PoliceRiverside"
-	elseif not SandboxVars.STR.VestRiverside then
-		ClothingOverrides.zonesToOutfit.Riverside.Police = "PoliceRiversideNoVest"
-	end
-	if SandboxVars.STR.VestMuldraugh then
-		ClothingOverrides.zonesToOutfit.Muldraugh.Police = "PoliceMuldraugh"
-	elseif not SandboxVars.STR.VestMuldraugh then
-		ClothingOverrides.zonesToOutfit.Muldraugh.Police = "PoliceMuldraughNoVest"
-	end
-	if SandboxVars.STR.VestWestPoint then
-		ClothingOverrides.zonesToOutfit.WestPoint.Police = "PoliceWestPoint"
-	elseif not SandboxVars.STR.VestWestPoint then
-		ClothingOverrides.zonesToOutfit.WestPoint.Police = "PoliceWestPointNoVest"
-	end
-	if SandboxVars.STR.VestJeffersonSD then
-		ClothingOverrides.zonesToOutfit.JeffersonSD.Police = "PoliceJeffersonSD"
-	elseif not SandboxVars.STR.VestJeffersonSD then
-		ClothingOverrides.zonesToOutfit.JeffersonSD.Police = "PoliceJeffersonSDNoVest"
-	end
-	if SandboxVars.STR.VestJeffersonPD then
-		ClothingOverrides.zonesToOutfit.JeffersonPD.Police = "PoliceJeffersonPD"
-	elseif not SandboxVars.STR.VestJeffersonPD then
-		ClothingOverrides.zonesToOutfit.JeffersonPD.Police = "PoliceJeffersonPDNoVest"
-	end
-	if SandboxVars.STR.VestLouisville then
-		ClothingOverrides.zonesToOutfit.LouisvillePD.Police = "PoliceLouisville"
-	elseif not SandboxVars.STR.VestLouisville then
-		ClothingOverrides.zonesToOutfit.LouisvillePD.Police = "PoliceLouisvilleNoVest"
-	end
-	if SandboxVars.STR.VestMeade then
-		ClothingOverrides.zonesToOutfit.Meade.Police = "PoliceMeade"
-	elseif not SandboxVars.STR.VestMeade then
-		ClothingOverrides.zonesToOutfit.Meade.Police = "PoliceMeadeNoVest"
-	end
-
     local outfitType = ClothingOverrides.outfitsToSwap[zombie:getOutfitName()] or false
     if not outfitType then return end
 
@@ -169,6 +122,54 @@ Events.OnGameStart.Add(function(check)
 	else
 		Events.OnTick.Remove(ClothingOverrides.OnTick)
 	end
+end)
+
+Events.OnInitGlobalModData.Add(function()
+    if SandboxVars.STR.VestRosewood then
+        ClothingOverrides.zonesToOutfit.Rosewood.Police = "PoliceRosewood"
+    elseif not SandboxVars.STR.VestRosewood then
+        ClothingOverrides.zonesToOutfit.Rosewood.Police = "PoliceRosewoodNoVest"
+    end
+    if SandboxVars.STR.VestRavenCreek then
+        ClothingOverrides.zonesToOutfit.RavenCreek.Police = "PoliceRavenCreek"
+    elseif not SandboxVars.STR.VestRavenCreek then
+        ClothingOverrides.zonesToOutfit.RavenCreek.Police = "PoliceRavenCreekNoVest"
+    end
+    if SandboxVars.STR.VestRiverside then
+        ClothingOverrides.zonesToOutfit.Riverside.Police = "PoliceRiverside"
+    elseif not SandboxVars.STR.VestRiverside then
+        ClothingOverrides.zonesToOutfit.Riverside.Police = "PoliceRiversideNoVest"
+    end
+    if SandboxVars.STR.VestMuldraugh then
+        ClothingOverrides.zonesToOutfit.Muldraugh.Police = "PoliceMuldraugh"
+    elseif not SandboxVars.STR.VestMuldraugh then
+        ClothingOverrides.zonesToOutfit.Muldraugh.Police = "PoliceMuldraughNoVest"
+    end
+    if SandboxVars.STR.VestWestPoint then
+        ClothingOverrides.zonesToOutfit.WestPoint.Police = "PoliceWestPoint"
+    elseif not SandboxVars.STR.VestWestPoint then
+        ClothingOverrides.zonesToOutfit.WestPoint.Police = "PoliceWestPointNoVest"
+    end
+    if SandboxVars.STR.VestJeffersonSD then
+        ClothingOverrides.zonesToOutfit.JeffersonSD.Police = "PoliceJeffersonSD"
+    elseif not SandboxVars.STR.VestJeffersonSD then
+        ClothingOverrides.zonesToOutfit.JeffersonSD.Police = "PoliceJeffersonSDNoVest"
+    end
+    if SandboxVars.STR.VestJeffersonPD then
+        ClothingOverrides.zonesToOutfit.JeffersonPD.Police = "PoliceJeffersonPD"
+    elseif not SandboxVars.STR.VestJeffersonPD then
+        ClothingOverrides.zonesToOutfit.JeffersonPD.Police = "PoliceJeffersonPDNoVest"
+    end
+    if SandboxVars.STR.VestLouisville then
+        ClothingOverrides.zonesToOutfit.LouisvillePD.Police = "PoliceLouisville"
+    elseif not SandboxVars.STR.VestLouisville then
+        ClothingOverrides.zonesToOutfit.LouisvillePD.Police = "PoliceLouisvilleNoVest"
+    end
+    if SandboxVars.STR.VestMeade then
+        ClothingOverrides.zonesToOutfit.Meade.Police = "PoliceMeade"
+    elseif not SandboxVars.STR.VestMeade then
+        ClothingOverrides.zonesToOutfit.Meade.Police = "PoliceMeadeNoVest"
+    end
 end)
 
 return ClothingOverrides
