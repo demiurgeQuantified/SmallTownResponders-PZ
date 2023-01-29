@@ -106,15 +106,15 @@ ClothingOverrides.overrideOutfit = function(zombie)
     zombie:resetModel()
 end
 
-ClothingOverrides.lastReset = 0
-local zombieList = getCell():getZombieList()
+ClothingOverrides.zeroTick = 0
+local zombieList
 
 function ClothingOverrides.OnTick(tick)
-    local zombie = zombieList:get(tick - ClothingOverrides.lastReset)
-    if zombie then
-        ClothingOverrides.overrideOutfit(zombie)
+    local zombieIndex = tick - ClothingOverrides.zeroTick
+    if zombieList:size() > zombieIndex then
+        ClothingOverrides.overrideOutfit(zombieList:get(zombieIndex))
     else
-        ClothingOverrides.lastReset = tick + 1 -- so we start from zero, not one
+        ClothingOverrides.zeroTick = tick + 1
     end
     --if tick % Overrides.tickrate == 0 then
     --    local zombies = getCell():getZombieList()
@@ -126,6 +126,7 @@ function ClothingOverrides.OnTick(tick)
 end
 
 Events.OnGameStart.Add(function(check)
+    zombieList = getCell():getZombieList()
 	if SandboxVars.STR.ZombieOverrides and getWorld():getMap():contains("Muldraugh, KY") then
 		Events.OnTick.Add(ClothingOverrides.OnTick)
 	else
