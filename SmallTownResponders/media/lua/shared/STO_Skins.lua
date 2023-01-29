@@ -21,10 +21,19 @@ end
 
 ---Utility to change the siren sound of a vehicle
 ---@param vehicle string Name of the vehicle script
----@param sound string Name of a GameSound
+---@param sound string Name of a sound
 ---@see DoVehicleParam
 local SetSirenSound = function(vehicle, sound)
 	DoVehicleParam(vehicle, "lightbar { soundSiren = " .. sound .. ",}")
+end
+
+---Utility to change the horn sound of a vehicle
+---@param vehicle string Name of the vehicle script
+---@param sound string Name of a sound
+---@see DoVehicleParam
+---@see SetSirenSound
+local SetHornSound = function(vehicle, sound)
+	DoVehicleParam(vehicle, "sound { horn = " .. sound .. ",}")
 end
 
 if not isClient() then
@@ -63,14 +72,14 @@ end
 
 if getActivatedMods():contains("SirenVariety") then
 
-	DoVehicleParam("85vicsheriff","horn = BullHorn,");
-	DoVehicleParam("92crownvicPD","horn = BullHorn,");
-	DoVehicleParam("91blazerpd","horn = BullHorn,");
-	DoVehicleParam("87capricePD","horn = BullHorn,");
-	DoVehicleParam("80f350ambulance","horn = BullHorn,");
-	DoVehicleParam("86econolineambulance","horn = BullHorn,");
-	DoVehicleParam("firepumper","horn = BullHorn,");
-	DoVehicleParam("87c10fire","horn = BullHorn,");
+	SetHornSound("85vicsheriff","BullHorn");
+	SetHornSound("92crownvicPD","BullHorn");
+	SetHornSound("91blazerpd","BullHorn");
+	SetHornSound("87capricePD","BullHorn");
+	SetHornSound("80f350ambulance","BullHorn");
+	SetHornSound("86econolineambulance","BullHorn");
+	SetHornSound("firepumper","BullHorn");
+	SetHornSound("87c10fire","BullHorn");
 
 	SetSirenSound("80f350ambulance","EmsSiren");
 	SetSirenSound("86econolineambulance","EmsSiren");
