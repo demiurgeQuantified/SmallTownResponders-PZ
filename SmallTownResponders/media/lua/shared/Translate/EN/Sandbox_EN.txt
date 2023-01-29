@@ -18,10 +18,13 @@ Sandbox_EN = {
 	Sandbox_STR_TrueSTEV_tooltip = "Enable this to disable unfitting police/fire/ems content.",
 
 	Sandbox_STR_ZombieOverrides = "Override Zombies",
-	Sandbox_STR_ZombieOverrides_tooltip = "Enable this to override vanilla police/fire/ems/prison zombies. MAY CAUSE LAG!",
+	Sandbox_STR_ZombieOverrides_tooltip = "Enable this to override vanilla police/fire/ems/prison zombies.",
+
+	Sandbox_STR_WantSusceptibleOutfits = "Allow Susceptible Zombies",
+	Sandbox_STR_WantSusceptibleOutfits_tooltip = "If disabled, all Susceptible STFR zombies will become regular STFR zombies. Does nothing if Susceptible isn't enabled.",
 
 	Sandbox_STR_VehicleOverrides = "Override Vehicles",
-	Sandbox_STR_VehicleOverrides_tooltip = "Enable this to override vanilla and Filibuster Rhymes police/fire/ems/prison vehicles. MAY CAUSE LAG!",
+	Sandbox_STR_VehicleOverrides_tooltip = "Enable this to override vanilla and Filibuster Rhymes police/fire/ems/prison vehicles.",
 
 	Sandbox_STR_DuffelLoot = "Enable Duffel Bags",
 	Sandbox_STR_DuffelLoot_tooltip = "Enable this to allow STFR's custom duffel bags to spawn.",
