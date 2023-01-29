@@ -1,4 +1,5 @@
-name=Small Town Responders
+name=Small Town First Responders
 id=STR
 poster=poster.png
 description=Adds police outfits for all the vanilla towns, Louisville, and extra goodies!
+require=VehicleTweakerAPI

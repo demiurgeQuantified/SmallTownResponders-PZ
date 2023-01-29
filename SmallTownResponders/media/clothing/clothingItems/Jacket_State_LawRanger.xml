@@ -12,5 +12,5 @@
 	<m_Masks>3</m_Masks>
 	<m_Masks>5</m_Masks>
 	<m_UnderlayMasksFolder>media/textures/Clothes/Jacket/Masks</m_UnderlayMasksFolder>
-	<textureChoices>clothes\jacket\jacket_statelawranger</textureChoices>
+	<textureChoices>Clothes\Jacket\Jacket_State_Law_Ranger</textureChoices>
 </clothingItem>

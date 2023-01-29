@@ -1,8 +1,0 @@
-IG_UI_EN = {
-    IGUI_VehicleNameCarLightsPolice_meadesheriff = "Chevalier Nyala",
-    IGUI_VehicleNameCarLightsPolice_jeffersonpolice = "Chevalier Nyala",
-    IGUI_VehicleNameCarLightsPolice_jeffersonsheriff = "Chevalier Nyala",
-    IGUI_VehicleNameCarLightsPolice_louisvillepolice = "Chevalier Nyala",
-    IGUI_VehicleNameCarLightsPolice_kentuckystate = "Chevalier Nyala",
-	
-}
