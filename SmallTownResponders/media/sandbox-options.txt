@@ -120,6 +120,14 @@ option STR.ZombieOverrides
 	page = STR,
 	translation = STR_ZombieOverrides,
 }
+option STR.WantSusceptibleOutfits
+{
+	type = boolean,
+	default = true,
+
+	page = STR,
+	translation = STR_WantSusceptibleOutfits,
+}
 option STR.VehicleOverrides
 {
 	type = boolean,
@@ -135,16 +143,6 @@ option STR.TrunkOverrides
 
 	page = STR,
 	translation = STR_TrunkOverrides,
-}
-option STR.TickrateOverrides
-{
-	type = integer,
-	min = 50,
-	max = 250,
-	default = 150,
-
-	page = STR,
-	translation = STR_TickrateOverrides,
 }
 option STRS.Dress
 {

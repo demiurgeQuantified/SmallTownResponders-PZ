@@ -1,7 +1,6 @@
 -- by albion#0123
 -- seriously, thanks Albion!
 local Overrides = {}
---Overrides.tickrate = 150 -- i think this is the same as EveryOneMinute on 1 hour days; you should consider making this a sandbox option
 
 Overrides.zonesGeneric = {
     Rosewood = {x1=7900,x2=8550,y1=11220,y2=12300}, -- important: x2 must be greater than x1, y2 must be greater than y1
@@ -44,7 +43,6 @@ function Overrides.getZone(x,y,zones)
 end
 
 function Overrides.setSandboxVariables()
-    Overrides.tickrate = SandboxVars.STR.TickrateOverrides
     if getActivatedMods():contains('RavenCreek') then
         Overrides.zonesGeneric.RavenCreek = {x1=3000,x2=5500,y1=11001,y2=13500}
         Overrides.zonesPolice.RavenCreek = Overrides.zonesGeneric.RavenCreek
