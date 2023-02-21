@@ -9,10 +9,10 @@ module STR {
 		Type = Clothing,
 		DisplayName = Duty Belt,
 		ClothingItem = Belt_PoliceDuty,
-		BodyLocation = BeltExtra,
-        Weight	=	0.5,
+		BodyLocation = DutyBelt,
+        Weight	=	1.2,
         IconsForTexture = Police_Duty_Belt_Black;Police_Duty_Belt_Brown,
-		AttachmentsProvided = HolsterRight,
+		AttachmentsProvided = HolsterRight;SmallBeltLeft;SmallBeltRight,
 		WorldStaticModel = PoliceDutyBelt_Ground,
 	}
 }

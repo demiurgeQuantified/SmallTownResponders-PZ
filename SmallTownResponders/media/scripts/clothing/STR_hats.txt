@@ -210,7 +210,7 @@ module STR {
 		DisplayName = Kentucky Fish & Wildlife Ranger Hat,
 		ClothingItem = Hat_StateRanger,
 		BodyLocation = Hat,
-		Icon = Hat_StateRanger,
+		Icon = Hat_State_Ranger,
 		CanHaveHoles = false,
 		ChanceToFall = 40,
         BloodLocation = Head,

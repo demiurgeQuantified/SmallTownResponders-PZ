@@ -438,6 +438,46 @@
 
 
 	<files>
+		<path>media/clothing/clothingItems/Medical_Gloves_Black.xml</path>
+		<guid>d99cfdd0-2306-4756-95a4-a39948c1abc5</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Medical_Gloves_Green.xml</path>
+		<guid>8a5098b7-d980-4ff0-94fd-ae28b4b78def</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Medical_Gloves_Light_Blue.xml</path>
+		<guid>b7dbe53e-5a80-4be8-9f2b-68e202a1948c</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Medical_Gloves_Orange.xml</path>
+		<guid>acfdfb1e-682d-4e48-ade3-347781fec9bd</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Medical_Gloves_Purple.xml</path>
+		<guid>c6dff133-67ba-4a84-81c6-b7a9def638e9</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Medical_Gloves_Red.xml</path>
+		<guid>e06db4bc-ab8d-4fa1-9c68-7ab7414d1709</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Medical_Gloves_Yellow.xml</path>
+		<guid>6e5727a7-0ce8-4cd4-8627-54d5dd494d32</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Medical_Gloves_White.xml</path>
+		<guid>594bbbcb-3e86-4c92-8579-e3f268db3408</guid>
+	</files>
+
+	<files>
 		<path>media/clothing/clothingItems/Gloves_Fireman_Khaki.xml</path>
 		<guid>b27c448f-61f0-41de-8e65-7139e34a0e80</guid>
 	</files>

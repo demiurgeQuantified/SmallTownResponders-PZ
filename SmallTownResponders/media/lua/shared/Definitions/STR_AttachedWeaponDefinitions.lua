@@ -6,7 +6,7 @@ AttachedWeaponDefinitions = AttachedWeaponDefinitions or {};
 
 AttachedWeaponDefinitions.policeRadio = {
 	chance = 30,
-	outfit = {"Police", "PoliceState", "PoliceRiot", "PrisonGuard", "PrivateMilitia"},
+	outfit = {"Police", "PoliceState", "PoliceRiot"},
 	weaponLocation = {"Walkie Belt Right"},
 	bloodLocations = nil,
 	addHoles = false,
@@ -19,7 +19,7 @@ AttachedWeaponDefinitions.policeRadio = {
 AttachedWeaponDefinitions.handgunDutyBelt = {
 	id = "handgunDutyBelt",
 	chance = 50,
-	outfit = {"Police", "PoliceState", "PoliceRiot", "PrisonGuard", "PrivateMilitia"},
+	outfit = {"Police", "PoliceState", "PoliceRiot"},
 	weaponLocation =  {"Holster Right"},
 	bloodLocations = nil,
 	addHoles = false,

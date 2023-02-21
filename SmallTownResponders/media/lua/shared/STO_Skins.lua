@@ -36,6 +36,15 @@ local SetHornSound = function(vehicle, sound)
 	DoVehicleParam(vehicle, "sound { horn = " .. sound .. ",}")
 end
 
+---Utility to change the radio of a vehicle
+---@param vehicle string Name of the vehicle script
+---@param radio string Name of a radio template
+---@see DoVehicleParam
+---@see SetSirenSound
+local SetRadioType = function(vehicle, radio)
+	DoVehicleParam(vehicle, "template = " .. radio .. ",")
+end
+
 if not isClient() then
 	local vehicleToSkin = require "overrides/vehicledefinitions"
 	for script,skins in pairs(vehicleToSkin) do
@@ -74,19 +83,24 @@ end
 
 if getActivatedMods():contains("SirenVariety") then
 
-	SetHornSound("85vicsheriff","BullHorn");
-	SetHornSound("92crownvicPD","BullHorn");
-	SetHornSound("91blazerpd","BullHorn");
-	SetHornSound("87capricePD","BullHorn");
-	SetHornSound("80f350ambulance","BullHorn");
-	SetHornSound("86econolineambulance","BullHorn");
-	SetHornSound("firepumper","BullHorn");
-	SetHornSound("87c10fire","BullHorn");
+	--SetHornSound("85vicsheriff","BullHorn");
+	--SetHornSound("92crownvicPD","BullHorn");
+	--SetHornSound("91blazerpd","BullHorn");
+	--SetHornSound("87capricePD","BullHorn");
+	SetHornSound("86econolineswat_louisvillepd","BullHorn");
+	SetHornSound("86econolineswat_jeffersonpd","BullHorn");
+	SetHornSound("VanSwat_jeffersonpd","BullHorn");
+	SetHornSound("VanSwat_louisvillepd","BullHorn");
+	SetHornSound("VanSwat_ravencreekpd","BullHorn");
+	--SetHornSound("80f350ambulance","BullHorn");
+	--SetHornSound("86econolineambulance","BullHorn");
+	--SetHornSound("firepumper","AirHorn");
+	--SetHornSound("87c10fire","AirHorn");
 
-	SetSirenSound("80f350ambulance","EmsSiren");
-	SetSirenSound("86econolineambulance","EmsSiren");
-	SetSirenSound("firepumper","FireSiren");
-	SetSirenSound("87c10fire","FireSiren");
+	--SetSirenSound("80f350ambulance","EmsSiren");
+	--SetSirenSound("86econolineambulance","EmsSiren");
+	--SetSirenSound("firepumper","FireSiren");
+	--SetSirenSound("87c10fire","FireSiren");
 
 end
 
@@ -98,7 +112,8 @@ if not getActivatedMods():contains("VVehicleEnhancer") then
 	AddVehicleSkin("CarLightsPolice","Vehicles/vehicle_kentuckystate")
 	AddVehicleSkin("CarLightsPolice","Vehicles/vehicle_meadesheriff")
 	AddVehicleSkin("CarLightsPolice","Vehicles/vehicle_rosewoodpolice")
-	AddVehicleSkin("CarLightsPolice","Vehicles/vehicle_westpointpolice")
+	AddVehicleSkin("CarLightsPolice","Vehicles/vehicle_westpointpolice1")
+	AddVehicleSkin("CarLightsPolice","Vehicles/vehicle_westpointpolice2")
 	AddVehicleSkin("CarLightsPolice","Vehicles/vehicle_muldraughpolice")
 	AddVehicleSkin("CarLightsPolice","Vehicles/vehicle_riversidepolice")
 	AddVehicleSkin("CarLightsPolice","Vehicles/vehicle_louisvillepolice")
@@ -108,7 +123,8 @@ if not getActivatedMods():contains("VVehicleEnhancer") then
 	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vehicle_pickup_ksp");
 	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vehicle_pickup_meadesheriff");
 	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vehicle_pickup_rosewoodsheriff");
-	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vehicle_pickup_westpointpolice");
+	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vehicle_pickup_westpointpolice1");
+	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vehicle_pickup_westpointpolice2");
 	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vehicle_pickup_muldraughpolice");
 	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vehicle_pickup_riversidepolice");
 	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vehicle_pickup_louisvillepolice");
@@ -159,10 +175,21 @@ end
 
 if getActivatedMods():contains("FRUsedCars") then
 
+	SetRadioType("chevystepvanswat","Radio_HAM");
+	SetRadioType("85vicsheriff","Radio_HAM");
+	SetRadioType("92crownvicPD","Radio_HAM");
+	SetRadioType("91blazerpd","Radio_HAM");
+	SetRadioType("87capricePD","Radio_HAM");
+	SetRadioType("87c10fire","Radio_HAM");
+	SetRadioType("firepumper","Radio_HAM");
+	SetRadioType("86econolineambulance","Radio_HAM");
+	SetRadioType("80f350ambulance","Radio_HAM");
+
 	AddVehicleSkin("85vicsheriff","Vehicles/vehicle_85crownvic_kentuckystatepoliceshell");
 	AddVehicleSkin("85vicsheriff","Vehicles/vehicle_85crownvic_meadesheriffshell");
 	AddVehicleSkin("85vicsheriff","Vehicles/vehicle_85crownvic_rosewoodpoliceshell");
-	AddVehicleSkin("85vicsheriff","Vehicles/vehicle_85crownvic_westpointpoliceshell");
+	AddVehicleSkin("85vicsheriff","Vehicles/vehicle_85crownvic_westpointpoliceshell1");
+	AddVehicleSkin("85vicsheriff","Vehicles/vehicle_85crownvic_westpointpoliceshell2");
 	AddVehicleSkin("85vicsheriff","Vehicles/vehicle_85crownvic_muldraughpoliceshell");
 	AddVehicleSkin("85vicsheriff","Vehicles/vehicle_85crownvic_riversidepoliceshell");
 	AddVehicleSkin("85vicsheriff","Vehicles/vehicle_85crownvic_lousvillepoliceshell");
@@ -172,7 +199,8 @@ if getActivatedMods():contains("FRUsedCars") then
 	AddVehicleSkin("92crownvicPD","Vehicles/vehicle_92crownvic_kentuckystatepoliceshell");
 	AddVehicleSkin("92crownvicPD","Vehicles/vehicle_92crownvic_meadesheriffshell");
 	AddVehicleSkin("92crownvicPD","Vehicles/vehicle_92crownvic_rosewoodpoliceshell");
-	AddVehicleSkin("92crownvicPD","Vehicles/vehicle_92crownvic_westpoliceshell");
+	AddVehicleSkin("92crownvicPD","Vehicles/vehicle_92crownvic_westpointpoliceshell1");
+	AddVehicleSkin("92crownvicPD","Vehicles/vehicle_92crownvic_westpointpoliceshell2");
 	AddVehicleSkin("92crownvicPD","Vehicles/vehicle_92crownvic_muldraughpoliceshell");
 	AddVehicleSkin("92crownvicPD","Vehicles/vehicle_92crownvic_riversidepoliceshell");
 	AddVehicleSkin("92crownvicPD","Vehicles/vehicle_92crownvic_louisvillepoliceshell");
@@ -182,7 +210,8 @@ if getActivatedMods():contains("FRUsedCars") then
 	AddVehicleSkin("91blazerpd","Vehicles/vehicle_blazer_kspshell");
 	AddVehicleSkin("91blazerpd","Vehicles/vehicle_blazer_meadesheriffshell");
 	AddVehicleSkin("91blazerpd","Vehicles/vehicle_blazer_rosewoodpoliceshell");
-	AddVehicleSkin("91blazerpd","Vehicles/vehicle_blazer_westpointpoliceshell");
+	AddVehicleSkin("91blazerpd","Vehicles/vehicle_blazer_westpointpoliceshell1");
+	AddVehicleSkin("91blazerpd","Vehicles/vehicle_blazer_westpointpoliceshell2");
 	AddVehicleSkin("91blazerpd","Vehicles/vehicle_blazer_muldraughpoliceshell");
 	AddVehicleSkin("91blazerpd","Vehicles/vehicle_blazer_riversidepoliceshell");
 	AddVehicleSkin("91blazerpd","Vehicles/vehicle_blazer_louisvillepoliceshell");
@@ -192,7 +221,8 @@ if getActivatedMods():contains("FRUsedCars") then
 	AddVehicleSkin("87capricePD","Vehicles/vehicle_87caprice_kspshell");
 	AddVehicleSkin("87capricePD","Vehicles/vehicle_87caprice_meadesheriffshell");
 	AddVehicleSkin("87capricePD","Vehicles/vehicle_87caprice_rosewoodpoliceshell");
-	AddVehicleSkin("87capricePD","Vehicles/vehicle_87caprice_westpointpoliceshell");
+	AddVehicleSkin("87capricePD","Vehicles/vehicle_87caprice_westpointpoliceshell1");
+	AddVehicleSkin("87capricePD","Vehicles/vehicle_87caprice_westpointpoliceshell2");
 	AddVehicleSkin("87capricePD","Vehicles/vehicle_87caprice_muldraughpoliceshell");
 	AddVehicleSkin("87capricePD","Vehicles/vehicle_87caprice_riversidepoliceshell");
 	AddVehicleSkin("87capricePD","Vehicles/vehicle_87caprice_louisvillepoliceshell");
@@ -225,6 +255,7 @@ if getActivatedMods():contains("FRUsedCars") then
 
 	if getActivatedMods():contains("RavenCreek") then
 
+		AddVehicleSkin("chevystepvanswat","Vehicles/vehicle_stepvanchevyravencreekpoliceshell");
 		AddVehicleSkin("85vicsheriff","Vehicles/vehicle_85crownvic_ravencreekpoliceshell");
 		AddVehicleSkin("92crownvicPD","Vehicles/vehicle_92crownvic_ravencreekpoliceshell");
 		AddVehicleSkin("91blazerpd","Vehicles/vehicle_blazer_ravencreekpoliceshell");

@@ -25,6 +25,7 @@ local function STRSpawns()
 	local FiremanFull = SandboxVars.STRS.FiremanFull
 	local USPS = SandboxVars.STRS.USPS
 	local Other = SandboxVars.STRS.Other
+	local Duffel = SandboxVars.STRS.Duffel
 	local Security = SandboxVars.STRS.Security
 	local RavenCreekPD = SandboxVars.STRS.RavenCreekPD
 	local RavenCreekInmate = SandboxVars.STRS.RavenCreekInmate
@@ -1275,62 +1276,7 @@ local function STRSpawns()
 		},
 	}
 
-
-	ZombiesZoneDefinition.WestPointPicnic = {
-		FederalRanger = {
-			name="FederalRanger",
-			chance=Ranger,
-		},
-		FederalRangerDress = {
-			name="FederalRangerDress",
-			chance=Dress,
-		},
-		State_LawRanger = {
-			name="State_LawRanger",
-			chance=Ranger,
-		},
-		State_LawRangerDress = {
-			name="State_LawRangerDress",
-			chance=Dress,
-		},
-		StateRanger = {
-			name="StateRanger",
-			chance=Ranger,
-		},
-		StateRangerDress = {
-			name="StateRangerDress",
-			chance=Dress,
-		},
-	}
-
-	ZombiesZoneDefinition.MuldraughPicnic = {
-		FederalRanger = {
-			name="FederalRanger",
-			chance=Ranger,
-		},
-		FederalRangerDress = {
-			name="FederalRangerDress",
-			chance=Dress,
-		},
-		State_LawRanger = {
-			name="State_LawRanger",
-			chance=Ranger,
-		},
-		State_LawRangerDress = {
-			name="State_LawRangerDress",
-			chance=Dress,
-		},
-		StateRanger = {
-			name="StateRanger",
-			chance=Ranger,
-		},
-		StateRangerDress = {
-			name="StateRangerDress",
-			chance=Dress,
-		},
-	}
-
-	ZombiesZoneDefinition.DixiePicnic = {
+	ZombiesZoneDefinition.MeadeRangers = {
 		FederalRanger = {
 			name="FederalRanger",
 			chance=Ranger,
@@ -1536,6 +1482,63 @@ local function STRSpawns()
 			beardStyles="null:80",
 		},
 	}
+
+		if SandboxVars.STR.DuffelLoot then
+
+			table.insert(ZombiesZoneDefinition.USPS,{name = "USPS_Mail_Bag", chance=Duffel});
+			table.insert(ZombiesZoneDefinition.LouisvilleKSP,{name = "KSP_Trooper_Bag", chance=Duffel});
+			table.insert(ZombiesZoneDefinition.MeadeRangers,{name = "FederalRanger_Bag", chance=Duffel});
+			table.insert(ZombiesZoneDefinition.MeadeRangers,{name = "StateRanger_Bag", chance=Duffel});
+			table.insert(ZombiesZoneDefinition.MeadeRangers,{name = "State_LawRanger_Bag", chance=Duffel});
+
+			if SandboxVars.STR.VestRosewood then
+				table.insert(ZombiesZoneDefinition.RosewoodSD,{name = "PoliceRosewood_Bag", chance=Duffel});
+			elseif not SandboxVars.STR.VestRosewood then
+				table.insert(ZombiesZoneDefinition.RosewoodSD,{name = "PoliceRosewoodNoVest_Bag", chance=Duffel});
+			end
+			if SandboxVars.STR.VestRiverside then
+				table.insert(ZombiesZoneDefinition.RiversidePD,{name = "PoliceRiverside_Bag", chance=Duffel});
+			elseif not SandboxVars.STR.VestRiverside then
+				table.insert(ZombiesZoneDefinition.RiversidePD,{name = "PoliceRiversideNoVest_Bag", chance=Duffel});
+			end
+			if SandboxVars.STR.VestMuldraugh then
+				table.insert(ZombiesZoneDefinition.MuldraughPD,{name = "PoliceMuldraugh_Bag", chance=Duffel});
+			elseif not SandboxVars.STR.VestMuldraugh then
+				table.insert(ZombiesZoneDefinition.MuldraughPD,{name = "PoliceMuldraughNoVest_Bag", chance=Duffel});
+			end
+			if SandboxVars.STR.VestWestPoint then
+				table.insert(ZombiesZoneDefinition.WestPointPD,{name = "PoliceWestPoint_Bag", chance=Duffel});
+			elseif not SandboxVars.STR.VestWestPoint then
+				table.insert(ZombiesZoneDefinition.WestPointPD,{name = "PoliceWestPointNoVest_Bag", chance=Duffel});
+			end
+			if SandboxVars.STR.VestJeffersonSD then
+				table.insert(ZombiesZoneDefinition.JeffersonSD,{name = "PoliceJeffersonSD_Bag", chance=Duffel});
+			elseif not SandboxVars.STR.VestJeffersonSD then
+				table.insert(ZombiesZoneDefinition.JeffersonSD,{name = "PoliceJeffersonSDNoVest_Bag", chance=Duffel});
+			end
+			if SandboxVars.STR.VestJeffersonPD then
+				table.insert(ZombiesZoneDefinition.JeffersonPD,{name = "PoliceJeffersonPD_Bag", chance=Duffel});
+			elseif not SandboxVars.STR.VestJeffersonPD then
+				table.insert(ZombiesZoneDefinition.JeffersonPD,{name = "PoliceJeffersonPDNoVest_Bag", chance=Duffel});
+			end
+			if SandboxVars.STR.VestLouisville then
+				table.insert(ZombiesZoneDefinition.LouisvillePD,{name = "PoliceLouisville_Bag", chance=Duffel});
+			elseif not SandboxVars.STR.VestLouisville then
+				table.insert(ZombiesZoneDefinition.LouisvillePD,{name = "PoliceLouisvilleNoVest_Bag", chance=Duffel});
+			end
+			if SandboxVars.STR.VestMeade then
+				table.insert(ZombiesZoneDefinition.MeadeSO,{name = "PoliceMeade_Bag", chance=Duffel});
+			elseif not SandboxVars.STR.VestMeade then
+				table.insert(ZombiesZoneDefinition.MeadeSO,{name = "PoliceMeadeNoVest_Bag", chance=Duffel});
+			end
+			if getActivatedMods():contains("RavenCreek") then
+				if SandboxVars.STR.VestRavenCreek then
+					table.insert(ZombiesZoneDefinition.PoliceRavenCreek,{name = "PoliceRavenCreek_Bag", chance=Duffel});
+				elseif not SandboxVars.STR.VestRavenCreek then
+					table.insert(ZombiesZoneDefinition.PoliceRavenCreek,{name = "PoliceRavenCreekNoVest_Bag", chance=Duffel});
+				end
+			end
+		end
 
 		if getActivatedMods():contains("TWDRG") then
 

@@ -13,4 +13,7 @@ IG_UI_EN = {
 
     IGUI_VehicleName92wrangler_USPS = "Lark Rancher",
 
+    IGUI_VehicleName86econolineswat_louisvillepd = "Franklin V250",
+    IGUI_VehicleName86econolineswat_jeffersonpd = "Franklin V250",
+
 }

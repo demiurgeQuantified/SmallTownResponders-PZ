@@ -189,7 +189,7 @@ option STRS.Security
 	type = integer,
 	min = 0,
 	max = 75,
-	default = 5,
+	default = 25,
 
 	page = STRS,
 	translation = STRS_Security,
@@ -203,6 +203,16 @@ option STRS.Other
 
 	page = STRS,
 	translation = STRS_Other,
+}
+option STRS.Duffel
+{
+	type = integer,
+	min = 0,
+	max = 75,
+	default = 1,
+
+	page = STRS,
+	translation = STRS_Duffel,
 }
 option STRS.FireFormal
 {
@@ -519,7 +529,7 @@ option STEV.JCDOC
 	type = integer,
 	min = 0,
 	max = 60,
-	default = 25,
+	default = 35,
 
 	page = STEV,
 	translation = STEV_JCDOC,

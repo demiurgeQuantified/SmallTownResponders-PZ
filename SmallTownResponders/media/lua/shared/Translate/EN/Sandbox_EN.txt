@@ -21,7 +21,7 @@ Sandbox_EN = {
 	Sandbox_STR_ZombieOverrides_tooltip = "Enable this to override vanilla police/fire/ems/prison zombies.",
 
 	Sandbox_STR_WantSusceptibleOutfits = "Allow Susceptible Zombies",
-	Sandbox_STR_WantSusceptibleOutfits_tooltip = "If disabled, all Susceptible STFR zombies will become regular STFR zombies. Does nothing if Susceptible isn't enabled.",
+	Sandbox_STR_WantSusceptibleOutfits_tooltip = "If disabled, all Susceptible STFR zombies will become regular STFR zombies. Does nothing if Susceptible isn't enabled!",
 
 	Sandbox_STR_VehicleOverrides = "Override Vehicles",
 	Sandbox_STR_VehicleOverrides_tooltip = "Enable this to override vanilla and Filibuster Rhymes police/fire/ems/prison vehicles.",
@@ -29,11 +29,32 @@ Sandbox_EN = {
 	Sandbox_STR_DuffelLoot = "Enable Duffel Bags",
 	Sandbox_STR_DuffelLoot_tooltip = "Enable this to allow STFR's custom duffel bags to spawn.",
 
+	Sandbox_STR_VestRosewood = "Allow Rosewood SD Vests",
+	Sandbox_STR_VestRosewood_tooltip = "Enable this for bulletproof vests on Rosewood SD zombies",
+
+	Sandbox_STR_VestRiverside = "Allow Riverside PD Vests",
+	Sandbox_STR_VestRiverside_tooltip = "Enable this for bulletproof vests on Riverside PD zombies",
+
+	Sandbox_STR_VestMuldraugh = "Allow Muldraugh PD Vests",
+	Sandbox_STR_VestMuldraugh_tooltip = "Enable this for bulletproof vests on Muldraugh PD zombies",
+
+	Sandbox_STR_VestWestPoint = "Allow WestPoint PD Vests",
+	Sandbox_STR_VestWestPoint_tooltip = "Enable this for bulletproof vests on WestPoint PD zombies",
+
+	Sandbox_STR_VestJeffersonSD = "Allow Jefferson SD Vests",
+	Sandbox_STR_VestJeffersonSD_tooltip = "Enable this for bulletproof vests on Jefferson SD zombies",
+
+	Sandbox_STR_VestJeffersonPD = "Allow Jefferson PD Vests",
+	Sandbox_STR_VestJeffersonPD_tooltip = "Enable this for bulletproof vests on Jefferson PD zombies",
+
+	Sandbox_STR_VestLouisville = "Allow Louisville DoP Vests",
+	Sandbox_STR_VestLouisville_tooltip = "Enable this for bulletproof vests on Louisville DoP zombies",
+
+	Sandbox_STR_VestMeade = "Allow Meade SO Vests",
+	Sandbox_STR_VestMeade_tooltip = "Enable this for bulletproof vests on Meade SO zombies",
+
 	Sandbox_STR_TrunkOverrides = "Override Containers",
 	Sandbox_STR_TrunkOverrides_tooltip = "Enable this to override certain vanilla items in vehicle trunks and containers. Only runs once per vehicle/container.",
-
-	Sandbox_STR_TickrateOverrides = "Override Response Speed",
-	Sandbox_STR_TickrateOverrides_tooltip = "How fast STFR overrides zombies. Vehicles override instantly. Lower numbers mean faster overrides, but more lag.",
 
 	Sandbox_STRS = "Small Town First Responders Zombies",
 
@@ -54,6 +75,9 @@ Sandbox_EN = {
 
 	Sandbox_STRS_Other = "Other Uniforms Spawn Chance",
 	Sandbox_STRS_Other_tooltip = "The spawn chance for Other zombies, like Judges",
+
+	Sandbox_STRS_Duffel = "STFR Duffel Zombies Spawn Chance",
+	Sandbox_STRS_Duffel_tooltip = "The spawn chance for certain STFR zombies wearing duffel bags. Does nothing if Enable Duffel Bags is false!",
 
 	Sandbox_STRS_FireFormal = "Formal Fire Uniforms Spawn Chance",
 	Sandbox_STRS_FireFormal_tooltip = "The spawn chance for all Formal Fire zombies.",
@@ -110,10 +134,10 @@ Sandbox_EN = {
 	Sandbox_STRS_MeadeInmateRed_tooltip = "The spawn chance for Meade DOC Supermax zombies.",
 
 	Sandbox_STRS_RavenCreekPD = "RavenCreek PD Spawn Chance",
-	Sandbox_STRS_RavenCreekPD_tooltip = "The spawn chance for RavenCreek PD zombies. Does nothing if RavenCreek is not enabled!",
+	Sandbox_STRS_RavenCreekPD_tooltip = "The spawn chance for RavenCreek PD zombies. Does nothing if RavenCreek isn't enabled!",
 
 	Sandbox_STRS_RavenCreekInmate = "RavenCreek DOC Inmate Spawn Chance",
-	Sandbox_STRS_RavenCreekInmate_tooltip = "The spawn chance for RavenCreek DOC Inmate zombies. Does nothing if RavenCreek is not enabled!",
+	Sandbox_STRS_RavenCreekInmate_tooltip = "The spawn chance for RavenCreek DOC Inmate zombies. Does nothing if RavenCreek isn't enabled!",
 
 	Sandbox_STEV = "Small Town First Responders Vehicles",
 
@@ -172,16 +196,16 @@ Sandbox_EN = {
 	Sandbox_STEV_BankTruck_tooltip = "The spawn chance for the custom Bank Truck.",
 
 	Sandbox_STEV_FSwat = "Misc Spawn Chance",
-	Sandbox_STEV_FSwat_tooltip = "The spawn chance for Filibuster Rhymes SWAT trucks, and Military And Police Used Car Skins vehicles in police zones. Does nothing if Filibuster Rhymes Used Cars and/or Military And Police Used Car Skins are not enabled!",
+	Sandbox_STEV_FSwat_tooltip = "The spawn chance for Filibuster Rhymes SWAT trucks, and Military And Police Used Car Skins vehicles in police zones. Does nothing if Filibuster Rhymes Used Cars and/or Military And Police Used Car Skins aren't enabled!",
 
 	Sandbox_STEV_RCRPD = "RavenCreek PD Spawn Chance",
-	Sandbox_STEV_RCRPD_tooltip = "The spawn chance for RavenCreek PD cars. Does nothing if RavenCreek is not enabled!",
+	Sandbox_STEV_RCRPD_tooltip = "The spawn chance for RavenCreek PD cars. Does nothing if RavenCreek isn't enabled!",
 
 	Sandbox_STEV_RCRFD = "FD RavenCreek Spawn Chance",
-	Sandbox_STEV_RCRFD_tooltip = "The spawn chance for FD RavenCreek cars. Does nothing if RavenCreek is not enabled!",
+	Sandbox_STEV_RCRFD_tooltip = "The spawn chance for FD RavenCreek cars. Does nothing if RavenCreek isn't enabled!",
 
 	Sandbox_STEV_RCRDOC = "RavenCreek DoC Spawn Chance",
-	Sandbox_STEV_RCRDOC_tooltip = "The spawn chance for RavenCreek DoC cars. Does nothing if RavenCreek is not enabled!",
+	Sandbox_STEV_RCRDOC_tooltip = "The spawn chance for RavenCreek DoC cars. Does nothing if RavenCreek isn't enabled!",
 
 	Sandbox_STEV_SRate = "STFR Spawn Rate",
 	Sandbox_STEV_SRate_tooltip = "The overall chance of an STFR car to spawn.",

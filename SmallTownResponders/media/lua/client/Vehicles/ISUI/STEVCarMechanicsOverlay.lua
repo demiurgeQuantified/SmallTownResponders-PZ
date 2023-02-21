@@ -13,3 +13,10 @@ ISCarMechanicsOverlay.CarList["Base.prisonbus_meade"] = {imgPrefix = "van_", x=1
 ISCarMechanicsOverlay.CarList["Base.92wrangler_USPS"] = {imgPrefix = "suv_", x=10,y=0};
 
 ISCarMechanicsOverlay.CarList["Base.87gmcarmouredcar"] = {imgPrefix = "van_", x=10,y=0};
+
+ISCarMechanicsOverlay.CarList["Base.86econolineswat_louisvillepd"] = {imgPrefix = "van_", x=10,y=0};
+ISCarMechanicsOverlay.CarList["Base.86econolineswat_jeffersonpd"] = {imgPrefix = "van_", x=10,y=0};
+
+ISCarMechanicsOverlay.CarList["Base.VanSwat_louisvillepd"] = {imgPrefix = "van_", x=10,y=0};
+ISCarMechanicsOverlay.CarList["Base.VanSwat_jeffersonpd"] = {imgPrefix = "van_", x=10,y=0};
+ISCarMechanicsOverlay.CarList["Base.VanSwat_ravencreekpd"] = {imgPrefix = "van_", x=10,y=0};

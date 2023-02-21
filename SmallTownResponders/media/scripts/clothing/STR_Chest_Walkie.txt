@@ -9,7 +9,7 @@ module STR {
 		Type = Clothing,
 		DisplayName = Security Receiver,
 		ClothingItem = Chest_Walkie,
-		BodyLocation = Tail,
+		BodyLocation = ChestWalkie,
 		Weight	=	0.5,
 		Icon = Security_Walkie,
 		WorldStaticModel = SecurityWalkie_Ground,

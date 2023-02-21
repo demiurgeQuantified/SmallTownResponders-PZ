@@ -124,4 +124,116 @@ module STR {
         FabricType = Leather,
         WorldStaticModel = Gloves_Ground,
 	}
+	item Medical_Gloves_Black
+	{
+	    DisplayCategory = FirstAid,
+		Type = Clothing,
+		DisplayName = Surgical Gloves,
+		ClothingItem = Medical_Gloves_Black,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = Medical_Gloves_Black,
+		Weight = 0.1,
+        Insulation = 0.25,
+        WindResistance = 0.3,
+        WorldStaticModel = Gloves_Ground,
+	}
+	item Medical_Gloves_Green
+	{
+	    DisplayCategory = FirstAid,
+		Type = Clothing,
+		DisplayName = Surgical Gloves,
+		ClothingItem = Medical_Gloves_Green,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = Medical_Gloves_Green,
+		Weight = 0.1,
+        Insulation = 0.25,
+        WindResistance = 0.3,
+        WorldStaticModel = Gloves_Ground,
+	}
+	item Medical_Gloves_Light_Blue
+	{
+	    DisplayCategory = FirstAid,
+		Type = Clothing,
+		DisplayName = Surgical Gloves,
+		ClothingItem = Medical_Gloves_Light_Blue,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = Medical_Gloves_Light_Blue,
+		Weight = 0.1,
+        Insulation = 0.25,
+        WindResistance = 0.3,
+        WorldStaticModel = Gloves_Ground,
+	}
+	item Medical_Gloves_Orange
+	{
+	    DisplayCategory = FirstAid,
+		Type = Clothing,
+		DisplayName = Surgical Gloves,
+		ClothingItem = Medical_Gloves_Orange,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = Medical_Gloves_Orange,
+		Weight = 0.1,
+        Insulation = 0.25,
+        WindResistance = 0.3,
+        WorldStaticModel = Gloves_Ground,
+	}
+	item Medical_Gloves_Purple
+	{
+	    DisplayCategory = FirstAid,
+		Type = Clothing,
+		DisplayName = Surgical Gloves,
+		ClothingItem = Medical_Gloves_Purple,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = Medical_Gloves_Purple,
+		Weight = 0.1,
+        Insulation = 0.25,
+        WindResistance = 0.3,
+        WorldStaticModel = Gloves_Ground,
+	}
+	item Medical_Gloves_Red
+	{
+	    DisplayCategory = FirstAid,
+		Type = Clothing,
+		DisplayName = Surgical Gloves,
+		ClothingItem = Medical_Gloves_Red,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = Medical_Gloves_Red,
+		Weight = 0.1,
+        Insulation = 0.25,
+        WindResistance = 0.3,
+        WorldStaticModel = Gloves_Ground,
+	}
+	item Medical_Gloves_Yellow
+	{
+	    DisplayCategory = FirstAid,
+		Type = Clothing,
+		DisplayName = Surgical Gloves,
+		ClothingItem = Medical_Gloves_Yellow,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = Medical_Gloves_Yellow,
+		Weight = 0.1,
+        Insulation = 0.25,
+        WindResistance = 0.3,
+        WorldStaticModel = Gloves_Ground,
+	}
+	item Medical_Gloves_White
+	{
+	    DisplayCategory = FirstAid,
+		Type = Clothing,
+		DisplayName = Surgical Gloves,
+		ClothingItem = Medical_Gloves_White,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = Medical_Gloves_White,
+		Weight = 0.1,
+        Insulation = 0.25,
+        WindResistance = 0.3,
+        WorldStaticModel = Gloves_Ground,
+	}
 }
