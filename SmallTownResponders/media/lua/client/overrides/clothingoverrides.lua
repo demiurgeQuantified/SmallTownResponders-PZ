@@ -6,7 +6,7 @@ local ClothingOverrides = {}
 ClothingOverrides.outfitsToSwap = {
     Police = 'Police',
     PoliceState = 'Police',
-    PoliceRiot = 'Police',
+    PoliceRiot = 'PoliceRiot',
     Fireman = 'Fireman',
     FiremanFullSuit = 'Fireman',
     Ranger = 'Ranger',
@@ -67,6 +67,7 @@ ClothingOverrides.zonesToOutfit = {
 		PoliceSusceptible = 'SusceptiblePoliceLouisville',},
     KSP = {
         --Police = 'KSP_Trooper',
+        PoliceRiot = 'KSP_TrooperRiot',
 		PoliceSusceptible = 'SusceptibleKSP_Trooper',},
     -- default
     Meade = {
@@ -133,48 +134,66 @@ Events.OnInitGlobalModData.Add(function()
 		ClothingOverrides.zonesToOutfit.KSP.Police = {"KSP_Trooper_Bag", "KSP_Trooper", "KSP_Trooper", "KSP_Trooper", "KSP_Trooper"}
 		if SandboxVars.STR.VestRosewood then
 			ClothingOverrides.zonesToOutfit.Rosewood.Police = {"PoliceRosewood_Bag", "PoliceRosewood", "PoliceRosewood", "PoliceRosewood", "PoliceRosewood"}
+			ClothingOverrides.zonesToOutfit.Rosewood.PoliceRiot = "PoliceRosewoodRiot"
 		elseif not SandboxVars.STR.VestRosewood then
 			ClothingOverrides.zonesToOutfit.Rosewood.Police = {"PoliceRosewoodNoVest_Bag", "PoliceRosewoodNoVest", "PoliceRosewoodNoVest", "PoliceRosewoodNoVest", "PoliceRosewoodNoVest"}
+			ClothingOverrides.zonesToOutfit.Rosewood.PoliceRiot = "PoliceRosewoodRiotNoVest"
 		end
 		if SandboxVars.STR.VestRavenCreek then
 			ClothingOverrides.zonesToOutfit.RavenCreek.Police = {"PoliceRavenCreek_Bag", "PoliceRavenCreek", "PoliceRavenCreek", "PoliceRavenCreek", "PoliceRavenCreek"}
+			ClothingOverrides.zonesToOutfit.RavenCreek.PoliceRiot = "PoliceRavenCreekRiot"
 		elseif not SandboxVars.STR.VestRavenCreek then
 			ClothingOverrides.zonesToOutfit.RavenCreek.Police = {"PoliceRavenCreekNoVest_Bag", "PoliceRavenCreekNoVest", "PoliceRavenCreekNoVest", "PoliceRavenCreekNoVest", "PoliceRavenCreekNoVest"}
+			ClothingOverrides.zonesToOutfit.RavenCreek.PoliceRiot = "PoliceRavenCreekRiotNoVest"
 		end
 		if SandboxVars.STR.VestRiverside then
 			ClothingOverrides.zonesToOutfit.Riverside.Police = {"PoliceRiverside_Bag", "PoliceRiverside", "PoliceRiverside", "PoliceRiverside", "PoliceRiverside"}
+			ClothingOverrides.zonesToOutfit.Riverside.PoliceRiot = "PoliceRiversideRiot"
 		elseif not SandboxVars.STR.VestRiverside then
 			ClothingOverrides.zonesToOutfit.Riverside.Police = {"PoliceRiversideNoVest_Bag", "PoliceRiversideNoVest", "PoliceRiversideNoVest", "PoliceRiversideNoVest", "PoliceRiversideNoVest"}
+			ClothingOverrides.zonesToOutfit.Riverside.PoliceRiot = "PoliceRiversideRiotNoVest"
 		end
 		if SandboxVars.STR.VestMuldraugh then
 			ClothingOverrides.zonesToOutfit.Muldraugh.Police = {"PoliceMuldraugh_Bag", "PoliceMuldraugh", "PoliceMuldraugh", "PoliceMuldraugh", "PoliceMuldraugh"}
+			ClothingOverrides.zonesToOutfit.Muldraugh.PoliceRiot = "PoliceMuldraughRiot"
 		elseif not SandboxVars.STR.VestMuldraugh then
 			ClothingOverrides.zonesToOutfit.Muldraugh.Police = {"PoliceMuldraughNoVest_Bag", "PoliceMuldraughNoVest", "PoliceMuldraughNoVest", "PoliceMuldraughNoVest", "PoliceMuldraughNoVest"}
+			ClothingOverrides.zonesToOutfit.Muldraugh.PoliceRiot = "PoliceMuldraughRiotNoVest"
 		end
 		if SandboxVars.STR.VestWestPoint then
 			ClothingOverrides.zonesToOutfit.WestPoint.Police = {"PoliceWestPoint_Bag", "PoliceWestPoint", "PoliceWestPoint", "PoliceWestPoint", "PoliceWestPoint"}
+			ClothingOverrides.zonesToOutfit.WestPoint.PoliceRiot = "PoliceWestPointRiot"
 		elseif not SandboxVars.STR.VestWestPoint then
 			ClothingOverrides.zonesToOutfit.WestPoint.Police = {"PoliceWestPointNoVest_Bag", "PoliceWestPointNoVest", "PoliceWestPointNoVest", "PoliceWestPointNoVest", "PoliceWestPointNoVest"}
+			ClothingOverrides.zonesToOutfit.WestPoint.PoliceRiot = "PoliceWestPointRiotNoVest"
 		end
 		if SandboxVars.STR.VestJeffersonSD then
 			ClothingOverrides.zonesToOutfit.JeffersonSD.Police = {"PoliceJeffersonSD_Bag", "PoliceJeffersonSD", "PoliceJeffersonSD", "PoliceJeffersonSD", "PoliceJeffersonSD"}
+			ClothingOverrides.zonesToOutfit.JeffersonSD.PoliceRiot = {"PoliceJeffersonSDRiot"}
 		elseif not SandboxVars.STR.VestJeffersonSD then
 			ClothingOverrides.zonesToOutfit.JeffersonSD.Police = {"PoliceJeffersonSDNoVest_Bag", "PoliceJeffersonSDNoVest", "PoliceJeffersonSDNoVest", "PoliceJeffersonSDNoVest", "PoliceJeffersonSDNoVest"}
+			ClothingOverrides.zonesToOutfit.JeffersonSD.PoliceRiot = {"PoliceJeffersonSDRiotNoVest"}
 		end
 		if SandboxVars.STR.VestJeffersonPD then
 			ClothingOverrides.zonesToOutfit.JeffersonPD.Police = {"PoliceJeffersonPD_Bag", "PoliceJeffersonPD", "PoliceJeffersonPD", "PoliceJeffersonPD", "PoliceJeffersonPD"}
+			ClothingOverrides.zonesToOutfit.JeffersonPD.PoliceRiot = {"PoliceJeffersonPDRiot"}
 		elseif not SandboxVars.STR.VestJeffersonPD then
 			ClothingOverrides.zonesToOutfit.JeffersonPD.Police = {"PoliceJeffersonPDNoVest_Bag", "PoliceJeffersonPDNoVest", "PoliceJeffersonPDNoVest", "PoliceJeffersonPDNoVest", "PoliceJeffersonPDNoVest"}
+			ClothingOverrides.zonesToOutfit.JeffersonPD.PoliceRiot = {"PoliceJeffersonPDRiotNoVest"}
 		end
 		if SandboxVars.STR.VestLouisville then
 			ClothingOverrides.zonesToOutfit.LouisvillePD.Police = {"PoliceLouisville_Bag", "PoliceLouisville", "PoliceLouisville", "PoliceLouisville", "PoliceLouisville"}
+			ClothingOverrides.zonesToOutfit.LouisvillePD.PoliceRiot = {"PoliceLouisvilleRiot"}
 		elseif not SandboxVars.STR.VestLouisville then
 			ClothingOverrides.zonesToOutfit.LouisvillePD.Police = {"PoliceLouisvilleNoVest_Bag", "PoliceLouisvilleNoVest", "PoliceLouisvilleNoVest", "PoliceLouisvilleNoVest", "PoliceLouisvilleNoVest"}
+			ClothingOverrides.zonesToOutfit.LouisvillePD.PoliceRiot = {"PoliceLouisvilleRiotNoVest"}
 		end
 		if SandboxVars.STR.VestMeade then
 			ClothingOverrides.zonesToOutfit.Meade.Police = {"PoliceMeade_Bag", "PoliceMeade", "PoliceMeade", "PoliceMeade", "PoliceMeade"}
+			ClothingOverrides.zonesToOutfit.Meade.PoliceRiot = {"PoliceMeadeRiot"}
 		elseif not SandboxVars.STR.VestMeade then
 			ClothingOverrides.zonesToOutfit.Meade.Police = {"PoliceMeadeNoVest_Bag", "PoliceMeadeNoVest", "PoliceMeadeNoVest", "PoliceMeadeNoVest", "PoliceMeadeNoVest"}
+			ClothingOverrides.zonesToOutfit.Meade.PoliceRiot = {"PoliceMeadeRiotNoVest"}
 		end
 	elseif not SandboxVars.STR.DuffelLoot then
 		ClothingOverrides.zonesToOutfit.Meade.Ranger = {"FederalRanger", "State_LawRanger", "StateRanger"}
@@ -182,48 +201,66 @@ Events.OnInitGlobalModData.Add(function()
 		ClothingOverrides.zonesToOutfit.KSP.Police = "KSP_Trooper"
 		if SandboxVars.STR.VestRosewood then
 			ClothingOverrides.zonesToOutfit.Rosewood.Police = "PoliceRosewood"
+			ClothingOverrides.zonesToOutfit.Rosewood.PoliceRiot = "PoliceRosewoodRiot"
 		elseif not SandboxVars.STR.VestRosewood then
 			ClothingOverrides.zonesToOutfit.Rosewood.Police = "PoliceRosewoodNoVest"
+			ClothingOverrides.zonesToOutfit.Rosewood.PoliceRiot = "PoliceRosewoodRiotNoVest"
 		end
 		if SandboxVars.STR.VestRavenCreek then
 			ClothingOverrides.zonesToOutfit.RavenCreek.Police = "PoliceRavenCreek"
+			ClothingOverrides.zonesToOutfit.RavenCreek.PoliceRiot = "PoliceRavenCreekRiot"
 		elseif not SandboxVars.STR.VestRavenCreek then
 			ClothingOverrides.zonesToOutfit.RavenCreek.Police = "PoliceRavenCreekNoVest"
+			ClothingOverrides.zonesToOutfit.RavenCreek.PoliceRiot = "PoliceRavenCreekRiotNoVest"
 		end
 		if SandboxVars.STR.VestRiverside then
 			ClothingOverrides.zonesToOutfit.Riverside.Police = "PoliceRiverside"
+			ClothingOverrides.zonesToOutfit.Riverside.PoliceRiot = "PoliceRiversideRiot"
 		elseif not SandboxVars.STR.VestRiverside then
 			ClothingOverrides.zonesToOutfit.Riverside.Police = "PoliceRiversideNoVest"
+			ClothingOverrides.zonesToOutfit.Riverside.PoliceRiot = "PoliceRiversideRiotNoVest"
 		end
 		if SandboxVars.STR.VestMuldraugh then
 			ClothingOverrides.zonesToOutfit.Muldraugh.Police = "PoliceMuldraugh"
+			ClothingOverrides.zonesToOutfit.Muldraugh.PoliceRiot = "PoliceMuldraughRiot"
 		elseif not SandboxVars.STR.VestMuldraugh then
 			ClothingOverrides.zonesToOutfit.Muldraugh.Police = "PoliceMuldraughNoVest"
+			ClothingOverrides.zonesToOutfit.Muldraugh.PoliceRiot = "PoliceMuldraughRiotNoVest"
 		end
 		if SandboxVars.STR.VestWestPoint then
 			ClothingOverrides.zonesToOutfit.WestPoint.Police = "PoliceWestPoint"
+			ClothingOverrides.zonesToOutfit.WestPoint.PoliceRiot = "PoliceWestPointRiot"
 		elseif not SandboxVars.STR.VestWestPoint then
 			ClothingOverrides.zonesToOutfit.WestPoint.Police = "PoliceWestPointNoVest"
+			ClothingOverrides.zonesToOutfit.WestPoint.PoliceRiot = "PoliceWestPointRiotNoVest"
 		end
 		if SandboxVars.STR.VestJeffersonSD then
 			ClothingOverrides.zonesToOutfit.JeffersonSD.Police = "PoliceJeffersonSD"
+			ClothingOverrides.zonesToOutfit.JeffersonSD.PoliceRiot = "PoliceJeffersonSDRiot"
 		elseif not SandboxVars.STR.VestJeffersonSD then
 			ClothingOverrides.zonesToOutfit.JeffersonSD.Police = "PoliceJeffersonSDNoVest"
+			ClothingOverrides.zonesToOutfit.JeffersonSD.PoliceRiot = "PoliceJeffersonSDRiotNoVest"
 		end
 		if SandboxVars.STR.VestJeffersonPD then
 			ClothingOverrides.zonesToOutfit.JeffersonPD.Police = "PoliceJeffersonPD"
+			ClothingOverrides.zonesToOutfit.JeffersonPD.PoliceRiot = "PoliceJeffersonPDRiot"
 		elseif not SandboxVars.STR.VestJeffersonPD then
 			ClothingOverrides.zonesToOutfit.JeffersonPD.Police = "PoliceJeffersonPDNoVest"
+			ClothingOverrides.zonesToOutfit.JeffersonPD.PoliceRiot = "PoliceJeffersonPDRiotNoVest"
 		end
 		if SandboxVars.STR.VestLouisville then
 			ClothingOverrides.zonesToOutfit.LouisvillePD.Police = "PoliceLouisville"
+			ClothingOverrides.zonesToOutfit.LouisvillePD.PoliceRiot = "PoliceLouisvilleRiot"
 		elseif not SandboxVars.STR.VestLouisville then
 			ClothingOverrides.zonesToOutfit.LouisvillePD.Police = "PoliceLouisvilleNoVest"
+			ClothingOverrides.zonesToOutfit.LouisvillePD.PoliceRiot = "PoliceLouisvilleRiotNoVest"
 		end
 		if SandboxVars.STR.VestMeade then
 			ClothingOverrides.zonesToOutfit.Meade.Police = "PoliceMeade"
+			ClothingOverrides.zonesToOutfit.Meade.PoliceRiot = "PoliceMeadeRiot"
 		elseif not SandboxVars.STR.VestMeade then
 			ClothingOverrides.zonesToOutfit.Meade.Police = "PoliceMeadeNoVest"
+			ClothingOverrides.zonesToOutfit.Meade.PoliceRiot = "PoliceMeadeRiotNoVest"
 		end
 	end
 	if not SandboxVars.STR.WantSusceptibleOutfits then

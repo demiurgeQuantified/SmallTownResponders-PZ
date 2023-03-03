@@ -531,73 +531,77 @@ local function STEVSpawns()
 
 			end
 
-			-- Meade County Sheriff
-			VehicleZoneDistribution.policemeade.vehicles["Base.CarLightsPolice"] = {index = MCSO[1], spawnChance = SandboxVars.STEV.Meade};
-			VehicleZoneDistribution.policemeade.vehicles["Base.PickUpVanLightsPolice"] = {index = MCSO[2], spawnChance = SandboxVars.STEV.Meade};
+			if SandboxVars.STEV.VCars then
 
-			-- Riverside Police
-			VehicleZoneDistribution.policeriversidepd.vehicles["Base.CarLightsPolice"] = {index = RSPD[1], spawnChance = SandboxVars.STEV.Riverside};
-			VehicleZoneDistribution.policeriversidepd.vehicles["Base.PickUpVanLightsPolice"] = {index = RSPD[2], spawnChance = SandboxVars.STEV.Riverside};
+				-- Meade County Sheriff
+				VehicleZoneDistribution.policemeade.vehicles["Base.CarLightsPolice"] = {index = MCSO[1], spawnChance = SandboxVars.STEV.Meade};
+				VehicleZoneDistribution.policemeade.vehicles["Base.PickUpVanLightsPolice"] = {index = MCSO[2], spawnChance = SandboxVars.STEV.Meade};
 
-			-- Rosewood Police
-			VehicleZoneDistribution.policerosewoodsd.vehicles["Base.CarLightsPolice"] = {index = RWSD[1], spawnChance = SandboxVars.STEV.Rosewood};
-			VehicleZoneDistribution.policerosewoodsd.vehicles["Base.PickUpVanLightsPolice"] = {index = RWSD[2], spawnChance = SandboxVars.STEV.Rosewood};
+				-- Riverside Police
+				VehicleZoneDistribution.policeriversidepd.vehicles["Base.CarLightsPolice"] = {index = RSPD[1], spawnChance = SandboxVars.STEV.Riverside};
+				VehicleZoneDistribution.policeriversidepd.vehicles["Base.PickUpVanLightsPolice"] = {index = RSPD[2], spawnChance = SandboxVars.STEV.Riverside};
 
-			-- WestPoint Police
-			VehicleZoneDistribution.policewestpointpd.vehicles["Base.CarLightsPolice"] = {index = WPPD[1], spawnChance = SandboxVars.STEV.WestPoint};
-			VehicleZoneDistribution.policewestpointpd.vehicles["Base.PickUpVanLightsPolice"] = {index = WPPD[2], spawnChance = SandboxVars.STEV.WestPoint};
+				-- Rosewood Police
+				VehicleZoneDistribution.policerosewoodsd.vehicles["Base.CarLightsPolice"] = {index = RWSD[1], spawnChance = SandboxVars.STEV.Rosewood};
+				VehicleZoneDistribution.policerosewoodsd.vehicles["Base.PickUpVanLightsPolice"] = {index = RWSD[2], spawnChance = SandboxVars.STEV.Rosewood};
 
-			-- Muldraugh Police
-			VehicleZoneDistribution.policemuldraughpd.vehicles["Base.CarLightsPolice"] = {index = MDPD[1], spawnChance = SandboxVars.STEV.Muldraugh};
-			VehicleZoneDistribution.policemuldraughpd.vehicles["Base.PickUpVanLightsPolice"] = {index = MDPD[2], spawnChance = SandboxVars.STEV.Muldraugh};
+				-- WestPoint Police
+				VehicleZoneDistribution.policewestpointpd.vehicles["Base.CarLightsPolice"] = {index = WPPD[1], spawnChance = SandboxVars.STEV.WestPoint};
+				VehicleZoneDistribution.policewestpointpd.vehicles["Base.PickUpVanLightsPolice"] = {index = WPPD[2], spawnChance = SandboxVars.STEV.WestPoint};
 
-			-- Jefferson County Sheriff
-			VehicleZoneDistribution.policejeffersonsd.vehicles["Base.CarLightsPolice"] = {index = JCSD[1], spawnChance = SandboxVars.STEV.JCSD};
-			VehicleZoneDistribution.policejeffersonsd.vehicles["Base.PickUpVanLightsPolice"] = {index = JCSD[2], spawnChance = SandboxVars.STEV.JCSD};
+				-- Muldraugh Police
+				VehicleZoneDistribution.policemuldraughpd.vehicles["Base.CarLightsPolice"] = {index = MDPD[1], spawnChance = SandboxVars.STEV.Muldraugh};
+				VehicleZoneDistribution.policemuldraughpd.vehicles["Base.PickUpVanLightsPolice"] = {index = MDPD[2], spawnChance = SandboxVars.STEV.Muldraugh};
 
-			-- Jefferson County Police
-			VehicleZoneDistribution.policejeffersonpd.vehicles["Base.CarLightsPolice"] = {index = JCPD[1], spawnChance = SandboxVars.STEV.JCPD};
-			VehicleZoneDistribution.policejeffersonpd.vehicles["Base.PickUpVanLightsPolice"] = {index = JCPD[2], spawnChance = SandboxVars.STEV.JCPD};
+				-- Jefferson County Sheriff
+				VehicleZoneDistribution.policejeffersonsd.vehicles["Base.CarLightsPolice"] = {index = JCSD[1], spawnChance = SandboxVars.STEV.JCSD};
+				VehicleZoneDistribution.policejeffersonsd.vehicles["Base.PickUpVanLightsPolice"] = {index = JCSD[2], spawnChance = SandboxVars.STEV.JCSD};
 
-			-- Kentucky State Police
-			VehicleZoneDistribution.policeksp.vehicles["Base.CarLightsPolice"] = {index = KSP[1], spawnChance = SandboxVars.STEV.KSP};
-			VehicleZoneDistribution.policeksp.vehicles["Base.PickUpVanLightsPolice"] = {index = KSP[2], spawnChance = SandboxVars.STEV.KSP};
+				-- Jefferson County Police
+				VehicleZoneDistribution.policejeffersonpd.vehicles["Base.CarLightsPolice"] = {index = JCPD[1], spawnChance = SandboxVars.STEV.JCPD};
+				VehicleZoneDistribution.policejeffersonpd.vehicles["Base.PickUpVanLightsPolice"] = {index = JCPD[2], spawnChance = SandboxVars.STEV.JCPD};
 
-			-- Louisville Police
-			VehicleZoneDistribution.policelouisvillepd.vehicles["Base.CarLightsPolice"] = {index = LVPD[1], spawnChance = SandboxVars.STEV.Louisville};
-			VehicleZoneDistribution.policelouisvillepd.vehicles["Base.PickUpVanLightsPolice"] = {index = LVPD[2], spawnChance = SandboxVars.STEV.Louisville};
+				-- Kentucky State Police
+				VehicleZoneDistribution.policeksp.vehicles["Base.CarLightsPolice"] = {index = KSP[1], spawnChance = SandboxVars.STEV.KSP};
+				VehicleZoneDistribution.policeksp.vehicles["Base.PickUpVanLightsPolice"] = {index = KSP[2], spawnChance = SandboxVars.STEV.KSP};
 
-			-- Rosewood DOC
-			VehicleZoneDistribution.policerosewooddoc.vehicles["Base.Van_meadedoc"] = {index = -1, spawnChance = SandboxVars.STEV.MCDOC};
-			VehicleZoneDistribution.policerosewooddoc.vehicles["Base.CarLightsPolice"] = {index = 2, spawnChance = SandboxVars.STEV.MCDOC};
-			VehicleZoneDistribution.policerosewooddoc.vehicles["Base.PickUpVanLightsPolice"] = {index = 2, spawnChance = SandboxVars.STEV.MCDOC};
+				-- Louisville Police
+				VehicleZoneDistribution.policelouisvillepd.vehicles["Base.CarLightsPolice"] = {index = LVPD[1], spawnChance = SandboxVars.STEV.Louisville};
+				VehicleZoneDistribution.policelouisvillepd.vehicles["Base.PickUpVanLightsPolice"] = {index = LVPD[2], spawnChance = SandboxVars.STEV.Louisville};
 
-			-- Jefferson County DOC
-			VehicleZoneDistribution.policejeffersondoc.vehicles["Base.Van_jeffersondoc"] = {index = -1, spawnChance = JCDOC};
+				-- Rosewood DOC
+				VehicleZoneDistribution.policerosewooddoc.vehicles["Base.Van_meadedoc"] = {index = -1, spawnChance = SandboxVars.STEV.MCDOC};
+				VehicleZoneDistribution.policerosewooddoc.vehicles["Base.CarLightsPolice"] = {index = 2, spawnChance = SandboxVars.STEV.MCDOC};
+				VehicleZoneDistribution.policerosewooddoc.vehicles["Base.PickUpVanLightsPolice"] = {index = 2, spawnChance = SandboxVars.STEV.MCDOC};
 
-			-- Park Rangers
-			VehicleZoneDistribution.rangermeade.vehicles["Base.CarLights"] = {index = RGR[1], spawnChance = SandboxVars.STEV.Rangers};
-			VehicleZoneDistribution.rangermeade.vehicles["Base.CarLights"] = {index = RGR[2], spawnChance = SandboxVars.STEV.Rangers};
-			VehicleZoneDistribution.rangermeade.vehicles["Base.CarLights"] = {index = RGR[3], spawnChance = SandboxVars.STEV.Rangers};
+				-- Jefferson County DOC
+				VehicleZoneDistribution.policejeffersondoc.vehicles["Base.Van_jeffersondoc"] = {index = -1, spawnChance = JCDOC};
 
-			VehicleZoneDistribution.rangermeade.vehicles["Base.PickUpTruckLights"] = {index = RGR[4], spawnChance = SandboxVars.STEV.Rangers};
-			VehicleZoneDistribution.rangermeade.vehicles["Base.PickUpTruckLights"] = {index = RGR[5], spawnChance = SandboxVars.STEV.Rangers};
-			VehicleZoneDistribution.rangermeade.vehicles["Base.PickUpTruckLights"] = {index = RGR[6], spawnChance = SandboxVars.STEV.Rangers};
+				-- Park Rangers
+				VehicleZoneDistribution.rangermeade.vehicles["Base.CarLights"] = {index = RGR[1], spawnChance = SandboxVars.STEV.Rangers};
+				VehicleZoneDistribution.rangermeade.vehicles["Base.CarLights"] = {index = RGR[2], spawnChance = SandboxVars.STEV.Rangers};
+				VehicleZoneDistribution.rangermeade.vehicles["Base.CarLights"] = {index = RGR[3], spawnChance = SandboxVars.STEV.Rangers};
 
-			VehicleZoneDistribution.rangermeade.vehicles["Base.PickUpVanLights"] = {index = RGR[4], spawnChance = SandboxVars.STEV.Rangers};
-			VehicleZoneDistribution.rangermeade.vehicles["Base.PickUpVanLights"] = {index = RGR[5], spawnChance = SandboxVars.STEV.Rangers};
-			VehicleZoneDistribution.rangermeade.vehicles["Base.PickUpVanLights"] = {index = RGR[6], spawnChance = SandboxVars.STEV.Rangers};
+				VehicleZoneDistribution.rangermeade.vehicles["Base.PickUpTruckLights"] = {index = RGR[4], spawnChance = SandboxVars.STEV.Rangers};
+				VehicleZoneDistribution.rangermeade.vehicles["Base.PickUpTruckLights"] = {index = RGR[5], spawnChance = SandboxVars.STEV.Rangers};
+				VehicleZoneDistribution.rangermeade.vehicles["Base.PickUpTruckLights"] = {index = RGR[6], spawnChance = SandboxVars.STEV.Rangers};
 
-			-- Fire Departments
-			VehicleZoneDistribution.firerosewood.vehicles["Base.PickUpTruckLightsFire"] = {index = Fire[2], spawnChance = SandboxVars.STEV.MeadeFire};
-			VehicleZoneDistribution.firerosewood.vehicles["Base.PickUpVanLightsFire"] = {index = Fire[2], spawnChance = SandboxVars.STEV.MeadeFire};
-			VehicleZoneDistribution.firerosewood.vehicles["Base.PickUpTruckLightsFire"] = {index = Fire[1], spawnChance = SandboxVars.STEV.RosewoodFire};
-			VehicleZoneDistribution.firerosewood.vehicles["Base.PickUpVanLightsFire"] = {index = Fire[1], spawnChance = SandboxVars.STEV.RosewoodFire};
+				VehicleZoneDistribution.rangermeade.vehicles["Base.PickUpVanLights"] = {index = RGR[4], spawnChance = SandboxVars.STEV.Rangers};
+				VehicleZoneDistribution.rangermeade.vehicles["Base.PickUpVanLights"] = {index = RGR[5], spawnChance = SandboxVars.STEV.Rangers};
+				VehicleZoneDistribution.rangermeade.vehicles["Base.PickUpVanLights"] = {index = RGR[6], spawnChance = SandboxVars.STEV.Rangers};
 
-			VehicleZoneDistribution.firelouisville.vehicles["Base.PickUpTruckLightsFire"] = {index = Fire[3], spawnChance = SandboxVars.STEV.LouisvilleFire};
-			VehicleZoneDistribution.firelouisville.vehicles["Base.PickUpVanLightsFire"] = {index = Fire[3], spawnChance = SandboxVars.STEV.LouisvilleFire};
+				-- Fire Departments
+				VehicleZoneDistribution.firerosewood.vehicles["Base.PickUpTruckLightsFire"] = {index = Fire[2], spawnChance = SandboxVars.STEV.MeadeFire};
+				VehicleZoneDistribution.firerosewood.vehicles["Base.PickUpVanLightsFire"] = {index = Fire[2], spawnChance = SandboxVars.STEV.MeadeFire};
+				VehicleZoneDistribution.firerosewood.vehicles["Base.PickUpTruckLightsFire"] = {index = Fire[1], spawnChance = SandboxVars.STEV.RosewoodFire};
+				VehicleZoneDistribution.firerosewood.vehicles["Base.PickUpVanLightsFire"] = {index = Fire[1], spawnChance = SandboxVars.STEV.RosewoodFire};
 
-			VehicleZoneDistribution.usps.vehicles["Base.VanSpecial"] = {index = MAIL[2], spawnChance = SandboxVars.STEV.USPS};
+				VehicleZoneDistribution.firelouisville.vehicles["Base.PickUpTruckLightsFire"] = {index = Fire[3], spawnChance = SandboxVars.STEV.LouisvilleFire};
+				VehicleZoneDistribution.firelouisville.vehicles["Base.PickUpVanLightsFire"] = {index = Fire[3], spawnChance = SandboxVars.STEV.LouisvilleFire};
+
+				VehicleZoneDistribution.usps.vehicles["Base.VanSpecial"] = {index = MAIL[2], spawnChance = SandboxVars.STEV.USPS};
+
+			end
 
 			VehicleZoneDistribution.banksecurity.vehicles["Base.87gmcarmouredcar"] = {index = -1, spawnChance = SandboxVars.STEV.BankTruck};
 
@@ -794,56 +798,58 @@ local function STEVSpawns()
 
 			end
 
-			-- Vanilla Police Zones
-			VehicleZoneDistribution.police.vehicles["Base.CarLightsPolice"] = {index = MCSO[1], spawnChance = SandboxVars.STEV.Meade};
-			VehicleZoneDistribution.police.vehicles["Base.CarLightsPolice"] = {index = RSPD[1], spawnChance = SandboxVars.STEV.Riverside};
-			VehicleZoneDistribution.police.vehicles["Base.CarLightsPolice"] = {index = RWSD[1], spawnChance = SandboxVars.STEV.Rosewood};
-			VehicleZoneDistribution.police.vehicles["Base.CarLightsPolice"] = {index = WPPD[1], spawnChance = SandboxVars.STEV.WestPoint};
-			VehicleZoneDistribution.police.vehicles["Base.CarLightsPolice"] = {index = MDPD[1], spawnChance = SandboxVars.STEV.Muldraugh};
-			VehicleZoneDistribution.police.vehicles["Base.CarLightsPolice"] = {index = JCSD[1], spawnChance = SandboxVars.STEV.JCSD};
-			VehicleZoneDistribution.police.vehicles["Base.CarLightsPolice"] = {index = JCPD[1], spawnChance = SandboxVars.STEV.JCPD};
-			VehicleZoneDistribution.police.vehicles["Base.CarLightsPolice"] = {index = KSP[1], spawnChance = SandboxVars.STEV.KSP};
-			VehicleZoneDistribution.police.vehicles["Base.CarLightsPolice"] = {index = LVPD[1], spawnChance = SandboxVars.STEV.Louisville};
-			VehicleZoneDistribution.police.vehicles["Base.PickUpVanLightsPolice"] = {index = MCSO[2], spawnChance = SandboxVars.STEV.Meade};
-			VehicleZoneDistribution.police.vehicles["Base.PickUpVanLightsPolice"] = {index = RSPD[2], spawnChance = SandboxVars.STEV.Riverside};
-			VehicleZoneDistribution.police.vehicles["Base.PickUpVanLightsPolice"] = {index = RWSD[2], spawnChance = SandboxVars.STEV.Rosewood};
-			VehicleZoneDistribution.police.vehicles["Base.PickUpVanLightsPolice"] = {index = WPPD[2], spawnChance = SandboxVars.STEV.WestPoint};
-			VehicleZoneDistribution.police.vehicles["Base.PickUpVanLightsPolice"] = {index = MDPD[2], spawnChance = SandboxVars.STEV.Muldraugh};
-			VehicleZoneDistribution.police.vehicles["Base.PickUpVanLightsPolice"] = {index = JCSD[2], spawnChance = SandboxVars.STEV.JCSD};
-			VehicleZoneDistribution.police.vehicles["Base.PickUpVanLightsPolice"] = {index = JCPD[2], spawnChance = SandboxVars.STEV.JCPD};
-			VehicleZoneDistribution.police.vehicles["Base.PickUpVanLightsPolice"] = {index = KSP[2], spawnChance = SandboxVars.STEV.KSP};
-			VehicleZoneDistribution.police.vehicles["Base.PickUpVanLightsPolice"] = {index = LVPD[2], spawnChance = SandboxVars.STEV.Louisville};
-			VehicleZoneDistribution.police.vehicles["Base.Van_meadedoc"] = {index = -1, spawnChance = SandboxVars.STEV.MCDOC};
-			VehicleZoneDistribution.police.vehicles["Base.Van_jeffersondoc"] = {index = -1, spawnChance = JCDOC};
+			if SandboxVars.STEV.VCars then
+
+				-- Vanilla Police Zones
+				VehicleZoneDistribution.police.vehicles["Base.CarLightsPolice"] = {index = MCSO[1], spawnChance = SandboxVars.STEV.Meade};
+				VehicleZoneDistribution.police.vehicles["Base.CarLightsPolice"] = {index = RSPD[1], spawnChance = SandboxVars.STEV.Riverside};
+				VehicleZoneDistribution.police.vehicles["Base.CarLightsPolice"] = {index = RWSD[1], spawnChance = SandboxVars.STEV.Rosewood};
+				VehicleZoneDistribution.police.vehicles["Base.CarLightsPolice"] = {index = WPPD[1], spawnChance = SandboxVars.STEV.WestPoint};
+				VehicleZoneDistribution.police.vehicles["Base.CarLightsPolice"] = {index = MDPD[1], spawnChance = SandboxVars.STEV.Muldraugh};
+				VehicleZoneDistribution.police.vehicles["Base.CarLightsPolice"] = {index = JCSD[1], spawnChance = SandboxVars.STEV.JCSD};
+				VehicleZoneDistribution.police.vehicles["Base.CarLightsPolice"] = {index = JCPD[1], spawnChance = SandboxVars.STEV.JCPD};
+				VehicleZoneDistribution.police.vehicles["Base.CarLightsPolice"] = {index = KSP[1], spawnChance = SandboxVars.STEV.KSP};
+				VehicleZoneDistribution.police.vehicles["Base.CarLightsPolice"] = {index = LVPD[1], spawnChance = SandboxVars.STEV.Louisville};
+				VehicleZoneDistribution.police.vehicles["Base.PickUpVanLightsPolice"] = {index = MCSO[2], spawnChance = SandboxVars.STEV.Meade};
+				VehicleZoneDistribution.police.vehicles["Base.PickUpVanLightsPolice"] = {index = RSPD[2], spawnChance = SandboxVars.STEV.Riverside};
+				VehicleZoneDistribution.police.vehicles["Base.PickUpVanLightsPolice"] = {index = RWSD[2], spawnChance = SandboxVars.STEV.Rosewood};
+				VehicleZoneDistribution.police.vehicles["Base.PickUpVanLightsPolice"] = {index = WPPD[2], spawnChance = SandboxVars.STEV.WestPoint};
+				VehicleZoneDistribution.police.vehicles["Base.PickUpVanLightsPolice"] = {index = MDPD[2], spawnChance = SandboxVars.STEV.Muldraugh};
+				VehicleZoneDistribution.police.vehicles["Base.PickUpVanLightsPolice"] = {index = JCSD[2], spawnChance = SandboxVars.STEV.JCSD};
+				VehicleZoneDistribution.police.vehicles["Base.PickUpVanLightsPolice"] = {index = JCPD[2], spawnChance = SandboxVars.STEV.JCPD};
+				VehicleZoneDistribution.police.vehicles["Base.PickUpVanLightsPolice"] = {index = KSP[2], spawnChance = SandboxVars.STEV.KSP};
+				VehicleZoneDistribution.police.vehicles["Base.PickUpVanLightsPolice"] = {index = LVPD[2], spawnChance = SandboxVars.STEV.Louisville};
+				VehicleZoneDistribution.police.vehicles["Base.Van_meadedoc"] = {index = -1, spawnChance = SandboxVars.STEV.MCDOC};
+				VehicleZoneDistribution.police.vehicles["Base.Van_jeffersondoc"] = {index = -1, spawnChance = JCDOC};
+
+				-- Vanilla Ranger Zones
+				VehicleZoneDistribution.ranger.vehicles["Base.CarLights"] = {index = RGR[1], spawnChance = SandboxVars.STEV.Rangers};
+				VehicleZoneDistribution.ranger.vehicles["Base.CarLights"] = {index = RGR[2], spawnChance = SandboxVars.STEV.Rangers};
+				VehicleZoneDistribution.ranger.vehicles["Base.CarLights"] = {index = RGR[3], spawnChance = SandboxVars.STEV.Rangers};
+				VehicleZoneDistribution.ranger.spawnRate = SandboxVars.STEV.SRate;
+
+				-- Vanilla Ambulance Zones
+				VehicleZoneDistribution.ambulance.vehicles["Base.VanAmbulance"] = {index = EMS[3], spawnChance = SandboxVars.STEV.EMS};
+				VehicleZoneDistribution.ambulance.vehicles["Base.VanAmbulance"] = {index = EMS[1], spawnChance = SandboxVars.STEV.EMS};
+				VehicleZoneDistribution.ambulance.vehicles["Base.VanAmbulance"] = {index = EMS[2], spawnChance = SandboxVars.STEV.EMS};
+				VehicleZoneDistribution.ambulance.spawnRate = SandboxVars.STEV.SRate;
+
+				-- Vanilla Fire Zones
+				VehicleZoneDistribution.fire.vehicles["Base.PickUpTruckLightsFire"] = {index = Fire[2], spawnChance = SandboxVars.STEV.MeadeFire};
+				VehicleZoneDistribution.fire.vehicles["Base.PickUpVanLightsFire"] = {index = Fire[2], spawnChance = SandboxVars.STEV.MeadeFire};
+				VehicleZoneDistribution.fire.vehicles["Base.PickUpTruckLightsFire"] = {index = Fire[1], spawnChance = SandboxVars.STEV.RosewoodFire};
+				VehicleZoneDistribution.fire.vehicles["Base.PickUpVanLightsFire"] = {index = Fire[1], spawnChance = SandboxVars.STEV.RosewoodFire};
+				VehicleZoneDistribution.fire.vehicles["Base.PickUpTruckLightsFire"] = {index = Fire[3], spawnChance = SandboxVars.STEV.LouisvilleFire};
+				VehicleZoneDistribution.fire.vehicles["Base.PickUpVanLightsFire"] = {index = Fire[3], spawnChance = SandboxVars.STEV.LouisvilleFire};
+				VehicleZoneDistribution.fire.spawnRate = SandboxVars.STEV.SRate;
+
+			end
+
 			VehicleZoneDistribution.police.vehicles["Base.87gmcarmouredcar"] = {index = -1, spawnChance = SandboxVars.STEV.BankTruck};
 			VehicleZoneDistribution.police.spawnRate = SandboxVars.STEV.SRate;
-
-			-- Vanilla Ranger Zones
-			VehicleZoneDistribution.ranger.vehicles["Base.CarLights"] = {index = RGR[1], spawnChance = SandboxVars.STEV.Rangers};
-			VehicleZoneDistribution.ranger.vehicles["Base.CarLights"] = {index = RGR[2], spawnChance = SandboxVars.STEV.Rangers};
-			VehicleZoneDistribution.ranger.vehicles["Base.CarLights"] = {index = RGR[3], spawnChance = SandboxVars.STEV.Rangers};
-			VehicleZoneDistribution.ranger.spawnRate = SandboxVars.STEV.SRate;
-
-			-- Vanilla Ambulance Zones
-			VehicleZoneDistribution.ambulance.vehicles["Base.VanAmbulance"] = {index = EMS[3], spawnChance = SandboxVars.STEV.EMS};
-			VehicleZoneDistribution.ambulance.vehicles["Base.VanAmbulance"] = {index = EMS[1], spawnChance = SandboxVars.STEV.EMS};
-			VehicleZoneDistribution.ambulance.vehicles["Base.VanAmbulance"] = {index = EMS[2], spawnChance = SandboxVars.STEV.EMS};
-			VehicleZoneDistribution.ambulance.spawnRate = SandboxVars.STEV.SRate;
-
-			-- Vanilla Fire Zones
-			VehicleZoneDistribution.fire.vehicles["Base.PickUpTruckLightsFire"] = {index = Fire[2], spawnChance = SandboxVars.STEV.MeadeFire};
-			VehicleZoneDistribution.fire.vehicles["Base.PickUpVanLightsFire"] = {index = Fire[2], spawnChance = SandboxVars.STEV.MeadeFire};
-			VehicleZoneDistribution.fire.vehicles["Base.PickUpTruckLightsFire"] = {index = Fire[1], spawnChance = SandboxVars.STEV.RosewoodFire};
-			VehicleZoneDistribution.fire.vehicles["Base.PickUpVanLightsFire"] = {index = Fire[1], spawnChance = SandboxVars.STEV.RosewoodFire};
-			VehicleZoneDistribution.fire.vehicles["Base.PickUpTruckLightsFire"] = {index = Fire[3], spawnChance = SandboxVars.STEV.LouisvilleFire};
-			VehicleZoneDistribution.fire.vehicles["Base.PickUpVanLightsFire"] = {index = Fire[3], spawnChance = SandboxVars.STEV.LouisvilleFire};
-			VehicleZoneDistribution.fire.spawnRate = SandboxVars.STEV.SRate;
 
 		end
 	end
 end
 
---Events.OnNewGame.Add(STEVSpawns);
---Events.OnGameStart.Add(STEVSpawns);
---Events.OnServerStarted.Add(STEVSpawns);
 Events.OnInitGlobalModData.Add(STEVSpawns);

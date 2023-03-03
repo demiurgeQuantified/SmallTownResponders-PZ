@@ -87,11 +87,11 @@ if getActivatedMods():contains("SirenVariety") then
 	--SetHornSound("92crownvicPD","BullHorn");
 	--SetHornSound("91blazerpd","BullHorn");
 	--SetHornSound("87capricePD","BullHorn");
-	SetHornSound("86econolineswat_louisvillepd","BullHorn");
-	SetHornSound("86econolineswat_jeffersonpd","BullHorn");
-	SetHornSound("VanSwat_jeffersonpd","BullHorn");
-	SetHornSound("VanSwat_louisvillepd","BullHorn");
-	SetHornSound("VanSwat_ravencreekpd","BullHorn");
+	--SetHornSound("86econolineswat_louisvillepd","BullHorn");
+	--SetHornSound("86econolineswat_jeffersonpd","BullHorn");
+	--SetHornSound("VanSwat_jeffersonpd","BullHorn");
+	--SetHornSound("VanSwat_louisvillepd","BullHorn");
+	--SetHornSound("VanSwat_ravencreekpd","BullHorn");
 	--SetHornSound("80f350ambulance","BullHorn");
 	--SetHornSound("86econolineambulance","BullHorn");
 	--SetHornSound("firepumper","AirHorn");

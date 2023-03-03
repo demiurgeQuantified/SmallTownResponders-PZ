@@ -16,6 +16,14 @@ option STR.LootZones
 	page = STR,
 	translation = STR_LootZones,
 }
+option STEV.Enable
+{
+	type = boolean,
+	default = true,
+
+	page = STR,
+	translation = STEV_Enable,
+}
 option STR.DuffelLoot
 {
 	type = boolean,
@@ -413,6 +421,14 @@ option STRS.RavenCreekInmate
 
 	page = STRS,
 	translation = STRS_RavenCreekInmate,
+}
+option STEV.VCars
+{
+	type = boolean,
+	default = true,
+
+	page = STEV,
+	translation = STEV_VCars,
 }
 option STEV.Meade
 {

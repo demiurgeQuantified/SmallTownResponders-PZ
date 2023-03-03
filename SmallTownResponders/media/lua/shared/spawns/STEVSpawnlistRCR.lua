@@ -121,19 +121,22 @@ local function STEVRCRSpawns()
 
 			end
 
-			-- RavenCreek Police
-			VehicleZoneDistribution.policeravencreek.vehicles["Base.CarLightsPolice"] = {index = RCRPD[1], spawnChance = SandboxVars.STEV.RCRPD};
-			VehicleZoneDistribution.policeravencreek.vehicles["Base.PickUpVanLightsPolice"] = {index = RCRPD[2], spawnChance = SandboxVars.STEV.RCRPD};
+			if SandboxVars.STEV.VCars then
 
-			-- RavenCreek DOC
-			VehicleZoneDistribution.policeravencreekdoc.vehicles["Base.Van_ravencreekdoc"] = {index = -1, spawnChance = SandboxVars.STEV.RCRDOC};
+				-- RavenCreek Police
+				VehicleZoneDistribution.policeravencreek.vehicles["Base.CarLightsPolice"] = {index = RCRPD[1], spawnChance = SandboxVars.STEV.RCRPD};
+				VehicleZoneDistribution.policeravencreek.vehicles["Base.PickUpVanLightsPolice"] = {index = RCRPD[2], spawnChance = SandboxVars.STEV.RCRPD};
 
-			-- RavenCreek FD/EMS
-			VehicleZoneDistribution.fireravencreek.vehicles["Base.VanAmbulance"] = {index = RCREMS[4], spawnChance = SandboxVars.STEV.EMS};
+				-- RavenCreek DOC
+				VehicleZoneDistribution.policeravencreekdoc.vehicles["Base.Van_ravencreekdoc"] = {index = -1, spawnChance = SandboxVars.STEV.RCRDOC};
 
-			VehicleZoneDistribution.fireravencreek.vehicles["Base.PickUpTruckLightsFire"] = {index = RCREMS[4], spawnChance = SandboxVars.STEV.RCRFD};
-			VehicleZoneDistribution.fireravencreek.vehicles["Base.PickUpVanLightsFire"] = {index = RCREMS[4], spawnChance = SandboxVars.STEV.RCRFD};
+				-- RavenCreek FD/EMS
+				VehicleZoneDistribution.fireravencreek.vehicles["Base.VanAmbulance"] = {index = RCREMS[4], spawnChance = SandboxVars.STEV.EMS};
 
+				VehicleZoneDistribution.fireravencreek.vehicles["Base.PickUpTruckLightsFire"] = {index = RCREMS[4], spawnChance = SandboxVars.STEV.RCRFD};
+				VehicleZoneDistribution.fireravencreek.vehicles["Base.PickUpVanLightsFire"] = {index = RCREMS[4], spawnChance = SandboxVars.STEV.RCRFD};
+
+			end
 		end
 
 		if not SandboxVars.STR.CustomVehicleZones and getActivatedMods():contains("RavenCreek") then
@@ -159,24 +162,25 @@ local function STEVRCRSpawns()
 
 			end
 
-			-- RavenCreek Police
-			VehicleZoneDistribution.police.vehicles["Base.Van_ravencreekdoc"] = {index = -1, spawnChance = SandboxVars.STEV.RCRDOC};
-			VehicleZoneDistribution.police.vehicles["Base.CarLightsPolice"] = {index = RCRPD[1], spawnChance = SandboxVars.STEV.RCRPD};
-			VehicleZoneDistribution.police.vehicles["Base.PickUpVanLightsPolice"] = {index = RCRPD[2], spawnChance = SandboxVars.STEV.RCRPD};
-			VehicleZoneDistribution.police.spawnRate = SandboxVars.STEV.SRate;
+			if SandboxVars.STEV.VCars then
 
-			-- RavenCreek FD/EMS
-			VehicleZoneDistribution.ambulance.vehicles["Base.VanAmbulance"] = {index = RCREMS[4], spawnChance = SandboxVars.STEV.EMS};
-			VehicleZoneDistribution.ambulance.spawnRate = SandboxVars.STEV.SRate;
+				-- RavenCreek Police
+				VehicleZoneDistribution.police.vehicles["Base.Van_ravencreekdoc"] = {index = -1, spawnChance = SandboxVars.STEV.RCRDOC};
+				VehicleZoneDistribution.police.vehicles["Base.CarLightsPolice"] = {index = RCRPD[1], spawnChance = SandboxVars.STEV.RCRPD};
+				VehicleZoneDistribution.police.vehicles["Base.PickUpVanLightsPolice"] = {index = RCRPD[2], spawnChance = SandboxVars.STEV.RCRPD};
+				VehicleZoneDistribution.police.spawnRate = SandboxVars.STEV.SRate;
 
-			VehicleZoneDistribution.fire.vehicles["Base.PickUpTruckLightsFire"] = {index = RCREMS[4], spawnChance = SandboxVars.STEV.RCRFD};
-			VehicleZoneDistribution.fire.vehicles["Base.PickUpVanLightsFire"] = {index = RCREMS[4], spawnChance = SandboxVars.STEV.RCRFD};
-			VehicleZoneDistribution.fire.spawnRate = SandboxVars.STEV.SRate;
+				-- RavenCreek FD/EMS
+				VehicleZoneDistribution.ambulance.vehicles["Base.VanAmbulance"] = {index = RCREMS[4], spawnChance = SandboxVars.STEV.EMS};
+				VehicleZoneDistribution.ambulance.spawnRate = SandboxVars.STEV.SRate;
 
+				VehicleZoneDistribution.fire.vehicles["Base.PickUpTruckLightsFire"] = {index = RCREMS[4], spawnChance = SandboxVars.STEV.RCRFD};
+				VehicleZoneDistribution.fire.vehicles["Base.PickUpVanLightsFire"] = {index = RCREMS[4], spawnChance = SandboxVars.STEV.RCRFD};
+				VehicleZoneDistribution.fire.spawnRate = SandboxVars.STEV.SRate;
+
+			end
 		end
 	end
 end
 
-Events.OnNewGame.Add(STEVRCRSpawns);
-Events.OnGameStart.Add(STEVRCRSpawns);
-Events.OnServerStarted.Add(STEVRCRSpawns);
+Events.OnInitGlobalModData.Add(STEVRCRSpawns);

@@ -76,7 +76,7 @@ Sandbox_EN = {
 	Sandbox_STRS_Other = "Other Uniforms Spawn Chance",
 	Sandbox_STRS_Other_tooltip = "The spawn chance for Other zombies, like Judges",
 
-	Sandbox_STRS_Duffel = "STFR Duffel Zombies Spawn Chance",
+	Sandbox_STRS_Duffel = "Duffel Zombies Spawn Chance",
 	Sandbox_STRS_Duffel_tooltip = "The spawn chance for certain STFR zombies wearing duffel bags. Does nothing if Enable Duffel Bags is false!",
 
 	Sandbox_STRS_FireFormal = "Formal Fire Uniforms Spawn Chance",
@@ -180,7 +180,7 @@ Sandbox_EN = {
 	Sandbox_STEV_MCDOC = "Meade County DoC Spawn Chance",
 	Sandbox_STEV_MCDOC_tooltip = "The spawn chance for Meade County DoC cars.",
 
-	Sandbox_STEV_EMS = "STFR Ambulance Spawn Chance",
+	Sandbox_STEV_EMS = "Ambulance Spawn Chance",
 	Sandbox_STEV_EMS_tooltip = "The spawn chance for STFR Ambulances.",
 
 	Sandbox_STEV_RosewoodFire = "Rosewood VFD Spawn Chance",
@@ -207,10 +207,13 @@ Sandbox_EN = {
 	Sandbox_STEV_RCRDOC = "RavenCreek DoC Spawn Chance",
 	Sandbox_STEV_RCRDOC_tooltip = "The spawn chance for RavenCreek DoC cars. Does nothing if RavenCreek isn't enabled!",
 
-	Sandbox_STEV_SRate = "STFR Spawn Rate",
+	Sandbox_STEV_SRate = "Spawn Rate",
 	Sandbox_STEV_SRate_tooltip = "The overall chance of an STFR car to spawn.",
 
-	Sandbox_STEV_NChance = "STFR Normal Spawn Chance",
+	Sandbox_STEV_NChance = "Normal Spawn Chance",
 	Sandbox_STEV_NChance_tooltip = "The overall chance of a normal car to spawn in an STFR vehicle zone.",
+
+	Sandbox_STEV_VCars = "Vanilla Models",
+	Sandbox_STEV_VCars_tooltip = "Enable this to allow STFR vehicles with vanilla models to spawn in parking lots. Does NOT affect vehicle scenes! Does NOT remove skins added either!",
 
 }
