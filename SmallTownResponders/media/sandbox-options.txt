@@ -16,14 +16,6 @@ option STR.LootZones
 	page = STR,
 	translation = STR_LootZones,
 }
-option STEV.Enable
-{
-	type = boolean,
-	default = true,
-
-	page = STR,
-	translation = STEV_Enable,
-}
 option STR.DuffelLoot
 {
 	type = boolean,

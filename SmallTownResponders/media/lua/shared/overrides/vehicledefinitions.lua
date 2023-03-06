@@ -137,7 +137,32 @@ local vehicleToSkin = {
 }
 
 if getActivatedMods():contains("VVehicleEnhancer") then
-    vehicleToSkin['Base.CarLightsSheriff'] = { -- vve police car
+
+    vehicleToSkin['Base.CarLightsPolice'] = { -- vanilla police car
+        Police = true,
+        KSP = 1,
+        Meade = 2,
+        Rosewood = 3,
+        WestPoint = 4,
+        Muldraugh = 5,
+        Riverside = 6,
+        LouisvillePD = 7,
+        JeffersonPD = 8,
+        JeffersonSD = 9,
+        RavenCreek = 10}
+    vehicleToSkin['Base.PickUpVanLightsPolice'] = { -- vanilla police van
+        Police = true,
+        KSP = 1,
+        Meade = 2,
+        Rosewood = 3,
+        WestPoint = 4,
+        Muldraugh = 5,
+        Riverside = 6,
+        LouisvillePD = 7,
+        JeffersonPD = 8,
+        JeffersonSD = 9,
+        RavenCreek = 10}
+	vehicleToSkin['Base.CarLightsSheriff'] = { -- vve police car
         Police = true,
         KSP = 1,
         Meade = 2,

@@ -268,45 +268,46 @@ if getActivatedMods():contains("FRUsedCars") then
 	end
 end
 
+--TODO: Fix this!
 if getActivatedMods():contains("VVehicleEnhancer") then
 
 	AddVehicleSkin("CarLightsPolice","Vehicles/vve/vehicle_kentuckystate_vve");
-	AddVehicleSkin("CarLightsPolice","Vehicles/vve/vehicle_meadesheriff_vve");
-	AddVehicleSkin("CarLightsPolice","Vehicles/vve/vehicle_rosewoodpolice_vve");
-	AddVehicleSkin("CarLightsPolice","Vehicles/vve/vehicle_westpointpolice_vve");
-	AddVehicleSkin("CarLightsPolice","Vehicles/vve/vehicle_muldraughpolice_vve");
-	AddVehicleSkin("CarLightsPolice","Vehicles/vve/vehicle_riversidepolice_vve");
-	AddVehicleSkin("CarLightsPolice","Vehicles/vve/vehicle_louisvillepolice_vve");
+	AddVehicleSkin("CarLightsPolice","Vehicles/vve/vehicle_meade_vve");
+	AddVehicleSkin("CarLightsPolice","Vehicles/vve/vehicle_rosewood_vve");
+	AddVehicleSkin("CarLightsPolice","Vehicles/vve/vehicle_westpoint_vve");
+	AddVehicleSkin("CarLightsPolice","Vehicles/vve/vehicle_muldraugh_vve");
+	AddVehicleSkin("CarLightsPolice","Vehicles/vve/vehicle_riverside_vve");
+	AddVehicleSkin("CarLightsPolice","Vehicles/vve/vehicle_louisville_vve");
 	AddVehicleSkin("CarLightsPolice","Vehicles/vve/vehicle_jeffersonpolice_vve");
 	AddVehicleSkin("CarLightsPolice","Vehicles/vve/vehicle_jeffersonsheriff_vve");
 
 	AddVehicleSkin("CarLightsSheriff","Vehicles/vve/vehicle_kentuckystate_vve");
-	AddVehicleSkin("CarLightsSheriff","Vehicles/vve/vehicle_meadesheriff_vve");
-	AddVehicleSkin("CarLightsSheriff","Vehicles/vve/vehicle_rosewoodpolice_vve");
-	AddVehicleSkin("CarLightsSheriff","Vehicles/vve/vehicle_westpointpolice_vve");
-	AddVehicleSkin("CarLightsSheriff","Vehicles/vve/vehicle_muldraughpolice_vve");
-	AddVehicleSkin("CarLightsSheriff","Vehicles/vve/vehicle_riversidepolice_vve");
-	AddVehicleSkin("CarLightsSheriff","Vehicles/vve/vehicle_louisvillepolice_vve");
+	AddVehicleSkin("CarLightsSheriff","Vehicles/vve/vehicle_meade_vve");
+	AddVehicleSkin("CarLightsSheriff","Vehicles/vve/vehicle_rosewood_vve");
+	AddVehicleSkin("CarLightsSheriff","Vehicles/vve/vehicle_westpoint_vve");
+	AddVehicleSkin("CarLightsSheriff","Vehicles/vve/vehicle_muldraugh_vve");
+	AddVehicleSkin("CarLightsSheriff","Vehicles/vve/vehicle_riverside_vve");
+	AddVehicleSkin("CarLightsSheriff","Vehicles/vve/vehicle_louisville_vve");
 	AddVehicleSkin("CarLightsSheriff","Vehicles/vve/vehicle_jeffersonpolice_vve");
 	AddVehicleSkin("CarLightsSheriff","Vehicles/vve/vehicle_jeffersonsheriff_vve");
 
 	AddVehicleSkin("CarLightsStatepolice","Vehicles/vve/vehicle_kentuckystate_vve");
-	AddVehicleSkin("CarLightsStatepolice","Vehicles/vve/vehicle_meadesheriff_vve");
-	AddVehicleSkin("CarLightsStatepolice","Vehicles/vve/vehicle_rosewoodpolice_vve");
-	AddVehicleSkin("CarLightsStatepolice","Vehicles/vve/vehicle_westpointpolice_vve");
-	AddVehicleSkin("CarLightsStatepolice","Vehicles/vve/vehicle_muldraughpolice_vve");
-	AddVehicleSkin("CarLightsStatepolice","Vehicles/vve/vehicle_riversidepolice_vve");
-	AddVehicleSkin("CarLightsStatepolice","Vehicles/vve/vehicle_louisvillepolice_vve");
+	AddVehicleSkin("CarLightsStatepolice","Vehicles/vve/vehicle_meade_vve");
+	AddVehicleSkin("CarLightsStatepolice","Vehicles/vve/vehicle_rosewood_vve");
+	AddVehicleSkin("CarLightsStatepolice","Vehicles/vve/vehicle_westpoint_vve");
+	AddVehicleSkin("CarLightsStatepolice","Vehicles/vve/vehicle_muldraugh_vve");
+	AddVehicleSkin("CarLightsStatepolice","Vehicles/vve/vehicle_riverside_vve");
+	AddVehicleSkin("CarLightsStatepolice","Vehicles/vve/vehicle_louisville_vve");
 	AddVehicleSkin("CarLightsStatepolice","Vehicles/vve/vehicle_jeffersonpolice_vve");
 	AddVehicleSkin("CarLightsStatepolice","Vehicles/vve/vehicle_jeffersonsheriff_vve");
 
 	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vve/vehicle_pickup_ksp_vve");
-	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vve/vehicle_pickup_meadesheriff_vve");
-	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vve/vehicle_pickup_rosewoodsheriff_vve");
-	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vve/vehicle_pickup_westpointpolice_vve");
-	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vve/vehicle_pickup_muldraughpolice_vve");
-	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vve/vehicle_pickup_riversidepolice_vve");
-	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vve/vehicle_pickup_louisvillepolice_vve");
+	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vve/vehicle_pickup_meade_vve");
+	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vve/vehicle_pickup_rosewood_vve");
+	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vve/vehicle_pickup_westpoint_vve");
+	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vve/vehicle_pickup_muldraugh_vve");
+	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vve/vehicle_pickup_riverside_vve");
+	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vve/vehicle_pickup_louisville_vve");
 	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vve/vehicle_pickup_jeffersonpolice_vve");
 	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vve/vehicle_pickup_jeffersonsheriff_vve");
 
@@ -333,9 +334,9 @@ if getActivatedMods():contains("VVehicleEnhancer") then
 
 	if getActivatedMods():contains("RavenCreek") then
 
-		AddVehicleSkin("CarLightsPolice","Vehicles/vve/vehicle_ravencreekpolice_vve");
-		AddVehicleSkin("CarLightsSheriff","Vehicles/vve/vehicle_ravencreekpolice_vve");
-		AddVehicleSkin("CarLightsStatepolice","Vehicles/vve/vehicle_ravencreekpolice_vve");
+		AddVehicleSkin("CarLightsPolice","Vehicles/vve/vehicle_ravencreek_vve");
+		AddVehicleSkin("CarLightsSheriff","Vehicles/vve/vehicle_ravencreek_vve");
+		AddVehicleSkin("CarLightsStatepolice","Vehicles/vve/vehicle_ravencreek_vve");
 		--TweakVehicle("Base.PickUpVanLightsPolice","skin10", "Vehicles/vehicle_pickup_ravencreekpolice");
 
 		--TweakVehicle("Base.VanAmbulance","skin4", "Vehicles/vehicle_van_ravencreekambulance");
