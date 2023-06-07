@@ -1,3 +1,21 @@
+local vehicleToSkin = {}
+--Enum of zone names, so we can change them easily + intellisense
+local ZoneName = {
+	Default = "Meade",
+	Meade = "Meade",
+	KSP = "KSP",
+	Muldraugh = "Muldraugh",
+	Rosewood = "Rosewood",
+	WestPoint = "WestPoint",
+	Riverside = "Riverside",
+	Louisville = "Louisville",
+	LouisvillePD = "LouisvillePD",
+	JeffersonPD = "JeffersonPD",
+	JeffersonSD = "JeffersonSD",
+	Jefferson = "Jefferson",
+	RavenCreek = "RavenCreek"
+}
+
 ---Like DoParam but for vehicles
 ---@param vehicle string Name of the vehicle script
 ---@param param string The parameter(s) to apply to this script
@@ -7,16 +25,53 @@
 local DoVehicleParam = function(vehicle, param, module)
 	module = module or "Base"
 	local vehicleScript = ScriptManager.instance:getVehicle(module .. "." .. vehicle)
-	if not vehicleScript then return end
+	if not vehicleScript then return false end
 	vehicleScript:Load(vehicle, "{" .. param .. "}")
+	return true
 end
 
----Utility to add new skins to vehicles
+---Adds a new skin to a vehicle and adds it to the overrides table
 ---@param vehicle string Name of the vehicle script
 ---@param texture string The new skin's texture
+---@param zone string The name of the zone this skin should be used in
+---@param module string Optional: the module of the vehicle
 ---@see DoVehicleParam
-local AddVehicleSkin = function(vehicle, texture)
-	DoVehicleParam(vehicle, "skin { texture = " .. texture .. ",}")
+local AddVehicleSkin = function(vehicle, zone, texture, module)
+	module = module or "Base"
+
+	if not DoVehicleParam(vehicle, "skin { texture = " .. texture .. ",}", module) then return end
+	local fullName = module .. "." .. vehicle
+	local newSkinNum = ScriptManager.instance:getVehicle(fullName):getSkinCount() - 1
+
+	vehicleToSkin[fullName] = vehicleToSkin[fullName] or {}
+	local zoneSkins = vehicleToSkin[fullName][zone]
+	if zoneSkins then
+		if type(zoneSkins) ~= "table" then -- convert to random picker table if a skin already exists
+			zoneSkins = {zoneSkins}
+			vehicleToSkin[fullName][zone] = zoneSkins
+		end
+		table.insert(zoneSkins, newSkinNum)
+	else
+		vehicleToSkin[fullName][zone] = newSkinNum
+	end
+end
+
+---Adds a new skin to a vehicle and adds it to the replace table NOTE: this currently stops zone overrides from working on that vehicle
+---@param vehicle string Name of the vehicle script
+---@param texture string The new skin's texture
+---@param replace int The skin number to replace. Only stable if overriding vanilla skins/skins from the mod that adds the vehicle
+---@param module string Optional: the module of the vehicle
+---@see AddVehicleSkin
+---@see DoVehicleParam
+local AddVehicleSkinOverride = function(vehicle, replace, texture, module)
+	module = module or "Base"
+
+	if not DoVehicleParam(vehicle, "skin { texture = " .. texture .. ",}", module) then return end
+
+	local fullName = module .. "." .. vehicle
+	vehicleToSkin[fullName] = vehicleToSkin[fullName] or {}
+	vehicleToSkin[fullName].Replace = vehicleToSkin[fullName].Replace or {}
+	vehicleToSkin[fullName].Replace[replace] = ScriptManager.instance:getVehicle(fullName):getSkinCount() - 1
 end
 
 ---Utility to change the siren sound of a vehicle
@@ -36,6 +91,14 @@ local SetHornSound = function(vehicle, sound)
 	DoVehicleParam(vehicle, "sound { horn = " .. sound .. ",}")
 end
 
+---Sets a vehicle to use police zones instead of regular zones. Slower but needed for police
+local SetPoliceVehicle = function(vehicle, module)
+	module = module or "Base"
+	local fullName = module .. "." .. vehicle
+	vehicleToSkin[fullName] = vehicleToSkin[fullName] or {}
+	vehicleToSkin[fullName].Police = true
+end
+
 ---Utility to change the radio of a vehicle
 ---@param vehicle string Name of the vehicle script
 ---@param radio string Name of a radio template
@@ -43,28 +106,6 @@ end
 ---@see SetSirenSound
 local SetRadioType = function(vehicle, radio)
 	DoVehicleParam(vehicle, "template = " .. radio .. ",")
-end
-
-if not isClient() then
-	local vehicleToSkin = require "overrides/vehicledefinitions"
-	for script,skins in pairs(vehicleToSkin) do
-		local first
-		for _,v in pairs(skins) do -- no next() in pz??
-			if type(v) == "number" then
-				first = v
-				break
-			elseif type(v) == "table" then
-				first = v[1]
-			end
-		end
-
-		local vehicle = ScriptManager.instance:getVehicle(script)
-		if vehicle then
-			skins.offset = vehicle:getSkinCount() - first
-		else
-			skins.offset = 0
-		end
-	end
 end
 
 if getActivatedMods():contains("Time_Accurate_Sirens") then
@@ -108,67 +149,70 @@ if getActivatedMods():contains("VVehicleEnhancer") and getActivatedMods():contai
 
 end
 
+SetPoliceVehicle("CarLightsPolice")
+SetPoliceVehicle("PickUpVanLightsPolice")
+
 if not getActivatedMods():contains("VVehicleEnhancer") then
-	AddVehicleSkin("CarLightsPolice","Vehicles/vehicle_kentuckystate")
-	AddVehicleSkin("CarLightsPolice","Vehicles/vehicle_meadesheriff")
-	AddVehicleSkin("CarLightsPolice","Vehicles/vehicle_rosewoodpolice")
-	AddVehicleSkin("CarLightsPolice","Vehicles/vehicle_westpointpolice1")
-	AddVehicleSkin("CarLightsPolice","Vehicles/vehicle_westpointpolice2")
-	AddVehicleSkin("CarLightsPolice","Vehicles/vehicle_muldraughpolice")
-	AddVehicleSkin("CarLightsPolice","Vehicles/vehicle_riversidepolice")
-	AddVehicleSkin("CarLightsPolice","Vehicles/vehicle_louisvillepolice")
-	AddVehicleSkin("CarLightsPolice","Vehicles/vehicle_jeffersonpolice")
-	AddVehicleSkin("CarLightsPolice","Vehicles/vehicle_jeffersonsheriff")
+	AddVehicleSkin("CarLightsPolice", ZoneName.KSP, "Vehicles/vehicle_kentuckystate")
+	AddVehicleSkin("CarLightsPolice", ZoneName.Meade, "Vehicles/vehicle_meadesheriff")
+	AddVehicleSkin("CarLightsPolice", ZoneName.Rosewood, "Vehicles/vehicle_rosewoodpolice")
+	AddVehicleSkin("CarLightsPolice", ZoneName.WestPoint, "Vehicles/vehicle_westpointpolice1")
+	AddVehicleSkin("CarLightsPolice", ZoneName.WestPoint, "Vehicles/vehicle_westpointpolice2")
+	AddVehicleSkin("CarLightsPolice", ZoneName.Muldraugh, "Vehicles/vehicle_muldraughpolice")
+	AddVehicleSkin("CarLightsPolice", ZoneName.Riverside, "Vehicles/vehicle_riversidepolice")
+	AddVehicleSkin("CarLightsPolice", ZoneName.LouisvillePD, "Vehicles/vehicle_louisvillepolice")
+	AddVehicleSkin("CarLightsPolice", ZoneName.JeffersonPD, "Vehicles/vehicle_jeffersonpolice")
+	AddVehicleSkin("CarLightsPolice", ZoneName.JeffersonSD, "Vehicles/vehicle_jeffersonsheriff")
 
-	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vehicle_pickup_ksp");
-	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vehicle_pickup_meadesheriff");
-	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vehicle_pickup_rosewoodsheriff");
-	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vehicle_pickup_westpointpolice1");
-	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vehicle_pickup_westpointpolice2");
-	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vehicle_pickup_muldraughpolice");
-	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vehicle_pickup_riversidepolice");
-	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vehicle_pickup_louisvillepolice");
-	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vehicle_pickup_jeffersonpolice");
-	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vehicle_pickup_jeffersonsheriff");
+	AddVehicleSkin("PickUpVanLightsPolice", ZoneName.KSP, "Vehicles/vehicle_pickup_ksp");
+	AddVehicleSkin("PickUpVanLightsPolice", ZoneName.Meade, "Vehicles/vehicle_pickup_meadesheriff");
+	AddVehicleSkin("PickUpVanLightsPolice", ZoneName.Rosewood, "Vehicles/vehicle_pickup_rosewoodsheriff");
+	AddVehicleSkin("PickUpVanLightsPolice", ZoneName.WestPoint, "Vehicles/vehicle_pickup_westpointpolice1");
+	AddVehicleSkin("PickUpVanLightsPolice", ZoneName.WestPoint, "Vehicles/vehicle_pickup_westpointpolice2");
+	AddVehicleSkin("PickUpVanLightsPolice", ZoneName.Muldraugh, "Vehicles/vehicle_pickup_muldraughpolice");
+	AddVehicleSkin("PickUpVanLightsPolice", ZoneName.Riverside, "Vehicles/vehicle_pickup_riversidepolice");
+	AddVehicleSkin("PickUpVanLightsPolice", ZoneName.LouisvillePD, "Vehicles/vehicle_pickup_louisvillepolice");
+	AddVehicleSkin("PickUpVanLightsPolice", ZoneName.JeffersonPD, "Vehicles/vehicle_pickup_jeffersonpolice");
+	AddVehicleSkin("PickUpVanLightsPolice", ZoneName.JeffersonSD, "Vehicles/vehicle_pickup_jeffersonsheriff");
 
-	AddVehicleSkin("VanAmbulance","Vehicles/vehicle_van_meadecountyambulance");
-	AddVehicleSkin("VanAmbulance","Vehicles/vehicle_van_louisvilleambulance");
-	AddVehicleSkin("VanAmbulance","Vehicles/vehicle_van_jeffersoncountyambulance");
+	AddVehicleSkin("VanAmbulance", ZoneName.Meade, "Vehicles/vehicle_van_meadecountyambulance");
+	AddVehicleSkin("VanAmbulance", ZoneName.Louisville, "Vehicles/vehicle_van_louisvilleambulance");
+	AddVehicleSkin("VanAmbulance", ZoneName.Jefferson, "Vehicles/vehicle_van_jeffersoncountyambulance");
 
-	AddVehicleSkin("PickUpTruckLightsFire","Vehicles/vehicle_pickupfireshell_rosewood");
-	AddVehicleSkin("PickUpTruckLightsFire","Vehicles/vehicle_pickupfireshell_meade");
-	AddVehicleSkin("PickUpTruckLightsFire","Vehicles/vehicle_pickupfireshell_louisville");
+	AddVehicleSkin("PickUpTruckLightsFire", ZoneName.Rosewood, "Vehicles/vehicle_pickupfireshell_rosewood");
+	AddVehicleSkin("PickUpTruckLightsFire", ZoneName.Meade, "Vehicles/vehicle_pickupfireshell_meade");
+	AddVehicleSkin("PickUpTruckLightsFire", ZoneName.Louisville, "Vehicles/vehicle_pickupfireshell_louisville");
 
-	AddVehicleSkin("PickUpVanLightsFire","Vehicles/vehicle_pickupfireshell_rosewood");
-	AddVehicleSkin("PickUpVanLightsFire","Vehicles/vehicle_pickuptruckfireshell_meade");
-	AddVehicleSkin("PickUpVanLightsFire","Vehicles/vehicle_pickupfireshell_louisville");
+	AddVehicleSkin("PickUpVanLightsFire", ZoneName.Rosewood, "Vehicles/vehicle_pickupfireshell_rosewood");
+	AddVehicleSkin("PickUpVanLightsFire", ZoneName.Meade, "Vehicles/vehicle_pickuptruckfireshell_meade");
+	AddVehicleSkin("PickUpVanLightsFire", ZoneName.Louisville, "Vehicles/vehicle_pickupfireshell_louisville");
 
-	AddVehicleSkin("PickUpTruckLights","Vehicles/vehicle_pickup_stateparkranger");
-	AddVehicleSkin("PickUpTruckLights","Vehicles/vehicle_pickup_fishandwildlife");
-	AddVehicleSkin("PickUpTruckLights","Vehicles/vehicle_pickup_nationalparkservice");
+	AddVehicleSkin("PickUpTruckLights", ZoneName.Default, "Vehicles/vehicle_pickup_stateparkranger");
+	AddVehicleSkin("PickUpTruckLights", ZoneName.Default, "Vehicles/vehicle_pickup_fishandwildlife");
+	AddVehicleSkin("PickUpTruckLights", ZoneName.Default, "Vehicles/vehicle_pickup_nationalparkservice");
 
-	AddVehicleSkin("PickUpVanLights","Vehicles/vehicle_pickup_stateparkranger");
-	AddVehicleSkin("PickUpVanLights","Vehicles/vehicle_pickup_fishandwildlife");
-	AddVehicleSkin("PickUpVanLights","Vehicles/vehicle_pickup_nationalparkservice");
+	AddVehicleSkin("PickUpVanLights", ZoneName.Default, "Vehicles/vehicle_pickup_stateparkranger");
+	AddVehicleSkin("PickUpVanLights", ZoneName.Default, "Vehicles/vehicle_pickup_fishandwildlife");
+	AddVehicleSkin("PickUpVanLights", ZoneName.Default, "Vehicles/vehicle_pickup_nationalparkservice");
 
-	AddVehicleSkin("CarLights","Vehicles/vehicle_carnormal_stateparkranger");
-	AddVehicleSkin("CarLights","Vehicles/vehicle_carnormal_fishandwildlife");
-	AddVehicleSkin("CarLights","Vehicles/vehicle_carnormal_nationalparkservice");
+	AddVehicleSkin("CarLights", ZoneName.Default, "Vehicles/vehicle_carnormal_stateparkranger");
+	AddVehicleSkin("CarLights", ZoneName.Default, "Vehicles/vehicle_carnormal_fishandwildlife");
+	AddVehicleSkin("CarLights", ZoneName.Default, "Vehicles/vehicle_carnormal_nationalparkservice");
 
-	AddVehicleSkin("StepVanMail","Vehicles/vehicle_stepvan_uspsmailshell");
+	AddVehicleSkin("StepVanMail", ZoneName.Default, "Vehicles/vehicle_stepvan_uspsmailshell");
 
-	AddVehicleSkin("VanSpecial","Vehicles/vehicle_van_uspsmailvan");
+	AddVehicleSkinOverride("VanSpecial", 2, "Vehicles/vehicle_van_uspsmailvan");
 
 	if getActivatedMods():contains("RavenCreek") then
 
-		AddVehicleSkin("CarLightsPolice","Vehicles/vehicle_ravencreekpolice");
-		AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vehicle_pickup_ravencreekpolice");
+		AddVehicleSkin("CarLightsPolice", ZoneName.RavenCreek, "Vehicles/vehicle_ravencreekpolice");
+		AddVehicleSkin("PickUpVanLightsPolice", ZoneName.RavenCreek, "Vehicles/vehicle_pickup_ravencreekpolice");
 
-		AddVehicleSkin("VanAmbulance","Vehicles/vehicle_van_ravencreekambulance");
+		AddVehicleSkin("VanAmbulance", ZoneName.RavenCreek, "Vehicles/vehicle_van_ravencreekambulance");
 
-		AddVehicleSkin("PickUpTruckLightsFire","Vehicles/vehicle_pickupfireshell_ravencreek");
+		AddVehicleSkin("PickUpTruckLightsFire", ZoneName.RavenCreek, "Vehicles/vehicle_pickupfireshell_ravencreek");
 
-		AddVehicleSkin("PickUpVanLightsFire","Vehicles/vehicle_pickuptruckfireshell_ravencreek");
+		AddVehicleSkin("PickUpVanLightsFire", ZoneName.RavenCreek, "Vehicles/vehicle_pickuptruckfireshell_ravencreek");
 
 	end
 end
@@ -185,6 +229,17 @@ if getActivatedMods():contains("FRUsedCars") then
 	SetRadioType("86econolineambulance","Radio_HAM");
 	SetRadioType("80f350ambulance","Radio_HAM");
 
+	SetPoliceVehicle("85vicsheriff")
+	AddVehicleSkin("85vicsheriff", ZoneName.KSP, "Vehicles/vehicle_85crownvic_kentuckystatepoliceshell");
+	AddVehicleSkin("85vicsheriff", ZoneName.Meade, "Vehicles/vehicle_85crownvic_meadesheriffshell");
+	AddVehicleSkin("85vicsheriff", ZoneName.Rosewood, "Vehicles/vehicle_85crownvic_rosewoodpoliceshell");
+	AddVehicleSkin("85vicsheriff", ZoneName.WestPoint, "Vehicles/vehicle_85crownvic_westpointpoliceshell");
+	AddVehicleSkin("85vicsheriff", ZoneName.Muldraugh, "Vehicles/vehicle_85crownvic_muldraughpoliceshell");
+	AddVehicleSkin("85vicsheriff", ZoneName.Riverside, "Vehicles/vehicle_85crownvic_riversidepoliceshell");
+	AddVehicleSkin("85vicsheriff", ZoneName.LouisvillePD, "Vehicles/vehicle_85crownvic_lousvillepoliceshell");
+	AddVehicleSkin("85vicsheriff", ZoneName.JeffersonPD, "Vehicles/vehicle_85crownvic_jeffersonpoliceshell");
+	AddVehicleSkin("85vicsheriff", ZoneName.JeffersonSD, "Vehicles/vehicle_85crownvic_jeffersonsheriffshell");
+
 	AddVehicleSkin("85vicsheriff","Vehicles/vehicle_85crownvic_kentuckystatepoliceshell");
 	AddVehicleSkin("85vicsheriff","Vehicles/vehicle_85crownvic_meadesheriffshell");
 	AddVehicleSkin("85vicsheriff","Vehicles/vehicle_85crownvic_rosewoodpoliceshell");
@@ -196,74 +251,77 @@ if getActivatedMods():contains("FRUsedCars") then
 	AddVehicleSkin("85vicsheriff","Vehicles/vehicle_85crownvic_jeffersonpoliceshell");
 	AddVehicleSkin("85vicsheriff","Vehicles/vehicle_85crownvic_jeffersonsheriffshell");
 
-	AddVehicleSkin("92crownvicPD","Vehicles/vehicle_92crownvic_kentuckystatepoliceshell");
-	AddVehicleSkin("92crownvicPD","Vehicles/vehicle_92crownvic_meadesheriffshell");
-	AddVehicleSkin("92crownvicPD","Vehicles/vehicle_92crownvic_rosewoodpoliceshell");
-	AddVehicleSkin("92crownvicPD","Vehicles/vehicle_92crownvic_westpointpoliceshell1");
-	AddVehicleSkin("92crownvicPD","Vehicles/vehicle_92crownvic_westpointpoliceshell2");
-	AddVehicleSkin("92crownvicPD","Vehicles/vehicle_92crownvic_muldraughpoliceshell");
-	AddVehicleSkin("92crownvicPD","Vehicles/vehicle_92crownvic_riversidepoliceshell");
-	AddVehicleSkin("92crownvicPD","Vehicles/vehicle_92crownvic_louisvillepoliceshell");
-	AddVehicleSkin("92crownvicPD","Vehicles/vehicle_92crownvic_jeffersonpoliceshell");
-	AddVehicleSkin("92crownvicPD","Vehicles/vehicle_92crownvic_jeffersoncountysheriffshell");
+	SetPoliceVehicle("92crownvicPD")
+	AddVehicleSkin("92crownvicPD", ZoneName.KSP, "Vehicles/vehicle_92crownvic_kentuckystatepoliceshell");
+	AddVehicleSkin("92crownvicPD", ZoneName.Meade, "Vehicles/vehicle_92crownvic_meadesheriffshell");
+	AddVehicleSkin("92crownvicPD", ZoneName.Rosewood, "Vehicles/vehicle_92crownvic_rosewoodpoliceshell");
+	AddVehicleSkin("92crownvicPD", ZoneName.WestPoint, "Vehicles/vehicle_92crownvic_westpoliceshell1");
+	AddVehicleSkin("92crownvicPD", ZoneName.WestPoint, "Vehicles/vehicle_92crownvic_westpoliceshell2");
+	AddVehicleSkin("92crownvicPD", ZoneName.Muldraugh, "Vehicles/vehicle_92crownvic_muldraughpoliceshell");
+	AddVehicleSkin("92crownvicPD", ZoneName.Riverside, "Vehicles/vehicle_92crownvic_riversidepoliceshell");
+	AddVehicleSkin("92crownvicPD", ZoneName.LouisvillePD, "Vehicles/vehicle_92crownvic_louisvillepoliceshell");
+	AddVehicleSkin("92crownvicPD", ZoneName.JeffersonPD, "Vehicles/vehicle_92crownvic_jeffersonpoliceshell");
+	AddVehicleSkin("92crownvicPD", ZoneName.JeffersonSD, "Vehicles/vehicle_92crownvic_jeffersoncountysheriffshell");
 
-	AddVehicleSkin("91blazerpd","Vehicles/vehicle_blazer_kspshell");
-	AddVehicleSkin("91blazerpd","Vehicles/vehicle_blazer_meadesheriffshell");
-	AddVehicleSkin("91blazerpd","Vehicles/vehicle_blazer_rosewoodpoliceshell");
-	AddVehicleSkin("91blazerpd","Vehicles/vehicle_blazer_westpointpoliceshell1");
-	AddVehicleSkin("91blazerpd","Vehicles/vehicle_blazer_westpointpoliceshell2");
-	AddVehicleSkin("91blazerpd","Vehicles/vehicle_blazer_muldraughpoliceshell");
-	AddVehicleSkin("91blazerpd","Vehicles/vehicle_blazer_riversidepoliceshell");
-	AddVehicleSkin("91blazerpd","Vehicles/vehicle_blazer_louisvillepoliceshell");
-	AddVehicleSkin("91blazerpd","Vehicles/vehicle_blazer_jeffersoncountypoliceshell");
-	AddVehicleSkin("91blazerpd","Vehicles/vehicle_blazer_jeffersoncountysheriffshell");
+	SetPoliceVehicle("91blazerpd")
+	AddVehicleSkin("91blazerpd", ZoneName.KSP, "Vehicles/vehicle_blazer_kspshell");
+	AddVehicleSkin("91blazerpd", ZoneName.Meade, "Vehicles/vehicle_blazer_meadesheriffshell");
+	AddVehicleSkin("91blazerpd", ZoneName.Rosewood, "Vehicles/vehicle_blazer_rosewoodpoliceshell");
+	AddVehicleSkin("91blazerpd", ZoneName.WestPoint, "Vehicles/vehicle_blazer_westpointpoliceshell1");
+	AddVehicleSkin("91blazerpd", ZoneName.WestPoint, "Vehicles/vehicle_blazer_westpointpoliceshell2");
+	AddVehicleSkin("91blazerpd", ZoneName.Muldraugh, "Vehicles/vehicle_blazer_muldraughpoliceshell");
+	AddVehicleSkin("91blazerpd", ZoneName.Riverside, "Vehicles/vehicle_blazer_riversidepoliceshell");
+	AddVehicleSkin("91blazerpd", ZoneName.LouisvillePD, "Vehicles/vehicle_blazer_louisvillepoliceshell");
+	AddVehicleSkin("91blazerpd", ZoneName.JeffersonPD, "Vehicles/vehicle_blazer_jeffersoncountypoliceshell");
+	AddVehicleSkin("91blazerpd", ZoneName.JeffersonSD, "Vehicles/vehicle_blazer_jeffersoncountysheriffshell");
 
-	AddVehicleSkin("87capricePD","Vehicles/vehicle_87caprice_kspshell");
-	AddVehicleSkin("87capricePD","Vehicles/vehicle_87caprice_meadesheriffshell");
-	AddVehicleSkin("87capricePD","Vehicles/vehicle_87caprice_rosewoodpoliceshell");
-	AddVehicleSkin("87capricePD","Vehicles/vehicle_87caprice_westpointpoliceshell1");
-	AddVehicleSkin("87capricePD","Vehicles/vehicle_87caprice_westpointpoliceshell2");
-	AddVehicleSkin("87capricePD","Vehicles/vehicle_87caprice_muldraughpoliceshell");
-	AddVehicleSkin("87capricePD","Vehicles/vehicle_87caprice_riversidepoliceshell");
-	AddVehicleSkin("87capricePD","Vehicles/vehicle_87caprice_louisvillepoliceshell");
-	AddVehicleSkin("87capricePD","Vehicles/vehicle_87caprice_jeffersonpoliceshell");
-	AddVehicleSkin("87capricePD","Vehicles/vehicle_87caprice_jeffersonsheriffshell");
+	SetPoliceVehicle("87capricePD")
+	AddVehicleSkin("87capricePD", ZoneName.KSP, "Vehicles/vehicle_87caprice_kspshell");
+	AddVehicleSkin("87capricePD", ZoneName.Meade, "Vehicles/vehicle_87caprice_meadesheriffshell");
+	AddVehicleSkin("87capricePD", ZoneName.Rosewood, "Vehicles/vehicle_87caprice_rosewoodpoliceshell");
+	AddVehicleSkin("87capricePD", ZoneName.WestPoint, "Vehicles/vehicle_87caprice_westpointpoliceshell1");
+	AddVehicleSkin("87capricePD", ZoneName.WestPoint, "Vehicles/vehicle_87caprice_westpointpoliceshell2");
+	AddVehicleSkin("87capricePD", ZoneName.Muldraugh, "Vehicles/vehicle_87caprice_muldraughpoliceshell");
+	AddVehicleSkin("87capricePD", ZoneName.Riverside, "Vehicles/vehicle_87caprice_riversidepoliceshell");
+	AddVehicleSkin("87capricePD", ZoneName.LouisvillePD, "Vehicles/vehicle_87caprice_louisvillepoliceshell");
+	AddVehicleSkin("87capricePD", ZoneName.JeffersonPD, "Vehicles/vehicle_87caprice_jeffersonpoliceshell");
+	AddVehicleSkin("87capricePD", ZoneName.JeffersonSD, "Vehicles/vehicle_87caprice_jeffersonsheriffshell");
 
-	AddVehicleSkin("80f350ambulance","Vehicles/vehicle_80f350_meadecountymbulanceshell");
-	AddVehicleSkin("80f350ambulance","Vehicles/vehicle_80f350_louisvilleambulanceshell");
-	AddVehicleSkin("80f350ambulance","Vehicles/vehicle_80f350_jeffersoncountyambulanceshell");
+	AddVehicleSkin("80f350ambulance", ZoneName.Meade, "Vehicles/vehicle_80f350_meadecountymbulanceshell");
+	AddVehicleSkin("80f350ambulance", ZoneName.Louisville, "Vehicles/vehicle_80f350_louisvilleambulanceshell");
+	AddVehicleSkin("80f350ambulance", ZoneName.Jefferson, "Vehicles/vehicle_80f350_jeffersoncountyambulanceshell");
 
-	AddVehicleSkin("86econolineambulance","Vehicles/vehicle_86econoline_meadecountyambulanceshell");
-	AddVehicleSkin("86econolineambulance","Vehicles/vehicle_86econoline_louisvilleambulanceshell");
-	AddVehicleSkin("86econolineambulance","Vehicles/vehicle_86econoline_jeffersoncountyambulanceshell");
+	AddVehicleSkin("86econolineambulance", ZoneName.Meade, "Vehicles/vehicle_86econoline_meadecountyambulanceshell");
+	AddVehicleSkin("86econolineambulance", ZoneName.Louisville, "Vehicles/vehicle_86econoline_louisvilleambulanceshell");
+	AddVehicleSkin("86econolineambulance", ZoneName.Jefferson, "Vehicles/vehicle_86econoline_jeffersoncountyambulanceshell");
 
-	AddVehicleSkin("firepumper","Vehicles/vehicle_firepumper_rosewood");
-	AddVehicleSkin("firepumper","Vehicles/vehicle_firepumper_meade");
-	AddVehicleSkin("firepumper","Vehicles/vehicle_firepumper_louisville");
+	AddVehicleSkin("firepumper", ZoneName.Rosewood, "Vehicles/vehicle_firepumper_rosewood");
+	AddVehicleSkin("firepumper", ZoneName.Meade, "Vehicles/vehicle_firepumper_meade");
+	AddVehicleSkin("firepumper", ZoneName.Louisville, "Vehicles/vehicle_firepumper_louisville");
 
-	AddVehicleSkin("87c10fire","Vehicles/vehicle_c10_utility_rosewood_fireshell");
-	AddVehicleSkin("87c10fire","Vehicles/vehicle_c10_utility_meade_fireshell");
-	AddVehicleSkin("87c10fire","Vehicles/vehicle_c10_utility_louisville_fireshell");
+	AddVehicleSkin("87c10fire", ZoneName.Rosewood, "Vehicles/vehicle_c10_utility_rosewood_fireshell");
+	AddVehicleSkin("87c10fire", ZoneName.Meade, "Vehicles/vehicle_c10_utility_meade_fireshell");
+	AddVehicleSkin("87c10fire", ZoneName.Louisville, "Vehicles/vehicle_c10_utility_louisville_fireshell");
 
-	AddVehicleSkin("92wranglerranger","Vehicles/vehicle_92wrangler_stateparkrangershell");
-	AddVehicleSkin("92wranglerranger","Vehicles/vehicle_92wrangler_fishandwidlifeshell");
-	AddVehicleSkin("92wranglerranger","Vehicles/vehicle_92wrangler_nationalparkserviceshell");
+	AddVehicleSkin("92wranglerranger", ZoneName.Default, "Vehicles/vehicle_92wrangler_stateparkrangershell");
+	AddVehicleSkin("92wranglerranger", ZoneName.Default, "Vehicles/vehicle_92wrangler_fishandwidlifeshell");
+	AddVehicleSkin("92wranglerranger", ZoneName.Default, "Vehicles/vehicle_92wrangler_nationalparkserviceshell");
 
-	AddVehicleSkin("85vicranger","Vehicles/vehicle_85crownvic_nationalparkserviceshell");
-	AddVehicleSkin("85vicranger","Vehicles/vehicle_85crownvic_fishandwildlifeshell");
-	AddVehicleSkin("85vicranger","Vehicles/vehicle_85crownvic_stateparkrangershell");
+	AddVehicleSkin("85vicranger", ZoneName.Default, "Vehicles/vehicle_85crownvic_nationalparkserviceshell");
+	AddVehicleSkin("85vicranger", ZoneName.Default, "Vehicles/vehicle_85crownvic_fishandwildlifeshell");
+	AddVehicleSkin("85vicranger", ZoneName.Default, "Vehicles/vehicle_85crownvic_stateparkrangershell");
 
 	if getActivatedMods():contains("RavenCreek") then
 
-		AddVehicleSkin("chevystepvanswat","Vehicles/vehicle_stepvanchevyravencreekpoliceshell");
-		AddVehicleSkin("85vicsheriff","Vehicles/vehicle_85crownvic_ravencreekpoliceshell");
-		AddVehicleSkin("92crownvicPD","Vehicles/vehicle_92crownvic_ravencreekpoliceshell");
-		AddVehicleSkin("91blazerpd","Vehicles/vehicle_blazer_ravencreekpoliceshell");
-		AddVehicleSkin("87capricePD","Vehicles/vehicle_87caprice_ravencreekpoliceshell");
-		AddVehicleSkin("87c10fire","Vehicles/vehicle_c10_utility_ravencreek_fireshell");
-		AddVehicleSkin("firepumper","Vehicles/vehicle_firepumper_ravencreek");
-		AddVehicleSkin("86econolineambulance","Vehicles/vehicle_86econoline_ravencreekambulanceshell");
-		AddVehicleSkin("80f350ambulance","Vehicles/vehicle_80f350_ravencreekmbulanceshell");
+		AddVehicleSkin("chevystepvanswat", ZoneName.RavenCreek, "Vehicles/vehicle_stepvanchevyravencreekpoliceshell");
+		AddVehicleSkin("85vicsheriff", ZoneName.RavenCreek, "Vehicles/vehicle_85crownvic_ravencreekpoliceshell");
+		AddVehicleSkin("92crownvicPD", ZoneName.RavenCreek, "Vehicles/vehicle_92crownvic_ravencreekpoliceshell");
+		AddVehicleSkin("91blazerpd", ZoneName.RavenCreek, "Vehicles/vehicle_blazer_ravencreekpoliceshell");
+		AddVehicleSkin("87capricePD", ZoneName.RavenCreek, "Vehicles/vehicle_87caprice_ravencreekpoliceshell");
+		AddVehicleSkin("87c10fire", ZoneName.RavenCreek, "Vehicles/vehicle_c10_utility_ravencreek_fireshell");
+		AddVehicleSkin("firepumper", ZoneName.RavenCreek, "Vehicles/vehicle_firepumper_ravencreek");
+		AddVehicleSkin("86econolineambulance", ZoneName.RavenCreek, "Vehicles/vehicle_86econoline_ravencreekambulanceshell");
+		AddVehicleSkin("80f350ambulance", ZoneName.RavenCreek, "Vehicles/vehicle_80f350_ravencreekmbulanceshell");
 
 	end
 end
@@ -271,72 +329,74 @@ end
 --TODO: Fix this!
 if getActivatedMods():contains("VVehicleEnhancer") then
 
-	AddVehicleSkin("CarLightsPolice","Vehicles/vve/vehicle_kentuckystate_vve");
-	AddVehicleSkin("CarLightsPolice","Vehicles/vve/vehicle_meade_vve");
-	AddVehicleSkin("CarLightsPolice","Vehicles/vve/vehicle_rosewood_vve");
-	AddVehicleSkin("CarLightsPolice","Vehicles/vve/vehicle_westpoint_vve");
-	AddVehicleSkin("CarLightsPolice","Vehicles/vve/vehicle_muldraugh_vve");
-	AddVehicleSkin("CarLightsPolice","Vehicles/vve/vehicle_riverside_vve");
-	AddVehicleSkin("CarLightsPolice","Vehicles/vve/vehicle_louisville_vve");
-	AddVehicleSkin("CarLightsPolice","Vehicles/vve/vehicle_jeffersonpolice_vve");
-	AddVehicleSkin("CarLightsPolice","Vehicles/vve/vehicle_jeffersonsheriff_vve");
+	AddVehicleSkin("CarLightsPolice", ZoneName.KSP, "Vehicles/vve/vehicle_kentuckystate_vve");
+	AddVehicleSkin("CarLightsPolice", ZoneName.Meade, "Vehicles/vve/vehicle_meade_vve");
+	AddVehicleSkin("CarLightsPolice", ZoneName.Rosewood, "Vehicles/vve/vehicle_rosewood_vve");
+	AddVehicleSkin("CarLightsPolice", ZoneName.WestPoint, "Vehicles/vve/vehicle_westpoint_vve");
+	AddVehicleSkin("CarLightsPolice", ZoneName.Muldraugh, "Vehicles/vve/vehicle_muldraugh_vve");
+	AddVehicleSkin("CarLightsPolice", ZoneName.Riverside, "Vehicles/vve/vehicle_riverside_vve");
+	AddVehicleSkin("CarLightsPolice", ZoneName.LouisvillePD, "Vehicles/vve/vehicle_louisville_vve");
+	AddVehicleSkin("CarLightsPolice", ZoneName.JeffersonPD, "Vehicles/vve/vehicle_jeffersonpolice_vve");
+	AddVehicleSkin("CarLightsPolice", ZoneName.JeffersonSD, "Vehicles/vve/vehicle_jeffersonsheriff_vve");
 
-	AddVehicleSkin("CarLightsSheriff","Vehicles/vve/vehicle_kentuckystate_vve");
-	AddVehicleSkin("CarLightsSheriff","Vehicles/vve/vehicle_meade_vve");
-	AddVehicleSkin("CarLightsSheriff","Vehicles/vve/vehicle_rosewood_vve");
-	AddVehicleSkin("CarLightsSheriff","Vehicles/vve/vehicle_westpoint_vve");
-	AddVehicleSkin("CarLightsSheriff","Vehicles/vve/vehicle_muldraugh_vve");
-	AddVehicleSkin("CarLightsSheriff","Vehicles/vve/vehicle_riverside_vve");
-	AddVehicleSkin("CarLightsSheriff","Vehicles/vve/vehicle_louisville_vve");
-	AddVehicleSkin("CarLightsSheriff","Vehicles/vve/vehicle_jeffersonpolice_vve");
-	AddVehicleSkin("CarLightsSheriff","Vehicles/vve/vehicle_jeffersonsheriff_vve");
+	SetPoliceVehicle("CarLightsSheriff")
+	AddVehicleSkin("CarLightsSheriff", ZoneName.KSP, "Vehicles/vve/vehicle_kentuckystate_vve");
+	AddVehicleSkin("CarLightsSheriff", ZoneName.Meade, "Vehicles/vve/vehicle_meade_vve");
+	AddVehicleSkin("CarLightsSheriff", ZoneName.Rosewood, "Vehicles/vve/vehicle_rosewood_vve");
+	AddVehicleSkin("CarLightsSheriff", ZoneName.WestPoint, "Vehicles/vve/vehicle_westpoint_vve");
+	AddVehicleSkin("CarLightsSheriff", ZoneName.Muldraugh, "Vehicles/vve/vehicle_muldraugh_vve");
+	AddVehicleSkin("CarLightsSheriff", ZoneName.Riverside, "Vehicles/vve/vehicle_riverside_vve");
+	AddVehicleSkin("CarLightsSheriff", ZoneName.LouisvillePD, "Vehicles/vve/vehicle_louisville_vve");
+	AddVehicleSkin("CarLightsSheriff", ZoneName.JeffersonPD, "Vehicles/vve/vehicle_jeffersonpolice_vve");
+	AddVehicleSkin("CarLightsSheriff", ZoneName.JeffersonSD, "Vehicles/vve/vehicle_jeffersonsheriff_vve");
 
-	AddVehicleSkin("CarLightsStatepolice","Vehicles/vve/vehicle_kentuckystate_vve");
-	AddVehicleSkin("CarLightsStatepolice","Vehicles/vve/vehicle_meade_vve");
-	AddVehicleSkin("CarLightsStatepolice","Vehicles/vve/vehicle_rosewood_vve");
-	AddVehicleSkin("CarLightsStatepolice","Vehicles/vve/vehicle_westpoint_vve");
-	AddVehicleSkin("CarLightsStatepolice","Vehicles/vve/vehicle_muldraugh_vve");
-	AddVehicleSkin("CarLightsStatepolice","Vehicles/vve/vehicle_riverside_vve");
-	AddVehicleSkin("CarLightsStatepolice","Vehicles/vve/vehicle_louisville_vve");
-	AddVehicleSkin("CarLightsStatepolice","Vehicles/vve/vehicle_jeffersonpolice_vve");
-	AddVehicleSkin("CarLightsStatepolice","Vehicles/vve/vehicle_jeffersonsheriff_vve");
+	SetPoliceVehicle("CarLightsStatepolice")
+	AddVehicleSkin("CarLightsStatepolice", ZoneName.KSP, "Vehicles/vve/vehicle_kentuckystate_vve");
+	AddVehicleSkin("CarLightsStatepolice", ZoneName.Meade, "Vehicles/vve/vehicle_meade_vve");
+	AddVehicleSkin("CarLightsStatepolice", ZoneName.Rosewood, "Vehicles/vve/vehicle_rosewood_vve");
+	AddVehicleSkin("CarLightsStatepolice", ZoneName.WestPoint, "Vehicles/vve/vehicle_westpoint_vve");
+	AddVehicleSkin("CarLightsStatepolice", ZoneName.Muldraugh, "Vehicles/vve/vehicle_muldraugh_vve");
+	AddVehicleSkin("CarLightsStatepolice", ZoneName.Riverside, "Vehicles/vve/vehicle_riverside_vve");
+	AddVehicleSkin("CarLightsStatepolice", ZoneName.LouisvillePD, "Vehicles/vve/vehicle_louisville_vve");
+	AddVehicleSkin("CarLightsStatepolice", ZoneName.JeffersonPD, "Vehicles/vve/vehicle_jeffersonpolice_vve");
+	AddVehicleSkin("CarLightsStatepolice", ZoneName.JeffersonSD, "Vehicles/vve/vehicle_jeffersonsheriff_vve");
 
-	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vve/vehicle_pickup_ksp_vve");
-	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vve/vehicle_pickup_meade_vve");
-	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vve/vehicle_pickup_rosewood_vve");
-	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vve/vehicle_pickup_westpoint_vve");
-	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vve/vehicle_pickup_muldraugh_vve");
-	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vve/vehicle_pickup_riverside_vve");
-	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vve/vehicle_pickup_louisville_vve");
-	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vve/vehicle_pickup_jeffersonpolice_vve");
-	AddVehicleSkin("PickUpVanLightsPolice","Vehicles/vve/vehicle_pickup_jeffersonsheriff_vve");
+	AddVehicleSkin("PickUpVanLightsPolice", ZoneName.KSP, "Vehicles/vve/vehicle_pickup_ksp_vve");
+	AddVehicleSkin("PickUpVanLightsPolice", ZoneName.Meade, "Vehicles/vve/vehicle_pickup_meade_vve");
+	AddVehicleSkin("PickUpVanLightsPolice", ZoneName.Rosewood, "Vehicles/vve/vehicle_pickup_rosewood_vve");
+	AddVehicleSkin("PickUpVanLightsPolice", ZoneName.WestPoint, "Vehicles/vve/vehicle_pickup_westpoint_vve");
+	AddVehicleSkin("PickUpVanLightsPolice", ZoneName.Muldraugh, "Vehicles/vve/vehicle_pickup_muldraugh_vve");
+	AddVehicleSkin("PickUpVanLightsPolice", ZoneName.Riverside, "Vehicles/vve/vehicle_pickup_riverside_vve");
+	AddVehicleSkin("PickUpVanLightsPolice", ZoneName.LouisvillePD, "Vehicles/vve/vehicle_pickup_louisville_vve");
+	AddVehicleSkin("PickUpVanLightsPolice", ZoneName.JeffersonPD, "Vehicles/vve/vehicle_pickup_jeffersonpolice_vve");
+	AddVehicleSkin("PickUpVanLightsPolice", ZoneName.JeffersonSD, "Vehicles/vve/vehicle_pickup_jeffersonsheriff_vve");
 
-	AddVehicleSkin("VanAmbulance","Vehicles/vve/vehicle_van_meadecountyambulance_vve");
-	AddVehicleSkin("VanAmbulance","Vehicles/vve/vehicle_van_louisvilleambulance_vve");
-	AddVehicleSkin("VanAmbulance","Vehicles/vve/vehicle_van_jeffersoncountyambulance_vve");
+	AddVehicleSkin("VanAmbulance", ZoneName.Meade, "Vehicles/vve/vehicle_van_meadecountyambulance_vve");
+	AddVehicleSkin("VanAmbulance", ZoneName.Louisville, "Vehicles/vve/vehicle_van_louisvilleambulance_vve");
+	AddVehicleSkin("VanAmbulance", ZoneName.Jefferson, "Vehicles/vve/vehicle_van_jeffersoncountyambulance_vve");
 
-	AddVehicleSkin("PickUpTruckLightsFire","Vehicles/vve/vehicle_pickupfireshell_rosewood_vve");
-	AddVehicleSkin("PickUpTruckLightsFire","Vehicles/vve/vehicle_pickupfireshell_meade_vve");
-	AddVehicleSkin("PickUpTruckLightsFire","Vehicles/vve/vehicle_pickupfireshell_louisville_vve");
+	AddVehicleSkin("PickUpTruckLightsFire", ZoneName.Rosewood, "Vehicles/vve/vehicle_pickupfireshell_rosewood_vve");
+	AddVehicleSkin("PickUpTruckLightsFire", ZoneName.Meade, "Vehicles/vve/vehicle_pickupfireshell_meade_vve");
+	AddVehicleSkin("PickUpTruckLightsFire", ZoneName.Louisville, "Vehicles/vve/vehicle_pickupfireshell_louisville_vve");
 
-	AddVehicleSkin("PickUpVanLightsFire","Vehicles/vve/vehicle_pickupfireshell_rosewood_vve");
-	AddVehicleSkin("PickUpVanLightsFire","Vehicles/vve/vehicle_pickupfireshell_meade_vve");
-	AddVehicleSkin("PickUpVanLightsFire","Vehicles/vve/vehicle_pickupfireshell_louisville_vve");
+	AddVehicleSkin("PickUpVanLightsFire", ZoneName.Rosewood, "Vehicles/vve/vehicle_pickupfireshell_rosewood_vve");
+	AddVehicleSkin("PickUpVanLightsFire", ZoneName.Meade, "Vehicles/vve/vehicle_pickupfireshell_meade_vve");
+	AddVehicleSkin("PickUpVanLightsFire", ZoneName.Louisville, "Vehicles/vve/vehicle_pickupfireshell_louisville_vve");
 
-	AddVehicleSkin("CarLights","Vehicles/vve/vehicle_carnormal_stateparkranger_vve");
-	AddVehicleSkin("CarLights","Vehicles/vve/vehicle_carnormal_fishandwildlife_vve");
-	AddVehicleSkin("CarLights","Vehicles/vve/vehicle_carnormal_nationalparkservice_vve");
+	AddVehicleSkin("CarLights", ZoneName.Default, "Vehicles/vve/vehicle_carnormal_stateparkranger_vve");
+	AddVehicleSkin("CarLights", ZoneName.Default, "Vehicles/vve/vehicle_carnormal_fishandwildlife_vve");
+	AddVehicleSkin("CarLights", ZoneName.Default, "Vehicles/vve/vehicle_carnormal_nationalparkservice_vve");
 
 	--TweakVehicle("Base.StepVanMail","skin1", "Vehicles/vve/vehicle_stepvan_uspsmailshell_vve");
-	AddVehicleSkin("StepVanMail","Vehicles/vehicle_stepvan_uspsmailshell");
+	AddVehicleSkin("StepVanMail", ZoneName.Default, "Vehicles/vehicle_stepvan_uspsmailshell");
 
-	AddVehicleSkin("VanSpecial","Vehicles/vve/vehicle_van_uspsmailvan_vve");
+	AddVehicleSkinOverride("VanSpecial", 2, "Vehicles/vve/vehicle_van_uspsmailvan_vve");
 
 	if getActivatedMods():contains("RavenCreek") then
 
-		AddVehicleSkin("CarLightsPolice","Vehicles/vve/vehicle_ravencreek_vve");
-		AddVehicleSkin("CarLightsSheriff","Vehicles/vve/vehicle_ravencreek_vve");
-		AddVehicleSkin("CarLightsStatepolice","Vehicles/vve/vehicle_ravencreek_vve");
+		AddVehicleSkin("CarLightsPolice", ZoneName.RavenCreek, "Vehicles/vve/vehicle_ravencreek_vve");
+		AddVehicleSkin("CarLightsSheriff", ZoneName.RavenCreek, "Vehicles/vve/vehicle_ravencreek_vve");
+		AddVehicleSkin("CarLightsStatepolice", ZoneName.RavenCreek, "Vehicles/vve/vehicle_ravencreek_vve");
 		--TweakVehicle("Base.PickUpVanLightsPolice","skin10", "Vehicles/vehicle_pickup_ravencreekpolice");
 
 		--TweakVehicle("Base.VanAmbulance","skin4", "Vehicles/vehicle_van_ravencreekambulance");
@@ -347,3 +407,5 @@ if getActivatedMods():contains("VVehicleEnhancer") then
 
 	end
 end
+
+return vehicleToSkin
