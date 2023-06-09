@@ -13,7 +13,8 @@ local ZoneName = {
 	JeffersonPD = "JeffersonPD",
 	JeffersonSD = "JeffersonSD",
 	Jefferson = "Jefferson",
-	RavenCreek = "RavenCreek"
+	RavenCreek = "RavenCreek",
+	Tandil = "Tandil"
 }
 
 ---Like DoParam but for vehicles
@@ -30,11 +31,9 @@ local DoVehicleParam = function(vehicle, param, module)
 	return true
 end
 
----Adds a new skin to a vehicle and adds it to the overrides table
+---Utility to add new skins to vehicles
 ---@param vehicle string Name of the vehicle script
 ---@param texture string The new skin's texture
----@param zone string The name of the zone this skin should be used in
----@param module string Optional: the module of the vehicle
 ---@see DoVehicleParam
 local AddVehicleSkin = function(vehicle, zone, texture, module)
 	module = module or "Base"
@@ -149,10 +148,10 @@ if getActivatedMods():contains("VVehicleEnhancer") and getActivatedMods():contai
 
 end
 
-SetPoliceVehicle("CarLightsPolice")
-SetPoliceVehicle("PickUpVanLightsPolice")
+if not getActivatedMods():contains("VVehicleEnhancer") and not getActivatedMods():contains("SCKCO") then
+	SetPoliceVehicle("CarLightsPolice")
+	SetPoliceVehicle("PickUpVanLightsPolice")
 
-if not getActivatedMods():contains("VVehicleEnhancer") then
 	AddVehicleSkin("CarLightsPolice", ZoneName.KSP, "Vehicles/vehicle_kentuckystate")
 	AddVehicleSkin("CarLightsPolice", ZoneName.Meade, "Vehicles/vehicle_meadesheriff")
 	AddVehicleSkin("CarLightsPolice", ZoneName.Rosewood, "Vehicles/vehicle_rosewoodpolice")
@@ -215,8 +214,19 @@ if not getActivatedMods():contains("VVehicleEnhancer") then
 		AddVehicleSkin("PickUpVanLightsFire", ZoneName.RavenCreek, "Vehicles/vehicle_pickuptruckfireshell_ravencreek");
 
 	end
-end
+	if getActivatedMods():contains("Tandil") then
 
+		AddVehicleSkin("CarLightsPolice", ZoneName.Tandil, "Vehicles/vehicle_tandilpolice");
+		-- AddVehicleSkin("PickUpVanLightsPolice", ZoneName.Tandil, "Vehicles/vehicle_pickup_ravencreekpolice");
+
+		-- AddVehicleSkin("VanAmbulance", ZoneName.Tandil, "Vehicles/vehicle_van_ravencreekambulance");
+
+		-- AddVehicleSkin("PickUpTruckLightsFire", ZoneName.Tandil, "Vehicles/vehicle_pickupfireshell_ravencreek");
+
+		-- AddVehicleSkin("PickUpVanLightsFire", ZoneName.Tandil, "Vehicles/vehicle_pickuptruckfireshell_ravencreek");
+
+	end
+end
 if getActivatedMods():contains("FRUsedCars") then
 
 	SetRadioType("chevystepvanswat","Radio_HAM");
@@ -239,17 +249,6 @@ if getActivatedMods():contains("FRUsedCars") then
 	AddVehicleSkin("85vicsheriff", ZoneName.LouisvillePD, "Vehicles/vehicle_85crownvic_lousvillepoliceshell");
 	AddVehicleSkin("85vicsheriff", ZoneName.JeffersonPD, "Vehicles/vehicle_85crownvic_jeffersonpoliceshell");
 	AddVehicleSkin("85vicsheriff", ZoneName.JeffersonSD, "Vehicles/vehicle_85crownvic_jeffersonsheriffshell");
-
-	AddVehicleSkin("85vicsheriff","Vehicles/vehicle_85crownvic_kentuckystatepoliceshell");
-	AddVehicleSkin("85vicsheriff","Vehicles/vehicle_85crownvic_meadesheriffshell");
-	AddVehicleSkin("85vicsheriff","Vehicles/vehicle_85crownvic_rosewoodpoliceshell");
-	AddVehicleSkin("85vicsheriff","Vehicles/vehicle_85crownvic_westpointpoliceshell1");
-	AddVehicleSkin("85vicsheriff","Vehicles/vehicle_85crownvic_westpointpoliceshell2");
-	AddVehicleSkin("85vicsheriff","Vehicles/vehicle_85crownvic_muldraughpoliceshell");
-	AddVehicleSkin("85vicsheriff","Vehicles/vehicle_85crownvic_riversidepoliceshell");
-	AddVehicleSkin("85vicsheriff","Vehicles/vehicle_85crownvic_lousvillepoliceshell");
-	AddVehicleSkin("85vicsheriff","Vehicles/vehicle_85crownvic_jeffersonpoliceshell");
-	AddVehicleSkin("85vicsheriff","Vehicles/vehicle_85crownvic_jeffersonsheriffshell");
 
 	SetPoliceVehicle("92crownvicPD")
 	AddVehicleSkin("92crownvicPD", ZoneName.KSP, "Vehicles/vehicle_92crownvic_kentuckystatepoliceshell");
@@ -287,7 +286,7 @@ if getActivatedMods():contains("FRUsedCars") then
 	AddVehicleSkin("87capricePD", ZoneName.JeffersonPD, "Vehicles/vehicle_87caprice_jeffersonpoliceshell");
 	AddVehicleSkin("87capricePD", ZoneName.JeffersonSD, "Vehicles/vehicle_87caprice_jeffersonsheriffshell");
 
-	AddVehicleSkin("80f350ambulance", ZoneName.Meade, "Vehicles/vehicle_80f350_meadecountymbulanceshell");
+	AddVehicleSkin("80f350ambulance", ZoneName.Meade, "Vehicles/vehicle_80f350_meadecountyambulanceshell");
 	AddVehicleSkin("80f350ambulance", ZoneName.Louisville, "Vehicles/vehicle_80f350_louisvilleambulanceshell");
 	AddVehicleSkin("80f350ambulance", ZoneName.Jefferson, "Vehicles/vehicle_80f350_jeffersoncountyambulanceshell");
 
@@ -313,7 +312,7 @@ if getActivatedMods():contains("FRUsedCars") then
 
 	if getActivatedMods():contains("RavenCreek") then
 
-		AddVehicleSkin("chevystepvanswat", ZoneName.RavenCreek, "Vehicles/vehicle_stepvanchevyravencreekpoliceshell");
+		--	AddVehicleSkin("chevystepvanswat","Vehicles/vehicle_stepvanchevyravencreekpoliceshell");
 		AddVehicleSkin("85vicsheriff", ZoneName.RavenCreek, "Vehicles/vehicle_85crownvic_ravencreekpoliceshell");
 		AddVehicleSkin("92crownvicPD", ZoneName.RavenCreek, "Vehicles/vehicle_92crownvic_ravencreekpoliceshell");
 		AddVehicleSkin("91blazerpd", ZoneName.RavenCreek, "Vehicles/vehicle_blazer_ravencreekpoliceshell");
@@ -321,13 +320,495 @@ if getActivatedMods():contains("FRUsedCars") then
 		AddVehicleSkin("87c10fire", ZoneName.RavenCreek, "Vehicles/vehicle_c10_utility_ravencreek_fireshell");
 		AddVehicleSkin("firepumper", ZoneName.RavenCreek, "Vehicles/vehicle_firepumper_ravencreek");
 		AddVehicleSkin("86econolineambulance", ZoneName.RavenCreek, "Vehicles/vehicle_86econoline_ravencreekambulanceshell");
-		AddVehicleSkin("80f350ambulance", ZoneName.RavenCreek, "Vehicles/vehicle_80f350_ravencreekmbulanceshell");
+		AddVehicleSkin("80f350ambulance", ZoneName.RavenCreek, "Vehicles/vehicle_80f350_ravencreekambulanceshell");
+
+	end
+	if getActivatedMods():contains("Tandil") then
+
+		--	AddVehicleSkin("chevystepvanswat","Vehicles/vehicle_stepvanchevyravencreekpoliceshell");
+		AddVehicleSkin("85vicsheriff", ZoneName.Tandil, "Vehicles/vehicle_85crownvic_tandilpoliceshell");
+		AddVehicleSkin("92crownvicPD", ZoneName.Tandil, "Vehicles/vehicle_92crownvic_tandilpoliceshell");
+		AddVehicleSkin("91blazerpd", ZoneName.Tandil, "Vehicles/vehicle_blazer_tandilpoliceshell");
+		AddVehicleSkin("87capricePD", ZoneName.Tandil, "Vehicles/vehicle_87caprice_tandilpoliceshell");
+		AddVehicleSkin("87c10fire", ZoneName.Tandil, "Vehicles/vehicle_c10_utility_tandil_fireshell");
+		AddVehicleSkin("firepumper", ZoneName.Tandil, "Vehicles/vehicle_firepumper_tandil");
+		AddVehicleSkin("86econolineambulance", ZoneName.Tandil, "Vehicles/vehicle_86econoline_tandilambulanceshell");
+		AddVehicleSkin("80f350ambulance", ZoneName.Tandil, "Vehicles/vehicle_80f350_tandilambulanceshell");
+
+	end
+end
+if getActivatedMods():contains("FEP") then
+
+--	SetRadioType("chevystepvanswat","Radio_HAM");
+
+	-- Single Beacon - All Blue
+	--AddVehicleSkin("85vicPD","Vehicles/fep/vehicle_85crownvic_kentuckystatepoliceshell");
+
+	-- Normal With Loudspeaker
+	AddVehicleSkin("85vicsheriff2", ZoneName.Meade, "Vehicles/fep/vehicle_85crownvic_meadesheriffshell");
+	AddVehicleSkin("85vicsheriff2", ZoneName.Rosewood, "Vehicles/fep/vehicle_85crownvic_rosewoodpoliceshell");
+	AddVehicleSkin("85vicsheriff2", ZoneName.WestPoint, "Vehicles/fep/vehicle_85crownvic_westpointpoliceshell");
+	AddVehicleSkin("85vicsheriff2", ZoneName.WestPoint, "Vehicles/fep/vehicle_85crownvic_westpoint2policeshell");
+	AddVehicleSkin("85vicsheriff2", ZoneName.Muldraugh, "Vehicles/fep/vehicle_85crownvic_muldraughpoliceshell");
+	AddVehicleSkin("85vicsheriff2", ZoneName.Riverside, "Vehicles/fep/vehicle_85crownvic_riversidepoliceshell");
+	AddVehicleSkin("85vicsheriff2", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_85crownvic_lousvillepoliceshell");
+	AddVehicleSkin("85vicsheriff2", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_85crownvic_jeffersonpoliceshell");
+	AddVehicleSkin("85vicsheriff2", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_85crownvic_jeffersonsheriffshell");
+
+	-- Normal With Loudspeaker
+	AddVehicleSkin("91vicsheriff", ZoneName.Rosewood, "Vehicles/fep/vehicle_91crownvic_rosewoodpoliceshell");
+	AddVehicleSkin("91vicsheriff", ZoneName.WestPoint, "Vehicles/fep/vehicle_91crownvic_westpointpoliceshell");
+	AddVehicleSkin("91vicsheriff", ZoneName.WestPoint, "Vehicles/fep/vehicle_91crownvic_westpoint2policeshell");
+	AddVehicleSkin("91vicsheriff", ZoneName.Muldraugh, "Vehicles/fep/vehicle_91crownvic_muldraughpoliceshell");
+	AddVehicleSkin("91vicsheriff", ZoneName.Riverside, "Vehicles/fep/vehicle_91crownvic_riversidepoliceshell");
+	AddVehicleSkin("91vicsheriff", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_91crownvic_lousvillepoliceshell");
+	AddVehicleSkin("91vicsheriff", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_91crownvic_jeffersonpoliceshell");
+	AddVehicleSkin("91vicsheriff", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_91crownvic_jeffersonsheriffshell");
+
+	-- V-Lightbar
+	AddVehicleSkin("91crownvicPD2", ZoneName.Meade, "Vehicles/fep/vehicle_91crownvic_meadesheriffshell2");
+	AddVehicleSkin("91crownvicPD2", ZoneName.Rosewood, "Vehicles/fep/vehicle_91crownvic_rosewoodpoliceshell2");
+	AddVehicleSkin("91crownvicPD2", ZoneName.WestPoint, "Vehicles/fep/vehicle_91crownvic_westpointpoliceshell2");
+	AddVehicleSkin("91crownvicPD2", ZoneName.WestPoint, "Vehicles/fep/vehicle_91crownvic_westpoint2policeshell2");
+	AddVehicleSkin("91crownvicPD2", ZoneName.Muldraugh, "Vehicles/fep/vehicle_91crownvic_muldraughpoliceshell2");
+	AddVehicleSkin("91crownvicPD2", ZoneName.Riverside, "Vehicles/fep/vehicle_91crownvic_riversidepoliceshell2");
+	AddVehicleSkin("91crownvicPD2", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_91crownvic_louisvillepoliceshell2");
+	AddVehicleSkin("91crownvicPD2", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_91crownvic_jeffersonpoliceshell2");
+	AddVehicleSkin("91crownvicPD2", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_91crownvic_jeffersonsheriffshell2");
+
+	-- Normal With Loudspeaker - All Blue
+	AddVehicleSkin("91crownvicPD3", ZoneName.Meade, "Vehicles/fep/vehicle_91crownvic_meadesheriffshell");
+
+	-- V-Lightbar
+	AddVehicleSkin("92crownvicPD2", ZoneName.Rosewood, "Vehicles/fep/vehicle_93crownvic_rosewoodpoliceshell");
+	AddVehicleSkin("92crownvicPD2", ZoneName.Rosewood, "Vehicles/fep/vehicle_92crownvic_rosewoodpoliceshell");
+	AddVehicleSkin("92crownvicPD2", ZoneName.WestPoint, "Vehicles/fep/vehicle_93crownvic_westpointpoliceshell");
+	AddVehicleSkin("92crownvicPD2", ZoneName.WestPoint, "Vehicles/fep/vehicle_92crownvic_westpointpoliceshell");
+	AddVehicleSkin("92crownvicPD2", ZoneName.WestPoint, "Vehicles/fep/vehicle_93crownvic_westpoint2policeshell");
+	AddVehicleSkin("92crownvicPD2", ZoneName.WestPoint, "Vehicles/fep/vehicle_92crownvic_westpoint2policeshell");
+	AddVehicleSkin("92crownvicPD2", ZoneName.Muldraugh, "Vehicles/fep/vehicle_93crownvic_muldraughpoliceshell");
+	AddVehicleSkin("92crownvicPD2", ZoneName.Muldraugh, "Vehicles/fep/vehicle_92crownvic_muldraughpoliceshell");
+	AddVehicleSkin("92crownvicPD2", ZoneName.Riverside, "Vehicles/fep/vehicle_93crownvic_riversidepoliceshell");
+	AddVehicleSkin("92crownvicPD2", ZoneName.Riverside, "Vehicles/fep/vehicle_92crownvic_riversidepoliceshell");
+	AddVehicleSkin("92crownvicPD2", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_93crownvic_louisvillepoliceshell");
+	AddVehicleSkin("92crownvicPD2", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_92crownvic_louisvillepoliceshell");
+	AddVehicleSkin("92crownvicPD2", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_93crownvic_jeffersonpoliceshell");
+	AddVehicleSkin("92crownvicPD2", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_92crownvic_jeffersonpoliceshell");
+	AddVehicleSkin("92crownvicPD2", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_93crownvic_jeffersonsheriffshell");
+	AddVehicleSkin("92crownvicPD2", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_92crownvic_jeffersonsheriffshell");
+
+	-- V-Lightbar - All Blue
+	--AddVehicleSkin("92crownvicPD3","Vehicles/fep/vehicle_92crownvic_kentuckystatepoliceshell");
+	AddVehicleSkin("92crownvicPD3", ZoneName.Meade, "Vehicles/fep/vehicle_92crownvic_meadesheriffshell");
+	AddVehicleSkin("92crownvicPD3", ZoneName.Meade, "Vehicles/fep/vehicle_93crownvic_meadesheriffshell3");
+
+	-- Normal With Loudspeaker 
+	AddVehicleSkin("92crownvicPD4", ZoneName.Rosewood, "Vehicles/fep/vehicle_93crownvic_rosewoodpoliceshell3");
+	AddVehicleSkin("92crownvicPD4", ZoneName.Rosewood, "Vehicles/fep/vehicle_92crownvic_rosewoodpoliceshell3");
+	AddVehicleSkin("92crownvicPD4", ZoneName.WestPoint, "Vehicles/fep/vehicle_93crownvic_westpointpoliceshell3");
+	AddVehicleSkin("92crownvicPD4", ZoneName.WestPoint, "Vehicles/fep/vehicle_92crownvic_westpointpoliceshell3");
+	AddVehicleSkin("92crownvicPD4", ZoneName.WestPoint, "Vehicles/fep/vehicle_93crownvic_westpoint2policeshell3");
+	AddVehicleSkin("92crownvicPD4", ZoneName.WestPoint, "Vehicles/fep/vehicle_92crownvic_westpoint2policeshell3");
+	AddVehicleSkin("92crownvicPD4", ZoneName.Muldraugh, "Vehicles/fep/vehicle_93crownvic_muldraughpoliceshell3");
+	AddVehicleSkin("92crownvicPD4", ZoneName.Muldraugh, "Vehicles/fep/vehicle_92crownvic_muldraughpoliceshell3");
+	AddVehicleSkin("92crownvicPD4", ZoneName.Riverside, "Vehicles/fep/vehicle_93crownvic_riversidepoliceshell3");
+	AddVehicleSkin("92crownvicPD4", ZoneName.Riverside, "Vehicles/fep/vehicle_92crownvic_riversidepoliceshell3");
+	AddVehicleSkin("92crownvicPD4", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_93crownvic_louisvillepoliceshell3");
+	AddVehicleSkin("92crownvicPD4", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_92crownvic_louisvillepoliceshell3");
+	AddVehicleSkin("92crownvicPD4", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_93crownvic_jeffersonpoliceshell3");
+	AddVehicleSkin("92crownvicPD4", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_92crownvic_jeffersonpoliceshell3");
+	AddVehicleSkin("92crownvicPD4", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_93crownvic_jeffersonsheriffshell3");
+	AddVehicleSkin("92crownvicPD4", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_92crownvic_jeffersonsheriffshell3");
+
+	-- Normal Without Loudspeaker - All Blue
+	--AddVehicleSkin("92crownvicPD5","Vehicles/fep/vehicle_92crownvic_kentuckystatepoliceshell");
+	AddVehicleSkin("92crownvicPD5", ZoneName.Meade, "Vehicles/fep/vehicle_92crownvic_meadesheriffshell2");
+	AddVehicleSkin("92crownvicPD5", ZoneName.Meade, "Vehicles/fep/vehicle_93crownvic_meadesheriffshell2");
+
+	-- V-Lightbar - No Bullbar
+	AddVehicleSkin("92crownvicPD6", ZoneName.Rosewood, "Vehicles/fep/vehicle_93crownvic_rosewoodpoliceshell");
+	AddVehicleSkin("92crownvicPD6", ZoneName.Rosewood, "Vehicles/fep/vehicle_92crownvic_rosewoodpoliceshell");
+	AddVehicleSkin("92crownvicPD6", ZoneName.WestPoint, "Vehicles/fep/vehicle_93crownvic_westpointpoliceshell");
+	AddVehicleSkin("92crownvicPD6", ZoneName.WestPoint, "Vehicles/fep/vehicle_92crownvic_westpointpoliceshell");
+	AddVehicleSkin("92crownvicPD6", ZoneName.WestPoint, "Vehicles/fep/vehicle_93crownvic_westpoint2policeshell");
+	AddVehicleSkin("92crownvicPD6", ZoneName.WestPoint, "Vehicles/fep/vehicle_92crownvic_westpoint2policeshell");
+	AddVehicleSkin("92crownvicPD6", ZoneName.Muldraugh, "Vehicles/fep/vehicle_93crownvic_muldraughpoliceshell");
+	AddVehicleSkin("92crownvicPD6", ZoneName.Muldraugh, "Vehicles/fep/vehicle_92crownvic_westpointpoliceshell");
+	AddVehicleSkin("92crownvicPD6", ZoneName.Riverside, "Vehicles/fep/vehicle_93crownvic_riversidepoliceshell");
+	AddVehicleSkin("92crownvicPD6", ZoneName.Riverside, "Vehicles/fep/vehicle_92crownvic_riversidepoliceshell");
+	AddVehicleSkin("92crownvicPD6", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_93crownvic_louisvillepoliceshell");
+	AddVehicleSkin("92crownvicPD6", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_92crownvic_louisvillepoliceshell");
+	AddVehicleSkin("92crownvicPD6", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_93crownvic_jeffersonpoliceshell");
+	AddVehicleSkin("92crownvicPD6", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_92crownvic_jeffersonpoliceshell");
+	AddVehicleSkin("92crownvicPD6", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_93crownvic_jeffersonsheriffshell");
+	AddVehicleSkin("92crownvicPD6", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_92crownvic_jeffersonsheriffshell");
+
+	-- Square Lightbar - No Bullbar
+	AddVehicleSkin("92crownvicPD7", ZoneName.Rosewood, "Vehicles/fep/vehicle_93crownvic_rosewoodpoliceshell2");
+	AddVehicleSkin("92crownvicPD7", ZoneName.Rosewood, "Vehicles/fep/vehicle_92crownvic_rosewoodpoliceshell2");
+	AddVehicleSkin("92crownvicPD7", ZoneName.WestPoint, "Vehicles/fep/vehicle_93crownvic_westpointpoliceshell2");
+	AddVehicleSkin("92crownvicPD7", ZoneName.WestPoint, "Vehicles/fep/vehicle_92crownvic_westpointpoliceshell2");
+	AddVehicleSkin("92crownvicPD7", ZoneName.WestPoint, "Vehicles/fep/vehicle_93crownvic_westpoint2policeshell2");
+	AddVehicleSkin("92crownvicPD7", ZoneName.WestPoint, "Vehicles/fep/vehicle_92crownvic_westpoint2policeshell2");
+	AddVehicleSkin("92crownvicPD7", ZoneName.Muldraugh, "Vehicles/fep/vehicle_93crownvic_muldraughpoliceshell2");
+	AddVehicleSkin("92crownvicPD7", ZoneName.Muldraugh, "Vehicles/fep/vehicle_92crownvic_muldraughpoliceshell2");
+	AddVehicleSkin("92crownvicPD7", ZoneName.Riverside, "Vehicles/fep/vehicle_93crownvic_riversidepoliceshell2");
+	AddVehicleSkin("92crownvicPD7", ZoneName.Riverside, "Vehicles/fep/vehicle_92crownvic_riversidepoliceshell2");
+	AddVehicleSkin("92crownvicPD7", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_93crownvic_louisvillepoliceshell2");
+	AddVehicleSkin("92crownvicPD7", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_92crownvic_louisvillepoliceshell2");
+	AddVehicleSkin("92crownvicPD7", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_93crownvic_jeffersonpoliceshell2");
+	AddVehicleSkin("92crownvicPD7", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_92crownvic_jeffersonpoliceshell2");
+	AddVehicleSkin("92crownvicPD7", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_93crownvic_jeffersonsheriffshell2");
+	AddVehicleSkin("92crownvicPD7", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_92crownvic_jeffersonsheriffshell2");
+
+	-- Square Lightbar
+	AddVehicleSkin("92crownvicPD8", ZoneName.Rosewood, "Vehicles/fep/vehicle_93crownvic_rosewoodpoliceshell2");
+	AddVehicleSkin("92crownvicPD8", ZoneName.Rosewood, "Vehicles/fep/vehicle_92crownvic_rosewoodpoliceshell2");
+	AddVehicleSkin("92crownvicPD8", ZoneName.WestPoint, "Vehicles/fep/vehicle_93crownvic_westpointpoliceshell2");
+	AddVehicleSkin("92crownvicPD8", ZoneName.WestPoint, "Vehicles/fep/vehicle_92crownvic_westpointpoliceshell2");
+	AddVehicleSkin("92crownvicPD8", ZoneName.WestPoint, "Vehicles/fep/vehicle_93crownvic_westpoint2policeshell2");
+	AddVehicleSkin("92crownvicPD8", ZoneName.WestPoint, "Vehicles/fep/vehicle_92crownvic_westpoint2policeshell2");
+	AddVehicleSkin("92crownvicPD8", ZoneName.Muldraugh, "Vehicles/fep/vehicle_93crownvic_muldraughpoliceshell2");
+	AddVehicleSkin("92crownvicPD8", ZoneName.Muldraugh, "Vehicles/fep/vehicle_92crownvic_muldraughpoliceshell2");
+	AddVehicleSkin("92crownvicPD8", ZoneName.Riverside, "Vehicles/fep/vehicle_93crownvic_riversidepoliceshell2");
+	AddVehicleSkin("92crownvicPD8", ZoneName.Riverside, "Vehicles/fep/vehicle_92crownvic_riversidepoliceshell2");
+	AddVehicleSkin("92crownvicPD8", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_93crownvic_louisvillepoliceshell2");
+	AddVehicleSkin("92crownvicPD8", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_92crownvic_louisvillepoliceshell2");
+	AddVehicleSkin("92crownvicPD8", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_93crownvic_jeffersonpoliceshell2");
+	AddVehicleSkin("92crownvicPD8", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_92crownvic_jeffersonpoliceshell2");
+	AddVehicleSkin("92crownvicPD8", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_93crownvic_jeffersonsheriffshell2");
+	AddVehicleSkin("92crownvicPD8", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_92crownvic_jeffersonsheriffshell2");
+
+	-- Square Lightbar - All Blue - No Bullbar
+	--AddVehicleSkin("92crownvicPD9","Vehicles/fep/vehicle_92crownvic_kentuckystatepoliceshell");
+	AddVehicleSkin("92crownvicPD9", ZoneName.Meade, "Vehicles/fep/vehicle_92crownvic_meadesheriffshell2");
+	AddVehicleSkin("92crownvicPD9", ZoneName.Meade, "Vehicles/fep/vehicle_92crownvic_meadecountysheriffshell3");
+
+	-- Square Lightbar - All Blue
+	--AddVehicleSkin("92crownvicPD10","Vehicles/fep/vehicle_92crownvic_kentuckystatepoliceshell");
+	AddVehicleSkin("92crownvicPD10", ZoneName.Meade, "Vehicles/fep/vehicle_93crownvic_meadecountysheriffshell3");
+	AddVehicleSkin("92crownvicPD10", ZoneName.Meade, "Vehicles/fep/vehicle_92crownvic_meadecountysheriffshell3");
+
+	-- Normal With Loudspeaker - No Bullbar
+	AddVehicleSkin("92crownvicSheriff", ZoneName.Rosewood, "Vehicles/fep/vehicle_92crownvic_rosewoodpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff", ZoneName.Rosewood, "Vehicles/fep/vehicle_93crownvic_rosewoodpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff", ZoneName.WestPoint, "Vehicles/fep/vehicle_92crownvic_westpointpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff", ZoneName.WestPoint, "Vehicles/fep/vehicle_93crownvic_westpointpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff", ZoneName.WestPoint, "Vehicles/fep/vehicle_92crownvic_westpoint2policeshell4");
+	AddVehicleSkin("92crownvicSheriff", ZoneName.WestPoint, "Vehicles/fep/vehicle_93crownvic_westpoint2policeshell4");
+	AddVehicleSkin("92crownvicSheriff", ZoneName.Muldraugh, "Vehicles/fep/vehicle_92crownvic_muldraughpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff", ZoneName.Muldraugh, "Vehicles/fep/vehicle_93crownvic_muldraughpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff", ZoneName.Riverside, "Vehicles/fep/vehicle_92crownvic_riversidepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff", ZoneName.Riverside, "Vehicles/fep/vehicle_93crownvic_riversidepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_92crownvic_louisvillepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_93crownvic_louisvillepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_92crownvic_jeffersonpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_93crownvic_jeffersonpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_92crownvic_jeffersonsheriffshell4");
+	AddVehicleSkin("92crownvicSheriff", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_93crownvic_jeffersonsheriffshell4");
+
+	-- Normal With Loudspeaker
+	AddVehicleSkin("92crownvicSheriff2", ZoneName.Rosewood, "Vehicles/fep/vehicle_92crownvic_rosewoodpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff2", ZoneName.Rosewood, "Vehicles/fep/vehicle_93crownvic_rosewoodpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff2", ZoneName.WestPoint, "Vehicles/fep/vehicle_92crownvic_westpointpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff2", ZoneName.WestPoint, "Vehicles/fep/vehicle_93crownvic_westpointpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff2", ZoneName.WestPoint, "Vehicles/fep/vehicle_92crownvic_westpoint2policeshell4");
+	AddVehicleSkin("92crownvicSheriff2", ZoneName.WestPoint, "Vehicles/fep/vehicle_93crownvic_westpoint2policeshell4");
+	AddVehicleSkin("92crownvicSheriff2", ZoneName.Muldraugh, "Vehicles/fep/vehicle_92crownvic_muldraughpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff2", ZoneName.Muldraugh, "Vehicles/fep/vehicle_93crownvic_muldraughpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff2", ZoneName.Riverside, "Vehicles/fep/vehicle_92crownvic_riversidepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff2", ZoneName.Riverside, "Vehicles/fep/vehicle_93crownvic_riversidepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff2", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_92crownvic_louisvillepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff2", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_93crownvic_louisvillepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff2", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_92crownvic_jeffersonpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff2", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_93crownvic_jeffersonpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff2", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_92crownvic_jeffersonsheriffshell4");
+	AddVehicleSkin("92crownvicSheriff2", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_93crownvic_jeffersonsheriffshell4");
+
+	-- Normal With Loudspeaker - No Bullbar
+	AddVehicleSkin("92crownvicSheriff3", ZoneName.Rosewood, "Vehicles/fep/vehicle_92crownvic_rosewoodpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff3", ZoneName.Rosewood, "Vehicles/fep/vehicle_93crownvic_rosewoodpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff3", ZoneName.WestPoint, "Vehicles/fep/vehicle_92crownvic_westpointpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff3", ZoneName.WestPoint, "Vehicles/fep/vehicle_93crownvic_westpointpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff3", ZoneName.WestPoint, "Vehicles/fep/vehicle_92crownvic_westpoint2policeshell4");
+	AddVehicleSkin("92crownvicSheriff3", ZoneName.WestPoint, "Vehicles/fep/vehicle_93crownvic_westpoint2policeshell4");
+	AddVehicleSkin("92crownvicSheriff3", ZoneName.Muldraugh, "Vehicles/fep/vehicle_92crownvic_muldraughpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff3", ZoneName.Muldraugh, "Vehicles/fep/vehicle_93crownvic_muldraughpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff3", ZoneName.Riverside, "Vehicles/fep/vehicle_92crownvic_riversidepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff3", ZoneName.Riverside, "Vehicles/fep/vehicle_93crownvic_riversidepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff3", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_92crownvic_louisvillepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff3", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_93crownvic_louisvillepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff3", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_92crownvic_jeffersonpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff3", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_93crownvic_jeffersonpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff3", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_92crownvic_jeffersonsheriffshell4");
+	AddVehicleSkin("92crownvicSheriff3", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_93crownvic_jeffersonsheriffshell4");
+
+	-- Normal With Loudspeaker - No Bullbar
+	AddVehicleSkin("92crownvicSheriff4", ZoneName.Rosewood, "Vehicles/fep/vehicle_92crownvic_rosewoodpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff4", ZoneName.Rosewood, "Vehicles/fep/vehicle_93crownvic_rosewoodpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff4", ZoneName.WestPoint, "Vehicles/fep/vehicle_92crownvic_westpointpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff4", ZoneName.WestPoint, "Vehicles/fep/vehicle_93crownvic_westpointpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff4", ZoneName.WestPoint, "Vehicles/fep/vehicle_92crownvic_westpoint2policeshell4");
+	AddVehicleSkin("92crownvicSheriff4", ZoneName.WestPoint, "Vehicles/fep/vehicle_93crownvic_westpoint2policeshell4");
+	AddVehicleSkin("92crownvicSheriff4", ZoneName.Muldraugh, "Vehicles/fep/vehicle_92crownvic_muldraughpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff4", ZoneName.Muldraugh, "Vehicles/fep/vehicle_93crownvic_muldraughpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff4", ZoneName.Riverside, "Vehicles/fep/vehicle_92crownvic_riversidepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff4", ZoneName.Riverside, "Vehicles/fep/vehicle_93crownvic_riversidepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff4", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_92crownvic_louisvillepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff4", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_93crownvic_louisvillepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff4", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_92crownvic_jeffersonpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff4", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_93crownvic_jeffersonpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff4", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_92crownvic_jeffersonsheriffshell4");
+	AddVehicleSkin("92crownvicSheriff4", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_93crownvic_jeffersonsheriffshell4");
+
+	-- Normal With Loudspeaker - No Bullbar
+	AddVehicleSkin("92crownvicSheriff5", ZoneName.Rosewood, "Vehicles/fep/vehicle_92crownvic_rosewoodpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff5", ZoneName.Rosewood, "Vehicles/fep/vehicle_93crownvic_rosewoodpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff5", ZoneName.WestPoint, "Vehicles/fep/vehicle_92crownvic_westpointpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff5", ZoneName.WestPoint, "Vehicles/fep/vehicle_93crownvic_westpointpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff5", ZoneName.WestPoint, "Vehicles/fep/vehicle_92crownvic_westpoint2policeshell4");
+	AddVehicleSkin("92crownvicSheriff5", ZoneName.WestPoint, "Vehicles/fep/vehicle_93crownvic_westpoint2policeshell4");
+	AddVehicleSkin("92crownvicSheriff5", ZoneName.Muldraugh, "Vehicles/fep/vehicle_92crownvic_muldraughpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff5", ZoneName.Muldraugh, "Vehicles/fep/vehicle_93crownvic_muldraughpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff5", ZoneName.Riverside, "Vehicles/fep/vehicle_92crownvic_riversidepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff5", ZoneName.Riverside, "Vehicles/fep/vehicle_93crownvic_riversidepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff5", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_92crownvic_louisvillepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff5", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_93crownvic_louisvillepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff5", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_92crownvic_jeffersonpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff5", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_93crownvic_jeffersonpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff5", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_92crownvic_jeffersonsheriffshell4");
+	AddVehicleSkin("92crownvicSheriff5", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_93crownvic_jeffersonsheriffshell4");
+
+	-- Normal With Loudspeaker
+	AddVehicleSkin("92crownvicSheriff6", ZoneName.Rosewood, "Vehicles/fep/vehicle_92crownvic_rosewoodpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff6", ZoneName.Rosewood, "Vehicles/fep/vehicle_93crownvic_rosewoodpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff6", ZoneName.WestPoint, "Vehicles/fep/vehicle_92crownvic_westpointpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff6", ZoneName.WestPoint, "Vehicles/fep/vehicle_93crownvic_westpointpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff6", ZoneName.WestPoint, "Vehicles/fep/vehicle_92crownvic_westpoint2policeshell4");
+	AddVehicleSkin("92crownvicSheriff6", ZoneName.WestPoint, "Vehicles/fep/vehicle_93crownvic_westpoint2policeshell4");
+	AddVehicleSkin("92crownvicSheriff6", ZoneName.Muldraugh, "Vehicles/fep/vehicle_92crownvic_muldraughpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff6", ZoneName.Muldraugh, "Vehicles/fep/vehicle_93crownvic_muldraughpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff6", ZoneName.Riverside, "Vehicles/fep/vehicle_92crownvic_riversidepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff6", ZoneName.Riverside, "Vehicles/fep/vehicle_93crownvic_riversidepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff6", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_92crownvic_louisvillepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff6", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_93crownvic_louisvillepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff6", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_92crownvic_jeffersonpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff6", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_93crownvic_jeffersonpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff6", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_92crownvic_jeffersonsheriffshell4");
+	AddVehicleSkin("92crownvicSheriff6", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_93crownvic_jeffersonsheriffshell4");
+
+	-- Normal With Loudspeaker
+	AddVehicleSkin("92crownvicSheriff7", ZoneName.Rosewood, "Vehicles/fep/vehicle_92crownvic_rosewoodpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff7", ZoneName.Rosewood, "Vehicles/fep/vehicle_93crownvic_rosewoodpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff7", ZoneName.WestPoint, "Vehicles/fep/vehicle_92crownvic_westpointpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff7", ZoneName.WestPoint, "Vehicles/fep/vehicle_93crownvic_westpointpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff7", ZoneName.WestPoint, "Vehicles/fep/vehicle_92crownvic_westpoint2policeshell4");
+	AddVehicleSkin("92crownvicSheriff7", ZoneName.WestPoint, "Vehicles/fep/vehicle_93crownvic_westpoint2policeshell4");
+	AddVehicleSkin("92crownvicSheriff7", ZoneName.Muldraugh, "Vehicles/fep/vehicle_92crownvic_muldraughpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff7", ZoneName.Muldraugh, "Vehicles/fep/vehicle_93crownvic_muldraughpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff7", ZoneName.Riverside, "Vehicles/fep/vehicle_92crownvic_riversidepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff7", ZoneName.Riverside, "Vehicles/fep/vehicle_93crownvic_riversidepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff7", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_92crownvic_louisvillepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff7", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_93crownvic_louisvillepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff7", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_92crownvic_jeffersonpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff7", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_93crownvic_jeffersonpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff7", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_92crownvic_jeffersonsheriffshell4");
+	AddVehicleSkin("92crownvicSheriff7", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_93crownvic_jeffersonsheriffshell4");
+
+	-- Normal With Loudspeaker - No Bullbar
+	AddVehicleSkin("92crownvicSheriff8", ZoneName.Rosewood, "Vehicles/fep/vehicle_92crownvic_rosewoodpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff8", ZoneName.Rosewood, "Vehicles/fep/vehicle_93crownvic_rosewoodpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff8", ZoneName.WestPoint, "Vehicles/fep/vehicle_92crownvic_westpointpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff8", ZoneName.WestPoint, "Vehicles/fep/vehicle_93crownvic_westpointpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff8", ZoneName.WestPoint, "Vehicles/fep/vehicle_92crownvic_westpoint2policeshell4");
+	AddVehicleSkin("92crownvicSheriff8", ZoneName.WestPoint, "Vehicles/fep/vehicle_93crownvic_westpoint2policeshell4");
+	AddVehicleSkin("92crownvicSheriff8", ZoneName.Muldraugh, "Vehicles/fep/vehicle_92crownvic_muldraughpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff8", ZoneName.Muldraugh, "Vehicles/fep/vehicle_93crownvic_muldraughpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff8", ZoneName.Riverside, "Vehicles/fep/vehicle_92crownvic_riversidepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff8", ZoneName.Riverside, "Vehicles/fep/vehicle_93crownvic_riversidepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff8", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_92crownvic_louisvillepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff8", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_93crownvic_louisvillepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff8", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_92crownvic_jeffersonpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff8", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_93crownvic_jeffersonpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff8", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_92crownvic_jeffersonsheriffshell4");
+	AddVehicleSkin("92crownvicSheriff8", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_93crownvic_jeffersonsheriffshell4");
+
+	-- Normal With Loudspeaker - No Bullbar
+	AddVehicleSkin("92crownvicSheriff9", ZoneName.Rosewood, "Vehicles/fep/vehicle_92crownvic_rosewoodpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff9", ZoneName.Rosewood, "Vehicles/fep/vehicle_93crownvic_rosewoodpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff9", ZoneName.WestPoint, "Vehicles/fep/vehicle_92crownvic_westpointpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff9", ZoneName.WestPoint, "Vehicles/fep/vehicle_93crownvic_westpointpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff9", ZoneName.WestPoint, "Vehicles/fep/vehicle_92crownvic_westpoint2policeshell4");
+	AddVehicleSkin("92crownvicSheriff9", ZoneName.WestPoint, "Vehicles/fep/vehicle_93crownvic_westpoint2policeshell4");
+	AddVehicleSkin("92crownvicSheriff9", ZoneName.Muldraugh, "Vehicles/fep/vehicle_92crownvic_muldraughpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff9", ZoneName.Muldraugh, "Vehicles/fep/vehicle_93crownvic_muldraughpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff9", ZoneName.Riverside, "Vehicles/fep/vehicle_92crownvic_riversidepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff9", ZoneName.Riverside, "Vehicles/fep/vehicle_93crownvic_riversidepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff9", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_92crownvic_louisvillepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff9", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_93crownvic_louisvillepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff9", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_92crownvic_jeffersonpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff9", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_93crownvic_jeffersonpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff9", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_92crownvic_jeffersonsheriffshell4");
+	AddVehicleSkin("92crownvicSheriff9", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_93crownvic_jeffersonsheriffshell4");
+
+	-- Normal With Loudspeaker
+	AddVehicleSkin("92crownvicSheriff10", ZoneName.Rosewood, "Vehicles/fep/vehicle_92crownvic_rosewoodpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff10", ZoneName.Rosewood, "Vehicles/fep/vehicle_93crownvic_rosewoodpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff10", ZoneName.WestPoint, "Vehicles/fep/vehicle_92crownvic_westpointpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff10", ZoneName.WestPoint, "Vehicles/fep/vehicle_93crownvic_westpointpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff10", ZoneName.WestPoint, "Vehicles/fep/vehicle_92crownvic_westpoint2policeshell4");
+	AddVehicleSkin("92crownvicSheriff10", ZoneName.WestPoint, "Vehicles/fep/vehicle_93crownvic_westpoint2policeshell4");
+	AddVehicleSkin("92crownvicSheriff10", ZoneName.Muldraugh, "Vehicles/fep/vehicle_92crownvic_muldraughpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff10", ZoneName.Muldraugh, "Vehicles/fep/vehicle_93crownvic_muldraughpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff10", ZoneName.Riverside, "Vehicles/fep/vehicle_92crownvic_riversidepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff10", ZoneName.Riverside, "Vehicles/fep/vehicle_93crownvic_riversidepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff10", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_92crownvic_louisvillepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff10", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_93crownvic_louisvillepoliceshell4");
+	AddVehicleSkin("92crownvicSheriff10", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_92crownvic_jeffersonpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff10", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_93crownvic_jeffersonpoliceshell4");
+	AddVehicleSkin("92crownvicSheriff10", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_92crownvic_jeffersonsheriffshell4");
+	AddVehicleSkin("92crownvicSheriff10", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_93crownvic_jeffersonsheriffshell4");
+
+	--AddVehicleSkin("91blazerPD2","Vehicles/fep/vehicle_blazer_kspshell");
+	--AddVehicleSkin("91blazerPD2", ZoneName.Meade, "Vehicles/fep/vehicle_blazer_meadesheriffshell");
+	--AddVehicleSkin("91blazerPD2", ZoneName.Rosewood, "Vehicles/fep/vehicle_blazer_rosewoodpoliceshell");
+	--AddVehicleSkin("91blazerPD2", ZoneName.WestPoint, "Vehicles/fep/vehicle_blazer_westpointpoliceshell1");
+	--AddVehicleSkin("91blazerPD2", ZoneName.WestPoint, "Vehicles/fep/vehicle_blazer_westpointpoliceshell2");
+	--AddVehicleSkin("91blazerPD2", ZoneName.Muldraugh, "Vehicles/fep/vehicle_blazer_muldraughpoliceshell");
+	--AddVehicleSkin("91blazerPD2", ZoneName.Riverside, "Vehicles/fep/vehicle_blazer_riversidepoliceshell");
+	--AddVehicleSkin("91blazerPD2", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_blazer_louisvillepoliceshell");
+	--AddVehicleSkin("91blazerPD2", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_blazer_jeffersonpoliceshell");
+	--AddVehicleSkin("91blazerPD2", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_blazer_jeffersonsheriffshell");
+
+	-- Double Beacon With Loudspeaker
+	AddVehicleSkin("87capricePD2", ZoneName.Meade, "Vehicles/fep/vehicle_87caprice_meadesheriffshell3");
+	AddVehicleSkin("87capricePD2", ZoneName.Rosewood, "Vehicles/fep/vehicle_87caprice_rosewoodpoliceshell3");
+	AddVehicleSkin("87capricePD2", ZoneName.WestPoint, "Vehicles/fep/vehicle_87caprice_westpointpoliceshell3");
+	AddVehicleSkin("87capricePD2", ZoneName.WestPoint, "Vehicles/fep/vehicle_87caprice_westpoint2policeshell3");
+	AddVehicleSkin("87capricePD2", ZoneName.Muldraugh, "Vehicles/fep/vehicle_87caprice_muldraughpoliceshell3");
+	AddVehicleSkin("87capricePD2", ZoneName.Riverside, "Vehicles/fep/vehicle_87caprice_riversidepoliceshell3");
+	AddVehicleSkin("87capricePD2", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_87caprice_louisvillepoliceshell3");
+	AddVehicleSkin("87capricePD2", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_87caprice_jeffersonpoliceshell3");
+	AddVehicleSkin("87capricePD2", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_87caprice_jeffersonsheriffshell3");
+
+	-- Round Normal With Loudspeaker
+	AddVehicleSkin("87capricePD3", ZoneName.Meade, "Vehicles/fep/vehicle_87caprice_meadesheriffshell");
+	AddVehicleSkin("87capricePD3", ZoneName.Rosewood, "Vehicles/fep/vehicle_87caprice_rosewoodpoliceshell");
+	AddVehicleSkin("87capricePD3", ZoneName.WestPoint, "Vehicles/fep/vehicle_87caprice_westpointpoliceshell");
+	AddVehicleSkin("87capricePD3", ZoneName.WestPoint, "Vehicles/fep/vehicle_87caprice_westpoint2policeshell");
+	AddVehicleSkin("87capricePD3", ZoneName.Muldraugh, "Vehicles/fep/vehicle_87caprice_muldraughpoliceshell");
+	AddVehicleSkin("87capricePD3", ZoneName.Riverside, "Vehicles/fep/vehicle_87caprice_riversidepoliceshell");
+	AddVehicleSkin("87capricePD3", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_87caprice_louisvillepoliceshell");
+	AddVehicleSkin("87capricePD3", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_87caprice_jeffersonpoliceshell");
+	AddVehicleSkin("87capricePD3", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_87caprice_jeffersonsheriffshell");
+
+	-- Normal With Loudspeaker
+	AddVehicleSkin("87capricePD4", ZoneName.Meade, "Vehicles/fep/vehicle_87caprice_meadesheriffshell2");
+	AddVehicleSkin("87capricePD4", ZoneName.Rosewood, "Vehicles/fep/vehicle_87caprice_rosewoodpoliceshell2");
+	AddVehicleSkin("87capricePD4", ZoneName.WestPoint, "Vehicles/fep/vehicle_87caprice_westpointpoliceshell2");
+	AddVehicleSkin("87capricePD4", ZoneName.WestPoint, "Vehicles/fep/vehicle_87caprice_westpoint2policeshell2");
+	AddVehicleSkin("87capricePD4", ZoneName.Muldraugh, "Vehicles/fep/vehicle_87caprice_muldraughpoliceshell2");
+	AddVehicleSkin("87capricePD4", ZoneName.Riverside, "Vehicles/fep/vehicle_87caprice_riversidepoliceshell2");
+	AddVehicleSkin("87capricePD4", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_87caprice_louisvillepoliceshell2");
+	AddVehicleSkin("87capricePD4", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_87caprice_jeffersonpoliceshell2");
+	AddVehicleSkin("87capricePD4", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_87caprice_jeffersonsheriffshell2");
+
+	-- Round Normal With Loudspeaker - No Bullbar
+	AddVehicleSkin("87capricePD5", ZoneName.Meade, "Vehicles/fep/vehicle_87caprice_meadesheriffshell");
+	AddVehicleSkin("87capricePD5", ZoneName.Rosewood, "Vehicles/fep/vehicle_87caprice_rosewoodpoliceshell");
+	AddVehicleSkin("87capricePD5", ZoneName.WestPoint, "Vehicles/fep/vehicle_87caprice_westpointpoliceshell");
+	AddVehicleSkin("87capricePD5", ZoneName.WestPoint, "Vehicles/fep/vehicle_87caprice_westpoint2policeshell");
+	AddVehicleSkin("87capricePD5", ZoneName.Muldraugh, "Vehicles/fep/vehicle_87caprice_muldraughpoliceshell");
+	AddVehicleSkin("87capricePD5", ZoneName.Riverside, "Vehicles/fep/vehicle_87caprice_riversidepoliceshell");
+	AddVehicleSkin("87capricePD5", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_87caprice_louisvillepoliceshell");
+	AddVehicleSkin("87capricePD5", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_87caprice_jeffersonpoliceshell");
+	AddVehicleSkin("87capricePD5", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_87caprice_jeffersonsheriffshell");
+
+	-- Round Normal With Loudspeaker
+	AddVehicleSkin("87capriceSheriff", ZoneName.Meade, "Vehicles/fep/vehicle_87caprice_meadesheriffshell");
+	AddVehicleSkin("87capriceSheriff", ZoneName.Rosewood, "Vehicles/fep/vehicle_87caprice_rosewoodpoliceshell");
+	AddVehicleSkin("87capriceSheriff", ZoneName.WestPoint, "Vehicles/fep/vehicle_87caprice_westpointpoliceshell");
+	AddVehicleSkin("87capriceSheriff", ZoneName.WestPoint, "Vehicles/fep/vehicle_87caprice_westpoint2policeshell");
+	AddVehicleSkin("87capriceSheriff", ZoneName.Muldraugh, "Vehicles/fep/vehicle_87caprice_muldraughpoliceshell");
+	AddVehicleSkin("87capriceSheriff", ZoneName.Riverside, "Vehicles/fep/vehicle_87caprice_riversidepoliceshell");
+	AddVehicleSkin("87capriceSheriff", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_87caprice_louisvillepoliceshell");
+	AddVehicleSkin("87capriceSheriff", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_87caprice_jeffersonpoliceshell");
+	AddVehicleSkin("87capriceSheriff", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_87caprice_jeffersonsheriffshell");
+
+	-- Double Beacon With Loudspeaker
+	AddVehicleSkin("87capriceSheriff2", ZoneName.Meade, "Vehicles/fep/vehicle_87caprice_meadesheriffshell3");
+	AddVehicleSkin("87capriceSheriff2", ZoneName.Rosewood, "Vehicles/fep/vehicle_87caprice_rosewoodpoliceshell3");
+	AddVehicleSkin("87capriceSheriff2", ZoneName.WestPoint, "Vehicles/fep/vehicle_87caprice_westpointpoliceshell3");
+	AddVehicleSkin("87capriceSheriff2", ZoneName.WestPoint, "Vehicles/fep/vehicle_87caprice_westpoint2policeshell3");
+	AddVehicleSkin("87capriceSheriff2", ZoneName.Muldraugh, "Vehicles/fep/vehicle_87caprice_muldraughpoliceshell3");
+	AddVehicleSkin("87capriceSheriff2", ZoneName.Riverside, "Vehicles/fep/vehicle_87caprice_riversidepoliceshell3");
+	AddVehicleSkin("87capriceSheriff2", ZoneName.LouisvillePD, "Vehicles/fep/vehicle_87caprice_louisvillepoliceshell3");
+	AddVehicleSkin("87capriceSheriff2", ZoneName.JeffersonPD, "Vehicles/fep/vehicle_87caprice_jeffersonpoliceshell3");
+	AddVehicleSkin("87capriceSheriff2", ZoneName.JeffersonSD, "Vehicles/fep/vehicle_87caprice_jeffersonsheriffshell3");
+
+	if getActivatedMods():contains("RavenCreek") then
+
+		AddVehicleSkin("85vicsheriff2", ZoneName.RavenCreek, "Vehicles/fep/vehicle_85crownvic_ravencreekpoliceshell");
+		--AddVehicleSkin("91vicsheriff", ZoneName.RavenCreek, "Vehicles/fep/vehicle_85crownvic_ravencreekpoliceshell");
+		--AddVehicleSkin("91crownvicPD2", ZoneName.RavenCreek, "Vehicles/fep/vehicle_85crownvic_ravencreekpoliceshell");
+		--AddVehicleSkin("91crownvicPD3", ZoneName.RavenCreek, "Vehicles/fep/vehicle_85crownvic_ravencreekpoliceshell");
+		AddVehicleSkin("92crownvicPD4", ZoneName.RavenCreek, "Vehicles/fep/vehicle_92crownvic_ravencreekpoliceshell2");
+		AddVehicleSkin("92crownvicPD6", ZoneName.RavenCreek, "Vehicles/fep/vehicle_92crownvic_ravencreekpoliceshell");
+		AddVehicleSkin("92crownvicPD7", ZoneName.RavenCreek, "Vehicles/fep/vehicle_92crownvic_ravencreekpoliceshell2");
+		--AddVehicleSkin("92crownvicPD8", ZoneName.RavenCreek, "Vehicles/fep/vehicle_92crownvic_ravencreekpoliceshell");
+		AddVehicleSkin("92crownvicSheriff", ZoneName.RavenCreek, "Vehicles/fep/vehicle_92crownvic_ravencreekpoliceshell2");
+		AddVehicleSkin("92crownvicSheriff2", ZoneName.RavenCreek, "Vehicles/fep/vehicle_92crownvic_ravencreekpoliceshell2");
+		AddVehicleSkin("92crownvicSheriff3", ZoneName.RavenCreek, "Vehicles/fep/vehicle_92crownvic_ravencreekpoliceshell2");
+		AddVehicleSkin("92crownvicSheriff4", ZoneName.RavenCreek, "Vehicles/fep/vehicle_92crownvic_ravencreekpoliceshell2");
+		AddVehicleSkin("92crownvicSheriff5", ZoneName.RavenCreek, "Vehicles/fep/vehicle_92crownvic_ravencreekpoliceshell2");
+		AddVehicleSkin("92crownvicSheriff6", ZoneName.RavenCreek, "Vehicles/fep/vehicle_92crownvic_ravencreekpoliceshell2");
+		AddVehicleSkin("92crownvicSheriff7", ZoneName.RavenCreek, "Vehicles/fep/vehicle_92crownvic_ravencreekpoliceshell2");
+		AddVehicleSkin("92crownvicSheriff8", ZoneName.RavenCreek, "Vehicles/fep/vehicle_92crownvic_ravencreekpoliceshell2");
+		AddVehicleSkin("92crownvicSheriff9", ZoneName.RavenCreek, "Vehicles/fep/vehicle_92crownvic_ravencreekpoliceshell2");
+		AddVehicleSkin("92crownvicSheriff10", ZoneName.RavenCreek, "Vehicles/fep/vehicle_92crownvic_ravencreekpoliceshell2");
+		--AddVehicleSkin("91blazerPD2", ZoneName.RavenCreek, "Vehicles/fep/vehicle_blazer_ravencreekpoliceshell");
+		AddVehicleSkin("87capricePD2", ZoneName.RavenCreek, "Vehicles/fep/vehicle_87caprice_ravencreekpoliceshell3");
+		AddVehicleSkin("87capricePD3", ZoneName.RavenCreek, "Vehicles/fep/vehicle_87caprice_ravencreekpoliceshell");
+		AddVehicleSkin("87capricePD4", ZoneName.RavenCreek, "Vehicles/fep/vehicle_87caprice_ravencreekpoliceshell2");
+		AddVehicleSkin("87capricePD5", ZoneName.RavenCreek, "Vehicles/fep/vehicle_87caprice_ravencreekpoliceshell2");
+
+	end
+	if getActivatedMods():contains("Tandil") then
+
+		AddVehicleSkin("85vicPD", ZoneName.Tandil, "Vehicles/fep/vehicle_85crownvic_tandilpoliceshell");
+		AddVehicleSkin("85vicsheriff2", ZoneName.Tandil, "Vehicles/fep/vehicle_85crownvic_tandilpoliceshell");
+		AddVehicleSkin("92crownvicPD2", ZoneName.Tandil, "Vehicles/fep/vehicle_92crownvic_ravencreekpoliceshell");
+		AddVehicleSkin("92crownvicPD3", ZoneName.Tandil, "Vehicles/fep/vehicle_92crownvic_ravencreekpoliceshell");
+		AddVehicleSkin("92crownvicPD4", ZoneName.Tandil, "Vehicles/fep/vehicle_92crownvic_ravencreekpoliceshell");
+		AddVehicleSkin("92crownvicPD5", ZoneName.Tandil, "Vehicles/fep/vehicle_92crownvic_ravencreekpoliceshell");
+		AddVehicleSkin("92crownvicPD6", ZoneName.Tandil, "Vehicles/fep/vehicle_92crownvic_ravencreekpoliceshell");
+		AddVehicleSkin("92crownvicPD7", ZoneName.Tandil, "Vehicles/fep/vehicle_92crownvic_ravencreekpoliceshell");
+		AddVehicleSkin("92crownvicPD8", ZoneName.Tandil, "Vehicles/fep/vehicle_92crownvic_ravencreekpoliceshell");
+		AddVehicleSkin("92crownvicPD9", ZoneName.Tandil, "Vehicles/fep/vehicle_92crownvic_ravencreekpoliceshell");
+		AddVehicleSkin("92crownvicPD10", ZoneName.Tandil, "Vehicles/fep/vehicle_92crownvic_ravencreekpoliceshell");
+		AddVehicleSkin("92crownvicSheriff", ZoneName.Tandil, "Vehicles/fep/vehicle_92crownvic_ravencreekpoliceshell");
+		AddVehicleSkin("92crownvicSheriff2", ZoneName.Tandil, "Vehicles/fep/vehicle_92crownvic_ravencreekpoliceshell");
+		AddVehicleSkin("92crownvicSheriff3", ZoneName.Tandil, "Vehicles/fep/vehicle_92crownvic_ravencreekpoliceshell");
+		AddVehicleSkin("92crownvicSheriff4", ZoneName.Tandil, "Vehicles/fep/vehicle_92crownvic_ravencreekpoliceshell");
+		AddVehicleSkin("92crownvicSheriff5", ZoneName.Tandil, "Vehicles/fep/vehicle_92crownvic_ravencreekpoliceshell");
+		AddVehicleSkin("92crownvicSheriff6", ZoneName.Tandil, "Vehicles/fep/vehicle_92crownvic_ravencreekpoliceshell");
+		AddVehicleSkin("92crownvicSheriff7", ZoneName.Tandil, "Vehicles/fep/vehicle_92crownvic_ravencreekpoliceshell");
+		AddVehicleSkin("92crownvicSheriff8", ZoneName.Tandil, "Vehicles/fep/vehicle_92crownvic_ravencreekpoliceshell");
+		AddVehicleSkin("92crownvicSheriff9", ZoneName.Tandil, "Vehicles/fep/vehicle_92crownvic_ravencreekpoliceshell");
+		AddVehicleSkin("92crownvicSheriff10", ZoneName.Tandil, "Vehicles/fep/vehicle_92crownvic_ravencreekpoliceshell");
+		--  AddVehicleSkin("91blazerPD2", ZoneName.Tandil, "Vehicles/fep/vehicle_blazer_tandilpoliceshell");
+		AddVehicleSkin("87capricePD2", ZoneName.Tandil, "Vehicles/fep/vehicle_87caprice_tandilpoliceshell");
+		AddVehicleSkin("87capricePD3", ZoneName.Tandil, "Vehicles/fep/vehicle_87caprice_tandilpoliceshell");
+		AddVehicleSkin("87capricePD4", ZoneName.Tandil, "Vehicles/fep/vehicle_87caprice_tandilpoliceshell");
+		AddVehicleSkin("87capricePD5", ZoneName.Tandil, "Vehicles/fep/vehicle_87caprice_tandilpoliceshell");
+		AddVehicleSkin("87capriceSheriff", ZoneName.Tandil, "Vehicles/fep/vehicle_87caprice_tandilpoliceshell");
+		AddVehicleSkin("87capriceSheriff2", ZoneName.Tandil, "Vehicles/fep/vehicle_87caprice_tandilpoliceshell");
 
 	end
 end
 
 --TODO: Fix this!
-if getActivatedMods():contains("VVehicleEnhancer") then
+if getActivatedMods():contains("VVehicleEnhancer") and not getActivatedMods():contains("SCKCO") then
 
 	AddVehicleSkin("CarLightsPolice", ZoneName.KSP, "Vehicles/vve/vehicle_kentuckystate_vve");
 	AddVehicleSkin("CarLightsPolice", ZoneName.Meade, "Vehicles/vve/vehicle_meade_vve");
@@ -386,24 +867,15 @@ if getActivatedMods():contains("VVehicleEnhancer") then
 	AddVehicleSkin("CarLights", ZoneName.Default, "Vehicles/vve/vehicle_carnormal_stateparkranger_vve");
 	AddVehicleSkin("CarLights", ZoneName.Default, "Vehicles/vve/vehicle_carnormal_fishandwildlife_vve");
 	AddVehicleSkin("CarLights", ZoneName.Default, "Vehicles/vve/vehicle_carnormal_nationalparkservice_vve");
-
-	--TweakVehicle("Base.StepVanMail","skin1", "Vehicles/vve/vehicle_stepvan_uspsmailshell_vve");
 	AddVehicleSkin("StepVanMail", ZoneName.Default, "Vehicles/vehicle_stepvan_uspsmailshell");
 
-	AddVehicleSkinOverride("VanSpecial", 2, "Vehicles/vve/vehicle_van_uspsmailvan_vve");
+	AddVehicleSkin("VanSpecial", 2, "Vehicles/vve/vehicle_van_uspsmailvan_vve");
 
 	if getActivatedMods():contains("RavenCreek") then
 
 		AddVehicleSkin("CarLightsPolice", ZoneName.RavenCreek, "Vehicles/vve/vehicle_ravencreek_vve");
 		AddVehicleSkin("CarLightsSheriff", ZoneName.RavenCreek, "Vehicles/vve/vehicle_ravencreek_vve");
 		AddVehicleSkin("CarLightsStatepolice", ZoneName.RavenCreek, "Vehicles/vve/vehicle_ravencreek_vve");
-		--TweakVehicle("Base.PickUpVanLightsPolice","skin10", "Vehicles/vehicle_pickup_ravencreekpolice");
-
-		--TweakVehicle("Base.VanAmbulance","skin4", "Vehicles/vehicle_van_ravencreekambulance");
-
-		--TweakVehicle("Base.PickUpTruckLightsFire","skin4", "Vehicles/vehicle_pickupfireshell_ravencreek");
-
-		--TweakVehicle("Base.PickUpVanLightsFire","skin4", "Vehicles/vehicle_pickuptruckfireshell_ravencreek");
 
 	end
 end

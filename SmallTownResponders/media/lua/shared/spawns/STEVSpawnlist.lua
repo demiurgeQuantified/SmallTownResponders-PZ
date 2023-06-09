@@ -309,41 +309,41 @@ local function STEVSpawns()
 
 		if SandboxVars.STR.STEVOnly then
 
-		-- police
-		VehicleZoneDistribution.police.vehicles["Base.PickUpVanLightsPolice"] = nil;
-		VehicleZoneDistribution.police.vehicles["Base.CarLightsPolice"] = nil;
+			-- police
+			VehicleZoneDistribution.police.vehicles["Base.PickUpVanLightsPolice"] = nil;
+			VehicleZoneDistribution.police.vehicles["Base.CarLightsPolice"] = nil;
 
-		VehicleZoneDistribution.police.vehicles["Base.85vicsheriff"] = nil;
-		VehicleZoneDistribution.police.vehicles["Base.87capricePD"] = nil;
-		VehicleZoneDistribution.police.vehicles["Base.91blazerpd"] = nil;
-		VehicleZoneDistribution.police.vehicles["Base.92crownvicPD"] = nil;
-		VehicleZoneDistribution.police.vehicles["Base.chevystepvanswat"] = nil;
-		VehicleZoneDistribution.police.vehicles["Base.hmmwvpolice"] = nil;
-		VehicleZoneDistribution.police.vehicles["Base.hmmwvblackopps"] = nil;
-		VehicleZoneDistribution.police.vehicles["Base.blazerblackops"] = nil;
-		VehicleZoneDistribution.police.vehicles["Base.m35a2blackopps"] = nil;
-		VehicleZoneDistribution.police.vehicles["Base.m151blackopps"] = nil;
+			VehicleZoneDistribution.police.vehicles["Base.85vicsheriff"] = nil;
+			VehicleZoneDistribution.police.vehicles["Base.87capricePD"] = nil;
+			VehicleZoneDistribution.police.vehicles["Base.91blazerpd"] = nil;
+			VehicleZoneDistribution.police.vehicles["Base.92crownvicPD"] = nil;
+			VehicleZoneDistribution.police.vehicles["Base.chevystepvanswat"] = nil;
+			VehicleZoneDistribution.police.vehicles["Base.hmmwvpolice"] = nil;
+			VehicleZoneDistribution.police.vehicles["Base.hmmwvblackopps"] = nil;
+			VehicleZoneDistribution.police.vehicles["Base.blazerblackops"] = nil;
+			VehicleZoneDistribution.police.vehicles["Base.m35a2blackopps"] = nil;
+			VehicleZoneDistribution.police.vehicles["Base.m151blackopps"] = nil;
 
-		-- ranger
-		VehicleZoneDistribution.ranger.vehicles["Base.CarLights"] = nil;
-		VehicleZoneDistribution.ranger.vehicles["Base.PickUpVanLights"] = nil;
-		VehicleZoneDistribution.ranger.vehicles["Base.PickUpTruckLights"] = nil;
+			-- ranger
+			VehicleZoneDistribution.ranger.vehicles["Base.CarLights"] = nil;
+			VehicleZoneDistribution.ranger.vehicles["Base.PickUpVanLights"] = nil;
+			VehicleZoneDistribution.ranger.vehicles["Base.PickUpTruckLights"] = nil;
 
-		VehicleZoneDistribution.ranger.vehicles["Base.85vicranger"] = nil;
-		VehicleZoneDistribution.ranger.vehicles["Base.92wranglerranger"] = nil;
+			VehicleZoneDistribution.ranger.vehicles["Base.85vicranger"] = nil;
+			VehicleZoneDistribution.ranger.vehicles["Base.92wranglerranger"] = nil;
 
-		-- ambulance
-		VehicleZoneDistribution.ambulance.vehicles["Base.VanAmbulance"] = nil;
+			-- ambulance
+			VehicleZoneDistribution.ambulance.vehicles["Base.VanAmbulance"] = nil;
 
-		VehicleZoneDistribution.ambulance.vehicles["Base.80f350ambulance"] = nil;
-		VehicleZoneDistribution.ambulance.vehicles["Base.86econolineambulance"] = nil;
+			VehicleZoneDistribution.ambulance.vehicles["Base.80f350ambulance"] = nil;
+			VehicleZoneDistribution.ambulance.vehicles["Base.86econolineambulance"] = nil;
 
-		-- fire
-		VehicleZoneDistribution.fire.vehicles["Base.PickUpVanLightsFire"] = nil;
-		VehicleZoneDistribution.fire.vehicles["Base.PickUpTruckLightsFire"] = nil;
+			-- fire
+			VehicleZoneDistribution.fire.vehicles["Base.PickUpVanLightsFire"] = nil;
+			VehicleZoneDistribution.fire.vehicles["Base.PickUpTruckLightsFire"] = nil;
 
-		VehicleZoneDistribution.fire.vehicles["Base.87c10fire"] = nil;
-		VehicleZoneDistribution.fire.vehicles["Base.firepumper"] = nil;
+			VehicleZoneDistribution.fire.vehicles["Base.87c10fire"] = nil;
+			VehicleZoneDistribution.fire.vehicles["Base.firepumper"] = nil;
 
 		end
 
@@ -531,7 +531,7 @@ local function STEVSpawns()
 
 			end
 
-			if SandboxVars.STEV.VCars then
+			if SandboxVars.STEV.VCars and not getActivatedMods():contains("SCKCO") then
 
 				-- Meade County Sheriff
 				VehicleZoneDistribution.policemeade.vehicles["Base.CarLightsPolice"] = {index = MCSO[1], spawnChance = SandboxVars.STEV.Meade};
@@ -798,7 +798,7 @@ local function STEVSpawns()
 
 			end
 
-			if SandboxVars.STEV.VCars then
+			if SandboxVars.STEV.VCars and not getActivatedMods():contains("SCKCO") then
 
 				-- Vanilla Police Zones
 				VehicleZoneDistribution.police.vehicles["Base.CarLightsPolice"] = {index = MCSO[1], spawnChance = SandboxVars.STEV.Meade};

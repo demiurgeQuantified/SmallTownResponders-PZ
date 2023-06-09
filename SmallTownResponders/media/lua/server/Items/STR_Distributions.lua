@@ -307,6 +307,300 @@ local function STRDistributions()
 
 		local STR_DuffeldistributionTable = {
 
+			Bag_Satchel_USPS = {
+				rolls = 2,
+				items = {
+					"MagazineCrossword1", 8,
+					"MagazineCrossword2", 8,
+					"MagazineCrossword3", 8,
+					"MagazineWordsearch1", 8,
+					"MagazineWordsearch2", 8,
+					"MagazineWordsearch3", 8,
+					"Newspaper", 20,
+					"Newspaper", 10,
+					"Newspaper", 10,
+					"Magazine", 10,
+					"Magazine", 10,
+					"ComicBook", 8,
+					"ComicBook", 8,
+					"HottieZ", 0.1,
+				},
+				junk = {
+					rolls = 1,
+					items = {
+						
+					}
+				}
+			},
+
+			Bag_DuffelBag_USPS = {
+				rolls = 2,
+				items = {
+					"MagazineCrossword1", 8,
+					"MagazineCrossword2", 8,
+					"MagazineCrossword3", 8,
+					"MagazineWordsearch1", 8,
+					"MagazineWordsearch2", 8,
+					"MagazineWordsearch3", 8,
+					"Newspaper", 20,
+					"Newspaper", 10,
+					"Newspaper", 10,
+					"Magazine", 10,
+					"Magazine", 10,
+					"ComicBook", 8,
+					"ComicBook", 8,
+					"HottieZ", 0.1,
+				},
+				junk = {
+					rolls = 1,
+					items = {
+						
+					}
+				}
+			},
+
+			Bag_DuffelBag_Fire_Black = {
+				rolls = 2,
+				items = {
+					"Axe", 10,
+					"Crowbar", 4,
+					"Hammer", 8,
+					"HandAxe", 1,
+					"Rope", 8,
+					"Screwdriver", 10,
+					"Wrench", 8,
+				},
+				junk = {
+					rolls = 1,
+					items = {
+						
+					}
+				}
+			},
+
+			Bag_DuffelBag_Fire_Khaki = {
+				rolls = 2,
+				items = {
+					"Axe", 10,
+					"Crowbar", 4,
+					"Hammer", 8,
+					"HandAxe", 1,
+					"Rope", 8,
+					"Screwdriver", 10,
+					"Wrench", 8,
+				},
+				junk = {
+					rolls = 1,
+					items = {
+						
+					}
+				}
+			},
+
+			Bag_DuffelBag_Ranger = {
+				rolls = 2,
+				items = {
+					"FirstAidKit", 20,
+					"Radio.WalkieTalkie4", 10,
+					"DuctTape", 8,
+					"Tarp", 10,
+					"Tissue", 10,
+					"ToiletPaper", 6,
+				},
+				junk = {
+					rolls = 1,
+					items = {
+						
+					}
+				}
+			},
+
+			Bag_DuffelBag_Police_Rosewood = {
+				rolls = 2,
+				items = {
+					"AmmoStraps", 6,
+					"AmmoStraps", 6,
+					"308Box", 10,
+					"308Box", 10,
+					"308Box", 10,
+					"Bullets9mmBox", 10,
+					"Bullets9mmBox", 10,
+					"Bullets9mmBox", 10,
+					"Bullets9mmBox", 10,
+					"ShotgunShellsBox", 10,
+					"ShotgunShellsBox", 10,
+					"308Clip", 8,
+					"308Clip", 8,
+					"9mmClip", 8,
+					"9mmClip", 8,
+					"9mmClip", 8,
+					"AmmoStrap_Bullets", 4,
+					"AmmoStrap_Shells", 4,
+		            "Sling", 4,
+				},
+				junk = {
+					rolls = 1,
+					items = {
+						
+					}
+				}
+			},
+
+			Bag_DuffelBag_Police_Meade = {
+				rolls = 2,
+				items = {
+					"AmmoStraps", 6,
+					"AmmoStraps", 6,
+					"308Box", 10,
+					"308Box", 10,
+					"308Box", 10,
+					"Bullets9mmBox", 10,
+					"Bullets9mmBox", 10,
+					"Bullets9mmBox", 10,
+					"Bullets9mmBox", 10,
+					"ShotgunShellsBox", 10,
+					"ShotgunShellsBox", 10,
+					"308Clip", 8,
+					"308Clip", 8,
+					"9mmClip", 8,
+					"9mmClip", 8,
+					"9mmClip", 8,
+					"AmmoStrap_Bullets", 4,
+					"AmmoStrap_Shells", 4,
+		            "Sling", 4,
+				},
+				junk = {
+					rolls = 1,
+					items = {
+						
+					}
+				}
+			},
+
+			Bag_DuffelBag_Police_KSP = {
+				rolls = 2,
+				items = {
+					"AmmoStraps", 6,
+					"AmmoStraps", 6,
+					"308Box", 10,
+					"308Box", 10,
+					"308Box", 10,
+					"Bullets9mmBox", 10,
+					"Bullets9mmBox", 10,
+					"Bullets9mmBox", 10,
+					"Bullets9mmBox", 10,
+					"ShotgunShellsBox", 10,
+					"ShotgunShellsBox", 10,
+					"308Clip", 8,
+					"308Clip", 8,
+					"9mmClip", 8,
+					"9mmClip", 8,
+					"9mmClip", 8,
+					"AmmoStrap_Bullets", 4,
+					"AmmoStrap_Shells", 4,
+		            "Sling", 4,
+				},
+				junk = {
+					rolls = 1,
+					items = {
+						
+					}
+				}
+			},
+
+			Bag_DuffelBag_Police_Black = {
+				rolls = 2,
+				items = {
+					"AmmoStraps", 6,
+					"AmmoStraps", 6,
+					"308Box", 10,
+					"308Box", 10,
+					"308Box", 10,
+					"Bullets9mmBox", 10,
+					"Bullets9mmBox", 10,
+					"Bullets9mmBox", 10,
+					"Bullets9mmBox", 10,
+					"ShotgunShellsBox", 10,
+					"ShotgunShellsBox", 10,
+					"308Clip", 8,
+					"308Clip", 8,
+					"9mmClip", 8,
+					"9mmClip", 8,
+					"9mmClip", 8,
+					"AmmoStrap_Bullets", 4,
+					"AmmoStrap_Shells", 4,
+		            "Sling", 4,
+				},
+				junk = {
+					rolls = 1,
+					items = {
+						
+					}
+				}
+			},
+
+			Bag_DuffelBag_Police_Navy = {
+				rolls = 2,
+				items = {
+					"AmmoStraps", 6,
+					"AmmoStraps", 6,
+					"308Box", 10,
+					"308Box", 10,
+					"308Box", 10,
+					"Bullets9mmBox", 10,
+					"Bullets9mmBox", 10,
+					"Bullets9mmBox", 10,
+					"Bullets9mmBox", 10,
+					"ShotgunShellsBox", 10,
+					"ShotgunShellsBox", 10,
+					"308Clip", 8,
+					"308Clip", 8,
+					"9mmClip", 8,
+					"9mmClip", 8,
+					"9mmClip", 8,
+					"AmmoStrap_Bullets", 4,
+					"AmmoStrap_Shells", 4,
+		            "Sling", 4,
+				},
+				junk = {
+					rolls = 1,
+					items = {
+						
+					}
+				}
+			},
+
+			Bag_DuffelBag_Police_Olive = {
+				rolls = 2,
+				items = {
+					"AmmoStraps", 6,
+					"AmmoStraps", 6,
+					"308Box", 10,
+					"308Box", 10,
+					"308Box", 10,
+					"Bullets9mmBox", 10,
+					"Bullets9mmBox", 10,
+					"Bullets9mmBox", 10,
+					"Bullets9mmBox", 10,
+					"ShotgunShellsBox", 10,
+					"ShotgunShellsBox", 10,
+					"308Clip", 8,
+					"308Clip", 8,
+					"9mmClip", 8,
+					"9mmClip", 8,
+					"9mmClip", 8,
+					"AmmoStrap_Bullets", 4,
+					"AmmoStrap_Shells", 4,
+		            "Sling", 4,
+				},
+				junk = {
+					rolls = 1,
+					items = {
+						
+					}
+				}
+			},
+
 			Bag_DuffelBag_EMS_Red = {
 				rolls = 2,
 				items = {

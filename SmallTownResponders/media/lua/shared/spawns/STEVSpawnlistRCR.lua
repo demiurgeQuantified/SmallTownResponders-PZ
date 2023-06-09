@@ -121,7 +121,7 @@ local function STEVRCRSpawns()
 
 			end
 
-			if SandboxVars.STEV.VCars then
+			if SandboxVars.STEV.VCars and not getActivatedMods():contains("SCKCO") then
 
 				-- RavenCreek Police
 				VehicleZoneDistribution.policeravencreek.vehicles["Base.CarLightsPolice"] = {index = RCRPD[1], spawnChance = SandboxVars.STEV.RCRPD};
@@ -162,7 +162,7 @@ local function STEVRCRSpawns()
 
 			end
 
-			if SandboxVars.STEV.VCars then
+			if SandboxVars.STEV.VCars and not getActivatedMods():contains("SCKCO") then
 
 				-- RavenCreek Police
 				VehicleZoneDistribution.police.vehicles["Base.Van_ravencreekdoc"] = {index = -1, spawnChance = SandboxVars.STEV.RCRDOC};

@@ -632,6 +632,26 @@ option STEV.RCRDOC
 	page = STEV,
 	translation = STEV_RCRDOC,
 }
+option STEV.TandilPD
+{
+	type = integer,
+	min = 0,
+	max = 60,
+	default = 25,
+
+	page = STEV,
+	translation = STEV_TandilPD,
+}
+option STEV.TandilFD
+{
+	type = integer,
+	min = 0,
+	max = 60,
+	default = 35,
+
+	page = STEV,
+	translation = STEV_TandilFD,
+}
 option STEV.FSwat
 {
 	type = integer,

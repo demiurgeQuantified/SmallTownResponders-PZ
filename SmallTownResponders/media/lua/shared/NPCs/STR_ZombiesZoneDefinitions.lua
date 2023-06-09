@@ -1705,17 +1705,9 @@ local function STRSpawns()
 			table.insert(ZombiesZoneDefinition.FireDeptLV,{name = "SusceptibleFireman_Louisville_Khaki", chance=5});
 			table.insert(ZombiesZoneDefinition.FireDeptLV,{name = "SusceptibleFiremanFullSuit_Louisville_Khaki", chance=5});
 
-			table.insert(ZombiesZoneDefinition.WestPointPicnic,{name = "SusceptibleFederalRanger", chance=5});
-			table.insert(ZombiesZoneDefinition.WestPointPicnic,{name = "SusceptibleState_LawRanger", chance=5});
-			table.insert(ZombiesZoneDefinition.WestPointPicnic,{name = "SusceptibleStateRanger", chance=5});
-
-			table.insert(ZombiesZoneDefinition.MuldraughPicnic,{name = "SusceptibleFederalRanger", chance=5});
-			table.insert(ZombiesZoneDefinition.MuldraughPicnic,{name = "SusceptibleState_LawRanger", chance=5});
-			table.insert(ZombiesZoneDefinition.MuldraughPicnic,{name = "SusceptibleStateRanger", chance=5});
-
-			table.insert(ZombiesZoneDefinition.DixiePicnic,{name = "SusceptibleFederalRanger", chance=5});
-			table.insert(ZombiesZoneDefinition.DixiePicnic,{name = "SusceptibleState_LawRanger", chance=5});
-			table.insert(ZombiesZoneDefinition.DixiePicnic,{name = "SusceptibleStateRanger", chance=5});
+			table.insert(ZombiesZoneDefinition.MeadeRangers,{name = "SusceptibleFederalRanger", chance=5});
+			table.insert(ZombiesZoneDefinition.MeadeRangers,{name = "SusceptibleState_LawRanger", chance=5});
+			table.insert(ZombiesZoneDefinition.MeadeRangers,{name = "SusceptibleStateRanger", chance=5});
 
 			table.insert(ZombiesZoneDefinition.LouisvilleKSPJail,{name = "SusceptibleKSP_Trooper", chance=5});
 			table.insert(ZombiesZoneDefinition.LouisvilleKSPJail,{name = "SusceptibleInmateJefferson", chance=5, gender="male"});

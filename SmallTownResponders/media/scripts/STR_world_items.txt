@@ -73,19 +73,19 @@ module Base
 	model NSPBadge_Ground
     {
         mesh = WorldItems/SeedPacket,
-        texture = Item_Badge_FederalRanger,
+        texture = Item_Badge_Federal_Ranger,
         scale = 0.4,
     }
 	model SRBadge_Ground
     {
         mesh = WorldItems/SeedPacket,
-        texture = Item_Badge_StateRanger,
+        texture = Item_Badge_State_Ranger,
         scale = 0.4,
     }
 	model SPBadge_Ground
     {
         mesh = WorldItems/SeedPacket,
-        texture = Item_Badge_StateLawRanger,
+        texture = Item_Badge_State_Law_Ranger,
         scale = 0.4,
     }
 	model SBBadge_Ground
@@ -110,6 +110,12 @@ module Base
     {
         mesh = WorldItems/SeedPacket,
         texture = Item_Badge_Security_Mall_LV,
+        scale = 0.4,
+    }
+	model SHHBadge_Ground
+    {
+        mesh = WorldItems/SeedPacket,
+        texture = Item_Badge_Security_Hotel_Havisham,
         scale = 0.4,
     }
 }

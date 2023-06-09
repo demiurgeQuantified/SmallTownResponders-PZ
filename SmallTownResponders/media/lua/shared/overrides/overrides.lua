@@ -49,6 +49,12 @@ function Overrides.setSandboxVariables()
     else
         Overrides.zonesGeneric.RavenCreek = nil
     end
+    if getActivatedMods():contains('Tandil') then
+        Overrides.zonesGeneric.Tandil = {x1=9900,x2=11399,y1=13500,y2=14999}
+        Overrides.zonesPolice.Tandil = Overrides.zonesGeneric.Tandil
+    else
+        Overrides.zonesGeneric.Tandil = nil
+    end
 end
 Events.OnInitGlobalModData.Add(Overrides.setSandboxVariables)
 

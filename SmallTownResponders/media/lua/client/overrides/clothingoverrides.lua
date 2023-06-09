@@ -102,7 +102,8 @@ ClothingOverrides.overrideOutfit = function(zombie)
         outfit = outfit[ZombRand(1, #outfit+1)]
     end
 
-    zombie:dressInNamedOutfit(outfit)
+    --zombie:dressInNamedOutfit(outfit)
+    zombie:dressInPersistentOutfit(outfit)
     zombie:resetModel()
 end
 
