@@ -2,7 +2,7 @@ local function STEVTandilSpawns()
 	local TandilPD = {};
 	local TandilFD = {};
 	local TandilEMS = {};
-	if getActivatedMods():contains("RavenCreek") then
+	if getActivatedMods():contains("Tandil") then
 
 		TandilPD[1] = 12; -- vanilla police car
 		TandilPD[2] = 12; -- vanilla police truck
@@ -35,7 +35,7 @@ local function STEVTandilSpawns()
 			TandilPD[2] = 13; -- vanilla police truck
 
 		end
-	elseif not getActivatedMods():contains("RavenCreek") then
+	elseif not getActivatedMods():contains("Tandil") then
 
 		TandilPD[1] = 11; -- vanilla police car
 		TandilPD[2] = 11; -- vanilla police truck
@@ -130,31 +130,31 @@ local function STEVTandilSpawns()
 			if getActivatedMods():contains("FRUsedCars") then
 
 				-- Tandil Police
-				VehicleZoneDistribution.policetandil.vehicles["Base.85vicsheriff"] = {index = TandilPD[5], spawnChance = SandboxVars.STEV.TandilPD};
-				VehicleZoneDistribution.policetandil.vehicles["Base.87capricePD"] = {index = TandilPD[4], spawnChance = SandboxVars.STEV.TandilPD};
-				VehicleZoneDistribution.policetandil.vehicles["Base.92crownvicPD"] = {index = TandilPD[3], spawnChance = SandboxVars.STEV.TandilPD};
-				VehicleZoneDistribution.policetandil.vehicles["Base.91blazerpd"] = {index = TandilPD[6], spawnChance = SandboxVars.STEV.TandilPD};
+				VehicleZoneDistribution.policetandil.vehicles["Base.85vicsheriff"] = {index = TandilPD[5], spawnChance = SandboxVars.STEV.TDPD};
+				VehicleZoneDistribution.policetandil.vehicles["Base.87capricePD"] = {index = TandilPD[4], spawnChance = SandboxVars.STEV.TDPD};
+				VehicleZoneDistribution.policetandil.vehicles["Base.92crownvicPD"] = {index = TandilPD[3], spawnChance = SandboxVars.STEV.TDPD};
+				VehicleZoneDistribution.policetandil.vehicles["Base.91blazerpd"] = {index = TandilPD[6], spawnChance = SandboxVars.STEV.TDPD};
 
 				-- Tandil FD/EMS
 				VehicleZoneDistribution.firetandil.vehicles["Base.80f350ambulance"] = {index = TandilEMS[4], spawnChance = SandboxVars.STEV.EMS};
 				VehicleZoneDistribution.firetandil.vehicles["Base.86econolineambulance"] = {index = TandilEMS[4], spawnChance = SandboxVars.STEV.EMS};
 
-				VehicleZoneDistribution.firetandil.vehicles["Base.firepumper"] = {index = TandilEMS[4], spawnChance = SandboxVars.STEV.TandilFD};
-				VehicleZoneDistribution.firetandil.vehicles["Base.87c10fire"] = {index = TandilEMS[4], spawnChance = SandboxVars.STEV.TandilFD};
+				VehicleZoneDistribution.firetandil.vehicles["Base.firepumper"] = {index = TandilEMS[4], spawnChance = SandboxVars.STEV.TDPD};
+				VehicleZoneDistribution.firetandil.vehicles["Base.87c10fire"] = {index = TandilEMS[4], spawnChance = SandboxVars.STEV.TDPD};
 
 			end
 
 			if SandboxVars.STEV.VCars and not getActivatedMods():contains("SCKCO") then
 
 				-- Tandil Police
-				VehicleZoneDistribution.policetandil.vehicles["Base.CarLightsPolice"] = {index = TandilPD[1], spawnChance = SandboxVars.STEV.TandilPD};
-				VehicleZoneDistribution.policetandil.vehicles["Base.PickUpVanLightsPolice"] = {index = TandilPD[2], spawnChance = SandboxVars.STEV.TandilPD};
+				VehicleZoneDistribution.policetandil.vehicles["Base.CarLightsPolice"] = {index = TandilPD[1], spawnChance = SandboxVars.STEV.TDPD};
+				VehicleZoneDistribution.policetandil.vehicles["Base.PickUpVanLightsPolice"] = {index = TandilPD[2], spawnChance = SandboxVars.STEV.TDPD};
 
 				-- Tandil FD/EMS
 				VehicleZoneDistribution.firetandil.vehicles["Base.VanAmbulance"] = {index = TandilEMS[4], spawnChance = SandboxVars.STEV.EMS};
 
-				VehicleZoneDistribution.firetandil.vehicles["Base.PickUpTruckLightsFire"] = {index = TandilEMS[4], spawnChance = SandboxVars.STEV.TandilFD};
-				VehicleZoneDistribution.firetandil.vehicles["Base.PickUpVanLightsFire"] = {index = TandilEMS[4], spawnChance = SandboxVars.STEV.TandilFD};
+				VehicleZoneDistribution.firetandil.vehicles["Base.PickUpTruckLightsFire"] = {index = TandilEMS[4], spawnChance = SandboxVars.STEV.TDPD};
+				VehicleZoneDistribution.firetandil.vehicles["Base.PickUpVanLightsFire"] = {index = TandilEMS[4], spawnChance = SandboxVars.STEV.TDPD};
 
 			end
 		end
@@ -166,33 +166,33 @@ local function STEVTandilSpawns()
 				-- Vanilla Police Zones
 
 				-- Tandil Police
-				VehicleZoneDistribution.police.vehicles["Base.85vicsheriff"] = {index = TandilPD[5], spawnChance = SandboxVars.STEV.TandilPD};
-				VehicleZoneDistribution.police.vehicles["Base.87capricePD"] = {index = TandilPD[4], spawnChance = SandboxVars.STEV.TandilPD};
-				VehicleZoneDistribution.police.vehicles["Base.92crownvicPD"] = {index = TandilPD[3], spawnChance = SandboxVars.STEV.TandilPD};
-				VehicleZoneDistribution.police.vehicles["Base.91blazerpd"] = {index = TandilPD[6], spawnChance = SandboxVars.STEV.TandilPD};
+				VehicleZoneDistribution.police.vehicles["Base.85vicsheriff"] = {index = TandilPD[5], spawnChance = SandboxVars.STEV.TDPD};
+				VehicleZoneDistribution.police.vehicles["Base.87capricePD"] = {index = TandilPD[4], spawnChance = SandboxVars.STEV.TDPD};
+				VehicleZoneDistribution.police.vehicles["Base.92crownvicPD"] = {index = TandilPD[3], spawnChance = SandboxVars.STEV.TDPD};
+				VehicleZoneDistribution.police.vehicles["Base.91blazerpd"] = {index = TandilPD[6], spawnChance = SandboxVars.STEV.TDPD};
 
 				-- Tandil FD/EMS
 				VehicleZoneDistribution.ambulance.vehicles["Base.80f350ambulance"] = {index = TandilEMS[4], spawnChance = SandboxVars.STEV.EMS};
 				VehicleZoneDistribution.ambulance.vehicles["Base.86econolineambulance"] = {index = TandilEMS[4], spawnChance = SandboxVars.STEV.EMS};
 
-				VehicleZoneDistribution.fire.vehicles["Base.firepumper"] = {index = TandilEMS[4], spawnChance = SandboxVars.STEV.TandilFD};
-				VehicleZoneDistribution.fire.vehicles["Base.87c10fire"] = {index = TandilEMS[4], spawnChance = SandboxVars.STEV.TandilFD};
+				VehicleZoneDistribution.fire.vehicles["Base.firepumper"] = {index = TandilEMS[4], spawnChance = SandboxVars.STEV.TDPD};
+				VehicleZoneDistribution.fire.vehicles["Base.87c10fire"] = {index = TandilEMS[4], spawnChance = SandboxVars.STEV.TDPD};
 
 			end
 
 			if SandboxVars.STEV.VCars and not getActivatedMods():contains("SCKCO") then
 
 				-- Tandil Police
-				VehicleZoneDistribution.police.vehicles["Base.CarLightsPolice"] = {index = TandilPD[1], spawnChance = SandboxVars.STEV.TandilPD};
-				VehicleZoneDistribution.police.vehicles["Base.PickUpVanLightsPolice"] = {index = TandilPD[2], spawnChance = SandboxVars.STEV.TandilPD};
+				VehicleZoneDistribution.police.vehicles["Base.CarLightsPolice"] = {index = TandilPD[1], spawnChance = SandboxVars.STEV.TDPD};
+				VehicleZoneDistribution.police.vehicles["Base.PickUpVanLightsPolice"] = {index = TandilPD[2], spawnChance = SandboxVars.STEV.TDPD};
 				VehicleZoneDistribution.police.spawnRate = SandboxVars.STEV.SRate;
 
 				-- Tandil FD/EMS
 				VehicleZoneDistribution.ambulance.vehicles["Base.VanAmbulance"] = {index = TandilEMS[4], spawnChance = SandboxVars.STEV.EMS};
 				VehicleZoneDistribution.ambulance.spawnRate = SandboxVars.STEV.SRate;
 
-				VehicleZoneDistribution.fire.vehicles["Base.PickUpTruckLightsFire"] = {index = TandilEMS[4], spawnChance = SandboxVars.STEV.TandilFD};
-				VehicleZoneDistribution.fire.vehicles["Base.PickUpVanLightsFire"] = {index = TandilEMS[4], spawnChance = SandboxVars.STEV.TandilFD};
+				VehicleZoneDistribution.fire.vehicles["Base.PickUpTruckLightsFire"] = {index = TandilEMS[4], spawnChance = SandboxVars.STEV.TDPD};
+				VehicleZoneDistribution.fire.vehicles["Base.PickUpVanLightsFire"] = {index = TandilEMS[4], spawnChance = SandboxVars.STEV.TDPD};
 				VehicleZoneDistribution.fire.spawnRate = SandboxVars.STEV.SRate;
 
 			end

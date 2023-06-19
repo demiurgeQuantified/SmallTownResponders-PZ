@@ -3,6 +3,20 @@ module STR {
 	imports {
 		Base
 	}
+	item Shirt_Police_TandilROLL
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Tandil PD Shirt,
+		ClothingItem = Shirt_Police_TandilROLL,
+		BodyLocation = ShortSleeveShirt,
+		Icon = Shirt_Police_Tandil,
+		BloodLocation = Shirt,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = Shirt_Ground,
+	}
 	item Shirt_Police_RavenCreekROLL
 	{
         DisplayCategory = Clothing,
@@ -269,6 +283,20 @@ module STR {
         FabricType = Cotton,
         WorldStaticModel = Shirt_Ground,
 	}
+	item Shirt_EMS_TandilROLL
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Tandil EMS Shirt,
+		ClothingItem = Shirt_EMS_TandilROLL,
+		BodyLocation = ShortSleeveShirt,
+		Icon = Shirt_EMS_Tandil,
+		BloodLocation = Shirt,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = Shirt_Ground,
+	}
 	item Shirt_EMS_RavenCreekROLL
 	{
         DisplayCategory = Clothing,
@@ -409,6 +437,20 @@ module STR {
         FabricType = Cotton,
         WorldStaticModel = Shirt_Ground,
 	}
+	item Shirt_Fire_TandilROLL
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Tandil FD Shirt,
+		ClothingItem = Shirt_Fire_TandilROLL,
+		BodyLocation = Shirt,
+		Icon = Shirt_Fire_Tandil,
+		BloodLocation = ShirtLongSleeves,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = Shirt_Ground,
+	}
 	item Shirt_Fire_RavenCreekROLL
 	{
         DisplayCategory = Clothing,
@@ -431,6 +473,20 @@ module STR {
 		ClothingItem = Shirt_Fire_Supervisor_RavenCreekROLL,
 		BodyLocation = Shirt,
 		Icon = Shirt_Fire_Supervisor_RavenCreek,
+		BloodLocation = ShirtLongSleeves,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = Shirt_Ground,
+	}
+	item Shirt_Police_TandilOPEN
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Tandil PD Shirt,
+		ClothingItem = Shirt_Police_TandilOPEN,
+		BodyLocation = Shirt,
+		Icon = Shirt_Police_Tandil,
 		BloodLocation = ShirtLongSleeves,
         Insulation = 0.2,
         WindResistance = 0.2,
@@ -703,6 +759,20 @@ module STR {
         FabricType = Cotton,
         WorldStaticModel = Shirt_Ground,
 	}
+	item Shirt_EMS_TandilOPEN
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Tandil EMS Shirt,
+		ClothingItem = Shirt_EMS_TandilOPEN,
+		BodyLocation = Shirt,
+		Icon = Shirt_EMS_Tandil,
+		BloodLocation = ShirtLongSleeves,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = Shirt_Ground,
+	}
 	item Shirt_EMS_RavenCreekOPEN
 	{
         DisplayCategory = Clothing,
@@ -843,6 +913,20 @@ module STR {
         FabricType = Cotton,
         WorldStaticModel = Shirt_Ground,
 	}
+	item Shirt_Fire_TandilOPEN
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Tandil FD Shirt,
+		ClothingItem = Shirt_Fire_TandilOPEN,
+		BodyLocation = Shirt,
+		Icon = Shirt_Fire_Tandil,
+		BloodLocation = ShirtLongSleeves,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = Shirt_Ground,
+	}
 	item Shirt_Fire_RavenCreekOPEN
 	{
         DisplayCategory = Clothing,
@@ -866,6 +950,20 @@ module STR {
 		BodyLocation = Shirt,
 		Icon = Shirt_Fire_Supervisor_RavenCreek,
 		BloodLocation = ShirtLongSleeves,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = Shirt_Ground,
+	}
+	item Shirt_Police_TandilOPENROLL
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Tandil PD Shirt,
+		ClothingItem = Shirt_Police_TandilOPENROLL,
+		BodyLocation = ShortSleeveShirt,
+		Icon = Shirt_Police_Tandil,
+		BloodLocation = Shirt,
         Insulation = 0.2,
         WindResistance = 0.2,
         FabricType = Cotton,
@@ -1137,6 +1235,20 @@ module STR {
         FabricType = Cotton,
         WorldStaticModel = Shirt_Ground,
 	}
+	item Shirt_EMS_TandilOPENROLL
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Tandil FD EMS Shirt,
+		ClothingItem = Shirt_EMS_TandilOPENROLL,
+		BodyLocation = ShortSleeveShirt,
+		Icon = Shirt_EMS_Tandil,
+		BloodLocation = Shirt,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = Shirt_Ground,
+	}
 	item Shirt_EMS_RavenCreekOPENROLL
 	{
         DisplayCategory = Clothing,
@@ -1277,6 +1389,20 @@ module STR {
         FabricType = Cotton,
         WorldStaticModel = Shirt_Ground,
 	}
+	item Shirt_Fire_TandilOPENROLL
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Tandil FD Shirt,
+		ClothingItem = Shirt_Fire_TandilOPENROLL,
+		BodyLocation = Shirt,
+		Icon = Shirt_Fire_Tandil,
+		BloodLocation = ShirtLongSleeves,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = Shirt_Ground,
+	}
 	item Shirt_Fire_RavenCreekOPENROLL
 	{
         DisplayCategory = Clothing,
@@ -1304,6 +1430,20 @@ module STR {
         WindResistance = 0.2,
         FabricType = Cotton,
         WorldStaticModel = Shirt_Ground,
+	}
+	item TShirt_Police_TandilOPEN
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Tandil PD T-Shirt,
+		ClothingItem = TShirt_Police_TandilOPEN,
+		BodyLocation = Tshirt,
+		Icon = TShirt_Police_Tandil,
+		BloodLocation = Shirt,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = TShirt_Ground,
 	}
 	item TShirt_Police_RavenCreekOPEN
 	{
@@ -1571,6 +1711,20 @@ module STR {
         FabricType = Cotton,
         WorldStaticModel = TShirt_Ground,
 	}
+	item TShirt_EMS_TandilOPEN
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Tandil EMS T-Shirt,
+		ClothingItem = TShirt_EMS_TandilOPEN,
+		BodyLocation = Tshirt,
+		Icon = TShirt_EMS_Tandil,
+		BloodLocation = Shirt,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = TShirt_Ground,
+	}
 	item TShirt_EMS_RavenCreekOPEN
 	{
         DisplayCategory = Clothing,
@@ -1691,6 +1845,20 @@ module STR {
 		ClothingItem = TShirt_Fire_Supervisor_RosewoodOPEN,
 		BodyLocation = Tshirt,
 		Icon = TShirt_Fire_Supervisor_Rosewood,
+		BloodLocation = Shirt,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = TShirt_Ground,
+	}
+	item TShirt_Fire_TandilOPEN
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Tandil FD T-Shirt,
+		ClothingItem = TShirt_Fire_TandilOPEN,
+		BodyLocation = Tshirt,
+		Icon = TShirt_Fire_Tandil,
 		BloodLocation = Shirt,
         Insulation = 0.2,
         WindResistance = 0.2,

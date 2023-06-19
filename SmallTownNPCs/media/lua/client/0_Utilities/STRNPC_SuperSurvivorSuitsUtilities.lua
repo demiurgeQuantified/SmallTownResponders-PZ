@@ -27,6 +27,9 @@ end
 	if isModEnabled("RavenCreek") then
 		SurvivorRandomSuits["RareRCR"] = {} -- RavenCreek
 	end
+	if isModEnabled("Tandil") then
+		SurvivorRandomSuits["RareTD"] = {} -- Tandil
+	end
 
 --SmallTownResponders Stuff, Very Confusing
 --Rosewood
@@ -1640,11 +1643,11 @@ if isModEnabled("RavenCreek") then
 		SurvivorRandomSuits["RareRCR"]["RavenCreekFiremanFullK11Open"] = {"STR.Hat_Fireman_Meade_Yellow", "STR.TShirt_Profession_FiremanRed_Meade02", "STR.Trousers_Fireman_Meade_Khaki", "STR.Jacket_Fireman_Meade_KhakiOPEN", "Base.Shoes_BlackBoots"}
 		SurvivorRandomSuits["RareRCR"]["RavenCreekFiremanFullK12Open"] = {"STR.Hat_Fireman_Meade_Yellow", "STR.TShirt_Profession_FiremanWhite_Meade", "STR.Trousers_Fireman_Meade_Khaki", "STR.Jacket_Fireman_Meade_KhakiOPEN", "Base.Shoes_BlackBoots"}
 		--Police
-		SurvivorRandomSuits["Rare"]["RavenCreekSO1Open"] = {"STR.Hat_Police_RavenCreek", "STR.TShirt_Police_RavenCreek", "STR.Shirt_Police_RavenCreek", "STR.Trousers_Police_RavenCreek", "STR.Jacket_Police_RavenCreekOPEN", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Nightstick", "STR.MeadeSheriffBadge"}
+		SurvivorRandomSuits["RareRCR"]["RavenCreekSO1Open"] = {"STR.Hat_Police_RavenCreek", "STR.TShirt_Police_RavenCreek", "STR.Shirt_Police_RavenCreek", "STR.Trousers_Police_RavenCreek", "STR.Jacket_Police_RavenCreekOPEN", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Nightstick", "STR.MeadeSheriffBadge"}
 
-		SurvivorRandomSuits["Rare"]["MeadeCountySO1OpenPistol"] = {"STR.Hat_Police_RavenCreek", "STR.TShirt_Police_RavenCreek", "STR.Shirt_Police_RavenCreek", "STR.Trousers_Police_RavenCreek", "STR.Jacket_Police_RavenCreekOPEN", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Pistol", "Base.9mmClip", "Base.Bullets9mmBox", "Base.Bullets9mmBox", "STR.MeadeSheriffBadge"}
+		SurvivorRandomSuits["RareRCR"]["RavenCreekSO1OpenPistol"] = {"STR.Hat_Police_RavenCreek", "STR.TShirt_Police_RavenCreek", "STR.Shirt_Police_RavenCreek", "STR.Trousers_Police_RavenCreek", "STR.Jacket_Police_RavenCreekOPEN", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Pistol", "Base.9mmClip", "Base.Bullets9mmBox", "Base.Bullets9mmBox", "STR.MeadeSheriffBadge"}
 
-		SurvivorRandomSuits["Rare"]["MeadeCountySO1OpenShotgun"] = {"STR.Hat_Police_RavenCreek", "STR.TShirt_Police_RavenCreek", "STR.Shirt_Police_RavenCreek", "STR.Trousers_Police_RavenCreek", "STR.Jacket_Police_RavenCreekOPEN", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Shotgun", "Base.ShotgunShellsBox", "Base.ShotgunShellsBox", "STR.MeadeSheriffBadge"}
+		SurvivorRandomSuits["RareRCR"]["RavenCreekSO1OpenShotgun"] = {"STR.Hat_Police_RavenCreek", "STR.TShirt_Police_RavenCreek", "STR.Shirt_Police_RavenCreek", "STR.Trousers_Police_RavenCreek", "STR.Jacket_Police_RavenCreekOPEN", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Shotgun", "Base.ShotgunShellsBox", "Base.ShotgunShellsBox", "STR.MeadeSheriffBadge"}
 
 		SurvivorRandomSuits["RareRCR"]["KentuckyStatePatrol1Open"] = {"STR.Hat_PoliceKSP", "STR.TShirt_PoliceKSP", "STR.Tie_Full_KSP", "STR.Shirt_PoliceKSP", "STR.Trousers_PoliceKSP_Summer", "STR.Jacket_PoliceKSPOPEN", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Nightstick", "STR.KSPPoliceBadge", "STR.Tie_Full_KSP"}
 		SurvivorRandomSuits["RareRCR"]["KentuckyStatePatrol4Open"] = {"STR.Hat_PoliceKSP", "STR.TShirt_PoliceKSP", "STR.Tie_Full_KSP", "STR.Shirt_PoliceKSP", "STR.Trousers_PoliceKSP_Winter", "STR.Jacket_PoliceKSPOPEN", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Nightstick", "STR.KSPPoliceBadge", "STR.Tie_Full_KSP"}
@@ -1659,6 +1662,196 @@ if isModEnabled("RavenCreek") then
 		SurvivorRandomSuits["RareRCR"]["USPS4Open"] = {"STR.Hat_BaseballCap_USPS", "STR.TShirt_USPS", "STR.Shirt_USPS", "STR.Shorts_USPS", "STR.Jacket_USPSOPEN", "Base.Shoes_Black", "STR.Bag_Satchel_USPS"}
 		SurvivorRandomSuits["RareRCR"]["USPS7Open"] = {"STR.Hat_BaseballCap_USPS_Reverse", "STR.TShirt_USPS", "STR.Shirt_USPS", "STR.Trousers_USPS", "STR.Jacket_USPSOPEN", "Base.Shoes_Black", "STR.Bag_Satchel_USPS"}
 		SurvivorRandomSuits["RareRCR"]["USPS10Open"] = {"STR.Hat_BaseballCap_USPS_Reverse", "STR.TShirt_USPS", "STR.Shirt_USPS", "STR.Shorts_USPS", "STR.Jacket_USPSOPEN", "Base.Shoes_Black", "STR.Bag_Satchel_USPS"}
+	end
+end
+
+--Tandil Stuff, Very Confusing
+if isModEnabled("Tandil") then
+--Tandil
+	SurvivorRandomSuits["RareTD"]["Bride1F"] = {"Base.WeddingDress", "Base.Shirt_FormalWhite", "Base.Socks_Long", "Base.Shoes_Black"}
+	SurvivorRandomSuits["RareTD"]["Groom1M"] = {"Base.Tie_BowTieFull", "Base.Gloves_WhiteTINT", "Base.WeddingJacket", "Base.Shirt_FormalWhite", "Base.Trousers_Suit", "Base.Socks_Long", "Shoes_Black"}
+	SurvivorRandomSuits["RareTD"]["Priest1"] = {"Base.Shirt_Priest", "Base.Trousers_Suit", "Base.Socks_Ankle", "Base.Shoes_Black"}
+	SurvivorRandomSuits["RareTD"]["ShopSpiffo1"] = {"Base.Tshirt_BusinessSpiffo", "Base.Apron_Spiffos", "Base.TrousersMesh_DenimLight", "Base.Socks_Ankle", "Base.Shoes_TrainerTINT"}
+	SurvivorRandomSuits["RareTD"]["Swimwear1F"] = {"Base.Bikini_Pattern01", "Base.Shoes_FlipFlop"}
+	SurvivorRandomSuits["RareTD"]["Swimwear1M"] = {"Base.SwimTrunks_Blue", "Base.Shoes_FlipFlop"}
+	SurvivorRandomSuits["RareTD"]["Nurse1"] = {"Base.Hat_SurgicalMask_Blue", "Base.Tshirt_Scrubs", "Base.Trousers_Scrubs", "Base.Socks_Ankle", "Base.Shoes_Black"}
+
+	SurvivorRandomSuits["RareTD"]["Prepper1"] = {"Base.Hat_GasMask", "Base.HoodieUP_GreenTINT", "Base.Vest_BulletCivilian", "Base.TrousersMesh_DenimLight", "Base.Socks_Ankle", "Base.Shoes_Black"}
+	SurvivorRandomSuits["RareTD"]["Bandit1"] = {"Base.Hat_BalaclavaFull", "Base.Jacket_Padded", "Base.TrousersMesh_DenimLight", "Base.Tshirt_Rock", "Base.Socks_Ankle", "Base.Shoes_Black"}
+	SurvivorRandomSuits["RareTD"]["Bandit2"] = {"Base.Hat_BalaclavaFull", "Base.HoodieUP_WhiteTINT", "Base.TrousersMesh_DenimLight", "Tshirt_DefaultDECAL", "Base.Socks_Ankle", "Base.Shoes_Black"}
+	SurvivorRandomSuits["RareTD"]["Bandit3"] = {"Base.Hat_BalaclavaFull", "Base.Vest_Hunting_Camo", "Base.Trousers_CamoGreen", "Base.Shoes_BlackBoots"}
+	--EMS
+    SurvivorRandomSuits["RareTD"]["TandilEMS1"] = {"STR.Hat_BaseballCap_EMS_Tandil", "STR.TShirt_EMS_Tandil", "STR.Shirt_EMS_Tandil", "STR.Trousers_EMS_Tandil", "STR.Jacket_EMS_Tandil", "Base.Shoes_Black"}
+    SurvivorRandomSuits["RareTD"]["TandilEMS2"] = {"STR.Hat_BaseballCap_EMS_Tandil", "STR.TShirt_EMS_Tandil", "STR.Shirt_EMS_Tandil", "STR.Trousers_EMS_Tandil", "Base.Shoes_Black"}
+    SurvivorRandomSuits["RareTD"]["TandilEMS3"] = {"STR.Hat_BaseballCap_EMS_Tandil", "STR.TShirt_EMS_Tandil", "STR.Trousers_EMS_Tandil", "Base.Shoes_Black"}
+    SurvivorRandomSuits["RareTD"]["TandilEMS4"] = {"STR.Hat_BaseballCap_EMS_Tandil_Reverse", "STR.TShirt_EMS_Tandil", "STR.Shirt_EMS_Tandil", "STR.Trousers_EMS_Tandil", "STR.Jacket_EMS_Tandil", "Base.Shoes_Black"}
+    SurvivorRandomSuits["RareTD"]["TandilEMS5"] = {"STR.Hat_BaseballCap_EMS_Tandil_Reverse", "STR.TShirt_EMS_Tandil", "STR.Shirt_EMS_Tandil", "STR.Trousers_EMS_Tandil", "Base.Shoes_Black"}
+    SurvivorRandomSuits["RareTD"]["TandilEMS6"] = {"STR.Hat_BaseballCap_EMS_Tandil_Reverse", "STR.TShirt_EMS_Tandil", "STR.Trousers_EMS_Tandil", "Base.Shoes_Black"}
+
+	SurvivorRandomSuits["RareTD"]["Prepper1"] = {"Base.Hat_GasMask", "Base.HoodieUP_GreenTINT", "Base.Vest_BulletCivilian", "Base.TrousersMesh_DenimLight", "Base.Socks_Ankle", "Base.Shoes_Black"}
+	SurvivorRandomSuits["RareTD"]["Bandit1"] = {"Base.Hat_BalaclavaFull", "Base.Jacket_Padded", "Base.TrousersMesh_DenimLight", "Base.Tshirt_Rock", "Base.Socks_Ankle", "Base.Shoes_Black"}
+	SurvivorRandomSuits["RareTD"]["Bandit2"] = {"Base.Hat_BalaclavaFull", "Base.HoodieUP_WhiteTINT", "Base.TrousersMesh_DenimLight", "Tshirt_DefaultDECAL", "Base.Socks_Ankle", "Base.Shoes_Black"}
+	SurvivorRandomSuits["RareTD"]["Bandit3"] = {"Base.Hat_BalaclavaFull", "Base.Vest_Hunting_Camo", "Base.Trousers_CamoGreen", "Base.Shoes_BlackBoots"}
+	--Prisoners
+    SurvivorRandomSuits["RareTD"]["MeadeCountyPrisoner1"] = {"STR.Boilersuit_MeadeGenPopPrisoner", "Base.Socks_Long", "Base.Shoes_Black"}
+    SurvivorRandomSuits["RareTD"]["MeadeCountyPrisoner2"] = {"STR.Boilersuit_MeadeLowRiskPrisoner", "Base.Socks_Long", "Base.Shoes_Black"}
+    SurvivorRandomSuits["RareTD"]["MeadeCountyPrisoner3"] = {"STR.Boilersuit_MeadeMaxPrisoner", "Base.Socks_Long", "Base.Shoes_Black"}
+	--Rangers
+    SurvivorRandomSuits["RareTD"]["FederalRanger1"] = {"STR.Hat_FederalRanger", "STR.TShirt_Federal_Ranger", "STR.Shirt_Federal_Ranger", "STR.Trousers_FederalRanger", "STR.Jacket_Federal_Ranger", "Base.Shoes_Black", "STR.FederalRangerBadge"}
+    SurvivorRandomSuits["RareTD"]["FederalRanger2"] = {"STR.Hat_FederalRanger", "STR.TShirt_Federal_Ranger", "STR.Shirt_Federal_Ranger", "STR.Trousers_FederalRanger", "Base.Shoes_Black", "STR.FederalRangerBadge"}
+    SurvivorRandomSuits["RareTD"]["FederalRanger3"] = {"STR.Hat_FederalRanger", "STR.TShirt_Federal_Ranger", "STR.Trousers_FederalRanger", "Base.Shoes_Black", "STR.FederalRangerBadge"}
+
+    SurvivorRandomSuits["RareTD"]["StateLawRanger1"] = {"STR.Hat_StateLawRanger", "STR.TShirt_State_LawRanger", "STR.Shirt_State_LawRanger", "STR.Trousers_StateLawRanger", "STR.Jacket_State_LawRanger", "Base.Shoes_Black", "STR.StateLawRangerBadge"}
+    SurvivorRandomSuits["RareTD"]["StateLawRanger2"] = {"STR.Hat_StateLawRanger", "STR.TShirt_State_LawRanger", "STR.Shirt_State_LawRanger", "STR.Trousers_StateLawRanger", "Base.Shoes_Black", "STR.StateLawRangerBadge"}
+    SurvivorRandomSuits["RareTD"]["StateLawRanger3"] = {"STR.Hat_StateLawRanger", "STR.TShirt_State_LawRanger", "STR.Trousers_StateLawRanger", "Base.Shoes_Black", "STR.StateLawRangerBadge"}
+
+    SurvivorRandomSuits["RareTD"]["StateRanger1"] = {"STR.Hat_StateRanger", "STR.TShirt_State_Ranger", "STR.Shirt_State_Ranger", "STR.Trousers_StateRanger", "STR.Jacket_State_Ranger", "Base.Shoes_Black", "STR.StateRangerBadge"}
+    SurvivorRandomSuits["RareTD"]["StateRanger2"] = {"STR.Hat_StateRanger", "STR.TShirt_State_Ranger", "STR.Shirt_State_Ranger", "STR.Trousers_StateRanger", "Base.Shoes_Black", "STR.StateRangerBadge"}
+    SurvivorRandomSuits["RareTD"]["StateRanger3"] = {"STR.Hat_StateRanger", "STR.TShirt_State_Ranger", "STR.Trousers_StateRanger", "Base.Shoes_Black", "STR.StateRangerBadge"}
+	--Tandil Black
+    SurvivorRandomSuits["RareTD"]["TandilFiremanFullB1"] = {"STR.Hat_Fireman_Tandil_Black", "STR.TShirt_Profession_FiremanBlue_Tandil", "STR.Trousers_Fireman_Tandil_Black", "STR.Jacket_Fireman_Tandil_Black", "Base.Shoes_BlackBoots"}
+    SurvivorRandomSuits["RareTD"]["TandilFiremanFullB2"] = {"STR.Hat_Fireman_Tandil_Black", "STR.TShirt_Profession_FiremanRed_Tandil", "STR.Trousers_Fireman_Tandil_Black", "STR.Jacket_Fireman_Tandil_Black", "Base.Shoes_BlackBoots"}
+    SurvivorRandomSuits["RareTD"]["TandilFiremanFullB3"] = {"STR.Hat_Fireman_Tandil_Black", "STR.TShirt_Profession_FiremanRed_Tandil02", "STR.Trousers_Fireman_Tandil_Black", "STR.Jacket_Fireman_Tandil_Black", "Base.Shoes_BlackBoots"}
+    SurvivorRandomSuits["RareTD"]["TandilFiremanFullB4"] = {"STR.Hat_Fireman_Tandil_Black", "STR.TShirt_Profession_FiremanWhite_Tandil", "STR.Trousers_Fireman_Tandil_Black", "STR.Jacket_Fireman_Tandil_Black", "Base.Shoes_BlackBoots"}
+
+    SurvivorRandomSuits["RareTD"]["TandilFiremanFullB5"] = {"STR.Hat_Fireman_Tandil_Red", "STR.TShirt_Profession_FiremanBlue_Tandil", "STR.Trousers_Fireman_Tandil_Black", "STR.Jacket_Fireman_Tandil_Black", "Base.Shoes_BlackBoots"}
+    SurvivorRandomSuits["RareTD"]["TandilFiremanFullB6"] = {"STR.Hat_Fireman_Tandil_Red", "STR.TShirt_Profession_FiremanRed_Tandil", "STR.Trousers_Fireman_Tandil_Black", "STR.Jacket_Fireman_Tandil_Black", "Base.Shoes_BlackBoots"}
+    SurvivorRandomSuits["RareTD"]["TandilFiremanFullB7"] = {"STR.Hat_Fireman_Tandil_Red", "STR.TShirt_Profession_FiremanRed_Tandil02", "STR.Trousers_Fireman_Tandil_Black", "STR.Jacket_Fireman_Tandil_Black", "Base.Shoes_BlackBoots"}
+    SurvivorRandomSuits["RareTD"]["TandilFiremanFullB8"] = {"STR.Hat_Fireman_Tandil_Red", "STR.TShirt_Profession_FiremanWhite_Tandil", "STR.Trousers_Fireman_Tandil_Black", "STR.Jacket_Fireman_Tandil_Black", "Base.Shoes_BlackBoots"}
+
+    SurvivorRandomSuits["RareTD"]["TandilFiremanFullB9"] = {"STR.Hat_Fireman_Tandil_Yellow", "STR.TShirt_Profession_FiremanBlue_Tandil", "STR.Trousers_Fireman_Tandil_Black", "STR.Jacket_Fireman_Tandil_Black", "Base.Shoes_BlackBoots"}
+    SurvivorRandomSuits["RareTD"]["TandilFiremanFullB10"] = {"STR.Hat_Fireman_Tandil_Yellow", "STR.TShirt_Profession_FiremanRed_Tandil", "STR.Trousers_Fireman_Tandil_Black", "STR.Jacket_Fireman_Tandil_Black", "Base.Shoes_BlackBoots"}
+    SurvivorRandomSuits["RareTD"]["TandilFiremanFullB11"] = {"STR.Hat_Fireman_Tandil_Yellow", "STR.TShirt_Profession_FiremanRed_Tandil02", "STR.Trousers_Fireman_Tandil_Black", "STR.Jacket_Fireman_Tandil_Black", "Base.Shoes_BlackBoots"}
+    SurvivorRandomSuits["RareTD"]["TandilFiremanFullB12"] = {"STR.Hat_Fireman_Tandil_Yellow", "STR.TShirt_Profession_FiremanWhite_Tandil", "STR.Trousers_Fireman_Tandil_Black", "STR.Jacket_Fireman_Tandil_Black", "Base.Shoes_BlackBoots"}
+	--Tandil Khaki
+	SurvivorRandomSuits["RareTD"]["TandilFiremanFullK1"] = {"STR.Hat_Fireman_Tandil_Black", "STR.TShirt_Profession_FiremanBlue_Tandil", "STR.Trousers_Fireman_Tandil_Khaki", "STR.Jacket_Fireman_Tandil_Khaki", "Base.Shoes_BlackBoots"}
+    SurvivorRandomSuits["RareTD"]["TandilFiremanFullK2"] = {"STR.Hat_Fireman_Tandil_Black", "STR.TShirt_Profession_FiremanRed_Tandil", "STR.Trousers_Fireman_Tandil_Khaki", "STR.Jacket_Fireman_Tandil_Khaki", "Base.Shoes_BlackBoots"}
+    SurvivorRandomSuits["RareTD"]["TandilFiremanFullK3"] = {"STR.Hat_Fireman_Tandil_Black", "STR.TShirt_Profession_FiremanRed_Tandil02", "STR.Trousers_Fireman_Tandil_Khaki", "STR.Jacket_Fireman_Tandil_Khaki", "Base.Shoes_BlackBoots"}
+    SurvivorRandomSuits["RareTD"]["TandilFiremanFullK4"] = {"STR.Hat_Fireman_Tandil_Black", "STR.TShirt_Profession_FiremanWhite_Tandil", "STR.Trousers_Fireman_Tandil_Khaki", "STR.Jacket_Fireman_Tandil_Khaki", "Base.Shoes_BlackBoots"}
+
+    SurvivorRandomSuits["RareTD"]["TandilFiremanFullK5"] = {"STR.Hat_Fireman_Tandil_Red", "STR.TShirt_Profession_FiremanBlue_Tandil", "STR.Trousers_Fireman_Tandil_Khaki", "STR.Jacket_Fireman_Tandil_Khaki", "Base.Shoes_BlackBoots"}
+    SurvivorRandomSuits["RareTD"]["TandilFiremanFullK6"] = {"STR.Hat_Fireman_Tandil_Red", "STR.TShirt_Profession_FiremanRed_Tandil", "STR.Trousers_Fireman_Tandil_Khaki", "STR.Jacket_Fireman_Tandil_Khaki", "Base.Shoes_BlackBoots"}
+    SurvivorRandomSuits["RareTD"]["TandilFiremanFullK7"] = {"STR.Hat_Fireman_Tandil_Red", "STR.TShirt_Profession_FiremanRed_Tandil02", "STR.Trousers_Fireman_Tandil_Khaki", "STR.Jacket_Fireman_Tandil_Khaki", "Base.Shoes_BlackBoots"}
+    SurvivorRandomSuits["RareTD"]["TandilFiremanFullK8"] = {"STR.Hat_Fireman_Tandil_Red", "STR.TShirt_Profession_FiremanWhite_Tandil", "STR.Trousers_Fireman_Tandil_Khaki", "STR.Jacket_Fireman_Tandil_Khaki", "Base.Shoes_BlackBoots"}
+
+    SurvivorRandomSuits["RareTD"]["TandilFiremanFullK9"] = {"STR.Hat_Fireman_Tandil_Yellow", "STR.TShirt_Profession_FiremanBlue_Tandil", "STR.Trousers_Fireman_Tandil_Khaki", "STR.Jacket_Fireman_Tandil_Khaki", "Base.Shoes_BlackBoots"}
+    SurvivorRandomSuits["RareTD"]["TandilFiremanFullK10"] = {"STR.Hat_Fireman_Tandil_Yellow", "STR.TShirt_Profession_FiremanRed_Tandil", "STR.Trousers_Fireman_Tandil_Khaki", "STR.Jacket_Fireman_Tandil_Khaki", "Base.Shoes_BlackBoots"}
+    SurvivorRandomSuits["RareTD"]["TandilFiremanFullK11"] = {"STR.Hat_Fireman_Tandil_Yellow", "STR.TShirt_Profession_FiremanRed_Tandil02", "STR.Trousers_Fireman_Tandil_Khaki", "STR.Jacket_Fireman_Tandil_Khaki", "Base.Shoes_BlackBoots"}
+    SurvivorRandomSuits["RareTD"]["TandilFiremanFullK12"] = {"STR.Hat_Fireman_Tandil_Yellow", "STR.TShirt_Profession_FiremanWhite_Tandil", "STR.Trousers_Fireman_Tandil_Khaki", "STR.Jacket_Fireman_Tandil_Khaki", "Base.Shoes_BlackBoots"}
+	--Police
+    SurvivorRandomSuits["RareTD"]["TandilPD1"] = {"STR.Hat_Police_Tandil", "STR.TShirt_Police_Tandil", "STR.Shirt_Police_Tandil", "STR.Trousers_Police_Tandil", "STR.Jacket_Police_Tandil", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Nightstick"}
+    SurvivorRandomSuits["RareTD"]["TandilPD2"] = {"STR.Hat_Police_Tandil", "STR.TShirt_Police_Tandil", "STR.Shirt_Police_Tandil", "STR.Trousers_Police_Tandil", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Nightstick"}
+    SurvivorRandomSuits["RareTD"]["TandilPD3"] = {"STR.Hat_Police_Tandil", "STR.TShirt_Police_Tandil", "STR.Trousers_Police_Tandil", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Nightstick"}
+
+    SurvivorRandomSuits["RareTD"]["TandilPD1Pistol"] = {"STR.Hat_Police_Tandil", "STR.TShirt_Police_Tandil", "STR.Shirt_Police_Tandil", "STR.Trousers_Police_Tandil", "STR.Jacket_Police_Tandil", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Pistol", "Base.9mmClip", "Base.Bullets9mmBox", "Base.Bullets9mmBox"}
+    SurvivorRandomSuits["RareTD"]["TandilPD2Pistol"] = {"STR.Hat_Police_Tandil", "STR.TShirt_Police_Tandil", "STR.Shirt_Police_Tandil", "STR.Trousers_Police_Tandil", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Pistol", "Base.9mmClip", "Base.Bullets9mmBox", "Base.Bullets9mmBox"}
+    SurvivorRandomSuits["RareTD"]["TandilPD3Pistol"] = {"STR.Hat_Police_Tandil", "STR.TShirt_Police_Tandil", "STR.Trousers_Police_Tandil", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Pistol", "Base.9mmClip", "Base.Bullets9mmBox", "Base.Bullets9mmBox"}
+
+    SurvivorRandomSuits["RareTD"]["TandilPD1Shotgun"] = {"STR.Hat_Police_Tandil", "STR.TShirt_Police_Tandil", "STR.Shirt_Police_Tandil", "STR.Trousers_Police_Tandil", "STR.Jacket_Police_Tandil", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Shotgun", "Base.ShotgunShellsBox", "Base.ShotgunShellsBox"}
+    SurvivorRandomSuits["RareTD"]["TandilPD2Shotgun"] = {"STR.Hat_Police_Tandil", "STR.TShirt_Police_Tandil", "STR.Shirt_Police_Tandil", "STR.Trousers_Police_Tandil", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Shotgun", "Base.ShotgunShellsBox", "Base.ShotgunShellsBox"}
+    SurvivorRandomSuits["RareTD"]["TandilPD3Shotgun"] = {"STR.Hat_Police_Tandil", "STR.TShirt_Police_Tandil", "STR.Trousers_Police_Tandil", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Shotgun", "Base.ShotgunShellsBox", "Base.ShotgunShellsBox"}
+
+    SurvivorRandomSuits["RareTD"]["KentuckyStatePatrol1"] = {"STR.Hat_PoliceKSP", "STR.TShirt_PoliceKSP", "STR.Tie_Full_KSP", "STR.Shirt_PoliceKSP", "STR.Trousers_PoliceKSP_Summer", "STR.Jacket_PoliceKSP", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Nightstick", "STR.KSPPoliceBadge", "STR.Tie_Full_KSP"}
+    SurvivorRandomSuits["RareTD"]["KentuckyStatePatrol2"] = {"STR.Hat_PoliceKSP", "STR.TShirt_PoliceKSP", "STR.Tie_Full_KSP", "STR.Shirt_PoliceKSP", "STR.Trousers_PoliceKSP_Summer", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Nightstick", "STR.KSPPoliceBadge", "STR.Tie_Full_KSP"}
+    SurvivorRandomSuits["RareTD"]["KentuckyStatePatrol3"] = {"STR.Hat_PoliceKSP", "STR.TShirt_PoliceKSP", "STR.Tie_Full_KSP", "STR.Trousers_PoliceKSP_Summer", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Nightstick", "STR.KSPPoliceBadge", "STR.Tie_Full_KSP"}
+    SurvivorRandomSuits["RareTD"]["KentuckyStatePatrol4"] = {"STR.Hat_PoliceKSP", "STR.TShirt_PoliceKSP", "STR.Tie_Full_KSP", "STR.Shirt_PoliceKSP", "STR.Trousers_PoliceKSP_Winter", "STR.Jacket_PoliceKSP", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Nightstick", "STR.KSPPoliceBadge", "STR.Tie_Full_KSP"}
+    SurvivorRandomSuits["RareTD"]["KentuckyStatePatrol5"] = {"STR.Hat_PoliceKSP", "STR.TShirt_PoliceKSP", "STR.Tie_Full_KSP", "STR.Shirt_PoliceKSP", "STR.Trousers_PoliceKSP_Winter", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Nightstick", "STR.KSPPoliceBadge", "STR.Tie_Full_KSP"}
+    SurvivorRandomSuits["RareTD"]["KentuckyStatePatrol6"] = {"STR.Hat_PoliceKSP", "STR.TShirt_PoliceKSP", "STR.Tie_Full_KSP", "STR.Trousers_PoliceKSP_Winter", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Nightstick", "STR.KSPPoliceBadge", "STR.Tie_Full_KSP"}
+
+    SurvivorRandomSuits["RareTD"]["KentuckyStatePatrol1Pistol"] = {"STR.Hat_PoliceKSP", "STR.TShirt_PoliceKSP", "STR.Tie_Full_KSP", "STR.Shirt_PoliceKSP", "STR.Trousers_PoliceKSP_Summer", "STR.Jacket_PoliceKSP", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Pistol", "Base.9mmClip", "Base.Bullets9mmBox", "Base.Bullets9mmBox", "STR.KSPPoliceBadge", "STR.Tie_Full_KSP"}
+    SurvivorRandomSuits["RareTD"]["KentuckyStatePatrol2Pistol"] = {"STR.Hat_PoliceKSP", "STR.TShirt_PoliceKSP", "STR.Tie_Full_KSP", "STR.Shirt_PoliceKSP", "STR.Trousers_PoliceKSP_Summer", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Pistol", "Base.9mmClip", "Base.Bullets9mmBox", "Base.Bullets9mmBox", "STR.KSPPoliceBadge", "STR.Tie_Full_KSP"}
+    SurvivorRandomSuits["RareTD"]["KentuckyStatePatrol3Pistol"] = {"STR.Hat_PoliceKSP", "STR.TShirt_PoliceKSP", "STR.Tie_Full_KSP", "STR.Trousers_PoliceKSP_Summer", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Pistol", "Base.9mmClip", "Base.Bullets9mmBox", "Base.Bullets9mmBox", "STR.KSPPoliceBadge", "STR.Tie_Full_KSP"}
+    SurvivorRandomSuits["RareTD"]["KentuckyStatePatrol4Pistol"] = {"STR.Hat_PoliceKSP", "STR.TShirt_PoliceKSP", "STR.Tie_Full_KSP", "STR.Shirt_PoliceKSP", "STR.Trousers_PoliceKSP_Winter", "STR.Jacket_PoliceKSP", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Pistol", "Base.9mmClip", "Base.Bullets9mmBox", "Base.Bullets9mmBox", "STR.KSPPoliceBadge", "STR.Tie_Full_KSP"}
+    SurvivorRandomSuits["RareTD"]["KentuckyStatePatrol5Pistol"] = {"STR.Hat_PoliceKSP", "STR.TShirt_PoliceKSP", "STR.Tie_Full_KSP", "STR.Shirt_PoliceKSP", "STR.Trousers_PoliceKSP_Winter", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Pistol", "Base.9mmClip", "Base.Bullets9mmBox", "Base.Bullets9mmBox", "STR.KSPPoliceBadge", "STR.Tie_Full_KSP"}
+    SurvivorRandomSuits["RareTD"]["KentuckyStatePatrol6Pistol"] = {"STR.Hat_PoliceKSP", "STR.TShirt_PoliceKSP", "STR.Tie_Full_KSP", "STR.Trousers_PoliceKSP_Winter", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Pistol", "Base.9mmClip", "Base.Bullets9mmBox", "Base.Bullets9mmBox", "STR.KSPPoliceBadge", "STR.Tie_Full_KSP"}
+
+    SurvivorRandomSuits["RareTD"]["KentuckyStatePatrol1Shotgun"] = {"STR.Hat_PoliceKSP", "STR.TShirt_PoliceKSP", "STR.Tie_Full_KSP", "STR.Shirt_PoliceKSP", "STR.Trousers_PoliceKSP_Summer", "STR.Jacket_PoliceKSP", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Shotgun", "Base.ShotgunShellsBox", "Base.ShotgunShellsBox", "STR.KSPPoliceBadge", "STR.Tie_Full_KSP"}
+    SurvivorRandomSuits["RareTD"]["KentuckyStatePatrol2Shotgun"] = {"STR.Hat_PoliceKSP", "STR.TShirt_PoliceKSP", "STR.Tie_Full_KSP", "STR.Shirt_PoliceKSP", "STR.Trousers_PoliceKSP_Summer", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Shotgun", "Base.ShotgunShellsBox", "Base.ShotgunShellsBox", "STR.KSPPoliceBadge", "STR.Tie_Full_KSP"}
+    SurvivorRandomSuits["RareTD"]["KentuckyStatePatrol3Shotgun"] = {"STR.Hat_PoliceKSP", "STR.TShirt_PoliceKSP", "STR.Tie_Full_KSP", "STR.Trousers_PoliceKSP_Summer", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Shotgun", "Base.ShotgunShellsBox", "Base.ShotgunShellsBox", "STR.KSPPoliceBadge", "STR.Tie_Full_KSP"}
+    SurvivorRandomSuits["RareTD"]["KentuckyStatePatrol4Shotgun"] = {"STR.Hat_PoliceKSP", "STR.TShirt_PoliceKSP", "STR.Tie_Full_KSP", "STR.Shirt_PoliceKSP", "STR.Trousers_PoliceKSP_Winter", "STR.Jacket_PoliceKSP", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Shotgun", "Base.ShotgunShellsBox", "Base.ShotgunShellsBox", "STR.KSPPoliceBadge", "STR.Tie_Full_KSP"}
+    SurvivorRandomSuits["RareTD"]["KentuckyStatePatrol5Shotgun"] = {"STR.Hat_PoliceKSP", "STR.TShirt_PoliceKSP", "STR.Tie_Full_KSP", "STR.Shirt_PoliceKSP", "STR.Trousers_PoliceKSP_Winter", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Shotgun", "Base.ShotgunShellsBox", "Base.ShotgunShellsBox", "STR.KSPPoliceBadge", "STR.Tie_Full_KSP"}
+    SurvivorRandomSuits["RareTD"]["KentuckyStatePatrol6Shotgun"] = {"STR.Hat_PoliceKSP", "STR.TShirt_PoliceKSP", "STR.Tie_Full_KSP", "STR.Trousers_PoliceKSP_Winter", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Shotgun", "Base.ShotgunShellsBox", "Base.ShotgunShellsBox", "STR.KSPPoliceBadge", "STR.Tie_Full_KSP"}
+	--USPS
+    SurvivorRandomSuits["RareTD"]["USPS1"] = {"STR.Hat_BaseballCap_USPS", "STR.TShirt_USPS", "STR.Shirt_USPS", "STR.Trousers_USPS", "STR.Jacket_USPS", "Base.Shoes_Black", "STR.Bag_Satchel_USPS"}
+    SurvivorRandomSuits["RareTD"]["USPS2"] = {"STR.Hat_BaseballCap_USPS", "STR.TShirt_USPS", "STR.Shirt_USPS", "STR.Trousers_USPS", "Base.Shoes_Black", "STR.Bag_Satchel_USPS"}
+    SurvivorRandomSuits["RareTD"]["USPS3"] = {"STR.Hat_BaseballCap_USPS", "STR.TShirt_USPS", "STR.Trousers_USPS", "Base.Shoes_Black", "STR.Bag_Satchel_USPS"}
+    SurvivorRandomSuits["RareTD"]["USPS4"] = {"STR.Hat_BaseballCap_USPS", "STR.TShirt_USPS", "STR.Shirt_USPS", "STR.Shorts_USPS", "STR.Jacket_USPS", "Base.Shoes_Black", "STR.Bag_Satchel_USPS"}
+    SurvivorRandomSuits["RareTD"]["USPS5"] = {"STR.Hat_BaseballCap_USPS", "STR.TShirt_USPS", "STR.Shirt_USPS", "STR.Shorts_USPS", "Base.Shoes_Black", "STR.Bag_Satchel_USPS"}
+    SurvivorRandomSuits["RareTD"]["USPS6"] = {"STR.Hat_BaseballCap_USPS", "STR.TShirt_USPS", "STR.Shorts_USPS", "Base.Shoes_Black", "STR.Bag_Satchel_USPS"}
+    SurvivorRandomSuits["RareTD"]["USPS7"] = {"STR.Hat_BaseballCap_USPS_Reverse", "STR.TShirt_USPS", "STR.Shirt_USPS", "STR.Trousers_USPS", "STR.Jacket_USPS", "Base.Shoes_Black", "STR.Bag_Satchel_USPS"}
+    SurvivorRandomSuits["RareTD"]["USPS8"] = {"STR.Hat_BaseballCap_USPS_Reverse", "STR.TShirt_USPS", "STR.Shirt_USPS", "STR.Trousers_USPS", "Base.Shoes_Black", "STR.Bag_Satchel_USPS"}
+    SurvivorRandomSuits["RareTD"]["USPS9"] = {"STR.Hat_BaseballCap_USPS_Reverse", "STR.TShirt_USPS", "STR.Trousers_USPS", "Base.Shoes_Black", "STR.Bag_Satchel_USPS"}
+    SurvivorRandomSuits["RareTD"]["USPS10"] = {"STR.Hat_BaseballCap_USPS_Reverse", "STR.TShirt_USPS", "STR.Shirt_USPS", "STR.Shorts_USPS", "STR.Jacket_USPS", "Base.Shoes_Black", "STR.Bag_Satchel_USPS"}
+    SurvivorRandomSuits["RareTD"]["USPS11"] = {"STR.Hat_BaseballCap_USPS_Reverse", "STR.TShirt_USPS", "STR.Shirt_USPS", "STR.Shorts_USPS", "Base.Shoes_Black", "STR.Bag_Satchel_USPS"}
+    SurvivorRandomSuits["RareTD"]["USPS12"] = {"STR.Hat_BaseballCap_USPS_Reverse", "STR.TShirt_USPS", "STR.Shorts_USPS", "Base.Shoes_Black", "STR.Bag_Satchel_USPS"}
+	--Judge
+    SurvivorRandomSuits["RareTD"]["Judge1"] = {"STR.Judge_Robe", "Base.Shirt_FormalWhite", "Base.Trousers_Suit", "Base.Shoes_Black"}
+    SurvivorRandomSuits["RareTD"]["Judge2"] = {"STR.Judge_Robe", "Base.Shirt_FormalWhite", "Base.Trousers_Suit", "Base.Shoes_Brown"}
+
+	if isModEnabled("STRSJ") then
+		--EMS
+		SurvivorRandomSuits["RareTD"]["TandilEMS1Open"] = {"STR.Hat_BaseballCap_EMS_Tandil", "STR.TShirt_EMS_Tandil", "STR.Shirt_EMS_Tandil", "STR.Trousers_EMS_Tandil", "STR.Jacket_EMS_TandilOPEN", "Base.Shoes_Black"}
+		SurvivorRandomSuits["RareTD"]["TandilEMS4Open"] = {"STR.Hat_BaseballCap_EMS_Tandil_Reverse", "STR.TShirt_EMS_Tandil", "STR.Shirt_EMS_Tandil", "STR.Trousers_EMS_Tandil", "STR.Jacket_EMS_TandilOPEN", "Base.Shoes_Black"}
+		--Prisoners
+		SurvivorRandomSuits["RareTD"]["MeadeCountyPrisoner1Open"] = {"STR.Boilersuit_MeadeGenPopPrisonerOPEN", "Base.Socks_Long", "Base.Shoes_Black"}
+		SurvivorRandomSuits["RareTD"]["MeadeCountyPrisoner2Open"] = {"STR.Boilersuit_MeadeLowRiskPrisonerOPEN", "Base.Socks_Long", "Base.Shoes_Black"}
+		SurvivorRandomSuits["RareTD"]["MeadeCountyPrisoner3Open"] = {"STR.Boilersuit_MeadeMaxPrisonerOPEN", "Base.Socks_Long", "Base.Shoes_Black"}
+		--Rangers
+		SurvivorRandomSuits["RareTD"]["FederalRanger1Open"] = {"STR.Hat_FederalRanger", "STR.TShirt_Federal_Ranger", "STR.Shirt_Federal_Ranger", "STR.Trousers_FederalRanger", "STR.Jacket_Federal_RangerOPEN", "Base.Shoes_Black", "STR.FederalRangerBadge"}
+
+		SurvivorRandomSuits["RareTD"]["StateLawRanger1Open"] = {"STR.Hat_StateLawRanger", "STR.TShirt_State_LawRanger", "STR.Shirt_State_LawRanger", "STR.Trousers_StateLawRanger", "STR.Jacket_State_LawRangerOPEN", "Base.Shoes_Black", "STR.StateLawRangerBadge"}
+
+		SurvivorRandomSuits["RareTD"]["StateRanger1Open"] = {"STR.Hat_StateRanger", "STR.TShirt_State_Ranger", "STR.Shirt_State_Ranger", "STR.Trousers_StateRanger", "STR.Jacket_State_RangerOPEN", "Base.Shoes_Black", "STR.StateRangerBadge"}
+		--Tandil Black
+		SurvivorRandomSuits["RareTD"]["TandilFiremanFullB1Open"] = {"STR.Hat_Fireman_Tandil_Black", "STR.TShirt_Profession_FiremanBlue_Tandil", "STR.Trousers_Fireman_Tandil_Black", "STR.Jacket_Fireman_Tandil_BlackOPEN", "Base.Shoes_BlackBoots"}
+		SurvivorRandomSuits["RareTD"]["TandilFiremanFullB2Open"] = {"STR.Hat_Fireman_Tandil_Black", "STR.TShirt_Profession_FiremanRed_Tandil", "STR.Trousers_Fireman_Tandil_Black", "STR.Jacket_Fireman_Tandil_BlackOPEN", "Base.Shoes_BlackBoots"}
+		SurvivorRandomSuits["RareTD"]["TandilFiremanFullB3Open"] = {"STR.Hat_Fireman_Tandil_Black", "STR.TShirt_Profession_FiremanRed_Tandil02", "STR.Trousers_Fireman_Tandil_Black", "STR.Jacket_Fireman_Tandil_BlackOPEN", "Base.Shoes_BlackBoots"}
+		SurvivorRandomSuits["RareTD"]["TandilFiremanFullB4Open"] = {"STR.Hat_Fireman_Tandil_Black", "STR.TShirt_Profession_FiremanWhite_Tandil", "STR.Trousers_Fireman_Tandil_Black", "STR.Jacket_Fireman_Tandil_BlackOPEN", "Base.Shoes_BlackBoots"}
+
+		SurvivorRandomSuits["RareTD"]["TandilFiremanFullB5Open"] = {"STR.Hat_Fireman_Tandil_Red", "STR.TShirt_Profession_FiremanBlue_Tandil", "STR.Trousers_Fireman_Tandil_Black", "STR.Jacket_Fireman_Tandil_BlackOPEN", "Base.Shoes_BlackBoots"}
+		SurvivorRandomSuits["RareTD"]["TandilFiremanFullB6Open"] = {"STR.Hat_Fireman_Tandil_Red", "STR.TShirt_Profession_FiremanRed_Tandil", "STR.Trousers_Fireman_Tandil_Black", "STR.Jacket_Fireman_Tandil_BlackOPEN", "Base.Shoes_BlackBoots"}
+		SurvivorRandomSuits["RareTD"]["TandilFiremanFullB7Open"] = {"STR.Hat_Fireman_Tandil_Red", "STR.TShirt_Profession_FiremanRed_Tandil02", "STR.Trousers_Fireman_Tandil_Black", "STR.Jacket_Fireman_Tandil_BlackOPEN", "Base.Shoes_BlackBoots"}
+		SurvivorRandomSuits["RareTD"]["TandilFiremanFullB8Open"] = {"STR.Hat_Fireman_Tandil_Red", "STR.TShirt_Profession_FiremanWhite_Tandil", "STR.Trousers_Fireman_Tandil_Black", "STR.Jacket_Fireman_Tandil_BlackOPEN", "Base.Shoes_BlackBoots"}
+
+		SurvivorRandomSuits["RareTD"]["TandilFiremanFullB9Open"] = {"STR.Hat_Fireman_Tandil_Yellow", "STR.TShirt_Profession_FiremanBlue_Tandil", "STR.Trousers_Fireman_Tandil_Black", "STR.Jacket_Fireman_Tandil_BlackOPEN", "Base.Shoes_BlackBoots"}
+		SurvivorRandomSuits["RareTD"]["TandilFiremanFullB10Open"] = {"STR.Hat_Fireman_Tandil_Yellow", "STR.TShirt_Profession_FiremanRed_Tandil", "STR.Trousers_Fireman_Tandil_Black", "STR.Jacket_Fireman_Tandil_BlackOPEN", "Base.Shoes_BlackBoots"}
+		SurvivorRandomSuits["RareTD"]["TandilFiremanFullB11Open"] = {"STR.Hat_Fireman_Tandil_Yellow", "STR.TShirt_Profession_FiremanRed_Tandil02", "STR.Trousers_Fireman_Tandil_Black", "STR.Jacket_Fireman_Tandil_BlackOPEN", "Base.Shoes_BlackBoots"}
+		SurvivorRandomSuits["RareTD"]["TandilFiremanFullB12Open"] = {"STR.Hat_Fireman_Tandil_Yellow", "STR.TShirt_Profession_FiremanWhite_Tandil", "STR.Trousers_Fireman_Tandil_Black", "STR.Jacket_Fireman_Tandil_BlackOPEN", "Base.Shoes_BlackBoots"}
+		--Tandil Khaki
+		SurvivorRandomSuits["RareTD"]["TandilFiremanFullK1Open"] = {"STR.Hat_Fireman_Tandil_Black", "STR.TShirt_Profession_FiremanBlue_Tandil", "STR.Trousers_Fireman_Tandil_Khaki", "STR.Jacket_Fireman_Tandil_KhakiOPEN", "Base.Shoes_BlackBoots"}
+		SurvivorRandomSuits["RareTD"]["TandilFiremanFullK2Open"] = {"STR.Hat_Fireman_Tandil_Black", "STR.TShirt_Profession_FiremanRed_Tandil", "STR.Trousers_Fireman_Tandil_Khaki", "STR.Jacket_Fireman_Tandil_KhakiOPEN", "Base.Shoes_BlackBoots"}
+		SurvivorRandomSuits["RareTD"]["TandilFiremanFullK3Open"] = {"STR.Hat_Fireman_Tandil_Black", "STR.TShirt_Profession_FiremanRed_Tandil02", "STR.Trousers_Fireman_Tandil_Khaki", "STR.Jacket_Fireman_Tandil_KhakiOPEN", "Base.Shoes_BlackBoots"}
+		SurvivorRandomSuits["RareTD"]["TandilFiremanFullK4Open"] = {"STR.Hat_Fireman_Tandil_Black", "STR.TShirt_Profession_FiremanWhite_Tandil", "STR.Trousers_Fireman_Tandil_Khaki", "STR.Jacket_Fireman_Tandil_KhakiOPEN", "Base.Shoes_BlackBoots"}
+
+		SurvivorRandomSuits["RareTD"]["TandilFiremanFullK5Open"] = {"STR.Hat_Fireman_Tandil_Red", "STR.TShirt_Profession_FiremanBlue_Tandil", "STR.Trousers_Fireman_Tandil_Khaki", "STR.Jacket_Fireman_Tandil_KhakiOPEN", "Base.Shoes_BlackBoots"}
+		SurvivorRandomSuits["RareTD"]["TandilFiremanFullK6Open"] = {"STR.Hat_Fireman_Tandil_Red", "STR.TShirt_Profession_FiremanRed_Tandil", "STR.Trousers_Fireman_Tandil_Khaki", "STR.Jacket_Fireman_Tandil_KhakiOPEN", "Base.Shoes_BlackBoots"}
+		SurvivorRandomSuits["RareTD"]["TandilFiremanFullK7Open"] = {"STR.Hat_Fireman_Tandil_Red", "STR.TShirt_Profession_FiremanRed_Tandil02", "STR.Trousers_Fireman_Tandil_Khaki", "STR.Jacket_Fireman_Tandil_KhakiOPEN", "Base.Shoes_BlackBoots"}
+		SurvivorRandomSuits["RareTD"]["TandilFiremanFullK8Open"] = {"STR.Hat_Fireman_Meade_Red", "STR.TShirt_Profession_FiremanWhite_Meade", "STR.Trousers_Fireman_Meade_Khaki", "STR.Jacket_Fireman_Meade_KhakiOPEN", "Base.Shoes_BlackBoots"}
+
+		SurvivorRandomSuits["RareTD"]["TandilFiremanFullK9Open"] = {"STR.Hat_Fireman_Meade_Yellow", "STR.TShirt_Profession_FiremanBlue_Meade", "STR.Trousers_Fireman_Meade_Khaki", "STR.Jacket_Fireman_Meade_KhakiOPEN", "Base.Shoes_BlackBoots"}
+		SurvivorRandomSuits["RareTD"]["TandilFiremanFullK10Open"] = {"STR.Hat_Fireman_Meade_Yellow", "STR.TShirt_Profession_FiremanRed_Meade", "STR.Trousers_Fireman_Meade_Khaki", "STR.Jacket_Fireman_Meade_KhakiOPEN", "Base.Shoes_BlackBoots"}
+		SurvivorRandomSuits["RareTD"]["TandilFiremanFullK11Open"] = {"STR.Hat_Fireman_Meade_Yellow", "STR.TShirt_Profession_FiremanRed_Meade02", "STR.Trousers_Fireman_Meade_Khaki", "STR.Jacket_Fireman_Meade_KhakiOPEN", "Base.Shoes_BlackBoots"}
+		SurvivorRandomSuits["RareTD"]["TandilFiremanFullK12Open"] = {"STR.Hat_Fireman_Meade_Yellow", "STR.TShirt_Profession_FiremanWhite_Meade", "STR.Trousers_Fireman_Meade_Khaki", "STR.Jacket_Fireman_Meade_KhakiOPEN", "Base.Shoes_BlackBoots"}
+		--Police
+		SurvivorRandomSuits["RareTD"]["TandilSO1Open"] = {"STR.Hat_Police_Tandil", "STR.TShirt_Police_Tandil", "STR.Shirt_Police_Tandil", "STR.Trousers_Police_Tandil", "STR.Jacket_Police_TandilOPEN", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Nightstick", "STR.MeadeSheriffBadge"}
+
+		SurvivorRandomSuits["RareTD"]["TandilSO1OpenPistol"] = {"STR.Hat_Police_Tandil", "STR.TShirt_Police_Tandil", "STR.Shirt_Police_Tandil", "STR.Trousers_Police_Tandil", "STR.Jacket_Police_TandilOPEN", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Pistol", "Base.9mmClip", "Base.Bullets9mmBox", "Base.Bullets9mmBox", "STR.MeadeSheriffBadge"}
+
+		SurvivorRandomSuits["RareTD"]["TandilSO1OpenShotgun"] = {"STR.Hat_Police_Tandil", "STR.TShirt_Police_Tandil", "STR.Shirt_Police_Tandil", "STR.Trousers_Police_Tandil", "STR.Jacket_Police_TandilOPEN", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Shotgun", "Base.ShotgunShellsBox", "Base.ShotgunShellsBox", "STR.MeadeSheriffBadge"}
+
+		SurvivorRandomSuits["RareTD"]["KentuckyStatePatrol1Open"] = {"STR.Hat_PoliceKSP", "STR.TShirt_PoliceKSP", "STR.Tie_Full_KSP", "STR.Shirt_PoliceKSP", "STR.Trousers_PoliceKSP_Summer", "STR.Jacket_PoliceKSPOPEN", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Nightstick", "STR.KSPPoliceBadge", "STR.Tie_Full_KSP"}
+		SurvivorRandomSuits["RareTD"]["KentuckyStatePatrol4Open"] = {"STR.Hat_PoliceKSP", "STR.TShirt_PoliceKSP", "STR.Tie_Full_KSP", "STR.Shirt_PoliceKSP", "STR.Trousers_PoliceKSP_Winter", "STR.Jacket_PoliceKSPOPEN", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Nightstick", "STR.KSPPoliceBadge", "STR.Tie_Full_KSP"}
+
+		SurvivorRandomSuits["RareTD"]["KentuckyStatePatrol1OpenPistol"] = {"STR.Hat_PoliceKSP", "STR.TShirt_PoliceKSP", "STR.Tie_Full_KSP", "STR.Shirt_PoliceKSP", "STR.Trousers_PoliceKSP_Summer", "STR.Jacket_PoliceKSPOPEN", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Pistol", "Base.9mmClip", "Base.Bullets9mmBox", "Base.Bullets9mmBox", "STR.KSPPoliceBadge", "STR.Tie_Full_KSP"}
+		SurvivorRandomSuits["RareTD"]["KentuckyStatePatrol4OpenPistol"] = {"STR.Hat_PoliceKSP", "STR.TShirt_PoliceKSP", "STR.Tie_Full_KSP", "STR.Shirt_PoliceKSP", "STR.Trousers_PoliceKSP_Winter", "STR.Jacket_PoliceKSPOPEN", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Pistol", "Base.9mmClip", "Base.Bullets9mmBox", "Base.Bullets9mmBox", "STR.KSPPoliceBadge", "STR.Tie_Full_KSP"}
+
+		SurvivorRandomSuits["RareTD"]["KentuckyStatePatrol1OpenShotgun"] = {"STR.Hat_PoliceKSP", "STR.TShirt_PoliceKSP", "STR.Tie_Full_KSP", "STR.Shirt_PoliceKSP", "STR.Trousers_PoliceKSP_Summer", "STR.Jacket_PoliceKSPOPEN", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Shotgun", "Base.ShotgunShellsBox", "Base.ShotgunShellsBox", "STR.KSPPoliceBadge", "STR.Tie_Full_KSP"}
+		SurvivorRandomSuits["RareTD"]["KentuckyStatePatrol4OpenShotgun"] = {"STR.Hat_PoliceKSP", "STR.TShirt_PoliceKSP", "STR.Tie_Full_KSP", "STR.Shirt_PoliceKSP", "STR.Trousers_PoliceKSP_Winter", "STR.Jacket_PoliceKSPOPEN", "Base.Shoes_Black", "STR.Belt_PoliceDuty", "STR.Chest_Walkie", "Base.Shotgun", "Base.ShotgunShellsBox", "Base.ShotgunShellsBox", "STR.KSPPoliceBadge", "STR.Tie_Full_KSP"}
+		--USPS
+		SurvivorRandomSuits["RareTD"]["USPS1Open"] = {"STR.Hat_BaseballCap_USPS", "STR.TShirt_USPS", "STR.Shirt_USPS", "STR.Trousers_USPS", "STR.Jacket_USPSOPEN", "Base.Shoes_Black", "STR.Bag_Satchel_USPS"}
+		SurvivorRandomSuits["RareTD"]["USPS4Open"] = {"STR.Hat_BaseballCap_USPS", "STR.TShirt_USPS", "STR.Shirt_USPS", "STR.Shorts_USPS", "STR.Jacket_USPSOPEN", "Base.Shoes_Black", "STR.Bag_Satchel_USPS"}
+		SurvivorRandomSuits["RareTD"]["USPS7Open"] = {"STR.Hat_BaseballCap_USPS_Reverse", "STR.TShirt_USPS", "STR.Shirt_USPS", "STR.Trousers_USPS", "STR.Jacket_USPSOPEN", "Base.Shoes_Black", "STR.Bag_Satchel_USPS"}
+		SurvivorRandomSuits["RareTD"]["USPS10Open"] = {"STR.Hat_BaseballCap_USPS_Reverse", "STR.TShirt_USPS", "STR.Shirt_USPS", "STR.Shorts_USPS", "STR.Jacket_USPSOPEN", "Base.Shoes_Black", "STR.Bag_Satchel_USPS"}
 	end
 end
 
@@ -1819,6 +2012,12 @@ function getRandomSurvivorSuit(SS)
 	RCR[2] = 5500;
 	RCR[3] = 11001;
 	RCR[4] = 13500;
+	-- Tandil
+	local TD = {};
+	TD[1] = 9900;
+	TD[2] = 11399;
+	TD[3] = 13500;
+	TD[4] = 14999;
 	-- Louisville
 	local LV = {};
 	LV[1] = 11900;
@@ -2108,6 +2307,50 @@ function getRandomSurvivorSuit(SS)
 				randomize = false
 			end
 		elseif not isModEnabled("RavenCreek") then
+			if(roll == 1) then -- choose legendary suit
+				debugSuits("Legendary suit:")
+				tempTable = SurvivorRandomSuits["Legendary"]
+			elseif(roll <= 5) then -- choose veryrare suit
+				debugSuits("VeryRare suit:")
+				tempTable = SurvivorRandomSuits["VeryRare"]
+			elseif(roll <= 15) then -- choose rare suit
+				debugSuits("Rare suit:")
+				tempTable = SurvivorRandomSuits["Rare"]
+			elseif(roll <= 25) then -- chose normal suit
+				debugSuits("Normal suit:")
+				tempTable = SurvivorRandomSuits["Normal"]
+			elseif(roll <= 40) then -- chose uncommon suit
+				debugSuits("Uncommon suit:")
+				tempTable = SurvivorRandomSuits["Uncommon"]
+			else -- chose common suit
+				debugSuits("Common suit:")
+				tempTable = SurvivorRandomSuits["Common"]
+				randomize = false
+			end
+		end
+	elseif (SS:getX() >= TD[1]) and (SS:getX() <= TD[2]) and (SS:getY() >= TD[3]) and (SS:getY() <= TD[4]) then
+		if isModEnabled("Tandil") then
+			if(roll == 1) then -- choose legendary suit
+				debugSuits("Legendary suit:")
+				tempTable = SurvivorRandomSuits["Legendary"]
+			elseif(roll <= 5) then -- choose veryrare suit
+				debugSuits("VeryRare suit:")
+				tempTable = SurvivorRandomSuits["VeryRare"]
+			elseif(roll <= 15) then -- choose rare suit
+				debugSuits("Rare suit:")
+				tempTable = SurvivorRandomSuits["RareTD"]
+			elseif(roll <= 25) then -- chose normal suit
+				debugSuits("Normal suit:")
+				tempTable = SurvivorRandomSuits["Normal"]
+			elseif(roll <= 40) then -- chose uncommon suit
+				debugSuits("Uncommon suit:")
+				tempTable = SurvivorRandomSuits["Uncommon"]
+			else -- chose common suit
+				debugSuits("Common suit:")
+				tempTable = SurvivorRandomSuits["Common"]
+				randomize = false
+			end
+		elseif not isModEnabled("Tandil") then
 			if(roll == 1) then -- choose legendary suit
 				debugSuits("Legendary suit:")
 				tempTable = SurvivorRandomSuits["Legendary"]

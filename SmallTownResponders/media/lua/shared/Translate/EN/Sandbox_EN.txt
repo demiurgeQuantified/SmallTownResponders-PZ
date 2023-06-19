@@ -133,6 +133,9 @@ Sandbox_EN = {
 	Sandbox_STRS_MeadeInmateRed = "Meade DOC Inmate Red Spawn Chance",
 	Sandbox_STRS_MeadeInmateRed_tooltip = "The spawn chance for Meade DOC Supermax zombies.",
 
+	Sandbox_STRS_TandilPD = "Tandil PD Spawn Chance",
+	Sandbox_STRS_TandilPD_tooltip = "The spawn chance for Tandil PD zombies. Does nothing if Tandil isn't enabled!",
+
 	Sandbox_STRS_RavenCreekPD = "RavenCreek PD Spawn Chance",
 	Sandbox_STRS_RavenCreekPD_tooltip = "The spawn chance for RavenCreek PD zombies. Does nothing if RavenCreek isn't enabled!",
 
@@ -197,6 +200,12 @@ Sandbox_EN = {
 
 	Sandbox_STEV_FSwat = "Misc Spawn Chance",
 	Sandbox_STEV_FSwat_tooltip = "The spawn chance for Filibuster Rhymes SWAT trucks, and Military And Police Used Car Skins vehicles in police zones. Does nothing if Filibuster Rhymes Used Cars and/or Military And Police Used Car Skins aren't enabled!",
+
+	Sandbox_STEV_TDPD = "Tandil PD Spawn Chance",
+	Sandbox_STEV_TDPD_tooltip = "The spawn chance for Tandil PD cars. Does nothing if Tandil isn't enabled!",
+
+	Sandbox_STEV_TDFD = "Tandil FD Spawn Chance",
+	Sandbox_STEV_TDFD_tooltip = "The spawn chance for FD Tandil cars. Does nothing if Tandil isn't enabled!",
 
 	Sandbox_STEV_RCRPD = "RavenCreek PD Spawn Chance",
 	Sandbox_STEV_RCRPD_tooltip = "The spawn chance for RavenCreek PD cars. Does nothing if RavenCreek isn't enabled!",

@@ -46,6 +46,15 @@ ClothingOverrides.zonesToOutfit = {
         InmateEscaped = 'InmateEscapedRavenCreek',
 		PoliceSusceptible = 'SusceptiblePoliceRavenCreek',
 		FiremanSusceptible = {'SusceptibleFireman_RavenCreek_Black', 'SusceptibleFiremanFullSuit_RavenCreek_Black', 'SusceptibleFireman_RavenCreek_Khaki', 'SusceptibleFiremanFullSuit_RavenCreek_Khaki'},},
+    Tandil = {
+        --Police = 'PoliceRavenCreek',
+        Fireman = {'Fireman_Tandil_Black', 'FiremanFullSuit_Tandil_Black', 'Fireman_Tandil_Khaki', 'FiremanFullSuit_Tandil_Khaki'},
+        EMS = 'EMSTandil',
+        PrisonGuard = 'DOC_Meade',
+        Inmate = {'InmateMeadeOrange'},
+        InmateEscaped = 'InmateEscapedMeade',
+		PoliceSusceptible = 'SusceptiblePoliceTandil',
+		FiremanSusceptible = {'SusceptibleFireman_Tandil_Black', 'SusceptibleFiremanFullSuit_Tandil_Black', 'SusceptibleFireman_Tandil_Khaki', 'SusceptibleFiremanFullSuit_Tandil_Khaki'},},
     -- police only zones
     Riverside = {
         --Police = 'PoliceRiverside',
@@ -140,6 +149,13 @@ Events.OnInitGlobalModData.Add(function()
 			ClothingOverrides.zonesToOutfit.Rosewood.Police = {"PoliceRosewoodNoVest_Bag", "PoliceRosewoodNoVest", "PoliceRosewoodNoVest", "PoliceRosewoodNoVest", "PoliceRosewoodNoVest"}
 			ClothingOverrides.zonesToOutfit.Rosewood.PoliceRiot = "PoliceRosewoodRiotNoVest"
 		end
+		if SandboxVars.STR.VestTandil then
+			ClothingOverrides.zonesToOutfit.Tandil.Police = {"PoliceTandil_Bag", "PoliceTandil", "PoliceTandil", "PoliceTandil", "PoliceTandil"}
+			ClothingOverrides.zonesToOutfit.Tandil.PoliceRiot = "PoliceTandilRiot"
+		elseif not SandboxVars.STR.VestTandil then
+			ClothingOverrides.zonesToOutfit.Tandil.Police = {"PoliceTandilNoVest_Bag", "PoliceTandilNoVest", "PoliceTandilNoVest", "PoliceTandilNoVest", "PoliceTandilNoVest"}
+			ClothingOverrides.zonesToOutfit.Tandil.PoliceRiot = "PoliceTandilRiotNoVest"
+		end
 		if SandboxVars.STR.VestRavenCreek then
 			ClothingOverrides.zonesToOutfit.RavenCreek.Police = {"PoliceRavenCreek_Bag", "PoliceRavenCreek", "PoliceRavenCreek", "PoliceRavenCreek", "PoliceRavenCreek"}
 			ClothingOverrides.zonesToOutfit.RavenCreek.PoliceRiot = "PoliceRavenCreekRiot"
@@ -206,6 +222,13 @@ Events.OnInitGlobalModData.Add(function()
 		elseif not SandboxVars.STR.VestRosewood then
 			ClothingOverrides.zonesToOutfit.Rosewood.Police = "PoliceRosewoodNoVest"
 			ClothingOverrides.zonesToOutfit.Rosewood.PoliceRiot = "PoliceRosewoodRiotNoVest"
+		end
+		if SandboxVars.STR.VestTandil then
+			ClothingOverrides.zonesToOutfit.Tandil.Police = "PoliceTandil"
+			ClothingOverrides.zonesToOutfit.Tandil.PoliceRiot = "PoliceTandilRiot"
+		elseif not SandboxVars.STR.VestTandil then
+			ClothingOverrides.zonesToOutfit.Tandil.Police = "PoliceTandilNoVest"
+			ClothingOverrides.zonesToOutfit.Tandil.PoliceRiot = "PoliceTandilRiotNoVest"
 		end
 		if SandboxVars.STR.VestRavenCreek then
 			ClothingOverrides.zonesToOutfit.RavenCreek.Police = "PoliceRavenCreek"

@@ -557,6 +557,75 @@ local function STRVehicleDistro()
 
 		}
 
+		VehicleDistributions.AmbulanceTandil = {
+			TruckBed = {
+				rolls = 4,
+				items = {
+					"AlcoholWipes", 10,
+					"Antibiotics", 4,
+					"Bag_MedicalBag", 10,
+					"Bag_MedicalBag", 20,
+					"Bandage", 10,
+					"Corset_Medical", 2,
+					"CottonBalls", 10,
+					"Disinfectant", 10,
+					"DuctTape", 8,
+					"EmptyPetrolCan", 10,
+					"EmptySandbag", 4,
+					"Garbagebag", 6,
+					"Gloves_Surgical", 10,
+					"Hat_SurgicalCap_Blue", 10,
+					"Hat_SurgicalMask_Blue", 10,
+					"HospitalGown", 18,
+					"Mov_MobileBloodbag", 10,
+					"Pills", 10,
+					"Pills", 10,
+					"PillsAntiDep", 10,
+					"PillsBeta", 10,
+					"PillsSleepingTablets", 10,
+					"Plasticbag", 10,
+					"PopBottleEmpty", 4,
+					"PopEmpty", 4,
+					"RubberBand", 6,
+					"Scalpel", 10,
+					"Scissors", 10,
+					"Shirt_Scrubs", 8,
+					"SutureNeedle", 10,
+					"SutureNeedleHolder", 10,
+					"Tarp", 10,
+					"Tissue", 10,
+					"ToiletPaper", 6,
+					"Tote", 6,
+					"Trousers_Scrubs", 8,
+					"Tweezers", 10,
+					"Twine", 10,
+					"WaterBottleEmpty", 4,
+					"WhiskeyEmpty", 1,
+					"STR.Hat_BaseballCap_EMS_Tandil", 4,
+					"STR.Jacket_EMS_Tandil", 4,
+				},
+				junk = {
+					rolls = 1,
+					items = {
+						"Bag_MedicalBag", 100,
+						"CarBattery2", 4,
+						"Jack", 2,
+						"LugWrench", 8,
+						"NormalTire2", 10,
+						"Screwdriver", 10,
+						"TirePump", 8,
+						"Wrench", 8,
+					}
+				}
+			},
+
+			SeatRearLeft = VehicleDistributions.Seat;
+			SeatRearRight = VehicleDistributions.Seat;
+			
+			GloveBox = VehicleDistributions.GloveBox;
+
+		}
+
 		VehicleDistributions.AmbulanceRavenCreek = {
 			TruckBed = {
 				rolls = 4,
@@ -875,6 +944,82 @@ local function STRVehicleDistro()
 					"Tarp", 10,
 					"STR.Trousers_Fireman_Rosewood_Black", 8,
 					"STR.Trousers_Fireman_Rosewood_Khaki", 8,
+				},
+
+				junk = {
+					rolls = 1,
+					items = {
+						"FirstAidKit", 20,
+					}
+				}
+			},
+
+			GloveBox = VehicleDistributions.GloveBox;
+
+			SeatRearLeft = VehicleDistributions.Seat;
+			SeatRearRight = VehicleDistributions.Seat;
+
+		}
+
+		VehicleDistributions.FireTruckTandil = {
+			TruckBed = {
+				rolls = 4,
+				items = {
+					"Axe", 4,
+					"Axe", 4,
+					"Bandage", 10,
+					"BucketEmpty", 4,
+					"Disinfectant", 8,
+					"STR.Hat_Fireman_Tandil_Black", 4,
+					"STR.Hat_Fireman_Tandil_Red", 4,
+					"STR.Hat_Fireman_Tandil_Yellow", 4,
+					"Hat_GasMask", 1,
+					"STR.Jacket_Fireman_Tandil_Black", 4,
+					"STR.Jacket_Fireman_Tandil_Khaki", 4,
+					"LongJohns", 2,
+					"PickAxe", 0.5,
+					"Pills", 10,
+					"Radio.WalkieTalkie4", 10,
+					"Rope", 10,
+					"Shoes_ArmyBoots", 4,
+					"Socks_Long", 6,
+					"Tarp", 10,
+					"STR.Trousers_Fireman_Tandil_Black", 8,
+					"STR.Trousers_Fireman_Tandil_Khaki", 8,
+				},
+
+				junk = {
+					rolls = 1,
+					items = {
+						"FirstAidKit", 20,
+					}
+				}
+			},
+
+			TruckBedOpen = {
+				rolls = 4,
+				items = {
+					"Axe", 4,
+					"Axe", 4,
+					"Bandage", 10,
+					"BucketEmpty", 4,
+					"Disinfectant", 8,
+					"STR.Hat_Fireman_Tandil_Black", 4,
+					"STR.Hat_Fireman_Tandil_Red", 4,
+					"STR.Hat_Fireman_Tandil_Yellow", 4,
+					"Hat_GasMask", 1,
+					"STR.Jacket_Fireman_Tandil_Black", 4,
+					"STR.Jacket_Fireman_Tandil_Khaki", 4,
+					"LongJohns", 2,
+					"PickAxe", 0.5,
+					"Pills", 10,
+					"Radio.WalkieTalkie4", 10,
+					"Rope", 10,
+					"Shoes_ArmyBoots", 4,
+					"Socks_Long", 6,
+					"Tarp", 10,
+					"STR.Trousers_Fireman_Tandil_Black", 8,
+					"STR.Trousers_Fireman_Tandil_Khaki", 8,
 				},
 
 				junk = {
@@ -1641,6 +1786,78 @@ local function STRVehicleDistro()
 
 		}
 
+		VehicleDistributions.AmbulanceTandil = {
+			TruckBed = {
+				rolls = 4,
+				items = {
+					"AlcoholWipes", 10,
+					"Antibiotics", 4,
+					--"Bag_MedicalBag", 10,
+					--"Bag_MedicalBag", 20,
+					"Bandage", 10,
+					"Corset_Medical", 2,
+					"CottonBalls", 10,
+					"Disinfectant", 10,
+					"DuctTape", 8,
+					"EmptyPetrolCan", 10,
+					"EmptySandbag", 4,
+					"Garbagebag", 6,
+					"Gloves_Surgical", 10,
+					"Hat_SurgicalCap_Blue", 10,
+					"Hat_SurgicalMask_Blue", 10,
+					"HospitalGown", 18,
+					"Mov_MobileBloodbag", 10,
+					"Pills", 10,
+					"Pills", 10,
+					"PillsAntiDep", 10,
+					"PillsBeta", 10,
+					"PillsSleepingTablets", 10,
+					"Plasticbag", 10,
+					"PopBottleEmpty", 4,
+					"PopEmpty", 4,
+					"RubberBand", 6,
+					"Scalpel", 10,
+					"Scissors", 10,
+					"Shirt_Scrubs", 8,
+					"SutureNeedle", 10,
+					"SutureNeedleHolder", 10,
+					"Tarp", 10,
+					"Tissue", 10,
+					"ToiletPaper", 6,
+					"Tote", 6,
+					"Trousers_Scrubs", 8,
+					"Tweezers", 10,
+					"Twine", 10,
+					"WaterBottleEmpty", 4,
+					"WhiskeyEmpty", 1,
+					"STR.Hat_BaseballCap_EMS_Tandil", 4,
+					"STR.Jacket_EMS_Tandil", 4,
+				},
+				junk = {
+					rolls = 1,
+					items = {
+						"STR.Bag_DuffelBag_EMS_Red", 50,
+						"STR.Bag_DuffelBag_EMS_Blue", 50,
+						"STR.Bag_DuffelBag_EMS_Green", 50,
+						--"Bag_MedicalBag", 100,
+						"CarBattery2", 4,
+						"Jack", 2,
+						"LugWrench", 8,
+						"NormalTire2", 10,
+						"Screwdriver", 10,
+						"TirePump", 8,
+						"Wrench", 8,
+					}
+				}
+			},
+
+			SeatRearLeft = VehicleDistributions.Seat;
+			SeatRearRight = VehicleDistributions.Seat;
+			
+			GloveBox = VehicleDistributions.GloveBox;
+
+		}
+
 		VehicleDistributions.AmbulanceRavenCreek = {
 			TruckBed = {
 				rolls = 4,
@@ -2060,6 +2277,86 @@ local function STRVehicleDistro()
 
 		}
 
+		VehicleDistributions.FireTruckTandil = {
+			TruckBed = {
+				rolls = 4,
+				items = {
+					"Axe", 4,
+					"Axe", 4,
+					"Bandage", 10,
+					"BucketEmpty", 4,
+					"Disinfectant", 8,
+					"STR.Hat_Fireman_Tandil_Black", 4,
+					"STR.Hat_Fireman_Tandil_Red", 4,
+					"STR.Hat_Fireman_Tandil_Yellow", 4,
+					"Hat_GasMask", 1,
+					"STR.Jacket_Fireman_Tandil_Black", 4,
+					"STR.Jacket_Fireman_Tandil_Khaki", 4,
+					"LongJohns", 2,
+					"PickAxe", 0.5,
+					"Pills", 10,
+					"Radio.WalkieTalkie4", 10,
+					"Rope", 10,
+					"Shoes_ArmyBoots", 4,
+					"Socks_Long", 6,
+					"Tarp", 10,
+					"STR.Trousers_Fireman_Tandil_Black", 8,
+					"STR.Trousers_Fireman_Tandil_Khaki", 8,
+				},
+
+				junk = {
+					rolls = 1,
+					items = {
+						"STR.Bag_DuffelBag_Fire_Black", 25,
+						"STR.Bag_DuffelBag_Fire_Khaki", 25,
+						"FirstAidKit", 20,
+					}
+				}
+			},
+
+			TruckBedOpen = {
+				rolls = 4,
+				items = {
+					"Axe", 4,
+					"Axe", 4,
+					"Bandage", 10,
+					"BucketEmpty", 4,
+					"Disinfectant", 8,
+					"STR.Hat_Fireman_Tandil_Black", 4,
+					"STR.Hat_Fireman_Tandil_Red", 4,
+					"STR.Hat_Fireman_Tandil_Yellow", 4,
+					"Hat_GasMask", 1,
+					"STR.Jacket_Fireman_Tandil_Black", 4,
+					"STR.Jacket_Fireman_Tandil_Khaki", 4,
+					"LongJohns", 2,
+					"PickAxe", 0.5,
+					"Pills", 10,
+					"Radio.WalkieTalkie4", 10,
+					"Rope", 10,
+					"Shoes_ArmyBoots", 4,
+					"Socks_Long", 6,
+					"Tarp", 10,
+					"STR.Trousers_Fireman_Tandil_Black", 8,
+					"STR.Trousers_Fireman_Tandil_Khaki", 8,
+				},
+
+				junk = {
+					rolls = 1,
+					items = {
+						"STR.Bag_DuffelBag_Fire_Black", 25,
+						"STR.Bag_DuffelBag_Fire_Khaki", 25,
+						"FirstAidKit", 20,
+					}
+				}
+			},
+
+			GloveBox = VehicleDistributions.GloveBox;
+
+			SeatRearLeft = VehicleDistributions.Seat;
+			SeatRearRight = VehicleDistributions.Seat;
+
+		}
+
 		VehicleDistributions.FireTruckRavenCreek = {
 			TruckBed = {
 				rolls = 4,
@@ -2360,6 +2657,14 @@ local function STRVehicleDistro()
 	RCRPD[5] = "85vicsheriff12"; -- 85 vic
 	RCRPD[6] = "91blazerpd12"; -- 91 blazer
 
+	local TDPD = {};
+	TDPD[1] = "CarLightsPolice12"; -- vanilla police car
+	TDPD[2] = "PickUpVanLightsPolice12"; -- vanilla police truck
+	TDPD[3] = "92crownvicPD13"; -- 92 vic
+	TDPD[4] = "87capricePD13"; -- 87 caprice
+	TDPD[5] = "85vicsheriff14"; -- 85 vic
+	TDPD[6] = "91blazerpd14"; -- 91 blazer
+
 	local Fire = {};
 	Fire[1] = "firepumper1"; -- Rosewood
 	Fire[2] = "firepumper2"; -- Meade
@@ -2377,6 +2682,10 @@ local function STRVehicleDistro()
 	Fire[14] = "87c10fire4"; -- RavenCreek
 	Fire[15] = "PickUpTruckLightsFire4"; -- RavenCreek
 	Fire[16] = "PickUpVanLightsFire4"; -- RavenCreek
+	Fire[17] = "firepumper5"; -- Tandil
+	Fire[18] = "87c10fire5"; -- Tandil
+	Fire[19] = "PickUpTruckLightsFire5"; -- Tandil
+	Fire[20] = "PickUpVanLightsFire5"; -- Tandil
 
 	local EMS = {};
 	EMS[0] = "VanAmbulance0"; -- Vanilla
@@ -2394,6 +2703,9 @@ local function STRVehicleDistro()
 	EMS[12] = "VanAmbulance4"; -- RavenCreek
 	EMS[13] = "80f350ambulance4"; -- RavenCreek
 	EMS[14] = "86econolineambulance4"; -- RavenCreek
+	EMS[15] = "VanAmbulance5"; -- Tandil
+	EMS[16] = "80f350ambulance5"; -- Tandil
+	EMS[17] = "86econolineambulance5"; -- Tandil
 
 
 	local MAIL = {};
@@ -2432,6 +2744,9 @@ local function STRVehicleDistro()
 		RCRPD[1] = "CarLightsPolice11"; -- vanilla police car
 		RCRPD[2] = "PickUpVanLightsPolice11"; -- vanilla police truck
 
+		TDPD[1] = "CarLightsPolice12"; -- vanilla police car
+		TDPD[2] = "PickUpVanLightsPolice12"; -- vanilla police truck
+
 	end
 
 	if getActivatedMods():contains("KSPOPack") then
@@ -2466,6 +2781,9 @@ local function STRVehicleDistro()
 		RCRPD[3] = "92crownvicPD10"; -- 92 vic
 		RCRPD[5] = "92crownvicPD11"; -- 85 vic
 
+		TDPD[3] = "92crownvicPD11"; -- 92 vic
+		TDPD[5] = "92crownvicPD12"; -- 85 vic
+
 	end
 
 	if getActivatedMods():contains("VVehicleEnhancer") then
@@ -2499,6 +2817,9 @@ local function STRVehicleDistro()
 
 		RCRPD[1] = "CarLightsPolice10"; -- vanilla police car
 		RCRPD[2] = "PickUpVanLightsPolice11"; -- vanilla police truck
+
+		TDPD[1] = "CarLightsPolice11"; -- vanilla police car
+		TDPD[2] = "PickUpVanLightsPolice12"; -- vanilla police truck
 
 	end
 
@@ -2637,6 +2958,26 @@ local function STRVehicleDistro()
 		distributionTable["86econoline_ravencreek"] = { Normal = VehicleDistributions.PrisonBusRavenCreek; }
 
 		distributionTable["Van_ravencreekdoc"] = { Normal = VehicleDistributions.PrisonBusRavenCreek; }
+
+	end
+
+	if getActivatedMods():contains("Tandil") then
+
+		distributionTable[TDPD[1]] = distributionTable["CarLightsPolice"]
+		distributionTable[TDPD[2]] = distributionTable["CarLightsPolice"]
+		distributionTable[TDPD[4]] = distributionTable["CarLightsPolice"]
+		distributionTable[TDPD[6]] = distributionTable["CarLightsPolice"]
+		distributionTable[TDPD[5]] = distributionTable["CarLightsPolice"]
+		distributionTable[TDPD[3]] = distributionTable["CarLightsPolice"]
+
+		distributionTable[EMS[15]] = { Normal = VehicleDistributions.AmbulanceTandil; }
+		distributionTable[EMS[16]] = { Normal = VehicleDistributions.AmbulanceTandil; }
+		distributionTable[EMS[17]] = { Normal = VehicleDistributions.AmbulanceTandil; }
+
+		distributionTable[Fire[17]] = { Normal = VehicleDistributions.FireTruckTandil; }
+		distributionTable[Fire[18]] = { Normal = VehicleDistributions.FireTruckTandil; }
+		distributionTable[Fire[19]] = { Normal = VehicleDistributions.FireTruckTandil; }
+		distributionTable[Fire[20]] = { Normal = VehicleDistributions.FireTruckTandil; }
 
 	end
 end

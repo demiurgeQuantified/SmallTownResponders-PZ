@@ -3,6 +3,30 @@ module STR {
 	imports {
 		Base
 	}
+	item Hat_Police_Tandil
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Tandil PD Hat,
+		ClothingItem = Hat_Police_Tandil,
+		BodyLocation = Hat,
+		Icon = Hat_Police_Tandil,
+		CanHaveHoles = false,
+		ChanceToFall = 70,
+		WaterResistance = 0.2,
+	}
+	item Hat_Police_Tandil_Dress
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Tandil PD Dress Hat,
+		ClothingItem = Hat_Police_Tandil_Dress,
+		BodyLocation = Hat,
+		Icon = Hat_Police_Tandil_Dress,
+		CanHaveHoles = false,
+		ChanceToFall = 70,
+		WaterResistance = 0.2,
+	}
 	item Hat_Police_RavenCreek
 	{
 	    DisplayCategory = Accessory,
@@ -14,6 +38,24 @@ module STR {
 		CanHaveHoles = false,
 		ChanceToFall = 70,
 		WaterResistance = 0.2,
+	}
+	item Hat_Riot_Helmet_Tandil
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Tandil PD Riot Helmet,
+		ClothingItem = Hat_Riot_Helmet_Tandil,
+		BodyLocation = FullHat,
+		Icon = Hat_Riot_Helmet_Tandil,
+		BloodLocation = FullHelmet,
+		CanHaveHoles = false,
+		CombatSpeedModifier = 0.95,
+		BiteDefense = 100,
+        ScratchDefense = 100,
+        ChanceToFall = 0,
+        Insulation = 0.45,
+        WindResistance = 0.65,
+        WaterResistance = 1.0,
 	}
 	item Hat_Riot_Helmet_RavenCreek
 	{
@@ -277,6 +319,38 @@ module STR {
         clothingExtraSubmenu = ReverseCap,
         BodyLocation = Hat,
         Icon = BaseballCap_DOC_Jefferson,
+        CanHaveHoles = false,
+		ChanceToFall = 60,
+        Insulation = 0.10,
+        Weight = 0.5,
+    }
+	item Hat_BaseballCap_EMS_Tandil
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Tandil EMS Baseball Cap,
+		ClothingItem = Hat_BaseballCap_EMS_Tandil,
+		ClothingItemExtra = STR.Hat_BaseballCap_EMS_Tandil_Reverse,
+        ClothingItemExtraOption = ReverseCap,
+        clothingExtraSubmenu = ForwardCap,
+		BodyLocation = Hat,
+		Icon = BaseballCap_EMS_Tandil,
+		CanHaveHoles = false,
+		ChanceToFall = 60,
+		Insulation = 0.10,
+		Weight = 0.5,
+	}
+	item Hat_BaseballCap_EMS_Tandil_Reverse
+    {
+	    DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Tandil EMS Baseball Cap,
+        ClothingItem = Hat_BaseballCap_EMS_Tandil_Reverse,
+        ClothingItemExtra = STR.Hat_BaseballCap_EMS_Tandil,
+        ClothingItemExtraOption = ForwardCap,
+        clothingExtraSubmenu = ReverseCap,
+        BodyLocation = Hat,
+        Icon = BaseballCap_EMS_Tandil,
         CanHaveHoles = false,
 		ChanceToFall = 60,
         Insulation = 0.10,
@@ -634,6 +708,78 @@ module STR {
 		ClothingItem = Hat_Fireman_Louisville_Yellow,
 		BodyLocation = Hat,
 		Icon = Fireman_Hat_Yellow_Louisville,
+		BloodLocation = Head,
+		CanHaveHoles = false,
+		BiteDefense = 100,
+        ScratchDefense = 100,
+        ChanceToFall = 0,
+        Insulation = 0.65,
+        WindResistance = 0.55,
+        WaterResistance = 0.60,
+        Weight = 1.5,
+    }
+	item Hat_Fireman_Tandil_Blue
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Blue Tandil FD Helmet,
+		ClothingItem = Hat_Fireman_Tandil_Blue,
+		BodyLocation = Hat,
+		Icon = Fireman_Hat_Blue_Tandil,
+		BloodLocation = Head,
+		CanHaveHoles = false,
+		BiteDefense = 100,
+        ScratchDefense = 100,
+        ChanceToFall = 0,
+        Insulation = 0.65,
+        WindResistance = 0.55,
+        WaterResistance = 0.60,
+        Weight = 1.5,
+    }
+	item Hat_Fireman_Tandil_Black
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Black Tandil FD Helmet,
+		ClothingItem = Hat_Fireman_Tandil_Black,
+		BodyLocation = Hat,
+		Icon = Fireman_Hat_Black_Tandil,
+		BloodLocation = Head,
+		CanHaveHoles = false,
+		BiteDefense = 100,
+        ScratchDefense = 100,
+        ChanceToFall = 0,
+        Insulation = 0.65,
+        WindResistance = 0.55,
+        WaterResistance = 0.60,
+        Weight = 1.5,
+    }
+	item Hat_Fireman_Tandil_Red
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Red Tandil FD Helmet,
+		ClothingItem = Hat_Fireman_Tandil_Red,
+		BodyLocation = Hat,
+		Icon = Fireman_Hat_Red_Tandil,
+		BloodLocation = Head,
+		CanHaveHoles = false,
+		BiteDefense = 100,
+        ScratchDefense = 100,
+        ChanceToFall = 0,
+        Insulation = 0.65,
+        WindResistance = 0.55,
+        WaterResistance = 0.60,
+        Weight = 1.5,
+    }
+	item Hat_Fireman_Tandil_Yellow
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Yellow Tandil FD Helmet,
+		ClothingItem = Hat_Fireman_Tandil_Yellow,
+		BodyLocation = Hat,
+		Icon = Fireman_Hat_Yellow_Tandil,
 		BloodLocation = Head,
 		CanHaveHoles = false,
 		BiteDefense = 100,

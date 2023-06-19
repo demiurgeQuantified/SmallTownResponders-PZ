@@ -41,10 +41,12 @@ if getActivatedMods():contains("Tandil") then
 		-- Main PD
 		  { name = "PoliceTandil", type = "ZombiesType", x = 10648, y = 13951, z = 0, width = 47, height = 47 },
 
+		-- Small PD
+		  { name = "PoliceTandil", type = "ZombiesType", x = 10407, y = 14467, z = 0, width = 30, height = 28 },
+		  { name = "PoliceTandil", type = "ZombiesType", x = 10406, y = 14466, z = 1, width = 18, height = 23 },
+
 		-- Mansion Security Office
 		  { name = "HotelFancy", type = "ZombiesType", x = 10031, y = 14470, z = 1, width = 21, height = 6 },
-		  { name = "HotelFancy", type = "ZombiesType", x = 10407, y = 14467, z = 0, width = 30, height = 28 },
-		  { name = "HotelFancy", type = "ZombiesType", x = 10406, y = 14466, z = 1, width = 18, height = 23 },
 
 		-- Huge FD
 		  { name = "FireDeptTandil", type = "ZombiesType", x = 10312, y = 14323, z = 0, width = 74, height = 46 },
@@ -61,9 +63,17 @@ if getActivatedMods():contains("Tandil") then
 		  { name = "BankSecurity", type = "ZombiesType", x = 10454, y = 14443, z = 3, width = 42, height = 51 },
 
 		-- Loot Zones
-		-- TODO
---		  { name = "FireDeptTandilL", type = "LootZone", x = 4113, y = 13217, z = 0, width = 10, height = 6 },
---		  { name = "PoliceTandilL", type = "LootZone", x = 3964, y = 11453, z = 0, width = 5, height = 15 },
+		-- Small PD
+		  { name = "PoliceTandilL", type = "LootZone", x = 10414, y = 14472, z = 0, width = 2, height = 3 },
+		  { name = "PoliceTandilL", type = "LootZone", x = 10409, y = 14482, z = 0, width = 4, height = 4 },
+
+		-- Main PD
+		  { name = "PoliceTandilL", type = "LootZone", x = 10668, y = 13976, z = 0, width = 3, height = 3 },
+		  { name = "PoliceTandilL", type = "LootZone", x = 10675, y = 13976, z = 0, width = 3, height = 3 },
+
+		-- Huge FD
+		  { name = "FireDeptTandilL", type = "LootZone", x = 10337, y = 14326, z = 0, width = 9, height = 5 },
+		  { name = "FireDeptTandilL", type = "LootZone", x = 10340, y = 14331, z = 0, width = 6, height = 6 },
 
 	}
 

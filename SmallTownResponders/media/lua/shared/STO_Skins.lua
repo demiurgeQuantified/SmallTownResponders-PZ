@@ -149,6 +149,7 @@ if getActivatedMods():contains("VVehicleEnhancer") and getActivatedMods():contai
 end
 
 if not getActivatedMods():contains("VVehicleEnhancer") and not getActivatedMods():contains("SCKCO") then
+
 	SetPoliceVehicle("CarLightsPolice")
 	SetPoliceVehicle("PickUpVanLightsPolice")
 
@@ -217,7 +218,7 @@ if not getActivatedMods():contains("VVehicleEnhancer") and not getActivatedMods(
 	if getActivatedMods():contains("Tandil") then
 
 		AddVehicleSkin("CarLightsPolice", ZoneName.Tandil, "Vehicles/vehicle_tandilpolice");
-		-- AddVehicleSkin("PickUpVanLightsPolice", ZoneName.Tandil, "Vehicles/vehicle_pickup_ravencreekpolice");
+		AddVehicleSkin("PickUpVanLightsPolice", ZoneName.Tandil, "Vehicles/vehicle_pickup_tandilpolice");
 
 		-- AddVehicleSkin("VanAmbulance", ZoneName.Tandil, "Vehicles/vehicle_van_ravencreekambulance");
 
@@ -239,11 +240,14 @@ if getActivatedMods():contains("FRUsedCars") then
 	SetRadioType("86econolineambulance","Radio_HAM");
 	SetRadioType("80f350ambulance","Radio_HAM");
 
+	-- SetPoliceVehicle("chevystepvanswat")
+
 	SetPoliceVehicle("85vicsheriff")
 	AddVehicleSkin("85vicsheriff", ZoneName.KSP, "Vehicles/vehicle_85crownvic_kentuckystatepoliceshell");
 	AddVehicleSkin("85vicsheriff", ZoneName.Meade, "Vehicles/vehicle_85crownvic_meadesheriffshell");
 	AddVehicleSkin("85vicsheriff", ZoneName.Rosewood, "Vehicles/vehicle_85crownvic_rosewoodpoliceshell");
-	AddVehicleSkin("85vicsheriff", ZoneName.WestPoint, "Vehicles/vehicle_85crownvic_westpointpoliceshell");
+	AddVehicleSkin("85vicsheriff", ZoneName.WestPoint, "Vehicles/vehicle_85crownvic_westpointpoliceshell1");
+	AddVehicleSkin("85vicsheriff", ZoneName.WestPoint, "Vehicles/vehicle_85crownvic_westpointpoliceshell2");
 	AddVehicleSkin("85vicsheriff", ZoneName.Muldraugh, "Vehicles/vehicle_85crownvic_muldraughpoliceshell");
 	AddVehicleSkin("85vicsheriff", ZoneName.Riverside, "Vehicles/vehicle_85crownvic_riversidepoliceshell");
 	AddVehicleSkin("85vicsheriff", ZoneName.LouisvillePD, "Vehicles/vehicle_85crownvic_lousvillepoliceshell");
@@ -810,10 +814,14 @@ end
 --TODO: Fix this!
 if getActivatedMods():contains("VVehicleEnhancer") and not getActivatedMods():contains("SCKCO") then
 
+	SetPoliceVehicle("CarLightsPolice")
+	SetPoliceVehicle("PickUpVanLightsPolice")
+
 	AddVehicleSkin("CarLightsPolice", ZoneName.KSP, "Vehicles/vve/vehicle_kentuckystate_vve");
 	AddVehicleSkin("CarLightsPolice", ZoneName.Meade, "Vehicles/vve/vehicle_meade_vve");
 	AddVehicleSkin("CarLightsPolice", ZoneName.Rosewood, "Vehicles/vve/vehicle_rosewood_vve");
 	AddVehicleSkin("CarLightsPolice", ZoneName.WestPoint, "Vehicles/vve/vehicle_westpoint_vve");
+	AddVehicleSkin("CarLightsPolice", ZoneName.WestPoint, "Vehicles/vve/vehicle_westpoint2_vve");
 	AddVehicleSkin("CarLightsPolice", ZoneName.Muldraugh, "Vehicles/vve/vehicle_muldraugh_vve");
 	AddVehicleSkin("CarLightsPolice", ZoneName.Riverside, "Vehicles/vve/vehicle_riverside_vve");
 	AddVehicleSkin("CarLightsPolice", ZoneName.LouisvillePD, "Vehicles/vve/vehicle_louisville_vve");
@@ -825,6 +833,7 @@ if getActivatedMods():contains("VVehicleEnhancer") and not getActivatedMods():co
 	AddVehicleSkin("CarLightsSheriff", ZoneName.Meade, "Vehicles/vve/vehicle_meade_vve");
 	AddVehicleSkin("CarLightsSheriff", ZoneName.Rosewood, "Vehicles/vve/vehicle_rosewood_vve");
 	AddVehicleSkin("CarLightsSheriff", ZoneName.WestPoint, "Vehicles/vve/vehicle_westpoint_vve");
+	AddVehicleSkin("CarLightsSheriff", ZoneName.WestPoint, "Vehicles/vve/vehicle_westpoint2_vve");
 	AddVehicleSkin("CarLightsSheriff", ZoneName.Muldraugh, "Vehicles/vve/vehicle_muldraugh_vve");
 	AddVehicleSkin("CarLightsSheriff", ZoneName.Riverside, "Vehicles/vve/vehicle_riverside_vve");
 	AddVehicleSkin("CarLightsSheriff", ZoneName.LouisvillePD, "Vehicles/vve/vehicle_louisville_vve");
@@ -836,6 +845,7 @@ if getActivatedMods():contains("VVehicleEnhancer") and not getActivatedMods():co
 	AddVehicleSkin("CarLightsStatepolice", ZoneName.Meade, "Vehicles/vve/vehicle_meade_vve");
 	AddVehicleSkin("CarLightsStatepolice", ZoneName.Rosewood, "Vehicles/vve/vehicle_rosewood_vve");
 	AddVehicleSkin("CarLightsStatepolice", ZoneName.WestPoint, "Vehicles/vve/vehicle_westpoint_vve");
+	AddVehicleSkin("CarLightsStatepolice", ZoneName.WestPoint, "Vehicles/vve/vehicle_westpoint2_vve");
 	AddVehicleSkin("CarLightsStatepolice", ZoneName.Muldraugh, "Vehicles/vve/vehicle_muldraugh_vve");
 	AddVehicleSkin("CarLightsStatepolice", ZoneName.Riverside, "Vehicles/vve/vehicle_riverside_vve");
 	AddVehicleSkin("CarLightsStatepolice", ZoneName.LouisvillePD, "Vehicles/vve/vehicle_louisville_vve");
@@ -846,6 +856,7 @@ if getActivatedMods():contains("VVehicleEnhancer") and not getActivatedMods():co
 	AddVehicleSkin("PickUpVanLightsPolice", ZoneName.Meade, "Vehicles/vve/vehicle_pickup_meade_vve");
 	AddVehicleSkin("PickUpVanLightsPolice", ZoneName.Rosewood, "Vehicles/vve/vehicle_pickup_rosewood_vve");
 	AddVehicleSkin("PickUpVanLightsPolice", ZoneName.WestPoint, "Vehicles/vve/vehicle_pickup_westpoint_vve");
+	AddVehicleSkin("PickUpVanLightsPolice", ZoneName.WestPoint, "Vehicles/vve/vehicle_pickup_westpoint2_vve");
 	AddVehicleSkin("PickUpVanLightsPolice", ZoneName.Muldraugh, "Vehicles/vve/vehicle_pickup_muldraugh_vve");
 	AddVehicleSkin("PickUpVanLightsPolice", ZoneName.Riverside, "Vehicles/vve/vehicle_pickup_riverside_vve");
 	AddVehicleSkin("PickUpVanLightsPolice", ZoneName.LouisvillePD, "Vehicles/vve/vehicle_pickup_louisville_vve");
@@ -876,6 +887,7 @@ if getActivatedMods():contains("VVehicleEnhancer") and not getActivatedMods():co
 		AddVehicleSkin("CarLightsPolice", ZoneName.RavenCreek, "Vehicles/vve/vehicle_ravencreek_vve");
 		AddVehicleSkin("CarLightsSheriff", ZoneName.RavenCreek, "Vehicles/vve/vehicle_ravencreek_vve");
 		AddVehicleSkin("CarLightsStatepolice", ZoneName.RavenCreek, "Vehicles/vve/vehicle_ravencreek_vve");
+		AddVehicleSkin("PickUpVanLightsPolice", ZoneName.RavenCreek, "Vehicles/vve/vehicle_pickup_ravencreek_vve");
 
 	end
 end

@@ -10,6 +10,12 @@ module Base
 		mesh = WorldItems/SecurityWalkie_Ground,
 		texture = Clothes\Chest\Security_Walkie,
 	}
+	model TDBadge_Ground
+    {
+        mesh = WorldItems/SeedPacket,
+        texture = Item_Badge_Police_Tandil,
+        scale = 0.4,
+    }
 	model RCRBadge_Ground
     {
         mesh = WorldItems/SeedPacket,

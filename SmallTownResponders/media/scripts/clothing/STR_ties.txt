@@ -3,6 +3,28 @@ module STR {
 	imports {
 		Base
 	}
+	item Tie_Full_Police_Tandil
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Tandil PD Tie,
+		ClothingItem = Tie_Full_Police_Tandil,
+		BodyLocation = Neck,
+		Icon = Tie_Police_Tandil,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Worn_Police_Tandil
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Tandil PD Clip-on Tie,
+		ClothingItem = Tie_Worn_Police_Tandil,
+		BodyLocation = Neck,
+		Icon = Tie_Police_Tandil,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
 	item Tie_Full_Police_RavenCreek
 	{
 	    DisplayCategory = Accessory,
@@ -286,6 +308,28 @@ module STR {
 		ClothingItem = Tie_Worn_EMS_Meade,
 		BodyLocation = Neck,
 		Icon = Tie_EMS_Meade,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Full_EMS_Tandil
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Tandil EMS Tie,
+		ClothingItem = Tie_Full_EMS_Tandil,
+		BodyLocation = Neck,
+		Icon = Tie_EMS_Tandil,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Worn_EMS_Tandil
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Tandil EMS Clip-on Tie,
+		ClothingItem = Tie_Worn_EMS_Tandil,
+		BodyLocation = Neck,
+		Icon = Tie_EMS_Tandil,
 		Weight = 0.1,
 		WorldStaticModel = Tie_Ground,
 	}

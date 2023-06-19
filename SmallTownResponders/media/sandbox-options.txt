@@ -394,6 +394,16 @@ option STRS.MeadeInmateRed
 	page = STRS,
 	translation = STRS_MeadeInmateRed,
 }
+option STRS.TandilPD
+{
+	type = integer,
+	min = 0,
+	max = 75,
+	default = 30,
+
+	page = STRS,
+	translation = STRS_TandilPD,
+}
 option STRS.RavenCreekPD
 {
 	type = integer,
@@ -602,6 +612,26 @@ option STEV.BankTruck
 	page = STEV,
 	translation = STEV_BankTruck,
 }
+option STEV.TDPD
+{
+	type = integer,
+	min = 0,
+	max = 60,
+	default = 25,
+
+	page = STEV,
+	translation = STEV_TDPD,
+}
+option STEV.TDFD
+{
+	type = integer,
+	min = 0,
+	max = 60,
+	default = 35,
+
+	page = STEV,
+	translation = STEV_TDFD,
+}
 option STEV.RCRPD
 {
 	type = integer,
@@ -631,26 +661,6 @@ option STEV.RCRDOC
 
 	page = STEV,
 	translation = STEV_RCRDOC,
-}
-option STEV.TandilPD
-{
-	type = integer,
-	min = 0,
-	max = 60,
-	default = 25,
-
-	page = STEV,
-	translation = STEV_TandilPD,
-}
-option STEV.TandilFD
-{
-	type = integer,
-	min = 0,
-	max = 60,
-	default = 35,
-
-	page = STEV,
-	translation = STEV_TandilFD,
 }
 option STEV.FSwat
 {

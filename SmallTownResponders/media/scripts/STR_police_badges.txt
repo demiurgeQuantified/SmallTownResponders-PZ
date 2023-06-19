@@ -3,6 +3,17 @@ module STR {
 	imports {
 		Base
 	}
+    item TandilPoliceBadge
+    {
+	    DisplayCategory = Literature,
+        Weight	=	0.10,
+        Type	=	Literature,
+        DisplayName	=	Tandil PD Badge,
+        Icon	=	Badge_Police_Tandil,
+        CanBeWrite  =   true,
+        PageToWrite =   1,
+        WorldStaticModel = TDBadge_Ground,
+    }
     item RavenCreekPoliceBadge
     {
 	    DisplayCategory = Literature,

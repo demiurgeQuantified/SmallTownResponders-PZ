@@ -3,6 +3,86 @@ module STR {
 	imports {
 		Base
 	}
+    item Jacket_Police_Tandil
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Tandil PD Jacket,
+        ClothingItem = Jacket_Police_Tandil,
+        BodyLocation = Jacket,
+        Icon = Jacket_Police_Tandil,
+        BloodLocation = Jacket,
+        RunSpeedModifier = 0.93,
+        CombatSpeedModifier = 0.98,
+        BiteDefense = 20,
+        ScratchDefense = 30,
+        NeckProtectionModifier = 0.5,
+        Insulation = 0.6,
+        WindResistance = 0.45,
+        FabricType = Cotton,
+        WaterResistance = 0.25,
+        Weight = 2,
+        WorldStaticModel = JacketCoat_Ground,
+    }
+    item Jacket_Dress_Police_Tandil
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Tandil PD Coat,
+        ClothingItem = Jacket_Dress_Police_Tandil,
+        BodyLocation = JacketSuit,
+        Icon = Jacket_Dress_Police_Tandil,
+        BloodLocation = LongJacket,
+        RunSpeedModifier = 0.95,
+        BiteDefense = 20,
+        ScratchDefense = 40,
+        NeckProtectionModifier = 0.5,
+        Insulation = 0.70,
+        WindResistance = 0.45,
+        FabricType = Cotton,
+        WaterResistance = 0.55,
+        WorldStaticModel = JacketCoat_Ground,
+    }
+	item Jacket_Fireman_Tandil_Black
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Black Tandil FD Jacket,
+        ClothingItem = Jacket_Fireman_Tandil_Black,
+        BodyLocation = Jacket,
+        Icon = Jacket_Fireman_Black_Tandil,
+        BloodLocation = Jacket,
+        RunSpeedModifier = 0.87,
+        CombatSpeedModifier = 0.90,
+        BiteDefense = 50,
+        ScratchDefense = 70,
+        NeckProtectionModifier = 0.5,
+        Insulation = 0.85,
+        WindResistance = 0.85,
+        WaterResistance = 0.8,
+        Weight = 4,
+        WorldStaticModel = Jacket_Ground,
+    }
+	item Jacket_Fireman_Tandil_Khaki
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Khaki Tandil FD Jacket,
+        ClothingItem = Jacket_Fireman_Tandil_Khaki,
+        BodyLocation = Jacket,
+        Icon = Jacket_Fireman_Khaki_Tandil,
+        BloodLocation = Jacket,
+        RunSpeedModifier = 0.87,
+        CombatSpeedModifier = 0.90,
+        BiteDefense = 50,
+        ScratchDefense = 70,
+        NeckProtectionModifier = 0.5,
+        Insulation = 0.85,
+        WindResistance = 0.85,
+        WaterResistance = 0.8,
+        Weight = 4,
+        WorldStaticModel = Jacket_Ground,
+    }
     item Jacket_Police_RavenCreek
     {
         DisplayCategory = Clothing,
@@ -395,6 +475,27 @@ module STR {
         WindResistance = 0.7,
         FabricType = Cotton,
         WaterResistance = 0.5,
+        Weight = 2,
+        WorldStaticModel = JacketCoat_Ground,
+    }
+    item Jacket_EMS_Tandil
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Tandil EMS Jacket,
+        ClothingItem = Jacket_EMS_Tandil,
+        BodyLocation = Jacket,
+        Icon = Jacket_EMS_Tandil,
+        BloodLocation = Jacket,
+        RunSpeedModifier = 0.93,
+        CombatSpeedModifier = 0.98,
+        BiteDefense = 20,
+        ScratchDefense = 30,
+        NeckProtectionModifier = 0.5,
+        Insulation = 0.6,
+        WindResistance = 0.45,
+        FabricType = Cotton,
+        WaterResistance = 0.25,
         Weight = 2,
         WorldStaticModel = JacketCoat_Ground,
     }

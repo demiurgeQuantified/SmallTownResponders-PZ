@@ -206,6 +206,11 @@
 	</files>
 
 	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Police_Tandil.xml</path>
+		<guid>ffdf7edd-09c9-49fb-962c-2cadc8cd54e5</guid>
+	</files>
+
+	<files>
 		<path>media/clothing/clothingItems/Jacket_Dress_Police_RavenCreek.xml</path>
 		<guid>221ef248-1b70-41eb-b11e-712e928ba600</guid>
 	</files>
@@ -574,6 +579,11 @@
 	</files>
 
 	<files>
+		<path>media/clothing/clothingItems/Tie_Full_EMS_Tandil.xml</path>
+		<guid>622d43a4-0391-466a-bf86-47b6ae6ce1fc</guid>
+	</files>
+
+	<files>
 		<path>media/clothing/clothingItems/Tie_Full_EMS_RavenCreek.xml</path>
 		<guid>c06b0f53-5b72-4e66-b9d0-a9e236899c77</guid>
 	</files>
@@ -581,6 +591,11 @@
 	<files>
 		<path>media/clothing/clothingItems/Tie_Full_KSP.xml</path>
 		<guid>3d238f84-adce-49a3-a661-4638c308075b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Tie_Full_Police_Tandil.xml</path>
+		<guid>33fbb7ce-9a43-4034-b75e-8545d7b61884</guid>
 	</files>
 
 	<files>
@@ -690,6 +705,11 @@
 	</files>
 
 	<files>
+		<path>media/clothing/clothingItems/Tie_Worn_EMS_Tandil.xml</path>
+		<guid>e91e33f6-b2f6-442d-9366-ad49c2f97b8a</guid>
+	</files>
+
+	<files>
 		<path>media/clothing/clothingItems/Tie_Worn_EMS_RavenCreek.xml</path>
 		<guid>688c3b90-73fc-4e04-a83e-77e38ac3bf35</guid>
 	</files>
@@ -697,6 +717,11 @@
 	<files>
 		<path>media/clothing/clothingItems/Tie_Worn_KSP.xml</path>
 		<guid>ac1b4d80-bcbd-4cfc-9937-2bb6914ca0ad</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Tie_Worn_Police_Tandil.xml</path>
+		<guid>46479590-9c4c-45a2-9b54-2ae6611f3b55</guid>
 	</files>
 
 	<files>
@@ -782,6 +807,11 @@
 	</files>
 
 	<files>
+		<path>media/clothing/clothingItems/Hat_Riot_Helmet_Tandil.xml</path>
+		<guid>aaecb2fc-b54f-4883-b82f-c3b39f8e7e72</guid>
+	</files>
+
+	<files>
 		<path>media/clothing/clothingItems/Hat_Riot_Helmet_RavenCreek.xml</path>
 		<guid>a59fcf2f-c0b6-4306-96a5-d69d4b86d614</guid>
 	</files>
@@ -841,6 +871,16 @@
 		<guid>929416e5-3e64-4336-8987-ceaea6aa58dd</guid>
 	</files>
 
+
+	<files>
+		<path>media/clothing/clothingItems/Hat_Police_Tandil.xml</path>
+		<guid>17378632-d05e-4b1c-97da-d053bfc68db6</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Hat_Police_Tandil_Dress.xml</path>
+		<guid>3126c630-3e76-4896-9484-fbc47b5a8243</guid>
+	</files>
 
 	<files>
 		<path>media/clothing/clothingItems/Hat_Police_RavenCreek.xml</path>
@@ -935,6 +975,16 @@
 	<files>
 		<path>media/clothing/clothingItems/Hat_BaseballCap_DOC_RavenCreek_Reverse.xml</path>
 		<guid>36efce48-c0dd-49c1-ab87-bf478391194b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Hat_BaseballCap_EMS_Tandil.xml</path>
+		<guid>93c8a5cf-7557-4b6e-87bb-777f33daedd3</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Hat_BaseballCap_EMS_Tandil_Reverse.xml</path>
+		<guid>5dc41046-cb88-4f96-acb1-9edbd37cb3a8</guid>
 	</files>
 
 	<files>
@@ -1053,6 +1103,26 @@
 	</files>
 
 	<files>
+		<path>media/clothing/clothingItems/Hat_Fireman_Tandil_Blue.xml</path>
+		<guid>f7c4843d-cfcf-4ceb-a992-86cfb17ba26d</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Hat_Fireman_Tandil_Black.xml</path>
+		<guid>0ed315c6-1266-4d9b-899a-4bf1a43fbdd2</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Hat_Fireman_Tandil_Red.xml</path>
+		<guid>0c2ff3c3-1622-46b6-847d-d3c60ca19cc6</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Hat_Fireman_Tandil_Yellow.xml</path>
+		<guid>188fafb9-e032-4c29-b360-13ad859954c3</guid>
+	</files>
+
+	<files>
 		<path>media/clothing/clothingItems/Hat_Fireman_RavenCreek_Blue.xml</path>
 		<guid>6de07907-f435-494e-8f87-43c787763e6d</guid>
 	</files>
@@ -1072,6 +1142,11 @@
 		<guid>4416b636-f069-40be-8ae1-31f28037470b</guid>
 	</files>
 
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_Tandil.xml</path>
+		<guid>ff41d5e2-c1c0-4c73-9922-646618b8bef3</guid>
+	</files>
 
 	<files>
 		<path>media/clothing/clothingItems/Jacket_Police_RavenCreek.xml</path>
@@ -1154,6 +1229,11 @@
 	</files>
 
 	<files>
+		<path>media/clothing/clothingItems/Jacket_EMS_Tandil.xml</path>
+		<guid>e97fa357-7f7a-404d-bdd8-ce8d9d0af3b3</guid>
+	</files>
+
+	<files>
 		<path>media/clothing/clothingItems/Jacket_EMS_RavenCreek.xml</path>
 		<guid>5d57d7c6-ed2b-4613-a8c2-f34e6d5dc637</guid>
 	</files>
@@ -1229,6 +1309,16 @@
 	</files>
 
 	<files>
+		<path>media/clothing/clothingItems/Jacket_Fireman_Tandil_Black.xml</path>
+		<guid>c4d52a56-749e-4392-ac1f-6e2df659c71c</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Fireman_Tandil_Khaki.xml</path>
+		<guid>fe1551c7-374a-43b3-b9c1-9d8f01f6a28b</guid>
+	</files>
+
+	<files>
 		<path>media/clothing/clothingItems/Jacket_Fireman_RavenCreek_Black.xml</path>
 		<guid>66fa3ad9-719d-4672-8a83-0fc80d9f3c83</guid>
 	</files>
@@ -1238,6 +1328,11 @@
 		<guid>104cc7f0-61d3-440f-ac47-62fc750f3eb3</guid>
 	</files>
 
+
+	<files>
+		<path>media/clothing/clothingItems/Shirt_Police_Tandil.xml</path>
+		<guid>2bb60f30-e4bd-442d-aa70-05eec390adf0</guid>
+	</files>
 
 	<files>
 		<path>media/clothing/clothingItems/Shirt_Police_RavenCreek.xml</path>
@@ -1330,6 +1425,11 @@
 	</files>
 
 	<files>
+		<path>media/clothing/clothingItems/Shirt_Fire_Tandil.xml</path>
+		<guid>9efac065-265d-44c3-86d4-077f807d8686</guid>
+	</files>
+
+	<files>
 		<path>media/clothing/clothingItems/Shirt_Fire_RavenCreek.xml</path>
 		<guid>98a97cb3-c41f-4945-8c04-1506d7b485f5</guid>
 	</files>
@@ -1380,6 +1480,11 @@
 	</files>
 
 	<files>
+		<path>media/clothing/clothingItems/Shirt_EMS_Tandil.xml</path>
+		<guid>16e9e202-5ce3-4506-9f7d-a4f9f6ab86a4</guid>
+	</files>
+
+	<files>
 		<path>media/clothing/clothingItems/Shirt_EMS_RavenCreek.xml</path>
 		<guid>cfe677ce-a9a2-4e86-b923-d90ee35c2dfc</guid>
 	</files>
@@ -1424,6 +1529,11 @@
 		<guid>3b62f7fa-c7a0-433c-aa90-ea518805fe8a</guid>
 	</files>
 
+
+	<files>
+		<path>media/clothing/clothingItems/TShirt_Police_Tandil.xml</path>
+		<guid>dd7f9b2f-eaf0-495e-98fe-78e6eea51016</guid>
+	</files>
 
 	<files>
 		<path>media/clothing/clothingItems/TShirt_Police_RavenCreek.xml</path>
@@ -1516,6 +1626,11 @@
 	</files>
 
 	<files>
+		<path>media/clothing/clothingItems/TShirt_Fire_Tandil.xml</path>
+		<guid>fb90ecf8-10d3-4c5d-9200-30c2ce694ec7</guid>
+	</files>
+
+	<files>
 		<path>media/clothing/clothingItems/TShirt_Fire_RavenCreek.xml</path>
 		<guid>b71aa236-dc59-4948-8cf9-1fedf1155493</guid>
 	</files>
@@ -1563,6 +1678,11 @@
 	<files>
 		<path>media/clothing/clothingItems/TShirt_EMS_Louisville.xml</path>
 		<guid>1c813060-a139-4092-829b-4eca892fea34</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/TShirt_EMS_Tandil.xml</path>
+		<guid>6b6d536e-7a81-4546-ae49-14a2bd375dfc</guid>
 	</files>
 
 	<files>
@@ -1671,6 +1791,26 @@
 	</files>
 
 	<files>
+		<path>media/clothing/clothingItems/TShirt_Profession_FiremanBlue_Tandil.xml</path>
+		<guid>bdaf5d84-8403-40c6-ba3f-0a4ce7719232</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/TShirt_Profession_FiremanRed_Tandil.xml</path>
+		<guid>7034c872-7654-4671-b795-9ca724f767cd</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/TShirt_Profession_FiremanRed_Tandil02.xml</path>
+		<guid>90fc0a73-c192-44ac-91c5-9c0ac0598480</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/TShirt_Profession_FiremanWhite_Tandil.xml</path>
+		<guid>f6190bde-7e3d-4219-b53f-e0cb922d5b16</guid>
+	</files>
+
+	<files>
 		<path>media/clothing/clothingItems/TShirt_Profession_FiremanBlue_RavenCreek.xml</path>
 		<guid>9bf062da-091e-4bbc-85ce-d3cefcf2dad3</guid>
 	</files>
@@ -1690,6 +1830,11 @@
 		<guid>9da45710-8b00-4cd2-b479-6ebad7d4349a</guid>
 	</files>
 
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Police_Tandil.xml</path>
+		<guid>39d43da8-c261-47cc-adcc-e17ad1b919d2</guid>
+	</files>
 
 	<files>
 		<path>media/clothing/clothingItems/Trousers_Police_RavenCreek.xml</path>
@@ -1792,6 +1937,11 @@
 	</files>
 
 	<files>
+		<path>media/clothing/clothingItems/Trousers_EMS_Tandil.xml</path>
+		<guid>5b008cc3-66f7-4dae-a915-e30abc69354e</guid>
+	</files>
+
+	<files>
 		<path>media/clothing/clothingItems/Trousers_EMS_RavenCreek.xml</path>
 		<guid>4dbd3289-91c7-4f4b-9447-1b27669a23ec</guid>
 	</files>
@@ -1847,6 +1997,11 @@
 	</files>
 
 	<files>
+		<path>media/clothing/clothingItems/Trousers_Fire_Formal_Tandil.xml</path>
+		<guid>3b546497-73c2-4c7c-840d-6d3f9cf615ef</guid>
+	</files>
+
+	<files>
 		<path>media/clothing/clothingItems/Trousers_Fire_Formal_RavenCreek.xml</path>
 		<guid>1a621477-5cf1-4a05-a08e-3a450b1f1558</guid>
 	</files>
@@ -1859,6 +2014,16 @@
 	<files>
 		<path>media/clothing/clothingItems/Trousers_Fire_Formal_Rosewood.xml</path>
 		<guid>59af2eff-dcc8-4edb-ba1c-f716361c7b3b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Fireman_Tandil_Black.xml</path>
+		<guid>d14e9e4d-6724-40e0-af9d-4ad3f63e7dd5</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Fireman_Tandil_Khaki.xml</path>
+		<guid>93f0c19a-74fb-402f-a587-1e367e23868b</guid>
 	</files>
 
 	<files>

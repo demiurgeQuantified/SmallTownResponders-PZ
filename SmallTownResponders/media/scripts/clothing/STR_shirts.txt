@@ -3,6 +3,90 @@ module STR {
 	imports {
 		Base
 	}
+	item Shirt_Police_Tandil
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Tandil PD Shirt,
+		ClothingItem = Shirt_Police_Tandil,
+		BodyLocation = Shirt,
+		Icon = Shirt_Police_Tandil,
+		BloodLocation = ShirtLongSleeves,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = Shirt_Ground,
+	}
+	item TShirt_Police_Tandil
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Tandil PD T-Shirt,
+		ClothingItem = TShirt_Police_Tandil,
+		BodyLocation = Tshirt,
+		Icon = TShirt_Police_Tandil,
+		BloodLocation = Shirt,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = TShirt_Ground,
+	}
+	item Shirt_EMS_Tandil
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Tandil EMS Shirt,
+		ClothingItem = Shirt_EMS_Tandil,
+		BodyLocation = Shirt,
+		Icon = Shirt_EMS_Tandil,
+		BloodLocation = ShirtLongSleeves,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = Shirt_Ground,
+	}
+	item TShirt_EMS_Tandil
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Tandil EMS T-Shirt,
+		ClothingItem = TShirt_EMS_Tandil,
+		BodyLocation = Tshirt,
+		Icon = TShirt_EMS_Tandil,
+		BloodLocation = Shirt,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = TShirt_Ground,
+	}
+	item Shirt_Fire_Tandil
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Tandil FD Shirt,
+		ClothingItem = Shirt_Fire_Tandil,
+		BodyLocation = Shirt,
+		Icon = Shirt_Fire_Tandil,
+		BloodLocation = ShirtLongSleeves,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = Shirt_Ground,
+	}
+	item TShirt_Fire_Tandil
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Tandil FD T-Shirt,
+		ClothingItem = TShirt_Fire_Tandil,
+		BodyLocation = Tshirt,
+		Icon = TShirt_Fire_Tandil,
+		BloodLocation = Shirt,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = TShirt_Ground,
+	}
 	item Shirt_Police_RavenCreek
 	{
         DisplayCategory = Clothing,
@@ -836,6 +920,71 @@ module STR {
         ClothingItem = TShirt_Profession_FiremanWhite_Louisville,
         BodyLocation = Tshirt,
         Icon	=	TShirt_Fireman_White_Louisville,
+        BloodLocation = Shirt,
+        Insulation = 0.5,
+        WindResistance = 0.30,
+        FabricType = Cotton,
+        WorldStaticModel = TShirt_Ground,
+    }
+    item TShirt_Profession_FiremanBlue_Tandil
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Blue Tandil FD T-Shirt,
+        ClothingItem = TShirt_Profession_FiremanBlue_Tandil,
+        BodyLocation = Tshirt,
+        Icon	=	TShirt_Fireman_Blue_Tandil,
+        BloodLocation = Shirt,
+        ColorRed = 46,
+        ColorGreen = 58,
+        ColorBlue = 93,
+        Insulation = 0.5,
+        WindResistance = 0.30,
+        FabricType = Cotton,
+        WorldStaticModel = TShirt_Ground,
+    }
+    item TShirt_Profession_FiremanRed_Tandil
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Red Tandil FD T-Shirt,
+        ClothingItem = TShirt_Profession_FiremanRed_Tandil,
+        BodyLocation = Tshirt,
+        Icon	=	TShirt_Fireman_Red_Tandil,
+        BloodLocation = Shirt,
+        ColorRed = 160,
+        ColorGreen = 29,
+        ColorBlue = 28,
+        Insulation = 0.5,
+        WindResistance = 0.30,
+        FabricType = Cotton,
+        WorldStaticModel = TShirt_Ground,
+    }
+    item TShirt_Profession_FiremanRed_Tandil02
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Dark Red Tandil FD T-Shirt,
+        ClothingItem = TShirt_Profession_FiremanRed_Tandil02,
+        BodyLocation = Tshirt,
+        Icon	=	TShirt_Fireman_Red_Tandil02,
+        BloodLocation = Shirt,
+        ColorRed = 118,
+        ColorGreen = 24,
+        ColorBlue = 24,
+        Insulation = 0.5,
+        WindResistance = 0.30,
+        FabricType = Cotton,
+        WorldStaticModel = TShirt_Ground,
+    }
+    item TShirt_Profession_FiremanWhite_Tandil
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = White Tandil FD T-Shirt,
+        ClothingItem = TShirt_Profession_FiremanWhite_Tandil,
+        BodyLocation = Tshirt,
+        Icon	=	TShirt_Fireman_White_Tandil,
         BloodLocation = Shirt,
         Insulation = 0.5,
         WindResistance = 0.30,

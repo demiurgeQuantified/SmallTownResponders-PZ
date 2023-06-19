@@ -178,6 +178,44 @@ AttachedWeaponDefinitions = AttachedWeaponDefinitions or {};
 
 end
 
+if getActivatedMods():contains("Tandil") then
+
+AttachedWeaponDefinitions = AttachedWeaponDefinitions or {};
+
+	table.insert(AttachedWeaponDefinitions.handgunDutyBelt["outfit"], "PoliceTandil");
+	table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "PoliceTandil");
+	table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "PoliceTandil");
+	table.insert(AttachedWeaponDefinitions.policeRadio["outfit"], "PoliceTandil");
+
+	table.insert(AttachedWeaponDefinitions.handgunDutyBelt["outfit"], "PoliceTandilRiot");
+	table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "PoliceTandilRiot");
+	table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "PoliceTandilRiot");
+	table.insert(AttachedWeaponDefinitions.policeRadio["outfit"], "PoliceTandilRiot");
+
+	AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceTandil = {
+		chance = 50;
+		maxitem = 2;
+		weapons = {
+			AttachedWeaponDefinitions.handgunDutyBelt,
+			AttachedWeaponDefinitions.shotgunPolice,
+			AttachedWeaponDefinitions.nightstick,
+			AttachedWeaponDefinitions.policeRadio,
+		},
+	}
+
+	AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceTandilRiot = {
+		chance = 50;
+		maxitem = 2;
+		weapons = {
+			AttachedWeaponDefinitions.handgunDutyBelt,
+			AttachedWeaponDefinitions.shotgunPolice,
+			AttachedWeaponDefinitions.nightstick,
+			AttachedWeaponDefinitions.policeradio,
+		},
+	}
+
+end
+
 AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraugh = {
 	chance = 50;
 	maxitem = 2;

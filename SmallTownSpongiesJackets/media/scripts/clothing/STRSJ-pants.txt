@@ -3,6 +3,21 @@ module STR {
 	imports {
 		Base
 	}
+	item Trousers_Police_TandilTUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Tandil PD Pants,
+        ClothingItem = Trousers_Police_TandilTUCK,
+        BodyLocation = Pants,
+        Icon = Trousers_Police_Tandil,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
 	item Trousers_Police_RavenCreekTUCK
     {
 		DisplayCategory = Clothing,
@@ -306,6 +321,21 @@ module STR {
         FabricType = Cotton,
         WorldStaticModel = Trousers_Ground,
     }
+	item Trousers_EMS_TandilTUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Tandil EMS Pants,
+        ClothingItem = Trousers_EMS_TandilTUCK,
+        BodyLocation = Pants,
+        Icon = Trousers_EMS_Tandil,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
 	item Trousers_EMS_RavenCreekTUCK
     {
 		DisplayCategory = Clothing,
@@ -429,6 +459,42 @@ module STR {
         Weight = 4,
         WorldStaticModel = Trousers_Ground,
     }
+    item Trousers_Fireman_Tandil_BlackTUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Black Tandil FD Pants,
+        ClothingItem = Trousers_Fireman_Tandil_BlackTUCK,
+        BodyLocation = Pants,
+        Icon = Trousers_Fireman_Black_Tandil,
+        BloodLocation = Trousers,
+        RunSpeedModifier = 0.82,
+        BiteDefense = 20,
+        ScratchDefense = 30,
+        Insulation = 0.85,
+        WindResistance = 0.85,
+        WaterResistance = 0.8,
+        Weight = 4,
+        WorldStaticModel = Trousers_Ground,
+    }
+    item Trousers_Fireman_Tandil_KhakiTUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Khaki Tandil FD Pants,
+        ClothingItem = Trousers_Fireman_Tandil_KhakiTUCK,
+        BodyLocation = Pants,
+        Icon = Trousers_Fireman_Khaki_Tandil,
+        BloodLocation = Trousers,
+        RunSpeedModifier = 0.82,
+        BiteDefense = 20,
+        ScratchDefense = 30,
+        Insulation = 0.85,
+        WindResistance = 0.85,
+        WaterResistance = 0.8,
+        Weight = 4,
+        WorldStaticModel = Trousers_Ground,
+    }
     item Trousers_Fireman_RavenCreek_BlackTUCK
     {
 		DisplayCategory = Clothing,
@@ -533,6 +599,21 @@ module STR {
         ClothingItem = Trousers_Fire_Formal_RosewoodTUCK,
         BodyLocation = Pants,
         Icon = Trousers_Fire_Formal_Rosewood,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Fire_Formal_TandilTUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Tandil FD Formal Pants,
+        ClothingItem = Trousers_Fire_Formal_TandilTUCK,
+        BodyLocation = Pants,
+        Icon = Trousers_Fire_Formal_Tandil,
         BloodLocation = Trousers,
         ScratchDefense = 10,
         Insulation = 0.6,
