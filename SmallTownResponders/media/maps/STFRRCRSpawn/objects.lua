@@ -34,6 +34,9 @@ if getActivatedMods():contains("RavenCreek") then
 		  { name = "policeravencreek", type = "ParkingStall", x = 3987, y = 11446, z = 0, width = 4, height = 27 },
 		  { name = "policeravencreek", type = "ParkingStall", x = 3994, y = 11446, z = 0, width = 4, height = 27 },
 
+		-- Suburban PD
+		  { name = "PoliceRavenCreek", type = "ParkingStall", x = 4177, y = 13471, z = 0, width = 9, height = 4 },
+
 		-- Main Prison
 		  { name = "policeravencreekdoc", type = "ParkingStall", x = 4038, y = 12818, z = 0, width = 3, height = 4 },
 		  { name = "policeravencreekdoc", type = "ParkingStall", x = 4043, y = 12818, z = 0, width = 3, height = 4 },
@@ -47,6 +50,9 @@ if getActivatedMods():contains("RavenCreek") then
 
 		-- Suburban Knox Bank
 		  { name = "banksecurity", type = "ParkingStall", x = 3993, y = 13173, z = 0, width = 4, height = 3 },
+
+		-- Lake Ranger Area
+		  { name = "rangermeade", type = "ParkingStall", x = 5356, y = 12720, z = 0, width = 4, height = 3 },
 
 		-- Zombie Zones
 		-- Small FD
@@ -90,7 +96,6 @@ if getActivatedMods():contains("RavenCreek") then
 		-- Suburban PD
 		  { name = "PoliceRavenCreek", type = "ZombiesType", x = 4157, y = 13452, z = 0, width = 32, height = 28 },
 		  { name = "PoliceRavenCreek", type = "ZombiesType", x = 4157, y = 13480, z = 0, width = 32, height = 7 },
-		  { name = "PoliceRavenCreek", type = "ParkingStall", x = 4177, y = 13471, z = 0, width = 9, height = 4 },
 
 		-- Downtown "Modern" Knox Bank
 		  { name = "BankSecurity", type = "ZombiesType", x = 3481, y = 11220, z = 0, width = 29, height = 33 },

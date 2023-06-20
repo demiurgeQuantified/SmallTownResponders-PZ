@@ -31,6 +31,27 @@ if getActivatedMods():contains("Tandil") then
 		-- Behind The Huge FD
 		  { name = "firetandil", type = "ParkingStall", x = 10333, y = 14317, z = 0, width = 18, height = 4 },
 
+		-- North West Dirt Road Dead End
+		  { name = "rangermeade", type = "ParkingStall", x = 10004, y = 13536, z = 0, width = 4, height = 3 },
+
+		-- North West Dirt Road Ranger Compound
+		  { name = "rangermeade", type = "ParkingStall", x = 10232, y = 13601, z = 0, width = 4, height = 21 },
+
+		-- North East Dirt Road Dead Ends
+		  { name = "rangermeade", type = "ParkingStall", x = 11346, y = 13642, z = 0, width = 4, height = 3 },
+		  { name = "rangermeade", type = "ParkingStall", x = 11290, y = 13516, z = 0, width = 3, height = 4 },
+
+		-- East Dirt Road Dead End
+		  { name = "rangermeade", type = "ParkingStall", x = 11388, y = 13945, z = 0, width = 4, height = 3 },
+
+		-- South West Dirt Road Dead Ends
+		  { name = "rangermeade", type = "ParkingStall", x = 9937, y = 14761, z = 0, width = 3, height = 4 },
+		  { name = "rangermeade", type = "ParkingStall", x = 10290, y = 14979, z = 0, width = 6, height = 4 },
+
+		-- Post Office
+		  { name = "usps", type = "ParkingStall", x = 10277, y = 13938, z = 0, width = 3, height = 4 },
+		  { name = "usps", type = "ParkingStall", x = 10283, y = 13938, z = 0, width = 3, height = 4 },
+
 		-- Zombie Zones
 		-- Stadium Security Office
 		  { name = "PoliceTandil", type = "ZombiesType", x = 10448, y = 13724, z = 1, width = 7, height = 6 },
