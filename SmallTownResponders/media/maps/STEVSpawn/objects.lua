@@ -48,6 +48,8 @@ if SandboxVars.STR.CustomVehicleZones then
 	  { name = "firelouisville", type = "ParkingStall", x = 13656, y = 1776, z = 0, width = 30, height = 5, properties = { Direction = "N" } },
 	  { name = "firelouisville", type = "ParkingStall", x = 13656, y = 1787, z = 0, width = 24, height = 5, properties = { Direction = "S" } },
 
+	  { name = "firelouisville", type = "ParkingStall", x = 13952, y = 3043, z = 0, width = 6, height = 5, properties = { Direction = "S" } },
+
 	  { name = "usps", type = "ParkingStall", x = 12639, y = 2078, z = 0, width = 5, height = 12, properties = { Direction = "W" } },
 	  { name = "usps", type = "ParkingStall", x = 12626, y = 2090, z = 0, width = 12, height = 5, properties = { Direction = "N" } },
 
@@ -117,6 +119,8 @@ if SandboxVars.STR.CustomVehicleZones then
 	  { name = "firelouisville", type = "ParkingStall", x = 12349, y = 1782, z = 0, width = 18, height = 5, properties = { Direction = "N" } },
 	  { name = "firelouisville", type = "ParkingStall", x = 13656, y = 1776, z = 0, width = 30, height = 5, properties = { Direction = "N" } },
 	  { name = "firelouisville", type = "ParkingStall", x = 13656, y = 1787, z = 0, width = 24, height = 5, properties = { Direction = "S" } },
+
+	  { name = "firelouisville", type = "ParkingStall", x = 13952, y = 3043, z = 0, width = 6, height = 5, properties = { Direction = "S" } },
 
 	  { name = "usps", type = "ParkingStall", x = 12639, y = 2078, z = 0, width = 5, height = 12, properties = { Direction = "W" } },
 	  { name = "usps", type = "ParkingStall", x = 12626, y = 2090, z = 0, width = 12, height = 5, properties = { Direction = "N" } },

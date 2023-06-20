@@ -222,9 +222,8 @@ if not getActivatedMods():contains("VVehicleEnhancer") and not getActivatedMods(
 
 		-- AddVehicleSkin("VanAmbulance", ZoneName.Tandil, "Vehicles/vehicle_van_ravencreekambulance");
 
-		-- AddVehicleSkin("PickUpTruckLightsFire", ZoneName.Tandil, "Vehicles/vehicle_pickupfireshell_ravencreek");
-
-		-- AddVehicleSkin("PickUpVanLightsFire", ZoneName.Tandil, "Vehicles/vehicle_pickuptruckfireshell_ravencreek");
+		AddVehicleSkin("PickUpTruckLightsFire", ZoneName.Tandil, "Vehicles/vehicle_pickupfireshell_tandil");
+		AddVehicleSkin("PickUpVanLightsFire", ZoneName.Tandil, "Vehicles/vehicle_pickupfireshell_tandil");
 
 	end
 end

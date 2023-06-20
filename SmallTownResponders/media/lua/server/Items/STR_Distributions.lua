@@ -106,6 +106,22 @@ local function STRDistributions()
 			}
 		},
 
+		firestorage = {
+			metal_shelves = {
+				procedural = true,
+				procList = {
+					{name="FireStorageTools", min=0, max=99, weightChance=100},
+					{name="FireStorageOutfit", min=0, max=99, weightChance=40},
+				}
+			},
+			locker = {
+				procedural = true,
+				procList = {
+					{name="FireDeptLockersLV", min=0, max=99, forceForZones="FireDeptLVL"},
+				}
+			}
+		},
+
 		garagestorage = {
 			locker = {
 				procedural = true,

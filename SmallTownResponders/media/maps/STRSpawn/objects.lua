@@ -72,6 +72,7 @@ if SandboxVars.STR.CustomZones and not SandboxVars.STR.LootZones then
 		{ name = "FireDeptLV", type = "ZombiesType", x = 12349, y = 1741, z = 0, width = 23, height = 41 }, -- Louisville Slums FD
 		{ name = "FireDeptLV", type = "ZombiesType", x = 12349, y = 1741, z = 1, width = 23, height = 20 }, -- Louisville Slums FD
 		{ name = "FireDeptLV", type = "ZombiesType", x = 13661, y = 1767, z = 0, width = 76, height = 33 }, -- Louisville Main FD
+		{ name = "FireDeptLV", type = "ZombiesType", x = 13930, y = 3031, z = 0, width = 28, height = 27 }, -- Louisville Small FD
 		{ name = "FireDeptRW", type = "ZombiesType", x = 8125, y = 11731, z = 0, width = 39, height = 43 }, -- Rosewood Fire Station
 		{ name = "FireDeptRW", type = "ZombiesType", x = 8128, y = 11728, z = 1, width = 17, height = 23 }, -- Rosewood Fire Station
 		{ name = "FireDeptRW", type = "ZombiesType", x = 8128, y = 11751, z = 1, width = 6, height = 1 }, -- Rosewood Fire Station
@@ -249,6 +250,7 @@ if SandboxVars.STR.CustomZones and not SandboxVars.STR.LootZones then
 		{ name = "FireDeptLV", type = "ZombiesType", x = 12349, y = 1741, z = 0, width = 23, height = 41 }, -- Louisville Slums FD
 		{ name = "FireDeptLV", type = "ZombiesType", x = 12349, y = 1741, z = 1, width = 23, height = 20 }, -- Louisville Slums FD
 		{ name = "FireDeptLV", type = "ZombiesType", x = 13661, y = 1767, z = 0, width = 76, height = 33 }, -- Louisville Main FD
+		{ name = "FireDeptLV", type = "ZombiesType", x = 13930, y = 3031, z = 0, width = 28, height = 27 }, -- Louisville Small FD
 		{ name = "FireDeptRW", type = "ZombiesType", x = 8125, y = 11731, z = 0, width = 39, height = 43 }, -- Rosewood Fire Station
 		{ name = "FireDeptRW", type = "ZombiesType", x = 8128, y = 11728, z = 1, width = 17, height = 23 }, -- Rosewood Fire Station
 		{ name = "FireDeptRW", type = "ZombiesType", x = 8128, y = 11751, z = 1, width = 6, height = 1 }, -- Rosewood Fire Station
@@ -443,6 +445,8 @@ if SandboxVars.STR.LootZones and not SandboxVars.STR.CustomZones then
 		{ name = "FireDeptLVL", type = "LootZone", x = 13723, y = 1767, z = 0, width = 3, height = 1 }, -- Louisville Main FD Lockers
 		{ name = "FireDeptLVL", type = "LootZone", x = 13722, y = 1772, z = 0, width = 3, height = 1 }, -- Louisville Main FD Lockers
 
+		{ name = "FireDeptLVL", type = "LootZone", x = 13935, y = 3043, z = 0, width = 5, height = 4 }, -- Louisville Small FD Lockers
+
 		-- Meade County EMS
 		{ name = "MeadeEMSL", type = "LootZone", x = 8082, y = 11531, z = 0, width = 1, height = 2 }, -- Rosewood Medical Storage
 		{ name = "LouisvilleEMSL", type = "LootZone", x = 12417, y = 1753, z = 0, width = 1, height = 1 }, -- Louisville Medical Storage
@@ -549,6 +553,8 @@ if SandboxVars.STR.LootZones and not SandboxVars.STR.CustomZones then
 		{ name = "FireDeptLVL", type = "LootZone", x = 13723, y = 1767, z = 0, width = 3, height = 1 }, -- Louisville Main FD Lockers
 		{ name = "FireDeptLVL", type = "LootZone", x = 13722, y = 1772, z = 0, width = 3, height = 1 }, -- Louisville Main FD Lockers
 
+		{ name = "FireDeptLVL", type = "LootZone", x = 13935, y = 3043, z = 0, width = 5, height = 4 }, -- Louisville Small FD Lockers
+
 		{ name = "FireDeptMCL", type = "LootZone", x = 7389, y = 8359, z = 0, width = 5, height = 1 }, -- New Ekron FD Lockers
 
 		-- Meade County EMS
@@ -648,6 +654,7 @@ if SandboxVars.STR.LootZones and SandboxVars.STR.CustomZones then
 		{ name = "FireDeptLV", type = "ZombiesType", x = 12349, y = 1741, z = 0, width = 23, height = 41 }, -- Louisville Slums FD
 		{ name = "FireDeptLV", type = "ZombiesType", x = 12349, y = 1741, z = 1, width = 23, height = 20 }, -- Louisville Slums FD
 		{ name = "FireDeptLV", type = "ZombiesType", x = 13661, y = 1767, z = 0, width = 76, height = 33 }, -- Louisville Main FD
+		{ name = "FireDeptLV", type = "ZombiesType", x = 13930, y = 3031, z = 0, width = 28, height = 27 }, -- Louisville Small FD
 		{ name = "FireDeptRW", type = "ZombiesType", x = 8125, y = 11731, z = 0, width = 39, height = 43 }, -- Rosewood Fire Station
 		{ name = "FireDeptRW", type = "ZombiesType", x = 8128, y = 11728, z = 1, width = 17, height = 23 }, -- Rosewood Fire Station
 		{ name = "FireDeptRW", type = "ZombiesType", x = 8128, y = 11751, z = 1, width = 6, height = 1 }, -- Rosewood Fire Station
@@ -805,6 +812,8 @@ if SandboxVars.STR.LootZones and SandboxVars.STR.CustomZones then
 		{ name = "FireDeptLVL", type = "LootZone", x = 13723, y = 1767, z = 0, width = 3, height = 1 }, -- Louisville Main FD Lockers
 		{ name = "FireDeptLVL", type = "LootZone", x = 13722, y = 1772, z = 0, width = 3, height = 1 }, -- Louisville Main FD Lockers
 
+		{ name = "FireDeptLVL", type = "LootZone", x = 13935, y = 3043, z = 0, width = 5, height = 4 }, -- Louisville Small FD Lockers
+
 		-- Meade County EMS
 		{ name = "MeadeEMSL", type = "LootZone", x = 8082, y = 11531, z = 0, width = 1, height = 2 }, -- Rosewood Medical Storage
 		{ name = "LouisvilleEMSL", type = "LootZone", x = 12417, y = 1753, z = 0, width = 1, height = 1 }, -- Louisville Medical Storage
@@ -926,6 +935,7 @@ if SandboxVars.STR.LootZones and SandboxVars.STR.CustomZones then
 		{ name = "FireDeptLV", type = "ZombiesType", x = 12349, y = 1741, z = 0, width = 23, height = 41 }, -- Louisville Slums FD
 		{ name = "FireDeptLV", type = "ZombiesType", x = 12349, y = 1741, z = 1, width = 23, height = 20 }, -- Louisville Slums FD
 		{ name = "FireDeptLV", type = "ZombiesType", x = 13661, y = 1767, z = 0, width = 76, height = 33 }, -- Louisville Main FD
+		{ name = "FireDeptLV", type = "ZombiesType", x = 13930, y = 3031, z = 0, width = 28, height = 27 }, -- Louisville Small FD
 		{ name = "FireDeptRW", type = "ZombiesType", x = 8125, y = 11731, z = 0, width = 39, height = 43 }, -- Rosewood Fire Station
 		{ name = "FireDeptRW", type = "ZombiesType", x = 8128, y = 11728, z = 1, width = 17, height = 23 }, -- Rosewood Fire Station
 		{ name = "FireDeptRW", type = "ZombiesType", x = 8128, y = 11751, z = 1, width = 6, height = 1 }, -- Rosewood Fire Station
@@ -1082,6 +1092,8 @@ if SandboxVars.STR.LootZones and SandboxVars.STR.CustomZones then
 		{ name = "FireDeptLVL", type = "LootZone", x = 13719, y = 1767, z = 0, width = 3, height = 1 }, -- Louisville Main FD Lockers
 		{ name = "FireDeptLVL", type = "LootZone", x = 13723, y = 1767, z = 0, width = 3, height = 1 }, -- Louisville Main FD Lockers
 		{ name = "FireDeptLVL", type = "LootZone", x = 13722, y = 1772, z = 0, width = 3, height = 1 }, -- Louisville Main FD Lockers
+
+		{ name = "FireDeptLVL", type = "LootZone", x = 13935, y = 3043, z = 0, width = 5, height = 4 }, -- Louisville Small FD Lockers
 
 		{ name = "FireDeptMCL", type = "LootZone", x = 7389, y = 8359, z = 0, width = 5, height = 1 }, -- New Ekron FD Lockers
 
