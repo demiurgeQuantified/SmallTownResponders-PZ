@@ -1,5 +1,9 @@
+if getActivatedMods():contains("SuperbSurvivors") then
 require "0_Utilities/SuperSurvivorSuitsUtilities"
 require "0_Utilities/SuperSurvivorSuitsRegistry"
+elseif getActivatedMods():contains("SuperbSurvivorsContinued") then
+	require "00_SuperbSurviorModVariables/SuperSurvivorsSuitsList"
+end
 
 -- this file is heavily modified
 -- For Coord-based spawns.
