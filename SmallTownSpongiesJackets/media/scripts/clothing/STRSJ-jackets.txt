@@ -148,7 +148,7 @@ module STR {
     item Jacket_Police_RosewoodOPEN
     {
         Type = Clothing,
-        DisplayName = Rosewood PD Jacket,
+        DisplayName = Rosewood SD Jacket,
         ClothingItem = Jacket_Police_RosewoodOPEN,
         BodyLocation = Jacket,
         Icon = Jacket_Police_Rosewood,

@@ -417,6 +417,9 @@ if getActivatedMods():contains("VVehicleEnhancer") and not getActivatedMods():co
 		AddVehicleSkin("CarLightsSheriff", ZoneName.RavenCreek, "Vehicles/vve/vehicle_ravencreek_vve");
 		AddVehicleSkin("CarLightsStatepolice", ZoneName.RavenCreek, "Vehicles/vve/vehicle_ravencreek_vve");
 		AddVehicleSkin("PickUpVanLightsPolice", ZoneName.RavenCreek, "Vehicles/vve/vehicle_pickup_ravencreek_vve");
+		AddVehicleSkin("VanAmbulance", ZoneName.RavenCreek, "Vehicles/vve/vehicle_van_ravencreekambulance_vve");
+		AddVehicleSkin("PickUpTruckLightsFire", ZoneName.RavenCreek, "Vehicles/vve/vehicle_pickuptruckfireshell_ravencreek_vve");
+		AddVehicleSkin("PickUpVanLightsFire", ZoneName.RavenCreek, "Vehicles/vve/vehicle_pickupfireshell_ravencreek_vve");
 
 	end
 	if getActivatedMods():contains("Tandil") then
