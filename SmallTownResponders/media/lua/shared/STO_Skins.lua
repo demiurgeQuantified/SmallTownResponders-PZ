@@ -203,7 +203,7 @@ if not getActivatedMods():contains("VVehicleEnhancer") and not getActivatedMods(
 
 	AddVehicleSkinOverride("VanSpecial", 2, "Vehicles/vehicle_van_uspsmailvan");
 
-	if getActivatedMods():contains("RavenCreek") then
+	if getActivatedMods():contains("RavenCreek") or getActivatedMods():contains("10YL_RC") then
 
 		AddVehicleSkin("CarLightsPolice", ZoneName.RavenCreek, "Vehicles/vehicle_ravencreekpolice");
 		AddVehicleSkin("PickUpVanLightsPolice", ZoneName.RavenCreek, "Vehicles/vehicle_pickup_ravencreekpolice");
@@ -313,7 +313,7 @@ if getActivatedMods():contains("FRUsedCars") then
 	AddVehicleSkin("85vicranger", ZoneName.Default, "Vehicles/vehicle_85crownvic_fishandwildlifeshell");
 	AddVehicleSkin("85vicranger", ZoneName.Default, "Vehicles/vehicle_85crownvic_stateparkrangershell");
 
-	if getActivatedMods():contains("RavenCreek") then
+	if getActivatedMods():contains("RavenCreek") or getActivatedMods():contains("10YL_RC") then
 
 		--	AddVehicleSkin("chevystepvanswat","Vehicles/vehicle_stepvanchevyravencreekpoliceshell");
 		AddVehicleSkin("85vicsheriff", ZoneName.RavenCreek, "Vehicles/vehicle_85crownvic_ravencreekpoliceshell");
@@ -411,7 +411,7 @@ if getActivatedMods():contains("VVehicleEnhancer") and not getActivatedMods():co
 
 	AddVehicleSkin("VanSpecial", 2, "Vehicles/vve/vehicle_van_uspsmailvan_vve");
 
-	if getActivatedMods():contains("RavenCreek") then
+	if getActivatedMods():contains("RavenCreek") or getActivatedMods():contains("10YL_RC") then
 
 		AddVehicleSkin("CarLightsPolice", ZoneName.RavenCreek, "Vehicles/vve/vehicle_ravencreek_vve");
 		AddVehicleSkin("CarLightsSheriff", ZoneName.RavenCreek, "Vehicles/vve/vehicle_ravencreek_vve");
@@ -428,6 +428,9 @@ if getActivatedMods():contains("VVehicleEnhancer") and not getActivatedMods():co
 		AddVehicleSkin("CarLightsSheriff", ZoneName.Tandil, "Vehicles/vve/vehicle_tandil_vve");
 		AddVehicleSkin("CarLightsStatepolice", ZoneName.Tandil, "Vehicles/vve/vehicle_tandil_vve");
 		AddVehicleSkin("PickUpVanLightsPolice", ZoneName.Tandil, "Vehicles/vve/vehicle_pickup_tandil_vve");
+		AddVehicleSkin("VanAmbulance", ZoneName.Tandil, "Vehicles/vve/vehicle_van_tandilambulance_vve");
+		AddVehicleSkin("PickUpTruckLightsFire", ZoneName.Tandil, "Vehicles/vve/vehicle_pickuptruckfireshell_tandil_vve");
+		AddVehicleSkin("PickUpVanLightsFire", ZoneName.Tandil, "Vehicles/vve/vehicle_pickupfireshell_tandil_vve");
 
 	end
 end

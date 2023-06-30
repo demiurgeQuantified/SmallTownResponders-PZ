@@ -2935,7 +2935,7 @@ local function STRVehicleDistro()
 
 	distributionTable["87gmcarmouredcar"] = { Normal = VehicleDistributions.BankTruck; }
 
-	if getActivatedMods():contains("RavenCreek") then
+	if getActivatedMods():contains("RavenCreek") or getActivatedMods():contains("10YL_RC") then
 
 		distributionTable[RCRPD[1]] = distributionTable["CarLightsPolice"]
 		distributionTable[RCRPD[2]] = distributionTable["CarLightsPolice"]

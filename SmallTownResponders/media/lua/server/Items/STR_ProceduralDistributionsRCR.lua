@@ -2,7 +2,7 @@ require 'Items/ProceduralDistributions'
 
 local function preDistributionMerge()
 
-	if SandboxVars.STR.LootZones and getActivatedMods():contains("RavenCreek") then
+	if SandboxVars.STR.LootZones and getActivatedMods():contains("RavenCreek") or getActivatedMods():contains("10YL_RC") then
 
 		if not SandboxVars.STR.DuffelLoot then
 

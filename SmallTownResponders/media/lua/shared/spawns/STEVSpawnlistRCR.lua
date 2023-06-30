@@ -98,7 +98,7 @@ local function STEVRCRSpawns()
 
 		end
 
-		if SandboxVars.STR.CustomVehicleZones and getActivatedMods():contains("RavenCreek") then
+		if SandboxVars.STR.CustomVehicleZones and getActivatedMods():contains("RavenCreek") or SandboxVars.STR.CustomVehicleZones and getActivatedMods():contains("10YL_RC") then
 
 			if getActivatedMods():contains("FRUsedCars") then
 
@@ -139,7 +139,7 @@ local function STEVRCRSpawns()
 			end
 		end
 
-		if not SandboxVars.STR.CustomVehicleZones and getActivatedMods():contains("RavenCreek") then
+		if not SandboxVars.STR.CustomVehicleZones and getActivatedMods():contains("RavenCreek") or not SandboxVars.STR.CustomVehicleZones and getActivatedMods():contains("10YL_RC") then
 
 			if getActivatedMods():contains("FRUsedCars") then
 

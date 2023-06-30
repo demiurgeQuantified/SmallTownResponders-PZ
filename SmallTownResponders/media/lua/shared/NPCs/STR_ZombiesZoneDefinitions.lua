@@ -36,7 +36,7 @@ local function STRSpawns()
 
 		ZombiesZoneDefinition = ZombiesZoneDefinition or {};
 
-		if getActivatedMods():contains("RavenCreek") then
+		if getActivatedMods():contains("RavenCreek") or getActivatedMods():contains("10YL_RC") then
 
 			if SandboxVars.STR.VestRavenCreek then
 
@@ -1621,7 +1621,7 @@ local function STRSpawns()
 			elseif not SandboxVars.STR.VestMeade then
 				table.insert(ZombiesZoneDefinition.MeadeSO,{name = "PoliceMeadeNoVest_Bag", chance=Duffel});
 			end
-			if getActivatedMods():contains("RavenCreek") then
+			if getActivatedMods():contains("RavenCreek") or getActivatedMods():contains("10YL_RC") then
 				if SandboxVars.STR.VestRavenCreek then
 					table.insert(ZombiesZoneDefinition.PoliceRavenCreek,{name = "PoliceRavenCreek_Bag", chance=Duffel});
 				elseif not SandboxVars.STR.VestRavenCreek then
@@ -1825,7 +1825,7 @@ local function STRSpawns()
 			table.insert(ZombiesZoneDefinition.JeffersonSDJail,{name = "SusceptiblePoliceJeffersonSD", chance=5});
 			table.insert(ZombiesZoneDefinition.JeffersonSDJail,{name = "SusceptibleInmateJefferson", chance=5, gender="male"});
 
-			if getActivatedMods():contains("RavenCreek") then
+			if getActivatedMods():contains("RavenCreek") or getActivatedMods():contains("10YL_RC") then
 				table.insert(ZombiesZoneDefinition.PoliceRavenCreek,{name = "SusceptiblePoliceRavenCreek", chance=5});
 			end
 			if getActivatedMods():contains("Tandil") then

@@ -16,6 +16,7 @@ ItemOverrides.itemSwaps = {
         Jefferson = {'STR.Hat_BaseballCap_EMS_Jefferson'},
         Meade = {'STR.Hat_BaseballCap_EMS_Meade'},
         RavenCreek = {'STR.Hat_BaseballCap_EMS_RavenCreek'},
+        Tandil = {'STR.Hat_BaseballCap_EMS_Tandil'},
         Default = false, -- don't override if not in one of these zones
     },
     ['STR.Hat_BaseballCap_EMS_Jefferson'] = { -- item to replace
@@ -23,6 +24,7 @@ ItemOverrides.itemSwaps = {
         Jefferson = {'STR.Hat_BaseballCap_EMS_Jefferson'},
         Meade = {'STR.Hat_BaseballCap_EMS_Meade'},
         RavenCreek = {'STR.Hat_BaseballCap_EMS_RavenCreek'},
+        Tandil = {'STR.Hat_BaseballCap_EMS_Tandil'},
         Default = false, -- don't override if not in one of these zones
     },
     ['STR.Hat_BaseballCap_EMS_Louisville'] = { -- item to replace
@@ -30,6 +32,7 @@ ItemOverrides.itemSwaps = {
         Jefferson = {'STR.Hat_BaseballCap_EMS_Jefferson'},
         Meade = {'STR.Hat_BaseballCap_EMS_Meade'},
         RavenCreek = {'STR.Hat_BaseballCap_EMS_RavenCreek'},
+        Tandil = {'STR.Hat_BaseballCap_EMS_Tandil'},
         Default = false, -- don't override if not in one of these zones
     },
     ['STR.Hat_BaseballCap_EMS_RavenCreek'] = { -- item to replace
@@ -37,6 +40,7 @@ ItemOverrides.itemSwaps = {
         Jefferson = {'STR.Hat_BaseballCap_EMS_Jefferson'},
         Meade = {'STR.Hat_BaseballCap_EMS_Meade'},
         RavenCreek = {'STR.Hat_BaseballCap_EMS_RavenCreek'},
+        Tandil = {'STR.Hat_BaseballCap_EMS_Tandil'},
         Default = false, -- don't override if not in one of these zones
     },
     ['STR.Jacket_EMS_Meade'] = { -- item to replace
@@ -44,6 +48,7 @@ ItemOverrides.itemSwaps = {
         Jefferson = {'STR.Jacket_EMS_Jefferson'},
         Meade = {'STR.Jacket_EMS_Meade'},
         RavenCreek = {'STR.Jacket_EMS_RavenCreek'},
+        Tandil = {'STR.Jacket_EMS_Tandil'},
         Default = false, -- don't override if not in one of these zones
     },
     ['STR.Jacket_EMS_Jefferson'] = { -- item to replace
@@ -51,6 +56,7 @@ ItemOverrides.itemSwaps = {
         Jefferson = {'STR.Jacket_EMS_Jefferson'},
         Meade = {'STR.Jacket_EMS_Meade'},
         RavenCreek = {'STR.Jacket_EMS_RavenCreek'},
+        Tandil = {'STR.Jacket_EMS_Tandil'},
         Default = false, -- don't override if not in one of these zones
     },
     ['STR.Jacket_EMS_Louisville'] = { -- item to replace
@@ -58,6 +64,7 @@ ItemOverrides.itemSwaps = {
         Jefferson = {'STR.Jacket_EMS_Jefferson'},
         Meade = {'STR.Jacket_EMS_Meade'},
         RavenCreek = {'STR.Jacket_EMS_RavenCreek'},
+        Tandil = {'STR.Jacket_EMS_Tandil'},
         Default = false, -- don't override if not in one of these zones
     },
     ['STR.Jacket_EMS_RavenCreek'] = { -- item to replace
@@ -65,6 +72,7 @@ ItemOverrides.itemSwaps = {
         Jefferson = {'STR.Jacket_EMS_Jefferson'},
         Meade = {'STR.Jacket_EMS_Meade'},
         RavenCreek = {'STR.Jacket_EMS_RavenCreek'},
+        Tandil = {'STR.Jacket_EMS_Tandil'},
         Default = false, -- don't override if not in one of these zones
     },
     ['Base.Hat_Fireman'] = { -- item to replace
@@ -72,6 +80,7 @@ ItemOverrides.itemSwaps = {
         Rosewood = {'STR.Hat_Fireman_Rosewood_Black','STR.Hat_Fireman_Rosewood_Red','STR.Hat_Fireman_Rosewood_Yellow','STR.Hat_Fireman_Rosewood_White'},
         Meade = {'STR.Hat_Fireman_Meade_Black','STR.Hat_Fireman_Meade_Red','STR.Hat_Fireman_Meade_Yellow','STR.Hat_Fireman_Meade_White'},
         RavenCreek = {'STR.Hat_Fireman_RavenCreek_Black','STR.Hat_Fireman_RavenCreek_Red','STR.Hat_Fireman_RavenCreek_Yellow','STR.Hat_Fireman_RavenCreek_Blue'},
+        Tandil = {'STR.Hat_Fireman_Tandil_Black','STR.Hat_Fireman_Tandil_Red','STR.Hat_Fireman_Tandil_Yellow','STR.Hat_Fireman_Tandil_Blue'},
         Default = false, -- don't override if not in one of these zones
     },
     ['STR.Hat_Fireman_Meade_Black'] = { -- item to replace
@@ -79,6 +88,7 @@ ItemOverrides.itemSwaps = {
         Rosewood = {'STR.Hat_Fireman_Rosewood_Black'},
         Meade = {'STR.Hat_Fireman_Meade_Black'},
         RavenCreek = {'STR.Hat_Fireman_RavenCreek_Black'},
+        Tandil = {'STR.Hat_Fireman_Tandil_Black'},
         Default = false, -- don't override if not in one of these zones
     },
     ['STR.Hat_Fireman_Meade_Red'] = { -- item to replace
@@ -86,6 +96,7 @@ ItemOverrides.itemSwaps = {
         Rosewood = {'STR.Hat_Fireman_Rosewood_Red'},
         Meade = {'STR.Hat_Fireman_Meade_Red'},
         RavenCreek = {'STR.Hat_Fireman_RavenCreek_Red'},
+        Tandil = {'STR.Hat_Fireman_Tandil_Red'},
         Default = false, -- don't override if not in one of these zones
     },
     ['STR.Hat_Fireman_Meade_Yellow'] = { -- item to replace
@@ -93,6 +104,7 @@ ItemOverrides.itemSwaps = {
         Rosewood = {'STR.Hat_Fireman_Rosewood_Yellow'},
         Meade = {'STR.Hat_Fireman_Meade_Yellow'},
         RavenCreek = {'STR.Hat_Fireman_RavenCreek_Yellow'},
+        Tandil = {'STR.Hat_Fireman_Tandil_Yellow'},
         Default = false, -- don't override if not in one of these zones
     },
     ['STR.Hat_Fireman_Meade_White'] = { -- item to replace
@@ -100,6 +112,7 @@ ItemOverrides.itemSwaps = {
         Rosewood = {'STR.Hat_Fireman_Rosewood_White'},
         Meade = {'STR.Hat_Fireman_Meade_White'},
         RavenCreek = {'STR.Hat_Fireman_RavenCreek_Black'},
+        Tandil = {'STR.Hat_Fireman_Tandil_Black'},
         Default = false, -- don't override if not in one of these zones
     },
     ['STR.Hat_Fireman_Rosewood_Black'] = { -- item to replace
@@ -107,6 +120,7 @@ ItemOverrides.itemSwaps = {
         Rosewood = {'STR.Hat_Fireman_Rosewood_Black'},
         Meade = {'STR.Hat_Fireman_Meade_Black'},
         RavenCreek = {'STR.Hat_Fireman_RavenCreek_Black'},
+        Tandil = {'STR.Hat_Fireman_Tandil_Black'},
         Default = false, -- don't override if not in one of these zones
     },
     ['STR.Hat_Fireman_Rosewood_Red'] = { -- item to replace
@@ -114,6 +128,7 @@ ItemOverrides.itemSwaps = {
         Rosewood = {'STR.Hat_Fireman_Rosewood_Red'},
         Meade = {'STR.Hat_Fireman_Meade_Red'},
         RavenCreek = {'STR.Hat_Fireman_RavenCreek_Red'},
+        Tandil = {'STR.Hat_Fireman_Tandil_Red'},
         Default = false, -- don't override if not in one of these zones
     },
     ['STR.Hat_Fireman_Rosewood_Yellow'] = { -- item to replace
@@ -121,6 +136,7 @@ ItemOverrides.itemSwaps = {
         Rosewood = {'STR.Hat_Fireman_Rosewood_Yellow'},
         Meade = {'STR.Hat_Fireman_Meade_Yellow'},
         RavenCreek = {'STR.Hat_Fireman_RavenCreek_Yellow'},
+        Tandil = {'STR.Hat_Fireman_Tandil_Yellow'},
         Default = false, -- don't override if not in one of these zones
     },
     ['STR.Hat_Fireman_Rosewood_White'] = { -- item to replace
@@ -128,6 +144,7 @@ ItemOverrides.itemSwaps = {
         Rosewood = {'STR.Hat_Fireman_Rosewood_White'},
         Meade = {'STR.Hat_Fireman_Meade_White'},
         RavenCreek = {'STR.Hat_Fireman_RavenCreek_Black'},
+        Tandil = {'STR.Hat_Fireman_Tandil_Black'},
         Default = false, -- don't override if not in one of these zones
     },
     ['STR.Hat_Fireman_Louisville_Black'] = { -- item to replace
@@ -135,6 +152,7 @@ ItemOverrides.itemSwaps = {
         Rosewood = {'STR.Hat_Fireman_Rosewood_Black'},
         Meade = {'STR.Hat_Fireman_Meade_Black'},
         RavenCreek = {'STR.Hat_Fireman_RavenCreek_Black'},
+        Tandil = {'STR.Hat_Fireman_Tandil_Black'},
         Default = false, -- don't override if not in one of these zones
     },
     ['STR.Hat_Fireman_Louisville_Red'] = { -- item to replace
@@ -142,6 +160,7 @@ ItemOverrides.itemSwaps = {
         Rosewood = {'STR.Hat_Fireman_Rosewood_Red'},
         Meade = {'STR.Hat_Fireman_Meade_Red'},
         RavenCreek = {'STR.Hat_Fireman_RavenCreek_Red'},
+        Tandil = {'STR.Hat_Fireman_Tandil_Red'},
         Default = false, -- don't override if not in one of these zones
     },
     ['STR.Hat_Fireman_Louisville_Yellow'] = { -- item to replace
@@ -149,6 +168,7 @@ ItemOverrides.itemSwaps = {
         Rosewood = {'STR.Hat_Fireman_Rosewood_Yellow'},
         Meade = {'STR.Hat_Fireman_Meade_Yellow'},
         RavenCreek = {'STR.Hat_Fireman_RavenCreek_Yellow'},
+        Tandil = {'STR.Hat_Fireman_Tandil_Yellow'},
         Default = false, -- don't override if not in one of these zones
     },
     ['STR.Hat_Fireman_Louisville_White'] = { -- item to replace
@@ -156,6 +176,7 @@ ItemOverrides.itemSwaps = {
         Rosewood = {'STR.Hat_Fireman_Rosewood_White'},
         Meade = {'STR.Hat_Fireman_Meade_White'},
         RavenCreek = {'STR.Hat_Fireman_RavenCreek_Black'},
+        Tandil = {'STR.Hat_Fireman_Tandil_Black'},
         Default = false, -- don't override if not in one of these zones
     },
     ['STR.Hat_Fireman_RavenCreek_Black'] = { -- item to replace
@@ -163,6 +184,7 @@ ItemOverrides.itemSwaps = {
         Rosewood = {'STR.Hat_Fireman_Rosewood_Black'},
         Meade = {'STR.Hat_Fireman_Meade_Black'},
         RavenCreek = {'STR.Hat_Fireman_RavenCreek_Black'},
+        Tandil = {'STR.Hat_Fireman_Tandil_Black'},
         Default = false, -- don't override if not in one of these zones
     },
     ['STR.Hat_Fireman_RavenCreek_Red'] = { -- item to replace
@@ -170,6 +192,7 @@ ItemOverrides.itemSwaps = {
         Rosewood = {'STR.Hat_Fireman_Rosewood_Red'},
         Meade = {'STR.Hat_Fireman_Meade_Red'},
         RavenCreek = {'STR.Hat_Fireman_RavenCreek_Red'},
+        Tandil = {'STR.Hat_Fireman_Tandil_Red'},
         Default = false, -- don't override if not in one of these zones
     },
     ['STR.Hat_Fireman_RavenCreek_Yellow'] = { -- item to replace
@@ -177,6 +200,7 @@ ItemOverrides.itemSwaps = {
         Rosewood = {'STR.Hat_Fireman_Rosewood_Yellow'},
         Meade = {'STR.Hat_Fireman_Meade_Yellow'},
         RavenCreek = {'STR.Hat_Fireman_RavenCreek_Yellow'},
+        Tandil = {'STR.Hat_Fireman_Tandil_Yellow'},
         Default = false, -- don't override if not in one of these zones
     },
     ['STR.Hat_Fireman_RavenCreek_White'] = { -- item to replace
@@ -184,6 +208,7 @@ ItemOverrides.itemSwaps = {
         Rosewood = {'STR.Hat_Fireman_Rosewood_White'},
         Meade = {'STR.Hat_Fireman_Meade_White'},
         RavenCreek = {'STR.Hat_Fireman_RavenCreek_Black'},
+        Tandil = {'STR.Hat_Fireman_Tandil_Black'},
         Default = false, -- don't override if not in one of these zones
     },
     ['Base.Jacket_Fireman'] = { -- item to replace
@@ -191,6 +216,7 @@ ItemOverrides.itemSwaps = {
         Rosewood = {'STR.Jacket_Fireman_Rosewood_Black','STR.Jacket_Fireman_Rosewood_Khaki'},
         Meade = {'STR.Jacket_Fireman_Meade_Black','STR.Jacket_Fireman_Meade_Khaki'},
         RavenCreek = {'STR.Jacket_Fireman_RavenCreek_Black','STR.Jacket_Fireman_RavenCreek_Khaki'},
+        Tandil = {'STR.Jacket_Fireman_Tandil_Black','STR.Jacket_Fireman_Tandil_Khaki'},
         Default = false, -- don't override if not in one of these zones
     },
     ['STR.Jacket_Fireman_Meade_Black'] = { -- item to replace
@@ -198,6 +224,7 @@ ItemOverrides.itemSwaps = {
         Rosewood = {'STR.Jacket_Fireman_Rosewood_Black'},
         Meade = {'STR.Jacket_Fireman_Meade_Black'},
         RavenCreek = {'STR.Jacket_Fireman_RavenCreek_Black'},
+        Tandil = {'STR.Jacket_Fireman_Tandil_Black'},
         Default = false, -- don't override if not in one of these zones
     },
     ['STR.Jacket_Fireman_Meade_Khaki'] = { -- item to replace
@@ -205,6 +232,7 @@ ItemOverrides.itemSwaps = {
         Rosewood = {'STR.Jacket_Fireman_Rosewood_Khaki'},
         Meade = {'STR.Jacket_Fireman_Meade_Khaki'},
         RavenCreek = {'STR.Jacket_Fireman_RavenCreek_Khaki'},
+        Tandil = {'STR.Jacket_Fireman_Tandil_Khaki'},
         Default = false, -- don't override if not in one of these zones
     },
     ['STR.Jacket_Fireman_Rosewood_Black'] = { -- item to replace
@@ -212,6 +240,7 @@ ItemOverrides.itemSwaps = {
         Rosewood = {'STR.Jacket_Fireman_Rosewood_Black'},
         Meade = {'STR.Jacket_Fireman_Meade_Black'},
         RavenCreek = {'STR.Jacket_Fireman_RavenCreek_Black'},
+        Tandil = {'STR.Jacket_Fireman_Tandil_Black'},
         Default = false, -- don't override if not in one of these zones
     },
     ['STR.Jacket_Fireman_Rosewood_Khaki'] = { -- item to replace
@@ -219,6 +248,7 @@ ItemOverrides.itemSwaps = {
         Rosewood = {'STR.Jacket_Fireman_Rosewood_Khaki'},
         Meade = {'STR.Jacket_Fireman_Meade_Khaki'},
         RavenCreek = {'STR.Jacket_Fireman_RavenCreek_Khaki'},
+        Tandil = {'STR.Jacket_Fireman_Tandil_Khaki'},
         Default = false, -- don't override if not in one of these zones
     },
     ['STR.Jacket_Fireman_Louisville_Black'] = { -- item to replace
@@ -226,6 +256,7 @@ ItemOverrides.itemSwaps = {
         Rosewood = {'STR.Jacket_Fireman_Rosewood_Black'},
         Meade = {'STR.Jacket_Fireman_Meade_Black'},
         RavenCreek = {'STR.Jacket_Fireman_RavenCreek_Black'},
+        Tandil = {'STR.Jacket_Fireman_Tandil_Black'},
         Default = false, -- don't override if not in one of these zones
     },
     ['STR.Jacket_Fireman_Louisville_Khaki'] = { -- item to replace
@@ -233,6 +264,7 @@ ItemOverrides.itemSwaps = {
         Rosewood = {'STR.Jacket_Fireman_Rosewood_Khaki'},
         Meade = {'STR.Jacket_Fireman_Meade_Khaki'},
         RavenCreek = {'STR.Jacket_Fireman_RavenCreek_Khaki'},
+        Tandil = {'STR.Jacket_Fireman_Tandil_Khaki'},
         Default = false, -- don't override if not in one of these zones
     },
     ['STR.Jacket_Fireman_RavenCreek_Black'] = { -- item to replace
@@ -240,6 +272,7 @@ ItemOverrides.itemSwaps = {
         Rosewood = {'STR.Jacket_Fireman_Rosewood_Black'},
         Meade = {'STR.Jacket_Fireman_Meade_Black'},
         RavenCreek = {'STR.Jacket_Fireman_RavenCreek_Black'},
+        Tandil = {'STR.Jacket_Fireman_Tandil_Black'},
         Default = false, -- don't override if not in one of these zones
     },
     ['STR.Jacket_Fireman_RavenCreek_Khaki'] = { -- item to replace
@@ -247,6 +280,7 @@ ItemOverrides.itemSwaps = {
         Rosewood = {'STR.Jacket_Fireman_Rosewood_Khaki'},
         Meade = {'STR.Jacket_Fireman_Meade_Khaki'},
         RavenCreek = {'STR.Jacket_Fireman_RavenCreek_Khaki'},
+        Tandil = {'STR.Jacket_Fireman_Tandil_Khaki'},
         Default = false, -- don't override if not in one of these zones
     },
     ['Base.Trousers_Fireman'] = { -- item to replace
@@ -254,6 +288,7 @@ ItemOverrides.itemSwaps = {
         Rosewood = {'STR.Trousers_Fireman_Rosewood_Black','STR.Trousers_Fireman_Rosewood_Khaki'},
         Meade = {'STR.Trousers_Fireman_Meade_Black','STR.Trousers_Fireman_Meade_Khaki'},
         RavenCreek = {'STR.Trousers_Fireman_RavenCreek_Black','STR.Trousers_Fireman_RavenCreek_Khaki'},
+        Tandil = {'STR.Trousers_Fireman_Tandil_Black','STR.Trousers_Fireman_Tandil_Khaki'},
         Default = false, -- don't override if not in one of these zones
     },
     ['STR.Trousers_Fireman_Meade_Black'] = { -- item to replace
@@ -261,6 +296,7 @@ ItemOverrides.itemSwaps = {
         Rosewood = {'STR.Trousers_Fireman_Rosewood_Black'},
         Meade = {'STR.Trousers_Fireman_Meade_Black'},
         RavenCreek = {'STR.Trousers_Fireman_RavenCreek_Black'},
+        Tandil = {'STR.Trousers_Fireman_Tandil_Black'},
         Default = false, -- don't override if not in one of these zones
     },
     ['STR.Trousers_Fireman_Meade_Khaki'] = { -- item to replace
@@ -268,6 +304,7 @@ ItemOverrides.itemSwaps = {
         Rosewood = {'STR.Trousers_Fireman_Rosewood_Khaki'},
         Meade = {'STR.Trousers_Fireman_Meade_Khaki'},
         RavenCreek = {'STR.Trousers_Fireman_RavenCreek_Khaki'},
+        Tandil = {'STR.Trousers_Fireman_Tandil_Khaki'},
         Default = false, -- don't override if not in one of these zones
     },
     ['STR.Trousers_Fireman_Rosewood_Black'] = { -- item to replace
@@ -275,6 +312,7 @@ ItemOverrides.itemSwaps = {
         Rosewood = {'STR.Trousers_Fireman_Rosewood_Black'},
         Meade = {'STR.Trousers_Fireman_Meade_Black'},
         RavenCreek = {'STR.Trousers_Fireman_RavenCreek_Black'},
+        Tandil = {'STR.Trousers_Fireman_Tandil_Black'},
         Default = false, -- don't override if not in one of these zones
     },
     ['STR.Trousers_Fireman_Rosewood_Khaki'] = { -- item to replace
@@ -282,6 +320,7 @@ ItemOverrides.itemSwaps = {
         Rosewood = {'STR.Trousers_Fireman_Rosewood_Khaki'},
         Meade = {'STR.Trousers_Fireman_Meade_Khaki'},
         RavenCreek = {'STR.Trousers_Fireman_RavenCreek_Khaki'},
+        Tandil = {'STR.Trousers_Fireman_Tandil_Khaki'},
         Default = false, -- don't override if not in one of these zones
     },
     ['STR.Trousers_Fireman_Louisville_Black'] = { -- item to replace
@@ -289,6 +328,7 @@ ItemOverrides.itemSwaps = {
         Rosewood = {'STR.Trousers_Fireman_Rosewood_Black'},
         Meade = {'STR.Trousers_Fireman_Meade_Black'},
         RavenCreek = {'STR.Trousers_Fireman_RavenCreek_Black'},
+        Tandil = {'STR.Trousers_Fireman_Tandil_Black'},
         Default = false, -- don't override if not in one of these zones
     },
     ['STR.Trousers_Fireman_Louisville_Khaki'] = { -- item to replace
@@ -296,6 +336,7 @@ ItemOverrides.itemSwaps = {
         Rosewood = {'STR.Trousers_Fireman_Rosewood_Khaki'},
         Meade = {'STR.Trousers_Fireman_Meade_Khaki'},
         RavenCreek = {'STR.Trousers_Fireman_RavenCreek_Khaki'},
+        Tandil = {'STR.Trousers_Fireman_Tandil_Khaki'},
         Default = false, -- don't override if not in one of these zones
     },
     ['STR.Trousers_Fireman_RavenCreek_Black'] = { -- item to replace
@@ -303,6 +344,7 @@ ItemOverrides.itemSwaps = {
         Rosewood = {'STR.Trousers_Fireman_Rosewood_Black'},
         Meade = {'STR.Trousers_Fireman_Meade_Black'},
         RavenCreek = {'STR.Trousers_Fireman_RavenCreek_Black'},
+        Tandil = {'STR.Trousers_Fireman_Tandil_Black'},
         Default = false, -- don't override if not in one of these zones
     },
     ['STR.Trousers_Fireman_RavenCreek_Khaki'] = { -- item to replace
@@ -310,6 +352,7 @@ ItemOverrides.itemSwaps = {
         Rosewood = {'STR.Trousers_Fireman_Rosewood_Khaki'},
         Meade = {'STR.Trousers_Fireman_Meade_Khaki'},
         RavenCreek = {'STR.Trousers_Fireman_RavenCreek_Khaki'},
+        Tandil = {'STR.Trousers_Fireman_Tandil_Khaki'},
         Default = false, -- don't override if not in one of these zones
     },
 }

@@ -43,7 +43,7 @@ function Overrides.getZone(x,y,zones)
 end
 
 function Overrides.setSandboxVariables()
-    if getActivatedMods():contains('RavenCreek') then
+    if getActivatedMods():contains('RavenCreek') or getActivatedMods():contains("10YL_RC") then
         Overrides.zonesGeneric.RavenCreek = {x1=3000,x2=5500,y1=11001,y2=13500}
         Overrides.zonesPolice.RavenCreek = Overrides.zonesGeneric.RavenCreek
     else

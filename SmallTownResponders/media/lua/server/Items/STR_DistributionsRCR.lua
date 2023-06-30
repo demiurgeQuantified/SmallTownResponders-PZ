@@ -4,7 +4,7 @@ require 'Items/STR_Distributions'
 Distributions = Distributions or {};
 
 -- Check if the custom loot zones are enabled in sandbox options
-if SandboxVars.STR.LootZones and getActivatedMods():contains("RavenCreek") then
+if SandboxVars.STR.LootZones and getActivatedMods():contains("RavenCreek") or SandboxVars.STR.LootZones and getActivatedMods():contains("10YL_RC") then
 
 	local STRdistributionTable = {
 
