@@ -369,7 +369,7 @@ ItemOverrides.overrideContainer = function(container, policeZones)
 
     local items = container:getItems()
     local getItem = items.get
-    for i=0,items:size()-1 do
+    for i = items:size()-1, 0, -1 do
         local item = getItem(items, i)
 
         local itemType = item:getFullType()
