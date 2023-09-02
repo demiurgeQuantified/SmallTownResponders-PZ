@@ -379,12 +379,14 @@ ItemOverrides.overrideContainer = function(container, policeZones)
                 newType = ItemOverrides.itemSwaps[itemType].Default
             end
 
-            if newType then
+            if newType ~= nil then
                 if type(newType) == 'table' then
                     newType = newType[ZombRand(#newType)+1]
                 end
                 container:Remove(item)
-                container:AddItem(newType)
+                if newType then
+                    container:AddItem(newType)
+                end
             end
         end
     end
