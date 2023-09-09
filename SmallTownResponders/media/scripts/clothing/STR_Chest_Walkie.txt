@@ -7,7 +7,7 @@ module STR {
 	{
 	    DisplayCategory = Accessory,
 		Type = Clothing,
-		DisplayName = Security Receiver,
+		DisplayName = Shoulder Microphone,
 		ClothingItem = Chest_Walkie,
 		BodyLocation = ChestWalkie,
 		Weight	=	0.5,

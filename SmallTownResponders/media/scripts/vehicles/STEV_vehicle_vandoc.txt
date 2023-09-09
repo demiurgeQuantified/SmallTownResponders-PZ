@@ -447,7 +447,7 @@ module Base
 			}
 		}
 
-		template = Radio,
+		template = Radio_HAM,
 		template = Headlight,
 
 		attachment trailer
@@ -911,7 +911,7 @@ module Base
 			}
 		}
 
-		template = Radio,
+		template = Radio_HAM,
 		template = Headlight,
 
 		attachment trailer
@@ -937,19 +937,19 @@ module Base
 
 		model
 		{
-			file = Vehicles_Van,
+			file = Vehicles_VanSeats,
 			scale = 1.8200,
 			offset = 0.0000 0.3681 0.0000,
 		}
 
-		spawnOffsetY = 0.22553767,
+		spawnOffsetY = 0.36803335,
 
 		skin
 		{
 			texture = Vehicles/vehicle_van_jeffersondoc,
 		}
 
-		textureMask = Vehicles/vehicle_van_mask,
+		textureMask = Vehicles/vehicle_vanseats_mask,
 		textureLights = Vehicles/vehicle_van_lights,
 		textureDamage1Overlay = Vehicles/Veh_Blood_Mask,
 		textureDamage2Overlay = Vehicles/Veh_Blood_Hvy,
@@ -967,34 +967,34 @@ module Base
 		}
 
 		extents = 0.9341 0.7253 2.3297,
-		mass = 816,
+		mass = 916,
 		physicsChassisShape = 0.9341 0.7253 2.3297,
-		centerOfMassOffset = 0.0000 0.3626 0.0000,
-		extentsOffset = 0.5 0.5,
-		engineForce = 3700,
+		centerOfMassOffset = 0.0000 0.3681 0.0000,
+		extentsOffset = 0.8 0.8,
+		engineForce = 2600,
 		engineQuality = 70,
 		engineLoudness = 100,
-		maxSpeed = 65f,
-		brakingForce = 70,
-		stoppingMovementForce = 5.0f,
-		rollInfluence = 0.7f,
+		maxSpeed = 60f,
+		brakingForce = 67,
+		stoppingMovementForce = 6.0f,
+		rollInfluence = 0.5f,
 		steeringIncrement = 0.03,
 		steeringClamp = 0.3,
-		suspensionStiffness = 30,
+		suspensionStiffness = 50,
 		suspensionCompression = 3.83,
 		suspensionDamping = 2.88,
 		maxSuspensionTravelCm = 10,
 		suspensionRestLength = 0.2,
-		wheelFriction = 1.4f,
+		wheelFriction = 1.5f,
 		frontEndHealth = 150,
 		rearEndHealth = 150,
-		seats = 2,
+		seats = 6,
 		isSmallVehicle = false,
 
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 0.3791 -0.4121 0.8681,
+			offset = 0.3791 -0.3956 0.8681,
 			radius = 0.15f,
 			width = 0.2f,
 		}
@@ -1002,7 +1002,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = -0.3791 -0.4121 0.8681,
+			offset = -0.3791 -0.3956 0.8681,
 			radius = 0.15f,
 			width = 0.2f,
 		}
@@ -1010,7 +1010,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = 0.3791 -0.4121 -0.5385,
+			offset = 0.3791 -0.3956 -0.5385,
 			radius = 0.15f,
 			width = 0.2f,
 		}
@@ -1018,58 +1018,100 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = -0.3791 -0.4121 -0.5385,
+			offset = -0.3791 -0.3956 -0.5385,
 			radius = 0.15f,
 			width = 0.2f,
 		}
 
-		template = PassengerSeat2,
+		template = PassengerSeat6,
 
 		passenger FrontLeft
 		{
-			door2 = DoorRear,
-
 			position inside
 			{
-				offset = 0.1923 -0.0989 0.4231,
+				offset = 0.1923 -0.1044 0.4176,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 0.6044 -0.4725 0.4670,
+				offset = 0.6044 -0.4670 0.4011,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
-			}
-
-			position outside2
-			{
-				offset = 0.0000 -0.4725 -1.5989,
-				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
 		passenger FrontRight
 		{
-			door2 = DoorRear,
-
 			position inside
 			{
-				offset = -0.1923 -0.0989 0.4231,
+				offset = -0.1923 -0.1044 0.4176,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -0.6044 -0.4725 0.4670,
+				offset = -0.6044 -0.4670 0.4011,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
+		}
 
-			position outside2
+		passenger MiddleLeft
+		{
+			position inside
 			{
-				offset = 0.0000 -0.4725 -1.5989,
+				offset = 0.1923 -0.1044 -0.0549,
 				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 0.5989 -0.4670 -0.0659,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatMiddleLeft,
+			}
+		}
+
+		passenger MiddleRight
+		{
+			position inside
+			{
+				offset = -0.1923 -0.1044 -0.0549,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -0.5989 -0.4670 -0.0659,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatMiddleRight,
+			}
+		}
+
+		passenger RearLeft
+		{
+			position inside
+			{
+				offset = 0.1923 -0.1044 -0.5824,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+			}
+		}
+
+		passenger RearRight
+		{
+			position inside
+			{
+				offset = -0.1923 -0.1044 -0.5824,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
 			}
 		}
 
@@ -1085,51 +1127,72 @@ module Base
 
 		area SeatFrontLeft
 		{
-			xywh = 0.6813 0.4670 0.4725 0.4725,
+			xywh = 0.6978 0.4011 0.4725 0.4725,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -0.6813 0.4670 0.4725 0.4725,
+			xywh = -0.6978 0.4011 0.4725 0.4725,
+		}
+
+		area SeatMiddleLeft
+		{
+			xywh = 0.6978 -0.0659 0.4725 0.4725,
+		}
+
+		area SeatMiddleRight
+		{
+			xywh = -0.6978 -0.0659 0.4725 0.4725,
+		}
+
+		area SeatRearRight
+		{
+			xywh = -0.6978 -0.6978 0.4725 0.4725,
+		}
+
+		area SeatRearLeft
+		{
+			xywh = 0.6978 -0.6978 0.4725 0.4725,
 		}
 
 		area GasTank
 		{
-			xywh = 0.6813 -0.5385 0.4725 0.4725,
+			xywh = 0.6978 -0.6978 0.4725 0.4725,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 0.6813 0.8681 0.4725 0.4725,
+			xywh = 0.6978 0.8681 0.4725 0.4725,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -0.6813 0.8681 0.4725 0.4725,
+			xywh = -0.6978 0.8681 0.4725 0.4725,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 0.6813 -0.5385 0.4725 0.4725,
+			xywh = 0.6978 -0.5385 0.4725 0.4725,
 		}
 
 		area TireRearRight
 		{
-			xywh = -0.6813 -0.5385 0.4725 0.4725,
+			xywh = -0.6978 -0.5385 0.4725 0.4725,
 		}
 
 		template = Trunk/part/TruckBed,
 
 		part TruckBed
-        {
-            container
-            {
-                capacity = 130,
-            }
-        }
+		{
+			itemType = Base.VanSeatsTrunk,
+		}
 
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
+		template = Seat/part/SeatMiddleLeft,
+		template = Seat/part/SeatMiddleRight,
+		template = Seat/part/SeatRearLeft,
+		template = Seat/part/SeatRearRight,
 
 		part SeatRear*
 		{
@@ -1257,6 +1320,8 @@ module Base
 
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
+		template = Window/part/WindowMiddleLeft,
+		template = Window/part/WindowMiddleRight,
 
 		part Window*
 		{
@@ -1273,6 +1338,8 @@ module Base
 
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
+		template = Door/part/DoorMiddleLeft,
+		template = Door/part/DoorMiddleRight,
 		template = Door/part/DoorRear,
 
 		part Door*
@@ -1331,13 +1398,6 @@ module Base
 			}
 
 			hasLightsRear = true,
-
-			lua
-			{
-				create = Vehicles.Create.TrunkDoor,
-				update = Vehicles.Update.TrunkDoor,
-				use = Vehicles.Use.TrunkDoor,
-			}
 		}
 
 		template = Tire,
@@ -1375,12 +1435,12 @@ module Base
 			}
 		}
 
-		template = Radio,
+		template = Radio_HAM,
 		template = Headlight,
 
 		attachment trailer
 		{
-			offset = 0.0000 -0.2747 -1.1703,
+			offset = 0.0000 -0.2747 -1.2033,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1,
 		}

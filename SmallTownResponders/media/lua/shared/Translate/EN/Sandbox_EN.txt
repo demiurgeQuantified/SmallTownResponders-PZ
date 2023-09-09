@@ -6,7 +6,7 @@ Sandbox_EN = {
 	Sandbox_STR_CustomZones_tooltip = "Enable this to use STFR's custom zombie zones.",
 
 	Sandbox_STR_LootZones = "Use STFR Loot Zones",
-	Sandbox_STR_LootZones_tooltip = "Enable this to use STFR's custom container overrides.",
+	Sandbox_STR_LootZones_tooltip = "CURRENTLY BROKEN! Don't touch!",
 
 	Sandbox_STR_CustomVehicleZones = "Use Custom Vehicle Zones",
 	Sandbox_STR_CustomVehicleZones_tooltip = "Enable this to use STFR's custom vehicle zones.",
@@ -27,7 +27,7 @@ Sandbox_EN = {
 	Sandbox_STR_VehicleOverrides_tooltip = "Enable this to override vanilla and Filibuster Rhymes police/fire/ems/prison vehicles.",
 
 	Sandbox_STR_DuffelLoot = "Enable Duffel Bags",
-	Sandbox_STR_DuffelLoot_tooltip = "Enable this to allow STFR's custom duffel bags to spawn.",
+	Sandbox_STR_DuffelLoot_tooltip = "CURRENTLY BROKEN! Don't touch!",
 
 	Sandbox_STR_VestRosewood = "Allow Rosewood SD Vests",
 	Sandbox_STR_VestRosewood_tooltip = "Enable this for bulletproof vests on Rosewood SD zombies",

@@ -239,7 +239,7 @@ if getActivatedMods():contains("FRUsedCars") then
 	SetRadioType("86econolineambulance","Radio_HAM");
 	SetRadioType("80f350ambulance","Radio_HAM");
 
-	-- SetPoliceVehicle("chevystepvanswat")
+	SetPoliceVehicle("chevystepvanswat")
 
 	SetPoliceVehicle("85vicsheriff")
 	AddVehicleSkin("85vicsheriff", ZoneName.KSP, "Vehicles/vehicle_85crownvic_kentuckystatepoliceshell");
@@ -315,7 +315,7 @@ if getActivatedMods():contains("FRUsedCars") then
 
 	if getActivatedMods():contains("RavenCreek") or getActivatedMods():contains("10YL_RC") then
 
-		--	AddVehicleSkin("chevystepvanswat","Vehicles/vehicle_stepvanchevyravencreekpoliceshell");
+		AddVehicleSkin("chevystepvanswat", ZoneName.RavenCreek, "Vehicles/vehicle_stepvanchevyravencreekpoliceshell");
 		AddVehicleSkin("85vicsheriff", ZoneName.RavenCreek, "Vehicles/vehicle_85crownvic_ravencreekpoliceshell");
 		AddVehicleSkin("92crownvicPD", ZoneName.RavenCreek, "Vehicles/vehicle_92crownvic_ravencreekpoliceshell");
 		AddVehicleSkin("91blazerpd", ZoneName.RavenCreek, "Vehicles/vehicle_blazer_ravencreekpoliceshell");
@@ -328,7 +328,7 @@ if getActivatedMods():contains("FRUsedCars") then
 	end
 	if getActivatedMods():contains("Tandil") then
 
-		--	AddVehicleSkin("chevystepvanswat","Vehicles/vehicle_stepvanchevyravencreekpoliceshell");
+		--	AddVehicleSkin("chevystepvanswat", ZoneName.Tandil, "Vehicles/vehicle_stepvanchevyravencreekpoliceshell");
 		AddVehicleSkin("85vicsheriff", ZoneName.Tandil, "Vehicles/vehicle_85crownvic_tandilpoliceshell");
 		AddVehicleSkin("92crownvicPD", ZoneName.Tandil, "Vehicles/vehicle_92crownvic_tandilpoliceshell");
 		AddVehicleSkin("91blazerpd", ZoneName.Tandil, "Vehicles/vehicle_blazer_tandilpoliceshell");
@@ -409,7 +409,12 @@ if getActivatedMods():contains("VVehicleEnhancer") and not getActivatedMods():co
 	AddVehicleSkin("CarLights", ZoneName.Default, "Vehicles/vve/vehicle_carnormal_nationalparkservice_vve");
 	AddVehicleSkin("StepVanMail", ZoneName.Default, "Vehicles/vehicle_stepvan_uspsmailshell");
 
-	AddVehicleSkin("VanSpecial", 2, "Vehicles/vve/vehicle_van_uspsmailvan_vve");
+	AddVehicleSkinOverride("VanSpecial", 2, "Vehicles/vve/vehicle_van_uspsmailvan_vve");
+
+	AddVehicleSkinOverride("VanAmbulance_swat_louisville", 0, "Vehicles/vve/vehicle_van_louisvillepolice_vve");
+
+	AddVehicleSkinOverride("Van_meadedoc", 0, "Vehicles/vve/vehicle_van_meadedoc_vve");
+	AddVehicleSkinOverride("Van_jeffersondoc", 0, "Vehicles/vve/vehicle_van_jeffersondoc_vve");
 
 	if getActivatedMods():contains("RavenCreek") or getActivatedMods():contains("10YL_RC") then
 
@@ -420,6 +425,7 @@ if getActivatedMods():contains("VVehicleEnhancer") and not getActivatedMods():co
 		AddVehicleSkin("VanAmbulance", ZoneName.RavenCreek, "Vehicles/vve/vehicle_van_ravencreekambulance_vve");
 		AddVehicleSkin("PickUpTruckLightsFire", ZoneName.RavenCreek, "Vehicles/vve/vehicle_pickuptruckfireshell_ravencreek_vve");
 		AddVehicleSkin("PickUpVanLightsFire", ZoneName.RavenCreek, "Vehicles/vve/vehicle_pickupfireshell_ravencreek_vve");
+		AddVehicleSkinOverride("Van_ravencreekdoc", 0, "Vehicles/vve/vehicle_van_ravencreekdoc_vve");
 
 	end
 	if getActivatedMods():contains("Tandil") then

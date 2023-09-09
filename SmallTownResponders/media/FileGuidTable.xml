@@ -771,6 +771,62 @@
 
 
 	<files>
+		<path>media/clothing/clothingItems/Necklace_Badge_Police_Jefferson.xml</path>
+		<guid>0905c1dc-e784-4663-9f7c-f3b25023504b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Necklace_Badge_Sheriff_Jefferson.xml</path>
+		<guid>a13ad467-da22-4047-94a4-9e314f2375d9</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Necklace_Badge_Police_KSP.xml</path>
+		<guid>b3d7beda-6f70-4817-b0ed-6d74347e5472</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Necklace_Badge_Police_Louisville.xml</path>
+		<guid>e1429987-b369-4116-adf1-90313bae5530</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Necklace_Badge_Police_Meade.xml</path>
+		<guid>a9a11f59-38bb-4f46-8804-269af14177fc</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Necklace_Badge_Police_Muldraugh.xml</path>
+		<guid>339fcaf2-8299-4bfb-983f-a2a7a183c3ab</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Necklace_Badge_Police_Riverside.xml</path>
+		<guid>16239979-a143-41bc-92f8-16541e20293e</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Necklace_Badge_Police_Rosewood.xml</path>
+		<guid>b5885428-95a7-4807-948a-c74f502faad1</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Necklace_Badge_Police_WestPoint.xml</path>
+		<guid>0ca49b8b-79ea-44c0-b33c-4528ae002757</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Necklace_Badge_Police_Tandil.xml</path>
+		<guid>82f7c0b8-3c79-44f8-bfcd-8937d9aa424e</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Necklace_Badge_Police_RavenCreek.xml</path>
+		<guid>1b0028bd-2eb9-441e-a4cf-e8ed49f56bf9</guid>
+	</files>
+
+
+	<files>
 		<path>media/clothing/clothingItems/Bag_Satchel_USPS.xml</path>
 		<guid>8516d77d-fd15-4802-bb0f-95a6d7d164d6</guid>
 	</files>
@@ -2090,6 +2146,27 @@
 	<files>
 		<path>media/clothing/clothingItems/Boilersuit_RavenCreekPrisoner.xml</path>
 		<guid>d901ad11-bcff-4adb-869e-efba039fdba2</guid>
+	</files>
+
+
+	<files>
+		<path>media/clothing/clothingItems/Vest_HighViz_KSP.xml</path>
+		<guid>621d5303-e309-49a6-bca5-d4a6e7fe83c1</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Vest_HighViz_Police_Yellow.xml</path>
+		<guid>b7ceaea2-5950-4695-94ce-54a467b1f798</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Vest_HighViz_Police_Green.xml</path>
+		<guid>3615f849-4814-400e-8399-d5404a27d800</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Vest_HighViz_Police_Green_Unmarked.xml</path>
+		<guid>516aa053-c0df-4da3-977e-11701c95b422</guid>
 	</files>
 
 

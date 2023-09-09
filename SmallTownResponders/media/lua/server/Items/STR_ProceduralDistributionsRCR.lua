@@ -1,6 +1,6 @@
 require 'Items/ProceduralDistributions'
 
-local function preDistributionMerge()
+local function preDistributionMergeBROKEN()
 
 	if SandboxVars.STR.LootZones and getActivatedMods():contains("RavenCreek") or getActivatedMods():contains("10YL_RC") then
 
@@ -107,6 +107,8 @@ local function preDistributionMerge()
 					"STR.Shirt_Police_RavenCreek", 10,
 					"STR.TShirt_Police_RavenCreek", 10,
 					"STR.Trousers_Police_RavenCreek", 8,
+					"STR.Tie_Full_Police_RavenCreek", 2,
+					"STR.Tie_Worn_Police_RavenCreek", 2,
 					"STR.Belt_PoliceDuty", 2,
 					"STR.Chest_Walkie", 2,
 					"Vest_BulletPolice", 1,
@@ -180,6 +182,8 @@ local function preDistributionMerge()
 					"STR.Jacket_Fireman_RavenCreek_Khaki", 4,
 					"STR.Trousers_Fireman_RavenCreek_Black", 6,
 					"STR.Trousers_Fireman_RavenCreek_Khaki", 6,
+					"STR.Tie_Full_Fire_RavenCreek", 2,
+					"STR.Tie_Worn_Fire_RavenCreek", 2,
 					"STR.TShirt_Profession_FiremanBlue_RavenCreek", 6,
 					"STR.TShirt_Profession_FiremanRed_RavenCreek", 6,
 					"STR.TShirt_Profession_FiremanRed_RavenCreek02", 6,
@@ -192,10 +196,15 @@ local function preDistributionMerge()
 					}
 				}
 			}
+		end
+	end
+end
+local function preDistributionMerge()
 
-		elseif SandboxVars.STR.DuffelLoot then
+	if getActivatedMods():contains("RavenCreek") or getActivatedMods():contains("10YL_RC") then
+		--elseif SandboxVars.STR.DuffelLoot then
 
-			ProceduralDistributions.list.LaundryInmateLouisville = {
+			ProceduralDistributions.list.LaundryInmateRavenCreek = {
 				rolls = 1,
 				items = {
 					"STR.Boilersuit_RavenCreekPrisoner", 50,
@@ -298,7 +307,11 @@ local function preDistributionMerge()
 					"STR.Jacket_Police_RavenCreek", 4,
 					"STR.Shirt_Police_RavenCreek", 10,
 					"STR.TShirt_Police_RavenCreek", 10,
+					"STR.Necklace_Badge_Police_RavenCreek", 8,
+					"STR.Necklace_Badge_Police_RavenCreek", 8,
 					"STR.Trousers_Police_RavenCreek", 8,
+					"STR.Tie_Full_Police_RavenCreek", 2,
+					"STR.Tie_Worn_Police_RavenCreek", 2,
 					"STR.Belt_PoliceDuty", 2,
 					"STR.Chest_Walkie", 2,
 					"Vest_BulletPolice", 1,
@@ -374,6 +387,8 @@ local function preDistributionMerge()
 					"STR.Jacket_Fireman_RavenCreek_Khaki", 4,
 					"STR.Trousers_Fireman_RavenCreek_Black", 6,
 					"STR.Trousers_Fireman_RavenCreek_Khaki", 6,
+					"STR.Tie_Full_Fire_RavenCreek", 2,
+					"STR.Tie_Worn_Fire_RavenCreek", 2,
 					"STR.TShirt_Profession_FiremanBlue_RavenCreek", 6,
 					"STR.TShirt_Profession_FiremanRed_RavenCreek", 6,
 					"STR.TShirt_Profession_FiremanRed_RavenCreek02", 6,
@@ -386,7 +401,6 @@ local function preDistributionMerge()
 					}
 				}
 			}
-		end
 	end
 end
 

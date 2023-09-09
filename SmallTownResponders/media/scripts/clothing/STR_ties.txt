@@ -553,4 +553,125 @@ module STR {
 		Weight = 0.1,
 		WorldStaticModel = Tie_Ground,
 	}
+	item Necklace_Badge_Police_Jefferson
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Jefferson PD Necklace Badge,
+		ClothingItem = Necklace_Badge_Police_Jefferson,
+		BodyLocation = Neck2,
+		Icon = Necklace_Badge_Police_Jefferson,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Necklace_Badge_Sheriff_Jefferson
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Jefferson SD Necklace Badge,
+		ClothingItem = Necklace_Badge_Sheriff_Jefferson,
+		BodyLocation = Neck2,
+		Icon = Necklace_Badge_Sheriff_Jefferson,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Necklace_Badge_Police_KSP
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = KSP Necklace Badge,
+		ClothingItem = Necklace_Badge_Police_KSP,
+		BodyLocation = Neck2,
+		Icon = Necklace_Badge_Police_KSP,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Necklace_Badge_Police_Louisville
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Louisville DoP Necklace Badge,
+		ClothingItem = Necklace_Badge_Police_Louisville,
+		BodyLocation = Neck2,
+		Icon = Necklace_Badge_Police_Louisville,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Necklace_Badge_Police_Meade
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Meade County SO Necklace Badge,
+		ClothingItem = Necklace_Badge_Police_Meade,
+		BodyLocation = Neck2,
+		Icon = Necklace_Badge_Police_Meade,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Necklace_Badge_Police_Muldraugh
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Muldraugh PD Necklace Badge,
+		ClothingItem = Necklace_Badge_Police_Muldraugh,
+		BodyLocation = Neck2,
+		Icon = Necklace_Badge_Police_Muldraugh,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Necklace_Badge_Police_Riverside
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Riverside PD Necklace Badge,
+		ClothingItem = Necklace_Badge_Police_Riverside,
+		BodyLocation = Neck2,
+		Icon = Necklace_Badge_Police_Riverside,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Necklace_Badge_Police_Rosewood
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Rosewood SD Necklace Badge,
+		ClothingItem = Necklace_Badge_Police_Rosewood,
+		BodyLocation = Neck2,
+		Icon = Necklace_Badge_Police_Rosewood,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Necklace_Badge_Police_WestPoint
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = WestPoint PD Necklace Badge,
+		ClothingItem = Necklace_Badge_Police_WestPoint,
+		BodyLocation = Neck2,
+		Icon = Necklace_Badge_Police_WestPoint,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Necklace_Badge_Police_Tandil
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Tandil PD Necklace Badge,
+		ClothingItem = Necklace_Badge_Police_Tandil,
+		BodyLocation = Neck2,
+		Icon = Necklace_Badge_Police_Tandil,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Necklace_Badge_Police_RavenCreek
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = RavenCreek PD Necklace Badge,
+		ClothingItem = Necklace_Badge_Police_RavenCreek,
+		BodyLocation = Neck2,
+		Icon = Necklace_Badge_Police_RavenCreek,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
 }

@@ -1,6 +1,6 @@
 require 'Items/ProceduralDistributions'
 
-local function preDistributionMerge()
+local function preDistributionMergeBROKEN()
 
 	if SandboxVars.STR.LootZones and getActivatedMods():contains("Tandil") then
 
@@ -41,6 +41,8 @@ local function preDistributionMerge()
 					"STR.Shirt_Police_Tandil", 10,
 					"STR.TShirt_Police_Tandil", 10,
 					"STR.Trousers_Police_Tandil", 8,
+					"STR.Tie_Full_Police_Tandil", 2,
+					"STR.Tie_Worn_Police_Tandil", 2,
 					"STR.Belt_PoliceDuty", 2,
 					"STR.Chest_Walkie", 2,
 					"Vest_BulletPolice", 1,
@@ -111,8 +113,13 @@ local function preDistributionMerge()
 					}
 				}
 			}
+		end
+	end
+end
+local function preDistributionMerge()
 
-		elseif SandboxVars.STR.DuffelLoot then
+	if getActivatedMods():contains("Tandil") then
+		--elseif SandboxVars.STR.DuffelLoot then
 
 			ProceduralDistributions.list.LockerTandilPD = {
 				rolls = 4,
@@ -151,7 +158,11 @@ local function preDistributionMerge()
 					"STR.Jacket_Police_Tandil", 4,
 					"STR.Shirt_Police_Tandil", 10,
 					"STR.TShirt_Police_Tandil", 10,
+					"STR.Necklace_Badge_Police_Tandil", 8,
+					"STR.Necklace_Badge_Police_Tandil", 8,
 					"STR.Trousers_Police_Tandil", 8,
+					"STR.Tie_Full_Police_Tandil", 2,
+					"STR.Tie_Worn_Police_Tandil", 2,
 					"STR.Belt_PoliceDuty", 2,
 					"STR.Chest_Walkie", 2,
 					"Vest_BulletPolice", 1,
@@ -224,7 +235,6 @@ local function preDistributionMerge()
 					}
 				}
 			}
-		end
 	end
 end
 

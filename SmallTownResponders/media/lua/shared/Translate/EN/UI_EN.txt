@@ -1,4 +1,5 @@
 UI_EN = {
     UI_ClothingType_DutyBelt = "Duty Belt",
-    UI_ClothingType_ChestWalkie = "Chest Walkie",
+    UI_ClothingType_ChestWalkie = "Chest Attachment",
+    UI_ClothingType_Neck2 = "Necklace Badge",
 }

@@ -1,6 +1,6 @@
 require 'Items/ProceduralDistributions'
 
-local function preDistributionMerge()
+local function preDistributionMergeBROKEN()
 
 	if not SandboxVars.STR.DuffelLoot then
 		ProceduralDistributions.list.LockerRosewoodSD = {
@@ -1230,8 +1230,10 @@ local function preDistributionMerge()
 				}
 			}
 		}
-
-	elseif SandboxVars.STR.DuffelLoot then
+	end
+end
+local function preDistributionMerge()
+	--elseif SandboxVars.STR.DuffelLoot then
 		ProceduralDistributions.list.LockerRosewoodSD = {
 			rolls = 4,
 			items = {
@@ -1266,6 +1268,8 @@ local function preDistributionMerge()
 				"STR.Jacket_Police_Rosewood", 4,
 				"STR.Shirt_Police_Rosewood", 8,
 				"STR.TShirt_Police_Rosewood", 8,
+				"STR.Necklace_Badge_Police_Rosewood", 8,
+				"STR.Necklace_Badge_Police_Rosewood", 8,
 				"STR.Trousers_Police_Rosewood", 6,
 				"STR.Tie_Full_Police_Rosewood", 2,
 				"STR.Tie_Worn_Police_Rosewood", 2,
@@ -1317,6 +1321,8 @@ local function preDistributionMerge()
 				"STR.Jacket_Police_Muldraugh", 4,
 				"STR.Shirt_Police_Muldraugh", 8,
 				"STR.TShirt_Police_Muldraugh", 8,
+				"STR.Necklace_Badge_Police_Muldraugh", 8,
+				"STR.Necklace_Badge_Police_Muldraugh", 8,
 				"STR.Trousers_Police_Muldraugh", 6,
 				"STR.Tie_Full_Police_Muldraugh", 2,
 				"STR.Tie_Worn_Police_Muldraugh", 2,
@@ -1368,6 +1374,8 @@ local function preDistributionMerge()
 				"STR.Jacket_Police_Meade", 4,
 				"STR.Shirt_Police_Meade", 8,
 				"STR.TShirt_Police_Meade", 8,
+				"STR.Necklace_Badge_Police_Meade", 8,
+				"STR.Necklace_Badge_Police_Meade", 8,
 				"STR.Trousers_Police_Meade", 6,
 				"STR.Tie_Full_Police_Meade", 2,
 				"STR.Tie_Worn_Police_Meade", 2,
@@ -1419,6 +1427,8 @@ local function preDistributionMerge()
 				"STR.Jacket_Police_WestPoint", 4,
 				"STR.Shirt_Police_WestPoint", 8,
 				"STR.TShirt_Police_WestPoint", 8,
+				"STR.Necklace_Badge_Police_WestPoint", 8,
+				"STR.Necklace_Badge_Police_WestPoint", 8,
 				"STR.Trousers_Police_WestPoint", 6,
 				"STR.Tie_Full_Police_WestPoint", 2,
 				"STR.Tie_Worn_Police_WestPoint", 2,
@@ -1471,6 +1481,8 @@ local function preDistributionMerge()
 				"STR.Jacket_Police_Riverside", 4,
 				"STR.Shirt_Police_Riverside", 8,
 				"STR.TShirt_Police_Riverside", 8,
+				"STR.Necklace_Badge_Police_Riverside", 8,
+				"STR.Necklace_Badge_Police_Riverside", 8,
 				"STR.Trousers_Police_Riverside", 6,
 				"STR.Tie_Full_Police_Riverside", 2,
 				"STR.Tie_Worn_Police_Riverside", 2,
@@ -1522,6 +1534,8 @@ local function preDistributionMerge()
 				"STR.Jacket_Police_Louisville", 4,
 				"STR.Shirt_Police_Louisville", 8,
 				"STR.TShirt_Police_Louisville", 8,
+				"STR.Necklace_Badge_Police_Louisville", 8,
+				"STR.Necklace_Badge_Police_Louisville", 8,
 				"STR.Trousers_Police_Louisville", 6,
 				"STR.Tie_Full_Police_Louisville", 2,
 				"STR.Tie_Worn_Police_Louisville", 2,
@@ -1573,6 +1587,8 @@ local function preDistributionMerge()
 				"STR.Jacket_Police_JeffersonPD", 4,
 				"STR.Shirt_Police_JeffersonPD", 8,
 				"STR.TShirt_Police_JeffersonPD", 8,
+				"STR.Necklace_Badge_Police_Jefferson", 8,
+				"STR.Necklace_Badge_Police_Jefferson", 8,
 				"STR.Trousers_Police_JeffersonPD", 6,
 				"STR.Tie_Full_Police_Jefferson", 2,
 				"STR.Tie_Worn_Police_Jefferson", 2,
@@ -1622,6 +1638,8 @@ local function preDistributionMerge()
 				"STR.Jacket_Police_JeffersonSD", 4,
 				"STR.Shirt_Police_JeffersonSD", 8,
 				"STR.TShirt_Police_JeffersonSD", 8,
+				"STR.Necklace_Badge_Sheriff_Jefferson", 8,
+				"STR.Necklace_Badge_Sheriff_Jefferson", 8,
 				"STR.Trousers_Police_JeffersonSD", 6,
 				"STR.Tie_Full_Sheriff_Jefferson", 2,
 				"STR.Tie_Worn_Sheriff_Jefferson", 2,
@@ -1671,6 +1689,8 @@ local function preDistributionMerge()
 				"STR.Jacket_PoliceKSP", 4,
 				"STR.Shirt_PoliceKSP", 8,
 				"STR.TShirt_PoliceKSP", 8,
+				"STR.Necklace_Badge_Police_KSP", 8,
+				"STR.Necklace_Badge_Police_KSP", 8,
 				"STR.Trousers_PoliceKSP_Summer", 6,
 				"STR.Trousers_PoliceKSP_Winter", 6,
 				"STR.Tie_Full_KSP", 2,
@@ -2493,6 +2513,6 @@ local function preDistributionMerge()
 			}
 		}
 
-	end
+	--end
 end
 Events.OnPreDistributionMerge.Add(preDistributionMerge);

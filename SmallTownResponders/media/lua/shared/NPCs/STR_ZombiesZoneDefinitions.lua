@@ -27,300 +27,11 @@ local function STRSpawns()
 	local Other = SandboxVars.STRS.Other
 	local Duffel = SandboxVars.STRS.Duffel
 	local Security = SandboxVars.STRS.Security
-	local RavenCreekPD = SandboxVars.STRS.RavenCreekPD
-	local RavenCreekInmate = SandboxVars.STRS.RavenCreekInmate
-	local TandilPD = SandboxVars.STRS.TandilPD
+
+	ZombiesZoneDefinition = ZombiesZoneDefinition or {};
 
 	-- Check if the custom zones are enabled in sandbox options
 	if SandboxVars.STR.CustomZones then
-
-		ZombiesZoneDefinition = ZombiesZoneDefinition or {};
-
-		if getActivatedMods():contains("RavenCreek") or getActivatedMods():contains("10YL_RC") then
-
-			if SandboxVars.STR.VestRavenCreek then
-
-				ZombiesZoneDefinition.PoliceRavenCreek = {
-					PoliceRavenCreek = {
-						name="PoliceRavenCreek",
-						chance=RavenCreekPD,
-					},
-					PoliceRavenCreekRiot = {
-						name="PoliceRavenCreekRiot",
-						chance=Riot,
-					},
-					PoliceRavenCreekDress = {
-						name="PoliceRavenCreekDress",
-						chance=Dress,
-					},
-					OfficeWorkerSkirt = {
-						name="OfficeWorkerSkirt",
-						chance=20,
-						gender="female",
-					},
-					OfficeWorker = {
-						name="OfficeWorker",
-						chance=20,
-						gender="male",
-						beardStyles="null:80",
-					},
-				}
-
-			elseif not SandboxVars.STR.VestRavenCreek then
-
-				ZombiesZoneDefinition.PoliceRavenCreek = {
-					PoliceRavenCreekNoVest = {
-						name="PoliceRavenCreekNoVest",
-						chance=RavenCreekPD,
-					},
-					PoliceRavenCreekRiotNoVest = {
-						name="PoliceRavenCreekRiotNoVest",
-						chance=Riot,
-					},
-					PoliceRavenCreekDress = {
-						name="PoliceRavenCreekDress",
-						chance=Dress,
-					},
-					OfficeWorkerSkirt = {
-						name="OfficeWorkerSkirt",
-						chance=20,
-						gender="female",
-					},
-					OfficeWorker = {
-						name="OfficeWorker",
-						chance=20,
-						gender="male",
-						beardStyles="null:80",
-					},
-				}
-
-			end
-
-			ZombiesZoneDefinition.FireDeptRavenCreek = {
-				EMSRavenCreek = {
-					name="EMSRavenCreek",
-					chance=EMS,
-				},
-				EMSRavenCreekDress = {
-					name="EMSRavenCreekDress",
-					chance=Dress,
-				},
-				EMSRavenCreekSupervisor = {
-					name="EMSRavenCreekSupervisor",
-					chance=EMS,
-				},
-				EMSRavenCreekDressSupervisor = {
-					name="EMSRavenCreekDressSupervisor",
-					chance=Dress,
-				},
-				Fireman_RavenCreek_Formal = {
-					name="Fireman_RavenCreek_Formal",
-					chance=FireFormal,
-				},
-				Fireman_RavenCreek_Formal_Supervisor = {
-					name="Fireman_RavenCreek_Formal_Supervisor",
-					chance=FireFormal,
-				},
-				Fireman_RavenCreek_Dress = {
-					name="Fireman_RavenCreek_Dress",
-					chance=Dress,
-				},
-				Fireman_RavenCreek_Dress_Supervisor = {
-					name="Fireman_RavenCreek_Dress_Supervisor",
-					chance=Dress,
-				},
-				Fireman_RavenCreek_Black = {
-					name="Fireman_RavenCreek_Black",
-					chance=Fireman,
-				},
-				FiremanFullSuit_RavenCreek_Black = {
-					name="FiremanFullSuit_RavenCreek_Black",
-					chance=FiremanFull,
-				},
-				Fireman_RavenCreek_Khaki = {
-					name="Fireman_RavenCreek_Khaki",
-					chance=Fireman,
-				},
-				FiremanFullSuit_RavenCreek_Khaki = {
-					name="FiremanFullSuit_RavenCreek_Khaki",
-					chance=FiremanFull,
-				},
-			}
-
-			ZombiesZoneDefinition.RavenCreekPrison = {
-				-- Gonna force male zombies in prison
-				maleChance = 80,
-				Doctor = {
-					name="Doctor",
-					chance=2,
-				},
-				Priest = {
-					name="Priest",
-					toSpawn=1,
-					gender="male",
-					mandatory="true",
-				},
-				Doctor2 = {
-					name="Doctor",
-					chance=20,
-					room="medicalstorage",
-				},
-				Nurse = {
-					name="Nurse",
-					chance=30,
-					room="medicalstorage",
-				},
-				Priest = {
-					name="Priest",
-					mandatory="true",
-					toSpawn=1,
-					gender="male",
-				},
-				Waiter_Diner = {
-					name="Waiter_Diner",
-					chance=2,
-				},
-				PrisonGuard = {
-					name="DOC_RavenCreek",
-					chance=DOC,
-					gender="male",
-				},
-				OfficeWorkerSkirt = {
-					name="OfficeWorkerSkirt",
-					gender="female",
-					chance=30,
-					room="office",
-				},
-				OfficeWorker = {
-					name="OfficeWorker",
-					gender="male",
-					chance=30,
-					room="office",
-					beardStyles="null:80",
-				},
-				Security = {
-					name="DOC_RavenCreek",
-					gender="male",
-					chance=DOC,
-					room="security",
-				},
-				Inmate = {
-					name="InmateRavenCreek",
-					chance=RavenCreekInmate,
-					gender="male",
-					room="prisoncells;hall;cafeteria;classroom;laundry;janitor",
-				},
-				-- this one is used for lower chance of inmate in some rooms
-				InmateLowerZone = {
-					name="InmateRavenCreek",
-					chance=RavenCreekInmate,
-					gender="male",
-					room="bathroom;kitchen;medicalstorage;library",
-				},
-				Naked = {
-					name="Naked",
-					chance=50,
-					gender="male",
-					room="bathroom",
-				},
-				Cook_Generic = {
-					name="Cook_Generic",
-					chance=30,
-					gender="male",
-					room="kitchen",
-				},
-			}
-
-		end
-
-		if getActivatedMods():contains("Tandil") then
-
-			if SandboxVars.STR.VestTandil then
-
-				ZombiesZoneDefinition.PoliceTandil = {
-					PoliceTandil = {
-						name="PoliceTandil",
-						chance=TandilPD,
-					},
-					PoliceTandilRiot = {
-						name="PoliceTandilRiot",
-						chance=Riot,
-					},
-					PoliceTandilDress = {
-						name="PoliceTandilDress",
-						chance=Dress,
-					},
-					OfficeWorkerSkirt = {
-						name="OfficeWorkerSkirt",
-						chance=20,
-						gender="female",
-					},
-					OfficeWorker = {
-						name="OfficeWorker",
-						chance=20,
-						gender="male",
-						beardStyles="null:80",
-					},
-				}
-
-			elseif not SandboxVars.STR.VestTandil then
-
-				ZombiesZoneDefinition.PoliceTandil = {
-					PoliceRavenCreekNoVest = {
-						name="PoliceTandilNoVest",
-						chance=TandilPD,
-					},
-					PoliceTandilRiotNoVest = {
-						name="PoliceTandilRiotNoVest",
-						chance=Riot,
-					},
-					PoliceTandilDress = {
-						name="PoliceTandilDress",
-						chance=Dress,
-					},
-					OfficeWorkerSkirt = {
-						name="OfficeWorkerSkirt",
-						chance=20,
-						gender="female",
-					},
-					OfficeWorker = {
-						name="OfficeWorker",
-						chance=20,
-						gender="male",
-						beardStyles="null:80",
-					},
-				}
-
-			end
-
-			ZombiesZoneDefinition.FireDeptTandil = {
-				EMSTandil = {
-					name="EMSTandil",
-					chance=EMS,
-				},
-				Fireman_Tandil_Formal = {
-					name="Fireman_Tandil_Formal",
-					chance=FireFormal,
-				},
-				Fireman_Tandil_Black = {
-					name="Fireman_Tandil_Black",
-					chance=Fireman,
-				},
-				FiremanFullSuit_Tandil_Black = {
-					name="FiremanFullSuit_Tandil_Black",
-					chance=FiremanFull,
-				},
-				Fireman_Tandil_Khaki = {
-					name="Fireman_Tandil_Khaki",
-					chance=Fireman,
-				},
-				FiremanFullSuit_Tandil_Khaki = {
-					name="FiremanFullSuit_Tandil_Khaki",
-					chance=FiremanFull,
-				},
-			}
-
-		end
 
 		ZombiesZoneDefinition.BankSecurity = {
 			OfficeWorkerSkirt = {
@@ -552,6 +263,33 @@ local function STRSpawns()
 				},
 			}
 
+			ZombiesZoneDefinition.CourtHouseRW = {
+				Judge = {
+					name="Judge",
+					chance=Other,
+				},
+				OfficeWorkerSkirt = {
+					name="OfficeWorkerSkirt",
+					chance=35,
+					gender="female",
+				},
+				OfficeWorker = {
+					name="OfficeWorker",
+					chance=35,
+					gender="male",
+					beardStyles="null:80",
+				},
+				Trader = {
+					name="Trader",
+					chance=15,
+					beardStyles="null:80",
+				},
+				PoliceRosewood = {
+					name="PoliceRosewood",
+					chance=5,
+				},
+			}
+
 		elseif not SandboxVars.STR.VestRosewood then
 
 			ZombiesZoneDefinition.RosewoodSD = {
@@ -577,6 +315,33 @@ local function STRSpawns()
 					chance=20,
 					gender="male",
 					beardStyles="null:80",
+				},
+			}
+
+			ZombiesZoneDefinition.CourtHouseRW = {
+				Judge = {
+					name="Judge",
+					chance=Other,
+				},
+				OfficeWorkerSkirt = {
+					name="OfficeWorkerSkirt",
+					chance=35,
+					gender="female",
+				},
+				OfficeWorker = {
+					name="OfficeWorker",
+					chance=35,
+					gender="male",
+					beardStyles="null:80",
+				},
+				Trader = {
+					name="Trader",
+					chance=15,
+					beardStyles="null:80",
+				},
+				PoliceRosewoodNoVest = {
+					name="PoliceRosewoodNoVest",
+					chance=5,
 				},
 			}
 
@@ -900,6 +665,33 @@ local function STRSpawns()
 				},
 			}
 
+			ZombiesZoneDefinition.CourtHouseLV = {
+				Judge = {
+					name="Judge",
+					chance=Other,
+				},
+				OfficeWorkerSkirt = {
+					name="OfficeWorkerSkirt",
+					chance=35,
+					gender="female",
+				},
+				OfficeWorker = {
+					name="OfficeWorker",
+					chance=35,
+					gender="male",
+					beardStyles="null:80",
+				},
+				Trader = {
+					name="Trader",
+					chance=15,
+					beardStyles="null:80",
+				},
+				PoliceLouisville = {
+					name="PoliceLouisville",
+					chance=5,
+				},
+			}
+
 		elseif not SandboxVars.STR.VestLouisville then
 
 			ZombiesZoneDefinition.LouisvillePD = {
@@ -925,6 +717,33 @@ local function STRSpawns()
 					chance=20,
 					gender="male",
 					beardStyles="null:80",
+				},
+			}
+
+			ZombiesZoneDefinition.CourtHouseLV = {
+				Judge = {
+					name="Judge",
+					chance=Other,
+				},
+				OfficeWorkerSkirt = {
+					name="OfficeWorkerSkirt",
+					chance=35,
+					gender="female",
+				},
+				OfficeWorker = {
+					name="OfficeWorker",
+					chance=35,
+					gender="male",
+					beardStyles="null:80",
+				},
+				Trader = {
+					name="Trader",
+					chance=15,
+					beardStyles="null:80",
+				},
+				PoliceLouisvilleNoVest = {
+					name="PoliceLouisvilleNoVest",
+					chance=5,
 				},
 			}
 
@@ -1550,29 +1369,6 @@ local function STRSpawns()
 			},
 		}
 
-		ZombiesZoneDefinition.CourtHouse = {
-			Judge = {
-				name="Judge",
-				chance=Other,
-			},
-			OfficeWorkerSkirt = {
-				name="OfficeWorkerSkirt",
-				chance=35,
-				gender="female",
-			},
-			OfficeWorker = {
-				name="OfficeWorker",
-				chance=35,
-				gender="male",
-				beardStyles="null:80",
-			},
-			Trader = {
-				name="Trader",
-				chance=15,
-				beardStyles="null:80",
-			},
-		}
-
 		if SandboxVars.STR.DuffelLoot then
 
 			table.insert(ZombiesZoneDefinition.USPS,{name = "USPS_Mail_Bag", chance=Duffel});
@@ -1620,20 +1416,6 @@ local function STRSpawns()
 				table.insert(ZombiesZoneDefinition.MeadeSO,{name = "PoliceMeade_Bag", chance=Duffel});
 			elseif not SandboxVars.STR.VestMeade then
 				table.insert(ZombiesZoneDefinition.MeadeSO,{name = "PoliceMeadeNoVest_Bag", chance=Duffel});
-			end
-			if getActivatedMods():contains("RavenCreek") or getActivatedMods():contains("10YL_RC") then
-				if SandboxVars.STR.VestRavenCreek then
-					table.insert(ZombiesZoneDefinition.PoliceRavenCreek,{name = "PoliceRavenCreek_Bag", chance=Duffel});
-				elseif not SandboxVars.STR.VestRavenCreek then
-					table.insert(ZombiesZoneDefinition.PoliceRavenCreek,{name = "PoliceRavenCreekNoVest_Bag", chance=Duffel});
-				end
-			end
-			if getActivatedMods():contains("Tandil") then
-				if SandboxVars.STR.VestTandil then
-					table.insert(ZombiesZoneDefinition.PoliceTandil,{name = "PoliceTandil_Bag", chance=Duffel});
-				elseif not SandboxVars.STR.VestTandil then
-					table.insert(ZombiesZoneDefinition.PoliceTandil,{name = "PoliceTandilNoVest_Bag", chance=Duffel});
-				end
 			end
 		end
 
@@ -1825,12 +1607,6 @@ local function STRSpawns()
 			table.insert(ZombiesZoneDefinition.JeffersonSDJail,{name = "SusceptiblePoliceJeffersonSD", chance=5});
 			table.insert(ZombiesZoneDefinition.JeffersonSDJail,{name = "SusceptibleInmateJefferson", chance=5, gender="male"});
 
-			if getActivatedMods():contains("RavenCreek") or getActivatedMods():contains("10YL_RC") then
-				table.insert(ZombiesZoneDefinition.PoliceRavenCreek,{name = "SusceptiblePoliceRavenCreek", chance=5});
-			end
-			if getActivatedMods():contains("Tandil") then
-				table.insert(ZombiesZoneDefinition.PoliceTandil,{name = "SusceptiblePoliceTandil", chance=5});
-			end
 		end
 	end
 end

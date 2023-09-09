@@ -1,325 +1,354 @@
 require 'Items/Distributions'
+require 'Items/ProceduralDistributions'
 
 Distributions = Distributions or {};
 
 local function STRDistributions()
 
 	-- Check if the custom loot zones are enabled in sandbox options
-	if SandboxVars.STR.LootZones then
+	--if SandboxVars.STR.LootZones then
 
-	local STRdistributionTable = {
+		local STRdistributionTable = {
 
-		policestorage = {
-			locker = {
-				procedural = true,
-				procList = {
-					{name="PoliceStorageGuns", min=0, max=99, forceForTiles="furniture_storage_02_8;furniture_storage_02_9;furniture_storage_02_10;furniture_storage_02_11"},
-					{name="PoliceStorageOutfit", min=0, max=99, forceForTiles="furniture_storage_02_4;furniture_storage_02_5;furniture_storage_02_6;furniture_storage_02_7"},
-					{name="LockerMeadeSO", min=0, max=99, forceForTiles="furniture_storage_02_4;furniture_storage_02_5;furniture_storage_02_6;furniture_storage_02_7", forceForZones="MeadeSOL"},
-					{name="LockerRiversidePD", min=0, max=99, forceForTiles="furniture_storage_02_4;furniture_storage_02_5;furniture_storage_02_6;furniture_storage_02_7", forceForZones="RiversidePDL"},
-					{name="LockerJeffersonSD", min=0, max=99, forceForTiles="furniture_storage_02_4;furniture_storage_02_5;furniture_storage_02_6;furniture_storage_02_7", forceForZones="JeffersonSDL"},
+			policestorage = {
+				locker = {
+					procedural = true,
+					procList = {
+						{name="PoliceStorageGuns", min=0, max=99, forceForTiles="furniture_storage_02_8;furniture_storage_02_9;furniture_storage_02_10;furniture_storage_02_11"},
+						{name="PoliceStorageOutfit", min=0, max=99, forceForTiles="furniture_storage_02_4;furniture_storage_02_5;furniture_storage_02_6;furniture_storage_02_7"},
+						{name="LockerMeadeSO", min=0, max=99, forceForTiles="furniture_storage_02_4;furniture_storage_02_5;furniture_storage_02_6;furniture_storage_02_7", forceForZones="MeadeSOL"},
+						{name="LockerRiversidePD", min=0, max=99, forceForTiles="furniture_storage_02_4;furniture_storage_02_5;furniture_storage_02_6;furniture_storage_02_7", forceForZones="RiversidePDL"},
+						{name="LockerJeffersonSD", min=0, max=99, forceForTiles="furniture_storage_02_4;furniture_storage_02_5;furniture_storage_02_6;furniture_storage_02_7", forceForZones="JeffersonSDL"},
+					},
+					dontSpawnAmmo = true,
+				}
+			},
+
+			janitor = {
+				metal_shelves = {
+					procedural = true,
+					procList = {
+						{name="JanitorTools", min=1, max=1, weightChance=100},
+						{name="JanitorCleaning", min=1, max=1, weightChance=100},
+						{name="JanitorChemicals", min=0, max=99, weightChance=100},
+						{name="LockersJeffersonEMS", min=0, max=99, forceForZones="JeffersonEMSL"},
+					}
 				},
-				dontSpawnAmmo = true,
-			}
-		},
+				counter = {
+					procedural = true,
+					procList = {
+						{name="JanitorChemicals", min=0, max=99, weightChance=100},
+						{name="JanitorCleaning", min=0, max=1, forceForTiles="fixtures_sinks_01_0;fixtures_sinks_01_1;fixtures_sinks_01_2;fixtures_sinks_01_3;fixtures_sinks_01_4;fixtures_sinks_01_5;fixtures_sinks_01_6;fixtures_sinks_01_7;fixtures_sinks_01_8;fixtures_sinks_01_9;fixtures_sinks_01_10;fixtures_sinks_01_11;fixtures_sinks_01_16;fixtures_sinks_01_17;fixtures_sinks_01_18;fixtures_sinks_01_19"},
+						{name="JanitorMisc", min=1, max=1, weightChance=100},
+						{name="JanitorTools", min=0, max=1, weightChance=100},
+						{name="LockersJeffersonEMS", min=0, max=99, forceForZones="JeffersonEMSL"},
+						{name="LockersLouisvilleEMS", min=0, max=99, forceForZones="LouisvilleEMSL"},
+					}
+				},
+				crate = {
+					procedural = true,
+					procList = {
+						{name="JanitorChemicals", min=0, max=99},
+					}
+				}
+			},
 
-		janitor = {
-			metal_shelves = {
-				procedural = true,
-				procList = {
-					{name="JanitorTools", min=1, max=1, weightChance=100},
-					{name="JanitorCleaning", min=1, max=1, weightChance=100},
-					{name="JanitorChemicals", min=0, max=99, weightChance=100},
-					{name="LockersJeffersonEMS", min=0, max=99, forceForZones="JeffersonEMSL"},
-				}
+			all = {
+				metal_shelves = {
+					procedural = true,
+					procList = {
+						{name="LockersLouisvilleEMS", min=0, max=99, forceForZones="LouisvilleEMSL"},
+						{name="AllMetalShelves", min=0, max=99},
+					}
+				},
+				crate = {
+					procedural = true,
+					procList = {
+						{name="LockerValleyMall", min=0, max=99, forceForZones="MallValleyL"},
+						{name="AllCrate", min=0, max=99},
+					}
+				},
+				locker = {
+					procedural = true,
+					procList = {
+						{name="Locker", min=0, max=99, weightChance=100},
+						{name="LockerArmyBedroom", min=0, max=99, forceForZones="Army"},
+						{name="LockerArmyBedroom", min=0, max=99, forceForItems="furniture_bedding_01_56;furniture_bedding_01_57;furniture_bedding_01_58;furniture_bedding_01_59"},
+						{name="LockerClassy", min=0, max=99, forceForZones="Rich"},
+						{name="LockersUSPSHQ", min=0, max=99, forceForZones="USPSL"},
+					}
+				},
 			},
-			counter = {
-				procedural = true,
-				procList = {
-					{name="JanitorMisc", min=1, max=1, weightChance=100},
-					{name="JanitorTools", min=0, max=1, weightChance=100},
-					{name="JanitorCleaning", min=0, max=1, weightChance=100},
-					{name="JanitorChemicals", min=0, max=99, weightChance=100},
-					{name="LockersJeffersonEMS", min=0, max=99, forceForZones="JeffersonEMSL"},
-					{name="LockersLouisvilleEMS", min=0, max=99, forceForZones="LouisvilleEMSL"},
-				}
-			},
-			crate = {
-				procedural = true,
-				procList = {
-					{name="JanitorChemicals", min=0, max=99},
-				}
-			}
-		},
 
-		all = {
-			metal_shelves = {
-				procedural = true,
-				procList = {
-					{name="LockersLouisvilleEMS", min=0, max=99, forceForZones="LouisvilleEMSL"},
-					{name="AllMetalShelves", min=0, max=99},
+			changeroom = {
+				locker = {
+					procedural = true,
+					procList = {
+						{name="BowlingAlleyLockers", min=0, max=99, forceForRooms="bowlingalley"},
+						{name="FactoryLockers", min=0, max=99, forceForRooms="batteryfactory;brewery;dogfoodfactory;factory;fryshipping;metalshop;radiofactory;warehouse;wirefactory;whiskeybottling"},
+						{name="FireDeptLockers", min=0, max=99, forceForRooms="firestorage"},
+						{name="GymLockers", min=0, max=99, forceForRooms="fitness"},
+						{name="HospitalLockers", min=0, max=99, forceForRooms="hospitalroom"},
+						{name="HuntingLockers", min=0, max=99, forceForRooms="hunting"},
+						{name="PoliceLockers", min=0, max=99, forceForRooms="policestorage"},
+						{name="PrisonGuardLockers", min=0, max=99, forceForRooms="cells"},
+						{name="LockerRosewoodSD", min=0, max=99, forceForRooms="policestorage", forceForZones="RosewoodSDL"},
+						{name="LockerMuldraughPD", min=0, max=99, forceForRooms="policestorage", forceForZones="MuldraughPDL"},
+						{name="LockerWestPointPD", min=0, max=99, forceForRooms="policestorage", forceForZones="WestPointPDL"},
+						{name="LockerLouisvillePD", min=0, max=99, forceForZones="LouisvillePDL"},
+						{name="LockerJeffersonPD", min=0, max=99, forceForZones="JeffersonPDL"},
+						{name="LockerJeffersonSD", min=0, max=99, forceForZones="JeffersonSDL"},
+						{name="LockerKSP", min=0, max=99, forceForRooms="lockerroom", forceForZones="LouisvilleKSPL"},
+						{name="LockerMeadeDOC", min=0, max=99, forceForRooms="policestorage", forceForZones="RosewoodPrisonL"},
+						{name="FireDeptLockersRW", min=0, max=99, forceForZones="FireDeptRWL"},
+						{name="FireDeptLockersLV", min=0, max=99, forceForZones="FireDeptLVL"},
+						{name="LockersUSPSHQ", min=0, max=99, forceForZones="USPSL"},
+					}
 				}
 			},
-			crate = {
-				procedural = true,
-				procList = {
-					{name="LockerValleyMall", min=0, max=99, forceForZones="MallValleyL"},
-					{name="AllCrate", min=0, max=99},
-				}
-			},
-			locker = {
-				procedural = true,
-				procList = {
-					{name="Locker", min=0, max=99, weightChance=100},
-					{name="LockerArmyBedroom", min=0, max=99, forceForZones="Army"},
-					{name="LockerArmyBedroom", min=0, max=99, forceForItems="furniture_bedding_01_56;furniture_bedding_01_57;furniture_bedding_01_58;furniture_bedding_01_59"},
-					{name="LockerClassy", min=0, max=99, forceForZones="Rich"},
-					{name="LockersUSPSHQ", min=0, max=99, forceForZones="USPSL"},
-				}
-			},
-		},
 
-		changeroom = {
-			locker = {
-				procedural = true,
-				procList = {
-					{name="BowlingAlleyLockers", min=0, max=99, forceForRooms="bowlingalley"},
-					{name="FactoryLockers", min=0, max=99, forceForRooms="batteryfactory;brewery;dogfoodfactory;factory;fryshipping;metalshop;radiofactory;warehouse;wirefactory;whiskeybottling"},
-					{name="FireDeptLockers", min=0, max=99, forceForRooms="firestorage"},
-					{name="GymLockers", min=0, max=99, forceForRooms="fitness"},
-					{name="HospitalLockers", min=0, max=99, forceForRooms="hospitalroom"},
-					{name="HuntingLockers", min=0, max=99, forceForRooms="hunting"},
-					{name="PoliceLockers", min=0, max=99, forceForRooms="policestorage"},
-					{name="PrisonGuardLockers", min=0, max=99, forceForRooms="cells"},
-					{name="LockerRosewoodSD", min=0, max=99, forceForRooms="policestorage", forceForZones="RosewoodSDL"},
-					{name="LockerMuldraughPD", min=0, max=99, forceForRooms="policestorage", forceForZones="MuldraughPDL"},
-					{name="LockerWestPointPD", min=0, max=99, forceForRooms="policestorage", forceForZones="WestPointPDL"},
-					{name="LockerLouisvillePD", min=0, max=99, forceForZones="LouisvillePDL"},
-					{name="LockerJeffersonPD", min=0, max=99, forceForZones="JeffersonPDL"},
-					{name="LockerJeffersonSD", min=0, max=99, forceForZones="JeffersonSDL"},
-					{name="LockerKSP", min=0, max=99, forceForRooms="lockerroom", forceForZones="LouisvilleKSPL"},
-					{name="LockerMeadeDOC", min=0, max=99, forceForRooms="policestorage", forceForZones="RosewoodPrisonL"},
-					{name="FireDeptLockersRW", min=0, max=99, forceForZones="FireDeptRWL"},
-					{name="FireDeptLockersLV", min=0, max=99, forceForZones="FireDeptLVL"},
-					{name="LockersUSPSHQ", min=0, max=99, forceForZones="USPSL"},
+			firestorage = {
+				metal_shelves = {
+					procedural = true,
+					procList = {
+						{name="FireStorageTools", min=0, max=99, weightChance=100},
+						{name="FireStorageOutfit", min=0, max=99, weightChance=40},
+					}
+				},
+				locker = {
+					procedural = true,
+					procList = {
+						{name="FireDeptLockersLV", min=0, max=99, forceForZones="FireDeptLVL"},
+					}
 				}
-			}
-		},
+			},
 
-		firestorage = {
-			metal_shelves = {
-				procedural = true,
-				procList = {
-					{name="FireStorageTools", min=0, max=99, weightChance=100},
-					{name="FireStorageOutfit", min=0, max=99, weightChance=40},
+			garagestorage = {
+				locker = {
+					procedural = true,
+					procList = {
+						{name="FireDeptLockers", min=0, max=99, forceForRooms="firestorage"},
+						{name="GarageFirearms", min=0, max=99, forceForTiles="furniture_storage_02_8;furniture_storage_02_9;furniture_storage_02_10;furniture_storage_02_11"},
+						{name="GarageTools", min=0, max=99, weightChance=100},
+						{name="FireDeptLockersRW", min=0, max=99, forceForZones="FireDeptRWL"},
+						{name="FireDeptLockersLV", min=0, max=99, forceForZones="FireDeptLVL"},
+					}
 				}
 			},
-			locker = {
-				procedural = true,
-				procList = {
-					{name="FireDeptLockersLV", min=0, max=99, forceForZones="FireDeptLVL"},
-				}
-			}
-		},
 
-		garagestorage = {
-			locker = {
-				procedural = true,
-				procList = {
-					{name="FireDeptLockers", min=0, max=99, forceForRooms="firestorage"},
-					{name="GarageFirearms", min=0, max=99, forceForTiles="furniture_storage_02_8;furniture_storage_02_9;furniture_storage_02_10;furniture_storage_02_11"},
-					{name="GarageTools", min=0, max=99, weightChance=100},
-					{name="FireDeptLockersRW", min=0, max=99, forceForZones="FireDeptRWL"},
-					{name="FireDeptLockersLV", min=0, max=99, forceForZones="FireDeptLVL"},
+			dentiststorage = {
+				isShop = true,
+				metal_shelves = {
+					procedural = true,
+					procList = {
+						{name="MedicalStorageDrugs", min=0, max=6, weightChance=100},
+						{name="MedicalStorageTools", min=0, max=4, weightChance=80},
+						{name="MedicalStorageOutfit", min=0, max=2, weightChance=40},
+						{name="LockersMeadeEMS", min=0, max=99, forceForZones="MeadeEMSL"},
+					}
 				}
-			}
-		},
+			},
 
-		dentiststorage = {
-			isShop = true,
-			metal_shelves = {
-				procedural = true,
-				procList = {
-					{name="MedicalStorageDrugs", min=0, max=6, weightChance=100},
-					{name="MedicalStorageTools", min=0, max=4, weightChance=80},
-					{name="MedicalStorageOutfit", min=0, max=2, weightChance=40},
-					{name="LockersMeadeEMS", min=0, max=99, forceForZones="MeadeEMSL"},
+			prisoncells = {
+				wardrobe = {
+					procedural = true,
+					procList = {
+						{name="PrisonCellRandom", min=0, max=99},
+						{name="PrisonCellMeadeRandom", min=0, max=99, forceForZones="RosewoodPrisonInmateCellL"},
+						{name="PrisonCellMeadeMaxRandom", min=0, max=99, forceForZones="RosewoodPrisonInmateMaxCellL"},
+						{name="PrisonCellLouisvilleRandom", min=0, max=99, forceForZones="LouisvillePDPrisonCellL"},
+					}
 				}
-			}
-		},
+			},
 
-		prisoncells = {
-			wardrobe = {
-				procedural = true,
-				procList = {
-					{name="PrisonCellRandom", min=0, max=99},
-					{name="PrisonCellMeadeRandom", min=0, max=99, forceForZones="RosewoodPrisonInmateCellL"},
-					{name="PrisonCellMeadeMaxRandom", min=0, max=99, forceForZones="RosewoodPrisonInmateMaxCellL"},
-					{name="PrisonCellLouisvilleRandom", min=0, max=99, forceForZones="LouisvillePDPrisonCellL"},
+			laundry = {
+				clothingdryer = {
+					procedural = true,
+					procList = {
+						{name="GymLaundry", min=0, max=99, forceForRooms="fitness"},
+						{name="Empty", min=0, max=99, weightChance=100},
+						{name="LaundryHospital", min=0, max=99, forceForRooms="hospitalroom"},
+						{name="LaundryLoad1", min=0, max=1, weightChance=10},
+						{name="LaundryLoad2", min=0, max=1, weightChance=10},
+						{name="LaundryLoad3", min=0, max=1, weightChance=10},
+						{name="LaundryLoad4", min=0, max=1, weightChance=10},
+						{name="LaundryLoad5", min=0, max=1, weightChance=10},
+						{name="LaundryLoad6", min=0, max=1, weightChance=10},
+						{name="LaundryLoad7", min=0, max=1, weightChance=10},
+						{name="LaundryLoad8", min=0, max=1, weightChance=10},
+						{name="LaundryInmateMeade", min=0, max=99, forceForZones="RosewoodPrisonInmateL"},
+						{name="LaundryInmateLouisville", min=0, max=99, forceForZones="LouisvillePDPrisonL"},
+					}
+				},
+				clothingdryerbasic = {
+					procedural = true,
+					procList = {
+						{name="GymLaundry", min=0, max=99, forceForRooms="fitness"},
+						{name="Empty", min=0, max=99, weightChance=100},
+						{name="LaundryHospital", min=0, max=99, forceForRooms="hospitalroom"},
+						{name="LaundryLoad1", min=0, max=1, weightChance=10},
+						{name="LaundryLoad2", min=0, max=1, weightChance=10},
+						{name="LaundryLoad3", min=0, max=1, weightChance=10},
+						{name="LaundryLoad4", min=0, max=1, weightChance=10},
+						{name="LaundryLoad5", min=0, max=1, weightChance=10},
+						{name="LaundryLoad6", min=0, max=1, weightChance=10},
+						{name="LaundryLoad7", min=0, max=1, weightChance=10},
+						{name="LaundryLoad8", min=0, max=1, weightChance=10},
+						{name="LaundryInmateMeade", min=0, max=99, forceForZones="RosewoodPrisonInmateL"},
+						{name="LaundryInmateLouisville", min=0, max=99, forceForZones="LouisvillePDPrisonL"},
+					}
+				},
+				clothingwasher = {
+					procedural = true,
+					procList = {
+						{name="GymLaundry", min=0, max=99, forceForRooms="fitness"},
+						{name="Empty", min=0, max=99, weightChance=100},
+						{name="LaundryHospital", min=0, max=99, forceForRooms="hospitalroom"},
+						{name="LaundryLoad1", min=0, max=1, weightChance=10},
+						{name="LaundryLoad2", min=0, max=1, weightChance=10},
+						{name="LaundryLoad3", min=0, max=1, weightChance=10},
+						{name="LaundryLoad4", min=0, max=1, weightChance=10},
+						{name="LaundryLoad5", min=0, max=1, weightChance=10},
+						{name="LaundryLoad6", min=0, max=1, weightChance=10},
+						{name="LaundryLoad7", min=0, max=1, weightChance=10},
+						{name="LaundryLoad8", min=0, max=1, weightChance=10},
+						{name="LaundryInmateMeade", min=0, max=99, forceForZones="RosewoodPrisonInmateL"},
+						{name="LaundryInmateLouisville", min=0, max=99, forceForZones="LouisvillePDPrisonL"},
+					}
+				},
+				counter = {
+					procedural = true,
+					procList = {
+						{name="LaundryCleaning", min=0, max=99, weightChance=100},
+						{name="LaundryLoad1", min=0, max=2, weightChance=60},
+						{name="LaundryLoad2", min=0, max=2, weightChance=60},
+						{name="LaundryLoad3", min=0, max=2, weightChance=20},
+						{name="LaundryLoad4", min=0, max=2, weightChance=40},
+						{name="LaundryLoad5", min=0, max=2, weightChance=20},
+						{name="LaundryLoad6", min=0, max=12, weightChance=10},
+						{name="LaundryCleaning", min=0, max=99, forceForZones="RosewoodPrisonInmateL"},
+						{name="LaundryCleaning", min=0, max=99, forceForZones="LouisvillePDPrisonL"},
+					}
+				},
+				locker = {
+					procedural = true,
+					procList = {
+						{name="FactoryLockers", min=0, max=99, forceForRooms="batteryfactory"},
+					}
+				},
+				metal_shelves = {
+					procedural = true,
+					procList = {
+						{name="LaundryCleaning", min=0, max=99},
+					}
+				},
+				shelves = {
+					procedural = true,
+					procList = {
+						{name="LaundryCleaning", min=0, max=99},
+					}
 				}
-			}
-		},
+			},
 
-		laundry = {
-			clothingdryer = {
-				procedural = true,
-				procList = {
-					{name="GymLaundry", min=0, max=99, forceForRooms="fitness"},
-					{name="Empty", min=0, max=99, weightChance=100},
-					{name="LaundryHospital", min=0, max=99, forceForRooms="hospitalroom"},
-					{name="LaundryLoad1", min=0, max=1, weightChance=10},
-					{name="LaundryLoad2", min=0, max=1, weightChance=10},
-					{name="LaundryLoad3", min=0, max=1, weightChance=10},
-					{name="LaundryLoad4", min=0, max=1, weightChance=10},
-					{name="LaundryLoad5", min=0, max=1, weightChance=10},
-					{name="LaundryLoad6", min=0, max=1, weightChance=10},
-					{name="LaundryLoad7", min=0, max=1, weightChance=10},
-					{name="LaundryLoad8", min=0, max=1, weightChance=10},
-					{name="LaundryInmateMeade", min=0, max=99, forceForZones="RosewoodPrisonInmateL"},
-					{name="LaundryInmateLouisville", min=0, max=99, forceForZones="LouisvillePDPrisonL"},
+			officestorage = {
+				isShop = true,
+				crate = {
+					procedural = true,
+					procList = {
+						{name="CrateOfficeSupplies", min=0, max=99},
+					}
+				},
+				metal_shelves = {
+					procedural= true,
+					procList = {
+						{name="OfficeShelfSupplies", min=0, max=99},
+						{name="LockersUSPSHQ", min=0, max=99, forceForZones="USPSL"},
+					}
 				}
 			},
-			clothingdryerbasic = {
-				procedural = true,
-				procList = {
-					{name="GymLaundry", min=0, max=99, forceForRooms="fitness"},
-					{name="Empty", min=0, max=99, weightChance=100},
-					{name="LaundryHospital", min=0, max=99, forceForRooms="hospitalroom"},
-					{name="LaundryLoad1", min=0, max=1, weightChance=10},
-					{name="LaundryLoad2", min=0, max=1, weightChance=10},
-					{name="LaundryLoad3", min=0, max=1, weightChance=10},
-					{name="LaundryLoad4", min=0, max=1, weightChance=10},
-					{name="LaundryLoad5", min=0, max=1, weightChance=10},
-					{name="LaundryLoad6", min=0, max=1, weightChance=10},
-					{name="LaundryLoad7", min=0, max=1, weightChance=10},
-					{name="LaundryLoad8", min=0, max=1, weightChance=10},
-					{name="LaundryInmateMeade", min=0, max=99, forceForZones="RosewoodPrisonInmateL"},
-					{name="LaundryInmateLouisville", min=0, max=99, forceForZones="LouisvillePDPrisonL"},
-				}
-			},
-			clothingwasher = {
-				procedural = true,
-				procList = {
-					{name="GymLaundry", min=0, max=99, forceForRooms="fitness"},
-					{name="Empty", min=0, max=99, weightChance=100},
-					{name="LaundryHospital", min=0, max=99, forceForRooms="hospitalroom"},
-					{name="LaundryLoad1", min=0, max=1, weightChance=10},
-					{name="LaundryLoad2", min=0, max=1, weightChance=10},
-					{name="LaundryLoad3", min=0, max=1, weightChance=10},
-					{name="LaundryLoad4", min=0, max=1, weightChance=10},
-					{name="LaundryLoad5", min=0, max=1, weightChance=10},
-					{name="LaundryLoad6", min=0, max=1, weightChance=10},
-					{name="LaundryLoad7", min=0, max=1, weightChance=10},
-					{name="LaundryLoad8", min=0, max=1, weightChance=10},
-					{name="LaundryInmateMeade", min=0, max=99, forceForZones="RosewoodPrisonInmateL"},
-					{name="LaundryInmateLouisville", min=0, max=99, forceForZones="LouisvillePDPrisonL"},
-				}
-			},
-			counter = {
-				procedural = true,
-				procList = {
-					{name="LaundryCleaning", min=0, max=99, weightChance=100},
-					{name="LaundryLoad1", min=0, max=2, weightChance=60},
-					{name="LaundryLoad2", min=0, max=2, weightChance=60},
-					{name="LaundryLoad3", min=0, max=2, weightChance=20},
-					{name="LaundryLoad4", min=0, max=2, weightChance=40},
-					{name="LaundryLoad5", min=0, max=2, weightChance=20},
-					{name="LaundryLoad6", min=0, max=12, weightChance=10},
-					{name="LaundryCleaning", min=0, max=99, forceForZones="RosewoodPrisonInmateL"},
-					{name="LaundryCleaning", min=0, max=99, forceForZones="LouisvillePDPrisonL"},
-				}
-			},
-			locker = {
-				procedural = true,
-				procList = {
-					{name="FactoryLockers", min=0, max=99, forceForRooms="batteryfactory"},
-				}
-			},
-			metal_shelves = {
-				procedural = true,
-				procList = {
-					{name="LaundryCleaning", min=0, max=99},
-				}
-			},
-			shelves = {
-				procedural = true,
-				procList = {
-					{name="LaundryCleaning", min=0, max=99},
-				}
-			}
-		},
 
-		officestorage = {
-			isShop = true,
-			crate = {
-				procedural = true,
-				procList = {
-					{name="CrateOfficeSupplies", min=0, max=99},
-				}
+			office = {
+				crate = {
+					procedural = true,
+					procList = {
+						{name="CrateOfficeSupplies", min=0, max=99},
+					}
+				},
+				counter = {
+					procedural = true,
+					procList = {
+						{name="OfficeCounter", min=0, max=99},
+					}
+				},
+				desk = {
+					procedural = true,
+					procList = {
+						{name="OfficeDesk", min=0, max=99, weightChance=100},
+						{name="PoliceDesk", min=0, max=99, forceForRooms="policestorage"},
+					}
+				},
+				freezer = {
+					rolls = 1,
+					items = {
+						
+					}
+				},
+				fridge = {
+					procedural = true,
+					procList = {
+						{name="OfficeFridge", min=0, max=99},
+					}
+				},
+				metal_shelves = {
+					procedural= true,
+					procList = {
+						{name="OfficeShelfSupplies", min=0, max=99},
+						{name="LockerOhioMall", min=0, max=99, forceForZones="MallOhioL"},
+					}
+				},
+				shelves = {
+					procedural= true,
+					procList = {
+						{name="MedicalOfficeBooks", min=0, max=99, weightChance=100, forceForRooms="hospitalroom"},
+						{name="ShelfGeneric", min=0, max=99},
+					}
+				},
 			},
-			metal_shelves = {
-				procedural= true,
-				procList = {
-					{name="OfficeShelfSupplies", min=0, max=99},
-					{name="LockersUSPSHQ", min=0, max=99, forceForZones="USPSL"},
-				}
-			}
-		},
-
-		office = {
-			crate = {
-				procedural = true,
-				procList = {
-					{name="CrateOfficeSupplies", min=0, max=99},
-				}
-			},
-			counter = {
-				procedural = true,
-				procList = {
-					{name="OfficeCounter", min=0, max=99},
-				}
-			},
-			desk = {
-				procedural = true,
-				procList = {
-					{name="OfficeDesk", min=0, max=99, weightChance=100},
-					{name="PoliceDesk", min=0, max=99, forceForRooms="policestorage"},
-				}
-			},
-			freezer = {
-				rolls = 1,
-				items = {
-					
-				}
-			},
-			fridge = {
-				procedural = true,
-				procList = {
-					{name="OfficeFridge", min=0, max=99},
-				}
-			},
-			metal_shelves = {
-				procedural= true,
-				procList = {
-					{name="OfficeShelfSupplies", min=0, max=99},
-					{name="LockerOhioMall", min=0, max=99, forceForZones="MallOhioL"},
-				}
-			},
-			shelves = {
-				procedural= true,
-				procList = {
-					{name="MedicalOfficeBooks", min=0, max=99, weightChance=100, forceForRooms="hospitalroom"},
-					{name="ShelfGeneric", min=0, max=99},
-				}
-			},
-		},
-	}
-
-	table.insert(Distributions, 2, STRdistributionTable);
+		}
 
 	end
 
-	if SandboxVars.STR.DuffelLoot then
+	-- Check if the custom loot zones are enabled in sandbox options
+	--if SandboxVars.STR.TrunkOverrides then
+
+		table.insert(ProceduralDistributions.list["PoliceLockers"].items, "STR.Gloves_Leather_Black");
+		table.insert(ProceduralDistributions.list["PoliceLockers"].items, 2);
+		table.insert(ProceduralDistributions.list["PoliceLockers"].items, "STR.Gloves_Leather_Brown");
+		table.insert(ProceduralDistributions.list["PoliceLockers"].items, 2);
+		table.insert(ProceduralDistributions.list["PoliceLockers"].items, "STR.Gloves_Dress_White");
+		table.insert(ProceduralDistributions.list["PoliceLockers"].items, 1.5);
+		table.insert(ProceduralDistributions.list["PoliceLockers"].items, "STR.Jacket_Dress_Police_Meade");
+		table.insert(ProceduralDistributions.list["PoliceLockers"].items, 1.5);
+		table.insert(ProceduralDistributions.list["PoliceLockers"].items, "STR.Chest_Walkie");
+		table.insert(ProceduralDistributions.list["PoliceLockers"].items, 2.5);
+		table.insert(ProceduralDistributions.list["PoliceLockers"].items, "STR.Belt_PoliceDuty");
+		table.insert(ProceduralDistributions.list["PoliceLockers"].items, 2.5);
+		table.insert(ProceduralDistributions.list["PoliceLockers"].items, "STR.Hat_Riot_Helmet_Meade");
+		table.insert(ProceduralDistributions.list["PoliceLockers"].items, 1.5);
+		table.insert(ProceduralDistributions.list["PoliceLockers"].items, "STR.Hat_Riot_Helmet_Brown");
+		table.insert(ProceduralDistributions.list["PoliceLockers"].items, 1.5);
+		table.insert(ProceduralDistributions.list["PoliceLockers"].items, "STR.Hat_Riot_Helmet_Brown_Stripe");
+		table.insert(ProceduralDistributions.list["PoliceLockers"].items, 1.5);
+		table.insert(ProceduralDistributions.list["PoliceLockers"].items, "STR.Tie_Full_Police_Meade");
+		table.insert(ProceduralDistributions.list["PoliceLockers"].items, 2.5);
+		table.insert(ProceduralDistributions.list["PoliceLockers"].items, "STR.Tie_Worn_Police_Meade");
+		table.insert(ProceduralDistributions.list["PoliceLockers"].items, 2.5);
+
+	--end
+
+	table.insert(Distributions, 2, STRdistributionTable);
+
+	--if SandboxVars.STR.DuffelLoot then
 
 		local STR_DuffeldistributionTable = {
 
@@ -754,9 +783,14 @@ local function STRDistributions()
 		}
 
 		table.insert(Distributions, 2, STR_DuffeldistributionTable);
+		table.insert(ProceduralDistributions.list["PoliceLockers"].items, "STR.Bag_DuffelBag_Police_Meade");
+		table.insert(ProceduralDistributions.list["PoliceLockers"].items, 0.5);
+		table.insert(ProceduralDistributions.list["FireDeptLockers"].items, "STR.Bag_DuffelBag_Fire_Black");
+		table.insert(ProceduralDistributions.list["FireDeptLockers"].items, 0.5);
+		table.insert(ProceduralDistributions.list["FireDeptLockers"].items, "STR.Bag_DuffelBag_Fire_Khaki");
+		table.insert(ProceduralDistributions.list["FireDeptLockers"].items, 0.5);
 
-	end
-end
+	--end
 
 Events.OnPreDistributionMerge.Add(STRDistributions);
 

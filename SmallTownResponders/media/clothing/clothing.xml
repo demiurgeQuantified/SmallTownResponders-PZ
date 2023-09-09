@@ -942,6 +942,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_MaleOutfits>
 
@@ -1028,6 +1041,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
 
@@ -1110,6 +1136,20 @@
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
 			</subItems>
 		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
+		</m_items>
 	</m_MaleOutfits>
 
 	<m_FemaleOutfits>
@@ -1189,6 +1229,20 @@
 			</subItems>
 			<subItems>
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
 			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
@@ -1286,6 +1340,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_MaleOutfits>
 
@@ -1382,6 +1449,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
 
@@ -1474,6 +1554,20 @@
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
 			</subItems>
 		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
+		</m_items>
 	</m_MaleOutfits>
 
 	<m_FemaleOutfits>
@@ -1563,6 +1657,20 @@
 			</subItems>
 			<subItems>
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
 			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
@@ -3150,6 +3258,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_MaleOutfits>
 
@@ -3236,6 +3357,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
 
@@ -3318,6 +3452,20 @@
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
 			</subItems>
 		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
+		</m_items>
 	</m_MaleOutfits>
 
 	<m_FemaleOutfits>
@@ -3397,6 +3545,20 @@
 			</subItems>
 			<subItems>
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
 			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
@@ -3494,6 +3656,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_MaleOutfits>
 
@@ -3590,6 +3765,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
 
@@ -3682,6 +3870,20 @@
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
 			</subItems>
 		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
+		</m_items>
 	</m_MaleOutfits>
 
 	<m_FemaleOutfits>
@@ -3771,6 +3973,20 @@
 			</subItems>
 			<subItems>
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
 			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
@@ -4213,6 +4429,20 @@
 			</subItems>
 			<subItems>
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
 			</subItems>
 		</m_items>
 	</m_MaleOutfits>
@@ -6012,6 +6242,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_MaleOutfits>
 
@@ -6098,6 +6341,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
 
@@ -6180,6 +6436,20 @@
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
 			</subItems>
 		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
+		</m_items>
 	</m_MaleOutfits>
 
 	<m_FemaleOutfits>
@@ -6259,6 +6529,20 @@
 			</subItems>
 			<subItems>
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
 			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
@@ -6356,6 +6640,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_MaleOutfits>
 
@@ -6452,6 +6749,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
 
@@ -6544,6 +6854,20 @@
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
 			</subItems>
 		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
+		</m_items>
 	</m_MaleOutfits>
 
 	<m_FemaleOutfits>
@@ -6633,6 +6957,20 @@
 			</subItems>
 			<subItems>
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
 			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
@@ -7232,6 +7570,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>326abff1-77eb-4959-aea5-2e6d532d20fa</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_MaleOutfits>
 
@@ -7318,6 +7669,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>326abff1-77eb-4959-aea5-2e6d532d20fa</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
 
@@ -7400,6 +7764,20 @@
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
 			</subItems>
 		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
+		</m_items>
 	</m_MaleOutfits>
 
 	<m_FemaleOutfits>
@@ -7479,6 +7857,20 @@
 			</subItems>
 			<subItems>
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
 			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
@@ -7570,6 +7962,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>326abff1-77eb-4959-aea5-2e6d532d20fa</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_MaleOutfits>
 
@@ -7660,6 +8065,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>326abff1-77eb-4959-aea5-2e6d532d20fa</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
 
@@ -7746,6 +8164,20 @@
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
 			</subItems>
 		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
+		</m_items>
 	</m_MaleOutfits>
 
 	<m_FemaleOutfits>
@@ -7829,6 +8261,20 @@
 			</subItems>
 			<subItems>
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
 			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
@@ -8460,6 +8906,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_MaleOutfits>
 
@@ -8546,6 +9005,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
 
@@ -8628,6 +9100,20 @@
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
 			</subItems>
 		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
+		</m_items>
 	</m_MaleOutfits>
 
 	<m_FemaleOutfits>
@@ -8707,6 +9193,20 @@
 			</subItems>
 			<subItems>
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
 			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
@@ -8804,6 +9304,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_MaleOutfits>
 
@@ -8900,6 +9413,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
 
@@ -8992,6 +9518,20 @@
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
 			</subItems>
 		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
+		</m_items>
 	</m_MaleOutfits>
 
 	<m_FemaleOutfits>
@@ -9081,6 +9621,20 @@
 			</subItems>
 			<subItems>
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
 			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
@@ -9680,6 +10234,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_MaleOutfits>
 
@@ -9766,6 +10333,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
 
@@ -9848,6 +10428,20 @@
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
 			</subItems>
 		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
+		</m_items>
 	</m_MaleOutfits>
 
 	<m_FemaleOutfits>
@@ -9927,6 +10521,20 @@
 			</subItems>
 			<subItems>
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
 			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
@@ -10024,6 +10632,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_MaleOutfits>
 
@@ -10120,6 +10741,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
 
@@ -10212,6 +10846,20 @@
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
 			</subItems>
 		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
+		</m_items>
 	</m_MaleOutfits>
 
 	<m_FemaleOutfits>
@@ -10301,6 +10949,20 @@
 			</subItems>
 			<subItems>
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
 			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
@@ -10916,6 +11578,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>326abff1-77eb-4959-aea5-2e6d532d20fa</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_MaleOutfits>
 
@@ -11002,6 +11677,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>326abff1-77eb-4959-aea5-2e6d532d20fa</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
 
@@ -11165,6 +11853,20 @@
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
 			</subItems>
 		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
+		</m_items>
 	</m_FemaleOutfits>
 
 	<m_MaleOutfits>
@@ -11254,6 +11956,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>326abff1-77eb-4959-aea5-2e6d532d20fa</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_MaleOutfits>
 
@@ -11344,6 +12059,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>326abff1-77eb-4959-aea5-2e6d532d20fa</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
 
@@ -11430,6 +12158,20 @@
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
 			</subItems>
 		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
+		</m_items>
 	</m_MaleOutfits>
 
 	<m_FemaleOutfits>
@@ -11513,6 +12255,20 @@
 			</subItems>
 			<subItems>
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
 			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
@@ -12112,6 +12868,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_MaleOutfits>
 
@@ -12198,6 +12967,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
 
@@ -12280,6 +13062,20 @@
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
 			</subItems>
 		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
+		</m_items>
 	</m_MaleOutfits>
 
 	<m_FemaleOutfits>
@@ -12359,6 +13155,20 @@
 			</subItems>
 			<subItems>
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
 			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
@@ -12456,6 +13266,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_MaleOutfits>
 
@@ -12552,6 +13375,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
 
@@ -12644,6 +13480,20 @@
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
 			</subItems>
 		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
+		</m_items>
 	</m_MaleOutfits>
 
 	<m_FemaleOutfits>
@@ -12733,6 +13583,20 @@
 			</subItems>
 			<subItems>
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
 			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
@@ -13332,6 +14196,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_MaleOutfits>
 
@@ -13418,6 +14295,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
 
@@ -13500,6 +14390,20 @@
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
 			</subItems>
 		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
+		</m_items>
 	</m_MaleOutfits>
 
 	<m_FemaleOutfits>
@@ -13579,6 +14483,20 @@
 			</subItems>
 			<subItems>
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
 			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
@@ -13676,6 +14594,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_MaleOutfits>
 
@@ -13772,6 +14703,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
 
@@ -13864,6 +14808,20 @@
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
 			</subItems>
 		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
+		</m_items>
 	</m_MaleOutfits>
 
 	<m_FemaleOutfits>
@@ -13953,6 +14911,20 @@
 			</subItems>
 			<subItems>
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
 			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
@@ -14552,6 +15524,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>326abff1-77eb-4959-aea5-2e6d532d20fa</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_MaleOutfits>
 
@@ -14638,6 +15623,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>326abff1-77eb-4959-aea5-2e6d532d20fa</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
 
@@ -14720,6 +15718,20 @@
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
 			</subItems>
 		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
+		</m_items>
 	</m_MaleOutfits>
 
 	<m_FemaleOutfits>
@@ -14799,6 +15811,20 @@
 			</subItems>
 			<subItems>
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
 			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
@@ -14890,6 +15916,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>326abff1-77eb-4959-aea5-2e6d532d20fa</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_MaleOutfits>
 
@@ -14980,6 +16019,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>326abff1-77eb-4959-aea5-2e6d532d20fa</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
 
@@ -15066,6 +16118,20 @@
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
 			</subItems>
 		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
+		</m_items>
 	</m_MaleOutfits>
 
 	<m_FemaleOutfits>
@@ -15149,6 +16215,20 @@
 			</subItems>
 			<subItems>
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Hi-Vis Vests-->
+		<m_items>
+			<!--Yellow-->
+			<probability>0.4</probability>
+			<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
 			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
@@ -15748,6 +16828,11 @@
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
 			</subItems>
 		</m_items>
+		<!--Hi-Vis Vest-->
+		<m_items>
+			<probability>0.4</probability>
+			<itemGUID>621d5303-e309-49a6-bca5-d4a6e7fe83c1</itemGUID>
+		</m_items>
 	</m_MaleOutfits>
 
 	<m_FemaleOutfits>
@@ -15832,6 +16917,11 @@
 			<subItems>
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
 			</subItems>
+		</m_items>
+		<!--Hi-Vis Vest-->
+		<m_items>
+			<probability>0.4</probability>
+			<itemGUID>621d5303-e309-49a6-bca5-d4a6e7fe83c1</itemGUID>
 		</m_items>
 	</m_FemaleOutfits>
 
@@ -15922,6 +17012,11 @@
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
 			</subItems>
 		</m_items>
+		<!--Hi-Vis Vest-->
+		<m_items>
+			<probability>0.4</probability>
+			<itemGUID>621d5303-e309-49a6-bca5-d4a6e7fe83c1</itemGUID>
+		</m_items>
 	</m_MaleOutfits>
 
 	<m_FemaleOutfits>
@@ -16010,6 +17105,11 @@
 			<subItems>
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
 			</subItems>
+		</m_items>
+		<!--Hi-Vis Vest-->
+		<m_items>
+			<probability>0.4</probability>
+			<itemGUID>621d5303-e309-49a6-bca5-d4a6e7fe83c1</itemGUID>
 		</m_items>
 	</m_FemaleOutfits>
 
@@ -22780,6 +23880,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 		<!--Gas Mask-->
 		<m_items>
@@ -22861,6 +23974,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 		<!--Gas Mask-->
 		<m_items>
@@ -22942,6 +24068,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 		<!--Gas Mask-->
 		<m_items>
@@ -23023,6 +24162,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 		<!--Gas Mask-->
 		<m_items>
@@ -23104,6 +24256,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 		<!--Green Mask-->
 		<m_items>
@@ -23185,6 +24350,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 		<!--Green Mask-->
 		<m_items>
@@ -23266,6 +24444,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>326abff1-77eb-4959-aea5-2e6d532d20fa</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 		<!--Green Mask-->
 		<m_items>
@@ -23347,6 +24538,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>326abff1-77eb-4959-aea5-2e6d532d20fa</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 		<!--Green Mask-->
 		<m_items>
@@ -23428,6 +24632,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 		<!--Gas Mask-->
 		<m_items>
@@ -23509,6 +24726,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 		<!--Gas Mask-->
 		<m_items>
@@ -23590,6 +24820,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 		<!--Green Mask-->
 		<m_items>
@@ -23671,6 +24914,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 		<!--Green Mask-->
 		<m_items>
@@ -23752,6 +25008,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>326abff1-77eb-4959-aea5-2e6d532d20fa</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 		<!--Gas Mask-->
 		<m_items>
@@ -23833,6 +25102,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>326abff1-77eb-4959-aea5-2e6d532d20fa</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 		<!--Gas Mask-->
 		<m_items>
@@ -23914,6 +25196,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 		<!--Gas Mask-->
 		<m_items>
@@ -23995,6 +25290,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 		<!--Gas Mask-->
 		<m_items>
@@ -24076,6 +25384,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 		<!--Gas Mask-->
 		<m_items>
@@ -24157,6 +25478,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 		<!--Gas Mask-->
 		<m_items>
@@ -24238,6 +25572,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 		<!--Green Mask-->
 		<m_items>
@@ -24319,6 +25666,19 @@
 		<m_items>
 			<probability>0.4</probability>
 			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+			<!--Hi-Vis Vests-->
+			<!--Yellow-->
+			<subItems>
+				<itemGUID>b7ceaea2-5950-4695-94ce-54a467b1f798</itemGUID>
+			</subItems>
+			<!--Green-->
+			<subItems>
+				<itemGUID>3615f849-4814-400e-8399-d5404a27d800</itemGUID>
+			</subItems>
+			<!--Green Unmarked-->
+			<subItems>
+				<itemGUID>516aa053-c0df-4da3-977e-11701c95b422</itemGUID>
+			</subItems>
 		</m_items>
 		<!--Green Mask-->
 		<m_items>
@@ -24400,6 +25760,11 @@
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
 			</subItems>
 		</m_items>
+		<!--Hi-Vis Vest-->
+		<m_items>
+			<probability>0.4</probability>
+			<itemGUID>621d5303-e309-49a6-bca5-d4a6e7fe83c1</itemGUID>
+		</m_items>
 		<!--Gas Mask-->
 		<m_items>
 			<itemGUID>92efbe27-baa3-4e7f-bc7c-cb4713d23c14</itemGUID>
@@ -24479,6 +25844,11 @@
 			<subItems>
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
 			</subItems>
+		</m_items>
+		<!--Hi-Vis Vest-->
+		<m_items>
+			<probability>0.4</probability>
+			<itemGUID>621d5303-e309-49a6-bca5-d4a6e7fe83c1</itemGUID>
 		</m_items>
 		<!--Gas Mask-->
 		<m_items>

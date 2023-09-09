@@ -90,7 +90,7 @@ module STR {
     {
         DisplayCategory = Bag,
         Type = Container,
-        DisplayName = EMS Duffel Bag,
+        DisplayName = Trauma Bag,
         ClothingItem = Bag_DuffelBag_EMS_Red,
         CanBeEquipped = Back,
         WeightReduction	=	65,
@@ -111,7 +111,7 @@ module STR {
     {
         DisplayCategory = Bag,
         Type = Container,
-        DisplayName = EMS Duffel Bag,
+        DisplayName = Trauma Bag,
         ClothingItem = Bag_DuffelBag_EMS_Blue,
         CanBeEquipped = Back,
         WeightReduction	=	65,
@@ -132,7 +132,7 @@ module STR {
     {
         DisplayCategory = Bag,
         Type = Container,
-        DisplayName = EMS Duffel Bag,
+        DisplayName = Trauma Bag,
         ClothingItem = Bag_DuffelBag_EMS_Green,
         CanBeEquipped = Back,
         WeightReduction	=	65,

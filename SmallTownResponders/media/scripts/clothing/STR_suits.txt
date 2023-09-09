@@ -87,7 +87,7 @@ module STR {
     {
         DisplayCategory = Clothing,
         Type = Clothing,
-        DisplayName = Judge Robe,
+        DisplayName = Judicial Robe,
         ClothingItem = Judge_Robe,
         BodyLocation = Jacket,
         BloodLocation = LongJacket,
