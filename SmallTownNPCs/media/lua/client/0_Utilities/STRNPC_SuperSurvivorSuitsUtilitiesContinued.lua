@@ -1,17 +1,11 @@
-if getActivatedMods():contains("SuperbSurvivors") then
-	require "0_Utilities/SuperSurvivorSuitsUtilities"
-	require "0_Utilities/SuperSurvivorSuitsRegistry"
+if getActivatedMods():contains("SuperbSurvivorsContinued") or getActivatedMods():contains("SuperbSurvivorsContinuedBatmane") then
+	require "00_SuperbSurviorModVariables/SuperSurvivorsSuitsList"
+	require "02_Utilities/SuperSurvivorSuitsUtilities"
 
 	-- this file is heavily modified
 	-- For Coord-based spawns.
 
-	local enableDebugSuits = false
-
-	local function debugSuits(text)
-		if enableDebugSuits then
-			print(text)
-		end
-	end
+	local isLocalLoggingEnabled = false;
 
 	-- Here you'll see that I added custom "Rare" categories.
 	-- Do NOT do this unless you 100% need to.
@@ -1905,12 +1899,11 @@ if getActivatedMods():contains("SuperbSurvivors") then
 
 	-- Here I'm doing a nono by overriding the spawning function.
 	function getRandomSurvivorSuit(SS)
-		debugSuits(" ----- getRandomSurvivorSuit -----")
+		CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "GetRandomSurvivorSuit() called");
 
-		local roll = ZombRand(1,100)
+		local roll = ZombRand(1,101)
 		local tempTable = nil
-		local randomize = false
-		debugSuits("roll : " .. tostring(roll))
+		CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "rolled: " .. tostring(roll));
 
 		-- Coord Stuff
 		-- 1 is Xmin
@@ -2035,394 +2028,367 @@ if getActivatedMods():contains("SuperbSurvivors") then
 		--Assign Tables Based On Coordinate Ranges
 		if SS:getX() >= Rosewood[1] and SS:getX() <= Rosewood[2] and SS:getY() >= Rosewood[3] and SS:getY() <= Rosewood[4] then
 			if(roll == 1) then -- choose legendary suit
-				debugSuits("Legendary suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Legendary suit");
 				tempTable = SurvivorRandomSuits["Legendary"]
 			elseif(roll <= 5) then -- choose veryrare suit
-				debugSuits("VeryRare suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "VeryRare suit");
 				tempTable = SurvivorRandomSuits["VeryRare"]
 			elseif(roll <= 15) then -- choose rare suit
-				debugSuits("Rare suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Rare suit");
 				tempTable = SurvivorRandomSuits["RareRW"]
 			elseif(roll <= 25) then -- chose normal suit
-				debugSuits("Normal suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Normal suit");
 				tempTable = SurvivorRandomSuits["Normal"]
 			elseif(roll <= 40) then -- chose uncommon suit
-				debugSuits("Uncommon suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Uncommon suit");
 				tempTable = SurvivorRandomSuits["Uncommon"]
 			else -- chose common suit
-				debugSuits("Common suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Common suit");
 				tempTable = SurvivorRandomSuits["Common"]
-				randomize = false
 			end
 		elseif SS:getX() >= Riverside[1] and SS:getX() <= Riverside[2] and SS:getY() >= Riverside[3] and SS:getY() <= Riverside[4] then
 			if(roll == 1) then -- choose legendary suit
-				debugSuits("Legendary suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Legendary suit");
 				tempTable = SurvivorRandomSuits["Legendary"]
 			elseif(roll <= 5) then -- choose veryrare suit
-				debugSuits("VeryRare suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "VeryRare suit");
 				tempTable = SurvivorRandomSuits["VeryRare"]
 			elseif(roll <= 15) then -- choose rare suit
-				debugSuits("Rare suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Rare suit");
 				tempTable = SurvivorRandomSuits["RareRS"]
 			elseif(roll <= 25) then -- chose normal suit
-				debugSuits("Normal suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Normal suit");
 				tempTable = SurvivorRandomSuits["Normal"]
 			elseif(roll <= 40) then -- chose uncommon suit
-				debugSuits("Uncommon suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Uncommon suit");
 				tempTable = SurvivorRandomSuits["Uncommon"]
 			else -- chose common suit
-				debugSuits("Common suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Common suit");
 				tempTable = SurvivorRandomSuits["Common"]
-				randomize = false
 			end
 		elseif SS:getX() >= Muldraugh[1] and SS:getX() <= Muldraugh[2] and SS:getY() >= Muldraugh[3] and SS:getY() <= Muldraugh[4] then
 			if(roll == 1) then -- choose legendary suit
-				debugSuits("Legendary suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Legendary suit");
 				tempTable = SurvivorRandomSuits["Legendary"]
 			elseif(roll <= 5) then -- choose veryrare suit
-				debugSuits("VeryRare suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "VeryRare suit");
 				tempTable = SurvivorRandomSuits["VeryRare"]
 			elseif(roll <= 15) then -- choose rare suit
-				debugSuits("Rare suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Rare suit");
 				tempTable = SurvivorRandomSuits["RareMD"]
 			elseif(roll <= 25) then -- chose normal suit
-				debugSuits("Normal suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Normal suit");
 				tempTable = SurvivorRandomSuits["Normal"]
 			elseif(roll <= 40) then -- chose uncommon suit
-				debugSuits("Uncommon suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Uncommon suit");
 				tempTable = SurvivorRandomSuits["Uncommon"]
 			else -- chose common suit
-				debugSuits("Common suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Common suit");
 				tempTable = SurvivorRandomSuits["Common"]
-				randomize = false
 			end
 		elseif SS:getX() >= WestPoint[1] and SS:getX() <= WestPoint[2] and SS:getY() >= WestPoint[3] and SS:getY() <= WestPoint[4] then
 			if(roll == 1) then -- choose legendary suit
-				debugSuits("Legendary suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Legendary suit");
 				tempTable = SurvivorRandomSuits["Legendary"]
 			elseif(roll <= 5) then -- choose veryrare suit
-				debugSuits("VeryRare suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "VeryRare suit");
 				tempTable = SurvivorRandomSuits["VeryRare"]
 			elseif(roll <= 15) then -- choose rare suit
-				debugSuits("Rare suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Rare suit");
 				tempTable = SurvivorRandomSuits["RareWP"]
 			elseif(roll <= 25) then -- chose normal suit
-				debugSuits("Normal suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Normal suit");
 				tempTable = SurvivorRandomSuits["Normal"]
 			elseif(roll <= 40) then -- chose uncommon suit
-				debugSuits("Uncommon suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Uncommon suit");
 				tempTable = SurvivorRandomSuits["Uncommon"]
 			else -- chose common suit
-				debugSuits("Common suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Common suit");
 				tempTable = SurvivorRandomSuits["Common"]
-				randomize = false
 			end
 		elseif SS:getX() >= LPD1[1] and SS:getX() <= LPD1[2] and SS:getY() >= LPD1[3] and SS:getY() <= LPD1[4] then
 			if(roll == 1) then -- choose legendary suit
-				debugSuits("Legendary suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Legendary suit");
 				tempTable = SurvivorRandomSuits["Legendary"]
 			elseif(roll <= 5) then -- choose veryrare suit
-				debugSuits("VeryRare suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "VeryRare suit");
 				tempTable = SurvivorRandomSuits["VeryRare"]
 			elseif(roll <= 15) then -- choose rare suit
-				debugSuits("Rare suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Rare suit");
 				tempTable = SurvivorRandomSuits["RareLV"]
 			elseif(roll <= 25) then -- chose normal suit
-				debugSuits("Normal suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Normal suit");
 				tempTable = SurvivorRandomSuits["Normal"]
 			elseif(roll <= 40) then -- chose uncommon suit
-				debugSuits("Uncommon suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Uncommon suit");
 				tempTable = SurvivorRandomSuits["Uncommon"]
 			else -- chose common suit
-				debugSuits("Common suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Common suit");
 				tempTable = SurvivorRandomSuits["Common"]
-				randomize = false
 			end
 		elseif SS:getX() >= LPD2[1] and SS:getX() <= LPD2[2] and SS:getY() >= LPD2[3] and SS:getY() <= LPD2[4] then
 			if(roll == 1) then -- choose legendary suit
-				debugSuits("Legendary suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Legendary suit");
 				tempTable = SurvivorRandomSuits["Legendary"]
 			elseif(roll <= 5) then -- choose veryrare suit
-				debugSuits("VeryRare suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "VeryRare suit");
 				tempTable = SurvivorRandomSuits["VeryRare"]
 			elseif(roll <= 15) then -- choose rare suit
-				debugSuits("Rare suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Rare suit");
 				tempTable = SurvivorRandomSuits["RareLV"]
 			elseif(roll <= 25) then -- chose normal suit
-				debugSuits("Normal suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Normal suit");
 				tempTable = SurvivorRandomSuits["Normal"]
 			elseif(roll <= 40) then -- chose uncommon suit
-				debugSuits("Uncommon suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Uncommon suit");
 				tempTable = SurvivorRandomSuits["Uncommon"]
 			else -- chose common suit
-				debugSuits("Common suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Common suit");
 				tempTable = SurvivorRandomSuits["Common"]
-				randomize = false
 			end
 		elseif SS:getX() >= LPD3[1] and SS:getX() <= LPD3[2] and SS:getY() >= LPD3[3] and SS:getY() <= LPD3[4] then
 			if(roll == 1) then -- choose legendary suit
-				debugSuits("Legendary suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Legendary suit");
 				tempTable = SurvivorRandomSuits["Legendary"]
 			elseif(roll <= 5) then -- choose veryrare suit
-				debugSuits("VeryRare suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "VeryRare suit");
 				tempTable = SurvivorRandomSuits["VeryRare"]
 			elseif(roll <= 15) then -- choose rare suit
-				debugSuits("Rare suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Rare suit");
 				tempTable = SurvivorRandomSuits["RareLV"]
 			elseif(roll <= 25) then -- chose normal suit
-				debugSuits("Normal suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Normal suit");
 				tempTable = SurvivorRandomSuits["Normal"]
 			elseif(roll <= 40) then -- chose uncommon suit
-				debugSuits("Uncommon suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Uncommon suit");
 				tempTable = SurvivorRandomSuits["Uncommon"]
 			else -- chose common suit
-				debugSuits("Common suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Common suit");
 				tempTable = SurvivorRandomSuits["Common"]
-				randomize = false
 			end
 		elseif SS:getX() >= JCPD1[1] and SS:getX() <= JCPD1[2] and SS:getY() >= JCPD1[3] and SS:getY() <= JCPD1[4] then
 			if(roll == 1) then -- choose legendary suit
-				debugSuits("Legendary suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Legendary suit");
 				tempTable = SurvivorRandomSuits["Legendary"]
 			elseif(roll <= 5) then -- choose veryrare suit
-				debugSuits("VeryRare suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "VeryRare suit");
 				tempTable = SurvivorRandomSuits["VeryRare"]
 			elseif(roll <= 15) then -- choose rare suit
-				debugSuits("Rare suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Rare suit");
 				tempTable = SurvivorRandomSuits["RareJCPD"]
 			elseif(roll <= 25) then -- chose normal suit
-				debugSuits("Normal suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Normal suit");
 				tempTable = SurvivorRandomSuits["Normal"]
 			elseif(roll <= 40) then -- chose uncommon suit
-				debugSuits("Uncommon suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Uncommon suit");
 				tempTable = SurvivorRandomSuits["Uncommon"]
 			else -- chose common suit
-				debugSuits("Common suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Common suit");
 				tempTable = SurvivorRandomSuits["Common"]
-				randomize = false
 			end
 		elseif SS:getX() >= JCPD2[1] and SS:getX() <= JCPD2[2] and SS:getY() >= JCPD2[3] and SS:getY() <= JCPD2[4] then
 			if(roll == 1) then -- choose legendary suit
-				debugSuits("Legendary suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Legendary suit");
 				tempTable = SurvivorRandomSuits["Legendary"]
 			elseif(roll <= 5) then -- choose veryrare suit
-				debugSuits("VeryRare suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "VeryRare suit");
 				tempTable = SurvivorRandomSuits["VeryRare"]
 			elseif(roll <= 15) then -- choose rare suit
-				debugSuits("Rare suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Rare suit");
 				tempTable = SurvivorRandomSuits["RareJCPD"]
 			elseif(roll <= 25) then -- chose normal suit
-				debugSuits("Normal suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Normal suit");
 				tempTable = SurvivorRandomSuits["Normal"]
 			elseif(roll <= 40) then -- chose uncommon suit
-				debugSuits("Uncommon suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Uncommon suit");
 				tempTable = SurvivorRandomSuits["Uncommon"]
 			else -- chose common suit
-				debugSuits("Common suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Common suit");
 				tempTable = SurvivorRandomSuits["Common"]
-				randomize = false
 			end
 		elseif SS:getX() >= JCSD1[1] and SS:getX() <= JCSD1[2] and SS:getY() >= JCSD1[3] and SS:getY() <= JCSD1[4] then
 			if(roll == 1) then -- choose legendary suit
-				debugSuits("Legendary suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Legendary suit");
 				tempTable = SurvivorRandomSuits["Legendary"]
 			elseif(roll <= 5) then -- choose veryrare suit
-				debugSuits("VeryRare suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "VeryRare suit");
 				tempTable = SurvivorRandomSuits["VeryRare"]
 			elseif(roll <= 15) then -- choose rare suit
-				debugSuits("Rare suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Rare suit");
 				tempTable = SurvivorRandomSuits["RareJCSD"]
 			elseif(roll <= 25) then -- chose normal suit
-				debugSuits("Normal suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Normal suit");
 				tempTable = SurvivorRandomSuits["Normal"]
 			elseif(roll <= 40) then -- chose uncommon suit
-				debugSuits("Uncommon suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Uncommon suit");
 				tempTable = SurvivorRandomSuits["Uncommon"]
 			else -- chose common suit
-				debugSuits("Common suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Common suit");
 				tempTable = SurvivorRandomSuits["Common"]
-				randomize = false
 			end
 		elseif SS:getX() >= JCSD2[1] and SS:getX() <= JCSD2[2] and SS:getY() >= JCSD2[3] and SS:getY() <= JCSD2[4] then
 			if(roll == 1) then -- choose legendary suit
-				debugSuits("Legendary suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Legendary suit");
 				tempTable = SurvivorRandomSuits["Legendary"]
 			elseif(roll <= 5) then -- choose veryrare suit
-				debugSuits("VeryRare suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "VeryRare suit");
 				tempTable = SurvivorRandomSuits["VeryRare"]
 			elseif(roll <= 15) then -- choose rare suit
-				debugSuits("Rare suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Rare suit");
 				tempTable = SurvivorRandomSuits["RareJCSD"]
 			elseif(roll <= 25) then -- chose normal suit
-				debugSuits("Normal suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Normal suit");
 				tempTable = SurvivorRandomSuits["Normal"]
 			elseif(roll <= 40) then -- chose uncommon suit
-				debugSuits("Uncommon suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Uncommon suit");
 				tempTable = SurvivorRandomSuits["Uncommon"]
 			else -- chose common suit
-				debugSuits("Common suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Common suit");
 				tempTable = SurvivorRandomSuits["Common"]
-				randomize = false
 			end
 		elseif SS:getX() >= JCSD3[1] and SS:getX() <= JCSD3[2] and SS:getY() >= JCSD3[3] and SS:getY() <= JCSD3[4] then
 			if(roll == 1) then -- choose legendary suit
-				debugSuits("Legendary suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Legendary suit");
 				tempTable = SurvivorRandomSuits["Legendary"]
 			elseif(roll <= 5) then -- choose veryrare suit
-				debugSuits("VeryRare suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "VeryRare suit");
 				tempTable = SurvivorRandomSuits["VeryRare"]
 			elseif(roll <= 15) then -- choose rare suit
-				debugSuits("Rare suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Rare suit");
 				tempTable = SurvivorRandomSuits["RareJCSD"]
 			elseif(roll <= 25) then -- chose normal suit
-				debugSuits("Normal suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Normal suit");
 				tempTable = SurvivorRandomSuits["Normal"]
 			elseif(roll <= 40) then -- chose uncommon suit
-				debugSuits("Uncommon suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Uncommon suit");
 				tempTable = SurvivorRandomSuits["Uncommon"]
 			else -- chose common suit
-				debugSuits("Common suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Common suit");
 				tempTable = SurvivorRandomSuits["Common"]
-				randomize = false
 			end
 		elseif (SS:getX() >= RCR[1]) and (SS:getX() <= RCR[2]) and (SS:getY() >= RCR[3]) and (SS:getY() <= RCR[4]) then
 			if isModEnabled("RavenCreek") then
 				if(roll == 1) then -- choose legendary suit
-					debugSuits("Legendary suit:")
+					CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Legendary suit");
 					tempTable = SurvivorRandomSuits["Legendary"]
 				elseif(roll <= 5) then -- choose veryrare suit
-					debugSuits("VeryRare suit:")
+					CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "VeryRare suit");
 					tempTable = SurvivorRandomSuits["VeryRare"]
 				elseif(roll <= 15) then -- choose rare suit
-					debugSuits("Rare suit:")
+					CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Rare suit");
 					tempTable = SurvivorRandomSuits["RareRCR"]
 				elseif(roll <= 25) then -- chose normal suit
-					debugSuits("Normal suit:")
+					CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Normal suit");
 					tempTable = SurvivorRandomSuits["Normal"]
 				elseif(roll <= 40) then -- chose uncommon suit
-					debugSuits("Uncommon suit:")
+					CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Uncommon suit");
 					tempTable = SurvivorRandomSuits["Uncommon"]
 				else -- chose common suit
-					debugSuits("Common suit:")
+					CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Common suit");
 					tempTable = SurvivorRandomSuits["Common"]
-					randomize = false
-				end
+					end
 			elseif not isModEnabled("RavenCreek") then
 				if(roll == 1) then -- choose legendary suit
-					debugSuits("Legendary suit:")
+					CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Legendary suit");
 					tempTable = SurvivorRandomSuits["Legendary"]
 				elseif(roll <= 5) then -- choose veryrare suit
-					debugSuits("VeryRare suit:")
+					CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "VeryRare suit");
 					tempTable = SurvivorRandomSuits["VeryRare"]
 				elseif(roll <= 15) then -- choose rare suit
-					debugSuits("Rare suit:")
+					CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Rare suit");
 					tempTable = SurvivorRandomSuits["Rare"]
 				elseif(roll <= 25) then -- chose normal suit
-					debugSuits("Normal suit:")
+					CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Normal suit");
 					tempTable = SurvivorRandomSuits["Normal"]
 				elseif(roll <= 40) then -- chose uncommon suit
-					debugSuits("Uncommon suit:")
+					CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Uncommon suit");
 					tempTable = SurvivorRandomSuits["Uncommon"]
 				else -- chose common suit
-					debugSuits("Common suit:")
+					CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Common suit");
 					tempTable = SurvivorRandomSuits["Common"]
-					randomize = false
-				end
+					end
 			end
 		elseif (SS:getX() >= TD[1]) and (SS:getX() <= TD[2]) and (SS:getY() >= TD[3]) and (SS:getY() <= TD[4]) then
 			if isModEnabled("Tandil") then
 				if(roll == 1) then -- choose legendary suit
-					debugSuits("Legendary suit:")
+					CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Legendary suit");
 					tempTable = SurvivorRandomSuits["Legendary"]
 				elseif(roll <= 5) then -- choose veryrare suit
-					debugSuits("VeryRare suit:")
+					CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "VeryRare suit");
 					tempTable = SurvivorRandomSuits["VeryRare"]
 				elseif(roll <= 15) then -- choose rare suit
-					debugSuits("Rare suit:")
+					CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Rare suit");
 					tempTable = SurvivorRandomSuits["RareTD"]
 				elseif(roll <= 25) then -- chose normal suit
-					debugSuits("Normal suit:")
+					CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Normal suit");
 					tempTable = SurvivorRandomSuits["Normal"]
 				elseif(roll <= 40) then -- chose uncommon suit
-					debugSuits("Uncommon suit:")
+					CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Uncommon suit");
 					tempTable = SurvivorRandomSuits["Uncommon"]
 				else -- chose common suit
-					debugSuits("Common suit:")
+					CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Common suit");
 					tempTable = SurvivorRandomSuits["Common"]
-					randomize = false
-				end
+					end
 			elseif not isModEnabled("Tandil") then
 				if(roll == 1) then -- choose legendary suit
-					debugSuits("Legendary suit:")
+					CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Legendary suit");
 					tempTable = SurvivorRandomSuits["Legendary"]
 				elseif(roll <= 5) then -- choose veryrare suit
-					debugSuits("VeryRare suit:")
+					CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "VeryRare suit");
 					tempTable = SurvivorRandomSuits["VeryRare"]
 				elseif(roll <= 15) then -- choose rare suit
-					debugSuits("Rare suit:")
+					CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Rare suit");
 					tempTable = SurvivorRandomSuits["Rare"]
 				elseif(roll <= 25) then -- chose normal suit
-					debugSuits("Normal suit:")
+					CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Normal suit");
 					tempTable = SurvivorRandomSuits["Normal"]
 				elseif(roll <= 40) then -- chose uncommon suit
-					debugSuits("Uncommon suit:")
+					CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Uncommon suit");
 					tempTable = SurvivorRandomSuits["Uncommon"]
 				else -- chose common suit
-					debugSuits("Common suit:")
+					CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Common suit");
 					tempTable = SurvivorRandomSuits["Common"]
-					randomize = false
-				end
+					end
 			end
 		else
 			if(roll == 1) then -- choose legendary suit
-				debugSuits("Legendary suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Legendary suit");
 				tempTable = SurvivorRandomSuits["Legendary"]
 			elseif(roll <= 5) then -- choose veryrare suit
-				debugSuits("VeryRare suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "VeryRare suit");
 				tempTable = SurvivorRandomSuits["VeryRare"]
 			elseif(roll <= 15) then -- choose rare suit
-				debugSuits("Rare suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Rare suit");
 				tempTable = SurvivorRandomSuits["Rare"]
 			elseif(roll <= 25) then -- chose normal suit
-				debugSuits("Normal suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Normal suit");
 				tempTable = SurvivorRandomSuits["Normal"]
 			elseif(roll <= 40) then -- chose uncommon suit
-				debugSuits("Uncommon suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Uncommon suit");
 				tempTable = SurvivorRandomSuits["Uncommon"]
 			else -- chose common suit
-				debugSuits("Common suit:")
+				CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Got: " .. "Common suit");
 				tempTable = SurvivorRandomSuits["Common"]
-				randomize = false
 			end
 		end
 
 		local result = table.randFrom(tempTable)
 
-		while (string.sub(result, -1) == "F" and not SS.player:isFemale()) or (string.sub(result, -1) == "M" and SS.player:isFemale()) do
-			debugSuits("Wrong gender " .. result .. " (it's only 1993 and KY isn't woke yet)")
+		while (string.sub(result, -1) == "F"
+				and not SS.player:isFemale())
+			or (string.sub(result, -1) == "M"
+				and SS.player:isFemale()) do
 			result = table.randFrom(tempTable)
 		end
-		debugSuits("random key result is: "..tostring(result))
+		CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "Random suit result: " .. tostring(result));
 
 		local suitTable = tempTable[result]
 		for i=1, #suitTable do
 			if(suitTable[i] ~= nil) then
-				debugSuits("WearThis: " .. tostring(suitTable[i]))
 				SS:WearThis(suitTable[i])
 			end
 		end
+		CreateLogLine("SuperSurvivorSuitsUtilities", isLocalLoggingEnabled, "--- GetRandomSurvivorSuit() end ---");
 
-		if randomize then
-			for i=1, ZombRand(0, 3) do
-				tempTable = SurvivorRandomSuits[table.randFrom(SurvivorRandomSuits)]
-				local result = table.randFrom(tempTable)
-				local suitTable = tempTable[result]
-				item = suitTable[ZombRand(1, #suitTable)]
-				debugSuits("WearThis randomize: " .. item)
-				SS:WearThis(item)
-			end
-		end
-
-		debugSuits(" ----- getRandomSurvivorSuit -----")
 	end
 end

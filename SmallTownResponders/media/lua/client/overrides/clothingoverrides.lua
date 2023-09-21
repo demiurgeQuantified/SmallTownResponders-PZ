@@ -100,6 +100,14 @@ ClothingOverrides.zonesToOutfit = {
 		--Postal = 'USPS_Mail',},
 }
 
+ClothingOverrides.fixOutfit = function(zombie)
+	if zombie and zombie:isSceneCulled() and not zombie:getModData().isLoaded then
+		zombie:setSceneCulled(false)
+		zombie:setSceneCulled(true)
+		zombie:getModData().isLoaded = true
+	end
+end
+
 ClothingOverrides.overrideOutfit = function(zombie)
     local outfitType = ClothingOverrides.outfitsToSwap[zombie:getOutfitName()]
     if not outfitType then return end
@@ -112,7 +120,7 @@ ClothingOverrides.overrideOutfit = function(zombie)
     else
         zone = Overrides.getZone(x,y)
     end
-    
+
     local outfit = ClothingOverrides.zonesToOutfit[zone][outfitType] or ClothingOverrides.zonesToOutfit.Meade[outfitType]
 
     if type(outfit) == 'table' then
@@ -131,6 +139,7 @@ function ClothingOverrides.OnTick(tick)
     local zombieIndex = tick - ClothingOverrides.zeroTick
     if zombieList:size() > zombieIndex then
         ClothingOverrides.overrideOutfit(zombieList:get(zombieIndex))
+		ClothingOverrides.fixOutfit(zombieList:get(zombieIndex))
     else
         ClothingOverrides.zeroTick = tick + 1
     end
