@@ -153,6 +153,7 @@ local function preDistributionMerge()
 					"STR.Gloves_Leather_Brown", 2,
 					"STR.Gloves_Dress_White", 1,
 					"STR.Jacket_Dress_Police_Tandil", 2,
+					"STR.Vest_HighViz_Police_Tandil", 2,
 					"STR.Hat_Police_Tandil", 4,
 					"STR.Hat_Police_Tandil_Dress", 1,
 					"STR.Jacket_Police_Tandil", 4,

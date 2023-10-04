@@ -38,6 +38,13 @@ function Add4WayExtraItem(item1, item2, item3, item4, context1, context2, contex
 	
 end
 
+-- Vest
+AddNewExtraItem("STR.Vest_HighViz_KSP", "STR.Vest_HighViz_KSPOPEN", "CloseJacket", "OpenJacket", 0.75);
+AddNewExtraItem("STR.Vest_HighViz_Police_Yellow", "STR.Vest_HighViz_Police_YellowOPEN", "CloseJacket", "OpenJacket", 0.75);
+AddNewExtraItem("STR.Vest_HighViz_Police_Green", "STR.Vest_HighViz_Police_GreenOPEN", "CloseJacket", "OpenJacket", 0.75);
+AddNewExtraItem("STR.Vest_HighViz_Police_Green_Unmarked", "STR.Vest_HighViz_Police_Green_UnmarkedOPEN", "CloseJacket", "OpenJacket", 0.75);
+AddNewExtraItem("STR.Vest_HighViz_Police_Tandil", "STR.Vest_HighViz_Police_TandilOPEN", "CloseJacket", "OpenJacket", 0.75);
+
 -- Jacket
 AddNewExtraItem("STR.Jacket_Police_Tandil", "STR.Jacket_Police_TandilOPEN", "CloseJacket", "OpenJacket", 0.75);
 AddNewExtraItem("STR.Jacket_Fireman_Tandil_Black", "STR.Jacket_Fireman_Tandil_BlackOPEN", "CloseJacket", "OpenJacket", 0.75);

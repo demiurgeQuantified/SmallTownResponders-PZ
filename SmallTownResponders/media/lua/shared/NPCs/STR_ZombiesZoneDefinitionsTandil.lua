@@ -1,8 +1,8 @@
 require 'NPCs/ZombiesZoneDefinition'
 
-if getActivatedMods():contains("Tandil") then
+local function STRSpawnsTandil()
 
-	local function STRSpawnsTandil()
+	if getActivatedMods():contains("Tandil") then
 
 		local DOC = SandboxVars.STRS.DOC
 		local EMS = SandboxVars.STRS.EMS

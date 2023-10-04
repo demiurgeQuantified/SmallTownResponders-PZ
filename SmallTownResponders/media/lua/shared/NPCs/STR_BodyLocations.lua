@@ -11,8 +11,8 @@ group:getOrCreateLocation("DutyBelt")
 group:getOrCreateLocation("ChestWalkie")
 group:getOrCreateLocation("Neck2")
 
-group:setExclusive("DutyBelt", "Belt")
-group:setExclusive("DutyBelt", "BeltExtra")
+--group:setExclusive("DutyBelt", "Belt")
+--group:setExclusive("DutyBelt", "BeltExtra")
 
 group:setExclusive("FullSuitHead", "Neck2")
 group:setExclusive("FullTop", "Neck2")

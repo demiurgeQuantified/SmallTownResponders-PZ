@@ -3,28 +3,12 @@ module STR {
 	imports {
 		Base
 	}
-    item Vest_BulletPolice_Meade
-    {
-        DisplayCategory = Clothing,
-        Type = Clothing,
-        DisplayName = Sheriff Bulletproof Vest,
-        ClothingItem = Vest_BulletPolice_Meade,
-        BodyLocation = TorsoExtra,
-        Icon = BulletVest_Police_Meade,
-        BloodLocation = ShirtNoSleeves,
-        Insulation = 0.65,
-        WindResistance = 0.30,
-        BiteDefense = 30,
-        ScratchDefense = 55,
-        BulletDefense = 100,
-        WorldStaticModel = BulletVest_Ground,
-    }
-    item Vest_HighViz_KSP
+    item Vest_HighViz_KSPOPEN
     {
         DisplayCategory = Clothing,
         Type = Clothing,
         DisplayName = State Police High Visibility Vest,
-        ClothingItem = Vest_HighViz_KSP,
+        ClothingItem = Vest_HighViz_KSPOPEN,
         BodyLocation = TorsoExtraVest,
         Icon = Vest_HighViz_KSP,
         BloodLocation = ShirtNoSleeves,
@@ -32,12 +16,12 @@ module STR {
         WindResistance = 0.05,
         WorldStaticModel = HuntingVest_Ground,
     }
-    item Vest_HighViz_Police_Yellow
+    item Vest_HighViz_Police_YellowOPEN
     {
         DisplayCategory = Clothing,
         Type = Clothing,
         DisplayName = Police High Visibility Vest,
-        ClothingItem = Vest_HighViz_Police_Yellow,
+        ClothingItem = Vest_HighViz_Police_YellowOPEN,
         BodyLocation = TorsoExtraVest,
         Icon = Vest_HighViz_Police_Yellow,
         BloodLocation = ShirtNoSleeves,
@@ -45,12 +29,12 @@ module STR {
         WindResistance = 0.05,
         WorldStaticModel = HuntingVest_Ground,
     }
-    item Vest_HighViz_Police_Green
+    item Vest_HighViz_Police_GreenOPEN
     {
         DisplayCategory = Clothing,
         Type = Clothing,
         DisplayName = Police High Visibility Vest,
-        ClothingItem = Vest_HighViz_Police_Green,
+        ClothingItem = Vest_HighViz_Police_GreenOPEN,
         BodyLocation = TorsoExtraVest,
         Icon = Vest_HighViz_Police_Green,
         BloodLocation = ShirtNoSleeves,
@@ -58,12 +42,12 @@ module STR {
         WindResistance = 0.05,
         WorldStaticModel = HuntingVest_Ground,
     }
-    item Vest_HighViz_Police_Green_Unmarked
+    item Vest_HighViz_Police_Green_UnmarkedOPEN
     {
         DisplayCategory = Clothing,
         Type = Clothing,
         DisplayName = Police High Visibility Vest,
-        ClothingItem = Vest_HighViz_Police_Green_Unmarked,
+        ClothingItem = Vest_HighViz_Police_Green_UnmarkedOPEN,
         BodyLocation = TorsoExtraVest,
         Icon = Vest_HighViz_Police_Green_Unmarked,
         BloodLocation = ShirtNoSleeves,
@@ -71,12 +55,12 @@ module STR {
         WindResistance = 0.05,
         WorldStaticModel = HuntingVest_Ground,
     }
-    item Vest_HighViz_Police_Tandil
+    item Vest_HighViz_Police_TandilOPEN
     {
         DisplayCategory = Clothing,
         Type = Clothing,
         DisplayName = Police High Visibility Vest,
-        ClothingItem = Vest_HighViz_Police_Tandil,
+        ClothingItem = Vest_HighViz_Police_TandilOPEN,
         BodyLocation = TorsoExtraVest,
         Icon = Vest_HighViz_Police_Tandil,
         BloodLocation = ShirtNoSleeves,

@@ -2169,6 +2169,11 @@
 		<guid>516aa053-c0df-4da3-977e-11701c95b422</guid>
 	</files>
 
+	<files>
+		<path>media/clothing/clothingItems/Vest_HighViz_Police_Tandil.xml</path>
+		<guid>4f85092a-6668-4d84-ad8c-b979408631cc</guid>
+	</files>
+
 
 	<files>
 		<path>media/clothing/clothingItems/Vest_BulletPolice_Meade.xml</path>

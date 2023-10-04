@@ -1,8 +1,8 @@
 require 'NPCs/ZombiesZoneDefinition'
 
-if getActivatedMods():contains("RavenCreek") or getActivatedMods():contains("10YL_RC") then
+local function STRSpawnsRCR()
 
-	local function STRSpawnsRCR()
+	if getActivatedMods():contains("RavenCreek") or getActivatedMods():contains("10YL_RC") then
 
 		local DOC = SandboxVars.STRS.DOC
 		local EMS = SandboxVars.STRS.EMS

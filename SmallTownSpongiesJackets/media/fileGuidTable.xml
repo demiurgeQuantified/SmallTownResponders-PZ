@@ -1353,4 +1353,30 @@
 		<guid>3998db6e-d18b-4ca5-99c6-f1234d505d32</guid>
 	</files>
 
+
+	<files>
+		<path>media/clothing/clothingItems/Vest_HighViz_KSPOPEN.xml</path>
+		<guid>17e4afde-a8a1-4190-a286-76df69fc1dc0</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Vest_HighViz_Police_YellowOPEN.xml</path>
+		<guid>b83bda98-6a16-46c3-aa2a-f787f4d182f7</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Vest_HighViz_Police_GreenOPEN.xml</path>
+		<guid>b0b4f1d9-83f9-46f8-b8aa-00273f210d93</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Vest_HighViz_Police_Green_UnmarkedOPEN.xml</path>
+		<guid>f83de353-89f1-43c1-8d38-569cecfa21ef</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Vest_HighViz_Police_TandilOPEN.xml</path>
+		<guid>f96ba5cd-0961-4c1b-b601-60d21f4ed8cc</guid>
+	</files>
+
 </fileGuidTable>

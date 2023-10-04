@@ -68,7 +68,9 @@ function Overrides.setSandboxVariables()
         Overrides.zonesGeneric.RavenCreekPrison = {x1=4013,x2=4089,y1=12732,y2=12816}
         Overrides.zonesPolice.RavenCreek = Overrides.zonesGeneric.RavenCreek
     else
+        --Overrides.zonesGeneric.RavenCreek = {x1=11820,x2=11820,y1=1000,y2=1000}
         Overrides.zonesGeneric.RavenCreek = nil
+        Overrides.zonesPolice.RavenCreek = nil
         Overrides.zonesGeneric.RavenCreekPrison = nil
     end
     if getActivatedMods():contains('Tandil') then
@@ -76,6 +78,7 @@ function Overrides.setSandboxVariables()
         Overrides.zonesPolice.Tandil = Overrides.zonesGeneric.Tandil
     else
         Overrides.zonesGeneric.Tandil = nil
+        Overrides.zonesPolice.Tandil = nil
     end
 end
 Events.OnInitGlobalModData.Add(Overrides.setSandboxVariables)
