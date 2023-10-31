@@ -1,0 +1,1398 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fileGuidTable>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Sweater_Security_Hotel_Havisham_Fat.xml</path>
+		<guid>bfd179ac-a207-484b-be79-1827f0bc7fc1</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Sweater_Security_Bank_Fat.xml</path>
+		<guid>a64df1a5-2059-430f-890a-863ad1bbbb04</guid>
+	</files>
+
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_EMS_Jefferson_Fat.xml</path>
+		<guid>25b0e2b1-7464-4418-b495-4ed24e600e4b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_EMS_Louisville_Fat.xml</path>
+		<guid>c7be4f3f-dd92-4a7d-9c3e-f2d839e2dd84</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_EMS_Meade_Fat.xml</path>
+		<guid>d9f3c2bf-5614-4b67-9f21-392f8a02caad</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_EMS_RavenCreek_Fat.xml</path>
+		<guid>7a0bf422-cc6a-4eaf-8c13-9496e199091b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_EMS_RavenCreek_Supervisor_Fat.xml</path>
+		<guid>879db64d-b152-4309-90f2-68ad3cb68349</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Federal_Ranger_Fat.xml</path>
+		<guid>883f324e-b8b1-4fd5-9f25-c3b2774d98f0</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_State_Ranger_Fat.xml</path>
+		<guid>b550424e-0132-4f53-bba5-4d5f114fce67</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_State_Law_Ranger_Fat.xml</path>
+		<guid>21c743f5-c325-4a93-a58f-06d5fb95fa71</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Security_Hotel_Havisham_Fat.xml</path>
+		<guid>443d02be-5aaa-4484-9373-619b7246fafe</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Suit_Security_Hotel_Fancy_Fat.xml</path>
+		<guid>198af463-5954-434f-baed-b513672568eb</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Fire_Louisville_Fat.xml</path>
+		<guid>9fa32cd0-2166-48e3-acbb-c58d99ef6f2a</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Fire_RavenCreek_Fat.xml</path>
+		<guid>bb4ccb12-282c-49f9-aece-fdbc6d4943ab</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Police_Rosewood_Fat.xml</path>
+		<guid>950f1ccf-f158-42c5-af3d-26c070ca1078</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Police_Jefferson_Fat.xml</path>
+		<guid>ae3d75bc-24dd-421a-891b-66017fb9fce4</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Police_Jefferson_SGT_Fat.xml</path>
+		<guid>8bfa8f86-a2a6-42e9-8d7c-52d0b9da7d52</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Police_Jefferson_CPT_Fat.xml</path>
+		<guid>58edbc86-e117-4bee-85bf-df361303730e</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Police_KSP_Fat.xml</path>
+		<guid>aa6a05e3-5d36-4866-bfa2-bdb4dfa8f432</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Police_Tandil_Fat.xml</path>
+		<guid>4b10bb76-eae9-4b59-8b49-06127314bb73</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Police_Tandil_SGT_Fat.xml</path>
+		<guid>0e3b128e-ab83-4d8c-b7c4-9dc24eb71eca</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Police_Tandil_CPT_Fat.xml</path>
+		<guid>e36adc04-91cc-41a4-8d5e-0a2074f0bb45</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Police_Tandil_Reflective_Fat.xml</path>
+		<guid>844936c2-b955-437e-9b15-d98296a2e39f</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Police_RavenCreek_Fat.xml</path>
+		<guid>7b3a056c-77d5-421c-8982-4332ea1f63ca</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Police_Louisville_Fat.xml</path>
+		<guid>40666feb-4233-45c3-ab55-7280a5eabe9a</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Police_Meade_Fat.xml</path>
+		<guid>84fce34c-4ad7-4d3e-a98c-4dd159e894c6</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Police_Muldraugh_Fat.xml</path>
+		<guid>e7ae55c7-ba25-40d7-aaa5-217c26a99edf</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Police_Riverside_Fat.xml</path>
+		<guid>1f6a40e4-22a2-4f37-82a5-3c9181ddad99</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Police_WestPoint_Fat.xml</path>
+		<guid>61155e67-2365-4a07-8a10-427095d81902</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Sheriff_Jefferson_Fat.xml</path>
+		<guid>bdfd51d3-3394-462f-8b14-da54bd6b932d</guid>
+	</files>
+
+
+	<files>
+		<path>media/clothing/clothingItems/Judge_Robe_Fat.xml</path>
+		<guid>2d583528-2aeb-414c-9fa1-ccac8e752e83</guid>
+	</files>
+
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_Tandil_Fat.xml</path>
+		<guid>cb59412c-996d-425c-ad23-ed5dd82c32b4</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_Tandil_SGT_Fat.xml</path>
+		<guid>75d6a393-6557-418a-94c7-42c8b9cd5437</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_Tandil_CPT_Fat.xml</path>
+		<guid>d5e35f94-59c7-4bbf-9f35-ee993443e580</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_RavenCreek_Fat.xml</path>
+		<guid>b367b500-6896-49eb-ac10-9b80141e6a7e</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_Meade_Fat.xml</path>
+		<guid>19b2220b-f05a-438d-8205-aee022a9219e</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_Meade_SGT_Fat.xml</path>
+		<guid>fc42056a-1c80-411a-9b37-92223a84f40f</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_Meade_CPT_Fat.xml</path>
+		<guid>d0ae4eba-2577-4229-a865-973fd3612033</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_Muldraugh_Fat.xml</path>
+		<guid>f6a5b2e1-9c92-4f97-985e-460efd1faf05</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_WestPoint_Fat.xml</path>
+		<guid>d80c9ff0-2231-4a6f-a5df-8bf2918d1144</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_Rosewood_Fat.xml</path>
+		<guid>2016a000-4927-487f-9b7e-f8680a9c6210</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_Riverside_Fat.xml</path>
+		<guid>3e271a92-92b2-4cf9-b500-fcf7890d0c84</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_Louisville_Fat.xml</path>
+		<guid>f4c02f3e-5932-4cbc-8004-7d7d2db6dfe9</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_JeffersonPD_Fat.xml</path>
+		<guid>44eea128-81ec-4f9b-bd12-594d92aa06bf</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_JeffersonPD_SGT_Fat.xml</path>
+		<guid>ff8b996f-c6c2-4a95-aa74-3cb7d46413bf</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_JeffersonPD_CPT_Fat.xml</path>
+		<guid>3417f29a-9fb9-47d4-9304-4971403a87c9</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_JeffersonSD_Fat.xml</path>
+		<guid>9fb7915f-f62f-4d69-8c6b-20be4f167b7a</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_JeffersonSD_SGT_Fat.xml</path>
+		<guid>4e87e74a-5cb9-4371-b4e2-232c05cafe82</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_JeffersonSD_CPT_Fat.xml</path>
+		<guid>d74e59ef-a78b-4d3f-acf6-863b71d9428b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_PoliceKSP_Fat.xml</path>
+		<guid>8081f254-531e-427b-83d6-0a3675b52dcf</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_PoliceKSP_SGT_Fat.xml</path>
+		<guid>63d581ce-1946-41c5-b8b6-f26eacbd8bc1</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Federal_Ranger_Fat.xml</path>
+		<guid>14e45741-3e02-4784-b95c-bb111978145d</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_State_LawRanger_Fat.xml</path>
+		<guid>349c82f4-2195-46c5-8436-affc6b0b3b1d</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_State_Ranger_Fat.xml</path>
+		<guid>2f07fa60-c6bf-4240-bddc-3bbd20a6183f</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_DOC_Meade_Fat.xml</path>
+		<guid>153b587e-c3d0-4ead-99e8-e2bb3b7b2026</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_DOC_Jefferson_Fat.xml</path>
+		<guid>1d41e8db-4b20-4d14-8a8a-f2820317870c</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_DOC_RavenCreek_Fat.xml</path>
+		<guid>64aea322-385d-4fa6-a674-525dc13426b8</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_EMS_Tandil_Fat.xml</path>
+		<guid>9834f2d4-c841-4b3a-b68c-b88a473f7ee0</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_EMS_RavenCreek_Fat.xml</path>
+		<guid>49712ada-ddfc-447b-97be-8c38989a1d52</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_EMS_Meade_Fat.xml</path>
+		<guid>dcd02041-efb9-4e53-a739-f2e9b8ed19fd</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_EMS_Jefferson_Fat.xml</path>
+		<guid>e8600586-01b8-48af-aebc-e8bb0c451655</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_EMS_Louisville_Fat.xml</path>
+		<guid>05d95627-bb06-48e3-9251-2c1cd3dffeaa</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_USPS_Fat.xml</path>
+		<guid>49fe3316-ebf5-47c8-827d-d901e3713fff</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Security_Bank_Fat.xml</path>
+		<guid>908fc7f2-e59e-4a64-b388-d77bcec83800</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Security_Mall_Ohio_Fat.xml</path>
+		<guid>55b311c0-fae9-4637-b970-3a54f3ba9d63</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Security_Mall_Valley_Fat.xml</path>
+		<guid>cf4dce82-43fc-47bd-a326-2988212f9a4d</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Security_Mall_LV_Fat.xml</path>
+		<guid>fe52c9b3-26a2-4239-af29-f37bc7f77080</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Fireman_Meade_Black_Fat.xml</path>
+		<guid>26c59a8c-4c7b-47e7-92bb-91d787c6a738</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Fireman_Meade_Khaki_Fat.xml</path>
+		<guid>9eaee599-84fd-4822-808f-151b26f6d12b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Fireman_Rosewood_Black_Fat.xml</path>
+		<guid>24d41037-ada6-49f2-ac17-5534f9bac71e</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Fireman_Rosewood_Khaki_Fat.xml</path>
+		<guid>bcc81cc4-b5f6-4971-ae77-30a6daddd2c1</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Fireman_Louisville_Black_Fat.xml</path>
+		<guid>525a8312-e223-42f2-9197-91738f038dea</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Fireman_Louisville_Khaki_Fat.xml</path>
+		<guid>e01cd908-2b1c-4ffa-9c90-216b6b2c2576</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Fireman_Tandil_Black_Fat.xml</path>
+		<guid>771029a2-6bfa-44c1-a3ee-1f1f0c58c456</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Fireman_Tandil_Khaki_Fat.xml</path>
+		<guid>3ac7c3bb-1302-4fb6-a660-cc70d6d108fb</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Fireman_RavenCreek_Black_Fat.xml</path>
+		<guid>335cd959-78e0-4220-a4ec-94a22bb34563</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Fireman_RavenCreek_Khaki_Fat.xml</path>
+		<guid>ba6f5852-a303-47ad-9ca0-3a74d4ef8f07</guid>
+	</files>
+
+
+	<files>
+		<path>media/clothing/clothingItems/Shorts_Federal_Ranger_Fat.xml</path>
+		<guid>4db8910a-7519-42f1-a566-49dd93948e43</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Shorts_State_Ranger_Fat.xml</path>
+		<guid>3be36063-7792-4e16-8170-3e770e7f62b0</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Shorts_State_Law_Ranger_Fat.xml</path>
+		<guid>bee2222a-23f6-437f-a580-2441af07f392</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Police_Tandil_Fat.xml</path>
+		<guid>de728298-a5e5-4c7f-bee6-96817a581e96</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Police_RavenCreek_Fat.xml</path>
+		<guid>9e3e1d45-b057-496e-8997-ca63603d91c1</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Police_Meade_Fat.xml</path>
+		<guid>cb38e1ec-36c6-4a59-afd6-d3fa8055ba53</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Police_Muldraugh_Fat.xml</path>
+		<guid>4f2b3d1e-0cf5-4532-9e05-fbf1789f30c5</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Police_WestPoint_Fat.xml</path>
+		<guid>e0e7e658-03c5-48fe-ab15-4b62cb9c2c6e</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Police_Rosewood_Fat.xml</path>
+		<guid>3dd8f866-9cca-4132-bb83-5beda7505212</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Police_Riverside_Fat.xml</path>
+		<guid>930f4ca7-d337-49b9-a8a5-ba5db4e49d42</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Police_Louisville_Fat.xml</path>
+		<guid>208ab090-e9bb-4fcd-98fb-96e301a80945</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Police_JeffersonPD_Fat.xml</path>
+		<guid>be18daa5-30c2-4f8f-9df9-4c74105a3a9e</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Police_JeffersonSD_Fat.xml</path>
+		<guid>22e3cc39-66bf-4787-91d7-a98e003c2acf</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_PoliceKSP_Summer_Fat.xml</path>
+		<guid>0440a127-65d9-4aeb-8e60-f97c7ccd0533</guid>
+	</files>
+	
+	<files>
+		<path>media/clothing/clothingItems/Trousers_PoliceKSP_Winter_Fat.xml</path>
+		<guid>99c8af89-b668-4e10-83a1-98857b05f16e</guid>
+	</files>
+		
+	<files>
+		<path>media/clothing/clothingItems/Trousers_FederalRanger_Fat.xml</path>
+		<guid>4f851554-976e-4da4-88a5-cea9a5d1ca8c</guid>
+	</files>
+	
+	<files>
+		<path>media/clothing/clothingItems/Trousers_StateLawRanger_Fat.xml</path>
+		<guid>c1ec8d8f-8429-4d8c-a7a6-d3f0bf713d03</guid>
+	</files>
+	
+	<files>
+		<path>media/clothing/clothingItems/Trousers_StateRanger_Fat.xml</path>
+		<guid>cf3753ba-7de1-4e20-819d-2ddd81c550b3</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_DOC_Meade_Fat.xml</path>
+		<guid>b4d4cf81-1b34-4e58-8663-335913b542fb</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_DOC_Jefferson_Fat.xml</path>
+		<guid>e3e1d4e3-13a0-4cc6-bc95-0bf94fbca8ed</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_DOC_RavenCreek_Fat.xml</path>
+		<guid>ed3e7401-f0bc-4d6a-83d5-83f6f0e2f693</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_EMS_Meade_Fat.xml</path>
+		<guid>3181cdea-1b45-49e1-b622-d92ffe574f4b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_EMS_Jefferson_Fat.xml</path>
+		<guid>2cfe7188-dbee-44d5-b0d5-3ee54c2b1951</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_EMS_Louisville_Fat.xml</path>
+		<guid>745638a1-6d6f-415c-9b24-ef853a3e92e6</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_EMS_Tandil_Fat.xml</path>
+		<guid>ea02435e-5ee5-49d2-ac64-93ce3040983d</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_EMS_RavenCreek_Fat.xml</path>
+		<guid>ceb240d4-01df-4210-8b15-2ff150e7df3e</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_USPS_Fat.xml</path>
+		<guid>ba299a87-db8b-45fa-ac7b-b324b9a9eecf</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Security_Bank_Fat.xml</path>
+		<guid>35c73a70-66d0-4425-932c-3681aec5a4c6</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Security_Mall_Ohio_Fat.xml</path>
+		<guid>be8b2814-1c93-4f15-b045-7e21bbe55ed2</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Security_Mall_Valley_Fat.xml</path>
+		<guid>05dcbead-fa91-467a-8ec9-965706d6c6cc</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Security_Mall_LV_Fat.xml</path>
+		<guid>ce8d0a79-774a-47b3-8146-9db71fd16c25</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Security_Hotel_Havisham_Fat.xml</path>
+		<guid>1c5186ee-e6a3-4449-ad18-15688cacf9cd</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Security_Hotel_Fancy_Fat.xml</path>
+		<guid>9863ca6b-e4d8-46ce-9e83-9d782798e8be</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Shorts_LongUSPS_Fat.xml</path>
+		<guid>112b0aa2-4af1-47ab-98c6-0ca7f2465c68</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Shorts_ShortUSPS_Fat.xml</path>
+		<guid>2fb017e9-9a97-4ffc-bf59-aa2115fb4f49</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Fire_Formal_Louisville_Fat.xml</path>
+		<guid>70f43011-e31b-46c1-9482-25bcd3baf80c</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Fire_Formal_Tandil_Fat.xml</path>
+		<guid>ce2a6e67-03a5-46fc-9458-ecca047381f9</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Fire_Formal_RavenCreek_Fat.xml</path>
+		<guid>0ba08d0b-c1ef-4ec7-ba07-d7dd955dfce0</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Fire_Formal_Meade_Fat.xml</path>
+		<guid>c7be02b4-5e64-4b13-96fe-735c897f6235</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Fire_Formal_Rosewood_Fat.xml</path>
+		<guid>dbbd20b1-1b4d-4e74-9929-25dc6fd22186</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Fireman_Tandil_Black_Fat.xml</path>
+		<guid>00a5b44d-f5e5-4a99-bd07-531d9d25ed2e</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Fireman_Tandil_Khaki_Fat.xml</path>
+		<guid>38dd695b-422c-45b7-a65f-c6722a8970dd</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Fireman_RavenCreek_Black_Fat.xml</path>
+		<guid>3dce8d26-e150-44a4-83aa-8498e97b5b8b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Fireman_RavenCreek_Khaki_Fat.xml</path>
+		<guid>1be44072-0ae7-4d7e-8620-daf951e5006f</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Fireman_Meade_Black_Fat.xml</path>
+		<guid>f88c84cf-10ef-4da4-bf12-418f1de8fcfb</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Fireman_Meade_Khaki_Fat.xml</path>
+		<guid>8bfe43fb-63c2-4f50-8ace-bc24b559deb3</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Fireman_Rosewood_Black_Fat.xml</path>
+		<guid>0d9ab096-066f-41ad-9938-70b864f1c261</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Fireman_Rosewood_Khaki_Fat.xml</path>
+		<guid>b3d8a0e8-4962-49af-9937-b87ce3c152e0</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Fireman_Louisville_Black_Fat.xml</path>
+		<guid>15e6819b-f7f5-462a-938f-59368b2ad457</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Fireman_Louisville_Khaki_Fat.xml</path>
+		<guid>18ab176a-4760-4459-99de-0bf0dbdaf95b</guid>
+	</files>
+
+
+	<files>
+		<path>media/clothing/clothingItems/Boilersuit_MeadeGenPopPrisoner_Fat.xml</path>
+		<guid>0134110a-7239-4b72-8624-564265d29d06</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Boilersuit_MeadeLowRiskPrisoner_Fat.xml</path>
+		<guid>94c46562-611a-4836-98c7-03cef2fa8ac4</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Boilersuit_MeadeMaxPrisoner_Fat.xml</path>
+		<guid>8b999192-e96b-4709-9046-a5fd8fd68b2a</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Boilersuit_JeffersonPrisoner_Fat.xml</path>
+		<guid>5e91178c-ab24-47eb-a10b-3c3c104dc321</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Boilersuit_RavenCreekPrisoner_Fat.xml</path>
+		<guid>ab67a05f-6a45-4c69-b059-106c93d99591</guid>
+	</files>
+
+
+	<files>
+		<path>media/clothing/clothingItems/Vest_HighViz_KSP_Fat.xml</path>
+		<guid>41b7f4e5-bd26-422f-be94-6a3354e860c3</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Vest_HighViz_Police_Yellow_Fat.xml</path>
+		<guid>70231d26-ef77-4121-8873-852e7a4f5564</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Vest_HighViz_Police_Green_Fat.xml</path>
+		<guid>e3069de3-48aa-4d3c-9a0f-ce916de694b8</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Vest_HighViz_Police_Green_Unmarked_Fat.xml</path>
+		<guid>050b08c0-ce62-4171-91ee-e0b157d12c56</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Vest_HighViz_Police_Tandil_Fat.xml</path>
+		<guid>7a09d015-1941-46a5-b88b-d15f5bfd31cc</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Vest_BulletPolice_Meade_Fat.xml</path>
+		<guid>6c20b01a-d5d5-4307-83d7-3a4ce73c57f9</guid>
+	</files>
+
+
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Sweater_Security_Hotel_Havisham_Obese.xml</path>
+		<guid>3502e1b0-d29d-4400-a6b4-cfa0ceb2c602</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Sweater_Security_Bank_Obese.xml</path>
+		<guid>5a53c74d-4ca1-491f-bd1a-e60b28060a41</guid>
+	</files>
+
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_EMS_Jefferson_Obese.xml</path>
+		<guid>43049151-785a-4ec1-98cb-c1b7403ce213</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_EMS_Louisville_Obese.xml</path>
+		<guid>beb5ff52-35ea-400c-a3c1-d459720c502d</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_EMS_Meade_Obese.xml</path>
+		<guid>544463f1-e2c4-45ad-a441-c0e6f1c1e91f</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_EMS_RavenCreek_Obese.xml</path>
+		<guid>f41f623b-7347-4970-900c-5bded926ed55</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_EMS_RavenCreek_Supervisor_Obese.xml</path>
+		<guid>2a0dd788-bec2-4a5e-9438-e60a0098ddd0</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Federal_Ranger_Obese.xml</path>
+		<guid>ddd722e1-6786-4ae0-9947-e1a89007ba4d</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_State_Ranger_Obese.xml</path>
+		<guid>7e20f889-1d54-4e13-8dc2-73d926ceb286</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_State_Law_Ranger_Obese.xml</path>
+		<guid>76c9de7a-2a8f-4eaa-81a8-287d62ec9c8c</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Security_Hotel_Havisham_Obese.xml</path>
+		<guid>b8d21b8c-6a76-41f8-abdd-4d8ac0800633</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Suit_Security_Hotel_Fancy_Obese.xml</path>
+		<guid>8fc35898-a4a7-47b9-8a79-e9e61b77cefe</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Fire_Louisville_Obese.xml</path>
+		<guid>90081fcd-71fe-4267-8f1f-5309199ee957</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Fire_RavenCreek_Obese.xml</path>
+		<guid>2bf6e9b6-836f-4777-96c4-0980ddc4723e</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Police_Rosewood_Obese.xml</path>
+		<guid>2173e1d8-0c9c-4d83-8aa9-4c6c5c086135</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Police_Jefferson_Obese.xml</path>
+		<guid>809cc7b9-913e-4871-85cf-48840d0e9b94</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Police_Jefferson_SGT_Obese.xml</path>
+		<guid>4b3c2046-b81c-415b-9448-571cc39fa127</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Police_Jefferson_CPT_Obese.xml</path>
+		<guid>f9729a78-7c06-4b3a-8b0f-a86a8801d25b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Police_KSP_Obese.xml</path>
+		<guid>6eb90a89-a47f-4141-9797-bd5695787e64</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Police_Tandil_Obese.xml</path>
+		<guid>1cd97bb6-4ed5-48b8-bca2-3c00ffcea12c</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Police_Tandil_SGT_Obese.xml</path>
+		<guid>17b1d457-df2a-4180-810f-baa8ce4e0c62</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Police_Tandil_CPT_Obese.xml</path>
+		<guid>76ac122e-7c01-4c95-9968-67a8b42ac2b5</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Police_Tandil_Reflective_Obese.xml</path>
+		<guid>2df9bee5-b546-462e-bae6-e41179dabe11</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Police_RavenCreek_Obese.xml</path>
+		<guid>71c3e9b8-f3ab-4476-bc97-4eb06fe4de64</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Police_Louisville_Obese.xml</path>
+		<guid>82a5608a-ebe9-43bb-900f-4b87a593bfbe</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Police_Meade_Obese.xml</path>
+		<guid>cdfdeb93-2b38-4942-be79-f4c3d14f0ef0</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Police_Muldraugh_Obese.xml</path>
+		<guid>46f469b2-d969-4d74-a921-c3ff5c5b1b33</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Police_Riverside_Obese.xml</path>
+		<guid>95d25116-14f6-45b7-be2c-f878d3787e67</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Police_WestPoint_Obese.xml</path>
+		<guid>022b4e2a-2cc9-4908-a33a-4261c9afe6dd</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Sheriff_Jefferson_Obese.xml</path>
+		<guid>fd64ec5d-4db2-43df-aaf4-61d4cd77f2af</guid>
+	</files>
+
+
+	<files>
+		<path>media/clothing/clothingItems/Judge_Robe_Obese.xml</path>
+		<guid>87f564c4-4310-403f-9605-5eb800d91900</guid>
+	</files>
+
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_Tandil_Obese.xml</path>
+		<guid>819b5702-ede7-4b0e-8109-0d1ddcfed3be</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_Tandil_SGT_Obese.xml</path>
+		<guid>753e0e96-6f6a-4c90-b363-c1905ed82e17</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_Tandil_CPT_Obese.xml</path>
+		<guid>60a7c24d-d776-458a-874a-3536bbe3d80d</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_RavenCreek_Obese.xml</path>
+		<guid>ec17b6e6-5f05-4c99-b09d-cf290ecd93f1</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_Meade_Obese.xml</path>
+		<guid>786cd075-38f8-49b6-9b75-f1f2d95b9eb2</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_Meade_SGT_Obese.xml</path>
+		<guid>46fc18fa-722f-4835-ac1b-e407cecd0e75</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_Meade_CPT_Obese.xml</path>
+		<guid>85db238e-084f-4ddb-81f6-2f61a289d693</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_Muldraugh_Obese.xml</path>
+		<guid>27c2943c-6c24-40c7-9ee0-84f438d33d0b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_WestPoint_Obese.xml</path>
+		<guid>7dc373e9-0d60-4bec-b615-ad897923280e</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_Rosewood_Obese.xml</path>
+		<guid>28830a6c-87f0-4cec-8ed1-76250f10f50d</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_Riverside_Obese.xml</path>
+		<guid>91d204d3-9db4-4682-b741-c7b506237c83</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_Louisville_Obese.xml</path>
+		<guid>c880de9d-a58c-469f-acee-e7bf3e8394a2</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_JeffersonPD_Obese.xml</path>
+		<guid>fc901c87-bcca-4ce4-9111-fb6b9b2f45bb</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_JeffersonPD_SGT_Obese.xml</path>
+		<guid>2781516b-5227-48dd-8f69-fe5277f9125a</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_JeffersonPD_CPT_Obese.xml</path>
+		<guid>d5e4b27c-6fac-4869-b2c4-833bd3d384ce</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_JeffersonSD_Obese.xml</path>
+		<guid>5d640eba-3107-4f1c-8c0a-ecd28eaf230c</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_JeffersonSD_SGT_Obese.xml</path>
+		<guid>6ab7ad8c-38fe-4f60-a780-60be7dfb995e</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_JeffersonSD_CPT_Obese.xml</path>
+		<guid>28a91040-3824-438d-bdf3-4e521c602f8d</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_PoliceKSP_Obese.xml</path>
+		<guid>87cf5d2a-95bb-4b9a-bc4b-0c113f3dcec5</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_PoliceKSP_SGT_Obese.xml</path>
+		<guid>c77f90df-446b-4f69-a450-c91c8f7810f3</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Federal_Ranger_Obese.xml</path>
+		<guid>f0ef83b3-d446-4753-8d8c-5a0d7bd6b174</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_State_LawRanger_Obese.xml</path>
+		<guid>3ede01b1-ec3a-4993-b87c-931d2b49c205</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_State_Ranger_Obese.xml</path>
+		<guid>29d589f2-9452-42b7-a426-989bdba5d88c</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_DOC_Meade_Obese.xml</path>
+		<guid>cabfc07d-c719-4128-bbb1-e50804f5a998</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_DOC_Jefferson_Obese.xml</path>
+		<guid></guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_DOC_RavenCreek_Obese.xml</path>
+		<guid>deca2690-1c5a-4cf5-8799-627d4cbb8067</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_EMS_Tandil_Obese.xml</path>
+		<guid>c7bf7b3e-e94a-4e4d-af0e-3e28e0d81cb3</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_EMS_RavenCreek_Obese.xml</path>
+		<guid>20546069-7517-4d1b-aafc-fc6ff285fca6</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_EMS_Meade_Obese.xml</path>
+		<guid>0a177f86-1cfb-47df-9f88-c4dff9573450</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_EMS_Jefferson_Obese.xml</path>
+		<guid>2127fa84-09b3-478f-9638-2463f22d358b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_EMS_Louisville_Obese.xml</path>
+		<guid>16321363-7997-48c8-8ed1-1970108f78ce</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_USPS_Obese.xml</path>
+		<guid>3383c093-77bb-4188-83f9-2064f6574de1</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Security_Bank_Obese.xml</path>
+		<guid>43bdf66d-916c-484c-bd2d-216f52f2c8f1</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Security_Mall_Ohio_Obese.xml</path>
+		<guid>5b8ff4ef-600b-44ba-a972-3ed27203b6e6</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Security_Mall_Valley_Obese.xml</path>
+		<guid>e76a54ec-2a2c-4806-9826-f239c7fc7690</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Security_Mall_LV_Obese.xml</path>
+		<guid>c0093d78-67ac-4e59-bf12-982b4cfeca90</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Fireman_Meade_Black_Obese.xml</path>
+		<guid>7ed8595f-e363-4884-8e81-e8a6f1e1c08b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Fireman_Meade_Khaki_Obese.xml</path>
+		<guid>e9068bf4-75d5-4c71-b840-484669995d90</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Fireman_Rosewood_Black_Obese.xml</path>
+		<guid>f8d36bf4-d345-4476-baee-08ae3655966d</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Fireman_Rosewood_Khaki_Obese.xml</path>
+		<guid>bcddb7e0-ebba-47ff-bee5-f14341a90d0e</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Fireman_Louisville_Black_Obese.xml</path>
+		<guid>2b0834d1-faa5-4c09-94a5-856b7fb8518c</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Fireman_Louisville_Khaki_Obese.xml</path>
+		<guid>52a11e82-a2e4-4b10-ba20-fa36be5f03a7</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Fireman_Tandil_Black_Obese.xml</path>
+		<guid>e22ccf83-346f-40f6-bedf-ba1c65af8bc8</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Fireman_Tandil_Khaki_Obese.xml</path>
+		<guid>fa1340ea-3634-45be-8415-cc0d3978fa02</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Fireman_RavenCreek_Black_Obese.xml</path>
+		<guid>6dd1fff6-e58e-4c8c-bf18-b71bb066d6fe</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Fireman_RavenCreek_Khaki_Obese.xml</path>
+		<guid>19f24544-7c62-43dd-8494-c21c608f68fe</guid>
+	</files>
+
+
+	<files>
+		<path>media/clothing/clothingItems/Shorts_Federal_Ranger_Obese.xml</path>
+		<guid>ae79fa60-29e1-4555-9ffa-8b1f8bf5f390</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Shorts_State_Ranger_Obese.xml</path>
+		<guid>f15d2a8f-f2ab-4f0d-8857-1ad637ab13d8</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Shorts_State_Law_Ranger_Obese.xml</path>
+		<guid>329725a7-a2a8-49f6-9f9d-c66f9687ff8e</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Police_Tandil_Obese.xml</path>
+		<guid>86b00c9e-9a07-41d9-aeb0-0d6cc05eddd5</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Police_RavenCreek_Obese.xml</path>
+		<guid>ac27f327-d6bb-4823-bdba-dce6fb5a0d8d</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Police_Meade_Obese.xml</path>
+		<guid>08123b1b-c5ba-488e-91f3-215168650e65</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Police_Muldraugh_Obese.xml</path>
+		<guid>526a8463-847b-416b-a8be-3de1b7af98e9</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Police_WestPoint_Obese.xml</path>
+		<guid>45ef225e-b469-424e-bf3f-afd5eff3450d</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Police_Rosewood_Obese.xml</path>
+		<guid>f9a94fe1-f9c0-4ced-a2f6-20c90ac5ae1b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Police_Riverside_Obese.xml</path>
+		<guid>3aef8067-780e-4015-9ea5-11f4cefcd4e5</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Police_Louisville_Obese.xml</path>
+		<guid>414d9b02-0ac5-49c1-be6c-abddc958e277</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Police_JeffersonPD_Obese.xml</path>
+		<guid>29f3628b-3a8f-41d6-a956-594fd879eb29</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Police_JeffersonSD_Obese.xml</path>
+		<guid>75d17699-f4c0-4bf5-8f11-5a266f3d26c0</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_PoliceKSP_Summer_Obese.xml</path>
+		<guid>2dfcaa65-0b3b-4319-a6e0-5c1e0f5b7bf7</guid>
+	</files>
+	
+	<files>
+		<path>media/clothing/clothingItems/Trousers_PoliceKSP_Winter_Obese.xml</path>
+		<guid>d926065e-8e06-4b92-9452-c6b08e4051e4</guid>
+	</files>
+		
+	<files>
+		<path>media/clothing/clothingItems/Trousers_FederalRanger_Obese.xml</path>
+		<guid>f7fad080-18b9-463e-8032-f91d19aad618</guid>
+	</files>
+	
+	<files>
+		<path>media/clothing/clothingItems/Trousers_StateLawRanger_Obese.xml</path>
+		<guid>a2271f8a-6827-4f5b-a542-f72357b92514</guid>
+	</files>
+	
+	<files>
+		<path>media/clothing/clothingItems/Trousers_StateRanger_Obese.xml</path>
+		<guid>50144a78-b83d-40f3-8fde-4f33f83e7876</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_DOC_Meade_Obese.xml</path>
+		<guid>67b8bcc1-7c70-4f18-a371-54b449df616f</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_DOC_Jefferson_Obese.xml</path>
+		<guid>956a5e39-25e2-4d3d-8974-fef59b6e41bb</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_DOC_RavenCreek_Obese.xml</path>
+		<guid>6f38283a-0b0c-4e2c-afc9-cb861458fd63</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_EMS_Meade_Obese.xml</path>
+		<guid>27615826-60ab-4e57-b9e9-614b4f097657</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_EMS_Jefferson_Obese.xml</path>
+		<guid>86cf54cd-d59c-43cd-bf09-28427240606a</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_EMS_Louisville_Obese.xml</path>
+		<guid>703cc95b-96f1-43c0-931e-12e70de66fbd</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_EMS_Tandil_Obese.xml</path>
+		<guid>df298958-b41a-471d-bc3f-4576ce72b56b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_EMS_RavenCreek_Obese.xml</path>
+		<guid>2612008a-94a2-4dd3-b972-5ee4fd37499e</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_USPS_Obese.xml</path>
+		<guid>170fc91c-4386-49ac-b1da-44c94af593e2</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Security_Bank_Obese.xml</path>
+		<guid>ea753af2-dbe1-4e19-bdd0-bdebfc4c7423</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Security_Mall_Ohio_Obese.xml</path>
+		<guid>02447bc4-0148-4173-8c34-bc62837aa2fd</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Security_Mall_Valley_Obese.xml</path>
+		<guid>5e0d9a15-a5c2-4dd5-a1bd-e64cf27fd059</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Security_Mall_LV_Obese.xml</path>
+		<guid>467979dc-e26e-4eb9-87f0-a911ad8bf8e1</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Security_Hotel_Havisham_Obese.xml</path>
+		<guid>3cb85859-6e87-42da-bb98-26c2bd1a7d46</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Security_Hotel_Fancy_Obese.xml</path>
+		<guid>bd10960f-a921-4606-a362-967c97d334d6</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Shorts_LongUSPS_Obese.xml</path>
+		<guid>cbddf1ee-b06f-4bdb-9a96-f60bf45aa8e1</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Shorts_ShortUSPS_Obese.xml</path>
+		<guid>13d92ea9-52d8-4893-816c-3a6b4bb7d83c</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Fire_Formal_Louisville_Obese.xml</path>
+		<guid>53252ca7-96a6-4614-a737-de0c49827a99</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Fire_Formal_Tandil_Obese.xml</path>
+		<guid>aa3c7f14-e642-4991-8b64-f9b3b52e6563</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Fire_Formal_RavenCreek_Obese.xml</path>
+		<guid>877d651a-c17c-4391-9ecc-bb2f92776b50</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Fire_Formal_Meade_Obese.xml</path>
+		<guid>7fcb074e-9d7f-40fa-936e-f8e8a9f7d3e9</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Fire_Formal_Rosewood_Obese.xml</path>
+		<guid>efcf0dc9-936c-4ea1-bff5-575fe3525826</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Fireman_Tandil_Black_Obese.xml</path>
+		<guid>ea96940b-4df2-40ad-b44f-ee4c1779eb06</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Fireman_Tandil_Khaki_Obese.xml</path>
+		<guid>c1d40b4a-cffb-4344-9ef8-f136e910c488</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Fireman_RavenCreek_Black_Obese.xml</path>
+		<guid>7b185633-2e98-49e7-8531-8b9633ffda25</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Fireman_RavenCreek_Khaki_Obese.xml</path>
+		<guid>17fc90d5-403d-4a73-bf88-4b0f314f9f0d</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Fireman_Meade_Black_Obese.xml</path>
+		<guid>836d47b1-3c7e-4b34-8816-dfb5f5ae9344</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Fireman_Meade_Khaki_Obese.xml</path>
+		<guid>d1124525-e78a-44b8-b515-b74edfade731</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Fireman_Rosewood_Black_Obese.xml</path>
+		<guid>8aa0326e-3cbe-4902-87ca-9bf919b0d242</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Fireman_Rosewood_Khaki_Obese.xml</path>
+		<guid>dde82129-a057-4abc-828f-b99bc5a2ae84</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Fireman_Louisville_Black_Obese.xml</path>
+		<guid>1062d2ac-2c50-4ee2-bc7b-9dfebc30914e</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Fireman_Louisville_Khaki_Obese.xml</path>
+		<guid>16d8d567-ec87-41ca-8ee9-e6ff7cedbd8e</guid>
+	</files>
+
+
+	<files>
+		<path>media/clothing/clothingItems/Boilersuit_MeadeGenPopPrisoner_Obese.xml</path>
+		<guid>5437f6c2-3ba8-4d8f-855e-5813d082099b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Boilersuit_MeadeLowRiskPrisoner_Obese.xml</path>
+		<guid>38455805-a352-4d00-b604-46e160768fc4</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Boilersuit_MeadeMaxPrisoner_Obese.xml</path>
+		<guid>e85c6a1f-898c-477e-85fe-2136ceacf90a</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Boilersuit_JeffersonPrisoner_Obese.xml</path>
+		<guid>5b786121-77e5-41e2-90e9-83896af96361</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Boilersuit_RavenCreekPrisoner_Obese.xml</path>
+		<guid>7b151fc9-e31e-4b5c-b192-13dde24893bc</guid>
+	</files>
+
+
+	<files>
+		<path>media/clothing/clothingItems/Vest_HighViz_KSP_Obese.xml</path>
+		<guid>ba13ba3e-7047-497c-8486-7d0ff17e1297</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Vest_HighViz_Police_Yellow_Obese.xml</path>
+		<guid>b978bf3f-e7e2-4732-83d3-c3cb3669968b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Vest_HighViz_Police_Green_Obese.xml</path>
+		<guid>aa293228-30ed-4a5a-bcd9-af9d11be0d51</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Vest_HighViz_Police_Green_Unmarked_Obese.xml</path>
+		<guid>6e4bfe65-89ec-4a1b-b1da-272366c5ca16</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Vest_HighViz_Police_Tandil_Obese.xml</path>
+		<guid>b4a968fe-8374-4161-8d23-3160942741da</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Vest_BulletPolice_Meade_Obese.xml</path>
+		<guid>bd1bfa64-891c-4c9a-88f9-ff7ae05ab03b</guid>
+	</files>
+
+</fileGuidTable>

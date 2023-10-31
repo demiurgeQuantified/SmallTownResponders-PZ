@@ -1,0 +1,165 @@
+module Base {
+
+    item Vest_BulletPolice_Meade_Fat
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Sheriff Bulletproof Vest,
+        ClothingItem = Vest_BulletPolice_Meade_Fat,
+        BodyLocation = TorsoExtra,
+        Icon = BulletVest_Police_Meade,
+        BloodLocation = ShirtNoSleeves,
+        Insulation = 0.65,
+        WindResistance = 0.30,
+        BiteDefense = 30,
+        ScratchDefense = 55,
+        BulletDefense = 100,
+        WorldStaticModel = BulletVest_Ground,
+    }
+    item Vest_HighViz_KSP_Fat
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = State Police High Visibility Vest,
+        ClothingItem = Vest_HighViz_KSP_Fat,
+        BodyLocation = TorsoExtraVest,
+        Icon = Vest_HighViz_KSP,
+        BloodLocation = ShirtNoSleeves,
+        Insulation = 0.1,
+        WindResistance = 0.05,
+        WorldStaticModel = HuntingVest_Ground,
+    }
+    item Vest_HighViz_Police_Yellow_Fat
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Police High Visibility Vest,
+        ClothingItem = Vest_HighViz_Police_Yellow_Fat,
+        BodyLocation = TorsoExtraVest,
+        Icon = Vest_HighViz_Police_Yellow,
+        BloodLocation = ShirtNoSleeves,
+        Insulation = 0.1,
+        WindResistance = 0.05,
+        WorldStaticModel = HuntingVest_Ground,
+    }
+    item Vest_HighViz_Police_Green_Fat
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Police High Visibility Vest,
+        ClothingItem = Vest_HighViz_Police_Green_Fat,
+        BodyLocation = TorsoExtraVest,
+        Icon = Vest_HighViz_Police_Green,
+        BloodLocation = ShirtNoSleeves,
+        Insulation = 0.1,
+        WindResistance = 0.05,
+        WorldStaticModel = HuntingVest_Ground,
+    }
+    item Vest_HighViz_Police_Green_Unmarked_Fat
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Police High Visibility Vest,
+        ClothingItem = Vest_HighViz_Police_Green_Unmarked_Fat,
+        BodyLocation = TorsoExtraVest,
+        Icon = Vest_HighViz_Police_Green_Unmarked,
+        BloodLocation = ShirtNoSleeves,
+        Insulation = 0.1,
+        WindResistance = 0.05,
+        WorldStaticModel = HuntingVest_Ground,
+    }
+    item Vest_HighViz_Police_Tandil_Fat
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Police High Visibility Vest,
+        ClothingItem = Vest_HighViz_Police_Tandil_Fat,
+        BodyLocation = TorsoExtraVest,
+        Icon = Vest_HighViz_Police_Tandil,
+        BloodLocation = ShirtNoSleeves,
+        Insulation = 0.1,
+        WindResistance = 0.05,
+        WorldStaticModel = HuntingVest_Ground,
+    }
+    item Vest_BulletPolice_Meade_Obese
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Sheriff Bulletproof Vest,
+        ClothingItem = Vest_BulletPolice_Meade_Obese,
+        BodyLocation = TorsoExtra,
+        Icon = BulletVest_Police_Meade,
+        BloodLocation = ShirtNoSleeves,
+        Insulation = 0.65,
+        WindResistance = 0.30,
+        BiteDefense = 30,
+        ScratchDefense = 55,
+        BulletDefense = 100,
+        WorldStaticModel = BulletVest_Ground,
+    }
+    item Vest_HighViz_KSP_Obese
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = State Police High Visibility Vest,
+        ClothingItem = Vest_HighViz_KSP_Obese,
+        BodyLocation = TorsoExtraVest,
+        Icon = Vest_HighViz_KSP,
+        BloodLocation = ShirtNoSleeves,
+        Insulation = 0.1,
+        WindResistance = 0.05,
+        WorldStaticModel = HuntingVest_Ground,
+    }
+    item Vest_HighViz_Police_Yellow_Obese
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Police High Visibility Vest,
+        ClothingItem = Vest_HighViz_Police_Yellow_Obese,
+        BodyLocation = TorsoExtraVest,
+        Icon = Vest_HighViz_Police_Yellow,
+        BloodLocation = ShirtNoSleeves,
+        Insulation = 0.1,
+        WindResistance = 0.05,
+        WorldStaticModel = HuntingVest_Ground,
+    }
+    item Vest_HighViz_Police_Green_Obese
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Police High Visibility Vest,
+        ClothingItem = Vest_HighViz_Police_Green_Obese,
+        BodyLocation = TorsoExtraVest,
+        Icon = Vest_HighViz_Police_Green,
+        BloodLocation = ShirtNoSleeves,
+        Insulation = 0.1,
+        WindResistance = 0.05,
+        WorldStaticModel = HuntingVest_Ground,
+    }
+    item Vest_HighViz_Police_Green_Unmarked_Obese
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Police High Visibility Vest,
+        ClothingItem = Vest_HighViz_Police_Green_Unmarked_Obese,
+        BodyLocation = TorsoExtraVest,
+        Icon = Vest_HighViz_Police_Green_Unmarked,
+        BloodLocation = ShirtNoSleeves,
+        Insulation = 0.1,
+        WindResistance = 0.05,
+        WorldStaticModel = HuntingVest_Ground,
+    }
+    item Vest_HighViz_Police_Tandil_Obese
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Police High Visibility Vest,
+        ClothingItem = Vest_HighViz_Police_Tandil_Obese,
+        BodyLocation = TorsoExtraVest,
+        Icon = Vest_HighViz_Police_Tandil,
+        BloodLocation = ShirtNoSleeves,
+        Insulation = 0.1,
+        WindResistance = 0.05,
+        WorldStaticModel = HuntingVest_Ground,
+    }
+}
