@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>skinned\clothes\bob_longshorts_obese</m_MaleModel>
+	<m_FemaleModel>skinned\clothes\kate_longshorts_obese</m_FemaleModel>
+	<m_GUID>cbddf1ee-b06f-4bdb-9a96-f60bf45aa8e1</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<m_Masks>2</m_Masks>
+	<textureChoices>Clothes\Trousers_Mesh\TrousersMesh_Shorts_USPS</textureChoices>
+</clothingItem>

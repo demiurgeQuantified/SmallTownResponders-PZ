@@ -1,0 +1,5 @@
+name=Small Town First Responders - Dynamic Body Shapes Support
+id=STRBS
+poster=
+description=Adds fat models for STFR's clothes!
+require=STR,DYN_BODY_SHAPE

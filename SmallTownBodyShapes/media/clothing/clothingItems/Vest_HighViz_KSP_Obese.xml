@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>media\models_X\Skinned\Clothes\Bob_HighVisVest_obese.X</m_MaleModel>
+	<m_FemaleModel>media\models_X\Skinned\Clothes\Kate_HighVisVest_obese.X</m_FemaleModel>
+	<m_GUID>ba13ba3e-7047-497c-8486-7d0ff17e1297</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<m_Masks>12</m_Masks>
+	<m_Masks>14</m_Masks>
+	<m_MasksFolder>media/textures/Clothes/BulletVest/Masks_HighViz</m_MasksFolder>
+	<m_UnderlayMasksFolder>media/textures/Clothes/BulletVest/Masks_HighViz</m_UnderlayMasksFolder>
+	<textureChoices>Clothes\BulletVest\HighVisVest_KSP</textureChoices>
+</clothingItem>
