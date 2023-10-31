@@ -1,8 +1,5 @@
-module STR {
+module Base {
 
-	imports {
-		Base
-	}
     item Jacket_Police_Tandil_Fat
     {
         DisplayCategory = Clothing,

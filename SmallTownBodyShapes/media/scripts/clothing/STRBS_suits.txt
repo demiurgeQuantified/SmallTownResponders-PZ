@@ -1,8 +1,5 @@
-module STR {
+module Base {
 
-	imports {
-		Base
-	}
     item Boilersuit_MeadeGenPopPrisoner_Fat
     {
         DisplayCategory = Clothing,

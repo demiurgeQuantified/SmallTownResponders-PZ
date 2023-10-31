@@ -1,8 +1,5 @@
-module STR {
+module Base {
 
-	imports {
-		Base
-	}
     item Vest_BulletPolice_Meade_Fat
     {
         DisplayCategory = Clothing,
