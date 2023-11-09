@@ -3,6 +3,27 @@ module STR {
 	imports {
 		Base
 	}
+    item Jacket_Police_GreenportOPEN
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Greenport PD Jacket,
+        ClothingItem = Jacket_Police_GreenportOPEN,
+        BodyLocation = Jacket,
+        Icon = Jacket_Police_Greenport,
+        BloodLocation = Jacket,
+        RunSpeedModifier = 0.93,
+        CombatSpeedModifier = 0.98,
+        BiteDefense = 20,
+        ScratchDefense = 30,
+        NeckProtectionModifier = 0.5,
+        Insulation = 0.6,
+        WindResistance = 0.45,
+        FabricType = Cotton,
+        WaterResistance = 0.25,
+        Weight = 2,
+        WorldStaticModel = JacketCoat_Ground,
+    }
     item Jacket_Police_TandilOPEN
     {
         DisplayCategory = Clothing,
@@ -715,6 +736,22 @@ module STR {
         ClothingItem = Jacket_Dress_Police_MeadeOPEN,
         BodyLocation = JacketSuit,
         Icon = Jacket_Dress_Police_Meade,
+        BloodLocation = LongJacket,
+        RunSpeedModifier = 0.95,
+        BiteDefense = 20,
+        ScratchDefense = 40,
+        NeckProtectionModifier = 0.5,
+        FabricType = Cotton,
+        WorldStaticModel = JacketCoat_Ground,
+    }
+    item Jacket_Dress_Police_GreenportOPEN
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Greenport PD Coat,
+        ClothingItem = Jacket_Dress_Police_GreenportOPEN,
+        BodyLocation = JacketSuit,
+        Icon = Jacket_Dress_Police_Greenport,
         BloodLocation = LongJacket,
         RunSpeedModifier = 0.95,
         BiteDefense = 20,

@@ -88,6 +88,30 @@ option STR.VestMeade
 	page = STR,
 	translation = STR_VestMeade,
 }
+option STR.VestGreenport
+{
+	type = boolean,
+	default = true,
+
+	page = STR,
+	translation = STR_VestGreenport,
+}
+option STR.VestTandil
+{
+	type = boolean,
+	default = true,
+
+	page = STR,
+	translation = STR_VestTandil,
+}
+option STR.VestRavenCreek
+{
+	type = boolean,
+	default = true,
+
+	page = STR,
+	translation = STR_VestRavenCreek,
+}
 option STR.CustomVehicleZones
 {
 	type = boolean,
@@ -394,6 +418,16 @@ option STRS.MeadeInmateRed
 	page = STRS,
 	translation = STRS_MeadeInmateRed,
 }
+option STRS.GreenportPD
+{
+	type = integer,
+	min = 0,
+	max = 75,
+	default = 65,
+
+	page = STRS,
+	translation = STRS_GreenportPD,
+}
 option STRS.TandilPD
 {
 	type = integer,
@@ -611,6 +645,16 @@ option STEV.BankTruck
 
 	page = STEV,
 	translation = STEV_BankTruck,
+}
+option STEV.GPPD
+{
+	type = integer,
+	min = 0,
+	max = 60,
+	default = 55,
+
+	page = STEV,
+	translation = STEV_GPPD,
 }
 option STEV.TDPD
 {

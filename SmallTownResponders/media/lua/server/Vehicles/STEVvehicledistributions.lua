@@ -2665,6 +2665,14 @@ local function STRVehicleDistro()
 	TDPD[5] = "85vicsheriff14"; -- 85 vic
 	TDPD[6] = "91blazerpd14"; -- 91 blazer
 
+	local GPPD = {};
+	GPPD[1] = "CarLightsPolice13"; -- vanilla police car
+	GPPD[2] = "PickUpVanLightsPolice13"; -- vanilla police truck
+	GPPD[3] = "92crownvicPD14"; -- 92 vic
+	GPPD[4] = "87capricePD14"; -- 87 caprice
+	GPPD[5] = "85vicsheriff15"; -- 85 vic
+	GPPD[6] = "91blazerpd15"; -- 91 blazer
+
 	local Fire = {};
 	Fire[1] = "firepumper1"; -- Rosewood
 	Fire[2] = "firepumper2"; -- Meade
@@ -2747,6 +2755,9 @@ local function STRVehicleDistro()
 		TDPD[1] = "CarLightsPolice12"; -- vanilla police car
 		TDPD[2] = "PickUpVanLightsPolice12"; -- vanilla police truck
 
+		GPPD[1] = "CarLightsPolice13"; -- vanilla police car
+		GPPD[2] = "PickUpVanLightsPolice13"; -- vanilla police truck
+
 	end
 
 	if getActivatedMods():contains("KSPOPack") then
@@ -2784,6 +2795,9 @@ local function STRVehicleDistro()
 		TDPD[3] = "92crownvicPD11"; -- 92 vic
 		TDPD[5] = "92crownvicPD12"; -- 85 vic
 
+		GPPD[3] = "92crownvicPD12"; -- 92 vic
+		GPPD[5] = "92crownvicPD13"; -- 85 vic
+
 	end
 
 	if getActivatedMods():contains("VVehicleEnhancer") then
@@ -2820,6 +2834,9 @@ local function STRVehicleDistro()
 
 		TDPD[1] = "CarLightsPolice11"; -- vanilla police car
 		TDPD[2] = "PickUpVanLightsPolice12"; -- vanilla police truck
+
+		GPPD[1] = "CarLightsPolice12"; -- vanilla police car
+		GPPD[2] = "PickUpVanLightsPolice13"; -- vanilla police truck
 
 	end
 
@@ -2978,6 +2995,17 @@ local function STRVehicleDistro()
 		distributionTable[Fire[18]] = { Normal = VehicleDistributions.FireTruckTandil; }
 		distributionTable[Fire[19]] = { Normal = VehicleDistributions.FireTruckTandil; }
 		distributionTable[Fire[20]] = { Normal = VehicleDistributions.FireTruckTandil; }
+
+	end
+	if getActivatedMods():contains("Greenport") then
+
+		distributionTable[GPPD[1]] = distributionTable["CarLightsPolice"]
+		distributionTable[GPPD[2]] = distributionTable["CarLightsPolice"]
+		distributionTable[GPPD[4]] = distributionTable["CarLightsPolice"]
+		distributionTable[GPPD[6]] = distributionTable["CarLightsPolice"]
+		distributionTable[GPPD[5]] = distributionTable["CarLightsPolice"]
+		distributionTable[GPPD[3]] = distributionTable["CarLightsPolice"]
+		distributionTable["86econoline_greenport"] = distributionTable["CarLightsPolice"]
 
 	end
 end

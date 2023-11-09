@@ -1,5 +1,20 @@
 module Base {
 
+	item Trousers_Police_Greenport_Fat
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Greenport PD Pants,
+        ClothingItem = Trousers_Police_Greenport_Fat,
+        BodyLocation = Pants,
+        Icon = Trousers_Police_Greenport,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
 	item Trousers_Police_Tandil_Fat
     {
 		DisplayCategory = Clothing,
@@ -776,6 +791,21 @@ module Base {
         ClothingItem = Trousers_Security_Mall_LV_Fat,
         BodyLocation = Pants,
         Icon = Trousers_Security_Mall_LV,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Police_Greenport_Obese
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Greenport PD Pants,
+        ClothingItem = Trousers_Police_Greenport_Obese,
+        BodyLocation = Pants,
+        Icon = Trousers_Police_Greenport,
         BloodLocation = Trousers,
         ScratchDefense = 10,
         Insulation = 0.6,

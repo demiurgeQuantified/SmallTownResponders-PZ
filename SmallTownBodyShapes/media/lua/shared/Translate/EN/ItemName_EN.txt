@@ -1,4 +1,6 @@
 ItemName_EN = {
+    ItemName_STR.Jacket_Police_Greenport_Fat = "Greenport PD Jacket",
+    ItemName_STR.Jacket_Dress_Police_Greenport_Fat = "Greenport PD Coat",
     ItemName_STR.Jacket_Police_Tandil_Fat = "Tandil PD Jacket",
     ItemName_STR.Jacket_Dress_Police_Tandil_Fat = "Tandil PD Coat",
     ItemName_STR.Jacket_Fireman_Tandil_Black_Fat = "Black Tandil FD Jacket",
@@ -62,6 +64,7 @@ ItemName_EN = {
     ItemName_STR.Jacket_Sweater_Security_Hotel_Havisham_Fat = "Havisham Hotel Security Sweater",
     ItemName_STR.Jacket_Sweater_Security_Bank_Fat = "Bank Security Sweater",
 
+    ItemName_STR.Trousers_Police_Greenport_Fat = "Greenport PD Pants",
     ItemName_STR.Trousers_Police_Tandil_Fat = "Tandil PD Pants",
     ItemName_STR.Trousers_EMS_Tandil_Fat = "Tandil EMS Pants",
     ItemName_STR.Trousers_Fire_Formal_Tandil_Fat = "Tandil FD Formal Pants",
@@ -126,6 +129,8 @@ ItemName_EN = {
     ItemName_STR.Vest_HighViz_Police_Green_Fat = "Police High Visibility Vest",
     ItemName_STR.Vest_HighViz_Police_Green_Unmarked_Fat = "Police High Visibility Vest",
 
+    ItemName_STR.Jacket_Police_Greenport_Obese = "Greenport PD Jacket",
+    ItemName_STR.Jacket_Dress_Police_Greenport_Obese = "Greenport PD Coat",
     ItemName_STR.Jacket_Police_Tandil_Obese = "Tandil PD Jacket",
     ItemName_STR.Jacket_Dress_Police_Tandil_Obese = "Tandil PD Coat",
     ItemName_STR.Jacket_Fireman_Tandil_Black_Obese = "Black Tandil FD Jacket",
@@ -189,6 +194,7 @@ ItemName_EN = {
     ItemName_STR.Jacket_Sweater_Security_Hotel_Havisham_Obese = "Havisham Hotel Security Sweater",
     ItemName_STR.Jacket_Sweater_Security_Bank_Obese = "Bank Security Sweater",
 
+    ItemName_STR.Trousers_Police_Greenport_Obese = "Greenport PD Pants",
     ItemName_STR.Trousers_Police_Tandil_Obese = "Tandil PD Pants",
     ItemName_STR.Trousers_EMS_Tandil_Obese = "Tandil EMS Pants",
     ItemName_STR.Trousers_Fire_Formal_Tandil_Obese = "Tandil FD Formal Pants",

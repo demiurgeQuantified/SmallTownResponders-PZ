@@ -23,9 +23,9 @@ ClothingOverrides.outfitsToSwap = {
 ClothingOverrides.zonesToOutfit = {
     Rosewood = {
         --Police = 'PoliceRosewood',
-        Fireman = {'Fireman_Rosewood_Black', 'FiremanFullSuit_Rosewood_Black', 'Fireman_Rosewood_Khaki', 'FiremanFullSuit_Rosewood_Khaki'},
+        Fireman = {'Fireman_Rosewood_Black', 'FiremanFullSuit_Rosewood_Black', 'Fireman_Rosewood_Khaki', 'FiremanFullSuit_Rosewood_Khaki', 'Fireman_Meade_Black', 'FiremanFullSuit_Meade_Black', 'Fireman_Meade_Khaki', 'FiremanFullSuit_Meade_Khaki'},
 		PoliceSusceptible = 'SusceptiblePoliceRosewood',
-		FiremanSusceptible = {'SusceptibleFireman_Rosewood_Black', 'SusceptibleFiremanFullSuit_Rosewood_Black', 'SusceptibleFireman_Rosewood_Khaki', 'SusceptibleFiremanFullSuit_Rosewood_Khaki'},},
+		FiremanSusceptible = {'SusceptibleFireman_Rosewood_Black', 'SusceptibleFiremanFullSuit_Rosewood_Black', 'SusceptibleFireman_Rosewood_Khaki', 'SusceptibleFiremanFullSuit_Rosewood_Khaki', 'SusceptibleFireman_Meade_Black', 'SusceptibleFiremanFullSuit_Meade_Black', 'SusceptibleFireman_Meade_Khaki', 'SusceptibleFiremanFullSuit_Meade_Khaki'},},
     Louisville = {
         Fireman = {'Fireman_Louisville_Black', 'FiremanFullSuit_Louisville_Black', 'Fireman_Louisville_Khaki', 'FiremanFullSuit_Louisville_Khaki'},
         EMS = 'EMSLouisville',
@@ -62,6 +62,9 @@ ClothingOverrides.zonesToOutfit = {
 		PoliceSusceptible = 'SusceptiblePoliceTandil',
 		FiremanSusceptible = {'SusceptibleFireman_Tandil_Black', 'SusceptibleFiremanFullSuit_Tandil_Black', 'SusceptibleFireman_Tandil_Khaki', 'SusceptibleFiremanFullSuit_Tandil_Khaki'},},
     -- police only zones
+    Greenport = {
+        --Police = 'PoliceGreenport',
+		PoliceSusceptible = 'SusceptiblePoliceGreenport',},
     Riverside = {
         --Police = 'PoliceRiverside',
 		PoliceSusceptible = 'SusceptiblePoliceRiverside',},
@@ -183,6 +186,13 @@ Events.OnInitGlobalModData.Add(function()
 			ClothingOverrides.zonesToOutfit.RavenCreek.PoliceRiot = "PoliceRavenCreekRiotNoVest"
 			ClothingOverrides.zonesToOutfit.RavenCreekPrison.Police = {"PoliceRavenCreekNoVest_Bag", "PoliceRavenCreekNoVest", "PoliceRavenCreekNoVest", "PoliceRavenCreekNoVest", "PoliceRavenCreekNoVest"}
 			ClothingOverrides.zonesToOutfit.RavenCreekPrison.PoliceRiot = "PoliceRavenCreekRiotNoVest"
+		end
+		if SandboxVars.STR.VestGreenport then
+			ClothingOverrides.zonesToOutfit.Greenport.Police = {"PoliceGreenport_Bag", "PoliceGreenport", "PoliceGreenport", "PoliceGreenport", "PoliceGreenport"}
+			ClothingOverrides.zonesToOutfit.Greenport.PoliceRiot = "PoliceGreenportRiot"
+		elseif not SandboxVars.STR.VestGreenport then
+			ClothingOverrides.zonesToOutfit.Greenport.Police = {"PoliceGreenportNoVest_Bag", "PoliceGreenportNoVest", "PoliceGreenportNoVest", "PoliceGreenportNoVest", "PoliceGreenportNoVest"}
+			ClothingOverrides.zonesToOutfit.Greenport.PoliceRiot = "PoliceGreenportRiotNoVest"
 		end
 		if SandboxVars.STR.VestRiverside then
 			ClothingOverrides.zonesToOutfit.Riverside.Police = {"PoliceRiverside_Bag", "PoliceRiverside", "PoliceRiverside", "PoliceRiverside", "PoliceRiverside"}

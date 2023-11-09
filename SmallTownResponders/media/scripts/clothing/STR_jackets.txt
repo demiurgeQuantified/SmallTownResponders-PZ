@@ -3,6 +3,86 @@ module STR {
 	imports {
 		Base
 	}
+    item Jacket_Police_Greenport
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Greenport PD Jacket,
+        ClothingItem = Jacket_Police_Greenport,
+        BodyLocation = Jacket,
+        Icon = Jacket_Police_Greenport,
+        BloodLocation = Jacket,
+        RunSpeedModifier = 0.93,
+        CombatSpeedModifier = 0.98,
+        BiteDefense = 20,
+        ScratchDefense = 30,
+        NeckProtectionModifier = 0.5,
+        Insulation = 0.6,
+        WindResistance = 0.45,
+        FabricType = Cotton,
+        WaterResistance = 0.25,
+        Weight = 2,
+        WorldStaticModel = JacketCoat_Ground,
+    }
+    item Jacket_Dress_Police_Greenport
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Greenport PD Coat,
+        ClothingItem = Jacket_Dress_Police_Greenport,
+        BodyLocation = JacketSuit,
+        Icon = Jacket_Dress_Police_Greenport,
+        BloodLocation = LongJacket,
+        RunSpeedModifier = 0.95,
+        BiteDefense = 20,
+        ScratchDefense = 40,
+        NeckProtectionModifier = 0.5,
+        Insulation = 0.70,
+        WindResistance = 0.45,
+        FabricType = Cotton,
+        WaterResistance = 0.55,
+        WorldStaticModel = JacketCoat_Ground,
+    }
+	item Jacket_Fireman_Greenport_Black
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Black Greenport FD Jacket,
+        ClothingItem = Jacket_Fireman_Greenport_Black,
+        BodyLocation = Jacket,
+        Icon = Jacket_Fireman_Black_Greenport,
+        BloodLocation = Jacket,
+        RunSpeedModifier = 0.87,
+        CombatSpeedModifier = 0.90,
+        BiteDefense = 50,
+        ScratchDefense = 70,
+        NeckProtectionModifier = 0.5,
+        Insulation = 0.85,
+        WindResistance = 0.85,
+        WaterResistance = 0.8,
+        Weight = 4,
+        WorldStaticModel = Jacket_Ground,
+    }
+	item Jacket_Fireman_Greenport_Khaki
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Khaki Greenport FD Jacket,
+        ClothingItem = Jacket_Fireman_Greenport_Khaki,
+        BodyLocation = Jacket,
+        Icon = Jacket_Fireman_Khaki_Greenport,
+        BloodLocation = Jacket,
+        RunSpeedModifier = 0.87,
+        CombatSpeedModifier = 0.90,
+        BiteDefense = 50,
+        ScratchDefense = 70,
+        NeckProtectionModifier = 0.5,
+        Insulation = 0.85,
+        WindResistance = 0.85,
+        WaterResistance = 0.8,
+        Weight = 4,
+        WorldStaticModel = Jacket_Ground,
+    }
     item Jacket_Police_Tandil
     {
         DisplayCategory = Clothing,

@@ -98,6 +98,11 @@
 	</files>
 
 	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Police_Greenport_Fat.xml</path>
+		<guid>78dc801a-8904-40f0-8950-f660938b961e</guid>
+	</files>
+
+	<files>
 		<path>media/clothing/clothingItems/Jacket_Dress_Police_Tandil_Fat.xml</path>
 		<guid>4b10bb76-eae9-4b59-8b49-06127314bb73</guid>
 	</files>
@@ -158,6 +163,11 @@
 		<guid>2d583528-2aeb-414c-9fa1-ccac8e752e83</guid>
 	</files>
 
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_Greenport_Fat.xml</path>
+		<guid>f2e3f5ba-b9f1-48ef-ac6a-73e20916a319</guid>
+	</files>
 
 	<files>
 		<path>media/clothing/clothingItems/Jacket_Police_Tandil_Fat.xml</path>
@@ -403,6 +413,11 @@
 	<files>
 		<path>media/clothing/clothingItems/Shorts_State_Law_Ranger_Fat.xml</path>
 		<guid>bee2222a-23f6-437f-a580-2441af07f392</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Police_Greenport_Fat.xml</path>
+		<guid>6130ddcf-f937-4473-b333-bf2eb689f8bb</guid>
 	</files>
 
 	<files>
@@ -796,6 +811,11 @@
 	</files>
 
 	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Police_Greenport_Obese.xml</path>
+		<guid>99da6b8f-aa64-4695-ac08-c4da78f36cc4</guid>
+	</files>
+
+	<files>
 		<path>media/clothing/clothingItems/Jacket_Dress_Police_Tandil_Obese.xml</path>
 		<guid>1cd97bb6-4ed5-48b8-bca2-3c00ffcea12c</guid>
 	</files>
@@ -856,6 +876,11 @@
 		<guid>87f564c4-4310-403f-9605-5eb800d91900</guid>
 	</files>
 
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_Greenport_Obese.xml</path>
+		<guid>717586f0-1bb4-47c2-92aa-fc405346143c</guid>
+	</files>
 
 	<files>
 		<path>media/clothing/clothingItems/Jacket_Police_Tandil_Obese.xml</path>
@@ -1101,6 +1126,11 @@
 	<files>
 		<path>media/clothing/clothingItems/Shorts_State_Law_Ranger_Obese.xml</path>
 		<guid>329725a7-a2a8-49f6-9f9d-c66f9687ff8e</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Police_Greenport_Obese.xml</path>
+		<guid>405aa6b9-f59b-4243-a91c-14c8b91e9264</guid>
 	</files>
 
 	<files>

@@ -3,6 +3,17 @@ module STR {
 	imports {
 		Base
 	}
+    item GreenportPoliceBadge
+    {
+	    DisplayCategory = Literature,
+        Weight	=	0.10,
+        Type	=	Literature,
+        DisplayName	=	Greenport PD Badge,
+        Icon	=	Badge_Police_Greenport,
+        CanBeWrite  =   true,
+        PageToWrite =   1,
+        WorldStaticModel = GPBadge_Ground,
+    }
     item TandilPoliceBadge
     {
 	    DisplayCategory = Literature,

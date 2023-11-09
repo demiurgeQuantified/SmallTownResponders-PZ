@@ -80,6 +80,13 @@ function Overrides.setSandboxVariables()
         Overrides.zonesGeneric.Tandil = nil
         Overrides.zonesPolice.Tandil = nil
     end
+    if getActivatedMods():contains('Greenport') then
+        Overrides.zonesGeneric.Greenport = {x1=7929,x2=8876,y1=7340,y2=7815}
+        Overrides.zonesPolice.Greenport = Overrides.zonesGeneric.Greenport
+    else
+        Overrides.zonesGeneric.Greenport = nil
+        Overrides.zonesPolice.Greenport = nil
+    end
 end
 Events.OnInitGlobalModData.Add(Overrides.setSandboxVariables)
 

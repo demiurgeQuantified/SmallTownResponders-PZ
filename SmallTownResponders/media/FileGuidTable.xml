@@ -206,6 +206,11 @@
 	</files>
 
 	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Police_Greenport.xml</path>
+		<guid>34259dce-37ce-4248-998a-b545753bd8f2</guid>
+	</files>
+
+	<files>
 		<path>media/clothing/clothingItems/Jacket_Dress_Police_Tandil.xml</path>
 		<guid>ffdf7edd-09c9-49fb-962c-2cadc8cd54e5</guid>
 	</files>
@@ -594,6 +599,11 @@
 	</files>
 
 	<files>
+		<path>media/clothing/clothingItems/Tie_Full_Police_Greenport.xml</path>
+		<guid>af530496-3372-40ae-82f6-6729437ccddc</guid>
+	</files>
+
+	<files>
 		<path>media/clothing/clothingItems/Tie_Full_Police_Tandil.xml</path>
 		<guid>33fbb7ce-9a43-4034-b75e-8545d7b61884</guid>
 	</files>
@@ -720,6 +730,11 @@
 	</files>
 
 	<files>
+		<path>media/clothing/clothingItems/Tie_Worn_Police_Greenport.xml</path>
+		<guid>481f9f51-d76d-413f-a7be-1a596e420691</guid>
+	</files>
+
+	<files>
 		<path>media/clothing/clothingItems/Tie_Worn_Police_Tandil.xml</path>
 		<guid>46479590-9c4c-45a2-9b54-2ae6611f3b55</guid>
 	</files>
@@ -813,6 +828,11 @@
 	<files>
 		<path>media/clothing/clothingItems/Necklace_Badge_Police_WestPoint.xml</path>
 		<guid>0ca49b8b-79ea-44c0-b33c-4528ae002757</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Necklace_Badge_Police_Greenport.xml</path>
+		<guid>91ce6fa5-7c8f-4cd2-bc68-4cf6409784ba</guid>
 	</files>
 
 	<files>
@@ -927,6 +947,11 @@
 		<guid>929416e5-3e64-4336-8987-ceaea6aa58dd</guid>
 	</files>
 
+
+	<files>
+		<path>media/clothing/clothingItems/Hat_Police_Greenport.xml</path>
+		<guid>6c2569d9-2b44-4547-b19c-000188efba9e</guid>
+	</files>
 
 	<files>
 		<path>media/clothing/clothingItems/Hat_Police_Tandil.xml</path>
@@ -1159,6 +1184,21 @@
 	</files>
 
 	<files>
+		<path>media/clothing/clothingItems/Hat_Fireman_Greenport_Black.xml</path>
+		<guid>e67ae078-7c25-4b89-ab74-dc40c1c79608</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Hat_Fireman_Greenport_Red.xml</path>
+		<guid>12d8a78d-1ed4-424c-b894-03d15243b2e4</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Hat_Fireman_Greenport_Yellow.xml</path>
+		<guid>2bec20e6-0c2a-4378-96c3-5ca847c77805</guid>
+	</files>
+
+	<files>
 		<path>media/clothing/clothingItems/Hat_Fireman_Tandil_Blue.xml</path>
 		<guid>f7c4843d-cfcf-4ceb-a992-86cfb17ba26d</guid>
 	</files>
@@ -1198,6 +1238,11 @@
 		<guid>4416b636-f069-40be-8ae1-31f28037470b</guid>
 	</files>
 
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_Greenport.xml</path>
+		<guid>f6099139-ce57-4072-bf11-5391d3bd71e6</guid>
+	</files>
 
 	<files>
 		<path>media/clothing/clothingItems/Jacket_Police_Tandil.xml</path>
@@ -1365,6 +1410,16 @@
 	</files>
 
 	<files>
+		<path>media/clothing/clothingItems/Jacket_Fireman_Greenport_Black.xml</path>
+		<guid>9d1b8200-5b29-42c5-b6a5-be9e00680b52</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Fireman_Greenport_Khaki.xml</path>
+		<guid>5749cce5-81e0-4095-9448-d10fa87b3609</guid>
+	</files>
+
+	<files>
 		<path>media/clothing/clothingItems/Jacket_Fireman_Tandil_Black.xml</path>
 		<guid>c4d52a56-749e-4392-ac1f-6e2df659c71c</guid>
 	</files>
@@ -1384,6 +1439,11 @@
 		<guid>104cc7f0-61d3-440f-ac47-62fc750f3eb3</guid>
 	</files>
 
+
+	<files>
+		<path>media/clothing/clothingItems/Shirt_Police_Greenport.xml</path>
+		<guid>b1cca50b-403c-491a-9fd8-f53a081cc7cb</guid>
+	</files>
 
 	<files>
 		<path>media/clothing/clothingItems/Shirt_Police_Tandil.xml</path>
@@ -1478,6 +1538,11 @@
 	<files>
 		<path>media/clothing/clothingItems/Shirt_Fire_Supervisor_Meade.xml</path>
 		<guid>4be51da9-8cc5-49a3-9e62-66dcd586c6df</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Shirt_Fire_Greenport.xml</path>
+		<guid>c5ed3dd4-f88c-45f5-905a-a34fb074b0b7</guid>
 	</files>
 
 	<files>
@@ -1587,6 +1652,11 @@
 
 
 	<files>
+		<path>media/clothing/clothingItems/TShirt_Police_Greenport.xml</path>
+		<guid>ef742b63-ceee-498c-a7bd-e8b2b7485fc4</guid>
+	</files>
+
+	<files>
 		<path>media/clothing/clothingItems/TShirt_Police_Tandil.xml</path>
 		<guid>dd7f9b2f-eaf0-495e-98fe-78e6eea51016</guid>
 	</files>
@@ -1679,6 +1749,11 @@
 	<files>
 		<path>media/clothing/clothingItems/TShirt_Fire_Supervisor_Meade.xml</path>
 		<guid>b59c4a18-8925-4de9-bacc-6c2392ab45d8</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/TShirt_Fire_Greenport.xml</path>
+		<guid>9f46ffa9-373d-42c2-8a5b-6056642f3cb2</guid>
 	</files>
 
 	<files>
@@ -1847,6 +1922,26 @@
 	</files>
 
 	<files>
+		<path>media/clothing/clothingItems/TShirt_Profession_FiremanBlue_Greenport.xml</path>
+		<guid>89ec0513-acd9-400e-89d8-2a02def81d98</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/TShirt_Profession_FiremanRed_Greenport.xml</path>
+		<guid>623fa152-e8c6-46bc-85a8-ff453e048cb1</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/TShirt_Profession_FiremanRed_Greenport02.xml</path>
+		<guid>9cc37a21-9f89-4c33-a498-8dd442b80e1b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/TShirt_Profession_FiremanWhite_Greenport.xml</path>
+		<guid>d0937557-72af-43c8-aaa6-03b421fc8c43</guid>
+	</files>
+
+	<files>
 		<path>media/clothing/clothingItems/TShirt_Profession_FiremanBlue_Tandil.xml</path>
 		<guid>bdaf5d84-8403-40c6-ba3f-0a4ce7719232</guid>
 	</files>
@@ -1886,6 +1981,11 @@
 		<guid>9da45710-8b00-4cd2-b479-6ebad7d4349a</guid>
 	</files>
 
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Police_Greenport.xml</path>
+		<guid>9acfbdc7-be74-4dfa-a64a-a880b5b6223c</guid>
+	</files>
 
 	<files>
 		<path>media/clothing/clothingItems/Trousers_Police_Tandil.xml</path>
@@ -2053,6 +2153,11 @@
 	</files>
 
 	<files>
+		<path>media/clothing/clothingItems/Trousers_Fire_Formal_Greenport.xml</path>
+		<guid>ae1efae2-319d-46e0-aa83-1a6f688d48ed</guid>
+	</files>
+
+	<files>
 		<path>media/clothing/clothingItems/Trousers_Fire_Formal_Tandil.xml</path>
 		<guid>3b546497-73c2-4c7c-840d-6d3f9cf615ef</guid>
 	</files>
@@ -2070,6 +2175,16 @@
 	<files>
 		<path>media/clothing/clothingItems/Trousers_Fire_Formal_Rosewood.xml</path>
 		<guid>59af2eff-dcc8-4edb-ba1c-f716361c7b3b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Fireman_Greenport_Black.xml</path>
+		<guid>77c5a72a-f2d9-4880-8c72-bd9d277d6b7c</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Fireman_Greenport_Khaki.xml</path>
+		<guid>66bd1fd0-96b7-4dea-8e48-3949b3519e62</guid>
 	</files>
 
 	<files>

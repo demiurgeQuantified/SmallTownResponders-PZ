@@ -3,6 +3,20 @@ module STR {
 	imports {
 		Base
 	}
+	item Shirt_Police_GreenportROLL
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Greenport PD Shirt,
+		ClothingItem = Shirt_Police_GreenportROLL,
+		BodyLocation = ShortSleeveShirt,
+		Icon = Shirt_Police_Greenport,
+		BloodLocation = Shirt,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = Shirt_Ground,
+	}
 	item Shirt_Police_TandilROLL
 	{
         DisplayCategory = Clothing,
@@ -473,6 +487,20 @@ module STR {
 		ClothingItem = Shirt_Fire_Supervisor_RavenCreekROLL,
 		BodyLocation = Shirt,
 		Icon = Shirt_Fire_Supervisor_RavenCreek,
+		BloodLocation = ShirtLongSleeves,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = Shirt_Ground,
+	}
+	item Shirt_Police_GreenportOPEN
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Greenport PD Shirt,
+		ClothingItem = Shirt_Police_GreenportOPEN,
+		BodyLocation = Shirt,
+		Icon = Shirt_Police_Greenport,
 		BloodLocation = ShirtLongSleeves,
         Insulation = 0.2,
         WindResistance = 0.2,
@@ -955,6 +983,20 @@ module STR {
         FabricType = Cotton,
         WorldStaticModel = Shirt_Ground,
 	}
+	item Shirt_Police_GreenportOPENROLL
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Greenport PD Shirt,
+		ClothingItem = Shirt_Police_GreenportOPENROLL,
+		BodyLocation = ShortSleeveShirt,
+		Icon = Shirt_Police_Greenport,
+		BloodLocation = Shirt,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = Shirt_Ground,
+	}
 	item Shirt_Police_TandilOPENROLL
 	{
         DisplayCategory = Clothing,
@@ -1430,6 +1472,20 @@ module STR {
         WindResistance = 0.2,
         FabricType = Cotton,
         WorldStaticModel = Shirt_Ground,
+	}
+	item TShirt_Police_GreenportOPEN
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Greenport PD T-Shirt,
+		ClothingItem = TShirt_Police_GreenportOPEN,
+		BodyLocation = Tshirt,
+		Icon = TShirt_Police_Greenport,
+		BloodLocation = Shirt,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = TShirt_Ground,
 	}
 	item TShirt_Police_TandilOPEN
 	{

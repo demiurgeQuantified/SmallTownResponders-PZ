@@ -53,6 +53,15 @@ Sandbox_EN = {
 	Sandbox_STR_VestMeade = "Allow Meade SO Vests",
 	Sandbox_STR_VestMeade_tooltip = "Enable this for bulletproof vests on Meade SO zombies",
 
+	Sandbox_STR_VestGreenport = "Allow Greenport PD Vests",
+	Sandbox_STR_VestGreenport_tooltip = "Enable this for bulletproof vests on Greenport PD zombies",
+
+	Sandbox_STR_VestTandil = "Allow Tandil PD Vests",
+	Sandbox_STR_VestTandil_tooltip = "Enable this for bulletproof vests on Tandil PD zombies",
+
+	Sandbox_STR_VestRavenCreek = "Allow RavenCreek PD Vests",
+	Sandbox_STR_VestRavenCreek_tooltip = "Enable this for bulletproof vests on RavenCreek PD zombies",
+
 	Sandbox_STR_TrunkOverrides = "Override Containers",
 	Sandbox_STR_TrunkOverrides_tooltip = "Enable this to override certain vanilla items in vehicle trunks and containers. Only runs once per vehicle/container.",
 
@@ -133,6 +142,9 @@ Sandbox_EN = {
 	Sandbox_STRS_MeadeInmateRed = "Meade DOC Inmate Red Spawn Chance",
 	Sandbox_STRS_MeadeInmateRed_tooltip = "The spawn chance for Meade DOC Supermax zombies.",
 
+	Sandbox_STRS_GreenportPD = "Greenport PD Spawn Chance",
+	Sandbox_STRS_GreenportPD_tooltip = "The spawn chance for Greenport PD zombies. Does nothing if Greenport isn't enabled!",
+
 	Sandbox_STRS_TandilPD = "Tandil PD Spawn Chance",
 	Sandbox_STRS_TandilPD_tooltip = "The spawn chance for Tandil PD zombies. Does nothing if Tandil isn't enabled!",
 
@@ -200,6 +212,9 @@ Sandbox_EN = {
 
 	Sandbox_STEV_FSwat = "Misc Spawn Chance",
 	Sandbox_STEV_FSwat_tooltip = "The spawn chance for Filibuster Rhymes SWAT trucks, and Military And Police Used Car Skins vehicles in police zones. Does nothing if Filibuster Rhymes Used Cars and/or Military And Police Used Car Skins aren't enabled!",
+
+	Sandbox_STEV_GPPD = "Greenport PD Spawn Chance",
+	Sandbox_STEV_GPPD_tooltip = "The spawn chance for Greenport PD cars. Does nothing if Greenport isn't enabled!",
 
 	Sandbox_STEV_TDPD = "Tandil PD Spawn Chance",
 	Sandbox_STEV_TDPD_tooltip = "The spawn chance for Tandil PD cars. Does nothing if Tandil isn't enabled!",

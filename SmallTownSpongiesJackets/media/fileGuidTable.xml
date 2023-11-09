@@ -62,6 +62,11 @@
 	</files>
 
 	<files>
+		<path>media/clothing/clothingItems/Jacket_Dress_Police_GreenportOPEN.xml</path>
+		<guid>9549a4bb-052f-4d22-b2a4-c8ca333cf6cf</guid>
+	</files>
+
+	<files>
 		<path>media/clothing/clothingItems/Jacket_Dress_Police_TandilOPEN.xml</path>
 		<guid>59afaf47-5735-46cc-95a3-d352bf21bed6</guid>
 	</files>
@@ -125,6 +130,11 @@
 	<files>
 		<path>media/clothing/clothingItems/Jacket_Police_MuldraughOPEN.xml</path>
 		<guid>1def3eb6-4c1c-42eb-bd3b-251c6f95aa22</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Jacket_Police_GreenportOPEN.xml</path>
+		<guid>4ba0176d-e050-4067-aa07-420859b6bf8c</guid>
 	</files>
 
 	<files>
@@ -445,6 +455,11 @@
 	</files>
 
 	<files>
+		<path>media/clothing/clothingItems/Shirt_Police_GreenportROLL.xml</path>
+		<guid>69be02e3-5222-42da-b42a-c72fdfe79cf7</guid>
+	</files>
+
+	<files>
 		<path>media/clothing/clothingItems/Shirt_Police_TandilROLL.xml</path>
 		<guid>abfbef53-0686-413f-bdbd-4c9eebde51e2</guid>
 	</files>
@@ -643,6 +658,11 @@
 	<files>
 		<path>media/clothing/clothingItems/Shirt_Police_MuldraughOPENROLL.xml</path>
 		<guid>b614ff10-a9c4-4a3b-bfba-a10412fab55a</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Shirt_Police_GreenportOPENROLL.xml</path>
+		<guid>590f3b49-7898-45d6-8218-c3deca4cb1c9</guid>
 	</files>
 
 	<files>
@@ -847,6 +867,11 @@
 	</files>
 
 	<files>
+		<path>media/clothing/clothingItems/Shirt_Police_GreenportOPEN.xml</path>
+		<guid>ac8b709a-8bdc-4d4d-82d7-9ab71f6da694</guid>
+	</files>
+
+	<files>
 		<path>media/clothing/clothingItems/Shirt_Police_TandilOPEN.xml</path>
 		<guid>eadfb7be-31ff-4dd0-b89d-271828e67947</guid>
 	</files>
@@ -1043,6 +1068,11 @@
 	</files>
 
 	<files>
+		<path>media/clothing/clothingItems/TShirt_Police_GreenportOPEN.xml</path>
+		<guid>d51236c9-91c1-416b-bda8-6c3122eb3928</guid>
+	</files>
+
+	<files>
 		<path>media/clothing/clothingItems/TShirt_Police_TandilOPEN.xml</path>
 		<guid>d046b986-8329-4740-9986-c5d2f2996dc7</guid>
 	</files>
@@ -1221,6 +1251,11 @@
 	<files>
 		<path>media/clothing/clothingItems/Trousers_Police_MuldraughTUCK.xml</path>
 		<guid>a9a1c648-c89c-47be-8015-fa74db8a3b0f</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Police_GreenportTUCK.xml</path>
+		<guid>50c1badf-9b13-4f7c-bb6b-a63f30f56f26</guid>
 	</files>
 
 	<files>

@@ -1,5 +1,7 @@
 ItemName_EN = {
+    ItemName_STR.Jacket_Police_GreenportOPEN = "Greenport PD Jacket",
     ItemName_STR.Jacket_Police_TandilOPEN = "Tandil PD Jacket",
+    ItemName_STR.Jacket_Dress_Police_GreenportOPEN = "Greenport PD Coat",
     ItemName_STR.Jacket_Dress_Police_TandilOPEN = "Tandil PD Coat",
     ItemName_STR.Jacket_Fireman_Tandil_BlackOPEN = "Black Tandil FD Jacket",
     ItemName_STR.Jacket_Fireman_Tandil_KhakiOPEN = "Khaki Tandil FD Jacket",
@@ -62,6 +64,7 @@ ItemName_EN = {
     ItemName_STR.Jacket_Sweater_Security_Hotel_HavishamOPEN = "Havisham Hotel Security Sweater",
     ItemName_STR.Jacket_Sweater_Security_BankOPEN = "Bank Security Sweater",
 
+    ItemName_STR.Shirt_Police_GreenportROLL = "Greenport PD Shirt",
     ItemName_STR.Shirt_Police_TandilROLL = "Tandil PD Shirt",
     ItemName_STR.Shirt_EMS_TandilROLL = "Tandil EMS Shirt",
     ItemName_STR.Shirt_Fire_TandilROLL = "Tandil FD Shirt",
@@ -103,6 +106,7 @@ ItemName_EN = {
     ItemName_STR.Shirt_Security_Mall_ValleyROLL = "Valley Station Mall Security Shirt",
     ItemName_STR.Shirt_Security_Mall_LVROLL = "Mall Security Shirt",
 
+    ItemName_STR.Shirt_Police_GreenportOPEN = "Greenport PD Shirt",
     ItemName_STR.Shirt_Police_TandilOPEN = "Tandil PD Shirt",
     ItemName_STR.Shirt_EMS_TandilOPEN = "Tandil EMS Shirt",
     ItemName_STR.Shirt_Fire_TandilOPEN = "Tandil FD Shirt",
@@ -144,6 +148,7 @@ ItemName_EN = {
     ItemName_STR.Shirt_Security_Mall_ValleyOPEN = "Valley Station Mall Security Shirt",
     ItemName_STR.Shirt_Security_Mall_LVOPEN = "Mall Security Shirt",
 
+    ItemName_STR.Shirt_Police_GreenportOPENROLL = "Greenport PD Shirt",
     ItemName_STR.Shirt_Police_TandilOPENROLL = "Tandil PD Shirt",
     ItemName_STR.Shirt_EMS_TandilOPENROLL = "Tandil EMS Shirt",
     ItemName_STR.Shirt_Fire_TandilOPENROLL = "Tandil FD Shirt",
@@ -185,6 +190,7 @@ ItemName_EN = {
     ItemName_STR.Shirt_Security_Mall_ValleyOPENROLL = "Valley Station Mall Security Shirt",
     ItemName_STR.Shirt_Security_Mall_LVOPENROLL = "Mall Security Shirt",
 
+    ItemName_STR.TShirt_Police_GreenportOPEN = "Greenport PD T-Shirt",
     ItemName_STR.TShirt_Police_TandilOPEN = "Tandil PD T-Shirt",
     ItemName_STR.TShirt_EMS_TandilOPEN = "Tandil EMS T-Shirt",
     ItemName_STR.TShirt_Fire_TandilOPEN = "Tandil FD T-Shirt",
@@ -225,6 +231,7 @@ ItemName_EN = {
     ItemName_STR.TShirt_Security_Mall_ValleyOPEN = "Valley Station Mall Security T-Shirt",
     ItemName_STR.TShirt_Security_Mall_LVOPEN = "Mall Security T-Shirt",
 
+    ItemName_STR.Trousers_Police_GreenportTUCK = "Greenport PD Pants",
     ItemName_STR.Trousers_Police_TandilTUCK = "Tandil PD Pants",
     ItemName_STR.Trousers_EMS_TandilTUCK = "Tandil EMS Pants",
     ItemName_STR.Trousers_Fire_Formal_TandilTUCK = "Tandil FD Formal Pants",

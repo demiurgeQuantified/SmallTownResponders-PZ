@@ -1,4 +1,5 @@
 ItemName_EN = {
+    ItemName_STR.Hat_Police_Greenport = "Greenport PD Hat",
     ItemName_STR.Hat_Police_Tandil = "Tandil PD Hat",
     ItemName_STR.Hat_Police_Tandil_Dress = "Tandil PD Dress Hat",
     ItemName_STR.Hat_Police_RavenCreek = "RavenCreek PD Hat",
@@ -85,7 +86,9 @@ ItemName_EN = {
     ItemName_STR.Hat_Security_Mall_Valley = "Valley Station Mall Security Hat",
     ItemName_STR.Hat_Security_Mall_LV = "Mall Security Hat",
 
+    ItemName_STR.Jacket_Police_Greenport = "Greenport PD Jacket",
     ItemName_STR.Jacket_Police_Tandil = "Tandil PD Jacket",
+    ItemName_STR.Jacket_Dress_Police_Greenport = "Greenport PD Coat",
     ItemName_STR.Jacket_Dress_Police_Tandil = "Tandil PD Coat",
     ItemName_STR.Jacket_Fireman_Tandil_Black = "Black Tandil FD Jacket",
     ItemName_STR.Jacket_Fireman_Tandil_Khaki = "Khaki Tandil FD Jacket",
@@ -148,6 +151,7 @@ ItemName_EN = {
     ItemName_STR.Jacket_Sweater_Security_Hotel_Havisham = "Havisham Hotel Security Sweater",
     ItemName_STR.Jacket_Sweater_Security_Bank = "Bank Security Sweater",
 
+    ItemName_STR.Shirt_Police_Greenport = "Greenport PD Shirt",
     ItemName_STR.Shirt_Police_Tandil = "Tandil PD Shirt",
     ItemName_STR.Shirt_EMS_Tandil = "Tandil EMS Shirt",
     ItemName_STR.Shirt_Fire_Tandil = "Tandil FD Shirt",
@@ -189,6 +193,7 @@ ItemName_EN = {
     ItemName_STR.Shirt_Security_Mall_Valley = "Valley Station Mall Security Shirt",
     ItemName_STR.Shirt_Security_Mall_LV = "Mall Security Shirt",
 
+    ItemName_STR.TShirt_Police_Greenport = "Greenport PD T-Shirt",
     ItemName_STR.TShirt_Police_Tandil = "Tandil PD T-Shirt",
     ItemName_STR.TShirt_EMS_Tandil = "Tandil EMS T-Shirt",
     ItemName_STR.TShirt_Fire_Tandil = "Tandil FD T-Shirt",
@@ -253,6 +258,7 @@ ItemName_EN = {
     ItemName_STR.TShirt_Security_Mall_Valley = "Valley Station Mall Security T-Shirt",
     ItemName_STR.TShirt_Security_Mall_LV = "Mall Security T-Shirt",
 
+    ItemName_STR.Trousers_Police_Greenport = "Greenport PD Pants",
     ItemName_STR.Trousers_Police_Tandil = "Tandil PD Pants",
     ItemName_STR.Trousers_EMS_Tandil = "Tandil EMS Pants",
     ItemName_STR.Trousers_Fire_Formal_Tandil = "Tandil FD Formal Pants",
@@ -304,6 +310,8 @@ ItemName_EN = {
     ItemName_STR.Trousers_Security_Mall_Valley = "Valley Station Mall Security Pants",
     ItemName_STR.Trousers_Security_Mall_LV = "Mall Security Pants",
 
+    ItemName_STR.Tie_Full_Police_Greenport = "Greenport PD Tie",
+    ItemName_STR.Tie_Worn_Police_Greenport = "Greenport PD Clip-on Tie",
     ItemName_STR.Tie_Full_Police_Tandil = "Tandil PD Tie",
     ItemName_STR.Tie_Worn_Police_Tandil = "Tandil PD Clip-on Tie",
     ItemName_STR.Tie_Full_Police_RavenCreek = "RavenCreek PD Tie",
@@ -364,6 +372,7 @@ ItemName_EN = {
     ItemName_STR.Necklace_Badge_Police_Riverside = "Riverside PD Necklace Badge",
     ItemName_STR.Necklace_Badge_Police_Rosewood = "Rosewood SD Necklace Badge",
     ItemName_STR.Necklace_Badge_Police_WestPoint = "WestPoint PD Necklace Badge",
+    ItemName_STR.Necklace_Badge_Police_Greenport = "Greenport PD Necklace Badge",
     ItemName_STR.Necklace_Badge_Police_Tandil = "Tandil PD Necklace Badge",
     ItemName_STR.Necklace_Badge_Police_RavenCreek = "RavenCreek PD Necklace Badge",
 
@@ -415,6 +424,7 @@ ItemName_EN = {
     ItemName_STR.Vest_HighViz_Police_Green = "Police High Visibility Vest",
     ItemName_STR.Vest_HighViz_Police_Green_Unmarked = "Police High Visibility Vest",
 
+    ItemName_STR.GreenportPoliceBadge = "Greenport PD Badge",
     ItemName_STR.TandilPoliceBadge = "Tandil PD Badge",
     ItemName_STR.RavenCreekPoliceBadge = "RavenCreek PD Badge",
     ItemName_STR.KSPPoliceBadge = "Kentucky State Police Badge",

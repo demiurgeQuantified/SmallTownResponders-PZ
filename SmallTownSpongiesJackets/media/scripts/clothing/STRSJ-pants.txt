@@ -3,6 +3,21 @@ module STR {
 	imports {
 		Base
 	}
+	item Trousers_Police_GreenportTUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Greenport PD Pants,
+        ClothingItem = Trousers_Police_GreenportTUCK,
+        BodyLocation = Pants,
+        Icon = Trousers_Police_Greenport,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
 	item Trousers_Police_TandilTUCK
     {
 		DisplayCategory = Clothing,

@@ -216,6 +216,44 @@ AttachedWeaponDefinitions = AttachedWeaponDefinitions or {};
 
 end
 
+if getActivatedMods():contains("Greenport") then
+
+AttachedWeaponDefinitions = AttachedWeaponDefinitions or {};
+
+	table.insert(AttachedWeaponDefinitions.handgunDutyBelt["outfit"], "PoliceGreenport");
+	table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "PoliceGreenport");
+	table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "PoliceGreenport");
+	table.insert(AttachedWeaponDefinitions.policeRadio["outfit"], "PoliceGreenport");
+
+	table.insert(AttachedWeaponDefinitions.handgunDutyBelt["outfit"], "PoliceGreenportRiot");
+	table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "PoliceGreenportRiot");
+	table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "PoliceGreenportRiot");
+	table.insert(AttachedWeaponDefinitions.policeRadio["outfit"], "PoliceGreenportRiot");
+
+	AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceGreenport = {
+		chance = 50;
+		maxitem = 2;
+		weapons = {
+			AttachedWeaponDefinitions.handgunDutyBelt,
+			AttachedWeaponDefinitions.shotgunPolice,
+			AttachedWeaponDefinitions.nightstick,
+			AttachedWeaponDefinitions.policeRadio,
+		},
+	}
+
+	AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceGreenportRiot = {
+		chance = 50;
+		maxitem = 2;
+		weapons = {
+			AttachedWeaponDefinitions.handgunDutyBelt,
+			AttachedWeaponDefinitions.shotgunPolice,
+			AttachedWeaponDefinitions.nightstick,
+			AttachedWeaponDefinitions.policeradio,
+		},
+	}
+
+end
+
 AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraugh = {
 	chance = 50;
 	maxitem = 2;

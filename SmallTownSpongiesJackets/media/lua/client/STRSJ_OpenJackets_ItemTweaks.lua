@@ -46,6 +46,7 @@ AddNewExtraItem("STR.Vest_HighViz_Police_Green_Unmarked", "STR.Vest_HighViz_Poli
 AddNewExtraItem("STR.Vest_HighViz_Police_Tandil", "STR.Vest_HighViz_Police_TandilOPEN", "CloseJacket", "OpenJacket", 0.75);
 
 -- Jacket
+AddNewExtraItem("STR.Jacket_Police_Greenport", "STR.Jacket_Police_GreenportOPEN", "CloseJacket", "OpenJacket", 0.75);
 AddNewExtraItem("STR.Jacket_Police_Tandil", "STR.Jacket_Police_TandilOPEN", "CloseJacket", "OpenJacket", 0.75);
 AddNewExtraItem("STR.Jacket_Fireman_Tandil_Black", "STR.Jacket_Fireman_Tandil_BlackOPEN", "CloseJacket", "OpenJacket", 0.75);
 AddNewExtraItem("STR.Jacket_Fireman_Tandil_Khaki", "STR.Jacket_Fireman_Tandil_KhakiOPEN", "CloseJacket", "OpenJacket", 0.75);
@@ -85,6 +86,7 @@ AddNewExtraItem("STR.Jacket_Security_Mall_Ohio", "STR.Jacket_Security_Mall_OhioO
 AddNewExtraItem("STR.Jacket_Security_Mall_Valley", "STR.Jacket_Security_Mall_ValleyOPEN", "CloseJacket", "OpenJacket", 0.75);
 AddNewExtraItem("STR.Jacket_Security_Mall_LV", "STR.Jacket_Security_Mall_LVOPEN", "CloseJacket", "OpenJacket", 0.75);
 
+AddNewExtraItem("STR.Jacket_Dress_Police_Greenport", "STR.Jacket_Dress_Police_GreenportOPEN", "CloseJacket", "OpenJacket", 0.75);
 AddNewExtraItem("STR.Jacket_Dress_Police_Tandil", "STR.Jacket_Dress_Police_TandilOPEN", "CloseJacket", "OpenJacket", 0.75);
 AddNewExtraItem("STR.Jacket_Dress_Police_RavenCreek", "STR.Jacket_Dress_Police_RavenCreekOPEN", "CloseJacket", "OpenJacket", 0.75);
 AddNewExtraItem("STR.Jacket_Dress_Police_RavenCreek_Supervisor", "STR.Jacket_Dress_Police_RavenCreek_SupervisorOPEN", "CloseJacket", "OpenJacket", 0.75);
@@ -119,6 +121,7 @@ AddNewExtraItem("STR.Boilersuit_MeadeGenPopPrisoner", "STR.Boilersuit_MeadeGenPo
 
 
 -- Trousers tucked
+AddNewExtraItem("STR.Trousers_Police_Greenport", "STR.Trousers_Police_GreenportTUCK", "TuckOut", "TuckIn", 1);
 AddNewExtraItem("STR.Trousers_Police_Tandil", "STR.Trousers_Police_TandilTUCK", "TuckOut", "TuckIn", 1);
 AddNewExtraItem("STR.Trousers_EMS_Tandil", "STR.Trousers_EMS_TandilTUCK", "TuckOut", "TuckIn", 1);
 AddNewExtraItem("STR.Trousers_Fire_Formal_Tandil", "STR.Trousers_Fire_Formal_TandilTUCK", "TuckOut", "TuckIn", 1);
@@ -167,6 +170,7 @@ AddNewExtraItem("STR.Trousers_Security_Mall_LV", "STR.Trousers_Security_Mall_LVT
 
 
 -- shirts
+AddNewExtraItem("STR.TShirt_Police_Greenport", "STR.TShirt_Police_GreenportOPEN", "CloseJacket", "OpenJacket", 0.75);
 AddNewExtraItem("STR.TShirt_Police_Tandil", "STR.TShirt_Police_TandilOPEN", "CloseJacket", "OpenJacket", 0.75);
 AddNewExtraItem("STR.TShirt_EMS_Tandil", "STR.TShirt_EMS_TandilOPEN", "CloseJacket", "OpenJacket", 0.75);
 AddNewExtraItem("STR.TShirt_Fire_Tandil", "STR.TShirt_Fire_TandilOPEN", "CloseJacket", "OpenJacket", 0.75);
@@ -206,6 +210,7 @@ AddNewExtraItem("STR.TShirt_Security_Mall_Ohio", "STR.TShirt_Security_Mall_OhioO
 AddNewExtraItem("STR.TShirt_Security_Mall_Valley", "STR.TShirt_Security_Mall_ValleyOPEN", "CloseJacket", "OpenJacket", 0.75);
 AddNewExtraItem("STR.TShirt_Security_Mall_LV", "STR.TShirt_Security_Mall_LVOPEN", "CloseJacket", "OpenJacket", 0.75);
 
+Add4WayExtraItem("STR.Shirt_Police_Greenport","STR.Shirt_Police_GreenportROLL","STR.Shirt_Police_GreenportOPENROLL","STR.Shirt_Police_GreenportOPEN","CloseRollDown","CloseRollUp","OpenRollUp","OpenRollDown",0.75)
 Add4WayExtraItem("STR.Shirt_Police_Tandil","STR.Shirt_Police_TandilROLL","STR.Shirt_Police_TandilOPENROLL","STR.Shirt_Police_TandilOPEN","CloseRollDown","CloseRollUp","OpenRollUp","OpenRollDown",0.75)
 Add4WayExtraItem("STR.Shirt_EMS_Tandil","STR.Shirt_EMS_TandilROLL","STR.Shirt_EMS_TandilOPENROLL","STR.Shirt_EMS_TandilOPEN","CloseRollDown","CloseRollUp","OpenRollUp","OpenRollDown",0.75)
 Add4WayExtraItem("STR.Shirt_Fire_Tandil","STR.Shirt_Fire_TandilROLL","STR.Shirt_Fire_TandilOPENROLL","STR.Shirt_Fire_TandilOPEN","CloseRollDown","CloseRollUp","OpenRollUp","OpenRollDown",0.75)

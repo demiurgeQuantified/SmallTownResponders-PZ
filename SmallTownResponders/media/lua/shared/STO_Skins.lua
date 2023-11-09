@@ -14,7 +14,8 @@ local ZoneName = {
 	JeffersonSD = "JeffersonSD",
 	Jefferson = "Jefferson",
 	RavenCreek = "RavenCreek",
-	Tandil = "Tandil"
+	Tandil = "Tandil",
+	Greenport = "Greenport"
 }
 
 ---Like DoParam but for vehicles
@@ -182,10 +183,12 @@ if not getActivatedMods():contains("VVehicleEnhancer") and not getActivatedMods(
 	AddVehicleSkin("PickUpTruckLightsFire", ZoneName.Rosewood, "Vehicles/vehicle_pickupfireshell_rosewood");
 	AddVehicleSkin("PickUpTruckLightsFire", ZoneName.Meade, "Vehicles/vehicle_pickupfireshell_meade");
 	AddVehicleSkin("PickUpTruckLightsFire", ZoneName.Louisville, "Vehicles/vehicle_pickupfireshell_louisville");
+	AddVehicleSkin("PickUpTruckLightsFire", ZoneName.Rosewood, "Vehicles/vehicle_pickupfireshell_meade");
 
 	AddVehicleSkin("PickUpVanLightsFire", ZoneName.Rosewood, "Vehicles/vehicle_pickupfireshell_rosewood");
 	AddVehicleSkin("PickUpVanLightsFire", ZoneName.Meade, "Vehicles/vehicle_pickuptruckfireshell_meade");
 	AddVehicleSkin("PickUpVanLightsFire", ZoneName.Louisville, "Vehicles/vehicle_pickupfireshell_louisville");
+	AddVehicleSkin("PickUpVanLightsFire", ZoneName.Rosewood, "Vehicles/vehicle_pickuptruckfireshell_meade");
 
 	AddVehicleSkin("PickUpTruckLights", ZoneName.Default, "Vehicles/vehicle_pickup_stateparkranger");
 	AddVehicleSkin("PickUpTruckLights", ZoneName.Default, "Vehicles/vehicle_pickup_fishandwildlife");
@@ -224,6 +227,12 @@ if not getActivatedMods():contains("VVehicleEnhancer") and not getActivatedMods(
 
 		AddVehicleSkin("PickUpTruckLightsFire", ZoneName.Tandil, "Vehicles/vehicle_pickupfireshell_tandil");
 		AddVehicleSkin("PickUpVanLightsFire", ZoneName.Tandil, "Vehicles/vehicle_pickupfireshell_tandil");
+
+	end
+	if getActivatedMods():contains("Greenport") then
+
+		AddVehicleSkin("CarLightsPolice", ZoneName.Greenport, "Vehicles/vehicle_greenportpolice");
+		AddVehicleSkin("PickUpVanLightsPolice", ZoneName.Greenport, "Vehicles/vehicle_pickup_greenportpolice");
 
 	end
 end
@@ -300,10 +309,12 @@ if getActivatedMods():contains("FRUsedCars") then
 	AddVehicleSkin("firepumper", ZoneName.Rosewood, "Vehicles/vehicle_firepumper_rosewood");
 	AddVehicleSkin("firepumper", ZoneName.Meade, "Vehicles/vehicle_firepumper_meade");
 	AddVehicleSkin("firepumper", ZoneName.Louisville, "Vehicles/vehicle_firepumper_louisville");
+	AddVehicleSkin("firepumper", ZoneName.Rosewood, "Vehicles/vehicle_firepumper_meade");
 
 	AddVehicleSkin("87c10fire", ZoneName.Rosewood, "Vehicles/vehicle_c10_utility_rosewood_fireshell");
 	AddVehicleSkin("87c10fire", ZoneName.Meade, "Vehicles/vehicle_c10_utility_meade_fireshell");
 	AddVehicleSkin("87c10fire", ZoneName.Louisville, "Vehicles/vehicle_c10_utility_louisville_fireshell");
+	AddVehicleSkin("87c10fire", ZoneName.Rosewood, "Vehicles/vehicle_c10_utility_meade_fireshell");
 
 	AddVehicleSkin("92wranglerranger", ZoneName.Default, "Vehicles/vehicle_92wrangler_stateparkrangershell");
 	AddVehicleSkin("92wranglerranger", ZoneName.Default, "Vehicles/vehicle_92wrangler_fishandwidlifeshell");
@@ -312,6 +323,14 @@ if getActivatedMods():contains("FRUsedCars") then
 	AddVehicleSkin("85vicranger", ZoneName.Default, "Vehicles/vehicle_85crownvic_nationalparkserviceshell");
 	AddVehicleSkin("85vicranger", ZoneName.Default, "Vehicles/vehicle_85crownvic_fishandwildlifeshell");
 	AddVehicleSkin("85vicranger", ZoneName.Default, "Vehicles/vehicle_85crownvic_stateparkrangershell");
+
+	AddVehicleSkin("schoolbus", ZoneName.Meade, "Vehicles/vehicle_meadeschoolbusshell");
+	AddVehicleSkin("schoolbus", ZoneName.Louisville, "Vehicles/vehicle_jeffersonschoolbusshell");
+	AddVehicleSkin("schoolbus", ZoneName.Jefferson, "Vehicles/vehicle_jeffersonschoolbusshell");
+
+	AddVehicleSkin("schoolbusshort", ZoneName.Meade, "Vehicles/vehicle_meadeschoolbusshell");
+	AddVehicleSkin("schoolbusshort", ZoneName.Louisville, "Vehicles/vehicle_jeffersonschoolbusshell");
+	AddVehicleSkin("schoolbusshort", ZoneName.Jefferson, "Vehicles/vehicle_jeffersonschoolbusshell");
 
 	if getActivatedMods():contains("RavenCreek") or getActivatedMods():contains("10YL_RC") then
 
@@ -324,6 +343,10 @@ if getActivatedMods():contains("FRUsedCars") then
 		AddVehicleSkin("firepumper", ZoneName.RavenCreek, "Vehicles/vehicle_firepumper_ravencreek");
 		AddVehicleSkin("86econolineambulance", ZoneName.RavenCreek, "Vehicles/vehicle_86econoline_ravencreekambulanceshell");
 		AddVehicleSkin("80f350ambulance", ZoneName.RavenCreek, "Vehicles/vehicle_80f350_ravencreekambulanceshell");
+
+		AddVehicleSkin("schoolbus", ZoneName.RavenCreek, "Vehicles/vehicle_ravencreekschoolbusshell");
+
+		AddVehicleSkin("schoolbusshort", ZoneName.RavenCreek, "Vehicles/vehicle_ravencreekschoolbusshell");
 
 	end
 	if getActivatedMods():contains("Tandil") then
@@ -338,9 +361,21 @@ if getActivatedMods():contains("FRUsedCars") then
 		AddVehicleSkin("86econolineambulance", ZoneName.Tandil, "Vehicles/vehicle_86econoline_tandilambulanceshell");
 		AddVehicleSkin("80f350ambulance", ZoneName.Tandil, "Vehicles/vehicle_80f350_tandilambulanceshell");
 
+		AddVehicleSkin("schoolbus", ZoneName.Tandil, "Vehicles/vehicle_tandilschoolbusshell");
+
+		AddVehicleSkin("schoolbusshort", ZoneName.Tandil, "Vehicles/vehicle_tandilschoolbusshell");
+
+	end
+	if getActivatedMods():contains("Greenport") then
+
+		--	AddVehicleSkin("chevystepvanswat", ZoneName.Greenport, "Vehicles/vehicle_stepvanchevyravencreekpoliceshell");
+		AddVehicleSkin("85vicsheriff", ZoneName.Greenport, "Vehicles/vehicle_85crownvic_greenportpoliceshell");
+		AddVehicleSkin("92crownvicPD", ZoneName.Greenport, "Vehicles/vehicle_92crownvic_greenportpoliceshell");
+		AddVehicleSkin("91blazerpd", ZoneName.Greenport, "Vehicles/vehicle_blazer_greenportpoliceshell");
+		AddVehicleSkin("87capricePD", ZoneName.Greenport, "Vehicles/vehicle_87caprice_greenportpoliceshell");
+
 	end
 end
---TODO: Fix this!
 if getActivatedMods():contains("VVehicleEnhancer") and not getActivatedMods():contains("SCKCO") then
 
 	SetPoliceVehicle("CarLightsPolice")
@@ -399,10 +434,12 @@ if getActivatedMods():contains("VVehicleEnhancer") and not getActivatedMods():co
 	AddVehicleSkin("PickUpTruckLightsFire", ZoneName.Rosewood, "Vehicles/vve/vehicle_pickupfireshell_rosewood_vve");
 	AddVehicleSkin("PickUpTruckLightsFire", ZoneName.Meade, "Vehicles/vve/vehicle_pickupfireshell_meade_vve");
 	AddVehicleSkin("PickUpTruckLightsFire", ZoneName.Louisville, "Vehicles/vve/vehicle_pickupfireshell_louisville_vve");
+	AddVehicleSkin("PickUpTruckLightsFire", ZoneName.Rosewood, "Vehicles/vve/vehicle_pickupfireshell_meade_vve");
 
 	AddVehicleSkin("PickUpVanLightsFire", ZoneName.Rosewood, "Vehicles/vve/vehicle_pickupfireshell_rosewood_vve");
 	AddVehicleSkin("PickUpVanLightsFire", ZoneName.Meade, "Vehicles/vve/vehicle_pickupfireshell_meade_vve");
 	AddVehicleSkin("PickUpVanLightsFire", ZoneName.Louisville, "Vehicles/vve/vehicle_pickupfireshell_louisville_vve");
+	AddVehicleSkin("PickUpVanLightsFire", ZoneName.Rosewood, "Vehicles/vve/vehicle_pickupfireshell_meade_vve");
 
 	AddVehicleSkin("CarLights", ZoneName.Default, "Vehicles/vve/vehicle_carnormal_stateparkranger_vve");
 	AddVehicleSkin("CarLights", ZoneName.Default, "Vehicles/vve/vehicle_carnormal_fishandwildlife_vve");
@@ -437,6 +474,14 @@ if getActivatedMods():contains("VVehicleEnhancer") and not getActivatedMods():co
 		AddVehicleSkin("VanAmbulance", ZoneName.Tandil, "Vehicles/vve/vehicle_van_tandilambulance_vve");
 		AddVehicleSkin("PickUpTruckLightsFire", ZoneName.Tandil, "Vehicles/vve/vehicle_pickuptruckfireshell_tandil_vve");
 		AddVehicleSkin("PickUpVanLightsFire", ZoneName.Tandil, "Vehicles/vve/vehicle_pickupfireshell_tandil_vve");
+
+	end
+	if getActivatedMods():contains("Greenport") then
+
+		AddVehicleSkin("CarLightsPolice", ZoneName.Greenport, "Vehicles/vve/vehicle_greenport_vve");
+		AddVehicleSkin("CarLightsSheriff", ZoneName.Greenport, "Vehicles/vve/vehicle_greenport_vve");
+		AddVehicleSkin("CarLightsStatepolice", ZoneName.Greenport, "Vehicles/vve/vehicle_greenport_vve");
+		AddVehicleSkin("PickUpVanLightsPolice", ZoneName.Greenport, "Vehicles/vve/vehicle_pickup_greenport_vve");
 
 	end
 end

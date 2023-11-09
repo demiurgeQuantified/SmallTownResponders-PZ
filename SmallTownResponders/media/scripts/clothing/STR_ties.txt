@@ -3,6 +3,28 @@ module STR {
 	imports {
 		Base
 	}
+	item Tie_Full_Police_Greenport
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Greenport PD Tie,
+		ClothingItem = Tie_Full_Police_Greenport,
+		BodyLocation = Neck,
+		Icon = Tie_Police_Greenport,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Worn_Police_Greenport
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Greenport PD Clip-on Tie,
+		ClothingItem = Tie_Worn_Police_Greenport,
+		BodyLocation = Neck,
+		Icon = Tie_Police_Greenport,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
 	item Tie_Full_Police_Tandil
 	{
 	    DisplayCategory = Accessory,

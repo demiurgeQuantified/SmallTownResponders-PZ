@@ -3,6 +3,62 @@ module STR {
 	imports {
 		Base
 	}
+	item Shirt_Police_Greenport
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Greenport PD Shirt,
+		ClothingItem = Shirt_Police_Greenport,
+		BodyLocation = Shirt,
+		Icon = Shirt_Police_Greenport,
+		BloodLocation = ShirtLongSleeves,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = Shirt_Ground,
+	}
+	item TShirt_Police_Greenport
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Greenport PD T-Shirt,
+		ClothingItem = TShirt_Police_Greenport,
+		BodyLocation = Tshirt,
+		Icon = TShirt_Police_Greenport,
+		BloodLocation = Shirt,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = TShirt_Ground,
+	}
+	item Shirt_Fire_Greenport
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Greenport FD Shirt,
+		ClothingItem = Shirt_Fire_Greenport,
+		BodyLocation = Shirt,
+		Icon = Shirt_Fire_Greenport,
+		BloodLocation = ShirtLongSleeves,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = Shirt_Ground,
+	}
+	item TShirt_Fire_Greenport
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Greenport FD T-Shirt,
+		ClothingItem = TShirt_Fire_Greenport,
+		BodyLocation = Tshirt,
+		Icon = TShirt_Fire_Greenport,
+		BloodLocation = Shirt,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = TShirt_Ground,
+	}
 	item Shirt_Police_Tandil
 	{
         DisplayCategory = Clothing,
@@ -920,6 +976,71 @@ module STR {
         ClothingItem = TShirt_Profession_FiremanWhite_Louisville,
         BodyLocation = Tshirt,
         Icon	=	TShirt_Fireman_White_Louisville,
+        BloodLocation = Shirt,
+        Insulation = 0.5,
+        WindResistance = 0.30,
+        FabricType = Cotton,
+        WorldStaticModel = TShirt_Ground,
+    }
+    item TShirt_Profession_FiremanBlue_Greenport
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Blue Greenport FD T-Shirt,
+        ClothingItem = TShirt_Profession_FiremanBlue_Greenport,
+        BodyLocation = Tshirt,
+        Icon	=	TShirt_Fireman_Blue_Greenport,
+        BloodLocation = Shirt,
+        ColorRed = 46,
+        ColorGreen = 58,
+        ColorBlue = 93,
+        Insulation = 0.5,
+        WindResistance = 0.30,
+        FabricType = Cotton,
+        WorldStaticModel = TShirt_Ground,
+    }
+    item TShirt_Profession_FiremanRed_Greenport
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Red Greenport FD T-Shirt,
+        ClothingItem = TShirt_Profession_FiremanRed_Greenport,
+        BodyLocation = Tshirt,
+        Icon	=	TShirt_Fireman_Red_Greenport,
+        BloodLocation = Shirt,
+        ColorRed = 160,
+        ColorGreen = 29,
+        ColorBlue = 28,
+        Insulation = 0.5,
+        WindResistance = 0.30,
+        FabricType = Cotton,
+        WorldStaticModel = TShirt_Ground,
+    }
+    item TShirt_Profession_FiremanRed_Greenport02
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Dark Red Greenport FD T-Shirt,
+        ClothingItem = TShirt_Profession_FiremanRed_Greenport02,
+        BodyLocation = Tshirt,
+        Icon	=	TShirt_Fireman_Red_Greenport02,
+        BloodLocation = Shirt,
+        ColorRed = 118,
+        ColorGreen = 24,
+        ColorBlue = 24,
+        Insulation = 0.5,
+        WindResistance = 0.30,
+        FabricType = Cotton,
+        WorldStaticModel = TShirt_Ground,
+    }
+    item TShirt_Profession_FiremanWhite_Greenport
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = White Greenport FD T-Shirt,
+        ClothingItem = TShirt_Profession_FiremanWhite_Greenport,
+        BodyLocation = Tshirt,
+        Icon	=	TShirt_Fireman_White_Greenport,
         BloodLocation = Shirt,
         Insulation = 0.5,
         WindResistance = 0.30,
