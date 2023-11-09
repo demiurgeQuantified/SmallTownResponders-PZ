@@ -674,6 +674,17 @@ module STR {
 		Weight = 0.1,
 		WorldStaticModel = Tie_Ground,
 	}
+	item Necklace_Badge_Police_Greenport
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Greenport PD Necklace Badge,
+		ClothingItem = Necklace_Badge_Police_Greenport,
+		BodyLocation = Neck2,
+		Icon = Necklace_Badge_Police_Greenport,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
 	item Necklace_Badge_Police_Tandil
 	{
 	    DisplayCategory = Accessory,
