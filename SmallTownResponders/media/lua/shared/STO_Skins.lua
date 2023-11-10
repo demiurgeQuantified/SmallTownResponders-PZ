@@ -375,6 +375,15 @@ if getActivatedMods():contains("FRUsedCars") then
 		AddVehicleSkin("87capricePD", ZoneName.Greenport, "Vehicles/vehicle_87caprice_greenportpoliceshell");
 
 	end
+	if getActivatedMods():contains("PogDogSkins") then
+
+		AddVehicleSkin("schoolbus", ZoneName.Tandil, "Vehicles/vehicle_schoolbus_callieshell");
+		AddVehicleSkin("schoolbus", ZoneName.RavenCreek, "Vehicles/vehicle_schoolbus_callieshell");
+		AddVehicleSkin("schoolbus", ZoneName.Meade, "Vehicles/vehicle_schoolbus_callieshell");
+		AddVehicleSkin("schoolbus", ZoneName.Louisville, "Vehicles/vehicle_schoolbus_callieshell");
+		AddVehicleSkin("schoolbus", ZoneName.Jefferson, "Vehicles/vehicle_schoolbus_callieshell");
+
+	end
 end
 if getActivatedMods():contains("VVehicleEnhancer") and not getActivatedMods():contains("SCKCO") then
 
