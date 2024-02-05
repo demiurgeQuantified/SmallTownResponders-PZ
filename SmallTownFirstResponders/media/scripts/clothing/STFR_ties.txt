@@ -1,0 +1,710 @@
+module STFR {
+
+	imports {
+		Base
+	}
+	item Tie_Full_Police_KSP
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Kentucky State Police Tie,
+		ClothingItem = STFR_Tie_Full_Police_KSP,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_Police_KSP,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Worn_Police_KSP
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Kentucky State Police Clip-on Tie,
+		ClothingItem = STFR_Tie_Worn_Police_KSP,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_Police_KSP,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Full_Police_Jefferson
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Jefferson County PD Tie,
+		ClothingItem = STFR_Tie_Full_Police_Jefferson,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_Police_Jefferson,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Worn_Police_Jefferson
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Jefferson County PD Clip-on Tie,
+		ClothingItem = STFR_Tie_Worn_Police_Jefferson,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_Police_Jefferson,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Full_Police_Louisville
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Louisville DoP Tie,
+		ClothingItem = STFR_Tie_Full_Police_Louisville,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_Police_Louisville,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Worn_Police_Louisville
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Louisville DoP Clip-on Tie,
+		ClothingItem = STFR_Tie_Worn_Police_Louisville,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_Police_Louisville,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Full_Sheriff_Meade
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Meade County SO Tie,
+		ClothingItem = STFR_Tie_Full_Sheriff_Meade,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_Sheriff_Meade,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Worn_Sheriff_Meade
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Meade County SO Clip-on Tie,
+		ClothingItem = STFR_Tie_Worn_Sheriff_Meade,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_Sheriff_Meade,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Full_Police_Muldraugh
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Muldraugh PD Tie,
+		ClothingItem = STFR_Tie_Full_Police_Muldraugh,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_Police_Muldraugh,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Worn_Police_Muldraugh
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Muldraugh PD Clip-on Tie,
+		ClothingItem = STFR_Tie_Worn_Police_Muldraugh,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_Police_Muldraugh,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Full_Police_Riverside
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Riverside PD Tie,
+		ClothingItem = STFR_Tie_Full_Police_Riverside,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_Police_Riverside,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Worn_Police_Riverside
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Riverside PD Clip-on Tie,
+		ClothingItem = STFR_Tie_Worn_Police_Riverside,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_Police_Riverside,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Full_Sheriff_Rosewood
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Rosewood SD Tie,
+		ClothingItem = STFR_Tie_Full_Sheriff_Rosewood,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_Sheriff_Rosewood,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Worn_Sheriff_Rosewood
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Rosewood SD Clip-on Tie,
+		ClothingItem = STFR_Tie_Worn_Sheriff_Rosewood,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_Sheriff_Rosewood,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Full_Police_WestPoint
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = WestPoint PD Tie,
+		ClothingItem = STFR_Tie_Full_Police_WestPoint,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_Police_WestPoint,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Worn_Police_WestPoint
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = WestPoint PD Clip-on Tie,
+		ClothingItem = STFR_Tie_Worn_Police_WestPoint,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_Police_WestPoint,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Full_Sheriff_Jefferson
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Jefferson County SD Tie,
+		ClothingItem = STFR_Tie_Full_Sheriff_Jefferson,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_Sheriff_Jefferson,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Worn_Sheriff_Jefferson
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Jefferson County SD Clip-on Tie,
+		ClothingItem = STFR_Tie_Worn_Sheriff_Jefferson,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_Sheriff_Jefferson,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Full_EMS_Jefferson
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Jefferson County EMS Tie,
+		ClothingItem = STFR_Tie_Full_EMS_Jefferson,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_EMS_Jefferson,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Worn_EMS_Jefferson
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Jefferson County EMS Clip-on Tie,
+		ClothingItem = STFR_Tie_Worn_EMS_Jefferson,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_EMS_Jefferson,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Full_EMS_Louisville
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Louisville EMS Tie,
+		ClothingItem = STFR_Tie_Full_EMS_Louisville,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_EMS_Louisville,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Worn_EMS_Louisville
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Louisville EMS Clip-on Tie,
+		ClothingItem = STFR_Tie_Worn_EMS_Louisville,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_EMS_Louisville,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Full_EMS_Meade
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Meade County EMS Tie,
+		ClothingItem = STFR_Tie_Full_EMS_Meade,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_EMS_Meade,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Worn_EMS_Meade
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Meade County EMS Clip-on Tie,
+		ClothingItem = STFR_Tie_Worn_EMS_Meade,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_EMS_Meade,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Full_Ranger_Federal
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Federal Ranger Tie,
+		ClothingItem = STFR_Tie_Full_Ranger_Federal,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_Ranger_Federal,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Worn_Ranger_Federal
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Federal Ranger Clip-on Tie,
+		ClothingItem = STFR_Tie_Worn_Ranger_Federal,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_Ranger_Federal,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Full_Ranger_Conservation
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Kentucky Fish & Wildlife Ranger Tie,
+		ClothingItem = STFR_Tie_Full_Ranger_Conservation,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_Ranger_Conservation,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Worn_Ranger_Conservation
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Kentucky Fish & Wildlife Ranger Clip-on Tie,
+		ClothingItem = STFR_Tie_Worn_Ranger_Conservation,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_Ranger_Conservation,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Full_Ranger_State_Park
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Kentucky State Park Ranger Tie,
+		ClothingItem = STFR_Tie_Full_Ranger_State_Park,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_Ranger_State_Park,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Worn_Ranger_State_Park
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Kentucky State Park Ranger Clip-on Tie,
+		ClothingItem = STFR_Tie_Worn_Ranger_State_Park,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_Ranger_State_Park,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Full_Fire_Louisville
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Louisville FD Tie,
+		ClothingItem = STFR_Tie_Full_Fire_Louisville,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_Fire_Louisville,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Worn_Fire_Louisville
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Louisville FD Clip-on Tie,
+		ClothingItem = STFR_Tie_Worn_Fire_Louisville,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_Fire_Louisville,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Full_Security_Bank
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Bank Security Tie,
+		ClothingItem = STFR_Tie_Full_Security_Bank,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_Security_Bank,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Worn_Security_Bank
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Bank Security Clip-on Tie,
+		ClothingItem = STFR_Tie_Worn_Security_Bank,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_Security_Bank,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Full_Security_Hotel_Havisham
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Havisham Hotel Security Tie,
+		ClothingItem = STFR_Tie_Full_Security_Hotel_Havisham,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_Security_Hotel_Havisham,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Worn_Security_Hotel_Havisham
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Havisham Hotel Security Clip-on Tie,
+		ClothingItem = STFR_Tie_Worn_Security_Hotel_Havisham,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_Security_Hotel_Havisham,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Full_Security_Hotel_Fancy
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Hotel Security Tie,
+		ClothingItem = STFR_Tie_Full_Security_Hotel_Fancy,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_Security_Hotel_Fancy,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Worn_Security_Hotel_Fancy
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Hotel Security Clip-on Tie,
+		ClothingItem = STFR_Tie_Worn_Security_Hotel_Fancy,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_Security_Hotel_Fancy,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Full_Security_Mall_Grand_Ohio
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Grand Ohio Mall Security Tie,
+		ClothingItem = STFR_Tie_Full_Security_Mall_Grand_Ohio,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_Security_Mall_Grand_Ohio,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Worn_Security_Mall_Grand_Ohio
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Grand Ohio Mall Security Clip-on Tie,
+		ClothingItem = STFR_Tie_Worn_Security_Mall_Grand_Ohio,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_Security_Mall_Grand_Ohio,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Necklace_Badge_Police_Jefferson_Silver
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Jefferson PD Necklace Badge,
+		ClothingItem = STFR_Necklace_Badge_Police_Jefferson_Silver,
+		BodyLocation = Neck2,
+		Icon = STFR_Necklace_Badge_Police_Jefferson_Silver,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Necklace_Badge_Police_Jefferson_Gold
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Jefferson PD Supervisor Necklace Badge,
+		ClothingItem = STFR_Necklace_Badge_Police_Jefferson_Gold,
+		BodyLocation = Neck2,
+		Icon = STFR_Necklace_Badge_Police_Jefferson_Gold,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Necklace_Badge_Sheriff_Jefferson_Gold
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Jefferson SD Necklace Badge,
+		ClothingItem = STFR_Necklace_Badge_Sheriff_Jefferson_Gold,
+		BodyLocation = Neck2,
+		Icon = STFR_Necklace_Badge_Sheriff_Jefferson_Gold,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Necklace_Badge_Police_KSP_Gold
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = KSP Supervisor Necklace Badge,
+		ClothingItem = STFR_Necklace_Badge_Police_KSP_Gold,
+		BodyLocation = Neck2,
+		Icon = STFR_Necklace_Badge_Police_KSP_Gold,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Necklace_Badge_Police_KSP_Silver
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = KSP Necklace Badge,
+		ClothingItem = STFR_Necklace_Badge_Police_KSP_Silver,
+		BodyLocation = Neck2,
+		Icon = STFR_Necklace_Badge_Police_KSP_Silver,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Necklace_Badge_Police_Louisville_Gold
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Louisville DoP Supervisor Necklace Badge,
+		ClothingItem = STFR_Necklace_Badge_Police_Louisville_Gold,
+		BodyLocation = Neck2,
+		Icon = STFR_Necklace_Badge_Police_Louisville_Gold,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Necklace_Badge_Police_Louisville_Silver
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Louisville DoP Necklace Badge,
+		ClothingItem = STFR_Necklace_Badge_Police_Louisville_Silver,
+		BodyLocation = Neck2,
+		Icon = STFR_Necklace_Badge_Police_Louisville_Silver,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Necklace_Badge_Sheriff_Meade_Gold
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Meade County SO Necklace Badge,
+		ClothingItem = STFR_Necklace_Badge_Sheriff_Meade_Gold,
+		BodyLocation = Neck2,
+		Icon = STFR_Necklace_Badge_Sheriff_Meade_Gold,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Necklace_Badge_Police_Muldraugh_Gold
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Muldraugh PD Supervisor Necklace Badge,
+		ClothingItem = STFR_Necklace_Badge_Police_Muldraugh_Gold,
+		BodyLocation = Neck2,
+		Icon = STFR_Necklace_Badge_Police_Muldraugh_Gold,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Necklace_Badge_Police_Muldraugh_Silver
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Muldraugh PD Necklace Badge,
+		ClothingItem = STFR_Necklace_Badge_Police_Muldraugh_Silver,
+		BodyLocation = Neck2,
+		Icon = STFR_Necklace_Badge_Police_Muldraugh_Silver,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Necklace_Badge_Police_Riverside_Gold
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Riverside PD Supervisor Necklace Badge,
+		ClothingItem = STFR_Necklace_Badge_Police_Riverside_Gold,
+		BodyLocation = Neck2,
+		Icon = STFR_Necklace_Badge_Police_Riverside_Gold,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Necklace_Badge_Police_Riverside_Silver
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Riverside PD Necklace Badge,
+		ClothingItem = STFR_Necklace_Badge_Police_Riverside_Silver,
+		BodyLocation = Neck2,
+		Icon = STFR_Necklace_Badge_Police_Riverside_Silver,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Necklace_Badge_Sheriff_Rosewood_Gold
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Rosewood SD Necklace Badge,
+		ClothingItem = STFR_Necklace_Badge_Sheriff_Rosewood_Gold,
+		BodyLocation = Neck2,
+		Icon = STFR_Necklace_Badge_Sheriff_Rosewood_Gold,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Necklace_Badge_Sheriff_Rosewood_Silver
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Rosewood SD Supervisor Necklace Badge,
+		ClothingItem = STFR_Necklace_Badge_Sheriff_Rosewood_Silver,
+		BodyLocation = Neck2,
+		Icon = STFR_Necklace_Badge_Sheriff_Rosewood_Silver,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Necklace_Badge_Police_WestPoint_Gold
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = WestPoint PD Supervisor Necklace Badge,
+		ClothingItem = STFR_Necklace_Badge_Police_WestPoint_Gold,
+		BodyLocation = Neck2,
+		Icon = STFR_Necklace_Badge_Police_WestPoint_Gold,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Necklace_Badge_Police_WestPoint_Silver
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = WestPoint PD Necklace Badge,
+		ClothingItem = STFR_Necklace_Badge_Police_WestPoint_Silver,
+		BodyLocation = Neck2,
+		Icon = STFR_Necklace_Badge_Police_WestPoint_Silver,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Necklace_Badge_Ranger_Federal_Gold
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Federal Ranger Necklace Badge,
+		ClothingItem = STFR_Necklace_Badge_Ranger_Federal_Gold,
+		BodyLocation = Neck2,
+		Icon = STFR_Necklace_Badge_Ranger_Federal_Gold,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Necklace_Badge_Ranger_State_Park_Silver
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Kentucky State Park Ranger Necklace Badge,
+		ClothingItem = STFR_Necklace_Badge_Ranger_State_Park_Silver,
+		BodyLocation = Neck2,
+		Icon = STFR_Necklace_Badge_Ranger_State_Park_Silver,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Necklace_Badge_Ranger_Conservation_Gold
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Kentucky Fish & Wildlife Ranger Necklace Badge,
+		ClothingItem = STFR_Necklace_Badge_Ranger_Conservation_Gold,
+		BodyLocation = Neck2,
+		Icon = STFR_Necklace_Badge_Ranger_Conservation_Gold,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Necklace_Badge_Security_Bank_Gold
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Bank Security Necklace Badge,
+		ClothingItem = STFR_Necklace_Badge_Security_Bank_Gold,
+		BodyLocation = Neck2,
+		Icon = STFR_Necklace_Badge_Security_Bank_Gold,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Necklace_Badge_Security_Hotel_Havisham_Gold
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Havisham Hotel Security Necklace Badge,
+		ClothingItem = STFR_Necklace_Badge_Security_Hotel_Havisham_Gold,
+		BodyLocation = Neck2,
+		Icon = STFR_Necklace_Badge_Security_Hotel_Havisham_Gold,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Necklace_Badge_Security_Mall_Grand_Ohio_Silver
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Grand Ohio Mall Security Necklace Badge,
+		ClothingItem = STFR_Necklace_Badge_Security_Mall_Grand_Ohio_Silver,
+		BodyLocation = Neck2,
+		Icon = STFR_Necklace_Badge_Security_Mall_Grand_Ohio_Silver,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Necklace_Badge_Security_Mall_Valley_Station_Gold
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName =  Valley Station Mall Security Necklace Badge,
+		ClothingItem = STFR_Necklace_Badge_Security_Mall_Valley_Station_Gold,
+		BodyLocation = Neck2,
+		Icon = STFR_Necklace_Badge_Security_Mall_Valley_Station_Gold,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Necklace_Badge_Security_Mall_Louisville_Silver
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Mall Security Necklace Badge,
+		ClothingItem = STFR_Necklace_Badge_Security_Mall_Louisville_Silver,
+		BodyLocation = Neck2,
+		Icon = STFR_Necklace_Badge_Security_Mall_Louisville_Silver,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+}

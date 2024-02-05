@@ -1,0 +1,89 @@
+module STFR {
+
+	imports {
+		Base
+	}
+    item Boilersuit_Meade_Gen_Pop_Prisoner
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Meade County General Population Jumpsuit,
+        ClothingItem = STFR_Boilersuit_Meade_Gen_Pop_Prisoner,
+        BodyLocation = Boilersuit,
+        Icon = STFR_Boilersuit_Meade_Gen_Pop_Prisoner,
+        BloodLocation = Trousers;Jumper,
+        RunSpeedModifier = 0.9,
+        ScratchDefense = 10,
+        Insulation = 0.45,
+        WindResistance = 0.35,
+        FabricType = Cotton,
+        WorldStaticModel = BoilerSuit_Ground,
+    }
+    item Boilersuit_Meade_Low_Risk_Prisoner
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Meade County Low Risk Jumpsuit,
+        ClothingItem = STFR_Boilersuit_Meade_Low_Risk_Prisoner,
+        BodyLocation = Boilersuit,
+        Icon = STFR_Boilersuit_Meade_Low_Risk_Prisoner,
+        BloodLocation = Trousers;Jumper,
+        RunSpeedModifier = 0.9,
+        ScratchDefense = 10,
+        Insulation = 0.45,
+        WindResistance = 0.35,
+        FabricType = Cotton,
+        WorldStaticModel = BoilerSuit_Ground,
+    }
+    item Boilersuit_Meade_Supermax_Prisoner
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Meade County Supermax Jumpsuit,
+        ClothingItem = STFR_Boilersuit_Meade_Supermax_Prisoner,
+        BodyLocation = Boilersuit,
+        Icon = STFR_Boilersuit_Meade_Supermax_Prisoner,
+        BloodLocation = Trousers;Jumper,
+        RunSpeedModifier = 0.9,
+        ScratchDefense = 10,
+        Insulation = 0.45,
+        WindResistance = 0.35,
+        FabricType = Cotton,
+        WorldStaticModel = BoilerSuit_Ground,
+    }
+    item Boilersuit_Jefferson_Prisoner
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Jefferson County Inmate Jumpsuit,
+        ClothingItem = STFR_Boilersuit_Jefferson_Prisoner,
+        BodyLocation = Boilersuit,
+        Icon = STFR_Boilersuit_Jefferson_Prisoner,
+        BloodLocation = Trousers;Jumper,
+        RunSpeedModifier = 0.9,
+        ScratchDefense = 10,
+        Insulation = 0.45,
+        WindResistance = 0.35,
+        FabricType = Cotton,
+        WorldStaticModel = BoilerSuit_Ground,
+    }
+    item Judge_Robe
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Judicial Robe,
+        ClothingItem = STFR_Extra_Judge_Robe,
+        BodyLocation = Jacket,
+        BloodLocation = LongJacket,
+        Icon = STFR_Extra_Judge_Robe,
+        RunSpeedModifier = 0.93,
+        CombatSpeedModifier = 0.95,
+        ScratchDefense = 20,
+        NeckProtectionModifier = 0.5,
+        Insulation = 0.35,
+        WindResistance = 0.25,
+        FabricType = Cotton,
+        Weight = 2,
+        WorldStaticModel = JacketLong_Ground,
+    }
+}

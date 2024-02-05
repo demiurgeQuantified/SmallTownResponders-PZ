@@ -1,0 +1,185 @@
+Sandbox_EN = {
+
+	Sandbox_STFR = "Small Town First Responders",
+
+	Sandbox_STFR_ModVehiclesOnly = "Use STFR Vehicles Only",
+	Sandbox_STFR_ModVehiclesOnly_tooltip = "Enable this to disable base vanilla and some modded police/fire/ems content.",
+
+	Sandbox_STFR_ZombieOverrides = "Override Zombies",
+	Sandbox_STFR_ZombieOverrides_tooltip = "Enable this to override vanilla police/fire/ems/prison zombies.",
+
+	Sandbox_STFR_VehicleOverrides = "Override Vehicles",
+	Sandbox_STFR_VehicleOverrides_tooltip = "Enable this to override vanilla and Filibuster Rhymes police/fire/ems/prison vehicles.",
+
+	Sandbox_STFR_TrunkOverrides = "Override Containers",
+	Sandbox_STFR_TrunkOverrides_tooltip = "Enable this to override certain vanilla items in vehicle trunks and containers. Only runs once per vehicle/container.",
+
+
+	Sandbox_STFRSpawns = "Small Town First Responders Zombies",
+
+	Sandbox_STFR_DressOutfits = "Dress Uniforms Spawn Chance",
+	Sandbox_STFR_DressOutfits_tooltip = "The spawn chance for all Dress Uniform zombies.",
+
+	Sandbox_STFR_TrafficOutfits = "Traffic Police Zombies Spawn Chance",
+	Sandbox_STFR_TrafficOutfits_tooltip = "The spawn chance for all Traffic Police zombies.",
+
+	Sandbox_STFR_BagOutfits = "Duffel Zombies Spawn Chance",
+	Sandbox_STFR_BagOutfits_tooltip = "The spawn chance for certain STFR zombies wearing duffel bags.",
+
+	Sandbox_STFR_RiotOutfits = "Riot Uniforms Spawn Chance",
+	Sandbox_STFR_RiotOutfits_tooltip = "The spawn chance for all Riot zombies.",
+
+	Sandbox_STFR_RangerOutfits = "Rangers Spawn Chance",
+	Sandbox_STFR_RangerOutfits_tooltip = "The spawn chance for all Ranger zombies.",
+
+	Sandbox_STFR_USPSOutfits = "USPS Spawn Chance",
+	Sandbox_STFR_USPSOutfits_tooltip = "The spawn chance for USPS zombies.",
+
+	Sandbox_STFR_SecurityOutfits = "Security Spawn Chance",
+	Sandbox_STFR_SecurityOutfits_tooltip = "The spawn chance for all Security zombies.",
+
+	Sandbox_STFR_OtherOutfits = "Other Uniforms Spawn Chance",
+	Sandbox_STFR_OtherOutfits_tooltip = "The spawn chance for Other zombies, like Judges",
+
+	Sandbox_STFR_FireFormalRosewoodOutfits = "Rosewood Formal Fire Uniforms Spawn Chance",
+	Sandbox_STFR_FireFormalRosewoodOutfits_tooltip = "The spawn chance for Rosewood Formal Fire zombies.",
+
+	Sandbox_STFR_FiremanRosewoodOutfits = "Rosewood Fireman Uniforms Spawn Chance",
+	Sandbox_STFR_FiremanRosewoodOutfits_tooltip = "The spawn chance for Rosewood Fireman zombies.",
+
+	Sandbox_STFR_FiremanFullRosewoodOutfits = "Rosewood Fullsuit Fireman Uniforms Spawn Chance",
+	Sandbox_STFR_FiremanFullRosewoodOutfits_tooltip = "The spawn chance for Rosewood Fullsuit Fireman zombies.",
+
+	Sandbox_STFR_FireFormalLouisvilleOutfits = "Louisville Formal Fire Uniforms Spawn Chance",
+	Sandbox_STFR_FireFormalLouisvilleOutfits_tooltip = "The spawn chance for Louisville Formal Fire zombies.",
+
+	Sandbox_STFR_FiremanLouisvilleOutfits = "Louisville Fireman Uniforms Spawn Chance",
+	Sandbox_STFR_FiremanLouisvilleOutfits_tooltip = "The spawn chance for Louisville Fireman zombies.",
+
+	Sandbox_STFR_FiremanFullLouisvilleOutfits = "Louisville Fullsuit Fireman Uniforms Spawn Chance",
+	Sandbox_STFR_FiremanFullLouisvilleOutfits_tooltip = "The spawn chance for Louisville Fullsuit Fireman zombies.",
+
+	Sandbox_STFR_EMSMeadeOutfits = "Meade EMS Uniforms Spawn Chance",
+	Sandbox_STFR_EMSMeadeOutfits_tooltip = "The spawn chance for Meade EMS zombies.",
+
+	Sandbox_STFR_EMSJeffersonOutfits = "Jefferson EMS Uniforms Spawn Chance",
+	Sandbox_STFR_EMSJeffersonOutfits_tooltip = "The spawn chance for Jefferson EMS zombies.",
+
+	Sandbox_STFR_EMSLouisvilleOutfits = "Louisville EMS Uniforms Spawn Chance",
+	Sandbox_STFR_EMSLouisvilleOutfits_tooltip = "The spawn chance for Louisville EMS zombies.",
+
+	Sandbox_STFR_PoliceMuldraughOutfits = "Muldraugh PD Spawn Chance",
+	Sandbox_STFR_PoliceMuldraughOutfits_tooltip = "The spawn chance for Muldraugh PD zombies.",
+
+	Sandbox_STFR_PoliceWestPointOutfits = "WestPoint PD Spawn Chance",
+	Sandbox_STFR_PoliceWestPointOutfits_tooltip = "The spawn chance for WestPoint PD zombies.",
+
+	Sandbox_STFR_SheriffMeadeOutfits = "Meade SO Spawn Chance",
+	Sandbox_STFR_SheriffMeadeOutfits_tooltip = "The spawn chance for Meade SO zombies.",
+
+	Sandbox_STFR_PoliceRiversideOutfits = "Riverside PD Spawn Chance",
+	Sandbox_STFR_PoliceRiversideOutfits_tooltip = "The spawn chance for Riverside PD zombies.",
+
+	Sandbox_STFR_SheriffRosewoodOutfits = "Rosewood SD Spawn Chance",
+	Sandbox_STFR_SheriffRosewoodOutfits_tooltip = "The spawn chance for Rosewood SD zombies.",
+
+	Sandbox_STFR_PoliceLouisvilleOutfits = "Louisville PD Spawn Chance",
+	Sandbox_STFR_PoliceLouisvilleOutfits_tooltip = "The spawn chance for Louisville PD zombies.",
+
+	Sandbox_STFR_PoliceJeffersonOutfits = "Jefferson PD Spawn Chance",
+	Sandbox_STFR_PoliceJeffersonOutfits_tooltip = "The spawn chance for Jefferson PD zombies.",
+
+	Sandbox_STFR_SheriffJeffersonOutfits = "Jefferson SD Spawn Chance",
+	Sandbox_STFR_SheriffJeffersonOutfits_tooltip = "The spawn chance for Jefferson SD zombies.",
+
+	Sandbox_STFR_PoliceKSPOutfits = "Kentucky State Patrol Spawn Chance",
+	Sandbox_STFR_PoliceKSPOutfits_tooltip = "The spawn chance for KSP zombies.",
+
+	Sandbox_STFR_DOCJeffersonOutfits = "Jefferson DOC Spawn Chance",
+	Sandbox_STFR_DOCJeffersonOutfits_tooltip = "The spawn chance for Jefferson DOC Prison Guard zombies.",
+
+	Sandbox_STFR_DOCMeadeOutfits = "Meade DOC Spawn Chance",
+	Sandbox_STFR_DOCMeadeOutfits_tooltip = "The spawn chance for Meade DOC Prison Guard zombies.",
+
+	Sandbox_STFR_InmateJeffersonOutfits = "Jefferson DOC Inmate Spawn Chance",
+	Sandbox_STFR_InmateJeffersonOutfits_tooltip = "The spawn chance for Jefferson DOC Inmate zombies.",
+
+	Sandbox_STFR_InmateMeadeOrangeOutfits = "Meade DOC Inmate Orange Spawn Chance",
+	Sandbox_STFR_InmateMeadeOrangeOutfits_tooltip = "The spawn chance for Meade DOC General Pop zombies.",
+
+	Sandbox_STFR_InmateMeadeYellowOutfits = "Meade DOC Inmate Yellow Spawn Chance",
+	Sandbox_STFR_InmateMeadeYellowOutfits_tooltip = "The spawn chance for Meade DOC Low Risk zombies.",
+
+	Sandbox_STFR_InmateMeadeRedOutfits = "Meade DOC Inmate Red Spawn Chance",
+	Sandbox_STFR_InmateMeadeRedOutfits_tooltip = "The spawn chance for Meade DOC Supermax zombies.",
+
+
+	Sandbox_STFRVehicles = "Small Town First Responders Vehicles",
+
+	Sandbox_STFR_SheriffMeadeVehicles = "Meade County SD Spawn Chance",
+	Sandbox_STFR_SheriffMeadeVehicles_tooltip = "The spawn chance for Meade County SD cars.",
+
+	Sandbox_STFR_PoliceRiversideVehicles = "Riverside PD Spawn Chance",
+	Sandbox_STFR_PoliceRiversideVehicles_tooltip = "The spawn chance for Riverside PD cars.",
+
+	Sandbox_STFR_SheriffRosewoodVehicles = "Rosewood SD Spawn Chance",
+	Sandbox_STFR_SheriffRosewoodVehicles_tooltip = "The spawn chance for Rosewood SD cars.",
+
+	Sandbox_STFR_PoliceWestPointVehicles = "WestPoint PD Spawn Chance",
+	Sandbox_STFR_PoliceWestPointVehicles_tooltip = "The spawn chance for WestPoint PD cars.",
+
+	Sandbox_STFR_PoliceMuldraughVehicles = "Muldraugh PD Spawn Chance",
+	Sandbox_STFR_PoliceMuldraughVehicles_tooltip = "The spawn chance for Muldraugh PD cars.",
+
+	Sandbox_STFR_SheriffJeffersonVehicles = "Jefferson County SD Spawn Chance",
+	Sandbox_STFR_SheriffJeffersonVehicles_tooltip = "The spawn chance for Jefferson County SD cars.",
+
+	Sandbox_STFR_PoliceJeffersonVehicles = "Jefferson County PD Spawn Chance",
+	Sandbox_STFR_PoliceJeffersonVehicles_tooltip = "The spawn chance for Jefferson County PD cars.",
+
+	Sandbox_STFR_PoliceKSPVehicles = "Kentucky State Police Spawn Chance",
+	Sandbox_STFR_PoliceKSPVehicles_tooltip = "The spawn chance for Kentucky State Police cars.",
+
+	Sandbox_STFR_PoliceLouisvilleVehicles = "Louisville PD Spawn Chance",
+	Sandbox_STFR_PoliceLouisvilleVehicles_tooltip = "The spawn chance for Louisville PD cars.",
+
+	Sandbox_STFR_RangerVehicles = "Ranger Spawn Chance",
+	Sandbox_STFR_RangerVehicles_tooltip = "The spawn chance for Ranger cars.",
+
+	Sandbox_STFR_USPSVehicles = "USPS Spawn Chance",
+	Sandbox_STFR_USPSVehicles_tooltip = "The spawn chance for USPS cars.",
+
+	Sandbox_STFR_DOCJeffersonVehicles = "Jefferson County DoC Spawn Chance",
+	Sandbox_STFR_DOCJeffersonVehicles_tooltip = "The spawn chance for Jefferson County DoC cars.",
+
+	Sandbox_STFR_DOCMeadeVehicles = "Meade County DoC Spawn Chance",
+	Sandbox_STFR_DOCMeadeVehicles_tooltip = "The spawn chance for Meade County DoC cars.",
+
+	Sandbox_STFR_EMSVehicles = "Ambulance Spawn Chance",
+	Sandbox_STFR_EMSVehicles_tooltip = "The spawn chance for STFR Ambulances.",
+
+	Sandbox_STFR_FireRosewoodVehicles = "Rosewood VFD Spawn Chance",
+	Sandbox_STFR_FireRosewoodVehicles_tooltip = "The spawn chance for Rosewood VFD cars.",
+
+	Sandbox_STFR_FireLouisvilleVehicles = "Louisville FD Spawn Chance",
+	Sandbox_STFR_FireLouisvilleVehicles_tooltip = "The spawn chance for Louisville FD cars.",
+
+	Sandbox_STFR_FireMeadeVehicles = "Meade County FD Spawn Chance",
+	Sandbox_STFR_FireMeadeVehicles_tooltip = "The spawn chance for Meade County FD cars.",
+
+	Sandbox_STFR_BankTruckVehicles = "Custom Bank Truck Spawn Chance",
+	Sandbox_STFR_BankTruckVehicles_tooltip = "The spawn chance for the custom Bank Truck.",
+
+	Sandbox_STFR_FilibusterSwatVehicles = "Misc Spawn Chance",
+	Sandbox_STFR_FilibusterSwatVehicles_tooltip = "The spawn chance for Filibuster Rhymes SWAT trucks, and Military And Police Used Car Skins vehicles in police zones. Does nothing if Filibuster Rhymes Used Cars and/or Military And Police Used Car Skins aren't enabled!",
+
+	Sandbox_STFR_SpawnRateVehicles = "Spawn Rate",
+	Sandbox_STFR_SpawnRateVehicles_tooltip = "The overall chance of an STFR car to spawn.",
+
+	Sandbox_STFR_CivilianChanceVehicles = "Normal Spawn Chance",
+	Sandbox_STFR_CivilianChanceVehicles_tooltip = "The overall chance of a normal car to spawn in an STFR vehicle zone.",
+
+	Sandbox_STFR_SpawnVanillaCars = "Vanilla Car Spawns",
+	Sandbox_STFR_SpawnVanillaCars_tooltip = "Enable this to allow STFR vehicles with vanilla models to spawn in parking lots. Does NOT affect vehicle scenes! Does NOT remove skins added either!",
+
+}

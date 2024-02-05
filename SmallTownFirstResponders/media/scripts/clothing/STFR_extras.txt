@@ -1,0 +1,39 @@
+module STFR {
+
+	imports {
+		Base
+	}
+	item Chest_Walkie
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Shoulder Microphone,
+		ClothingItem = STFR_Extra_Chest_Walkie,
+		BodyLocation = ChestWalkie,
+		Weight	=	0.5,
+		Icon = STFR_Extra_Chest_Walkie,
+		WorldStaticModel = Security_Walkie_Ground,
+	}
+	item Belt_Police_Duty
+	{
+	    DisplayCategory = Accessory,
+		Type = Container,
+        WeightReduction	=	70,
+        Capacity	=	1,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+		AcceptItemFunction = STFR_ItemFunction.DutyBelt,
+        CanBeEquipped = DutyBelt,
+	    ClothingItemExtra = STFR.Belt_Police_Duty,
+		ClothingItemExtraOption = Wear,
+		DisplayName = Duty Belt,
+	    DisplayCategory = Clothing,
+		ClothingItem = STFR_Extra_Belt_Police_Duty,
+		BodyLocation = DutyBelt,
+        Weight	=	1.2,
+        IconsForTexture = STFR_Extra_Police_Duty_Belt_Black;STFR_Extra_Police_Duty_Belt_Brown,
+		AttachmentsProvided = HolsterRight;SmallBeltLeft;SmallBeltRight,
+		WorldStaticModel = STFR_Police_Duty_Belt_Ground,
+	}
+}

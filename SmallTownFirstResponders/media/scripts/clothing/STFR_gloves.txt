@@ -1,0 +1,239 @@
+module STFR {
+
+	imports {
+		Base
+	}
+	item Gloves_Fireman_Khaki
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Khaki Fireman Gloves,
+		ClothingItem = STFR_Gloves_Fireman_Khaki,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = STFR_Gloves_Fireman_Khaki,
+		ScratchDefense = 30,
+        BiteDefense = 15,
+        WaterResistance = 0.8,
+		Weight = 0.1,
+        Insulation = 0.85,
+        WindResistance = 0.85,
+        FabricType = Leather,
+        WorldStaticModel = Gloves_Ground,
+	}
+	item Gloves_Fireman_Khaki_Simple
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Khaki Fireman Gloves,
+		ClothingItem = STFR_Gloves_Fireman_Khaki_Simple,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = STFR_Gloves_Fireman_Khaki_Simple,
+		ScratchDefense = 30,
+        BiteDefense = 15,
+        WaterResistance = 0.8,
+		Weight = 0.1,
+        Insulation = 0.85,
+        WindResistance = 0.85,
+        FabricType = Leather,
+        WorldStaticModel = Gloves_Ground,
+	}
+	item Gloves_Fireman_Black
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Black Fireman Gloves,
+		ClothingItem = STFR_Gloves_Fireman_Black,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = STFR_Gloves_Fireman_Black,
+		ScratchDefense = 30,
+        BiteDefense = 15,
+        WaterResistance = 0.8,
+		Weight = 0.1,
+        Insulation = 0.85,
+        WindResistance = 0.85,
+        FabricType = Leather,
+        WorldStaticModel = Gloves_Ground,
+	}
+	item Gloves_Fireman_Black_Simple
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Black Fireman Gloves,
+		ClothingItem = STFR_Gloves_Fireman_Black_Simple,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = STFR_Gloves_Fireman_Black_Simple,
+		ScratchDefense = 30,
+        BiteDefense = 15,
+        WaterResistance = 0.8,
+		Weight = 0.1,
+        Insulation = 0.85,
+        WindResistance = 0.85,
+        FabricType = Leather,
+        WorldStaticModel = Gloves_Ground,
+	}
+	item Gloves_Dress_White
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = White Gloves,
+		ClothingItem = STFR_Gloves_Dress_White,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = STFR_Gloves_Dress_White,
+		Weight = 0.1,
+        Insulation = 1.0,
+        WindResistance = 1.0,
+        FabricType = Cotton,
+        WorldStaticModel = Gloves_Ground,
+	}
+	item Gloves_Riot_Leather_Black
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Leather Riot Gloves,
+		ClothingItem = STFR_Gloves_Riot_Leather_Black,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = STFR_Gloves_Riot_Leather_Black,
+		ScratchDefense = 30,
+        BiteDefense = 15,
+        Weight = 0.1,
+        Insulation = 0.75,
+        WindResistance = 0.75,
+        FabricType = Leather,
+        WorldStaticModel = Gloves_Ground,
+	}
+	item Gloves_Riot_Leather_Brown
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Leather Riot Gloves,
+		ClothingItem = STFR_Gloves_Riot_Leather_Brown,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = STFR_Gloves_Riot_Leather_Brown,
+		ScratchDefense = 30,
+        BiteDefense = 15,
+        Weight = 0.1,
+        Insulation = 0.75,
+        WindResistance = 0.75,
+        FabricType = Leather,
+        WorldStaticModel = Gloves_Ground,
+	}
+	item Gloves_Medical_Black
+	{
+	    DisplayCategory = FirstAid,
+		Type = Clothing,
+		DisplayName = Surgical Gloves,
+		ClothingItem = STFR_Gloves_Medical_Black,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = STFR_Gloves_Medical_Black,
+		Weight = 0.1,
+        Insulation = 0.25,
+        WindResistance = 0.3,
+        WorldStaticModel = Gloves_Ground,
+	}
+	item Gloves_Medical_Green
+	{
+	    DisplayCategory = FirstAid,
+		Type = Clothing,
+		DisplayName = Surgical Gloves,
+		ClothingItem = STFR_Gloves_Medical_Green,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = STFR_Gloves_Medical_Green,
+		Weight = 0.1,
+        Insulation = 0.25,
+        WindResistance = 0.3,
+        WorldStaticModel = Gloves_Ground,
+	}
+	item Gloves_Medical_Light_Blue
+	{
+	    DisplayCategory = FirstAid,
+		Type = Clothing,
+		DisplayName = Surgical Gloves,
+		ClothingItem = STFR_Gloves_Medical_Light_Blue,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = STFR_Gloves_Medical_Light_Blue,
+		Weight = 0.1,
+        Insulation = 0.25,
+        WindResistance = 0.3,
+        WorldStaticModel = Gloves_Ground,
+	}
+	item Gloves_Medical_Orange
+	{
+	    DisplayCategory = FirstAid,
+		Type = Clothing,
+		DisplayName = Surgical Gloves,
+		ClothingItem = STFR_Gloves_Medical_Orange,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = STFR_Gloves_Medical_Orange,
+		Weight = 0.1,
+        Insulation = 0.25,
+        WindResistance = 0.3,
+        WorldStaticModel = Gloves_Ground,
+	}
+	item Gloves_Medical_Purple
+	{
+	    DisplayCategory = FirstAid,
+		Type = Clothing,
+		DisplayName = Surgical Gloves,
+		ClothingItem = STFR_Gloves_Medical_Purple,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = STFR_Gloves_Medical_Purple,
+		Weight = 0.1,
+        Insulation = 0.25,
+        WindResistance = 0.3,
+        WorldStaticModel = Gloves_Ground,
+	}
+	item Gloves_Medical_Red
+	{
+	    DisplayCategory = FirstAid,
+		Type = Clothing,
+		DisplayName = Surgical Gloves,
+		ClothingItem = STFR_Gloves_Medical_Red,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = STFR_Gloves_Medical_Red,
+		Weight = 0.1,
+        Insulation = 0.25,
+        WindResistance = 0.3,
+        WorldStaticModel = Gloves_Ground,
+	}
+	item Gloves_Medical_Yellow
+	{
+	    DisplayCategory = FirstAid,
+		Type = Clothing,
+		DisplayName = Surgical Gloves,
+		ClothingItem = STFR_Gloves_Medical_Yellow,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = STFR_Gloves_Medical_Yellow,
+		Weight = 0.1,
+        Insulation = 0.25,
+        WindResistance = 0.3,
+        WorldStaticModel = Gloves_Ground,
+	}
+	item Gloves_Medical_White
+	{
+	    DisplayCategory = FirstAid,
+		Type = Clothing,
+		DisplayName = Surgical Gloves,
+		ClothingItem = STFR_Gloves_Medical_White,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = STFR_Gloves_Medical_White,
+		Weight = 0.1,
+        Insulation = 0.25,
+        WindResistance = 0.3,
+        WorldStaticModel = Gloves_Ground,
+	}
+}

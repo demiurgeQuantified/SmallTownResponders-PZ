@@ -1,0 +1,572 @@
+VERSION = 1,
+
+option STFR.ModVehiclesOnly
+{
+	type = boolean,
+	default = false,
+
+	page = STFR,
+	translation = STFR_ModVehiclesOnly,
+}
+option STFR.ZombieOverrides
+{
+	type = boolean,
+	default = true,
+
+	page = STFR,
+	translation = STFR_ZombieOverrides,
+}
+option STFR.VehicleOverrides
+{
+	type = boolean,
+	default = true,
+
+	page = STFR,
+	translation = STFR_VehicleOverrides,
+}
+option STFR.TrunkOverrides
+{
+	type = boolean,
+	default = true,
+
+	page = STFR,
+	translation = STFR_TrunkOverrides,
+}
+option STFR.DressOutfits
+{
+	type = integer,
+	min = 1,
+	max = 3,
+	default = 1,
+
+	page = STFRSpawns,
+	translation = STFR_DressOutfits,
+}
+option STFR.TrafficOutfits
+{
+	type = integer,
+	min = 1,
+	max = 10,
+	default = 10,
+
+	page = STFRSpawns,
+	translation = STFR_TrafficOutfits,
+}
+option STFR.BagOutfits
+{
+	type = integer,
+	min = 1,
+	max = 5,
+	default = 1,
+
+	page = STFRSpawns,
+	translation = STFR_BagOutfits,
+}
+option STFR.RiotOutfits
+{
+	type = integer,
+	min = 1,
+	max = 5,
+	default = 5,
+
+	page = STFRSpawns,
+	translation = STFR_RiotOutfits,
+}
+option STFR.RangerOutfits
+{
+	type = integer,
+	min = 1,
+	max = 15,
+	default = 15,
+
+	page = STFRSpawns,
+	translation = STFR_RangerOutfits,
+}
+option STFR.USPSOutfits
+{
+	type = integer,
+	min = 1,
+	max = 15,
+	default = 15,
+
+	page = STFRSpawns,
+	translation = STFR_USPSOutfits,
+}
+option STFR.SecurityOutfits
+{
+	type = integer,
+	min = 1,
+	max = 15,
+	default = 15,
+
+	page = STFRSpawns,
+	translation = STFR_SecurityOutfits,
+}
+option STFR.OtherOutfits
+{
+	type = integer,
+	min = 1,
+	max = 15,
+	default = 15,
+
+	page = STFRSpawns,
+	translation = STFR_OtherOutfits,
+}
+option STFR.FireFormalRosewoodOutfits
+{
+	type = integer,
+	min = 1,
+	max = 10,
+	default = 10,
+
+	page = STFRSpawns,
+	translation = STFR_FireFormalRosewoodOutfits,
+}
+option STFR.FiremanRosewoodOutfits
+{
+	type = integer,
+	min = 1,
+	max = 15,
+	default = 15,
+
+	page = STFRSpawns,
+	translation = STFR_FiremanRosewoodOutfits,
+}
+option STFR.FiremanFullRosewoodOutfits
+{
+	type = integer,
+	min = 1,
+	max = 15,
+	default = 15,
+
+	page = STFRSpawns,
+	translation = STFR_FiremanFullRosewoodOutfits,
+}
+option STFR.FireFormalLouisvilleOutfits
+{
+	type = integer,
+	min = 1,
+	max = 10,
+	default = 10,
+
+	page = STFRSpawns,
+	translation = STFR_FireFormalLouisvilleOutfits,
+}
+option STFR.FiremanLouisvilleOutfits
+{
+	type = integer,
+	min = 1,
+	max = 15,
+	default = 15,
+
+	page = STFRSpawns,
+	translation = STFR_FiremanLouisvilleOutfits,
+}
+option STFR.FiremanFullLouisvilleOutfits
+{
+	type = integer,
+	min = 1,
+	max = 15,
+	default = 15,
+
+	page = STFRSpawns,
+	translation = STFR_FiremanFullLouisvilleOutfits,
+}
+option STFR.EMSMeadeOutfits
+{
+	type = integer,
+	min = 1,
+	max = 15,
+	default = 15,
+
+	page = STFRSpawns,
+	translation = STFR_EMSMeadeOutfits,
+}
+option STFR.EMSJeffersonOutfits
+{
+	type = integer,
+	min = 1,
+	max = 15,
+	default = 15,
+
+	page = STFRSpawns,
+	translation = STFR_EMSJeffersonOutfits,
+}
+option STFR.EMSLouisvilleOutfits
+{
+	type = integer,
+	min = 1,
+	max = 15,
+	default = 15,
+
+	page = STFRSpawns,
+	translation = STFR_EMSLouisvilleOutfits,
+}
+option STFR.PoliceMuldraughOutfits
+{
+	type = integer,
+	min = 1,
+	max = 15,
+	default = 15,
+
+	page = STFRSpawns,
+	translation = STFR_PoliceMuldraughOutfits,
+}
+option STFR.PoliceWestPointOutfits
+{
+	type = integer,
+	min = 1,
+	max = 15,
+	default = 15,
+
+	page = STFRSpawns,
+	translation = STFR_PoliceWestPointOutfits,
+}
+option STFR.SheriffMeadeOutfits
+{
+	type = integer,
+	min = 1,
+	max = 15,
+	default = 15,
+
+	page = STFRSpawns,
+	translation = STFR_SheriffMeadeOutfits,
+}
+option STFR.PoliceRiversideOutfits
+{
+	type = integer,
+	min = 1,
+	max = 15,
+	default = 15,
+
+	page = STFRSpawns,
+	translation = STFR_PoliceRiversideOutfits,
+}
+option STFR.SheriffRosewoodOutfits
+{
+	type = integer,
+	min = 1,
+	max = 15,
+	default = 15,
+
+	page = STFRSpawns,
+	translation = STFR_SheriffRosewoodOutfits,
+}
+option STFR.PoliceLouisvilleOutfits
+{
+	type = integer,
+	min = 1,
+	max = 15,
+	default = 15,
+
+	page = STFRSpawns,
+	translation = STFR_PoliceLouisvilleOutfits,
+}
+option STFR.PoliceJeffersonOutfits
+{
+	type = integer,
+	min = 1,
+	max = 15,
+	default = 15,
+
+	page = STFRSpawns,
+	translation = STFR_PoliceJeffersonOutfits,
+}
+option STFR.SheriffJeffersonOutfits
+{
+	type = integer,
+	min = 1,
+	max = 15,
+	default = 15,
+
+	page = STFRSpawns,
+	translation = STFR_SheriffJeffersonOutfits,
+}
+option STFR.PoliceKSPOutfits
+{
+	type = integer,
+	min = 1,
+	max = 15,
+	default = 15,
+
+	page = STFRSpawns,
+	translation = STFR_PoliceKSPOutfits,
+}
+option STFR.DOCJeffersonOutfits
+{
+	type = integer,
+	min = 1,
+	max = 10,
+	default = 10,
+
+	page = STFRSpawns,
+	translation = STFR_DOCJeffersonOutfits,
+}
+option STFR.DOCMeadeOutfits
+{
+	type = integer,
+	min = 1,
+	max = 10,
+	default = 10,
+
+	page = STFRSpawns,
+	translation = STFR_DOCMeadeOutfits,
+}
+option STFR.InmateJeffersonOutfits
+{
+	type = integer,
+	min = 1,
+	max = 15,
+	default = 15,
+
+	page = STFRSpawns,
+	translation = STFR_InmateJeffersonOutfits,
+}
+option STFR.InmateMeadeOrangeOutfits
+{
+	type = integer,
+	min = 1,
+	max = 15,
+	default = 15,
+
+	page = STFRSpawns,
+	translation = STFR_InmateMeadeOrangeOutfits,
+}
+option STFR.InmateMeadeYellowOutfits
+{
+	type = integer,
+	min = 1,
+	max = 15,
+	default = 15,
+
+	page = STFRSpawns,
+	translation = STFR_InmateMeadeYellowOutfits,
+}
+option STFR.InmateMeadeRedOutfits
+{
+	type = integer,
+	min = 1,
+	max = 15,
+	default = 15,
+
+	page = STFRSpawns,
+	translation = STFR_InmateMeadeRedOutfits,
+}
+option STFR.SpawnVanillaCars
+{
+	type = boolean,
+	default = true,
+
+	page = STFRVehicles,
+	translation = STFR_SpawnVanillaCars,
+}
+option STFR.FilibusterSwatVehicles
+{
+	type = integer,
+	min = 0,
+	max = 60,
+	default = 5,
+
+	page = STFRVehicles,
+	translation = STFR_FilibusterSwatVehicles,
+}
+option STFR.SpawnRateVehicles
+{
+	type = integer,
+	min = 0,
+	max = 40,
+	default = 25,
+
+	page = STFRVehicles,
+	translation = STFR_SpawnRateVehicles,
+}
+option STFR.CivilianChanceVehicles
+{
+	type = integer,
+	min = 0,
+	max = 60,
+	default = 5,
+
+	page = STFRVehicles,
+	translation = STFR_CivilianChanceVehicles,
+}
+option STFR.SheriffMeadeVehicles
+{
+	type = integer,
+	min = 0,
+	max = 60,
+	default = 25,
+
+	page = STFRVehicles,
+	translation = STFR_SheriffMeadeVehicles,
+}
+option STFR.PoliceRiversideVehicles
+{
+	type = integer,
+	min = 0,
+	max = 60,
+	default = 25,
+
+	page = STFRVehicles,
+	translation = STFR_PoliceRiversideVehicles,
+}
+option STFR.SheriffRosewoodVehicles
+{
+	type = integer,
+	min = 0,
+	max = 60,
+	default = 25,
+
+	page = STFRVehicles,
+	translation = STFR_SheriffRosewoodVehicles,
+}
+option STFR.PoliceWestPointVehicles
+{
+	type = integer,
+	min = 0,
+	max = 60,
+	default = 25,
+
+	page = STFRVehicles,
+	translation = STFR_PoliceWestPointVehicles,
+}
+option STFR.PoliceMuldraughVehicles
+{
+	type = integer,
+	min = 0,
+	max = 60,
+	default = 25,
+
+	page = STFRVehicles,
+	translation = STFR_PoliceMuldraughVehicles,
+}
+option STFR.SheriffJeffersonVehicles
+{
+	type = integer,
+	min = 0,
+	max = 60,
+	default = 25,
+
+	page = STFRVehicles,
+	translation = STFR_SheriffJeffersonVehicles,
+}
+option STFR.PoliceJeffersonVehicles
+{
+	type = integer,
+	min = 0,
+	max = 60,
+	default = 25,
+
+	page = STFRVehicles,
+	translation = STFR_PoliceJeffersonVehicles,
+}
+option STFR.PoliceKSPVehicles
+{
+	type = integer,
+	min = 0,
+	max = 60,
+	default = 25,
+
+	page = STFRVehicles,
+	translation = STFR_PoliceKSPVehicles,
+}
+option STFR.PoliceLouisvilleVehicles
+{
+	type = integer,
+	min = 0,
+	max = 60,
+	default = 25,
+
+	page = STFRVehicles,
+	translation = STFR_PoliceLouisvilleVehicles,
+}
+option STFR.RangerVehicles
+{
+	type = integer,
+	min = 0,
+	max = 60,
+	default = 25,
+
+	page = STFRVehicles,
+	translation = STFR_RangerVehicles,
+}
+option STFR.USPSVehicles
+{
+	type = integer,
+	min = 0,
+	max = 60,
+	default = 25,
+
+	page = STFRVehicles,
+	translation = STFR_USPSVehicles,
+}
+option STFR.DOCJeffersonVehicles
+{
+	type = integer,
+	min = 0,
+	max = 60,
+	default = 35,
+
+	page = STFRVehicles,
+	translation = STFR_DOCJeffersonVehicles,
+}
+option STFR.DOCMeadeVehicles
+{
+	type = integer,
+	min = 0,
+	max = 60,
+	default = 25,
+
+	page = STFRVehicles,
+	translation = STFR_DOCMeadeVehicles,
+}
+option STFR.EMSVehicles
+{
+	type = integer,
+	min = 0,
+	max = 60,
+	default = 25,
+
+	page = STFRVehicles,
+	translation = STFR_EMSVehicles,
+}
+option STFR.FireRosewoodVehicles
+{
+	type = integer,
+	min = 0,
+	max = 60,
+	default = 25,
+
+	page = STFRVehicles,
+	translation = STFR_FireRosewoodVehicles,
+}
+option STFR.FireLouisvilleVehicles
+{
+	type = integer,
+	min = 0,
+	max = 60,
+	default = 25,
+
+	page = STFRVehicles,
+	translation = STFR_FireLouisvilleVehicles,
+}
+option STFR.FireMeadeVehicles
+{
+	type = integer,
+	min = 0,
+	max = 60,
+	default = 25,
+
+	page = STFRVehicles,
+	translation = STFR_FireMeadeVehicles,
+}
+option STFR.BankTruckVehicles
+{
+	type = integer,
+	min = 0,
+	max = 60,
+	default = 25,
+
+	page = STFRVehicles,
+	translation = STFR_BankTruckVehicles,
+}

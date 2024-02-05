@@ -1,0 +1,126 @@
+module STFR {
+
+	imports {
+		Base
+	}
+    item Vest_BulletPolice_Meade
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Sheriff Bulletproof Vest,
+        ClothingItem = STFR_Vest_BulletPolice_Meade,
+        BodyLocation = TorsoExtra,
+        Icon = STFR_Vest_BulletPolice_Meade,
+        BloodLocation = ShirtNoSleeves,
+        Insulation = 0.65,
+        WindResistance = 0.30,
+        BiteDefense = 30,
+        ScratchDefense = 55,
+        BulletDefense = 100,
+        WorldStaticModel = BulletVest_Ground,
+    }
+    item Vest_HighViz_Police_Riverside
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Police High Visibility Vest,
+        ClothingItem = STFR_Vest_HighViz_Police_Riverside,
+        BodyLocation = TorsoExtraVest,
+        Icon = STFR_Vest_HighViz_Police_Riverside,
+        BloodLocation = ShirtNoSleeves,
+        Insulation = 0.1,
+        WindResistance = 0.05,
+        WorldStaticModel = HuntingVest_Ground,
+    }
+    item Vest_HighViz_Police_KSP
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = State Police High Visibility Vest,
+        ClothingItem = STFR_Vest_HighViz_Police_KSP,
+        BodyLocation = TorsoExtraVest,
+        Icon = STFR_Vest_HighViz_Police_KSP,
+        BloodLocation = ShirtNoSleeves,
+        Insulation = 0.1,
+        WindResistance = 0.05,
+        WorldStaticModel = HuntingVest_Ground,
+    }
+    item Vest_HighViz_Police_Yellow
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Police High Visibility Vest,
+        ClothingItem = STFR_Vest_HighViz_Police_Yellow,
+        BodyLocation = TorsoExtraVest,
+        Icon = STFR_Vest_HighViz_Police_Yellow,
+        BloodLocation = ShirtNoSleeves,
+        Insulation = 0.1,
+        WindResistance = 0.05,
+        WorldStaticModel = HuntingVest_Ground,
+    }
+    item Vest_HighViz_Police_Green
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Police High Visibility Vest,
+        ClothingItem = STFR_Vest_HighViz_Police_Green,
+        BodyLocation = TorsoExtraVest,
+        Icon = STFR_Vest_HighViz_Police_Green,
+        BloodLocation = ShirtNoSleeves,
+        Insulation = 0.1,
+        WindResistance = 0.05,
+        WorldStaticModel = HuntingVest_Ground,
+    }
+    item Vest_HighViz_Police_Green_Unmarked
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Police High Visibility Vest,
+        ClothingItem = STFR_Vest_HighViz_Police_Green_Unmarked,
+        BodyLocation = TorsoExtraVest,
+        Icon = STFR_Vest_HighViz_Police_Green_Unmarked,
+        BloodLocation = ShirtNoSleeves,
+        Insulation = 0.1,
+        WindResistance = 0.05,
+        WorldStaticModel = HuntingVest_Ground,
+    }
+    item Vest_HighViz_Sheriff_Orange
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Sheriff High Visibility Vest,
+        ClothingItem = STFR_Vest_HighViz_Sheriff_Orange,
+        BodyLocation = TorsoExtraVest,
+        Icon = STFR_Vest_HighViz_Sheriff_Orange,
+        BloodLocation = ShirtNoSleeves,
+        Insulation = 0.1,
+        WindResistance = 0.05,
+        WorldStaticModel = HuntingVest_Ground,
+    }
+    item Vest_HighViz_Sheriff_Green
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Sheriff High Visibility Vest,
+        ClothingItem = STFR_Vest_HighViz_Sheriff_Green,
+        BodyLocation = TorsoExtraVest,
+        Icon = STFR_Vest_HighViz_Sheriff_Green,
+        BloodLocation = ShirtNoSleeves,
+        Insulation = 0.1,
+        WindResistance = 0.05,
+        WorldStaticModel = HuntingVest_Ground,
+    }
+    item Vest_HighViz_Sheriff_Yellow
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Sheriff High Visibility Vest,
+        ClothingItem = STFR_Vest_HighViz_Sheriff_Yellow,
+        BodyLocation = TorsoExtraVest,
+        Icon = STFR_Vest_HighViz_Sheriff_Yellow,
+        BloodLocation = ShirtNoSleeves,
+        Insulation = 0.1,
+        WindResistance = 0.05,
+        WorldStaticModel = HuntingVest_Ground,
+    }
+}
