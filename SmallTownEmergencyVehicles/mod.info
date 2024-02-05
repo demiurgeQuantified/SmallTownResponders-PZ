@@ -1,5 +1,0 @@
-name=Small Town Emergency Vehicles
-id=STEV
-description=Just some cars for the Police Departments of the Vanilla towns + County Sheriff.
-poster=poster.png
-require=FRUsedCars

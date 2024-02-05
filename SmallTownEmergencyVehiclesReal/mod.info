@@ -1,6 +1,0 @@
-name=Small Town Emergency Vehicles - Real Vehicle Names
-poster=
-id=STEVRN
-description=Just some real life car names for the Vanilla Police Departments.
-description=Only activate one STEV names mod.
-require=STEV,FRUsedCarsNRN
