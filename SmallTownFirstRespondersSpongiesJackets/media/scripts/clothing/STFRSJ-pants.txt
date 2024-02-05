@@ -1,0 +1,537 @@
+module STFR {
+
+	imports {
+		Base
+	}
+	item Trousers_Police_Muldraugh_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Muldraugh PD Pants,
+        ClothingItem = STFR_Trousers_Police_Muldraugh_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Police_Muldraugh,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Sheriff_Meade_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Meade County SO Pants,
+        ClothingItem = STFR_Trousers_Sheriff_Meade_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Sheriff_Meade,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Police_WestPoint_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = WestPoint PD Pants,
+        ClothingItem = STFR_Trousers_Police_WestPoint_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Police_WestPoint,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Police_Riverside_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Riverside PD Pants,
+        ClothingItem = STFR_Trousers_Police_Riverside_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Police_Riverside,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Sheriff_Rosewood_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Rosewood SD Pants,
+        ClothingItem = STFR_Trousers_Sheriff_Rosewood_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Sheriff_Rosewood,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Police_Louisville_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Louisville DoP Pants,
+        ClothingItem = STFR_Trousers_Police_LouisvilleTUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Police_Louisville,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Police_Jefferson_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Jefferson County PD Pants,
+        ClothingItem = STFR_Trousers_Police_Jefferson_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Police_Jefferson,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Sheriff_Jefferson_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Jefferson County SD Pants,
+        ClothingItem = STFR_Trousers_Sheriff_Jefferson_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Sheriff_Jefferson,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Police_KSP_Summer_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Kentucky State Police Summer Pants,
+        ClothingItem = STFR_Trousers_Police_KSP_Summer_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Police_KSP_Summer,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Police_KSP_Winter_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Kentucky State Police Winter Pants,
+        ClothingItem = STFR_Trousers_Police_KSP_Winter_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Police_KSP_Winter,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+    item Trousers_Ranger_Federal_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Federal Ranger Pants,
+        ClothingItem = STFR_Trousers_Ranger_Federal_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Ranger_Federal,
+        BloodLocation = Trousers,
+        ScratchDefense = 15,
+        Insulation = 0.75,
+        WindResistance = 0.75,
+        WaterResistance = 0.35,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+    item Trousers_Ranger_State_Park_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Kentucky State Park Ranger Pants,
+        ClothingItem = STFR_Trousers_Ranger_State_Park_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Ranger_State_Park,
+        BloodLocation = Trousers,
+        ScratchDefense = 15,
+        Insulation = 0.75,
+        WindResistance = 0.75,
+        WaterResistance = 0.35,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+    item Trousers_Ranger_Conservation_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Kentucky Fish & Wildlife Ranger Pants,
+        ClothingItem = STFR_Trousers_Ranger_Conservation_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Ranger_Conservation,
+        BloodLocation = Trousers,
+        ScratchDefense = 15,
+        Insulation = 0.75,
+        WindResistance = 0.75,
+        WaterResistance = 0.35,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+    item Trousers_DOC_Meade_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Meade County DoC Pants,
+        ClothingItem = STFR_Trousers_DOC_Meade_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_DOC_Meade,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.5,
+        WindResistance = 0.5,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+    item Trousers_DOC_Jefferson_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Jefferson County DoC Pants,
+        ClothingItem = STFR_Trousers_DOC_Jefferson_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_DOC_Jefferson,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.5,
+        WindResistance = 0.5,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_EMS_Meade_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Meade County EMS Pants,
+        ClothingItem = STFR_Trousers_EMS_Meade_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_EMS_Meade,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_EMS_Jefferson_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Jefferson County EMS Pants,
+        ClothingItem = STFR_Trousers_EMS_Jefferson_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_EMS_Jefferson,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_EMS_Louisville_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Louisville EMS Pants,
+        ClothingItem = STFR_Trousers_EMS_Louisville_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_EMS_Louisville,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+    item Trousers_Fireman_Black_Meade_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Black Meade County FD Pants,
+        ClothingItem = STFR_Trousers_Fireman_Black_Meade_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Fireman_Black_Meade,
+        BloodLocation = Trousers,
+        RunSpeedModifier = 0.82,
+        BiteDefense = 20,
+        ScratchDefense = 30,
+        Insulation = 0.85,
+        WindResistance = 0.85,
+        WaterResistance = 0.8,
+        Weight = 4,
+        WorldStaticModel = Trousers_Ground,
+    }
+    item Trousers_Fireman_Khaki_Meade_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Khaki Meade County FD Pants,
+        ClothingItem = STFR_Trousers_Fireman_Khaki_Meade_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Fireman_Khaki_Meade,
+        BloodLocation = Trousers,
+        RunSpeedModifier = 0.82,
+        BiteDefense = 20,
+        ScratchDefense = 30,
+        Insulation = 0.85,
+        WindResistance = 0.85,
+        WaterResistance = 0.8,
+        Weight = 4,
+        WorldStaticModel = Trousers_Ground,
+    }
+    item Trousers_Fireman_Black_Rosewood_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Black Rosewood VFD Pants,
+        ClothingItem = STFR_Trousers_Fireman_Black_Rosewood_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Fireman_Black_Rosewood,
+        BloodLocation = Trousers,
+        RunSpeedModifier = 0.82,
+        BiteDefense = 20,
+        ScratchDefense = 30,
+        Insulation = 0.85,
+        WindResistance = 0.85,
+        WaterResistance = 0.8,
+        Weight = 4,
+        WorldStaticModel = Trousers_Ground,
+    }
+    item Trousers_Fireman_Khaki_Rosewood_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Khaki Rosewood VFD Pants,
+        ClothingItem = STFR_Trousers_Fireman_Khaki_Rosewood_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Fireman_Khaki_Rosewood,
+        BloodLocation = Trousers,
+        RunSpeedModifier = 0.82,
+        BiteDefense = 20,
+        ScratchDefense = 30,
+        Insulation = 0.85,
+        WindResistance = 0.85,
+        WaterResistance = 0.8,
+        Weight = 4,
+        WorldStaticModel = Trousers_Ground,
+    }
+    item Trousers_Fireman_Black_Louisville_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Black Louisville FD Pants,
+        ClothingItem = STFR_Trousers_Fireman_Black_Louisville_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Fireman_Black_Louisville,
+        BloodLocation = Trousers,
+        RunSpeedModifier = 0.82,
+        BiteDefense = 20,
+        ScratchDefense = 30,
+        Insulation = 0.85,
+        WindResistance = 0.85,
+        WaterResistance = 0.8,
+        Weight = 4,
+        WorldStaticModel = Trousers_Ground,
+    }
+    item Trousers_Fireman_Khaki_Louisville_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Khaki Louisville FD Pants,
+        ClothingItem = STFR_Trousers_Fireman_Khaki_Louisville_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Fireman_Khaki_Louisville,
+        BloodLocation = Trousers,
+        RunSpeedModifier = 0.82,
+        BiteDefense = 20,
+        ScratchDefense = 30,
+        Insulation = 0.85,
+        WindResistance = 0.85,
+        WaterResistance = 0.8,
+        Weight = 4,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_USPS_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = USPS Pants,
+        ClothingItem = STFR_Trousers_Extra_USPS_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Extra_USPS,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Fire_Formal_Louisville_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Louisville FD Formal Pants,
+        ClothingItem = STFR_Trousers_Fire_Formal_Louisville_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Fire_Formal_Louisville,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Fire_Formal_Meade_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Meade County FD Formal Pants,
+        ClothingItem = STFR_Trousers_Fire_Formal_Meade_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Fire_Formal_Meade,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Fire_Formal_Rosewood_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Rosewood VFD Formal Pants,
+        ClothingItem = STFR_Trousers_Fire_Formal_Rosewood_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Fire_Formal_Rosewood,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Security_Bank_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Bank Security Pants,
+        ClothingItem = STFR_Trousers_Security_Bank_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Security_Bank,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Security_Hotel_Havisham_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Havisham Hotel Security Pants,
+        ClothingItem = STFR_Trousers_Security_Hotel_Havisham_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Security_Hotel_Havisham,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Security_Hotel_Fancy_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Hotel Security Pants,
+        ClothingItem = STFR_Trousers_Security_Hotel_FancyTUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Security_Hotel_Fancy,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Security_Mall_Grand_Ohio_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Grand Ohio Mall Security Pants,
+        ClothingItem = STFR_Trousers_Security_Mall_Grand_Ohio_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Security_Mall_Grand_Ohio,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Security_Mall_Valley_Station_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Valley Station Mall Security Pants,
+        ClothingItem = STFR_Trousers_Security_Mall_Valley_Station_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Security_Mall_Valley_Station,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Security_Mall_Louisville_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Mall Security Pants,
+        ClothingItem = STFR_Trousers_Security_Mall_Louisville_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Security_Mall_Louisville,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+}

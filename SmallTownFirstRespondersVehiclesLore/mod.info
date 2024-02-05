@@ -1,0 +1,6 @@
+name=Small Town First Responders - Main Mod - Lore Friendly Vehicle Names
+poster=poster.png
+id=STFRLFN
+description=Just some lore friendly car names for the Vanilla Police Departments.
+description=Only activate one STFR names mod.
+require=STFR,FRUsedCarsNLF,FRUsedCars

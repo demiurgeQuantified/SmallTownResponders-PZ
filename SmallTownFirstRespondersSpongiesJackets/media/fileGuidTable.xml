@@ -1,0 +1,1623 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fileGuidTable>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Dress_Fire_Louisville_OPEN.xml</path>
+		<guid>5834bf83-a069-4948-9ecc-ae2a4ed60179</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Dress_Ranger_Federal_OPEN.xml</path>
+		<guid>90f3ab2a-df1b-4b11-9463-044b876a4116</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Dress_Ranger_Conservation_OPEN.xml</path>
+		<guid>5b0b2b7f-b39e-46b8-9f1b-c5d4860b888f</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Dress_Ranger_State_Park_OPEN.xml</path>
+		<guid>1a71c3a8-869d-46bc-ae90-9597ec569679</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Dress_EMS_Jefferson_OPEN.xml</path>
+		<guid>d22ede97-dc52-4c87-8709-7ab5ea6c54f9</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Dress_EMS_Louisville_OPEN.xml</path>
+		<guid>22d880c9-8ff1-4535-b304-35073da50031</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Dress_EMS_Meade_OPEN.xml</path>
+		<guid>6b5812af-c649-483a-b9d2-62d3a1336c6c</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Dress_Sheriff_Meade_Officer_OPEN.xml</path>
+		<guid>fea7863f-0db2-4287-a48e-92ff0fd11df4</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Dress_Sheriff_Meade_SGT_OPEN.xml</path>
+		<guid>45fe07ab-26eb-4536-907b-101fc76a4e20</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Dress_Sheriff_Meade_CPT_OPEN.xml</path>
+		<guid>f3b440d3-eee5-419c-a37b-d1b4a442529f</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Dress_Police_Muldraugh_Officer_OPEN.xml</path>
+		<guid>e0a12f39-2d71-4377-9f64-763cc3426f53</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Dress_Police_Muldraugh_SGT_OPEN.xml</path>
+		<guid>68b3e57d-b6fb-4140-9fac-cff3d20bd8ff</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Dress_Police_Muldraugh_CPT_OPEN.xml</path>
+		<guid>38e311f0-34bc-4e22-abfc-df3d21a9ce76</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Dress_Police_WestPoint_Officer_OPEN.xml</path>
+		<guid>c722e603-ac90-4bae-b1b9-ea30daa36d84</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Dress_Police_WestPoint_SGT_OPEN.xml</path>
+		<guid>1e977fbb-b568-4f6d-8010-3f2237802c0a</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Dress_Police_WestPoint_CPT_OPEN.xml</path>
+		<guid>8b86e273-00e4-40d5-a606-2c33eb038438</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Dress_Sheriff_Rosewood_Officer_OPEN.xml</path>
+		<guid>96b07b80-c61c-4325-a750-811bc3fff3e0</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Dress_Sheriff_Rosewood_SGT_OPEN.xml</path>
+		<guid>8b5f0d87-20f9-441f-8331-e565bbeb389d</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Dress_Sheriff_Rosewood_CPT_OPEN.xml</path>
+		<guid>3be448fe-c52e-4c1c-ac66-1d8d36cc768c</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Dress_Police_Riverside_Officer_OPEN.xml</path>
+		<guid>a710a876-bb33-4c29-8c94-0196a84ea970</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Dress_Police_Riverside_SGT_OPEN.xml</path>
+		<guid>868e6d83-a44b-41c2-abad-14f010506d3d</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Dress_Police_Riverside_CPT_OPEN.xml</path>
+		<guid>830e7178-4583-4242-81d3-61f3ce53c4c2</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Dress_Police_Louisville_Officer_OPEN.xml</path>
+		<guid>df4b54b8-e353-4275-a2cb-9beb4ba40dcf</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Dress_Police_Louisville_SGT_OPEN.xml</path>
+		<guid>f93871a6-e62a-4549-bce0-f994bb6aa3ba</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Dress_Police_Louisville_CPT_OPEN.xml</path>
+		<guid>18a79c51-8759-4e7a-8309-def192dd1ec5</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Dress_Police_Jefferson_Officer_OPEN.xml</path>
+		<guid>eadd44ed-4d57-4f82-b177-6b7c19c270ab</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Dress_Police_Jefferson_SGT_OPEN.xml</path>
+		<guid>924853dc-3287-4143-932f-452adaa5d1cd</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Dress_Police_Jefferson_CPT_OPEN.xml</path>
+		<guid>5fcf9b00-af61-4f53-a1ea-8968207ad7e3</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Dress_Sheriff_Jefferson_Officer_OPEN.xml</path>
+		<guid>5fd95564-87f8-4550-a00e-0e30b2191da4</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Dress_Sheriff_Jefferson_SGT_OPEN.xml</path>
+		<guid>0fb3fbd9-a781-4e3b-9aad-8de68cacab92</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Dress_Sheriff_Jefferson_CPT_OPEN.xml</path>
+		<guid>c4a3c34d-7bb6-403c-9724-2968f8423f33</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Dress_Police_KSP_Officer_OPEN.xml</path>
+		<guid>8a5c0bd7-bea2-4d42-8040-66e3dfcb5851</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Dress_Police_KSP_SGT_OPEN.xml</path>
+		<guid>1618598d-7707-4a5b-9659-38d37644d9b8</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Dress_Police_KSP_CPT_OPEN.xml</path>
+		<guid>7c59a17b-c0e3-44a5-ba9f-51408cc16d4e</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Dress_Security_Hotel_Havisham_OPEN.xml</path>
+		<guid>ee458db4-82a3-4db8-8c58-44ef13979894</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Suit_Security_Hotel_Fancy_OPEN.xml</path>
+		<guid>8fd781d5-22ef-4f27-8961-56323f61db10</guid>
+	</files>
+
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Sheriff_Meade_Officer_OPEN.xml</path>
+		<guid>2b3c48c4-e0d7-4566-85c2-43c2e4a4f9a0</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Sheriff_Meade_SGT_OPEN.xml</path>
+		<guid>03292d70-9b5e-47e6-9222-afc4624f51b1</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Sheriff_Meade_CPT_OPEN.xml</path>
+		<guid>4648eb9e-525d-446f-aa4b-d50e8d00c3b7</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Police_Muldraugh_Officer_OPEN.xml</path>
+		<guid>1def3eb6-4c1c-42eb-bd3b-251c6f95aa22</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Police_Muldraugh_SGT_OPEN.xml</path>
+		<guid>7d31ef85-1e8a-440b-9239-fa818cc313b0</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Police_Muldraugh_CPT_OPEN.xml</path>
+		<guid>31b0e5ab-da99-4d79-a01b-99649e1c2974</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Police_WestPoint_Officer_OPEN.xml</path>
+		<guid>c59b5ce6-18b9-4772-9fc3-9368f5c1147b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Police_WestPoint_SGT_OPEN.xml</path>
+		<guid>d5376dd0-cd47-4ce7-b195-2e55cf392322</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Police_WestPoint_CPT_OPEN.xml</path>
+		<guid>886b87ae-eec4-4e1a-a54c-67ac39a1684c</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Sheriff_Rosewood_Officer_OPEN.xml</path>
+		<guid>7a0ba01f-f150-4d3c-8c96-e9a1b4cf11e9</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Sheriff_Rosewood_SGT_OPEN.xml</path>
+		<guid>c08fe7b5-8652-4dd8-8457-41eaf7d13262</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Sheriff_Rosewood_CPT_OPEN.xml</path>
+		<guid>57065da0-48c7-4e7b-b435-f4cfa7a00131</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Police_Riverside_Officer_OPEN.xml</path>
+		<guid>0a7db2da-2342-4aa4-bd4b-fe2c2fb249ae</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Police_Riverside_SGT_OPEN.xml</path>
+		<guid>99c44350-fadc-495c-9aac-287e6294a7f6</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Police_Riverside_CPT_OPEN.xml</path>
+		<guid>f404bacd-70a5-4b88-9ef5-4ba1e719372a</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Police_Louisville_Officer_OPEN.xml</path>
+		<guid>e30d0fb7-747d-45e5-a50b-0899ef6e9171</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Police_Louisville_SGT_OPEN.xml</path>
+		<guid>e436ad40-f09a-4da3-bb57-258a4baabea0</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Police_Louisville_CPT_OPEN.xml</path>
+		<guid>a9b90873-ee96-46b5-ae63-05944b4f66f1</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Police_Jefferson_Officer_OPEN.xml</path>
+		<guid>e2b69c08-00e5-4477-ab9c-1f53cb44cfcf</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Police_Jefferson_SGT_OPEN.xml</path>
+		<guid>0b8f324a-c6c1-48f0-88aa-493a6661b715</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Police_Jefferson_CPT_OPEN.xml</path>
+		<guid>7a591ab9-fe22-4eeb-a82f-24f296b24300</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Sheriff_Jefferson_Officer_OPEN.xml</path>
+		<guid>ca94c270-a9c6-4497-a2f6-15f776b24c9c</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Sheriff_Jefferson_SGT_OPEN.xml</path>
+		<guid>bc272bd4-27b8-48de-ad07-fc3472bdb38b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Sheriff_Jefferson_CPT_OPEN.xml</path>
+		<guid>2940f87f-90b5-45c8-900d-8b66775496a8</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Police_KSP_Officer_OPEN.xml</path>
+		<guid>0ad92387-3714-4573-8602-62d67663f0fb</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Police_KSP_SGT_OPEN.xml</path>
+		<guid>a8bb2767-ea1f-4c80-ae26-1c8476e51e54</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Police_KSP_CPT_OPEN.xml</path>
+		<guid>8198ce75-f8a4-4a5d-a5ef-48a97698c7b3</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Ranger_Federal_OPEN.xml</path>
+		<guid>606c12a5-0b26-4a59-b336-ddc897b48c46</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Ranger_State_Park_OPEN.xml</path>
+		<guid>b547e672-0cfd-481b-8d74-33d8e097592a</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Ranger_Conservation_OPEN.xml</path>
+		<guid>5092eced-4242-42cd-8dc9-eb54b92253b8</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Security_Bank_OPEN.xml</path>
+		<guid>c3758984-f493-4ca9-896f-17eba3634752</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Security_Mall_Grand_Ohio_OPEN.xml</path>
+		<guid>65f6883d-bd29-4be5-aa58-f8de958590ed</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Security_Mall_Valley_Station_OPEN.xml</path>
+		<guid>8df03847-da2b-488f-85e5-18ba05ea43c1</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Security_Mall_Louisville_OPEN.xml</path>
+		<guid>ab299b48-9ce2-4f42-a6d3-d12b0676e376</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_DOC_Meade_OPEN.xml</path>
+		<guid>2acb592d-7c70-4126-a006-a5e718540544</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_DOC_Jefferson_OPEN.xml</path>
+		<guid>49ed8fc5-635d-43d4-b529-10022eeb2c45</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_EMS_Meade_OPEN.xml</path>
+		<guid>30e40455-2c3b-4abc-bfbd-39869fd78ecc</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_EMS_Jefferson_OPEN.xml</path>
+		<guid>a1cb5223-9bb3-44fd-a9a7-51dee4568d74</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_EMS_Louisville_OPEN.xml</path>
+		<guid>3027e774-4a4a-4c85-8cb2-b74050d9a72d</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Extra_USPS_OPEN.xml</path>
+		<guid>11ee115a-b3b6-43bc-bc67-630ff7e6152f</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Fireman_Black_Meade_OPEN.xml</path>
+		<guid>27c55df8-4507-4d35-b2f9-c908c99cbe79</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Fireman_Khaki_Meade_OPEN.xml</path>
+		<guid>eeab93d0-4a86-4219-9dc8-49d984ee59b9</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Fireman_Black_Rosewood_OPEN.xml</path>
+		<guid>59054604-cd9e-4c22-b22e-53cdee7a0d24</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Fireman_Khaki_Rosewood_OPEN.xml</path>
+		<guid>4a7d1090-f896-45b9-9362-fda0c38cc4e0</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Fireman_Black_Louisville_OPEN.xml</path>
+		<guid>78a36ee4-c36e-4cb9-baca-59188bbdac37</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Fireman_Khaki_Louisville_OPEN.xml</path>
+		<guid>5ee327ba-b34f-4659-8f05-1ee2948a1c2f</guid>
+	</files>
+
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Boilersuit_Meade_Gen_Pop_Prisoner_OPEN.xml</path>
+		<guid>f887eeea-2d24-4380-93d2-a16999b15e55</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Boilersuit_Meade_Low_Risk_Prisoner_OPEN.xml</path>
+		<guid>cb480cb5-7516-491b-97ff-976c106e06f8</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Boilersuit_Meade_Supermax_Prisoner_OPEN.xml</path>
+		<guid>23970176-91df-4847-b7a8-70125ecd8bcc</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Boilersuit_Jefferson_Prisoner_OPEN.xml</path>
+		<guid>e51271da-4ceb-4aae-a3cd-ecb170cc48ea</guid>
+	</files>
+
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_EMS_Louisville_ROLL.xml</path>
+		<guid>76bdafe1-edfc-4a27-ac6a-179ce2b1cc77</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_EMS_Meade_ROLL.xml</path>
+		<guid>72e44d73-9252-406a-8e8e-46de1654cc9d</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_EMS_Jefferson_ROLL.xml</path>
+		<guid>5c6c898b-c7aa-4a7c-8c30-8fe3fb8f4d2f</guid>
+	</files>
+
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Ranger_Federal_ROLL.xml</path>
+		<guid>784a28e8-04b4-4d67-881a-ddd613e868ef</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Ranger_Conservation_ROLL.xml</path>
+		<guid>73c79e9e-5479-4f40-8724-d88a4fcb8005</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Ranger_State_Park_ROLL.xml</path>
+		<guid>c513c6ed-f042-4c77-b0c5-a54f0b059664</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Security_Bank_ROLL.xml</path>
+		<guid>4a998c03-a6d9-4f24-8af4-79d304f7cec1</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Security_Mall_Grand_Ohio_ROLL.xml</path>
+		<guid>593a51a1-70d6-4cfb-b44f-6b8476286db3</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Security_Mall_Valley_Station_ROLL.xml</path>
+		<guid>d27a1f77-cfb1-4bdf-a068-3c5dc7aeadeb</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Security_Mall_Louisville_ROLL.xml</path>
+		<guid>91f1341e-3d00-4e33-a7e8-e98efc04ae0f</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Security_Hotel_Havisham_ROLL.xml</path>
+		<guid>34f0247b-48c5-4e5e-907f-ae412691b56e</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Security_Hotel_Fancy_ROLL.xml</path>
+		<guid>7107595f-6287-4450-af18-32fbde6aa289</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Louisville_Officer_ROLL.xml</path>
+		<guid>330bee37-e91c-44d5-ae23-ec1d45a9cda4</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Louisville_SGT_ROLL.xml</path>
+		<guid>36dc5eda-6d05-4e4b-bed4-af9c4b171cf6</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Louisville_CPT_ROLL.xml</path>
+		<guid>8b1d1903-79d4-4ca5-bc7b-3d62f58d7928</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Jefferson_Officer_ROLL.xml</path>
+		<guid>ce93ab74-8af0-4932-9ddc-04e9cef2cb0f</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Jefferson_SGT_ROLL.xml</path>
+		<guid>da282f39-e141-4e38-86d7-0c0ca4be1c12</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Jefferson_CPT_ROLL.xml</path>
+		<guid>bb457c15-af7b-4dbf-b61e-f1e9ffeffd3f</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Sheriff_Jefferson_Officer_ROLL.xml</path>
+		<guid>4e1b3706-92e0-4ab1-b4f1-758feaedb1a5</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Sheriff_Jefferson_SGT_ROLL.xml</path>
+		<guid>ab73b640-b099-4c3e-9b8f-7761e3321554</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Sheriff_Jefferson_CPT_ROLL.xml</path>
+		<guid>2e2c86f9-6acb-4fa3-9bdd-ae050e098498</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Sheriff_Meade_Officer_ROLL.xml</path>
+		<guid>4313da10-b8e5-4baa-9652-5e964e7e13a4</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Sheriff_Meade_SGT_ROLL.xml</path>
+		<guid>028f3a6d-a1b6-49d6-9c1f-510a1b049bbc</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Sheriff_Meade_CPT_ROLL.xml</path>
+		<guid>5f096d05-938a-4bad-8fae-db3334a5876b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Muldraugh_Officer_ROLL.xml</path>
+		<guid>3c689805-e6e6-4c23-924d-3fc8c58abdb7</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Muldraugh_SGT_ROLL.xml</path>
+		<guid>222d1816-36f1-4ca4-84c3-d09b4d3d3b4e</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Muldraugh_CPT_ROLL.xml</path>
+		<guid>d2bf9d0a-a551-4bc6-aca2-c94530f0ef86</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Riverside_Officer_ROLL.xml</path>
+		<guid>6428a0a1-31ce-432e-801a-c54fe3be6beb</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Riverside_SGT_ROLL.xml</path>
+		<guid>990d1678-85f0-492f-b36d-4052dd3032bd</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Riverside_CPT_ROLL.xml</path>
+		<guid>eb74580e-e9df-42c3-bc81-f46766b68955</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Sheriff_Rosewood_Officer_ROLL.xml</path>
+		<guid>40817e6d-d172-45f6-812b-ceac5898b4e3</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Sheriff_Rosewood_SGT_ROLL.xml</path>
+		<guid>06fa9573-dfb7-419d-afc5-3f025634d7c9</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Sheriff_Rosewood_CPT_ROLL.xml</path>
+		<guid>e0fa9ace-d6e5-4e9d-bf7b-3a01760c75e8</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_WestPoint_Officer_ROLL.xml</path>
+		<guid>40e463ee-904c-41a5-aa45-1fe66876f861</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_WestPoint_SGT_ROLL.xml</path>
+		<guid>71c8116f-f8b1-4904-acf2-c281b870993e</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_WestPoint_CPT_ROLL.xml</path>
+		<guid>3cc508f7-3199-469b-873f-35f7337d9e70</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_KSP_Officer_ROLL.xml</path>
+		<guid>533feb6c-c1e3-4605-ad03-37137a6d503a</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_KSP_SGT_ROLL.xml</path>
+		<guid>87bb5224-b5a6-4e2c-a4ef-d005821f916d</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_KSP_CPT_ROLL.xml</path>
+		<guid>6c24fe72-55f9-4b1f-8769-c41f6f0f3543</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Extra_USPS_ROLL.xml</path>
+		<guid>a5ef8eb1-1cd4-42bb-8a8f-d3e21042cee0</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_DOC_Jefferson_ROLL.xml</path>
+		<guid>13486f13-42d1-4a1d-a869-75c73c1ad15d</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_DOC_Meade_ROLL.xml</path>
+		<guid>425ab113-7334-4260-8df0-28753eb572a5</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Fire_Louisville_ROLL.xml</path>
+		<guid>b068722e-abc9-492e-bbf4-b5b182afd5e5</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Fire_Louisville_Supervisor_ROLL.xml</path>
+		<guid>6b71fb8b-8a54-4e29-a0e0-fd1cd80ff562</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Fire_Louisville_Supervisor_Station_ROLL.xml</path>
+		<guid>16dcb6af-79c0-438c-b920-7f30708db087</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Fire_Rosewood_ROLL.xml</path>
+		<guid>f13add64-865e-4593-b11c-ceeb4cbbfb90</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Fire_Rosewood_Supervisor_ROLL.xml</path>
+		<guid>4ac0ea0e-f5ef-423e-b5e6-819808e16364</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Fire_Meade_ROLL.xml</path>
+		<guid>647084e9-bcc0-41c8-93cd-c1ec95bcf071</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Fire_Meade_Supervisor_ROLL.xml</path>
+		<guid>4697186b-9e18-4f55-8de8-4291a322af8a</guid>
+	</files>
+
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_EMS_Louisville_OPEN_ROLL.xml</path>
+		<guid>30fd7c48-82d5-46ab-ae37-77771ce82924</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_EMS_Meade_OPEN_ROLL.xml</path>
+		<guid>84bf89fb-3c4f-4275-a77f-37b3a199f304</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_EMS_Jefferson_OPEN_ROLL.xml</path>
+		<guid>57407c5f-8b87-4b82-8953-9d686a724738</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Ranger_Federal_OPEN_ROLL.xml</path>
+		<guid>74a5c41e-6ede-4d21-adba-e6906b2005ef</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Ranger_Conservation_OPEN_ROLL.xml</path>
+		<guid>ac7858a9-39c6-4b7b-afef-9f0e84d14098</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Ranger_State_Park_OPEN_ROLL.xml</path>
+		<guid>03aa3fed-a238-44d9-a128-e29d3ae6c56d</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Security_Bank_OPEN_ROLL.xml</path>
+		<guid>e8c138a3-050f-4aaf-95ca-77ec103123ec</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Security_Mall_Grand_Ohio_OPEN_ROLL.xml</path>
+		<guid>d97c3023-b0ef-4192-a257-277465d50543</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Security_Mall_Valley_Station_OPEN_ROLL.xml</path>
+		<guid>91d82ab5-8882-4a0c-9a4e-1697e0cb0731</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Security_Mall_Louisville_OPEN_ROLL.xml</path>
+		<guid>55f578ec-2268-45f6-b58c-c0cb29483f34</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Security_Hotel_Havisham_OPEN_ROLL.xml</path>
+		<guid>84d280eb-fc3e-4421-9fe2-9a8f8ec9aff8</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Security_Hotel_Fancy_OPEN_ROLL.xml</path>
+		<guid>72d5da85-79f2-4ec1-b228-6740581f5e07</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Louisville_Officer_OPEN_ROLL.xml</path>
+		<guid>361a766c-8620-44f2-ac9b-1d184120f1f2</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Louisville_SGT_OPEN_ROLL.xml</path>
+		<guid>141807e9-df00-4cab-ac42-4fb5c9a34df9</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Louisville_CPT_OPEN_ROLL.xml</path>
+		<guid>7952f857-7e62-4c47-8fa0-e043db85be85</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Jefferson_Officer_OPEN_ROLL.xml</path>
+		<guid>4d14ec8a-9e17-482f-bcf8-28d8bf883ebf</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Jefferson_SGT_OPEN_ROLL.xml</path>
+		<guid>8ae713ae-aaea-4eb8-a135-3621e59c28f1</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Jefferson_CPT_OPEN_ROLL.xml</path>
+		<guid>6f64d906-38f3-4b63-b845-0af610a1f71f</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Sheriff_Jefferson_Officer_OPEN_ROLL.xml</path>
+		<guid>bc05973a-1f37-422a-9a7a-c623dbd98bea</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Sheriff_Jefferson_SGT_OPEN_ROLL.xml</path>
+		<guid>958b6e4d-469b-489f-a676-6bf68035a391</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Sheriff_Jefferson_CPT_OPEN_ROLL.xml</path>
+		<guid>74eed594-ca29-4adc-9fc9-0f83607c9237</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Sheriff_Meade_Officer_OPEN_ROLL.xml</path>
+		<guid>59f3fef6-3108-4729-bddf-b7c6e8778904</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Sheriff_Meade_SGT_OPEN_ROLL.xml</path>
+		<guid>cf474b44-33bf-4bef-91a0-b148c89c4454</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Sheriff_Meade_CPT_OPEN_ROLL.xml</path>
+		<guid>cda76571-f0bd-4ec7-9e3d-315d89224f8d</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Muldraugh_Officer_OPEN_ROLL.xml</path>
+		<guid>b614ff10-a9c4-4a3b-bfba-a10412fab55a</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Muldraugh_SGT_OPEN_ROLL.xml</path>
+		<guid>19c5e28e-fe23-4305-ab8c-edd89d9af636</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Muldraugh_CPT_OPEN_ROLL.xml</path>
+		<guid>25b6ce82-6008-46c7-a905-7658d7104af0</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Riverside_Officer_OPEN_ROLL.xml</path>
+		<guid>964df284-1376-44a3-9abf-e7a3836fdf23</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Riverside_SGT_OPEN_ROLL.xml</path>
+		<guid>453c1d39-3454-4bfe-bfb2-503de4657dfa</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Riverside_CPT_OPEN_ROLL.xml</path>
+		<guid>335c9d03-8d50-42b4-8928-3b5045e96bea</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Sheriff_Rosewood_Officer_OPEN_ROLL.xml</path>
+		<guid>7171b5db-d181-4d7e-8003-45960b0d882a</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Sheriff_Rosewood_SGT_OPEN_ROLL.xml</path>
+		<guid>e6ce6a0e-2839-4293-b083-e863af621f8b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Sheriff_Rosewood_CPT_OPEN_ROLL.xml</path>
+		<guid>176d7b82-b19a-4018-b47f-bf01b909e169</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_WestPoint_Officer_OPEN_ROLL.xml</path>
+		<guid>fa99856d-f053-42d9-b9ae-f7cf466915d8</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_WestPoint_SGT_OPEN_ROLL.xml</path>
+		<guid>626d352d-ee41-4689-af3e-ab0b46341069</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_WestPoint_CPT_OPEN_ROLL.xml</path>
+		<guid>2dd092a0-09d3-4025-9bab-0f040d5d37a0</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_KSP_Officer_OPEN_ROLL.xml</path>
+		<guid>2b2d476b-91ac-485e-8a9b-909a301d7dac</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_KSP_SGT_OPEN_ROLL.xml</path>
+		<guid>2a0fb2c6-f0a0-419e-a08e-2d41f3b763d1</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_KSP_CPT_OPEN_ROLL.xml</path>
+		<guid>e3181daa-e3e6-4b76-8a3f-b7d8b5be515b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_USPS_OPEN_ROLL.xml</path>
+		<guid>0c335841-5b18-47b6-b7fe-13b6ced10a87</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_DOC_Jefferson_OPEN_ROLL.xml</path>
+		<guid>46d3d379-41e2-4ba2-b7f1-32d1cc5801ea</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_DOC_Meade_OPEN_ROLL.xml</path>
+		<guid>2a22531f-f33c-42ba-9453-e6431bf3895c</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Fire_Louisville_OPEN_ROLL.xml</path>
+		<guid>084ca979-511c-4f21-9a6e-cbc27a73d40b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Fire_Louisville_Supervisor_OPEN_ROLL.xml</path>
+		<guid>9fa61f73-0b01-4368-965a-4e7f2d83ec8e</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Fire_Louisville_Supervisor_Station_OPEN_ROLL.xml</path>
+		<guid>3f33ad1e-fc31-4bad-8be1-1c10f46a0a4e</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Fire_Rosewood_OPEN_ROLL.xml</path>
+		<guid>5989a956-e160-40da-b6e8-90300e530fb6</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Fire_Rosewood_Supervisor_OPEN_ROLL.xml</path>
+		<guid>ab610520-d7bf-4dc5-8861-fa8fac94fd59</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Fire_Meade_OPEN_ROLL.xml</path>
+		<guid>5c710647-b3e5-4479-9ee5-ab9085140851</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Fire_Meade_Supervisor_OPEN_ROLL.xml</path>
+		<guid>4697186b-9e18-4f55-8de8-4291a322af8a</guid>
+	</files>
+
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_EMS_Louisville_OPEN.xml</path>
+		<guid>f318a05d-75e0-4133-8a4d-381568aacc2b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_EMS_Meade_OPEN.xml</path>
+		<guid>bb5a2ab7-63fa-4694-9182-81001dda58c2</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_EMS_Jefferson_OPEN.xml</path>
+		<guid>d12c383b-6881-4d56-92d3-4094209babaf</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Ranger_Federal_OPEN.xml</path>
+		<guid>74ceded4-26c2-4a71-9807-6fc763b2345d</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Ranger_Conservation_OPEN.xml</path>
+		<guid>88b24bb3-24d6-4f31-9926-5a07c7e6bc4b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Ranger_State_Park_OPEN.xml</path>
+		<guid>2d31a594-525f-49bb-b3aa-3c5f5790d23f</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Security_Bank_OPEN.xml</path>
+		<guid>0b931ec3-4cf5-489e-b2fa-3322e838cca3</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Security_Mall_Grand_Ohio_OPEN.xml</path>
+		<guid>f2fb99c2-3040-445a-8438-32fddd6e29b2</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Security_Mall_Valley_Station_OPEN.xml</path>
+		<guid>422424a9-0b51-4784-ad52-97b1c3953276</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Security_Mall_Louisville_OPEN.xml</path>
+		<guid>339445bf-f1d6-413d-ac30-6734ed301e34</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Security_Hotel_Havisham_OPEN.xml</path>
+		<guid>fbce6817-9334-4f02-b4e7-91872bb4f8af</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Security_Hotel_Fancy_OPEN.xml</path>
+		<guid>6a5ef6ab-8630-4f18-9413-c85ee32eede2</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Louisville_Officer_OPEN.xml</path>
+		<guid>05cda4f6-d427-4788-b9c9-6b4180b8a2bf</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Louisville_SGT_OPEN.xml</path>
+		<guid>beb768ea-133e-426f-9656-efa7d6593d9d</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Louisville_CPT_OPEN.xml</path>
+		<guid>3473bd17-6667-4f42-80c2-af17e51f5d56</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Jefferson_Officer_OPEN.xml</path>
+		<guid>7abef755-cbd2-4b53-a49b-8340670d0a38</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Jefferson_SGT_OPEN.xml</path>
+		<guid>b8268a59-b63f-43b0-befb-57e452176175</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Jefferson_CPT_OPEN.xml</path>
+		<guid>66cbd21f-0dcf-4f55-9096-78b543ae9f36</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Sheriff_Jefferson_Officer_OPEN.xml</path>
+		<guid>68cdff0b-ad6c-4c5a-b81c-684ebe115321</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Sheriff_Jefferson_SGT_OPEN.xml</path>
+		<guid>1e825ed4-9aaf-4112-a6a0-7434fa7f9749</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Sheriff_Jefferson_CPT_OPEN.xml</path>
+		<guid>d39f3160-31e6-4738-9608-0b1f29904c10</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Sheriff_Meade_Officer_OPEN.xml</path>
+		<guid>09964835-155e-4e83-868b-405591ae143a</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Sheriff_Meade_SGT_OPEN.xml</path>
+		<guid>314111be-33f7-4a09-8831-3a17c4e8d3e2</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Sheriff_Meade_CPT_OPEN.xml</path>
+		<guid>f153b3cd-7074-4df8-8065-ef56ae9d2593</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Muldraugh_Officer_OPEN.xml</path>
+		<guid>c8996434-6961-4276-9c00-b2e3f157f2f3</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Muldraugh_SGT_OPEN.xml</path>
+		<guid>74c60614-9831-483b-b40b-da51235fed8c</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Muldraugh_CPT_OPEN.xml</path>
+		<guid>bdd40e0d-63f1-4d09-abea-eb0b31090d1e</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Riverside_Officer_OPEN.xml</path>
+		<guid>6c22983b-9ea1-4b1d-8c24-f8a58054992b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Riverside_SGT_OPEN.xml</path>
+		<guid>3fc17817-706c-41e4-a260-48809fbf86d0</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Riverside_CPT_OPEN.xml</path>
+		<guid>d16aacb2-20e8-477c-ad95-6301951c71bd</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Sheriff_Rosewood_Officer_OPEN.xml</path>
+		<guid>022c29c2-6103-474c-b844-8ebb0bc8663a</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Sheriff_Rosewood_SGT_OPEN.xml</path>
+		<guid>00e3d727-bd48-4788-bfd4-9e83c7b0a858</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Sheriff_Rosewood_CPT_OPEN.xml</path>
+		<guid>dc1e9556-652c-4ddf-8e70-7c299c40d2a0</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_WestPoint_Officer_OPEN.xml</path>
+		<guid>48b5777b-8424-4407-b67c-a83205316253</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_WestPoint_SGT_OPEN.xml</path>
+		<guid>9a018216-d333-4463-b292-bd16700d3b60</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_WestPoint_CPT_OPEN.xml</path>
+		<guid>91f53c05-9fd7-4488-9deb-6bfcdcb69332</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_KSP_Officer_OPEN.xml</path>
+		<guid>2d822293-8e20-4ed4-beee-66dfc350bc0f</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_KSP_SGT_OPEN.xml</path>
+		<guid>fa8e22ba-2cf1-4f25-99dd-005258656b70</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_KSP_CPT_OPEN.xml</path>
+		<guid>e59ed992-0179-4797-96fa-1590cf57736f</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_USPS_OPEN.xml</path>
+		<guid>bf3145e9-8a43-4c53-b21c-1de086904edb</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_DOC_Jefferson_OPEN.xml</path>
+		<guid>d4991a1f-d5ff-47fd-ba66-e54152b22d22</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_DOC_Meade_OPEN.xml</path>
+		<guid>9e9f8577-85cc-4585-844c-f32a5d7e78f4</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Fire_Louisville_OPEN.xml</path>
+		<guid>57e08c27-eac6-410e-9378-06574188689a</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Fire_Louisville_Supervisor_OPEN.xml</path>
+		<guid>d8629888-fa32-4226-b44a-66820cb35376</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Fire_Louisville_Supervisor_Station_OPEN.xml</path>
+		<guid>e1361d9d-3fbe-4a8f-b222-01f1e050cb4c</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Fire_Rosewood_OPEN.xml</path>
+		<guid>2bdaa7a3-af52-4414-9ad7-905a3d9a4b4b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Fire_Rosewood_Supervisor_OPEN.xml</path>
+		<guid>76dfc84a-50e0-4f61-87f2-0490b62fb8e2</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Fire_Meade_OPEN.xml</path>
+		<guid>58602567-3fb4-4ccc-9cbd-583d227fd6d2</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Fire_Meade_Supervisor_OPEN.xml</path>
+		<guid>4697186b-9e18-4f55-8de8-4291a322af8a</guid>
+	</files>
+
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_EMS_Louisville_OPEN.xml</path>
+		<guid>76bdafe1-edfc-4a27-ac6a-179ce2b1cc77</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_EMS_Meade_OPEN.xml</path>
+		<guid>184ab104-9ae6-4c42-9095-4d964ce4b7c5</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_EMS_Jefferson_OPEN.xml</path>
+		<guid>5c6c898b-c7aa-4a7c-8c30-8fe3fb8f4d2f</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Ranger_Federal_OPEN.xml</path>
+		<guid>30070d63-70e8-4334-beb5-311ff0106bbf</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Ranger_Conservation_OPEN.xml</path>
+		<guid>5734dd9f-3fba-444a-a2b4-627ed39f44bd</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Ranger_State_Park_OPEN.xml</path>
+		<guid>9261afd8-6e0b-4b0f-a784-55301034ee67</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Security_Bank_OPEN.xml</path>
+		<guid>60780e4e-81c2-4b36-8451-5dd0723bb8bc</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Security_Mall_Grand_Ohio_OPEN.xml</path>
+		<guid>5232d6f6-d5b7-4c8b-92d6-1ee79892bd25</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Security_Mall_Valley_Station_OPEN.xml</path>
+		<guid>56852da4-38de-49dd-878f-fa0414eb4b89</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Security_Mall_Louisville_OPEN.xml</path>
+		<guid>1168891c-6282-4dac-b6aa-a771d4300c48</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Security_Hotel_Havisham_OPEN.xml</path>
+		<guid>99f6fe45-fadf-4f31-b867-c6a31f2c4484</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Police_Louisville_Officer_OPEN.xml</path>
+		<guid>bf8a6431-0227-478d-ba8e-b4e3ecd1d6ae</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Police_Louisville_SGT_OPEN.xml</path>
+		<guid>1a88d599-092d-4a84-971e-05481605a70d</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Police_Louisville_CPT_OPEN.xml</path>
+		<guid>a35af644-5703-4c18-886a-0e8a01756243</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Police_Jefferson_Officer_OPEN.xml</path>
+		<guid>e1a383d6-4de2-4875-8cbf-cd2bcd50c8fc</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Police_Jefferson_SGT_OPEN.xml</path>
+		<guid>7eedd676-ac98-4696-90f6-2873d7258b25</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Police_Jefferson_CPT_OPEN.xml</path>
+		<guid>80fc4ec4-c959-4887-ae6e-938263466108</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Sheriff_Jefferson_Officer_OPEN.xml</path>
+		<guid>92d9249d-ca36-4d07-8ab4-d2468f8986c5</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Sheriff_Jefferson_SGT_OPEN.xml</path>
+		<guid>378b9bde-bc2c-4a1a-a60a-c589502e175d</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Sheriff_Jefferson_CPT_OPEN.xml</path>
+		<guid>76d3b7fc-1d88-4cf1-adde-224f4925aa40</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Sheriff_Meade_Officer_OPEN.xml</path>
+		<guid>8e680386-2d52-4c8e-ba6d-89ce739ccc6c</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Sheriff_Meade_SGT_OPEN.xml</path>
+		<guid>c7e038fd-aa58-478e-92c2-c51e1bc7deb6</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Sheriff_Meade_CPT_OPEN.xml</path>
+		<guid>c8fa63c0-fca3-4ed8-9488-a93153e80232</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Police_Muldraugh_Officer_OPEN.xml</path>
+		<guid>7731c6cf-fd85-4701-9f19-f102f21e0f35</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Police_Muldraugh_SGT_OPEN.xml</path>
+		<guid>716dbdea-0154-463d-91f9-4a6d472c6794</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Police_Muldraugh_CPT_OPEN.xml</path>
+		<guid>65cd739a-b16c-4d28-9e1e-8deab6687cbe</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Police_Riverside_Officer_OPEN.xml</path>
+		<guid>5bb4dff4-fd64-4c89-8815-5bad4bbca82e</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Police_Riverside_SGT_OPEN.xml</path>
+		<guid>ce38e5d9-e5df-4f9c-b187-0ca7e428fd74</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Police_Riverside_CPT_OPEN.xml</path>
+		<guid>ce7a4e7c-4dc9-4a4c-9b3c-5a2d5329cb3c</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Sheriff_Rosewood_Officer_OPEN.xml</path>
+		<guid>43c02f8c-9422-4bd1-a7bb-14a86336a8ac</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Sheriff_Rosewood_SGT_OPEN.xml</path>
+		<guid>a28dbf68-94b9-4f49-ad83-4dfcf70c8ff3</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Sheriff_Rosewood_CPT_OPEN.xml</path>
+		<guid>ab9d8a62-a502-4288-93c0-a6b69e203d69</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Police_WestPoint_Officer_OPEN.xml</path>
+		<guid>4ee45681-b20c-458a-b6e7-266ed1ecbcdc</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Police_WestPoint_SGT_OPEN.xml</path>
+		<guid>1a8edb23-3191-4dab-ae7c-05fff4e40353</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Police_WestPoint_CPT_OPEN.xml</path>
+		<guid>a47cb92a-55cd-40a9-a335-517def2b0493</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Police_KSP_Officer_OPEN.xml</path>
+		<guid>f485d902-1196-4dba-9512-282fbc91bf0c</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Police_KSP_SGT_OPEN.xml</path>
+		<guid>24a73364-1805-4675-ab41-ed5cb188d309</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Police_KSP_CPT_OPEN.xml</path>
+		<guid>43b67e45-c7b3-4b48-8d62-173deaa7f8b9</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_DOC_Jefferson_OPEN.xml</path>
+		<guid>ef2a39b1-24e4-467c-82a3-f039fb011b2c</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_DOC_Meade_OPEN.xml</path>
+		<guid>d8d8128b-d123-4f26-b372-b2f507ef90e0</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Fire_Louisville_OPEN.xml</path>
+		<guid>dcf58447-1cac-44fa-a9cf-41378d8e9a5b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Fire_Louisville_Supervisor_OPEN.xml</path>
+		<guid>f609c56e-a64a-4b92-a82e-665ec4e6bab1</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Fire_Louisville_Supervisor_Station_OPEN.xml</path>
+		<guid>db1f3d6d-0b55-4539-ab2c-3cdefe97ba19</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Fire_Meade_OPEN.xml</path>
+		<guid>59f9dff7-fa34-4c5a-b261-6480f6c76bea</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Fire_Meade_Supervisor_OPEN.xml</path>
+		<guid>d8d8128b-d123-4f26-b372-b2f507ef90e0</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Fire_Rosewood_OPEN.xml</path>
+		<guid>f021e6e6-89ca-426d-9fa3-ca80ba2ee3bf</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/TShirt_Fire_Supervisor_Rosewood_OPEN.xml</path>
+		<guid>ea99bb16-59b3-4b12-9252-67ebba044913</guid>
+	</files>
+
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_EMS_Louisville_TUCK.xml</path>
+		<guid>f51d8be6-8611-438c-916f-d7edf1499ddb</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_EMS_Meade_TUCK.xml</path>
+		<guid>39f2be4d-92bc-4cdc-9c31-dca98d0d5f70</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_EMS_Jefferson_TUCK.xml</path>
+		<guid>db75964b-6bd5-4938-a476-9fb5bbe88af5</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Ranger_Federal_TUCK.xml</path>
+		<guid>0c50b603-cf7e-4f4d-9c3c-b103d3b0a92f</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Ranger_Conservation_TUCK.xml</path>
+		<guid>aa2c8f06-3b4f-4224-8d9f-8203bb117d0e</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Ranger_State_Park_TUCK.xml</path>
+		<guid>8f24d32d-9e8d-401a-a62c-177e31c80439</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Security_Bank_TUCK.xml</path>
+		<guid>9bf565f7-739b-4425-8ff7-954676e5fc42</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Security_Mall_Grand_Ohio_TUCK.xml</path>
+		<guid>91bb1184-1635-4eda-a228-6946943c5f2b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Security_Mall_Valley_Station_TUCK.xml</path>
+		<guid>52659035-36bd-42ac-a668-cd208175ee71</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Security_Mall_Louisville_TUCK.xml</path>
+		<guid>8abe086c-cc90-453d-8130-ece5e8655284</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Security_Hotel_Havisham_TUCK.xml</path>
+		<guid>f14c5d4b-f3d6-492d-b790-d1b1fd717030</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Security_Hotel_Fancy_TUCK.xml</path>
+		<guid>bd33b4c4-703a-4d44-9e51-a61f6314c60f</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Police_Louisville_TUCK.xml</path>
+		<guid>83e7a3ec-661a-4eea-a60d-23f3ff263f24</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Police_Jefferson_TUCK.xml</path>
+		<guid>183452aa-f9c6-420e-a462-823cea79fb8c</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Sheriff_Jefferson_TUCK.xml</path>
+		<guid>c38e102f-a108-4bbc-99c1-3c9ba2cef2cb</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Sheriff_Meade_TUCK.xml</path>
+		<guid>c59ce2e5-0fa0-4009-b3ad-1024ea05df8e</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Police_Muldraugh_TUCK.xml</path>
+		<guid>a9a1c648-c89c-47be-8015-fa74db8a3b0f</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Police_Riverside_TUCK.xml</path>
+		<guid>b86092a0-1791-40e5-adf3-b8484ee6629e</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Sheriff_Rosewood_TUCK.xml</path>
+		<guid>dfb5231c-557b-43f9-865a-eca66a21c2be</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Police_WestPoint_TUCK.xml</path>
+		<guid>449deba6-392a-4eed-aea3-c2ff333c6879</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Police_KSP_Summer_TUCK.xml</path>
+		<guid>fb72e719-d1ad-4b53-9e2d-d40e7650a728</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Police_KSP_Winter_TUCK.xml</path>
+		<guid>c9cd67aa-6334-4196-afb9-234fcc66a794</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Extra_USPS_TUCK.xml</path>
+		<guid>0fc85809-aae3-4983-93b0-0f94c4bca0fb</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Fireman_Black_Meade_TUCK.xml</path>
+		<guid>aa009dd3-8f94-43e8-815b-9337523962fc</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Fireman_Khaki_Meade_TUCK.xml</path>
+		<guid>6c09056f-75fd-42d8-97ab-d54f22f540de</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Fireman_Black_Rosewood_TUCK.xml</path>
+		<guid>bd19e549-7440-48b7-9953-1daedbd6944a</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Fireman_Khaki_Rosewood_TUCK.xml</path>
+		<guid>ed66a3e0-bad7-4758-9de0-97d48799bd06</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Fireman_Black_Louisville_TUCK.xml</path>
+		<guid>a211ef1b-3406-485b-ab6a-5f562c472da0</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Fireman_Khaki_Louisville_TUCK.xml</path>
+		<guid>74497e8d-6647-4153-bbdc-6f2311a0a864</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_DOC_Jefferson_TUCK.xml</path>
+		<guid>0a82fa86-06c7-4f8b-90ed-4e3eb0e1026b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_DOC_Meade_TUCK.xml</path>
+		<guid>76d489d3-129d-4b31-a793-45f4030c5fc8</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Fire_Formal_Louisville_TUCK.xml</path>
+		<guid>83f9b4c1-16d4-4db7-b44c-0193d4f2ee1d</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Fire_Formal_Meade_TUCK.xml</path>
+		<guid>fb9618f1-f7d6-4a7d-ae18-83b20a8a72b9</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Fire_Formal_Rosewood_TUCK.xml</path>
+		<guid>ae8dc688-e7e8-4093-8670-dbb4aa2d2ca5</guid>
+	</files>
+
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Vest_HighViz_Police_Riverside_OPEN.xml</path>
+		<guid>4aa0c421-5681-400f-aa83-c1250d213ff3</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Vest_HighViz_Police_KSP_OPEN.xml</path>
+		<guid>17e4afde-a8a1-4190-a286-76df69fc1dc0</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Vest_HighViz_Police_Yellow_OPEN.xml</path>
+		<guid>b83bda98-6a16-46c3-aa2a-f787f4d182f7</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Vest_HighViz_Police_Green_OPEN.xml</path>
+		<guid>b0b4f1d9-83f9-46f8-b8aa-00273f210d93</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Vest_HighViz_Police_Green_Unmarked_OPEN.xml</path>
+		<guid>f83de353-89f1-43c1-8d38-569cecfa21ef</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Vest_HighViz_Sheriff_Orange_OPEN.xml</path>
+		<guid>aa38bb9b-9cc0-4c51-b440-9e6de9e27a89</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Vest_HighViz_Sheriff_Green_OPEN.xml</path>
+		<guid>49b2f6b7-4385-4f6c-9d97-84f5d18c21ff</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Vest_HighViz_Sheriff_Yellow_OPEN.xml</path>
+		<guid>043efbb7-9567-459f-8002-ab4bac2539ba</guid>
+	</files>
+
+</fileGuidTable>
