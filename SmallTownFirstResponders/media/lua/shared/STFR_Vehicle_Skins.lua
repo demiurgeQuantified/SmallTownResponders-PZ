@@ -2,6 +2,14 @@
 local vehicleToSkin = {}
 local ZoneName = require 'STFR_Vehicle_Skin_Zones'
 
+---@param message string
+---@param level integer
+local debugError = function(message, level)
+	if isDebugEnabled() then
+		error(message, level+1)
+	end
+end
+
 ---Like DoParam but for vehicles
 ---@param vehicle string Name of the vehicle script
 ---@param param string The parameter(s) to apply to this script
@@ -16,65 +24,99 @@ local DoVehicleParam = function(vehicle, param, module)
 	return true
 end
 
+---@enum LightbarColor
+LightbarColour = {
+	Default = {1, 0, 0, 0, 0, 1},
+	Red = {1, 0, 0, 1, 0, 0},
+	Blue = {0, 0, 1, 0, 0, 1},
+	Yellow = {1, 1, 0, 1, 1, 0}
+}
+
+---@class LightbarColourScript
+---@field default LightbarColor
+---@field [integer] LightbarColor
+
+---@type table<string, LightbarColourScript>
+local lightbarMap = {}
+
+---Overrides the colours 
+---@param vehicle string Short type of the vehicle
+---@param colours LightbarColourScript Vehicle lightbar colour map
+---@param module? string Module of the vehicle. Defaults to Base
+local overrideVehicleLightbar = function(vehicle, colours, module)
+	module = module or "Base"
+	local vehicleScript = ScriptManager.instance:getVehicle(module .. "." .. vehicle)
+	if not vehicleScript then
+		debugError("STFR: tried to override lightbar of non-existent vehicle " .. vehicle, 2)
+		return
+	end
+
+	local lightbar = vehicleScript:getPartById("lightbar")
+	if not lightbar then
+		debugError("STFR: tried to override lightbar of vehicle with no lightbar " .. vehicle, 2)
+		return
+	end
+
+	local coloursStr = ""
+	for k,v in pairs(colours) do
+		coloursStr = string.format("%s%s=%s;%s;%s;%s;%s;%s,", coloursStr, k, unpack(v))
+	end
+
+	vehicleScript:Load(vehicle, "{ lightbar { leftCol = 0;0;0, rightCol = 0;0;0, } }")
+	vehicleScript:Load(vehicle, "{ part lightbar { table colours { " .. coloursStr .. " } lua { init = LuaLightbar_Init,} } }")
+end
+
+Events.OnGameBoot.Add(function()
+	for vehicle, colours in pairs(lightbarMap) do
+		local module, name = unpack(luautils.split(vehicle, "."))
+		overrideVehicleLightbar(name, colours, module)
+	end
+	---@diagnostic disable-next-line: cast-local-type
+	lightbarMap = nil
+end)
+
 ---Utility to add new skins to vehicles
 ---@param vehicle string Name of the vehicle script
+---@param zone ZoneName Zone ID for the skin
 ---@param texture string The new skin's texture
+---@param module? string The vehicle's module
 ---@see DoVehicleParam
 AddVehicleSkin = function(vehicle, zone, texture, module)
-	module = module or "Base"
-
-	if not DoVehicleParam(vehicle, "skin { texture = " .. texture .. ",}", module) then return end
-	local fullName = module .. "." .. vehicle
-	local newSkinNum = ScriptManager.instance:getVehicle(fullName):getSkinCount() - 1
-
-	vehicleToSkin[fullName] = vehicleToSkin[fullName] or {}
-	local zoneSkins = vehicleToSkin[fullName][zone]
-	if zoneSkins then
-		if type(zoneSkins) ~= "table" then -- convert to random picker table if a skin already exists
-			zoneSkins = {zoneSkins}
-			vehicleToSkin[fullName][zone] = zoneSkins
-		end
-		table.insert(zoneSkins, newSkinNum)
-	else
-		vehicleToSkin[fullName][zone] = newSkinNum
-	end
+	AddVehicleSkinLightsMask(vehicle, zone, texture, nil, nil, module)
 end
 
 ---Utility to add new skins to vehicles
 ---@param vehicle string Name of the vehicle script
+---@param zone ZoneName Zone ID for the skin
 ---@param texture string The new skin's texture
 ---@param lights string The new skin's lights texture
+---@param module? string The vehicle's module
 ---@see DoVehicleParam
 AddVehicleSkinLights = function(vehicle, zone, texture, lights, module)
-	module = module or "Base"
-
-	if not DoVehicleParam(vehicle, "skin { texture = " .. texture .. ", textureLights = " .. lights .. ",}", module) then return end
-	local fullName = module .. "." .. vehicle
-	local newSkinNum = ScriptManager.instance:getVehicle(fullName):getSkinCount() - 1
-
-	vehicleToSkin[fullName] = vehicleToSkin[fullName] or {}
-	local zoneSkins = vehicleToSkin[fullName][zone]
-	if zoneSkins then
-		if type(zoneSkins) ~= "table" then -- convert to random picker table if a skin already exists
-			zoneSkins = {zoneSkins}
-			vehicleToSkin[fullName][zone] = zoneSkins
-		end
-		table.insert(zoneSkins, newSkinNum)
-	else
-		vehicleToSkin[fullName][zone] = newSkinNum
-	end
+	AddVehicleSkinLightsMask(vehicle, zone, texture, lights, nil, module)
 end
 
 ---Utility to add new skins to vehicles
 ---@param vehicle string Name of the vehicle script
+---@param zone ZoneName Zone ID for the skin
 ---@param texture string The new skin's texture
----@param lights string The new skin's lights texture
----@param mask string The new skin's mask texture
+---@param lights? string The new skin's lights texture
+---@param mask? string The new skin's mask texture
+---@param module? string The vehicle's module
 ---@see DoVehicleParam
 AddVehicleSkinLightsMask = function(vehicle, zone, texture, lights, mask, module)
 	module = module or "Base"
 
-	if not DoVehicleParam(vehicle, "skin { texture = " .. texture .. ", textureLights = " .. lights .. "," .. ", textureMask = " .. mask .. ",}", module) then return end
+	local param = "skin { texture = " .. texture .. ", "
+	if lights then
+		param = param .. "textureLights =  " .. lights .. ", "
+	end
+	if mask then
+		param = param .. "textureMask = " .. mask .. ", "
+	end
+	param = param .. "}"
+
+	if not DoVehicleParam(vehicle, param, module) then return end
 	local fullName = module .. "." .. vehicle
 	local newSkinNum = ScriptManager.instance:getVehicle(fullName):getSkinCount() - 1
 
@@ -88,6 +130,20 @@ AddVehicleSkinLightsMask = function(vehicle, zone, texture, lights, mask, module
 		table.insert(zoneSkins, newSkinNum)
 	else
 		vehicleToSkin[fullName][zone] = newSkinNum
+	end
+
+	if lights then
+		-- TODO: find prettier way to do this
+		if luautils.stringEnds(lights, "_blue") then
+			lightbarMap[fullName] = lightbarMap[fullName] or { default = LightbarColour.Default }
+			lightbarMap[fullName][newSkinNum] = LightbarColour.Blue
+		elseif luautils.stringEnds(lights, "_red") then
+			lightbarMap[fullName] = lightbarMap[fullName] or { default = LightbarColour.Default }
+			lightbarMap[fullName][newSkinNum] = LightbarColour.Red
+		elseif luautils.stringEnds(lights, "_yellow") then
+			lightbarMap[fullName] = lightbarMap[fullName] or { default = LightbarColour.Default }
+			lightbarMap[fullName][newSkinNum] = LightbarColour.Yellow
+		end
 	end
 end
 
@@ -135,14 +191,6 @@ SetHornSound = function(vehicle, sound)
 	DoVehicleParam(vehicle, "sound { horn = " .. sound .. ",}")
 end
 
----Sets a lightbar's emitted light to nothing. Stupid game limitations.
-SetLightbarBandaid = function(vehicle, module)
-	module = module or "Base"
-	local fullName = module .. "." .. vehicle
-	DoVehicleParam(vehicle, "lightbar { leftCol = 0.0;0.0;0.0,}")
-	DoVehicleParam(vehicle, "lightbar { rightCol = 0.0;0.0;0.0,}")
-end
-
 ---Sets a vehicle to use police zones instead of regular zones. Slower but needed for police
 SetPoliceVehicle = function(vehicle, module)
 	module = module or "Base"
@@ -167,15 +215,6 @@ if getActivatedMods():contains("SirenVariety") then
 end
 
 if not getActivatedMods():contains("VVehicleEnhancer") and not getActivatedMods():contains("SCKCO") then
-	SetLightbarBandaid("CarLightsPolice")
-	SetLightbarBandaid("PickUpVanLightsPolice")
-	SetLightbarBandaid("VanAmbulance")
-	SetLightbarBandaid("PickUpTruckLightsFire")
-	SetLightbarBandaid("PickUpVanLightsFire")
-	SetLightbarBandaid("PickUpTruckLights")
-	SetLightbarBandaid("PickUpVanLights")
-	SetLightbarBandaid("CarLights")
-
 	SetRadioType("StepVan_swat","Radio_HAM")
 
 	SetPoliceVehicle("CarLightsPolice")
@@ -254,7 +293,6 @@ if getActivatedMods():contains("80kz1000") then
 		SetHornSound("80kz1000", "BullHorn")
 	end
 	SetPoliceVehicle("80kz1000")
-	SetLightbarBandaid("80kz1000")
 
 	AddVehicleSkinLights("80kz1000", ZoneName.KSP, "Vehicles/Motorcycle/vehicle_STFR_80kz1000_police_ksp", "Vehicles/Lights/vehicle_STFR_80kz1000_police_lights_blue")
 	AddVehicleSkinLights("80kz1000", ZoneName.Meade, "Vehicles/Motorcycle/vehicle_STFR_80kz1000_sheriff_meade", "Vehicles/Lights/vehicle_STFR_80kz1000_police_lights_blue")
@@ -272,18 +310,6 @@ if getActivatedMods():contains("FRUsedCars") then
 		SetHornSound("86econolineambulance_swat", "BullHorn")
 	end
 	SetMask("86econolineambulance_swat", "Vehicles/Misc/vehicle_STFR_80f350_police_swat_mask")
-
-	SetLightbarBandaid("chevystepvanswat")
-	SetLightbarBandaid("86econolineambulance_swat")
-	SetLightbarBandaid("85vicsheriff")
-	SetLightbarBandaid("92crownvicPD")
-	SetLightbarBandaid("91blazerpd")
-	SetLightbarBandaid("87capricePD")
-	SetLightbarBandaid("80f350ambulance")
-	SetLightbarBandaid("86econolineambulance")
-	SetLightbarBandaid("firepumper")
-	SetLightbarBandaid("87c10fire")
-	SetLightbarBandaid("85vicranger")
 
 	SetRadioType("chevystepvanswat","Radio_HAM")
 	SetRadioType("86econolineambulance_swat","Radio_HAM")
@@ -417,17 +443,6 @@ if getActivatedMods():contains("FRUsedCars") then
 	end
 end
 if getActivatedMods():contains("VVehicleEnhancer") and not getActivatedMods():contains("SCKCO") then
-	SetLightbarBandaid("CarLightsPolice")
-	SetLightbarBandaid("CarLightsSheriff")
-	SetLightbarBandaid("CarLightsStatepolice")
-	SetLightbarBandaid("PickUpVanLightsPolice")
-	SetLightbarBandaid("VanAmbulance")
-	SetLightbarBandaid("PickUpTruckLightsFire")
-	SetLightbarBandaid("PickUpVanLightsFire")
-	SetLightbarBandaid("PickUpTruckLights")
-	SetLightbarBandaid("PickUpVanLights")
-	SetLightbarBandaid("CarLights")
-
 	SetRadioType("StepVan_swat","Radio_HAM")
 
 	SetPoliceVehicle("CarLightsPolice")
@@ -518,39 +533,16 @@ if getActivatedMods():contains("VVehicleEnhancer") and not getActivatedMods():co
 	AddVehicleSkin("Van_doc", ZoneName.Louisville, "Vehicles/VVE/vehicle_STFR_van_doc_jefferson_VVE", "Vehicles/vehicle_vvvan_lights")
 end
 if getActivatedMods():contains("PzkVanillaPlusCarPack") then
-	SetLightbarBandaid("pzkChevalierCeriseSedanPolice")
 	SetPoliceVehicle("pzkChevalierCeriseSedanPolice")
-	SetLightbarBandaid("pzkDashMayorPolice")
 	SetPoliceVehicle("pzkDashMayorPolice")
-	SetLightbarBandaid("pzkFranklinTriumphTWDPolice")
 	SetPoliceVehicle("pzkFranklinTriumphTWDPolice")
-	SetLightbarBandaid("pzkChevalierTowTruckPolice")
 	SetPoliceVehicle("pzkChevalierTowTruckPolice")
-	SetLightbarBandaid("pzkFranklinGalloperPolice")
 	SetPoliceVehicle("pzkFranklinGalloperPolice")
-	SetLightbarBandaid("pzkChevalierLaserPolice")
 	SetPoliceVehicle("pzkChevalierLaserPolice")
-	SetLightbarBandaid("pzkFranklinStallionPolice")
 	SetPoliceVehicle("pzkFranklinStallionPolice")
-	SetLightbarBandaid("pzkFranklinTriumphPolice")
 	SetPoliceVehicle("pzkFranklinTriumphPolice")
-	SetLightbarBandaid("pzkStepVanSwat")
 	SetPoliceVehicle("pzkStepVanSwat")
-	SetLightbarBandaid("pzkFranklinSwatTruck")
 	SetPoliceVehicle("pzkFranklinSwatTruck")
-
-	SetLightbarBandaid("pzkChevalierCeriseSedanFire")
-	SetLightbarBandaid("pzkFranklinTriumphTWDFire")
-	SetLightbarBandaid("pzkChevalierLaserFire")
-	SetLightbarBandaid("pzkFranklinGalloperFire")
-	SetLightbarBandaid("pzkChevalierTowTruckFire")
-	SetLightbarBandaid("pzkFranklinGalloperRanger")
-	SetLightbarBandaid("pzkChevalierLaserRanger")
-	SetLightbarBandaid("pzkVanPolice")
-	SetLightbarBandaid("pzkFranklinTruckFire")
-	SetLightbarBandaid("pzkFranklinTruckFireTanker")
-	SetLightbarBandaid("pzkVanBoxAmbulance")
-	SetLightbarBandaid("pzkVanBoxFiretruck")
 
 	SetRadioType("pzkFranklinStallionPolice","Radio_HAM")
 	SetRadioType("pzkFranklinGalloperPolice","Radio_HAM")
