@@ -110,6 +110,8 @@ LuaLightbar.update = function(self)
         self._startTime = getTimeInMillis()
     end
     if mode == 0 or self._vehicle:getBatteryCharge() <= 0 then
+        cell:removeLamppost(self._light)
+        self._lastSide = 0
         return
     end
 
@@ -139,7 +141,9 @@ LuaLightbar.update = function(self)
             return
         end
 
-        cell:removeLamppost(self._light)
+        if self._lastSide ~= 0 then
+            cell:removeLamppost(self._light)
+        end
         self._light = IsoLightSource.new(x, y, z, r, g, b, 8)
         cell:addLamppost(self._light)
 
