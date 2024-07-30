@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>skinned\backpacks\m_duffelbag</m_MaleModel>
+	<m_FemaleModel>skinned\backpacks\f_duffelbag</m_FemaleModel>
+	<m_GUID>c5443d8e-7b2a-44b2-9070-f93e76e86a55</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<textureChoices>Clothes/Bag/SWAT/STFR_Bag_DuffelBag_Police_Louisville_SWAT_Black</textureChoices>
+</clothingItem>

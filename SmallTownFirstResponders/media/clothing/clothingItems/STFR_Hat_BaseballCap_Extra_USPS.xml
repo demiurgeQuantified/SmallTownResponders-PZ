@@ -9,5 +9,6 @@
 	<m_AttachBone>Bip01_Head</m_AttachBone>
 	<m_HatCategory>Group01</m_HatCategory>
 	<m_MasksFolder>media/textures/Clothes/Hat/Masks</m_MasksFolder>
-	<textureChoices>Clothes\STFR_BaseballCap_USPS</textureChoices>
+	<textureChoices>Clothes\STFR_BaseballCap_Extra_USPS_Grey</textureChoices>
+	<textureChoices>Clothes\STFR_BaseballCap_Extra_USPS_Blue</textureChoices>
 </clothingItem>

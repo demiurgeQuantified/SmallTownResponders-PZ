@@ -1,4 +1,4 @@
-	require("OpenJackets_ItemTweaks");
+require("OpenJackets_ItemTweaks");
 
 -- Copying these over because they're locals :/
 local function ModifyParamsFromOriginalItem(originalItemName, newItemName, resistanceModifier)
@@ -47,6 +47,7 @@ AddNewExtraItem("STFR.Vest_HighViz_Police_Green_Unmarked", "STFR.Vest_HighViz_Po
 AddNewExtraItem("STFR.Vest_HighViz_Sheriff_Orange", "STFR.Vest_HighViz_Sheriff_Orange_OPEN", "CloseJacket", "OpenJacket", 0.75);
 AddNewExtraItem("STFR.Vest_HighViz_Sheriff_Green", "STFR.Vest_HighViz_Sheriff_Green_OPEN", "CloseJacket", "OpenJacket", 0.75);
 AddNewExtraItem("STFR.Vest_HighViz_Sheriff_Yellow", "STFR.Vest_HighViz_Sheriff_Yellow_OPEN", "CloseJacket", "OpenJacket", 0.75);
+AddNewExtraItem("STFR.Vest_HighViz_Extra_USPS", "STFR.Vest_HighViz_Extra_USPS_OPEN", "CloseJacket", "OpenJacket", 0.75);
 
 -- Jacket
 AddNewExtraItem("STFR.Jacket_Police_Muldraugh_Officer", "STFR.Jacket_Police_Muldraugh_Officer_OPEN", "CloseJacket", "OpenJacket", 0.75);
@@ -158,6 +159,8 @@ AddNewExtraItem("STFR.Jacket_Dress_Ranger_Federal", "STFR.Jacket_Dress_Ranger_Fe
 AddNewExtraItem("STFR.Jacket_Dress_Ranger_Conservation", "STFR.Jacket_Dress_Ranger_Conservation_OPEN", "CloseJacket", "OpenJacket", 0.75);
 AddNewExtraItem("STFR.Jacket_Dress_Ranger_State_Park", "STFR.Jacket_Dress_Ranger_State_Park_OPEN", "CloseJacket", "OpenJacket", 0.75);
 
+AddNewExtraItem("STFR.Jacket_Dress_Extra_USPS_Vintage", "STFR.Jacket_Dress_Extra_USPS_Vintage_OPEN", "CloseJacket", "OpenJacket", 0.75);
+
 AddNewExtraItem("STFR.Jacket_Dress_Security_Hotel_Havisham", "STFR.Jacket_Dress_Security_Hotel_Havisham_OPEN", "CloseJacket", "OpenJacket", 0.75);
 AddNewExtraItem("STFR.Jacket_Suit_Security_Hotel_Fancy", "STFR.Jacket_Suit_Security_Hotel_Fancy_OPEN", "CloseJacket", "OpenJacket", 0.75);
 
@@ -200,6 +203,7 @@ AddNewExtraItem("STFR.Trousers_Fireman_Black_Louisville", "STFR.Trousers_Fireman
 AddNewExtraItem("STFR.Trousers_Fireman_Khaki_Louisville", "STFR.Trousers_Fireman_Khaki_Louisville_TUCK", "TuckOut", "TuckIn", 1);
 
 AddNewExtraItem("STFR.Trousers_USPS", "STFR.Trousers_USPS_TUCK", "TuckOut", "TuckIn", 1);
+AddNewExtraItem("STFR.Trousers_USPS_Vintage", "STFR.Trousers_USPS_Vintage_TUCK", "TuckOut", "TuckIn", 1);
 
 AddNewExtraItem("STFR.Trousers_Fire_Formal_Louisville", "STFR.Trousers_Fire_Formal_Louisville_TUCK", "TuckOut", "TuckIn", 1);
 AddNewExtraItem("STFR.Trousers_Fire_Formal_Meade", "STFR.Trousers_Fire_Formal_Meade_TUCK", "TuckOut", "TuckIn", 1);
@@ -212,8 +216,20 @@ AddNewExtraItem("STFR.Trousers_Security_Mall_Grand_Ohio", "STFR.Trousers_Securit
 AddNewExtraItem("STFR.Trousers_Security_Mall_Valley_Station", "STFR.Trousers_Security_Mall_Valley_Station_TUCK", "TuckOut", "TuckIn", 1);
 AddNewExtraItem("STFR.Trousers_Security_Mall_Louisville", "STFR.Trousers_Security_Mall_Louisville_TUCK", "TuckOut", "TuckIn", 1);
 
+AddNewExtraItem("STFR.Trousers_Police_Louisville_SWAT_Black", "STFR.Trousers_Police_Louisville_SWAT_Black_TUCK", "TuckOut", "TuckIn", 1);
+AddNewExtraItem("STFR.Trousers_Police_Louisville_SWAT_Camo", "STFR.Trousers_Police_Louisville_SWAT_Camo_TUCK", "TuckOut", "TuckIn", 1);
+AddNewExtraItem("STFR.Trousers_Police_Jefferson_SWAT_Blue", "STFR.Trousers_Police_Jefferson_SWAT_Blue_TUCK", "TuckOut", "TuckIn", 1);
+AddNewExtraItem("STFR.Trousers_Sheriff_Jefferson_SWAT_Green", "STFR.Trousers_Sheriff_Jefferson_SWAT_Green_TUCK", "TuckOut", "TuckIn", 1);
+AddNewExtraItem("STFR.Trousers_Sheriff_Rosewood_SWAT_Green", "STFR.Trousers_Sheriff_Rosewood_SWAT_Green_TUCK", "TuckOut", "TuckIn", 1);
+AddNewExtraItem("STFR.Trousers_Police_WestPoint_SWAT_Navy", "STFR.Trousers_Police_WestPoint_SWAT_Navy_TUCK", "TuckOut", "TuckIn", 1);
+AddNewExtraItem("STFR.Trousers_Police_KSP_SWAT_Blue", "STFR.Trousers_Police_KSP_SWAT_Blue_TUCK", "TuckOut", "TuckIn", 1);
+AddNewExtraItem("STFR.Trousers_Police_KSP_SWAT_Camo", "STFR.Trousers_Police_KSP_SWAT_Camo_TUCK", "TuckOut", "TuckIn", 1);
+AddNewExtraItem("STFR.Trousers_Sheriff_Meade_SWAT_Tan", "STFR.Trousers_Sheriff_Meade_SWAT_Tan_TUCK", "TuckOut", "TuckIn", 1);
+AddNewExtraItem("STFR.Trousers_Police_Riverside_SWAT_Blue", "STFR.Trousers_Police_Riverside_SWAT_Blue_TUCK", "TuckOut", "TuckIn", 1);
 
 -- t-shirts
+AddNewExtraItem("STFR.TShirt_USPS", "STFR.TShirt_USPS_OPEN", "CloseJacket", "OpenJacket", 0.75);
+
 AddNewExtraItem("STFR.TShirt_DOC_Jefferson", "STFR.TShirt_DOC_Jefferson_OPEN", "CloseJacket", "OpenJacket", 0.75);
 AddNewExtraItem("STFR.TShirt_DOC_Meade", "STFR.TShirt_DOC_Meade_OPEN", "CloseJacket", "OpenJacket", 0.75);
 
@@ -275,6 +291,16 @@ AddNewExtraItem("STFR.TShirt_Security_Mall_Grand_Ohio", "STFR.TShirt_Security_Ma
 AddNewExtraItem("STFR.TShirt_Security_Mall_Valley_Station", "STFR.TShirt_Security_Mall_Valley_Station_OPEN", "CloseJacket", "OpenJacket", 0.75);
 AddNewExtraItem("STFR.TShirt_Security_Mall_Louisville", "STFR.TShirt_Security_Mall_Louisville_OPEN", "CloseJacket", "OpenJacket", 0.75);
 
+AddNewExtraItem("STFR.TShirt_Police_Louisville_Officer_SWAT_Black", "STFR.TShirt_Police_Louisville_Officer_SWAT_Black_OPEN", "CloseJacket", "OpenJacket", 0.75);
+AddNewExtraItem("STFR.TShirt_Police_Louisville_Officer_SWAT_Camo", "STFR.TShirt_Police_Louisville_Officer_SWAT_Camo_OPEN", "CloseJacket", "OpenJacket", 0.75);
+AddNewExtraItem("STFR.TShirt_Police_Jefferson_Officer_SWAT_Blue", "STFR.TShirt_Police_Jefferson_Officer_SWAT_Blue_OPEN", "CloseJacket", "OpenJacket", 0.75);
+AddNewExtraItem("STFR.TShirt_Sheriff_Jefferson_Officer_SWAT_Green", "STFR.TShirt_Sheriff_Jefferson_Officer_SWAT_Green_OPEN", "CloseJacket", "OpenJacket", 0.75);
+AddNewExtraItem("STFR.TShirt_Sheriff_Rosewood_Officer_SWAT_Green", "STFR.TShirt_Sheriff_Rosewood_Officer_SWAT_Green_OPEN", "CloseJacket", "OpenJacket", 0.75);
+AddNewExtraItem("STFR.TShirt_Police_WestPoint_Officer_SWAT_Navy", "STFR.TShirt_Police_WestPoint_Officer_SWAT_Navy_OPEN", "CloseJacket", "OpenJacket", 0.75);
+AddNewExtraItem("STFR.TShirt_Police_KSP_Officer_SWAT_Blue", "STFR.TShirt_Police_KSP_Officer_SWAT_Blue_OPEN", "CloseJacket", "OpenJacket", 0.75);
+AddNewExtraItem("STFR.TShirt_Police_KSP_Officer_SWAT_Camo", "STFR.TShirt_Police_KSP_Officer_SWAT_Camo_OPEN", "CloseJacket", "OpenJacket", 0.75);
+AddNewExtraItem("STFR.TShirt_Sheriff_Meade_Officer_SWAT_Tan", "STFR.TShirt_Sheriff_Meade_Officer_SWAT_Tan_OPEN", "CloseJacket", "OpenJacket", 0.75);
+AddNewExtraItem("STFR.TShirt_Police_Riverside_Officer_SWAT_Blue", "STFR.TShirt_Police_Riverside_Officer_SWAT_Blue_OPEN", "CloseJacket", "OpenJacket", 0.75);
 
 -- shirts
 Add4WayExtraItem("STFR.Shirt_USPS","STFR.Shirt_USPS_ROLL","STFR.Shirt_USPS_OPEN_ROLL","STFR.Shirt_USPS_OPEN","CloseRollDown","CloseRollUp","OpenRollUp","OpenRollDown",0.75)
@@ -340,3 +366,14 @@ Add4WayExtraItem("STFR.Shirt_Security_Hotel_Fancy","STFR.Shirt_Security_Hotel_Fa
 Add4WayExtraItem("STFR.Shirt_Security_Mall_Grand_Ohio","STFR.Shirt_Security_Mall_Grand_Ohio_ROLL","STFR.Shirt_Security_Mall_Grand_Ohio_OPEN_ROLL","STFR.Shirt_Security_Mall_Grand_Ohio_OPEN","CloseRollDown","CloseRollUp","OpenRollUp","OpenRollDown",0.75)
 Add4WayExtraItem("STFR.Shirt_Security_Mall_Valley_Station","STFR.Shirt_Security_Mall_Valley_Station_ROLL","STFR.Shirt_Security_Mall_Valley_Station_OPEN_ROLL","STFR.Shirt_Security_Mall_Valley_Station_OPEN","CloseRollDown","CloseRollUp","OpenRollUp","OpenRollDown",0.75)
 Add4WayExtraItem("STFR.Shirt_Security_Mall_Louisville","STFR.Shirt_Security_Mall_Louisville_ROLL","STFR.Shirt_Security_Mall_Louisville_OPEN_ROLL","STFR.Shirt_Security_Mall_Louisville_OPEN","CloseRollDown","CloseRollUp","OpenRollUp","OpenRollDown",0.75)
+
+Add4WayExtraItem("STFR.Shirt_Police_Louisville_Officer_SWAT_Black","STFR.Shirt_Police_Louisville_Officer_SWAT_Black_ROLL","STFR.Shirt_Police_Louisville_Officer_SWAT_Black_OPEN_ROLL","STFR.Shirt_Police_Louisville_Officer_SWAT_Black_OPEN","CloseRollDown","CloseRollUp","OpenRollUp","OpenRollDown",0.75)
+Add4WayExtraItem("STFR.Shirt_Police_Louisville_Officer_SWAT_Camo","STFR.Shirt_Police_Louisville_Officer_SWAT_Camo_ROLL","STFR.Shirt_Police_Louisville_Officer_SWAT_Camo_OPEN_ROLL","STFR.Shirt_Police_Louisville_Officer_SWAT_Camo_OPEN","CloseRollDown","CloseRollUp","OpenRollUp","OpenRollDown",0.75)
+Add4WayExtraItem("STFR.Shirt_Police_Jefferson_Officer_SWAT_Blue","STFR.Shirt_Police_Jefferson_Officer_SWAT_Blue_ROLL","STFR.Shirt_Police_Jefferson_Officer_SWAT_Blue_OPEN_ROLL","STFR.Shirt_Police_Jefferson_Officer_SWAT_Blue_OPEN","CloseRollDown","CloseRollUp","OpenRollUp","OpenRollDown",0.75)
+Add4WayExtraItem("STFR.Shirt_Sheriff_Jefferson_Officer_SWAT_Green","STFR.Shirt_Sheriff_Jefferson_Officer_SWAT_Green_ROLL","STFR.Shirt_Sheriff_Jefferson_Officer_SWAT_Green_OPEN_ROLL","STFR.Shirt_Sheriff_Jefferson_Officer_SWAT_Green_OPEN","CloseRollDown","CloseRollUp","OpenRollUp","OpenRollDown",0.75)
+Add4WayExtraItem("STFR.Shirt_Sheriff_Rosewood_Officer_SWAT_Green","STFR.Shirt_Sheriff_Rosewood_Officer_SWAT_Green_ROLL","STFR.Shirt_Sheriff_Rosewood_Officer_SWAT_Green_OPEN_ROLL","STFR.Shirt_Sheriff_Rosewood_Officer_SWAT_Green_OPEN","CloseRollDown","CloseRollUp","OpenRollUp","OpenRollDown",0.75)
+Add4WayExtraItem("STFR.Shirt_Police_WestPoint_Officer_SWAT_Navy","STFR.Shirt_Police_WestPoint_Officer_SWAT_Navy_ROLL","STFR.Shirt_Police_WestPoint_Officer_SWAT_Navy_OPEN_ROLL","STFR.Shirt_Police_WestPoint_Officer_SWAT_Navy_OPEN","CloseRollDown","CloseRollUp","OpenRollUp","OpenRollDown",0.75)
+Add4WayExtraItem("STFR.Shirt_Police_KSP_Officer_SWAT_Blue","STFR.Shirt_Police_KSP_Officer_SWAT_Blue_ROLL","STFR.Shirt_Police_KSP_Officer_SWAT_Blue_OPEN_ROLL","STFR.Shirt_Police_KSP_Officer_SWAT_Blue_OPEN","CloseRollDown","CloseRollUp","OpenRollUp","OpenRollDown",0.75)
+Add4WayExtraItem("STFR.Shirt_Police_KSP_Officer_SWAT_Camo","STFR.Shirt_Police_KSP_Officer_SWAT_Camo_ROLL","STFR.Shirt_Police_KSP_Officer_SWAT_Camo_OPEN_ROLL","STFR.Shirt_Police_KSP_Officer_SWAT_Camo_OPEN","CloseRollDown","CloseRollUp","OpenRollUp","OpenRollDown",0.75)
+Add4WayExtraItem("STFR.Shirt_Sheriff_Meade_Officer_SWAT_Tan","STFR.Shirt_Sheriff_Meade_Officer_SWAT_Tan_ROLL","STFR.Shirt_Sheriff_Meade_Officer_SWAT_Tan_OPEN_ROLL","STFR.Shirt_Sheriff_Meade_Officer_SWAT_Tan_OPEN","CloseRollDown","CloseRollUp","OpenRollUp","OpenRollDown",0.75)
+Add4WayExtraItem("STFR.Shirt_Police_Riverside_Officer_SWAT_Blue","STFR.Shirt_Police_Riverside_Officer_SWAT_Blue_ROLL","STFR.Shirt_Police_Riverside_Officer_SWAT_Blue_OPEN_ROLL","STFR.Shirt_Police_Riverside_Officer_SWAT_Blue_OPEN","CloseRollDown","CloseRollUp","OpenRollUp","OpenRollDown",0.75)

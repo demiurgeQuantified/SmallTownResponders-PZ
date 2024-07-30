@@ -14,9 +14,9 @@ if getActivatedMods():contains("TreadsFuelTypesFramework") then
 
 	--- 2) Table of Vehicles with forced Fuel Type while assignment function runs (assign and force ONE fuel type) ---
 	RSForceFuelSwapCars = RSForceFuelSwapCars or {} --- init the table (only once per file)
-	RSForceFuelSwapCars["Base.prisonbus_jefferson"] = "Diesel" --- add FULL car type name to the table and assign existing fuel type
-	RSForceFuelSwapCars["Base.prisonbus_meade"] = "Diesel" --- add FULL car type name to the table and assign existing fuel type
+	RSForceFuelSwapCars["Base.prisonbus"] = "Diesel" --- add FULL car type name to the table and assign existing fuel type
 	RSForceFuelSwapCars["Base.STFR_87gmcarmoredcar"] = "Diesel" --- add FULL car type name to the table and assign existing fuel type
+	RSForceFuelSwapCars["Base.StepVan_swat"] = "Diesel" --- add FULL car type name to the table and assign existing fuel type
 
 	--- 3) Table of Vehicles with multiple Fuel Types while assignment function runs ---
 	---Each vehicle added should keep format as in examples below.
@@ -25,11 +25,8 @@ if getActivatedMods():contains("TreadsFuelTypesFramework") then
 	---Gasoline 20, Diesel 30 - Give 70% for Gasoline (requested 20 + unassigned 50) and 30% for Diesel.
 
 	RSMultiFuelSwapCars = RSMultiFuelSwapCars or {} --- init the table (only once per file)
-	RSMultiFuelSwapCars["Base.86econoline_jefferson"] = {}		--- add FULL car type name to the table
-	RSMultiFuelSwapCars["Base.86econoline_jefferson"]["Gasoline"]  = 60		--- assign the car entry a fuel type and its chance
-	RSMultiFuelSwapCars["Base.86econoline_jefferson"]["Diesel"]  = 40		--- assign the car entry a fuel type and its 
-	RSMultiFuelSwapCars["Base.86econoline_meade"] = {}		--- add FULL car type name to the table
-	RSMultiFuelSwapCars["Base.86econoline_meade"]["Gasoline"]  = 60		--- assign the car entry a fuel type and its chance
-	RSMultiFuelSwapCars["Base.86econoline_meade"]["Diesel"]  = 40		--- assign the car entry a fuel type and its 
+	RSMultiFuelSwapCars["Base.86econoline_doc"] = {}		--- add FULL car type name to the table
+	RSMultiFuelSwapCars["Base.86econoline_doc"]["Gasoline"]  = 60		--- assign the car entry a fuel type and its chance
+	RSMultiFuelSwapCars["Base.86econoline_doc"]["Diesel"]  = 40		--- assign the car entry a fuel type and its 
 
 end

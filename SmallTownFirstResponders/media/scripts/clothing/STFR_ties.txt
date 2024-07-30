@@ -267,6 +267,50 @@ module STFR {
 		Weight = 0.1,
 		WorldStaticModel = Tie_Ground,
 	}
+	item Tie_Full_Extra_USPS
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = USPS Tie,
+		ClothingItem = STFR_Tie_Full_Extra_USPS,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_Extra_USPS,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Worn_Extra_USPS
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = USPS Clip-on Tie,
+		ClothingItem = STFR_Tie_Worn_Extra_USPS,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_Extra_USPS,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Full_Extra_USPS_Vintage
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Vintage USPS Tie,
+		ClothingItem = STFR_Tie_Full_Extra_USPS_Vintage,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_Extra_USPS_Vintage,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
+	item Tie_Worn_Extra_USPS_Vintage
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Vintage USPS Clip-on Tie,
+		ClothingItem = STFR_Tie_Worn_Extra_USPS_Vintage,
+		BodyLocation = Neck,
+		Icon = STFR_Tie_Extra_USPS_Vintage,
+		Weight = 0.1,
+		WorldStaticModel = Tie_Ground,
+	}
 	item Tie_Full_Ranger_Federal
 	{
 	    DisplayCategory = Accessory,

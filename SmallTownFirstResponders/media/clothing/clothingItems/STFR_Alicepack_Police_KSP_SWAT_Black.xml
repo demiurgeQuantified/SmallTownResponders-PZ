@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>skinned\backpacks\m_alice_pack</m_MaleModel>
+	<m_FemaleModel>skinned\backpacks\f_alice_pack</m_FemaleModel>
+	<m_GUID>9790034e-e18d-46dc-81d2-aae7b51495a0</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<textureChoices>Clothes/Bag/SWAT/STFR_Alicepack_Police_KSP_SWAT_Black</textureChoices>
+</clothingItem>

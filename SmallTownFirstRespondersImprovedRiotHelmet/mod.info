@@ -1,0 +1,5 @@
+name=Small Town First Responders - Main Mod - Improved Riot Helmet Support
+id=STFRIRH
+poster=poster.png
+description=Adds better riot helmets with the power of Improved Riot Helmet!
+require=STFR,Improved_Riot_Helmet

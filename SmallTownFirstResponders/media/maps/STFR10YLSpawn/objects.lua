@@ -1,4 +1,5 @@
 if not getActivatedMods():contains("NewEkron") and getActivatedMods():contains("10YL_MAPS") then
+
 	objects = {
 
 		-- Zombie Spawn Zones
@@ -76,9 +77,18 @@ if not getActivatedMods():contains("NewEkron") and getActivatedMods():contains("
 		{ name = "EMSJefferson", type = "ZombiesType", x = 12388, y = 3716, z = 0, width = 7, height = 5 }, -- St. Peregin's Hospital
 
 		-- Rangers
-		{ name = "RangerMeade", type = "ZombiesType", x = 4825, y = 6264, z = 0, width = 34, height = 33 }, -- New Ranger Station
-		{ name = "RangerMeade", type = "ZombiesType", x = 4825, y = 6264, z = 0, width = 34, height = 33 }, -- New Ranger Station
-		{ name = "RangerMeade", type = "ZombiesType", x = 4825, y = 6264, z = 0, width = 34, height = 33 }, -- New Ranger Station
+		-- Riverside Radio Station
+		{ name = "RangerMeade", type = "ZombiesType", x = 4825, y = 6264, z = 0, width = 34, height = 33 },
+
+		-- Deerhead Lake Ranger Station
+		{ name = "RangerMeade", type = "ZombiesType", x = 4661, y = 8589, z = 0, width = 31, height = 18 },
+		{ name = "RangerMeade", type = "ZombiesType", x = 4661, y = 8589, z = 1, width = 31, height = 18 },
+
+		-- Deerhead Lake Ranger Station Campgrounds
+		{ name = "RangerMeade", type = "ZombiesType", x = 4730, y = 7515, z = 0, width = 32, height = 32 },
+		{ name = "RangerMeade", type = "ZombiesType", x = 4070, y = 8160, z = 0, width = 8, height = 8 },
+		{ name = "RangerMeade", type = "ZombiesType", x = 4224, y = 7230, z = 0, width = 32, height = 16 },
+		{ name = "RangerMeade", type = "ZombiesType", x = 4610, y = 8550, z = 0, width = 32, height = 32 },
 
 		-- Picnic Areas
 		{ name = "RangerMeade", type = "ZombiesType", x = 12010, y = 7354, z = 0, width = 56, height = 70}, -- WestPoint Picnic Area
@@ -175,29 +185,37 @@ if not getActivatedMods():contains("NewEkron") and getActivatedMods():contains("
 
 		-- Loot Zones
 		-- Police Areas
-		{ name = "SheriffRosewoodLoot", type = "LootZone", x = 8048, y = 11724, z = 0, width = 5, height = 6}, --  Rosewood Sheriff Station Lockers
+		{ name = "SheriffRosewoodLoot", type = "LootZone", x = 8049, y = 11724, z = 0, width = 3, height = 6}, --  Rosewood Sheriff Station Lockers
 		{ name = "SheriffRosewoodLoot", type = "LootZone", x = 8056, y = 11724, z = 0, width = 4, height = 1}, --  Rosewood Sheriff Station Lockers
+		{ name = "SheriffRosewoodSWATLoot", type = "LootZone", x = 8048, y = 11724, z = 0, width = 1, height = 6}, --  Rosewood Sheriff Station Lockers
+		{ name = "SheriffRosewoodSWATLoot", type = "LootZone", x = 8052, y = 11724, z = 0, width = 1, height = 6}, --  Rosewood Sheriff Station Lockers
 
 		{ name = "PoliceMuldraughLoot", type = "LootZone", x = 10639, y = 10400, z = 0, width = 1, height = 2}, --  Muldraugh Police Station Lockers
 
-		{ name = "SheriffMeadeLoot", type = "LootZone", x = 7251, y = 8371, z = 0, width = 1, height = 2}, --  Ekron Sheriff Station Lockers
+		{ name = "SheriffMeadeLoot", type = "LootZone", x = 7251, y = 8371, z = 0, width = 1, height = 1}, --  Ekron Sheriff Station Lockers
+		{ name = "SheriffMeadeSWATLoot", type = "LootZone", x = 7251, y = 8372, z = 0, width = 1, height = 1}, --  Ekron Sheriff Station Lockers
 
-		{ name = "PoliceWestPointLoot", type = "LootZone", x = 11894, y = 6935, z = 0, width = 4, height = 1}, --  WestPoint Police Station Lockers
+		{ name = "PoliceWestPointLoot", type = "LootZone", x = 11895, y = 6935, z = 0, width = 3, height = 1}, --  WestPoint Police Station Lockers
+		{ name = "PoliceWestPointSWATLoot", type = "LootZone", x = 11894, y = 6935, z = 0, width = 1, height = 1}, --  WestPoint Police Station Lockers
 
 		{ name = "PoliceRiversideLoot", type = "LootZone", x = 6087, y = 5265, z = 0, width = 1, height = 2}, --  Riverside Police Station Lockers
 
-		{ name = "PoliceLouisvilleLoot", type = "LootZone", x = 12472, y = 1599, z = 0, width = 1, height = 4}, --  Louisville Police Station Lockers
 		{ name = "PoliceLouisvilleLoot", type = "LootZone", x = 12476, y = 1601, z = 0, width = 2, height = 5}, --  Louisville Police Station Lockers
 		{ name = "PoliceLouisvilleLoot", type = "LootZone", x = 12481, y = 1600, z = 0, width = 1, height = 7}, --  Louisville Police Station Lockers
+		{ name = "PoliceLouisvilleSWATLoot", type = "LootZone", x = 12472, y = 1599, z = 0, width = 1, height = 4}, --  Louisville Police Station Lockers
 
-		{ name = "SheriffJeffersonLoot", type = "LootZone", x = 13778, y = 2558, z = 0, width = 2, height = 1}, -- Jefferson County Sheriff Station Lockers
+		{ name = "SheriffJeffersonLoot", type = "LootZone", x = 13778, y = 2558, z = 0, width = 1, height = 1}, -- Jefferson County Sheriff Station Lockers
+		{ name = "SheriffJeffersonSWATLoot", type = "LootZone", x = 13779, y = 2558, z = 0, width = 1, height = 1}, -- Jefferson County Sheriff Station Lockers
 
-		{ name = "PoliceJeffersonLoot", type = "LootZone", x = 13217, y = 3073, z = 0, width = 1, height = 6}, -- Jefferson County Police Department Lockers
-		{ name = "PoliceJeffersonLoot", type = "LootZone", x = 13221, y = 3073, z = 0, width = 1, height = 6}, -- Jefferson County Police Department Lockers
+		{ name = "PoliceJeffersonLoot", type = "LootZone", x = 13217, y = 3074, z = 0, width = 1, height = 5}, -- Jefferson County Police Department Lockers
+		{ name = "PoliceJeffersonLoot", type = "LootZone", x = 13221, y = 3074, z = 0, width = 1, height = 5}, -- Jefferson County Police Department Lockers
+		{ name = "PoliceJeffersonSWATLoot", type = "LootZone", x = 13217, y = 3073, z = 0, width = 1, height = 1}, -- Jefferson County Police Department Lockers
+		{ name = "PoliceJeffersonSWATLoot", type = "LootZone", x = 13221, y = 3073, z = 0, width = 1, height = 1}, -- Jefferson County Police Department Lockers
 
 		{ name = "PoliceKSPLoot", type = "LootZone", x = 12970, y = 1393, z = 0, width = 1, height = 6 }, -- Louisville Unmarked Police Station (KSP) Lockers
 		{ name = "PoliceKSPLoot", type = "LootZone", x = 12984, y = 1396, z = 0, width = 4, height = 1 }, -- Louisville Unmarked Police Station (KSP) Lockers
-		{ name = "PoliceKSPLoot", type = "LootZone", x = 12975, y = 1365, z = 0, width = 1, height = 8 }, -- Louisville Unmarked Police Station (KSP) Lockers
+		{ name = "PoliceKSPLoot", type = "LootZone", x = 12975, y = 1368, z = 0, width = 1, height = 5 }, -- Louisville Unmarked Police Station (KSP) Lockers
+		{ name = "PoliceKSPSWATLoot", type = "LootZone", x = 12975, y = 1365, z = 0, width = 1, height = 3 }, -- Louisville Unmarked Police Station (KSP) Lockers
 
 		-- Prison/Jail Areas
 		{ name = "PrisonRosewoodLoot", type = "LootZone", x = 7741, y = 11908, z = 0, width = 2, height = 1 }, -- Rosewood Prison Lockers Admin Building
@@ -308,6 +326,12 @@ if not getActivatedMods():contains("NewEkron") and getActivatedMods():contains("
 		{ name = "rangermeadefederal", type = "ParkingStall", x = 4839, y = 6288, z = 0, width = 6, height = 5, properties = { Direction = "S" } },
 		{ name = "rangermeadestatepark", type = "ParkingStall", x = 4851, y = 6278, z = 0, width = 5, height = 3, properties = { Direction = "E" } },
 
+		{ name = "rangermeadefederal", type = "ParkingStall", x = 4641, y = 8597, z = 0, width = 5, height = 3, properties = { Direction = "E" } },
+		{ name = "rangermeadeconservation", type = "ParkingStall", x = 4638, y = 8611, z = 0, width = 15, height = 3, properties = { Direction = "W" } },
+		{ name = "rangermeadefederal", type = "ParkingStall", x = 4658, y = 8601, z = 0, width = 3, height = 5, properties = { Direction = "N" } },
+		{ name = "rangermeadestatepark", type = "ParkingStall", x = 4663, y = 8610, z = 0, width = 18, height = 5, properties = { Direction = "N" } },
+		{ name = "rangermeadefederal", type = "ParkingStall", x = 4672, y = 8628, z = 0, width = 3, height = 5, properties = { Direction = "S" } },
+
 		{ name = "firerosewood", type = "ParkingStall", x = 8123, y = 11756, z = 0, width = 21, height = 5, properties = { Direction = "N" } },
 		{ name = "firerosewood", type = "ParkingStall", x = 8123, y = 11766, z = 0, width = 21, height = 5, properties = { Direction = "S" } },
 
@@ -334,9 +358,8 @@ if not getActivatedMods():contains("NewEkron") and getActivatedMods():contains("
 		{ name = "banksecurity", type = "ParkingStall", x = 13139, y = 2161, z = 0, width = 3, height = 5, properties = { Direction = "S" } },
 
 	}
-end
 
-if getActivatedMods():contains("NewEkron") and getActivatedMods():contains("10YL_MAPS") then
+elseif getActivatedMods():contains("NewEkron") and getActivatedMods():contains("10YL_MAPS") then
 
 	objects = {
 
@@ -415,9 +438,18 @@ if getActivatedMods():contains("NewEkron") and getActivatedMods():contains("10YL
 		{ name = "EMSJefferson", type = "ZombiesType", x = 12388, y = 3716, z = 0, width = 7, height = 5 }, -- St. Peregin's Hospital
 
 		-- Rangers
-		{ name = "RangerMeade", type = "ZombiesType", x = 4825, y = 6264, z = 0, width = 34, height = 33 }, -- New Ranger Station
-		{ name = "RangerMeade", type = "ZombiesType", x = 4825, y = 6264, z = 0, width = 34, height = 33 }, -- New Ranger Station
-		{ name = "RangerMeade", type = "ZombiesType", x = 4825, y = 6264, z = 0, width = 34, height = 33 }, -- New Ranger Station
+		-- Riverside Radio Station
+		{ name = "RangerMeade", type = "ZombiesType", x = 4825, y = 6264, z = 0, width = 34, height = 33 },
+
+		-- Deerhead Lake Ranger Station
+		{ name = "RangerMeade", type = "ZombiesType", x = 4661, y = 8589, z = 0, width = 31, height = 18 },
+		{ name = "RangerMeade", type = "ZombiesType", x = 4661, y = 8589, z = 1, width = 31, height = 18 },
+
+		-- Deerhead Lake Ranger Station Campgrounds
+		{ name = "RangerMeade", type = "ZombiesType", x = 4730, y = 7515, z = 0, width = 32, height = 32 },
+		{ name = "RangerMeade", type = "ZombiesType", x = 4070, y = 8160, z = 0, width = 8, height = 8 },
+		{ name = "RangerMeade", type = "ZombiesType", x = 4224, y = 7230, z = 0, width = 32, height = 16 },
+		{ name = "RangerMeade", type = "ZombiesType", x = 4610, y = 8550, z = 0, width = 32, height = 32 },
 
 		-- Picnic Areas
 		{ name = "RangerMeade", type = "ZombiesType", x = 12010, y = 7354, z = 0, width = 56, height = 70}, -- WestPoint Picnic Area
@@ -514,14 +546,18 @@ if getActivatedMods():contains("NewEkron") and getActivatedMods():contains("10YL
 
 		-- Loot Zones
 		-- Police Areas
-		{ name = "SheriffRosewoodLoot", type = "LootZone", x = 8048, y = 11724, z = 0, width = 5, height = 6}, --  Rosewood Sheriff Station Lockers
+		{ name = "SheriffRosewoodLoot", type = "LootZone", x = 8049, y = 11724, z = 0, width = 3, height = 6}, --  Rosewood Sheriff Station Lockers
 		{ name = "SheriffRosewoodLoot", type = "LootZone", x = 8056, y = 11724, z = 0, width = 4, height = 1}, --  Rosewood Sheriff Station Lockers
+		{ name = "SheriffRosewoodSWATLoot", type = "LootZone", x = 8048, y = 11724, z = 0, width = 1, height = 6}, --  Rosewood Sheriff Station Lockers
+		{ name = "SheriffRosewoodSWATLoot", type = "LootZone", x = 8052, y = 11724, z = 0, width = 1, height = 6}, --  Rosewood Sheriff Station Lockers
 
 		{ name = "PoliceMuldraughLoot", type = "LootZone", x = 10639, y = 10400, z = 0, width = 1, height = 2}, --  Muldraugh Police Station Lockers
 
-		{ name = "SheriffMeadeLoot", type = "LootZone", x = 7081, y = 8309, z = 0, width = 4, height = 1}, --  Ekron Sheriff Station Lockers
+		{ name = "SheriffMeadeLoot", type = "LootZone", x = 7082, y = 8309, z = 0, width = 3, height = 1}, --  Ekron Sheriff Station Lockers
+		{ name = "SheriffMeadeSWATLoot", type = "LootZone", x = 7081, y = 8309, z = 0, width = 1, height = 1}, --  Ekron Sheriff Station Lockers
 
-		{ name = "PoliceWestPointLoot", type = "LootZone", x = 11894, y = 6935, z = 0, width = 4, height = 1}, --  WestPoint Police Station Lockers
+		{ name = "PoliceWestPointLoot", type = "LootZone", x = 11895, y = 6935, z = 0, width = 3, height = 1}, --  WestPoint Police Station Lockers
+		{ name = "PoliceWestPointSWATLoot", type = "LootZone", x = 11894, y = 6935, z = 0, width = 1, height = 1}, --  WestPoint Police Station Lockers
 
 		{ name = "PoliceRiversideLoot", type = "LootZone", x = 6087, y = 5265, z = 0, width = 1, height = 2}, --  Riverside Police Station Lockers
 
@@ -536,7 +572,8 @@ if getActivatedMods():contains("NewEkron") and getActivatedMods():contains("10YL
 
 		{ name = "PoliceKSPLoot", type = "LootZone", x = 12970, y = 1393, z = 0, width = 1, height = 6 }, -- Louisville Unmarked Police Station (KSP) Lockers
 		{ name = "PoliceKSPLoot", type = "LootZone", x = 12984, y = 1396, z = 0, width = 4, height = 1 }, -- Louisville Unmarked Police Station (KSP) Lockers
-		{ name = "PoliceKSPLoot", type = "LootZone", x = 12975, y = 1365, z = 0, width = 1, height = 8 }, -- Louisville Unmarked Police Station (KSP) Lockers
+		{ name = "PoliceKSPLoot", type = "LootZone", x = 12975, y = 1368, z = 0, width = 1, height = 5 }, -- Louisville Unmarked Police Station (KSP) Lockers
+		{ name = "PoliceKSPSWATLoot", type = "LootZone", x = 12975, y = 1365, z = 0, width = 1, height = 3 }, -- Louisville Unmarked Police Station (KSP) Lockers
 
 		-- Prison/Jail Areas
 		{ name = "PrisonRosewoodLoot", type = "LootZone", x = 7741, y = 11908, z = 0, width = 2, height = 1 }, -- Rosewood Prison Lockers Admin Building
@@ -657,6 +694,12 @@ if getActivatedMods():contains("NewEkron") and getActivatedMods():contains("10YL
 		{ name = "rangermeadeconservation", type = "ParkingStall", x = 4839, y = 6276, z = 0, width = 5, height = 3, properties = { Direction = "W" } },
 		{ name = "rangermeadefederal", type = "ParkingStall", x = 4839, y = 6288, z = 0, width = 6, height = 5, properties = { Direction = "S" } },
 		{ name = "rangermeadestatepark", type = "ParkingStall", x = 4851, y = 6278, z = 0, width = 5, height = 3, properties = { Direction = "E" } },
+
+		{ name = "rangermeadefederal", type = "ParkingStall", x = 4641, y = 8597, z = 0, width = 5, height = 3, properties = { Direction = "E" } },
+		{ name = "rangermeadeconservation", type = "ParkingStall", x = 4638, y = 8611, z = 0, width = 15, height = 3, properties = { Direction = "W" } },
+		{ name = "rangermeadefederal", type = "ParkingStall", x = 4658, y = 8601, z = 0, width = 3, height = 5, properties = { Direction = "N" } },
+		{ name = "rangermeadestatepark", type = "ParkingStall", x = 4663, y = 8610, z = 0, width = 18, height = 5, properties = { Direction = "N" } },
+		{ name = "rangermeadefederal", type = "ParkingStall", x = 4672, y = 8628, z = 0, width = 3, height = 5, properties = { Direction = "S" } },
 
 		{ name = "firerosewood", type = "ParkingStall", x = 8123, y = 11756, z = 0, width = 21, height = 5, properties = { Direction = "N" } },
 		{ name = "firerosewood", type = "ParkingStall", x = 8123, y = 11766, z = 0, width = 21, height = 5, properties = { Direction = "S" } },

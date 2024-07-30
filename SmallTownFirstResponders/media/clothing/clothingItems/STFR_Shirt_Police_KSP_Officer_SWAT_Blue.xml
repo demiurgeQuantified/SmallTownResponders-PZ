@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel></m_MaleModel>
+	<m_FemaleModel></m_FemaleModel>
+	<m_GUID>94d47ef0-4199-4871-be61-7c580b6eefae</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<m_BaseTextures>Clothes\Shirt_Tshirt_Textures\SWAT\STFR_Shirt_Police_KSP_Officer_SWAT_Blue</m_BaseTextures>
+</clothingItem>

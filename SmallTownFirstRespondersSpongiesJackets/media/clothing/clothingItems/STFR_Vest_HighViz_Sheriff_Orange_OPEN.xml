@@ -7,8 +7,7 @@
 	<m_AllowRandomHue>false</m_AllowRandomHue>
 	<m_AllowRandomTint>false</m_AllowRandomTint>
 	<m_AttachBone></m_AttachBone>
-	<m_Masks>12</m_Masks>
-	<m_Masks>14</m_Masks>
+	<m_Masks>11</m_Masks>
 	<m_MasksFolder>media/textures/Clothes/BulletVest/Masks_HighViz</m_MasksFolder>
 	<m_UnderlayMasksFolder>media/textures/Clothes/BulletVest/Masks_HighViz</m_UnderlayMasksFolder>
 	<textureChoices>Clothes\BulletVest\Sheriff\STFR_HighVisVest_Sheriff_Orange</textureChoices>

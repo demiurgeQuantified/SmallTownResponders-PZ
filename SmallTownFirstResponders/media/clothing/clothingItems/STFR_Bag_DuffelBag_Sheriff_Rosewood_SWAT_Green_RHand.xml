@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>media\models_X\Skinned\BackPacks\DuffelBag_RHand.X</m_MaleModel>
+	<m_FemaleModel>media\models_X\Skinned\BackPacks\DuffelBag_RHand.X</m_FemaleModel>
+	<m_GUID>e1c6d801-9472-43a8-a1b0-e9d0ac82fb40</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<textureChoices>Clothes/Bag/SWAT/STFR_Bag_DuffelBag_Sheriff_Rosewood_SWAT_Green</textureChoices>
+</clothingItem>

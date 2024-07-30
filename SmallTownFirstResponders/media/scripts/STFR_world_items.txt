@@ -94,6 +94,12 @@ module Base
         texture = Item_STFR_Badge_Police_Jefferson_Silver,
         scale = 0.4,
     }
+	model STFR_Badge_Police_Jefferson_Gold_Ground
+    {
+        mesh = WorldItems/SeedPacket,
+        texture = Item_STFR_Badge_Police_Jefferson_Gold,
+        scale = 0.4,
+    }
 	model STFR_Badge_Sheriff_Jefferson_Gold_Ground
     {
         mesh = WorldItems/SeedPacket,

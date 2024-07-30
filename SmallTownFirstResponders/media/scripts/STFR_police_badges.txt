@@ -100,7 +100,7 @@ module STFR {
         Icon	=	STFR_Badge_Police_Muldraugh_Silver,
         CanBeWrite  =   true,
         PageToWrite =   1,
-        WorldStaticModel = STFR_Badge_Police_Muldraugh_Gold_Silver,
+        WorldStaticModel = STFR_Badge_Police_Muldraugh_Silver_Ground,
     }
     item Badge_Police_Riverside_Gold
     {

@@ -1,0 +1,5 @@
+name=Small Town First Responders - Main Mod - Spongies Jackets Fix
+id=STFRSJF
+poster=poster.png
+description=Fixes Spongie's open hi-vis vests!
+require=SpnOpenCloth

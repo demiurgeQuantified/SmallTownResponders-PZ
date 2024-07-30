@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel></m_MaleModel>
+	<m_FemaleModel></m_FemaleModel>
+	<m_GUID>606e1452-70c9-40f0-a38a-0cc610812301</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<m_BaseTextures>Clothes\Shirt_Tshirt_Textures\Extra\STFR_TShirt_Polo_Extra_USPS</m_BaseTextures>
+</clothingItem>

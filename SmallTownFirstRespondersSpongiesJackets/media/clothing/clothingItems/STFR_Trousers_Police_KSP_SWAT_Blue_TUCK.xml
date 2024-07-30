@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>Skinned\Clothes\Spongie\M_TrousersTucked</m_MaleModel>
+	<m_FemaleModel>Skinned\Clothes\Spongie\F_TrousersTucked</m_FemaleModel>
+	<m_GUID>4218e56d-69cf-4328-b6f8-e5870d2dd1cf</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<m_Masks>14</m_Masks>
+	<m_Masks>15</m_Masks>
+	<textureChoices>Clothes\Trousers_Mesh\SWAT\STFR_TrousersMesh_Police_KSP_SWAT_Blue</textureChoices>
+</clothingItem>

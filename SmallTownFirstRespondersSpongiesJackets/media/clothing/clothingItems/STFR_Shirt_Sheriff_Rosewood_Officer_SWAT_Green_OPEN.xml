@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel></m_MaleModel>
+	<m_FemaleModel></m_FemaleModel>
+	<m_GUID>977564ca-005f-4f22-96fe-56ff05b3a2e7</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<m_BaseTextures>Clothes\Shirt_Tshirt_Textures\SWAT\STFR_Shirt_Sheriff_Rosewood_Officer_SWAT_Green_OPEN</m_BaseTextures>
+</clothingItem>

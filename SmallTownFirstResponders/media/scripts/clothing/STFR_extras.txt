@@ -28,7 +28,6 @@ module STFR {
 	    ClothingItemExtra = STFR.Belt_Police_Duty,
 		ClothingItemExtraOption = Wear,
 		DisplayName = Duty Belt,
-	    DisplayCategory = Clothing,
 		ClothingItem = STFR_Extra_Belt_Police_Duty,
 		BodyLocation = DutyBelt,
         Weight	=	1.2,

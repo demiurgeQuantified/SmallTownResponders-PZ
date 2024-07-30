@@ -399,6 +399,21 @@ module STFR {
         FabricType = Cotton,
         WorldStaticModel = Trousers_Ground,
     }
+	item Trousers_USPS_Vintage_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Vintage USPS Pants,
+        ClothingItem = STFR_Trousers_Extra_USPS_Vintage_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Extra_USPS_Vintage,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
 	item Trousers_Fire_Formal_Louisville_TUCK
     {
 		DisplayCategory = Clothing,
@@ -527,6 +542,156 @@ module STFR {
         ClothingItem = STFR_Trousers_Security_Mall_Louisville_TUCK,
         BodyLocation = Pants,
         Icon = STFR_Trousers_Security_Mall_Louisville,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Police_Louisville_SWAT_Black_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Louisville DoP SWAT Pants,
+        ClothingItem = STFR_Trousers_Police_Louisville_SWAT_Black_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Police_Louisville_SWAT_Black,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Police_Louisville_SWAT_Camo_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Louisville DoP SWAT Pants,
+        ClothingItem = STFR_Trousers_Police_Louisville_SWAT_Camo_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Police_Louisville_SWAT_Camo,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Police_Jefferson_SWAT_Blue_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Jefferson County PD SWAT Pants,
+        ClothingItem = STFR_Trousers_Police_Jefferson_SWAT_Blue_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Police_Jefferson_SWAT_Blue,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Sheriff_Jefferson_SWAT_Green_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Jefferson County SD SWAT Pants,
+        ClothingItem = STFR_Trousers_Sheriff_Jefferson_SWAT_Green_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Sheriff_Jefferson_SWAT_Green,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Sheriff_Rosewood_SWAT_Green_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Rosewood SD SWAT Pants,
+        ClothingItem = STFR_Trousers_Sheriff_Rosewood_SWAT_Green_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Sheriff_Rosewood_SWAT_Green,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Police_WestPoint_SWAT_Navy_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = WestPoint PD SWAT Pants,
+        ClothingItem = STFR_Trousers_Police_WestPoint_SWAT_Navy_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Police_WestPoint_SWAT_Navy,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Police_KSP_SWAT_Blue_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Kentucky State Police SWAT Pants,
+        ClothingItem = STFR_Trousers_Police_KSP_SWAT_Blue_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Police_KSP_SWAT_Blue,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Police_KSP_SWAT_Camo_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Kentucky State Police SWAT Pants,
+        ClothingItem = STFR_Trousers_Police_KSP_SWAT_Camo_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Police_KSP_SWAT_Camo,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Sheriff_Meade_SWAT_Tan_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Meade County SO SWAT Pants,
+        ClothingItem = STFR_Trousers_Sheriff_Meade_SWAT_Tan_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Sheriff_Meade_SWAT_Tan,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Police_Riverside_SWAT_Blue_TUCK
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Riverside PD SWAT Pants,
+        ClothingItem = STFR_Trousers_Police_Riverside_SWAT_Blue_TUCK,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Police_Riverside_SWAT_Blue,
         BloodLocation = Trousers,
         ScratchDefense = 10,
         Insulation = 0.6,

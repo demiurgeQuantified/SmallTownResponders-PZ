@@ -8,6 +8,22 @@ option STFR.ModVehiclesOnly
 	page = STFR,
 	translation = STFR_ModVehiclesOnly,
 }
+option STFR.DisableSpawns
+{
+	type = boolean,
+	default = false,
+
+	page = STFR,
+	translation = STFR_DisableSpawns,
+}
+option STFR.DisableVehicleZones
+{
+	type = boolean,
+	default = false,
+
+	page = STFR,
+	translation = STFR_DisableVehicleZones,
+}
 option STFR.ZombieOverrides
 {
 	type = boolean,
@@ -42,6 +58,16 @@ option STFR.DressOutfits
 	page = STFRSpawns,
 	translation = STFR_DressOutfits,
 }
+option STFR.DetectiveOutfits
+{
+	type = integer,
+	min = 1,
+	max = 3,
+	default = 1,
+
+	page = STFRSpawns,
+	translation = STFR_DetectiveOutfits,
+}
 option STFR.TrafficOutfits
 {
 	type = integer,
@@ -52,16 +78,6 @@ option STFR.TrafficOutfits
 	page = STFRSpawns,
 	translation = STFR_TrafficOutfits,
 }
-option STFR.BagOutfits
-{
-	type = integer,
-	min = 1,
-	max = 5,
-	default = 1,
-
-	page = STFRSpawns,
-	translation = STFR_BagOutfits,
-}
 option STFR.RiotOutfits
 {
 	type = integer,
@@ -71,6 +87,16 @@ option STFR.RiotOutfits
 
 	page = STFRSpawns,
 	translation = STFR_RiotOutfits,
+}
+option STFR.SWATOutfits
+{
+	type = integer,
+	min = 1,
+	max = 5,
+	default = 1,
+
+	page = STFRSpawns,
+	translation = STFR_SWATOutfits,
 }
 option STFR.RangerOutfits
 {
@@ -364,7 +390,7 @@ option STFR.FilibusterSwatVehicles
 {
 	type = integer,
 	min = 0,
-	max = 60,
+	max = 35,
 	default = 5,
 
 	page = STFRVehicles,
@@ -374,8 +400,8 @@ option STFR.SpawnRateVehicles
 {
 	type = integer,
 	min = 0,
-	max = 40,
-	default = 25,
+	max = 25,
+	default = 10,
 
 	page = STFRVehicles,
 	translation = STFR_SpawnRateVehicles,
@@ -384,7 +410,7 @@ option STFR.CivilianChanceVehicles
 {
 	type = integer,
 	min = 0,
-	max = 60,
+	max = 35,
 	default = 5,
 
 	page = STFRVehicles,
@@ -394,8 +420,8 @@ option STFR.SheriffMeadeVehicles
 {
 	type = integer,
 	min = 0,
-	max = 60,
-	default = 25,
+	max = 35,
+	default = 10,
 
 	page = STFRVehicles,
 	translation = STFR_SheriffMeadeVehicles,
@@ -404,8 +430,8 @@ option STFR.PoliceRiversideVehicles
 {
 	type = integer,
 	min = 0,
-	max = 60,
-	default = 25,
+	max = 35,
+	default = 10,
 
 	page = STFRVehicles,
 	translation = STFR_PoliceRiversideVehicles,
@@ -414,8 +440,8 @@ option STFR.SheriffRosewoodVehicles
 {
 	type = integer,
 	min = 0,
-	max = 60,
-	default = 25,
+	max = 35,
+	default = 10,
 
 	page = STFRVehicles,
 	translation = STFR_SheriffRosewoodVehicles,
@@ -424,8 +450,8 @@ option STFR.PoliceWestPointVehicles
 {
 	type = integer,
 	min = 0,
-	max = 60,
-	default = 25,
+	max = 35,
+	default = 10,
 
 	page = STFRVehicles,
 	translation = STFR_PoliceWestPointVehicles,
@@ -434,8 +460,8 @@ option STFR.PoliceMuldraughVehicles
 {
 	type = integer,
 	min = 0,
-	max = 60,
-	default = 25,
+	max = 35,
+	default = 10,
 
 	page = STFRVehicles,
 	translation = STFR_PoliceMuldraughVehicles,
@@ -444,8 +470,8 @@ option STFR.SheriffJeffersonVehicles
 {
 	type = integer,
 	min = 0,
-	max = 60,
-	default = 25,
+	max = 35,
+	default = 10,
 
 	page = STFRVehicles,
 	translation = STFR_SheriffJeffersonVehicles,
@@ -454,8 +480,8 @@ option STFR.PoliceJeffersonVehicles
 {
 	type = integer,
 	min = 0,
-	max = 60,
-	default = 25,
+	max = 35,
+	default = 10,
 
 	page = STFRVehicles,
 	translation = STFR_PoliceJeffersonVehicles,
@@ -464,8 +490,8 @@ option STFR.PoliceKSPVehicles
 {
 	type = integer,
 	min = 0,
-	max = 60,
-	default = 25,
+	max = 35,
+	default = 10,
 
 	page = STFRVehicles,
 	translation = STFR_PoliceKSPVehicles,
@@ -474,8 +500,8 @@ option STFR.PoliceLouisvilleVehicles
 {
 	type = integer,
 	min = 0,
-	max = 60,
-	default = 25,
+	max = 35,
+	default = 10,
 
 	page = STFRVehicles,
 	translation = STFR_PoliceLouisvilleVehicles,
@@ -484,7 +510,7 @@ option STFR.RangerVehicles
 {
 	type = integer,
 	min = 0,
-	max = 60,
+	max = 35,
 	default = 25,
 
 	page = STFRVehicles,
@@ -494,8 +520,8 @@ option STFR.USPSVehicles
 {
 	type = integer,
 	min = 0,
-	max = 60,
-	default = 25,
+	max = 35,
+	default = 15,
 
 	page = STFRVehicles,
 	translation = STFR_USPSVehicles,
@@ -504,8 +530,8 @@ option STFR.DOCJeffersonVehicles
 {
 	type = integer,
 	min = 0,
-	max = 60,
-	default = 35,
+	max = 35,
+	default = 25,
 
 	page = STFRVehicles,
 	translation = STFR_DOCJeffersonVehicles,
@@ -514,8 +540,8 @@ option STFR.DOCMeadeVehicles
 {
 	type = integer,
 	min = 0,
-	max = 60,
-	default = 25,
+	max = 35,
+	default = 15,
 
 	page = STFRVehicles,
 	translation = STFR_DOCMeadeVehicles,
@@ -524,8 +550,8 @@ option STFR.EMSVehicles
 {
 	type = integer,
 	min = 0,
-	max = 60,
-	default = 25,
+	max = 35,
+	default = 20,
 
 	page = STFRVehicles,
 	translation = STFR_EMSVehicles,
@@ -534,8 +560,8 @@ option STFR.FireRosewoodVehicles
 {
 	type = integer,
 	min = 0,
-	max = 60,
-	default = 25,
+	max = 35,
+	default = 10,
 
 	page = STFRVehicles,
 	translation = STFR_FireRosewoodVehicles,
@@ -544,8 +570,8 @@ option STFR.FireLouisvilleVehicles
 {
 	type = integer,
 	min = 0,
-	max = 60,
-	default = 25,
+	max = 35,
+	default = 10,
 
 	page = STFRVehicles,
 	translation = STFR_FireLouisvilleVehicles,
@@ -554,8 +580,8 @@ option STFR.FireMeadeVehicles
 {
 	type = integer,
 	min = 0,
-	max = 60,
-	default = 25,
+	max = 35,
+	default = 10,
 
 	page = STFRVehicles,
 	translation = STFR_FireMeadeVehicles,
@@ -564,8 +590,8 @@ option STFR.BankTruckVehicles
 {
 	type = integer,
 	min = 0,
-	max = 60,
-	default = 25,
+	max = 35,
+	default = 15,
 
 	page = STFRVehicles,
 	translation = STFR_BankTruckVehicles,

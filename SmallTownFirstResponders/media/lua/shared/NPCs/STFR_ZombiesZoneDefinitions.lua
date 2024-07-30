@@ -2,38 +2,41 @@ require 'NPCs/ZombiesZoneDefinition'
 
 local function STFRSpawns()
 
-	local InmateMeadeRedOutfits = SandboxVars.STFR.InmateMeadeRedOutfits
-	local InmateMeadeYellowOutfits = SandboxVars.STFR.InmateMeadeYellowOutfits
-	local InmateMeadeOrangeOutfits = SandboxVars.STFR.InmateMeadeOrangeOutfits
-	local InmateJeffersonOutfits = SandboxVars.STFR.InmateJeffersonOutfits
-	local DOCMeadeOutfits = SandboxVars.STFR.DOCMeadeOutfits
-	local DOCJeffersonOutfits = SandboxVars.STFR.DOCJeffersonOutfits
-	local PoliceKSPOutfits = SandboxVars.STFR.PoliceKSPOutfits
-	local SheriffJeffersonOutfits = SandboxVars.STFR.SheriffJeffersonOutfits
-	local PoliceJeffersonOutfits = SandboxVars.STFR.PoliceJeffersonOutfits
-	local PoliceLouisvilleOutfits = SandboxVars.STFR.PoliceLouisvilleOutfits
-	local SheriffRosewoodOutfits = SandboxVars.STFR.SheriffRosewoodOutfits
-	local PoliceRiversideOutfits = SandboxVars.STFR.PoliceRiversideOutfits
-	local SheriffMeadeOutfits = SandboxVars.STFR.SheriffMeadeOutfits
-	local PoliceWestPointOutfits = SandboxVars.STFR.PoliceWestPointOutfits
-	local PoliceMuldraughOutfits = SandboxVars.STFR.PoliceMuldraughOutfits
-	local EMSMeadeOutfits = SandboxVars.STFR.EMSMeadeOutfits
-	local EMSJeffersonOutfits = SandboxVars.STFR.EMSJeffersonOutfits
-	local EMSLouisvilleOutfits = SandboxVars.STFR.EMSLouisvilleOutfits
-	local DressOutfits = SandboxVars.STFR.DressOutfits
-	local TrafficOutfits = SandboxVars.STFR.TrafficOutfits
-	local BagOutfits = SandboxVars.STFR.BagOutfits
-	local RiotOutfits = SandboxVars.STFR.RiotOutfits
-	local RangerOutfits = SandboxVars.STFR.RangerOutfits
-	local FireFormalRosewoodOutfits = SandboxVars.STFR.FireFormalRosewoodOutfits
-	local FiremanRosewoodOutfits = SandboxVars.STFR.FiremanRosewoodOutfits
-	local FiremanFullRosewoodOutfits = SandboxVars.STFR.FiremanFullRosewoodOutfits
-	local FireFormalLouisvilleOutfits = SandboxVars.STFR.FireFormalLouisvilleOutfits
-	local FiremanLouisvilleOutfits = SandboxVars.STFR.FiremanLouisvilleOutfits
-	local FiremanFullLouisvilleOutfits = SandboxVars.STFR.FiremanFullLouisvilleOutfits
-	local USPSOutfits = SandboxVars.STFR.USPSOutfits
-	local OtherOutfits = SandboxVars.STFR.OtherOutfits
-	local SecurityOutfits = SandboxVars.STFR.SecurityOutfits
+	local STFRChances = {}
+
+	STFRChances.InmateMeadeRedOutfits = SandboxVars.STFR.InmateMeadeRedOutfits
+	STFRChances.InmateMeadeYellowOutfits = SandboxVars.STFR.InmateMeadeYellowOutfits
+	STFRChances.InmateMeadeOrangeOutfits = SandboxVars.STFR.InmateMeadeOrangeOutfits
+	STFRChances.InmateJeffersonOutfits = SandboxVars.STFR.InmateJeffersonOutfits
+	STFRChances.DOCMeadeOutfits = SandboxVars.STFR.DOCMeadeOutfits
+	STFRChances.DOCJeffersonOutfits = SandboxVars.STFR.DOCJeffersonOutfits
+	STFRChances.PoliceKSPOutfits = SandboxVars.STFR.PoliceKSPOutfits
+	STFRChances.SheriffJeffersonOutfits = SandboxVars.STFR.SheriffJeffersonOutfits
+	STFRChances.PoliceJeffersonOutfits = SandboxVars.STFR.PoliceJeffersonOutfits
+	STFRChances.PoliceLouisvilleOutfits = SandboxVars.STFR.PoliceLouisvilleOutfits
+	STFRChances.SheriffRosewoodOutfits = SandboxVars.STFR.SheriffRosewoodOutfits
+	STFRChances.PoliceRiversideOutfits = SandboxVars.STFR.PoliceRiversideOutfits
+	STFRChances.SheriffMeadeOutfits = SandboxVars.STFR.SheriffMeadeOutfits
+	STFRChances.PoliceWestPointOutfits = SandboxVars.STFR.PoliceWestPointOutfits
+	STFRChances.PoliceMuldraughOutfits = SandboxVars.STFR.PoliceMuldraughOutfits
+	STFRChances.EMSMeadeOutfits = SandboxVars.STFR.EMSMeadeOutfits
+	STFRChances.EMSJeffersonOutfits = SandboxVars.STFR.EMSJeffersonOutfits
+	STFRChances.EMSLouisvilleOutfits = SandboxVars.STFR.EMSLouisvilleOutfits
+	STFRChances.DressOutfits = SandboxVars.STFR.DressOutfits
+	STFRChances.DetectiveOutfits = SandboxVars.STFR.DetectiveOutfits
+	STFRChances.TrafficOutfits = SandboxVars.STFR.TrafficOutfits
+	STFRChances.RiotOutfits = SandboxVars.STFR.RiotOutfits
+	STFRChances.SWATOutfits = SandboxVars.STFR.SWATOutfits
+	STFRChances.RangerOutfits = SandboxVars.STFR.RangerOutfits
+	STFRChances.FireFormalRosewoodOutfits = SandboxVars.STFR.FireFormalRosewoodOutfits
+	STFRChances.FiremanRosewoodOutfits = SandboxVars.STFR.FiremanRosewoodOutfits
+	STFRChances.FiremanFullRosewoodOutfits = SandboxVars.STFR.FiremanFullRosewoodOutfits
+	STFRChances.FireFormalLouisvilleOutfits = SandboxVars.STFR.FireFormalLouisvilleOutfits
+	STFRChances.FiremanLouisvilleOutfits = SandboxVars.STFR.FiremanLouisvilleOutfits
+	STFRChances.FiremanFullLouisvilleOutfits = SandboxVars.STFR.FiremanFullLouisvilleOutfits
+	STFRChances.USPSOutfits = SandboxVars.STFR.USPSOutfits
+	STFRChances.OtherOutfits = SandboxVars.STFR.OtherOutfits
+	STFRChances.SecurityOutfits = SandboxVars.STFR.SecurityOutfits
 
 	ZombiesZoneDefinition = ZombiesZoneDefinition or {};
 
@@ -56,14 +59,14 @@ local function STFRSpawns()
 		},
 		SecurityBank = {
 			name="SecurityBank",
-			chance=SecurityOutfits,
+			chance=STFRChances.SecurityOutfits,
 		},
 	}
 
 	ZombiesZoneDefinition.MallGrandOhio = {
 		SecurityMallGrandOhio = {
 			name="SecurityMallGrandOhio",
-			chance=SecurityOutfits,
+			chance=STFRChances.SecurityOutfits,
 		},
 		Generic01 = {
 			name="Generic01",
@@ -110,7 +113,7 @@ local function STFRSpawns()
 	ZombiesZoneDefinition.MallValleyStation = {
 		SecurityMallValleyStation = {
 			name="SecurityMallValleyStation",
-			chance=SecurityOutfits,
+			chance=STFRChances.SecurityOutfits,
 		},
 		Generic01 = {
 			name="Generic01",
@@ -157,7 +160,7 @@ local function STFRSpawns()
 	ZombiesZoneDefinition.MallLouisville = {
 		SecurityMallLouisville = {
 			name="SecurityMallLouisville",
-			chance=SecurityOutfits,
+			chance=STFRChances.SecurityOutfits,
 		},
 		Generic01 = {
 			name="Generic01",
@@ -204,7 +207,7 @@ local function STFRSpawns()
 	ZombiesZoneDefinition.HotelHavisham = {
 		SecurityHotelHavisham = {
 			name="SecurityHotelHavisham",
-			chance=SecurityOutfits,
+			chance=STFRChances.SecurityOutfits,
 		},
 		Tourist = {
 			name="Tourist",
@@ -223,7 +226,7 @@ local function STFRSpawns()
 	ZombiesZoneDefinition.HotelFancy = {
 		SecurityHotelFancy = {
 			name="SecurityHotelFancy",
-			chance=SecurityOutfits,
+			chance=STFRChances.SecurityOutfits,
 		},
 		Tourist = {
 			name="Tourist",
@@ -242,39 +245,55 @@ local function STFRSpawns()
 	ZombiesZoneDefinition.SheriffRosewood = {
 		SheriffRosewoodOfficer = {
 			name="SheriffRosewoodOfficer",
-			chance=SheriffRosewoodOutfits,
+			chance=STFRChances.SheriffRosewoodOutfits,
 		},
 		SheriffRosewoodSGT = {
 			name="SheriffRosewoodSGT",
-			chance=SheriffRosewoodOutfits,
+			chance=STFRChances.SheriffRosewoodOutfits,
 		},
 		SheriffRosewoodCPT = {
 			name="SheriffRosewoodCPT",
-			chance=SheriffRosewoodOutfits,
+			chance=STFRChances.SheriffRosewoodOutfits,
 		},
-		PoliceRosewoodOfficerRiot = {
-			name="PoliceRosewoodOfficerRiot",
-			chance=RiotOutfits,
+		SheriffRosewoodOfficerRiot = {
+			name="SheriffRosewoodOfficerRiot",
+			chance=STFRChances.RiotOutfits,
 		},
 		SheriffRosewoodOfficerDress = {
 			name="SheriffRosewoodOfficerDress",
-			chance=DressOutfits,
+			chance=STFRChances.DressOutfits,
 		},
 		SheriffRosewoodSGTDress = {
 			name="SheriffRosewoodSGTDress",
-			chance=DressOutfits,
+			chance=STFRChances.DressOutfits,
 		},
 		SheriffRosewoodCPTDress = {
 			name="SheriffRosewoodCPTDress",
-			chance=DressOutfits,
+			chance=STFRChances.DressOutfits,
 		},
 		SheriffRosewoodOfficerTraffic = {
 			name="SheriffRosewoodOfficerTraffic",
-			chance=TrafficOutfits,
+			chance=STFRChances.TrafficOutfits,
 		},
-		SheriffRosewoodOfficerBag = {
-			name="SheriffRosewoodOfficerBag",
-			chance=BagOutfits,
+		SheriffRosewoodOfficerSWATGreenLight = {
+			name="SheriffRosewoodOfficerSWATGreenLight",
+			chance=STFRChances.SWATOutfits,
+		},
+		SheriffRosewoodOfficerSWATGreenHeavy = {
+			name="SheriffRosewoodOfficerSWATGreenHeavy",
+			chance=STFRChances.SWATOutfits,
+		},
+		SheriffRosewoodOfficerSARGreenLight = {
+			name="SheriffRosewoodOfficerSARGreenLight",
+			chance=STFRChances.SWATOutfits,
+		},
+		SheriffRosewoodOfficerSARGreenHeavy = {
+			name="SheriffRosewoodOfficerSARGreenHeavy",
+			chance=STFRChances.SWATOutfits,
+		},
+		SheriffRosewoodDetectiveCasual = {
+			name="SheriffRosewoodDetectiveCasual",
+			chance=STFRChances.DetectiveOutfits,
 		},
 		OfficeWorkerSkirt = {
 			name="OfficeWorkerSkirt",
@@ -292,7 +311,7 @@ local function STFRSpawns()
 	ZombiesZoneDefinition.CourtHouseRosewood = {
 		Judge = {
 			name="Judge",
-			chance=OtherOutfits,
+			chance=STFRChances.OtherOutfits,
 		},
 		OfficeWorkerSkirt = {
 			name="OfficeWorkerSkirt",
@@ -312,46 +331,50 @@ local function STFRSpawns()
 		},
 		SheriffRosewoodOfficer = {
 			name="SheriffRosewoodOfficer",
-			chance=SheriffRosewoodOutfits,
+			chance=STFRChances.SheriffRosewoodOutfits,
 		},
 	}
 
 	ZombiesZoneDefinition.PoliceRiverside = {
 		PoliceRiversideOfficer = {
 			name="PoliceRiversideOfficer",
-			chance=PoliceRiversideOutfits,
+			chance=STFRChances.PoliceRiversideOutfits,
 		},
 		PoliceRiversideSGT = {
 			name="PoliceRiversideSGT",
-			chance=PoliceRiversideOutfits,
+			chance=STFRChances.PoliceRiversideOutfits,
 		},
 		PoliceRiversideCPT = {
 			name="PoliceRiversideCPT",
-			chance=PoliceRiversideOutfits,
+			chance=STFRChances.PoliceRiversideOutfits,
 		},
 		PoliceRiversideOfficerRiot = {
 			name="PoliceRiversideOfficerRiot",
-			chance=RiotOutfits,
+			chance=STFRChances.RiotOutfits,
 		},
 		PoliceRiversideOfficerDress = {
 			name="PoliceRiversideOfficerDress",
-			chance=DressOutfits,
+			chance=STFRChances.DressOutfits,
 		},
 		PoliceRiversideSGTDress = {
 			name="PoliceRiversideSGTDress",
-			chance=DressOutfits,
+			chance=STFRChances.DressOutfits,
 		},
 		PoliceRiversideCPTDress = {
 			name="PoliceRiversideCPTDress",
-			chance=DressOutfits,
+			chance=STFRChances.DressOutfits,
 		},
 		PoliceRiversideOfficerTraffic = {
 			name="PoliceRiversideOfficerTraffic",
-			chance=TrafficOutfits,
+			chance=STFRChances.TrafficOutfits,
 		},
-		PoliceRiversideOfficerBag = {
-			name="PoliceRiversideOfficerBag",
-			chance=BagOutfits,
+		PoliceRiversideOfficerSARBlueLight = {
+			name="PoliceRiversideOfficerSARBlueLight",
+			chance=STFRChances.SWATOutfits,
+		},
+		PoliceRiversideDetectiveCasual = {
+			name="PoliceRiversideDetectiveCasual",
+			chance=STFRChances.DetectiveOutfits,
 		},
 		OfficeWorkerSkirt = {
 			name="OfficeWorkerSkirt",
@@ -369,39 +392,39 @@ local function STFRSpawns()
 	ZombiesZoneDefinition.PoliceMuldraugh = {
 		PoliceMuldraughOfficer = {
 			name="PoliceMuldraughOfficer",
-			chance=PoliceMuldraughOutfits,
+			chance=STFRChances.PoliceMuldraughOutfits,
 		},
 		PoliceMuldraughSGT = {
 			name="PoliceMuldraughSGT",
-			chance=PoliceMuldraughOutfits,
+			chance=STFRChances.PoliceMuldraughOutfits,
 		},
 		PoliceMuldraughCPT = {
 			name="PoliceMuldraughCPT",
-			chance=PoliceMuldraughOutfits,
+			chance=STFRChances.PoliceMuldraughOutfits,
 		},
 		PoliceMuldraughOfficerRiot = {
 			name="PoliceMuldraughOfficerRiot",
-			chance=RiotOutfits,
+			chance=STFRChances.RiotOutfits,
 		},
 		PoliceMuldraughOfficerDress = {
 			name="PoliceMuldraughOfficerDress",
-			chance=DressOutfits,
+			chance=STFRChances.DressOutfits,
 		},
 		PoliceMuldraughSGTDress = {
 			name="PoliceMuldraughSGTDress",
-			chance=DressOutfits,
+			chance=STFRChances.DressOutfits,
 		},
 		PoliceMuldraughCPTDress = {
 			name="PoliceMuldraughCPTDress",
-			chance=DressOutfits,
+			chance=STFRChances.DressOutfits,
 		},
 		PoliceMuldraughOfficerTraffic = {
 			name="PoliceMuldraughOfficerTraffic",
-			chance=TrafficOutfits,
+			chance=STFRChances.TrafficOutfits,
 		},
-		PoliceMuldraughOfficerBag = {
-			name="PoliceMuldraughOfficerBag",
-			chance=BagOutfits,
+		PoliceMuldraughDetectiveCasual = {
+			name="PoliceMuldraughDetectiveCasual",
+			chance=STFRChances.DetectiveOutfits,
 		},
 		OfficeWorkerSkirt = {
 			name="OfficeWorkerSkirt",
@@ -419,39 +442,47 @@ local function STFRSpawns()
 	ZombiesZoneDefinition.PoliceWestPoint = {
 		PoliceWestPointOfficer = {
 			name="PoliceWestPointOfficer",
-			chance=PoliceWestPointOutfits,
+			chance=STFRChances.PoliceWestPointOutfits,
 		},
 		PoliceWestPointSGT = {
 			name="PoliceWestPointSGT",
-			chance=PoliceWestPointOutfits,
+			chance=STFRChances.PoliceWestPointOutfits,
 		},
 		PoliceWestPointCPT = {
 			name="PoliceWestPointCPT",
-			chance=PoliceWestPointOutfits,
+			chance=STFRChances.PoliceWestPointOutfits,
 		},
 		PoliceWestPointOfficerRiot = {
 			name="PoliceWestPointOfficerRiot",
-			chance=RiotOutfits,
+			chance=STFRChances.RiotOutfits,
 		},
 		PoliceWestPointOfficerDress = {
 			name="PoliceWestPointOfficerDress",
-			chance=DressOutfits,
+			chance=STFRChances.DressOutfits,
 		},
 		PoliceWestPointSGTDress = {
 			name="PoliceWestPointSGTDress",
-			chance=DressOutfits,
+			chance=STFRChances.DressOutfits,
 		},
 		PoliceWestPointCPTDress = {
 			name="PoliceWestPointCPTDress",
-			chance=DressOutfits,
+			chance=STFRChances.DressOutfits,
 		},
 		PoliceWestPointOfficerTraffic = {
 			name="PoliceWestPointOfficerTraffic",
-			chance=TrafficOutfits,
+			chance=STFRChances.TrafficOutfits,
 		},
-		PoliceWestPointOfficerBag = {
-			name="PoliceWestPointOfficerBag",
-			chance=BagOutfits,
+		PoliceWestPointOfficerSWATNavyLight = {
+			name="PoliceWestPointOfficerSWATNavyLight",
+			chance=STFRChances.SWATOutfits,
+		},
+		PoliceWestPointOfficerSWATNavyHeavy = {
+			name="PoliceWestPointOfficerSWATNavyHeavy",
+			chance=STFRChances.SWATOutfits,
+		},
+		PoliceWestPointDetectiveCasual = {
+			name="PoliceWestPointDetectiveCasual",
+			chance=STFRChances.DetectiveOutfits,
 		},
 		OfficeWorkerSkirt = {
 			name="OfficeWorkerSkirt",
@@ -469,39 +500,47 @@ local function STFRSpawns()
 	ZombiesZoneDefinition.SheriffJefferson = {
 		SheriffJeffersonOfficer = {
 			name="SheriffJeffersonOfficer",
-			chance=SheriffJeffersonOutfits,
+			chance=STFRChances.SheriffJeffersonOutfits,
 		},
 		SheriffJeffersonSGT = {
 			name="SheriffJeffersonSGT",
-			chance=SheriffJeffersonOutfits,
+			chance=STFRChances.SheriffJeffersonOutfits,
 		},
 		SheriffJeffersonCPT = {
 			name="SheriffJeffersonCPT",
-			chance=SheriffJeffersonOutfits,
+			chance=STFRChances.SheriffJeffersonOutfits,
 		},
 		SheriffJeffersonOfficerRiot = {
 			name="SheriffJeffersonOfficerRiot",
-			chance=RiotOutfits,
+			chance=STFRChances.RiotOutfits,
 		},
 		SheriffJeffersonOfficerDress = {
 			name="PoliceSheriffJeffersonDress",
-			chance=DressOutfits,
+			chance=STFRChances.DressOutfits,
 		},
 		SheriffJeffersonSGTDress = {
 			name="SheriffJeffersonSGTDress",
-			chance=DressOutfits,
+			chance=STFRChances.DressOutfits,
 		},
 		SheriffJeffersonCPTDress = {
 			name="SheriffJeffersonCPTDress",
-			chance=DressOutfits,
+			chance=STFRChances.DressOutfits,
 		},
 		SheriffJeffersonOfficerTraffic = {
 			name="SheriffJeffersonOfficerTraffic",
-			chance=TrafficOutfits,
+			chance=STFRChances.TrafficOutfits,
 		},
-		SheriffJeffersonOfficerBag = {
-			name="SheriffJeffersonOfficerBag",
-			chance=BagOutfits,
+		SheriffJeffersonOfficerSWATGreenLight = {
+			name="SheriffJeffersonOfficerSWATGreenLight",
+			chance=STFRChances.SWATOutfits,
+		},
+		SheriffJeffersonOfficerSWATGreenHeavy = {
+			name="SheriffJeffersonOfficerSWATGreenHeavy",
+			chance=STFRChances.SWATOutfits,
+		},
+		SheriffJeffersonDetectiveCasual = {
+			name="SheriffJeffersonDetectiveCasual",
+			chance=STFRChances.DetectiveOutfits,
 		},
 		OfficeWorkerSkirt = {
 			name="OfficeWorkerSkirt",
@@ -519,39 +558,47 @@ local function STFRSpawns()
 	ZombiesZoneDefinition.PoliceJefferson = {
 		PoliceJeffersonOfficer = {
 			name="PoliceJeffersonOfficer",
-			chance=PoliceJeffersonOutfits,
+			chance=STFRChances.PoliceJeffersonOutfits,
 		},
 		PoliceJeffersonSGT = {
 			name="PoliceJeffersonSGT",
-			chance=PoliceJeffersonOutfits,
+			chance=STFRChances.PoliceJeffersonOutfits,
 		},
 		PoliceJeffersonCPT = {
 			name="PoliceJeffersonCPT",
-			chance=PoliceJeffersonOutfits,
+			chance=STFRChances.PoliceJeffersonOutfits,
 		},
 		PoliceJeffersonOfficerRiot = {
 			name="PoliceJeffersonOfficerRiot",
-			chance=RiotOutfits,
+			chance=STFRChances.RiotOutfits,
 		},
 		PoliceJeffersonOfficerDress = {
 			name="PoliceJeffersonOfficerDress",
-			chance=DressOutfits,
+			chance=STFRChances.DressOutfits,
 		},
 		PoliceJeffersonSGTDress = {
 			name="PoliceJeffersonSGTDress",
-			chance=DressOutfits,
+			chance=STFRChances.DressOutfits,
 		},
 		PoliceJeffersonCPTDress = {
 			name="PoliceJeffersonCPTDress",
-			chance=DressOutfits,
+			chance=STFRChances.DressOutfits,
 		},
 		PoliceJeffersonOfficerTraffic = {
 			name="PoliceJeffersonOfficerTraffic",
-			chance=TrafficOutfits,
+			chance=STFRChances.TrafficOutfits,
 		},
-		PoliceJeffersonOfficerBag = {
-			name="PoliceJeffersonOfficerBag",
-			chance=BagOutfits,
+		PoliceJeffersonOfficerSWATBlueLight = {
+			name="PoliceJeffersonOfficerSWATBlueLight",
+			chance=STFRChances.SWATOutfits,
+		},
+		PoliceJeffersonOfficerSWATBlueHeavy = {
+			name="PoliceJeffersonOfficerSWATBlueHeavy",
+			chance=STFRChances.SWATOutfits,
+		},
+		PoliceJeffersonDetectiveCasual = {
+			name="PoliceJeffersonDetectiveCasual",
+			chance=STFRChances.DetectiveOutfits,
 		},
 		OfficeWorkerSkirt = {
 			name="OfficeWorkerSkirt",
@@ -569,39 +616,55 @@ local function STFRSpawns()
 	ZombiesZoneDefinition.PoliceLouisville = {
 		PoliceLouisvilleOfficer = {
 			name="PoliceLouisvilleOfficer",
-			chance=PoliceLouisvilleOutfits,
+			chance=STFRChances.PoliceLouisvilleOutfits,
 		},
 		PoliceLouisvilleSGT = {
 			name="PoliceLouisvilleSGT",
-			chance=PoliceLouisvilleOutfits,
+			chance=STFRChances.PoliceLouisvilleOutfits,
 		},
 		PoliceLouisvilleCPT = {
 			name="PoliceLouisvilleCPT",
-			chance=PoliceLouisvilleOutfits,
+			chance=STFRChances.PoliceLouisvilleOutfits,
 		},
 		PoliceLouisvilleOfficerRiot = {
 			name="PoliceLouisvilleOfficerRiot",
-			chance=RiotOutfits,
+			chance=STFRChances.RiotOutfits,
 		},
 		PoliceLouisvilleOfficerDress = {
 			name="PoliceLouisvilleOfficerDress",
-			chance=DressOutfits,
+			chance=STFRChances.DressOutfits,
 		},
 		PoliceLouisvilleSGTDress = {
 			name="PoliceLouisvilleSGTDress",
-			chance=DressOutfits,
+			chance=STFRChances.DressOutfits,
 		},
 		PoliceLouisvilleCPTDress = {
 			name="PoliceLouisvilleCPTDress",
-			chance=DressOutfits,
+			chance=STFRChances.DressOutfits,
 		},
 		PoliceLouisvilleOfficerTraffic = {
 			name="PoliceLouisvilleOfficerTraffic",
-			chance=TrafficOutfits,
+			chance=STFRChances.TrafficOutfits,
 		},
-		PoliceLouisvilleOfficerBag = {
-			name="PoliceLouisvilleOfficerBag",
-			chance=BagOutfits,
+		PoliceLouisvilleOfficerSWATBlackLight = {
+			name="PoliceLouisvilleOfficerSWATBlackLight",
+			chance=STFRChances.SWATOutfits,
+		},
+		PoliceLouisvilleOfficerSWATBlackHeavy = {
+			name="PoliceLouisvilleOfficerSWATBlackHeavy",
+			chance=STFRChances.SWATOutfits,
+		},
+		PoliceLouisvilleOfficerSWATCamoLight = {
+			name="PoliceLouisvilleOfficerSWATCamoLight",
+			chance=STFRChances.SWATOutfits,
+		},
+		PoliceLouisvilleOfficerSWATCamoHeavy = {
+			name="PoliceLouisvilleOfficerSWATCamoHeavy",
+			chance=STFRChances.SWATOutfits,
+		},
+		PoliceLouisvilleDetectiveCasual = {
+			name="PoliceLouisvilleDetectiveCasual",
+			chance=STFRChances.DetectiveOutfits,
 		},
 		OfficeWorkerSkirt = {
 			name="OfficeWorkerSkirt",
@@ -619,7 +682,7 @@ local function STFRSpawns()
 	ZombiesZoneDefinition.CourtHouseLouisville = {
 		Judge = {
 			name="Judge",
-			chance=OtherOutfits,
+			chance=STFRChances.OtherOutfits,
 		},
 		OfficeWorkerSkirt = {
 			name="OfficeWorkerSkirt",
@@ -639,46 +702,54 @@ local function STFRSpawns()
 		},
 		PoliceLouisvilleOfficer = {
 			name="PoliceLouisvilleOfficer",
-			chance=PoliceLouisvilleOutfits,
+			chance=STFRChances.PoliceLouisvilleOutfits,
 		},
 	}
 
 	ZombiesZoneDefinition.SheriffMeade = {
 		SheriffMeadeOfficer = {
 			name="SheriffMeadeOfficer",
-			chance=SheriffMeadeOutfits,
+			chance=STFRChances.SheriffMeadeOutfits,
 		},
 		SheriffMeadeSGT = {
 			name="SheriffMeadeSGT",
-			chance=SheriffMeadeOutfits,
+			chance=STFRChances.SheriffMeadeOutfits,
 		},
 		SheriffMeadeCPT = {
 			name="SheriffMeadeCPT",
-			chance=SheriffMeadeOutfits,
+			chance=STFRChances.SheriffMeadeOutfits,
 		},
 		SheriffMeadeOfficerRiot = {
 			name="SheriffMeadeOfficerRiot",
-			chance=RiotOutfits,
+			chance=STFRChances.RiotOutfits,
 		},
 		SheriffMeadeOfficerDress = {
 			name="SheriffMeadeOfficerDress",
-			chance=DressOutfits,
+			chance=STFRChances.DressOutfits,
 		},
 		SheriffMeadeSGTDress = {
 			name="SheriffMeadeSGTDress",
-			chance=DressOutfits,
+			chance=STFRChances.DressOutfits,
 		},
 		SheriffMeadeCPTDress = {
 			name="SheriffMeadeCPTDress",
-			chance=DressOutfits,
+			chance=STFRChances.DressOutfits,
 		},
 		SheriffMeadeOfficerTraffic = {
 			name="SheriffMeadeOfficerTraffic",
-			chance=TrafficOutfits,
+			chance=STFRChances.TrafficOutfits,
 		},
-		SheriffMeadeOfficerBag = {
-			name="SheriffMeadeOfficerBag",
-			chance=BagOutfits,
+		SheriffMeadeOfficerSWATTanLight = {
+			name="SheriffMeadeOfficerSWATTanLight",
+			chance=STFRChances.SWATOutfits,
+		},
+		SheriffMeadeOfficerSWATTanHeavy = {
+			name="SheriffMeadeOfficerSWATTanHeavy",
+			chance=STFRChances.SWATOutfits,
+		},
+		SheriffMeadeDetectiveCasual = {
+			name="SheriffMeadeDetectiveCasual",
+			chance=STFRChances.DetectiveOutfits,
 		},
 		OfficeWorkerSkirt = {
 			name="OfficeWorkerSkirt",
@@ -696,39 +767,51 @@ local function STFRSpawns()
 	ZombiesZoneDefinition.PoliceKSP = {
 		PoliceKSPOfficer = {
 			name="PoliceKSPOfficer",
-			chance=PoliceKSPOutfits,
+			chance=STFRChances.PoliceKSPOutfits,
 		},
 		PoliceKSPSGT = {
 			name="PoliceKSPSGT",
-			chance=PoliceKSPOutfits,
+			chance=STFRChances.PoliceKSPOutfits,
 		},
 		PoliceKSPCPT = {
 			name="PoliceKSPCPT",
-			chance=PoliceKSPOutfits,
+			chance=STFRChances.PoliceKSPOutfits,
 		},
 		PoliceKSPOfficerRiot = {
 			name="PoliceKSPOfficerRiot",
-			chance=RiotOutfits,
+			chance=STFRChances.RiotOutfits,
 		},
 		PoliceKSPOfficerDress = {
 			name="PoliceKSPOfficerDress",
-			chance=DressOutfits,
+			chance=STFRChances.DressOutfits,
 		},
 		PoliceKSPSGTDress = {
 			name="PoliceKSPSGTDress",
-			chance=DressOutfits,
+			chance=STFRChances.DressOutfits,
 		},
 		PoliceKSPCPTDress = {
 			name="PoliceKSPCPTDress",
-			chance=DressOutfits,
+			chance=STFRChances.DressOutfits,
 		},
 		PoliceKSPOfficerTraffic = {
 			name="PoliceKSPOfficerTraffic",
-			chance=TrafficOutfits,
+			chance=STFRChances.TrafficOutfits,
 		},
-		PoliceKSPOfficerBag = {
-			name="PoliceKSPOfficerBag",
-			chance=BagOutfits,
+		PoliceKSPOfficerSWATBlueLight = {
+			name="PoliceKSPOfficerSWATBlueLight",
+			chance=STFRChances.SWATOutfits,
+		},
+		PoliceKSPOfficerSWATBlueHeavy = {
+			name="PoliceKSPOfficerSWATBlueHeavy",
+			chance=STFRChances.SWATOutfits,
+		},
+		PoliceKSPOfficerSWATCamoLight = {
+			name="PoliceKSPOfficerSWATCamoLight",
+			chance=STFRChances.SWATOutfits,
+		},
+		PoliceKSPOfficerSWATCamoHeavy = {
+			name="PoliceKSPOfficerSWATCamoHeavy",
+			chance=STFRChances.SWATOutfits,
 		},
 		OfficeWorkerSkirt = {
 			name="OfficeWorkerSkirt",
@@ -748,18 +831,18 @@ local function STFRSpawns()
 		maleChance = 80,
 		PrisonGuard = {
 			name="PoliceKSPOfficer",
-			chance=PoliceKSPOutfits,
+			chance=STFRChances.PoliceKSPOutfits,
 			gender="male",
 		},
 		Security = {
 			name="PoliceKSPOfficer",
 			gender="male",
-			chance=PoliceKSPOutfits,
+			chance=STFRChances.PoliceKSPOutfits,
 			room="security",
 		},
 		Inmate = {
 			name="InmateJefferson",
-			chance=InmateJeffersonOutfits,
+			chance=STFRChances.InmateJeffersonOutfits,
 			gender="male",
 			room="prisoncells;hall",
 		},
@@ -786,7 +869,7 @@ local function STFRSpawns()
 		},
 		PrisonGuard = {
 			name="DOCMeade",
-			chance=DOCMeadeOutfits,
+			chance=STFRChances.DOCMeadeOutfits,
 			gender="male",
 		},
 		OfficeWorkerSkirt = {
@@ -805,32 +888,32 @@ local function STFRSpawns()
 		Security = {
 			name="DOCMeade",
 			gender="male",
-			chance=DOCMeadeOutfits,
+			chance=STFRChances.DOCMeadeOutfits,
 			room="security",
 		},
 		InmateMeadeOrange = {
 			name="InmateMeadeOrange",
-			chance=InmateMeadeOrangeOutfits,
+			chance=STFRChances.InmateMeadeOrangeOutfits,
 			gender="male",
 			room="prisoncells;hall;cafeteria;classroom;laundry;janitor",
 		},
 		-- this one is used for lower chance of inmate in some rooms
 		InmateMeadeOrangeLowerZone = {
 			name="InmateMeadeOrange",
-			chance=InmateMeadeOrangeOutfits,
+			chance=STFRChances.InmateMeadeOrangeOutfits,
 			gender="male",
 			room="bathroom;kitchen;medicalstorage;library",
 		},
 		InmateMeadeYellow = {
 			name="InmateMeadeYellow",
-			chance=InmateMeadeYellowOutfits,
+			chance=STFRChances.InmateMeadeYellowOutfits,
 			gender="male",
 			room="prisoncells;hall;cafeteria;classroom;laundry;janitor",
 		},
 		-- this one is used for lower chance of inmate in some rooms
 		InmateMeadeYellowLowerZone = {
 			name="InmateMeadeYellow",
-			chance=InmateMeadeYellowOutfits,
+			chance=STFRChances.InmateMeadeYellowOutfits,
 			gender="male",
 			room="bathroom;kitchen;medicalstorage;library",
 		},
@@ -859,18 +942,18 @@ local function STFRSpawns()
 		},
 		PrisonGuard = {
 			name="DOCMeade",
-			chance=DOCMeadeOutfits,
+			chance=STFRChances.DOCMeadeOutfits,
 			gender="male",
 		},
 		Security = {
 			name="DOCMeade",
 			gender="male",
-			chance=DOCMeadeOutfits,
+			chance=STFRChances.DOCMeadeOutfits,
 			room="office",
 		},
 		InmateMeadeRed = {
 			name="InmateMeadeRed",
-			chance=InmateMeadeRedOutfits,
+			chance=STFRChances.InmateMeadeRedOutfits,
 			gender="male",
 			room="prisoncells;hall",
 		},
@@ -887,25 +970,25 @@ local function STFRSpawns()
 		},
 		PrisonGuard = {
 			name="DOCJefferson",
-			chance=DOCJeffersonOutfits,
+			chance=STFRChances.DOCJeffersonOutfits,
 			gender="male",
 		},
 		Security = {
 			name="DOCJefferson",
 			gender="male",
-			chance=DOCJeffersonOutfits,
+			chance=STFRChances.DOCJeffersonOutfits,
 			room="security",
 		},
 		Inmate = {
 			name="InmateJefferson",
-			chance=InmateJeffersonOutfits,
+			chance=STFRChances.InmateJeffersonOutfits,
 			gender="male",
 			room="prisoncells;hall;laundry;janitor",
 		},
 		-- this one is used for lower chance of inmate in some rooms
 		InmateLowerZone = {
 			name="InmateJefferson",
-			chance=InmateJeffersonOutfits,
+			chance=STFRChances.InmateJeffersonOutfits,
 			gender="male",
 			room="bathroom",
 		},
@@ -922,12 +1005,12 @@ local function STFRSpawns()
 		maleChance = 80,
 		PrisonGuard = {
 			name="PoliceJeffersonOfficer",
-			chance=PoliceJeffersonOutfits,
+			chance=STFRChances.PoliceJeffersonOutfits,
 			gender="male",
 		},
 		Inmate = {
 			name="InmateJefferson",
-			chance=InmateJeffersonOutfits,
+			chance=STFRChances.InmateJeffersonOutfits,
 			gender="male",
 			room="prisoncells",
 		},
@@ -938,12 +1021,12 @@ local function STFRSpawns()
 		maleChance = 80,
 		PrisonGuard = {
 			name="SheriffJeffersonOfficer",
-			chance=SheriffJeffersonOutfits,
+			chance=STFRChances.SheriffJeffersonOutfits,
 			gender="male",
 		},
 		Inmate = {
 			name="InmateJefferson",
-			chance=InmateJeffersonOutfits,
+			chance=STFRChances.InmateJeffersonOutfits,
 			gender="male",
 			room="cell",
 		},
@@ -952,50 +1035,38 @@ local function STFRSpawns()
 	ZombiesZoneDefinition.RangerMeade = {
 		FederalRanger = {
 			name="FederalRanger",
-			chance=RangerOutfits,
-		},
-		FederalRangerBag = {
-			name="FederalRangerBag",
-			chance=BagOutfits,
+			chance=STFRChances.RangerOutfits,
 		},
 		FederalRangerDress = {
 			name="FederalRangerDress",
-			chance=DressOutfits,
+			chance=STFRChances.DressOutfits,
 		},
 		StateParkRanger = {
 			name="StateParkRanger",
-			chance=RangerOutfits,
-		},
-		StateParkRangerBag = {
-			name="StateParkRangerBag",
-			chance=BagOutfits,
+			chance=STFRChances.RangerOutfits,
 		},
 		StateParkRangerDress = {
 			name="StateParkRangerDress",
-			chance=DressOutfits,
+			chance=STFRChances.DressOutfits,
 		},
 		ConservationRanger = {
 			name="ConservationRanger",
-			chance=RangerOutfits,
-		},
-		ConservationRangerBag = {
-			name="ConservationRangerBag",
-			chance=BagOutfits,
+			chance=STFRChances.RangerOutfits,
 		},
 		ConservationRangerDress = {
 			name="ConservationRangerDress",
-			chance=DressOutfits,
+			chance=STFRChances.DressOutfits,
 		},
 	}
 
 	ZombiesZoneDefinition.EMSMeade = {
 		EMSMeade = {
 			name="EMSMeade",
-			chance=EMSMeadeOutfits,
+			chance=STFRChances.EMSMeadeOutfits,
 		},
 		EMSMeadeDress = {
 			name="EMSMeadeDress",
-			chance=DressOutfits,
+			chance=STFRChances.DressOutfits,
 		},
 		Doctor = {
 			name="Doctor",
@@ -1010,11 +1081,11 @@ local function STFRSpawns()
 	ZombiesZoneDefinition.EMSLouisville = {
 		EMSLouisville = {
 			name="EMSLouisville",
-			chance=EMSLouisvilleOutfits,
+			chance=STFRChances.EMSLouisvilleOutfits,
 		},
 		EMSLouisvilleDress = {
 			name="EMSLouisvilleDress",
-			chance=DressOutfits,
+			chance=STFRChances.DressOutfits,
 		},
 		Doctor = {
 			name="Doctor",
@@ -1029,11 +1100,11 @@ local function STFRSpawns()
 	ZombiesZoneDefinition.EMSJefferson = {
 		EMSJefferson = {
 			name="EMSJefferson",
-			chance=EMSJeffersonOutfits,
+			chance=STFRChances.EMSJeffersonOutfits,
 		},
 		EMSJeffersonDress = {
 			name="EMSJeffersonDress",
-			chance=DressOutfits,
+			chance=STFRChances.DressOutfits,
 		},
 		Doctor = {
 			name="Doctor",
@@ -1048,87 +1119,138 @@ local function STFRSpawns()
 	ZombiesZoneDefinition.FireRosewood = {
 		FiremanRosewoodFormal = {
 			name="FiremanRosewoodFormal",
-			chance=FireFormalRosewoodOutfits,
+			chance=STFRChances.FireFormalRosewoodOutfits,
 		},
 		FiremanRosewoodFormalSupervisor = {
 			name="FiremanRosewoodFormalSupervisor",
-			chance=FireFormalRosewoodOutfits,
+			chance=STFRChances.FireFormalRosewoodOutfits,
 		},
 		FiremanRosewoodBlack = {
 			name="FiremanRosewoodBlack",
-			chance=FiremanRosewoodOutfits,
+			chance=STFRChances.FiremanRosewoodOutfits,
 		},
 		FiremanFullSuitRosewoodBlack = {
 			name="FiremanFullSuitRosewoodBlack",
-			chance=FiremanFullRosewoodOutfits,
+			chance=STFRChances.FiremanFullRosewoodOutfits,
 		},
 		FiremanRosewoodKhaki = {
 			name="FiremanRosewoodKhaki",
-			chance=FiremanRosewoodOutfits,
+			chance=STFRChances.FiremanRosewoodOutfits,
 		},
 		FiremanFullSuitRosewoodKhaki = {
 			name="FiremanFullSuitRosewoodKhaki",
-			chance=FiremanFullRosewoodOutfits,
+			chance=STFRChances.FiremanFullRosewoodOutfits,
 		},
 	}
 
 	ZombiesZoneDefinition.FireLouisville = {
 		FiremanLouisvilleFormal = {
 			name="FiremanLouisvilleFormal",
-			chance=FireFormalLouisvilleOutfits,
+			chance=STFRChances.FireFormalLouisvilleOutfits,
 		},
 		FiremanLouisvilleFormalSupervisor = {
 			name="FiremanLouisvilleFormalSupervisor",
-			chance=FireFormalLouisvilleOutfits,
+			chance=STFRChances.FireFormalLouisvilleOutfits,
 		},
 		FiremanLouisvilleStationSupervisor = {
 			name="FiremanLouisvilleStationSupervisor",
-			chance=FireFormalLouisvilleOutfits,
+			chance=STFRChances.FireFormalLouisvilleOutfits,
 		},
 		FiremanLouisvilleDressSupervisor = {
 			name="FiremanLouisvilleDressSupervisor",
-			chance=DressOutfits,
+			chance=STFRChances.DressOutfits,
 		},
 		FiremanLouisvilleBlack = {
 			name="FiremanLouisvilleBlack",
-			chance=FiremanLouisvilleOutfits,
+			chance=STFRChances.FiremanLouisvilleOutfits,
 		},
 		FiremanFullSuitLouisvilleBlack = {
 			name="FiremanFullSuitLouisvilleBlack",
-			chance=FiremanFullLouisvilleOutfits,
+			chance=STFRChances.FiremanFullLouisvilleOutfits,
 		},
 		FiremanLouisvilleKhaki = {
 			name="FiremanLouisvilleKhaki",
-			chance=FiremanLouisvilleOutfits,
+			chance=STFRChances.FiremanLouisvilleOutfits,
 		},
 		FiremanFullSuitLouisvilleKhaki = {
 			name="FiremanFullSuitLouisvilleKhaki",
-			chance=FiremanFullLouisvilleOutfits,
+			chance=STFRChances.FiremanFullLouisvilleOutfits,
 		},
 	}
 
 	ZombiesZoneDefinition.USPS = {
 		USPSMail = {
 			name="USPSMail",
-			chance=USPSOutfits,
+			chance=STFRChances.USPSOutfits,
 		},
-		USPSMailBag = {
-			name="USPSMailBag",
-			chance=BagOutfits,
-		},
-		OfficeWorkerSkirt = {
-			name="OfficeWorkerSkirt",
-			chance=10,
-			gender="female",
-		},
-		OfficeWorker = {
-			name="OfficeWorker",
-			chance=10,
+		USPSVintage = {
+			name="USPSVintage",
+			chance=1,
 			gender="male",
 			beardStyles="null:80",
 		},
 	}
+	if getActivatedMods():contains("SpecialEmergencyVehiclesFRsm") then
+		table.insert(ZombiesZoneDefinition.SheriffJeffersonJail,{name = "AntiriotofficerLGgen", chance=5});
+		table.insert(ZombiesZoneDefinition.PoliceKSPJail,{name = "AntiriotofficerLGgen", chance=5});
+		table.insert(ZombiesZoneDefinition.PoliceJeffersonJail,{name = "AntiriotofficerLGgen", chance=5});
+		table.insert(ZombiesZoneDefinition.PoliceKSP,{name = "AntiriotofficerLGgen", chance=5});
 
+		table.insert(ZombiesZoneDefinition.SheriffJefferson,{name = "Fbiofficer", chance=5});
+		table.insert(ZombiesZoneDefinition.SheriffJefferson,{name = "Fbiofficer2", chance=5});
+		table.insert(ZombiesZoneDefinition.SheriffJefferson,{name = "AntiriotofficerLG", chance=5});
+		table.insert(ZombiesZoneDefinition.SheriffJefferson,{name = "AntiriotofficerLGgen", chance=5});
+		table.insert(ZombiesZoneDefinition.SheriffJefferson,{name = "ATFofficer", chance=5});
+		table.insert(ZombiesZoneDefinition.SheriffJefferson,{name = "USMSHofficer", chance=5});
+		table.insert(ZombiesZoneDefinition.SheriffJefferson,{name = "DEAofficer", chance=5});
+
+		table.insert(ZombiesZoneDefinition.PoliceJefferson,{name = "Fbiofficer", chance=5});
+		table.insert(ZombiesZoneDefinition.PoliceJefferson,{name = "Fbiofficer2", chance=5});
+		table.insert(ZombiesZoneDefinition.PoliceJefferson,{name = "AntiriotofficerLG", chance=5});
+		table.insert(ZombiesZoneDefinition.PoliceJefferson,{name = "AntiriotofficerLGgen", chance=5});
+		table.insert(ZombiesZoneDefinition.PoliceJefferson,{name = "ATFofficer", chance=5});
+		table.insert(ZombiesZoneDefinition.PoliceJefferson,{name = "USMSHofficer", chance=5});
+		table.insert(ZombiesZoneDefinition.PoliceJefferson,{name = "DEAofficer", chance=5});
+
+		table.insert(ZombiesZoneDefinition.PoliceWestPoint,{name = "Fbiofficer", chance=5});
+		table.insert(ZombiesZoneDefinition.PoliceWestPoint,{name = "Fbiofficer2", chance=5});
+		table.insert(ZombiesZoneDefinition.PoliceWestPoint,{name = "AntiriotofficerLG", chance=5});
+		table.insert(ZombiesZoneDefinition.PoliceWestPoint,{name = "AntiriotofficerLGgen", chance=5});
+		table.insert(ZombiesZoneDefinition.PoliceWestPoint,{name = "ATFofficer", chance=5});
+		table.insert(ZombiesZoneDefinition.PoliceWestPoint,{name = "USMSHofficer", chance=5});
+		table.insert(ZombiesZoneDefinition.PoliceWestPoint,{name = "DEAofficer", chance=5});
+
+		table.insert(ZombiesZoneDefinition.PoliceMuldraugh,{name = "Fbiofficer", chance=5});
+		table.insert(ZombiesZoneDefinition.PoliceMuldraugh,{name = "Fbiofficer2", chance=5});
+		table.insert(ZombiesZoneDefinition.PoliceMuldraugh,{name = "AntiriotofficerLG", chance=5});
+		table.insert(ZombiesZoneDefinition.PoliceMuldraugh,{name = "AntiriotofficerLGgen", chance=5});
+		table.insert(ZombiesZoneDefinition.PoliceMuldraugh,{name = "ATFofficer", chance=5});
+		table.insert(ZombiesZoneDefinition.PoliceMuldraugh,{name = "USMSHofficer", chance=5});
+		table.insert(ZombiesZoneDefinition.PoliceMuldraugh,{name = "DEAofficer", chance=5});
+
+		table.insert(ZombiesZoneDefinition.PoliceRiverside,{name = "Fbiofficer", chance=5});
+		table.insert(ZombiesZoneDefinition.PoliceRiverside,{name = "Fbiofficer2", chance=5});
+		table.insert(ZombiesZoneDefinition.PoliceRiverside,{name = "AntiriotofficerLG", chance=5});
+		table.insert(ZombiesZoneDefinition.PoliceRiverside,{name = "AntiriotofficerLGgen", chance=5});
+		table.insert(ZombiesZoneDefinition.PoliceRiverside,{name = "ATFofficer", chance=5});
+		table.insert(ZombiesZoneDefinition.PoliceRiverside,{name = "USMSHofficer", chance=5});
+		table.insert(ZombiesZoneDefinition.PoliceRiverside,{name = "DEAofficer", chance=5});
+
+		table.insert(ZombiesZoneDefinition.SheriffMeade,{name = "Fbiofficer", chance=5});
+		table.insert(ZombiesZoneDefinition.SheriffMeade,{name = "Fbiofficer2", chance=5});
+		table.insert(ZombiesZoneDefinition.SheriffMeade,{name = "AntiriotofficerLG", chance=5});
+		table.insert(ZombiesZoneDefinition.SheriffMeade,{name = "AntiriotofficerLGgen", chance=5});
+		table.insert(ZombiesZoneDefinition.SheriffMeade,{name = "ATFofficer", chance=5});
+		table.insert(ZombiesZoneDefinition.SheriffMeade,{name = "USMSHofficer", chance=5});
+		table.insert(ZombiesZoneDefinition.SheriffMeade,{name = "DEAofficer", chance=5});
+
+		table.insert(ZombiesZoneDefinition.PoliceLouisville,{name = "Fbiofficer", chance=5});
+		table.insert(ZombiesZoneDefinition.PoliceLouisville,{name = "Fbiofficer2", chance=5});
+		table.insert(ZombiesZoneDefinition.PoliceLouisville,{name = "AntiriotofficerLG", chance=5});
+		table.insert(ZombiesZoneDefinition.PoliceLouisville,{name = "AntiriotofficerLGgen", chance=5});
+		table.insert(ZombiesZoneDefinition.PoliceLouisville,{name = "ATFofficer", chance=5});
+		table.insert(ZombiesZoneDefinition.PoliceLouisville,{name = "USMSHofficer", chance=5});
+		table.insert(ZombiesZoneDefinition.PoliceLouisville,{name = "DEAofficer", chance=5});
+	end
 end
-
 Events.OnInitGlobalModData.Add(STFRSpawns)

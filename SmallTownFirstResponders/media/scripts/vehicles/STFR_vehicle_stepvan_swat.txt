@@ -1,0 +1,64 @@
+module Base
+{
+	vehicle StepVan_swat
+	{
+	    template! = StepVan,
+
+        model
+        {
+            file = Vehicle_StepVan,
+            scale = 1.8200,
+            offset = 0.0000 0.4725 0.0000,
+        }
+
+		skin
+		{
+			texture = Vehicles/vehicle_stepvanshell,
+		}
+
+		template = PassengerSeat2,
+
+        passenger FrontLeft
+        {
+            position inside
+            {
+                offset = 0.1978 -0.1429 0.3352,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            position outside
+            {
+                offset = 0.6319 -0.5769 0.4231,
+                rotate = 0.0000 0.0000 0.0000,
+                area = SeatFrontLeft,
+            }
+        }
+
+        passenger FrontRight
+        {
+            position inside
+            {
+                offset = -0.1978 -0.1429 0.3352,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            position outside
+            {
+                offset = -0.6319 -0.5769 0.4231,
+                rotate = 0.0000 0.0000 0.0000,
+                area = SeatFrontRight,
+            }
+        }
+
+        area SeatFrontLeft
+        {
+            xywh = 0.6813 0.4231 0.4725 0.4725,
+        }
+
+        area SeatFrontRight
+        {
+            xywh = -0.6813 0.4231 0.4725 0.4725,
+        }
+
+	}
+}

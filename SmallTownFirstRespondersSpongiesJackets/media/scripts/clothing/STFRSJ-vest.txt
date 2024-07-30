@@ -107,4 +107,17 @@ module STFR {
         WindResistance = 0.05,
         WorldStaticModel = HuntingVest_Ground,
     }
+    item Vest_HighViz_Extra_USPS_OPEN
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = USPS High Visibility Vest,
+        ClothingItem = STFR_Vest_HighViz_Extra_USPS_OPEN,
+        BodyLocation = TorsoExtraVest,
+        Icon = STFR_Vest_HighViz_Extra_USPS,
+        BloodLocation = ShirtNoSleeves,
+        Insulation = 0.1,
+        WindResistance = 0.05,
+        WorldStaticModel = HuntingVest_Ground,
+    }
 }

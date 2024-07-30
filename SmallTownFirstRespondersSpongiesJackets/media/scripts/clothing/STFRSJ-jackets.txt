@@ -829,6 +829,22 @@ module STFR {
         Weight = 2,
         WorldStaticModel = JacketCoat_Ground,
     }
+    item Jacket_Dress_Extra_USPS_Vintage_OPEN
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Vintage USPS Coat,
+        ClothingItem = STFR_Jacket_Dress_Extra_USPS_Vintage_OPEN,
+        BodyLocation = JacketSuit,
+        Icon = STFR_Jacket_Dress_Extra_USPS_Vintage,
+        BloodLocation = LongJacket,
+        RunSpeedModifier = 0.95,
+        BiteDefense = 20,
+        ScratchDefense = 40,
+        NeckProtectionModifier = 0.5,
+        FabricType = Cotton,
+        WorldStaticModel = JacketCoat_Ground,
+    }
     item Jacket_Dress_Sheriff_Rosewood_Officer_OPEN
     {
         DisplayCategory = Clothing,

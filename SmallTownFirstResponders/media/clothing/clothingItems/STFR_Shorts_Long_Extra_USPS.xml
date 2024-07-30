@@ -7,5 +7,5 @@
 	<m_AllowRandomTint>false</m_AllowRandomTint>
 	<m_AttachBone></m_AttachBone>
 	<m_Masks>2</m_Masks>
-	<textureChoices>Clothes\Trousers_Mesh\Extra\STFR_TrousersMesh_Shorts_USPS</textureChoices>
+	<textureChoices>Clothes\Trousers_Mesh\Extra\STFR_TrousersMesh_Shorts_Extra_USPS</textureChoices>
 </clothingItem>

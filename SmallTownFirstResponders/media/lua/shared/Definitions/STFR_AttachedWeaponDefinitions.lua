@@ -35,6 +35,22 @@ AttachedWeaponDefinitions.handgunDutyBelt = {
 	},
 }
 
+AttachedWeaponDefinitions.handgunDutyBeltSWAT = {
+	id = "handgunDutyBelt",
+	chance = 50,
+	outfit = {"Police", "PoliceState", "PoliceRiot"},
+	weaponLocation =  {"Holster Right"},
+	bloodLocations = nil,
+	addHoles = false,
+	daySurvived = 0,
+	ensureItem = "STR.Belt_PoliceDuty",
+	weapons = {
+		"Base.Pistol",
+		"Base.Pistol2",
+		"Base.Pistol3",
+	},
+}
+
 table.insert(AttachedWeaponDefinitions.handgunDutyBelt["outfit"], "PoliceMuldraughOfficer");
 table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "PoliceMuldraughOfficer");
 table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "PoliceMuldraughOfficer");
@@ -50,10 +66,6 @@ table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "PoliceMuldraughCPT
 table.insert(AttachedWeaponDefinitions.handgunDutyBelt["outfit"], "PoliceMuldraughOfficerTraffic");
 table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "PoliceMuldraughOfficerTraffic");
 table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "PoliceMuldraughOfficerTraffic");
-
-table.insert(AttachedWeaponDefinitions.handgunDutyBelt["outfit"], "PoliceMuldraughOfficerBag");
-table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "PoliceMuldraughOfficerBag");
-table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "PoliceMuldraughOfficerBag");
 
 table.insert(AttachedWeaponDefinitions.handgunDutyBelt["outfit"], "PoliceMuldraughOfficerRiot");
 table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "PoliceMuldraughOfficerRiot");
@@ -75,10 +87,6 @@ table.insert(AttachedWeaponDefinitions.handgunDutyBelt["outfit"], "SheriffMeadeO
 table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "SheriffMeadeOfficerTraffic");
 table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "SheriffMeadeOfficerTraffic");
 
-table.insert(AttachedWeaponDefinitions.handgunDutyBelt["outfit"], "SheriffMeadeOfficerBag");
-table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "SheriffMeadeOfficerBag");
-table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "SheriffMeadeOfficerBag");
-
 table.insert(AttachedWeaponDefinitions.handgunDutyBelt["outfit"], "SheriffMeadeOfficerRiot");
 table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "SheriffMeadeOfficerRiot");
 table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "SheriffMeadeOfficerRiot");
@@ -98,10 +106,6 @@ table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "PoliceWestPointCPT
 table.insert(AttachedWeaponDefinitions.handgunDutyBelt["outfit"], "PoliceWestPointOfficerTraffic");
 table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "PoliceWestPointOfficerTraffic");
 table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "PoliceWestPointOfficerTraffic");
-
-table.insert(AttachedWeaponDefinitions.handgunDutyBelt["outfit"], "PoliceWestPointOfficerBag");
-table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "PoliceWestPointOfficerBag");
-table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "PoliceWestPointOfficerBag");
 
 table.insert(AttachedWeaponDefinitions.handgunDutyBelt["outfit"], "PoliceWestPointOfficerRiot");
 table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "PoliceWestPointOfficerRiot");
@@ -123,10 +127,6 @@ table.insert(AttachedWeaponDefinitions.handgunDutyBelt["outfit"], "PoliceRiversi
 table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "PoliceRiversideOfficerTraffic");
 table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "PoliceRiversideOfficerTraffic");
 
-table.insert(AttachedWeaponDefinitions.handgunDutyBelt["outfit"], "PoliceRiversideOfficerBag");
-table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "PoliceRiversideOfficerBag");
-table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "PoliceRiversideOfficerBag");
-
 table.insert(AttachedWeaponDefinitions.handgunDutyBelt["outfit"], "PoliceRiversideOfficerRiot");
 table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "PoliceRiversideOfficerRiot");
 table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "PoliceRiversideOfficerRiot");
@@ -146,10 +146,6 @@ table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "SheriffRosewoodCPT
 table.insert(AttachedWeaponDefinitions.handgunDutyBelt["outfit"], "SheriffRosewoodOfficerTraffic");
 table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "SheriffRosewoodOfficerTraffic");
 table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "SheriffRosewoodOfficerTraffic");
-
-table.insert(AttachedWeaponDefinitions.handgunDutyBelt["outfit"], "SheriffRosewoodOfficerBag");
-table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "SheriffRosewoodOfficerBag");
-table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "SheriffRosewoodOfficerBag");
 
 table.insert(AttachedWeaponDefinitions.handgunDutyBelt["outfit"], "SheriffRosewoodOfficerRiot");
 table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "SheriffRosewoodOfficerRiot");
@@ -175,11 +171,6 @@ table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "PoliceLouisvill
 table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "PoliceLouisvilleOfficerTraffic");
 table.insert(AttachedWeaponDefinitions.policeRadio["outfit"], "PoliceLouisvilleOfficerTraffic");
 
-table.insert(AttachedWeaponDefinitions.handgunDutyBelt["outfit"], "PoliceLouisvilleOfficerBag");
-table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "PoliceLouisvilleOfficerBag");
-table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "PoliceLouisvilleOfficerBag");
-table.insert(AttachedWeaponDefinitions.policeRadio["outfit"], "PoliceLouisvilleOfficerBag");
-
 table.insert(AttachedWeaponDefinitions.handgunDutyBelt["outfit"], "PoliceLouisvilleOfficerRiot");
 table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "PoliceLouisvilleOfficerRiot");
 table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "PoliceLouisvilleOfficerRiot");
@@ -201,10 +192,6 @@ table.insert(AttachedWeaponDefinitions.handgunDutyBelt["outfit"], "PoliceJeffers
 table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "PoliceJeffersonOfficerTraffic");
 table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "PoliceJeffersonOfficerTraffic");
 
-table.insert(AttachedWeaponDefinitions.handgunDutyBelt["outfit"], "PoliceJeffersonOfficerBag");
-table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "PoliceJeffersonOfficerBag");
-table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "PoliceJeffersonOfficerBag");
-
 table.insert(AttachedWeaponDefinitions.handgunDutyBelt["outfit"], "PoliceJeffersonOfficerRiot");
 table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "PoliceJeffersonOfficerRiot");
 table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "PoliceJeffersonOfficerRiot");
@@ -225,10 +212,6 @@ table.insert(AttachedWeaponDefinitions.handgunDutyBelt["outfit"], "SheriffJeffer
 table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "SheriffJeffersonOfficerTraffic");
 table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "SheriffJeffersonOfficerTraffic");
 
-table.insert(AttachedWeaponDefinitions.handgunDutyBelt["outfit"], "SheriffJeffersonOfficerBag");
-table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "SheriffJeffersonOfficerBag");
-table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "SheriffJeffersonOfficerBag");
-
 table.insert(AttachedWeaponDefinitions.handgunDutyBelt["outfit"], "SheriffJeffersonOfficerRiot");
 table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "SheriffJeffersonOfficerRiot");
 table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "SheriffJeffersonOfficerRiot");
@@ -244,10 +227,6 @@ table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "PoliceKSPSGT");
 table.insert(AttachedWeaponDefinitions.handgunDutyBelt["outfit"], "PoliceKSPCPT");
 table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "PoliceKSPCPT");
 table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "PoliceKSPCPT");
-
-table.insert(AttachedWeaponDefinitions.handgunDutyBelt["outfit"], "PoliceKSPOfficerBag");
-table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "PoliceKSPOfficerBag");
-table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "PoliceKSPOfficerBag");
 
 table.insert(AttachedWeaponDefinitions.handgunDutyBelt["outfit"], "PoliceKSPOfficerRiot");
 table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "PoliceKSPOfficerRiot");
@@ -272,6 +251,137 @@ table.insert(AttachedWeaponDefinitions.policeRadio["outfit"], "SecurityMallValle
 table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "SecurityMallLouisville");
 table.insert(AttachedWeaponDefinitions.policeRadio["outfit"], "SecurityMallLouisville");
 
+table.insert(AttachedWeaponDefinitions.handgunDutyBeltSWAT["outfit"], "SheriffMeadeOfficerSWATTanLight");
+table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "SheriffMeadeOfficerSWATTanLight");
+table.insert(AttachedWeaponDefinitions.assaultRifleOnBack["outfit"], "SheriffMeadeOfficerSWATTanLight");
+table.insert(AttachedWeaponDefinitions.huntingRifleOnBack["outfit"], "SheriffMeadeOfficerSWATTanLight");
+table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "SheriffMeadeOfficerSWATTanLight");
+
+table.insert(AttachedWeaponDefinitions.handgunDutyBeltSWAT["outfit"], "SheriffMeadeOfficerSWATTanHeavy");
+table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "SheriffMeadeOfficerSWATTanHeavy");
+table.insert(AttachedWeaponDefinitions.assaultRifleOnBack["outfit"], "SheriffMeadeOfficerSWATTanHeavy");
+table.insert(AttachedWeaponDefinitions.huntingRifleOnBack["outfit"], "SheriffMeadeOfficerSWATTanHeavy");
+table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "SheriffMeadeOfficerSWATTanHeavy");
+
+table.insert(AttachedWeaponDefinitions.handgunDutyBeltSWAT["outfit"], "PoliceWestPointOfficerSWATNavyLight");
+table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "PoliceWestPointOfficerSWATNavyLight");
+table.insert(AttachedWeaponDefinitions.assaultRifleOnBack["outfit"], "PoliceWestPointOfficerSWATNavyLight");
+table.insert(AttachedWeaponDefinitions.huntingRifleOnBack["outfit"], "PoliceWestPointOfficerSWATNavyLight");
+table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "PoliceWestPointOfficerSWATNavyLight");
+
+table.insert(AttachedWeaponDefinitions.handgunDutyBeltSWAT["outfit"], "PoliceWestPointOfficerSWATNavyHeavy");
+table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "PoliceWestPointOfficerSWATNavyHeavy");
+table.insert(AttachedWeaponDefinitions.assaultRifleOnBack["outfit"], "PoliceWestPointOfficerSWATNavyHeavy");
+table.insert(AttachedWeaponDefinitions.huntingRifleOnBack["outfit"], "PoliceWestPointOfficerSWATNavyHeavy");
+table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "PoliceWestPointOfficerSWATNavyHeavy");
+
+table.insert(AttachedWeaponDefinitions.handgunDutyBeltSWAT["outfit"], "SheriffRosewoodOfficerSWATGreenLight");
+table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "SheriffRosewoodOfficerSWATGreenLight");
+table.insert(AttachedWeaponDefinitions.assaultRifleOnBack["outfit"], "SheriffRosewoodOfficerSWATGreenLight");
+table.insert(AttachedWeaponDefinitions.huntingRifleOnBack["outfit"], "SheriffRosewoodOfficerSWATGreenLight");
+table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "SheriffRosewoodOfficerSWATGreenLight");
+
+table.insert(AttachedWeaponDefinitions.handgunDutyBeltSWAT["outfit"], "SheriffRosewoodOfficerSWATGreenHeavy");
+table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "SheriffRosewoodOfficerSWATGreenHeavy");
+table.insert(AttachedWeaponDefinitions.assaultRifleOnBack["outfit"], "SheriffRosewoodOfficerSWATGreenHeavy");
+table.insert(AttachedWeaponDefinitions.huntingRifleOnBack["outfit"], "SheriffRosewoodOfficerSWATGreenHeavy");
+table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "SheriffRosewoodOfficerSWATGreenHeavy");
+
+table.insert(AttachedWeaponDefinitions.handgunDutyBeltSWAT["outfit"], "SheriffRosewoodOfficerSARGreenLight");
+table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "SheriffRosewoodOfficerSARGreenLight");
+table.insert(AttachedWeaponDefinitions.huntingRifleOnBack["outfit"], "SheriffRosewoodOfficerSARGreenLight");
+table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "SheriffRosewoodOfficerSARGreenLight");
+
+table.insert(AttachedWeaponDefinitions.handgunDutyBeltSWAT["outfit"], "SheriffRosewoodOfficerSARGreenHeavy");
+table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "SheriffRosewoodOfficerSARGreenHeavy");
+table.insert(AttachedWeaponDefinitions.huntingRifleOnBack["outfit"], "SheriffRosewoodOfficerSARGreenHeavy");
+table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "SheriffRosewoodOfficerSARGreenHeavy");
+
+table.insert(AttachedWeaponDefinitions.handgunDutyBeltSWAT["outfit"], "PoliceKSPOfficerSWATBlueLight");
+table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "PoliceKSPOfficerSWATBlueLight");
+table.insert(AttachedWeaponDefinitions.assaultRifleOnBack["outfit"], "PoliceKSPOfficerSWATBlueLight");
+table.insert(AttachedWeaponDefinitions.huntingRifleOnBack["outfit"], "PoliceKSPOfficerSWATBlueLight");
+table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "PoliceKSPOfficerSWATBlueLight");
+
+table.insert(AttachedWeaponDefinitions.handgunDutyBeltSWAT["outfit"], "PoliceKSPOfficerSWATBlueHeavy");
+table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "PoliceKSPOfficerSWATBlueHeavy");
+table.insert(AttachedWeaponDefinitions.assaultRifleOnBack["outfit"], "PoliceKSPOfficerSWATBlueHeavy");
+table.insert(AttachedWeaponDefinitions.huntingRifleOnBack["outfit"], "PoliceKSPOfficerSWATBlueHeavy");
+table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "PoliceKSPOfficerSWATBlueHeavy");
+
+table.insert(AttachedWeaponDefinitions.handgunDutyBeltSWAT["outfit"], "PoliceKSPOfficerSWATCamoLight");
+table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "PoliceKSPOfficerSWATCamoLight");
+table.insert(AttachedWeaponDefinitions.assaultRifleOnBack["outfit"], "PoliceKSPOfficerSWATCamoLight");
+table.insert(AttachedWeaponDefinitions.huntingRifleOnBack["outfit"], "PoliceKSPOfficerSWATCamoLight");
+table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "PoliceKSPOfficerSWATCamoLight");
+
+table.insert(AttachedWeaponDefinitions.handgunDutyBeltSWAT["outfit"], "PoliceKSPOfficerSWATCamoHeavy");
+table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "PoliceKSPOfficerSWATCamoHeavy");
+table.insert(AttachedWeaponDefinitions.assaultRifleOnBack["outfit"], "PoliceKSPOfficerSWATCamoHeavy");
+table.insert(AttachedWeaponDefinitions.huntingRifleOnBack["outfit"], "PoliceKSPOfficerSWATCamoHeavy");
+table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "PoliceKSPOfficerSWATCamoHeavy");
+
+table.insert(AttachedWeaponDefinitions.handgunDutyBeltSWAT["outfit"], "PoliceJeffersonOfficerSWATBlueLight");
+table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "PoliceJeffersonOfficerSWATBlueLight");
+table.insert(AttachedWeaponDefinitions.assaultRifleOnBack["outfit"], "PoliceJeffersonOfficerSWATBlueLight");
+table.insert(AttachedWeaponDefinitions.huntingRifleOnBack["outfit"], "PoliceJeffersonOfficerSWATBlueLight");
+table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "PoliceJeffersonOfficerSWATBlueLight");
+
+table.insert(AttachedWeaponDefinitions.handgunDutyBeltSWAT["outfit"], "PoliceJeffersonOfficerSWATBlueHeavy");
+table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "PoliceJeffersonOfficerSWATBlueHeavy");
+table.insert(AttachedWeaponDefinitions.assaultRifleOnBack["outfit"], "PoliceJeffersonOfficerSWATBlueHeavy");
+table.insert(AttachedWeaponDefinitions.huntingRifleOnBack["outfit"], "PoliceJeffersonOfficerSWATBlueHeavy");
+table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "PoliceJeffersonOfficerSWATBlueHeavy");
+
+table.insert(AttachedWeaponDefinitions.handgunDutyBeltSWAT["outfit"], "SheriffJeffersonOfficerSWATGreenLight");
+table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "SheriffJeffersonOfficerSWATGreenLight");
+table.insert(AttachedWeaponDefinitions.assaultRifleOnBack["outfit"], "SheriffJeffersonOfficerSWATGreenLight");
+table.insert(AttachedWeaponDefinitions.huntingRifleOnBack["outfit"], "SheriffJeffersonOfficerSWATGreenLight");
+table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "SheriffJeffersonOfficerSWATGreenLight");
+
+table.insert(AttachedWeaponDefinitions.handgunDutyBeltSWAT["outfit"], "SheriffJeffersonOfficerSWATGreenHeavy");
+table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "SheriffJeffersonOfficerSWATGreenHeavy");
+table.insert(AttachedWeaponDefinitions.assaultRifleOnBack["outfit"], "SheriffJeffersonOfficerSWATGreenHeavy");
+table.insert(AttachedWeaponDefinitions.huntingRifleOnBack["outfit"], "SheriffJeffersonOfficerSWATGreenHeavy");
+table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "SheriffJeffersonOfficerSWATGreenHeavy");
+
+table.insert(AttachedWeaponDefinitions.handgunDutyBeltSWAT["outfit"], "PoliceLouisvilleOfficerSWATBlackLight");
+table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "PoliceLouisvilleOfficerSWATBlackLight");
+table.insert(AttachedWeaponDefinitions.assaultRifleOnBack["outfit"], "PoliceLouisvilleOfficerSWATBlackLight");
+table.insert(AttachedWeaponDefinitions.huntingRifleOnBack["outfit"], "PoliceLouisvilleOfficerSWATBlackLight");
+table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "PoliceLouisvilleOfficerSWATBlackLight");
+
+table.insert(AttachedWeaponDefinitions.handgunDutyBeltSWAT["outfit"], "PoliceLouisvilleOfficerSWATBlackHeavy");
+table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "PoliceLouisvilleOfficerSWATBlackHeavy");
+table.insert(AttachedWeaponDefinitions.assaultRifleOnBack["outfit"], "PoliceLouisvilleOfficerSWATBlackHeavy");
+table.insert(AttachedWeaponDefinitions.huntingRifleOnBack["outfit"], "PoliceLouisvilleOfficerSWATBlackHeavy");
+table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "PoliceLouisvilleOfficerSWATBlackHeavy");
+
+table.insert(AttachedWeaponDefinitions.handgunDutyBeltSWAT["outfit"], "PoliceLouisvilleOfficerSWATCamoLight");
+table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "PoliceLouisvilleOfficerSWATCamoLight");
+table.insert(AttachedWeaponDefinitions.assaultRifleOnBack["outfit"], "PoliceLouisvilleOfficerSWATCamoLight");
+table.insert(AttachedWeaponDefinitions.huntingRifleOnBack["outfit"], "PoliceLouisvilleOfficerSWATCamoLight");
+table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "PoliceLouisvilleOfficerSWATCamoLight");
+
+table.insert(AttachedWeaponDefinitions.handgunDutyBeltSWAT["outfit"], "PoliceLouisvilleOfficerSWATCamoHeavy");
+table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "PoliceLouisvilleOfficerSWATCamoHeavy");
+table.insert(AttachedWeaponDefinitions.assaultRifleOnBack["outfit"], "PoliceLouisvilleOfficerSWATCamoHeavy");
+table.insert(AttachedWeaponDefinitions.huntingRifleOnBack["outfit"], "PoliceLouisvilleOfficerSWATCamoHeavy");
+table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "PoliceLouisvilleOfficerSWATCamoHeavy");
+
+table.insert(AttachedWeaponDefinitions.handgunHolster["outfit"], "PoliceMuldraughDetectiveCasual");
+table.insert(AttachedWeaponDefinitions.handgunHolster["outfit"], "PoliceWestPointDetectiveCasual");
+table.insert(AttachedWeaponDefinitions.handgunHolster["outfit"], "PoliceRiversideDetectiveCasual");
+table.insert(AttachedWeaponDefinitions.handgunHolster["outfit"], "SheriffRosewoodDetectiveCasual");
+table.insert(AttachedWeaponDefinitions.handgunHolster["outfit"], "PoliceLouisvilleDetectiveCasual");
+table.insert(AttachedWeaponDefinitions.handgunHolster["outfit"], "PoliceJeffersonDetectiveCasual");
+table.insert(AttachedWeaponDefinitions.handgunHolster["outfit"], "SheriffJeffersonDetectiveCasual");
+
+table.insert(AttachedWeaponDefinitions.handgunDutyBeltSWAT["outfit"], "SheriffRiversideOfficerSARBlueLight");
+table.insert(AttachedWeaponDefinitions.shotgunPolice["outfit"], "SheriffRiversideOfficerSARBlueLight");
+table.insert(AttachedWeaponDefinitions.huntingRifleOnBack["outfit"], "SheriffRiversideOfficerSARBlueLight");
+table.insert(AttachedWeaponDefinitions.nightstick["outfit"], "SheriffRiversideOfficerSARBlueLight");
+
 AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughOfficer = {
 	chance = 50;
 	maxitem = 2;
@@ -281,246 +391,29 @@ AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughOfficer = {
 		AttachedWeaponDefinitions.nightstick,
 	},
 }
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughSGT = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughOfficer
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughCPT = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughOfficer
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughOfficerRiot = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughOfficer
 
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughSGT = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffMeadeOfficer = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughOfficer
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffMeadeSGT = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughOfficer
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffMeadeCPT = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughOfficer
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffMeadeOfficerRiot = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughOfficer
 
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughCPT = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceWestPointOfficer = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughOfficer
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceWestPointSGT = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughOfficer
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceWestPointCPT = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughOfficer
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceWestPointOfficerRiot = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughOfficer
 
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughOfficerBag = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceRiversideOfficer = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughOfficer
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceRiversideSGT = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughOfficer
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceRiversideCPT = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughOfficer
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceRiversideOfficerRiot = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughOfficer
 
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughOfficerRiot = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
-
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffMeadeOfficer = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
-
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffMeadeSGT = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
-
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffMeadeCPT = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
-
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffMeadeOfficerBag = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
-
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffMeadeOfficerRiot = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
-
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceWestPointOfficer = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
-
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceWestPointSGT = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
-
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceWestPointCPT = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
-
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceWestPointOfficerBag = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
-
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceWestPointOfficerRiot = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
-
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceRiversideOfficer = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
-
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceRiversideSGT = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
-
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceRiversideCPT = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
-
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceRiversideOfficerBag = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
-
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceRiversideOfficerRiot = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
-
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffRosewoodOfficer = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
-
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffRosewoodSGT = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
-
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffRosewoodCPT = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
-
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffRosewoodOfficerBag = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
-
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffRosewoodOfficerRiot = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffRosewoodOfficer = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughOfficer
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffRosewoodSGT = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughOfficer
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffRosewoodCPT = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughOfficer
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffRosewoodOfficerRiot = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughOfficer
 
 AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceLouisvilleOfficer = {
 	chance = 50;
@@ -532,200 +425,24 @@ AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceLouisvilleOfficer = {
 		AttachedWeaponDefinitions.policeRadio,
 	},
 }
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceLouisvilleSGT = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceLouisvilleOfficer
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceLouisvilleCPT = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceLouisvilleOfficer
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceLouisvilleOfficerRiot = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceLouisvilleOfficer
 
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceLouisvilleSGT = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-		AttachedWeaponDefinitions.policeRadio,
-	},
-}
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceJeffersonOfficer = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughOfficer
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceJeffersonSGT = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughOfficer
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceJeffersonCPT = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughOfficer
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceJeffersonOfficerRiot = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughOfficer
 
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceLouisvilleCPT = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-		AttachedWeaponDefinitions.policeRadio,
-	},
-}
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffJeffersonOfficer = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughOfficer
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffJeffersonSGT = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughOfficer
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffJeffersonCPT = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughOfficer
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffJeffersonOfficerRiot = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughOfficer
 
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceLouisvilleOfficerBag = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-		AttachedWeaponDefinitions.policeRadio,
-	},
-}
-
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceLouisvilleOfficerRiot = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-		AttachedWeaponDefinitions.policeradio,
-	},
-}
-
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceJeffersonOfficer = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
-
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceJeffersonSGT = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
-
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceJeffersonCPT = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
-
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceJeffersonOfficerBag = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
-
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceJeffersonOfficerRiot = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
-
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffJeffersonOfficer = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
-
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffJeffersonSGT = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
-
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffJeffersonCPT = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
-
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffJeffersonOfficerBag = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
-
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffJeffersonOfficerRiot = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
-
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceKSPOfficer = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
-
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceKSPSGT = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
-
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceKSPCPT = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
-
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceKSPOfficerBag = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
-
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceKSPOfficerRiot = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.shotgunPolice,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceKSPOfficer = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughOfficer
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceKSPSGT = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughOfficer
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceKSPCPT = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughOfficer
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceKSPOfficerRiot = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughOfficer
 
 AttachedWeaponDefinitions.attachedWeaponCustomOutfit.DOCMeade = {
 	chance = 50;
@@ -735,49 +452,72 @@ AttachedWeaponDefinitions.attachedWeaponCustomOutfit.DOCMeade = {
 		AttachedWeaponDefinitions.nightstick,
 	},
 }
-
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.DOCJefferson = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
-		AttachedWeaponDefinitions.nightstick,
-	},
-}
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.DOCJefferson = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.DOCMeade
 
 AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SecurityBank = {
 	chance = 50;
 	maxitem = 2;
 	weapons = {
-		AttachedWeaponDefinitions.handgunDutyBelt,
 		AttachedWeaponDefinitions.nightstick,
 		AttachedWeaponDefinitions.policeRadio,
 	},
 }
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SecurityMallGrandOhio = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SecurityBank
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SecurityMallValleyStation = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SecurityBank
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SecurityMallLouisville = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SecurityBank
 
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SecurityMallGrandOhio = {
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffMeadeOfficerSWATTanLight = {
+	chance = 50;
+	maxitem = 3;
+	weapons = {
+		AttachedWeaponDefinitions.handgunDutyBeltSWAT,
+		AttachedWeaponDefinitions.shotgunPolice,
+		AttachedWeaponDefinitions.huntingRifleOnBack,
+		AttachedWeaponDefinitions.nightstick,
+	},
+}
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffMeadeOfficerSWATTanHeavy = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffMeadeOfficerSWATTanLight
+
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceWestPointOfficerSWATNavyLight = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffMeadeOfficerSWATTanLight
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceWestPointOfficerSWATNavyHeavy = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffMeadeOfficerSWATTanLight
+
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffRosewoodOfficerSWATGreenLight = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffMeadeOfficerSWATTanLight
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffRosewoodOfficerSWATGreenHeavy = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffMeadeOfficerSWATTanLight
+
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffRosewoodOfficerSARGreenLight = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffMeadeOfficerSWATTanLight
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffRosewoodOfficerSARGreenHeavy = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffMeadeOfficerSWATTanLight
+
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceKSPOfficerSWATBlueLight = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffMeadeOfficerSWATTanLight
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceKSPOfficerSWATBlueHeavy = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffMeadeOfficerSWATTanLight
+
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceKSPOfficerSWATCamoLight = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffMeadeOfficerSWATTanLight
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceKSPOfficerSWATCamoHeavy = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffMeadeOfficerSWATTanLight
+
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceJeffersonOfficerSWATBlueLight = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffMeadeOfficerSWATTanLight
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceJeffersonOfficerSWATBlueHeavy = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffMeadeOfficerSWATTanLight
+
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffJeffersonOfficerSWATGreenLight = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffMeadeOfficerSWATTanLight
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffJeffersonOfficerSWATGreenHeavy = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffMeadeOfficerSWATTanLight
+
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceLouisvilleOfficerSWATBlackLight = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffMeadeOfficerSWATTanLight
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceLouisvilleOfficerSWATBlackHeavy = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffMeadeOfficerSWATTanLight
+
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceLouisvilleOfficerSWATCamoLight = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffMeadeOfficerSWATTanLight
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceLouisvilleOfficerSWATCamoHeavy = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffMeadeOfficerSWATTanLight
+
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffRiversideOfficerSARBlueLight = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffMeadeOfficerSWATTanLight
+
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughDetectiveCasual = {
 	chance = 50;
 	maxitem = 2;
 	weapons = {
-		AttachedWeaponDefinitions.nightstick,
-		AttachedWeaponDefinitions.policeRadio,
+		AttachedWeaponDefinitions.handgunHolster,
 	},
 }
-
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SecurityMallValleyStation = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.nightstick,
-		AttachedWeaponDefinitions.policeRadio,
-	},
-}
-
-AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SecurityMallLouisville = {
-	chance = 50;
-	maxitem = 2;
-	weapons = {
-		AttachedWeaponDefinitions.nightstick,
-		AttachedWeaponDefinitions.policeRadio,
-	},
-}
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffMeadeDetectiveCasual = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughDetectiveCasual
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceWestPointDetectiveCasual = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughDetectiveCasual
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceRiversideDetectiveCasual = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughDetectiveCasual
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffRosewoodDetectiveCasual = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughDetectiveCasual
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceLouisvilleDetectiveCasual = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughDetectiveCasual
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceJeffersonDetectiveCasual = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughDetectiveCasual
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.SheriffJeffersonDetectiveCasual = AttachedWeaponDefinitions.attachedWeaponCustomOutfit.PoliceMuldraughDetectiveCasual

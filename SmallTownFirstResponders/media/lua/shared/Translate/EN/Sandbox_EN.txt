@@ -2,8 +2,14 @@ Sandbox_EN = {
 
 	Sandbox_STFR = "Small Town First Responders",
 
-	Sandbox_STFR_ModVehiclesOnly = "Use STFR Vehicles Only",
-	Sandbox_STFR_ModVehiclesOnly_tooltip = "Enable this to disable base vanilla and some modded police/fire/ems content.",
+	Sandbox_STFR_ModVehiclesOnly = "Disable Other Modded Cars",
+	Sandbox_STFR_ModVehiclesOnly_tooltip = "Enable this to disable spawns for some vanilla and modded police/fire/ems content.",
+
+	Sandbox_STFR_DisableSpawns = "Disable Custom STFR Cars",
+	Sandbox_STFR_DisableSpawns_tooltip = "Enable this to disable spawns for some STFR police/fire/ems content.",
+
+	Sandbox_STFR_DisableVehicleZones = "Disable Custom STFR Vehicle Zones",
+	Sandbox_STFR_DisableVehicleZones_tooltip = "Enable this to disable zones for some STFR police/fire/ems content. Automatically applies if PZK Vanilla Look-Like Car Pack is enabled! Enabling Vehicle Overrides highly advised!",
 
 	Sandbox_STFR_ZombieOverrides = "Override Zombies",
 	Sandbox_STFR_ZombieOverrides_tooltip = "Enable this to override vanilla police/fire/ems/prison zombies.",
@@ -20,14 +26,17 @@ Sandbox_EN = {
 	Sandbox_STFR_DressOutfits = "Dress Uniforms Spawn Chance",
 	Sandbox_STFR_DressOutfits_tooltip = "The spawn chance for all Dress Uniform zombies.",
 
+	Sandbox_STFR_DetectiveOutfits = "Detective Spawn Chance",
+	Sandbox_STFR_DetectiveOutfits_tooltip = "The spawn chance for all Detective zombies.",
+
 	Sandbox_STFR_TrafficOutfits = "Traffic Police Zombies Spawn Chance",
 	Sandbox_STFR_TrafficOutfits_tooltip = "The spawn chance for all Traffic Police zombies.",
 
-	Sandbox_STFR_BagOutfits = "Duffel Zombies Spawn Chance",
-	Sandbox_STFR_BagOutfits_tooltip = "The spawn chance for certain STFR zombies wearing duffel bags.",
-
 	Sandbox_STFR_RiotOutfits = "Riot Uniforms Spawn Chance",
 	Sandbox_STFR_RiotOutfits_tooltip = "The spawn chance for all Riot zombies.",
+
+	Sandbox_STFR_SWATOutfits = "SWAT Uniforms Spawn Chance",
+	Sandbox_STFR_SWATOutfits_tooltip = "The spawn chance for all SWAT zombies.",
 
 	Sandbox_STFR_RangerOutfits = "Rangers Spawn Chance",
 	Sandbox_STFR_RangerOutfits_tooltip = "The spawn chance for all Ranger zombies.",
@@ -174,10 +183,13 @@ Sandbox_EN = {
 	Sandbox_STFR_FilibusterSwatVehicles_tooltip = "The spawn chance for Filibuster Rhymes SWAT trucks, and Military And Police Used Car Skins vehicles in police zones. Does nothing if Filibuster Rhymes Used Cars and/or Military And Police Used Car Skins aren't enabled!",
 
 	Sandbox_STFR_SpawnRateVehicles = "Spawn Rate",
-	Sandbox_STFR_SpawnRateVehicles_tooltip = "The overall chance of an STFR car to spawn.",
+	Sandbox_STFR_SpawnRateVehicles_tooltip = "The overall chance of a car to spawn in STFR zones. Higher numbers mean more cars.",
 
 	Sandbox_STFR_CivilianChanceVehicles = "Normal Spawn Chance",
 	Sandbox_STFR_CivilianChanceVehicles_tooltip = "The overall chance of a normal car to spawn in an STFR vehicle zone.",
+
+	Sandbox_STFR_SpawnRateSWATMod = "SWAT Spawn Chance Modifier",
+	Sandbox_STFR_SpawnRateSWATMod_tooltip = "The modifier to apply to SWAT van spawns. Higher means less SWAT vans.",
 
 	Sandbox_STFR_SpawnVanillaCars = "Vanilla Car Spawns",
 	Sandbox_STFR_SpawnVanillaCars_tooltip = "Enable this to allow STFR vehicles with vanilla models to spawn in parking lots. Does NOT affect vehicle scenes! Does NOT remove skins added either!",

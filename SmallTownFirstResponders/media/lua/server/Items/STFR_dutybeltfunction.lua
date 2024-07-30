@@ -3,5 +3,5 @@ require('NPCs/MainCreationMethods');
 STFR_ItemFunction = STFR_ItemFunction or {}
 
 function STFR_ItemFunction.DutyBelt(container, item)
-	return (item:getDisplayCategory() == "Ammo")
+	return (item:getDisplayCategory() == "Ammo" or item:getDisplayCategory() == "GunMag")
 end

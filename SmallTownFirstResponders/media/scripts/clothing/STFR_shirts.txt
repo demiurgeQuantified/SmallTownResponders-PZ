@@ -1206,6 +1206,20 @@ module STFR {
         FabricType = Cotton,
         WorldStaticModel = TShirt_Ground,
 	}
+	item TShirt_Polo_USPS
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = USPS Polo,
+		ClothingItem = STFR_TShirt_Polo_Extra_USPS,
+		BodyLocation = Tshirt,
+		Icon = STFR_TShirt_Polo_Extra_USPS,
+		BloodLocation = Shirt,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = TShirt_Ground,
+	}
 	item TShirt_Polo_Ranger_Federal
 	{
         DisplayCategory = Clothing,
@@ -1606,6 +1620,286 @@ module STFR {
 		ClothingItem = STFR_TShirt_Security_Mall_Louisville,
 		BodyLocation = Tshirt,
 		Icon = STFR_TShirt_Security_Mall_Louisville,
+		BloodLocation = Shirt,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = TShirt_Ground,
+	}
+	item Shirt_Police_Louisville_Officer_SWAT_Black
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Louisville DoP SWAT Shirt,
+		ClothingItem = STFR_Shirt_Police_Louisville_Officer_SWAT_Black,
+		BodyLocation = Shirt,
+		Icon = STFR_Shirt_Police_Louisville_Officer_SWAT_Black,
+		BloodLocation = ShirtLongSleeves,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = Shirt_Ground,
+	}
+	item TShirt_Police_Louisville_Officer_SWAT_Black
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Louisville DoP SWAT T-Shirt,
+		ClothingItem = STFR_TShirt_Police_Louisville_Officer_SWAT_Black,
+		BodyLocation = Tshirt,
+		Icon = STFR_TShirt_Police_Louisville_Officer_SWAT_Black,
+		BloodLocation = Shirt,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = TShirt_Ground,
+	}
+	item Shirt_Police_Louisville_Officer_SWAT_Camo
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Louisville DoP SWAT Shirt,
+		ClothingItem = STFR_Shirt_Police_Louisville_Officer_SWAT_Camo,
+		BodyLocation = Shirt,
+		Icon = STFR_Shirt_Police_Louisville_Officer_SWAT_Camo,
+		BloodLocation = ShirtLongSleeves,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = Shirt_Ground,
+	}
+	item TShirt_Police_Louisville_Officer_SWAT_Camo
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Louisville DoP SWAT T-Shirt,
+		ClothingItem = STFR_TShirt_Police_Louisville_Officer_SWAT_Camo,
+		BodyLocation = Tshirt,
+		Icon = STFR_TShirt_Police_Louisville_Officer_SWAT_Camo,
+		BloodLocation = Shirt,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = TShirt_Ground,
+	}
+	item Shirt_Police_Jefferson_Officer_SWAT_Blue
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Jefferson County PD SWAT Shirt,
+		ClothingItem = STFR_Shirt_Police_Jefferson_Officer_SWAT_Blue,
+		BodyLocation = Shirt,
+		Icon = STFR_Shirt_Police_Jefferson_Officer_SWAT_Blue,
+		BloodLocation = ShirtLongSleeves,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = Shirt_Ground,
+	}
+	item TShirt_Police_Jefferson_Officer_SWAT_Blue
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Jefferson County PD SWAT T-Shirt,
+		ClothingItem = STFR_TShirt_Police_Jefferson_Officer_SWAT_Blue,
+		BodyLocation = Tshirt,
+		Icon = STFR_TShirt_Police_Jefferson_Officer_SWAT_Blue,
+		BloodLocation = Shirt,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = TShirt_Ground,
+	}
+	item Shirt_Sheriff_Jefferson_Officer_SWAT_Green
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Jefferson County SD SWAT Shirt,
+		ClothingItem = STFR_Shirt_Sheriff_Jefferson_Officer_SWAT_Green,
+		BodyLocation = Shirt,
+		Icon = STFR_Shirt_Sheriff_Jefferson_Officer_SWAT_Green,
+		BloodLocation = ShirtLongSleeves,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = Shirt_Ground,
+	}
+	item TShirt_Sheriff_Jefferson_Officer_SWAT_Green
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Jefferson County SD SWAT T-Shirt,
+		ClothingItem = STFR_TShirt_Sheriff_Jefferson_Officer_SWAT_Green,
+		BodyLocation = Tshirt,
+		Icon = STFR_TShirt_Sheriff_Jefferson_Officer_SWAT_Green,
+		BloodLocation = Shirt,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = TShirt_Ground,
+	}
+	item Shirt_Sheriff_Rosewood_Officer_SWAT_Green
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Rosewood SD SWAT Shirt,
+		ClothingItem = STFR_Shirt_Sheriff_Rosewood_Officer_SWAT_Green,
+		BodyLocation = Shirt,
+		Icon = STFR_Shirt_Sheriff_Rosewood_Officer_SWAT_Green,
+		BloodLocation = ShirtLongSleeves,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = Shirt_Ground,
+	}
+	item TShirt_Sheriff_Rosewood_Officer_SWAT_Green
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Rosewood SD SWAT T-Shirt,
+		ClothingItem = STFR_TShirt_Sheriff_Rosewood_Officer_SWAT_Green,
+		BodyLocation = Tshirt,
+		Icon = STFR_TShirt_Sheriff_Rosewood_Officer_SWAT_Green,
+		BloodLocation = Shirt,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = TShirt_Ground,
+	}
+	item Shirt_Police_WestPoint_Officer_SWAT_Navy
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = WestPoint PD SWAT Shirt,
+		ClothingItem = STFR_Shirt_Police_WestPoint_Officer_SWAT_Navy,
+		BodyLocation = Shirt,
+		Icon = STFR_Shirt_Police_WestPoint_Officer_SWAT_Navy,
+		BloodLocation = ShirtLongSleeves,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = Shirt_Ground,
+	}
+	item TShirt_Police_WestPoint_Officer_SWAT_Navy
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = WestPoint PD SWAT T-Shirt,
+		ClothingItem = STFR_TShirt_Police_WestPoint_Officer_SWAT_Navy,
+		BodyLocation = Tshirt,
+		Icon = STFR_TShirt_Police_WestPoint_Officer_SWAT_Navy,
+		BloodLocation = Shirt,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = TShirt_Ground,
+	}
+	item Shirt_Police_KSP_Officer_SWAT_Blue
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Kentucky State Police SWAT Shirt,
+		ClothingItem = STFR_Shirt_Police_KSP_Officer_SWAT_Blue,
+		BodyLocation = Shirt,
+		Icon = STFR_Shirt_Police_KSP_Officer_SWAT_Blue,
+		BloodLocation = ShirtLongSleeves,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = Shirt_Ground,
+	}
+	item TShirt_Police_KSP_Officer_SWAT_Blue
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Kentucky State Police SWAT T-Shirt,
+		ClothingItem = STFR_TShirt_Police_KSP_Officer_SWAT_Blue,
+		BodyLocation = Tshirt,
+		Icon = STFR_TShirt_Police_KSP_Officer_SWAT_Blue,
+		BloodLocation = Shirt,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = TShirt_Ground,
+	}
+	item Shirt_Police_KSP_Officer_SWAT_Camo
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Kentucky State Police SWAT Shirt,
+		ClothingItem = STFR_Shirt_Police_KSP_Officer_SWAT_Camo,
+		BodyLocation = Shirt,
+		Icon = STFR_Shirt_Police_KSP_Officer_SWAT_Camo,
+		BloodLocation = ShirtLongSleeves,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = Shirt_Ground,
+	}
+	item TShirt_Police_KSP_Officer_SWAT_Camo
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Kentucky State Police SWAT T-Shirt,
+		ClothingItem = STFR_TShirt_Police_KSP_Officer_SWAT_Camo,
+		BodyLocation = Tshirt,
+		Icon = STFR_TShirt_Police_KSP_Officer_SWAT_Camo,
+		BloodLocation = Shirt,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = TShirt_Ground,
+	}
+	item Shirt_Sheriff_Meade_Officer_SWAT_Tan
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Meade County SO SWAT Shirt,
+		ClothingItem = STFR_Shirt_Sheriff_Meade_Officer_SWAT_Tan,
+		BodyLocation = Shirt,
+		Icon = STFR_Shirt_Sheriff_Meade_Officer_SWAT_Tan,
+		BloodLocation = ShirtLongSleeves,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = Shirt_Ground,
+	}
+	item TShirt_Sheriff_Meade_Officer_SWAT_Tan
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Meade County SO SWAT T-Shirt,
+		ClothingItem = STFR_TShirt_Sheriff_Meade_Officer_SWAT_Tan,
+		BodyLocation = Tshirt,
+		Icon = STFR_TShirt_Sheriff_Meade_Officer_SWAT_Tan,
+		BloodLocation = Shirt,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = TShirt_Ground,
+	}
+	item Shirt_Police_Riverside_Officer_SWAT_Blue
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Riverside PD SWAT Shirt,
+		ClothingItem = STFR_Shirt_Police_Riverside_Officer_SWAT_Blue,
+		BodyLocation = Shirt,
+		Icon = STFR_Shirt_Police_Riverside_Officer_SWAT_Blue,
+		BloodLocation = ShirtLongSleeves,
+        Insulation = 0.2,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+        WorldStaticModel = Shirt_Ground,
+	}
+	item TShirt_Police_Riverside_Officer_SWAT_Blue
+	{
+        DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Meade County SO SWAT T-Shirt,
+		ClothingItem = STFR_TShirt_Police_Riverside_Officer_SWAT_Blue,
+		BodyLocation = Tshirt,
+		Icon = STFR_TShirt_Police_Riverside_Officer_SWAT_Blue,
 		BloodLocation = Shirt,
         Insulation = 0.2,
         WindResistance = 0.2,

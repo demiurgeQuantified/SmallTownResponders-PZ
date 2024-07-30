@@ -399,6 +399,21 @@ module STFR {
         FabricType = Cotton,
         WorldStaticModel = Trousers_Ground,
     }
+	item Trousers_USPS_Vintage
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Vintage USPS Pants,
+        ClothingItem = STFR_Trousers_Extra_USPS_Vintage,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Extra_USPS_Vintage,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
     item Shorts_USPS
     {
         DisplayCategory = Clothing,
@@ -605,6 +620,306 @@ module STFR {
         BloodLocation = Trousers,
         ScratchDefense = 10,
         Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Police_Louisville_SWAT_Black
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Louisville DoP SWAT Pants,
+        ClothingItem = STFR_Trousers_Police_Louisville_SWAT_Black,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Police_Louisville_SWAT_Black,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Police_Louisville_SWAT_Camo
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Louisville DoP SWAT Pants,
+        ClothingItem = STFR_Trousers_Police_Louisville_SWAT_Camo,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Police_Louisville_SWAT_Camo,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Police_Jefferson_SWAT_Blue
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Jefferson County PD SWAT Pants,
+        ClothingItem = STFR_Trousers_Police_Jefferson_SWAT_Blue,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Police_Jefferson_SWAT_Blue,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Sheriff_Jefferson_SWAT_Green
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Jefferson County SD SWAT Pants,
+        ClothingItem = STFR_Trousers_Sheriff_Jefferson_SWAT_Green,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Sheriff_Jefferson_SWAT_Green,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Sheriff_Rosewood_SWAT_Green
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Rosewood SD SWAT Pants,
+        ClothingItem = STFR_Trousers_Sheriff_Rosewood_SWAT_Green,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Sheriff_Rosewood_SWAT_Green,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Police_WestPoint_SWAT_Navy
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = WestPoint PD SWAT Pants,
+        ClothingItem = STFR_Trousers_Police_WestPoint_SWAT_Navy,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Police_WestPoint_SWAT_Navy,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Police_KSP_SWAT_Blue
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Kentucky State Police SWAT Pants,
+        ClothingItem = STFR_Trousers_Police_KSP_SWAT_Blue,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Police_KSP_SWAT_Blue,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Police_KSP_SWAT_Camo
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Kentucky State Police SWAT Pants,
+        ClothingItem = STFR_Trousers_Police_KSP_SWAT_Camo,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Police_KSP_SWAT_Camo,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Sheriff_Meade_SWAT_Tan
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Meade County SO SWAT Pants,
+        ClothingItem = STFR_Trousers_Sheriff_Meade_SWAT_Tan,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Sheriff_Meade_SWAT_Tan,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+	item Trousers_Police_Riverside_SWAT_Blue
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Riverside PD SWAT Pants,
+        ClothingItem = STFR_Trousers_Police_Riverside_SWAT_Blue,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Police_Riverside_SWAT_Blue,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.6,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+    item Trousers_Police_Muldraugh_Crash
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Muldraugh PD Motorcycle Pants,
+        ClothingItem = STFR_Trousers_Police_Muldraugh_Crash,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Police_Muldraugh,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.55,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+    item Trousers_Sheriff_Meade_Crash
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Meade County SO Motorcycle Pants,
+        ClothingItem = STFR_Trousers_Sheriff_Meade_Crash,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Sheriff_Meade,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.55,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+    item Trousers_Police_WestPoint_Crash
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = WestPoint PD Motorcycle Pants,
+        ClothingItem = STFR_Trousers_Police_WestPoint_Crash,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Police_WestPoint,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.55,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+    item Trousers_Police_Riverside_Crash
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Riverside PD Motorcycle Pants,
+        ClothingItem = STFR_Trousers_Police_Riverside_Crash,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Police_Riverside,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.55,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+    item Trousers_Sheriff_Rosewood_Crash
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Rosewood SO Motorcycle Pants,
+        ClothingItem = STFR_Trousers_Sheriff_Rosewood_Crash,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Sheriff_Rosewood,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.55,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+    item Trousers_Police_Louisville_Crash
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Louisville DoP Motorcycle Pants,
+        ClothingItem = STFR_Trousers_Police_Louisville_Crash,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Police_Louisville_Crash,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.55,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+    item Trousers_Police_Jefferson_Crash
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Jefferson County PD Motorcycle Pants,
+        ClothingItem = STFR_Trousers_Police_Jefferson_Crash,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Police_Jefferson,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.55,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+    item Trousers_Sheriff_Jefferson_Crash
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Jefferson County SD Motorcycle Pants,
+        ClothingItem = STFR_Trousers_Sheriff_Jefferson_Crash,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Sheriff_Jefferson,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.55,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+    item Trousers_Police_KSP_Summer_Crash
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Kentucky State Police Summer Motorcycle Pants,
+        ClothingItem = STFR_Trousers_Police_KSP_Summer_Crash,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Police_KSP_Summer,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.55,
+        WindResistance = 0.3,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+    item Trousers_Police_KSP_Winter_Crash
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Kentucky State Police Winter Motorcycle Pants,
+        ClothingItem = STFR_Trousers_Police_KSP_Winter_Crash,
+        BodyLocation = Pants,
+        Icon = STFR_Trousers_Police_KSP_Winter,
+        BloodLocation = Trousers,
+        ScratchDefense = 10,
+        Insulation = 0.55,
         WindResistance = 0.3,
         FabricType = Cotton,
         WorldStaticModel = Trousers_Ground,

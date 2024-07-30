@@ -69,6 +69,11 @@
 
 
 	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Polo_Extra_USPS.xml</path>
+		<guid>606e1452-70c9-40f0-a38a-0cc610812301</guid>
+	</files>
+
+	<files>
 		<path>media/clothing/clothingItems/STFR_TShirt_Polo_Ranger_Federal.xml</path>
 		<guid>d250a4d6-c6a6-46ad-9859-60b94438baef</guid>
 	</files>
@@ -725,6 +730,26 @@
 	</files>
 
 	<files>
+		<path>media/clothing/clothingItems/STFR_Tie_Full_Extra_USPS.xml</path>
+		<guid>2eef399d-3886-4d51-8182-aec152799609</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Tie_Worn_Extra_USPS.xml</path>
+		<guid>e6849c07-25c6-4156-b8e5-a201f3a71da0</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Tie_Full_Extra_USPS_Vintage.xml</path>
+		<guid>c3aefbcf-b811-4036-a5e6-7d7bd027f73b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Tie_Worn_Extra_USPS_Vintage.xml</path>
+		<guid>04671bc5-81c3-4415-8185-c92ab50f69b3</guid>
+	</files>
+
+	<files>
 		<path>media/clothing/clothingItems/STFR_Tie_Worn_Police_KSP.xml</path>
 		<guid>ac1b4d80-bcbd-4cfc-9937-2bb6914ca0ad</guid>
 	</files>
@@ -984,6 +1009,103 @@
 
 
 	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_Crash_Helmet_Police_Muldraugh.xml</path>
+		<guid>8c04aa25-e1b4-4912-8d99-ae5adc59691a</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_Crash_Helmet_Sheriff_Meade.xml</path>
+		<guid>d049521e-54e7-4656-a620-4d922b4fe995</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_Crash_Helmet_Police_WestPoint.xml</path>
+		<guid>c79b2eff-2966-43f1-8b16-fc0286df64b2</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_Crash_Helmet_Police_Riverside.xml</path>
+		<guid>6f2c185b-394f-4a3f-afc6-68a12ab6dd5d</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_Crash_Helmet_Sheriff_Rosewood.xml</path>
+		<guid>8334aaf2-3172-4477-8920-decf8f580a72</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_Crash_Helmet_Police_Louisville.xml</path>
+		<guid>7e2f4af8-9a77-4491-b8bb-07f21ddcd7a9</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_Crash_Helmet_Police_Jefferson.xml</path>
+		<guid>0a6e3e24-ba6b-4154-86fc-ec28ae93757e</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_Crash_Helmet_Sheriff_Jefferson.xml</path>
+		<guid>55a921c8-c26c-402a-9f2c-976143416325</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_Crash_Helmet_Police_KSP.xml</path>
+		<guid>c44276b8-02f0-47be-9deb-ffcc4c4b7148</guid>
+	</files>
+
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Police_Muldraugh_Crash.xml</path>
+		<guid>969c2284-5682-48ef-83a8-a1c3857561ed</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Sheriff_Meade_Crash.xml</path>
+		<guid>f5629360-a46a-44b6-9d41-7dd1593f540b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Police_WestPoint_Crash.xml</path>
+		<guid>93ec5b10-4aa4-4268-8d91-27dc1e43d811</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Police_Riverside_Crash.xml</path>
+		<guid>8950c6a1-c4a0-49d1-b9c6-a4b511fec59f</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Sheriff_Rosewood_Crash.xml</path>
+		<guid>10d2a4b7-f4e4-4526-8a8b-244bcfb94db7</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Police_Louisville_Crash.xml</path>
+		<guid>8cc326d6-9818-44fd-aaf6-09a50d5e2920</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Police_Jefferson_Crash.xml</path>
+		<guid>b9f6bbdf-a4bc-46de-a2a4-8a0a3dc4f3e6</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Sheriff_Jefferson_Crash.xml</path>
+		<guid>179089f1-a4c1-4dfc-ba42-6dd85e0d67ab</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Police_KSP_Summer_Crash.xml</path>
+		<guid>fae6ae1f-b46c-4134-ab62-51a5b332993b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Police_KSP_Winter_Crash.xml</path>
+		<guid>a3a1b727-d679-45ee-aa2c-e5c2928d4f36</guid>
+	</files>
+
+
+	<files>
 		<path>media/clothing/clothingItems/STFR_Hat_Sheriff_Meade_Officer.xml</path>
 		<guid>d664bb4a-22a1-44cb-a30e-de254821db2e</guid>
 	</files>
@@ -1161,6 +1283,11 @@
 	<files>
 		<path>media/clothing/clothingItems/STFR_Hat_BaseballCap_Extra_USPS_Reverse.xml</path>
 		<guid>f2456281-35af-438a-9fc8-9409c42d23b6</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_Extra_USPS_Vintage.xml</path>
+		<guid>96c41665-2c8d-4c8e-9e4f-419238eed7aa</guid>
 	</files>
 
 	<files>
@@ -1407,6 +1534,11 @@
 	<files>
 		<path>media/clothing/clothingItems/STFR_Jacket_Extra_USPS.xml</path>
 		<guid>b9cb5176-1527-48c8-bc0d-4b01646ca71c</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Jacket_Dress_Extra_USPS_Vintage.xml</path>
+		<guid>dcddb4aa-d20f-438b-9e15-fb2ec4b42a4e</guid>
 	</files>
 
 	<files>
@@ -2108,6 +2240,11 @@
 	</files>
 
 	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Extra_USPS_Vintage.xml</path>
+		<guid>f3d3ed61-a3bc-4820-b189-c94095be44b1</guid>
+	</files>
+
+	<files>
 		<path>media/clothing/clothingItems/STFR_Trousers_Security_Bank.xml</path>
 		<guid>dce99535-cc91-453b-8a21-fb0457931c7e</guid>
 	</files>
@@ -2254,6 +2391,707 @@
 		<guid>d2cb8e7b-26c3-4a8c-98fe-19553364c201</guid>
 	</files>
 
+	<files>
+		<path>media/clothing/clothingItems/STFR_Vest_HighViz_Extra_USPS.xml</path>
+		<guid>d4805791-ec79-4678-bfcc-3629c96ae5d5</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Vest_Puff_Extra_USPS.xml</path>
+		<guid>b619cac7-c502-49ab-844c-d000940a45b0</guid>
+	</files>
+
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Vest_BulletPolice_Louisville_SWAT_Black.xml</path>
+		<guid>54af7419-6dd3-4fc6-8a76-bce4ad991130</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Vest_BulletPolice_Jefferson_SWAT_Blue.xml</path>
+		<guid>870f9501-569a-4dc4-a86d-9273ad49e07f</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Vest_BulletSheriff_Jefferson_SWAT_Green.xml</path>
+		<guid>35e5f44f-c0bc-47e1-8989-59ecab7330df</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Vest_BulletSheriff_Rosewood_SWAT_Green.xml</path>
+		<guid>0581a339-b791-48f3-960e-816b0ab1c830</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Vest_BulletPolice_WestPoint_SWAT_Black.xml</path>
+		<guid>e7d48218-91ae-4145-bcc5-7a4d744aa256</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Vest_BulletPolice_KSP_SWAT_Black.xml</path>
+		<guid>74b5578b-f89c-4c56-90da-4d98a500c2cc</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Vest_BulletSheriff_Meade_SWAT_Tan.xml</path>
+		<guid>862af6b3-8023-4fd9-ab0e-120550a98206</guid>
+	</files>
+
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Vest_Tactical_Police_Louisville_SWAT_Black.xml</path>
+		<guid>931cd161-e398-40f9-9264-db52338a9a20</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Vest_Tactical_Police_Jefferson_SWAT_Blue.xml</path>
+		<guid>6ab8e10d-b53f-4f6b-b495-49a3adb84c2c</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Vest_Tactical_Sheriff_Jefferson_SWAT_Green.xml</path>
+		<guid>a77dbfbc-7c15-4926-8f3a-710130882bc8</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Vest_Tactical_Sheriff_Rosewood_SWAT_Green.xml</path>
+		<guid>4bcf23fc-4f22-4091-b243-20a796550a2a</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Vest_Tactical_Sheriff_Rosewood_SWAT_Orange.xml</path>
+		<guid>bee03ef7-b651-4f4f-a9c0-4cf8e3b49aec</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Vest_Tactical_Police_WestPoint_SWAT_Black.xml</path>
+		<guid>9fd27d49-f21e-474b-85bd-8b66ee8dd88e</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Vest_Tactical_Police_KSP_SWAT_Black.xml</path>
+		<guid>2b28131d-cae3-4a74-bceb-f9e11315410a</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Vest_Tactical_Sheriff_Meade_SWAT_Tan.xml</path>
+		<guid>2deb1313-15ee-49c5-bfe9-ce52893261f0</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Vest_Tactical_Police_Riverside_SWAT_Blue.xml</path>
+		<guid>406fd2a3-7518-4922-88cf-494e8a7eae09</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Vest_Tactical_Police_Riverside_SWAT_Orange.xml</path>
+		<guid>46180ea3-5281-4ea3-9bf8-24db0fbee757</guid>
+	</files>
+
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_BaseballCap_Police_Louisville_Officer_SWAT_Black.xml</path>
+		<guid>4d0e3fa0-99c4-4f08-97df-0e51e5b0bd8f</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_BaseballCap_Police_Louisville_Officer_SWAT_Black_Reverse.xml</path>
+		<guid>0657f341-ad10-485f-9860-a9676a273d4b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_BaseballCap_Police_Louisville_Officer_SWAT_Camo.xml</path>
+		<guid>8115a318-e5a0-44f1-a938-c6f946b6c8c1</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_BaseballCap_Police_Louisville_Officer_SWAT_Camo_Reverse.xml</path>
+		<guid>ae59c4cd-ecf9-47de-885b-d6a626b93e7c</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_BaseballCap_Police_Jefferson_Officer_SWAT_Blue.xml</path>
+		<guid>e29688bf-85fa-4f1e-8b34-879c71510fd1</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_BaseballCap_Police_Jefferson_Officer_SWAT_Blue_Reverse.xml</path>
+		<guid>95826d03-0f07-49f0-8416-2caed8862a58</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_BaseballCap_Sheriff_Jefferson_Officer_SWAT_Green.xml</path>
+		<guid>d5ea8549-c6ae-4bcf-adc4-7681a9e4cac5</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_BaseballCap_Sheriff_Jefferson_Officer_SWAT_Green_Reverse.xml</path>
+		<guid>6003afc9-dce3-4ddf-a5a0-15fc069b4a28</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_BaseballCap_Sheriff_Rosewood_Officer_SWAT_Green.xml</path>
+		<guid>38c268b9-07c7-475a-acae-f2ecf3c0dcb0</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_BaseballCap_Sheriff_Rosewood_Officer_SWAT_Green_Reverse.xml</path>
+		<guid>ceed9e43-f9f4-4dfd-94b3-848f1a3f9e97</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_BaseballCap_Sheriff_Rosewood_Officer_SWAT_Orange.xml</path>
+		<guid>f5b57b26-56df-43ab-8cd2-91cabe454fe2</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_BaseballCap_Sheriff_Rosewood_Officer_SWAT_Orange_Reverse.xml</path>
+		<guid>e9f74d3f-bfb4-4499-b04b-3dca5ac46952</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_BaseballCap_Police_WestPoint_Officer_SWAT_Navy.xml</path>
+		<guid>ffdb8c3a-ab25-467e-b631-2df42c5ad947</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_BaseballCap_Police_WestPoint_Officer_SWAT_Navy_Reverse.xml</path>
+		<guid>888e2b26-fa10-4903-9a2a-03a2735ab572</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_BaseballCap_Police_KSP_Officer_SWAT_Blue.xml</path>
+		<guid>e2969f42-8808-4f91-bb53-cbdd8284e5d8</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_BaseballCap_Police_KSP_Officer_SWAT_Blue_Reverse.xml</path>
+		<guid>4399ddfc-baf5-46ec-baf9-59e2548dddfa</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_BaseballCap_Police_KSP_Officer_SWAT_Camo.xml</path>
+		<guid>ebfdeeb1-8ee9-40fc-90eb-1cfe2422c30d</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_BaseballCap_Police_KSP_Officer_SWAT_Camo_Reverse.xml</path>
+		<guid>8536f163-163f-475b-9774-25369723743e</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_BaseballCap_Sheriff_Meade_Officer_SWAT_Tan.xml</path>
+		<guid>118eee34-39e2-4579-9973-11748915cf83</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_BaseballCap_Sheriff_Meade_Officer_SWAT_Tan_Reverse.xml</path>
+		<guid>1f93cd28-968a-4c7f-a997-674ae5f87467</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_BaseballCap_Police_Riverside_Officer_SWAT_Blue.xml</path>
+		<guid>e176d9ab-4b51-4f0a-aa41-e9253bed88cb</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_BaseballCap_Police_Riverside_Officer_SWAT_Blue_Reverse.xml</path>
+		<guid>52eec83a-c4bd-4782-bbbc-7671cdebcd01</guid>
+	</files>
+
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_Helmet_Police_Louisville_Officer_SWAT_Black.xml</path>
+		<guid>cdb865cc-ded0-4d76-b257-c25537812792</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_Helmet_Police_Louisville_Officer_SWAT_Camo.xml</path>
+		<guid>be5da51b-da8e-478e-bb39-0a76f02b069f</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_Helmet_Police_Jefferson_Officer_SWAT_Blue.xml</path>
+		<guid>b7bb24a1-9a8e-4803-a79b-f6267995ae68</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_Helmet_Sheriff_Jefferson_Officer_SWAT_Green.xml</path>
+		<guid>9c00b318-9575-4acf-bbe0-ecd60e987e6f</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_Helmet_Sheriff_Rosewood_Officer_SWAT_Green.xml</path>
+		<guid>682e1c6f-46d8-4acb-a5da-4cf38f10ee25</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_Helmet_Police_WestPoint_Officer_SWAT_Black.xml</path>
+		<guid>f53fb61f-5728-48b9-b0e5-5a48ed1cdca1</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_Helmet_Police_KSP_Officer_SWAT_Black.xml</path>
+		<guid>0ac61977-708b-4b56-9cda-032f4147ce2e</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_Helmet_Sheriff_Meade_Officer_SWAT_Tan.xml</path>
+		<guid>9b281d56-269a-470e-8665-ed72c744cca8</guid>
+	</files>
+
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_HardHat_Sheriff_Rosewood_SWAT_Orange.xml</path>
+		<guid>5e73afde-e1c2-450a-84d3-7fe1d354318d</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_Balaclava_SWAT_Face.xml</path>
+		<guid>42357f43-65ec-4344-9937-ad207fcedc4f</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_Balaclava_SWAT_Full.xml</path>
+		<guid>390e8a7f-bee8-43a9-8625-69e9791b5feb</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Glasses_SafetyGoggles_SWAT_Black.xml</path>
+		<guid>91375651-ac44-43e2-adce-e5d86c0496ed</guid>
+	</files>
+
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Louisville_Officer_SWAT_Black.xml</path>
+		<guid>1a904085-8a4c-4ea3-bd51-de0dd2b2a01d</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Louisville_Officer_SWAT_Camo.xml</path>
+		<guid>42a44877-50c5-44d7-ad6f-8cfc3b77777d</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Jefferson_Officer_SWAT_Blue.xml</path>
+		<guid>15eecadb-e3cc-484e-b8c7-83041217fc0c</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Sheriff_Jefferson_Officer_SWAT_Green.xml</path>
+		<guid>6d7e614a-2e54-4882-a25d-19bac433cbd9</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Sheriff_Rosewood_Officer_SWAT_Green.xml</path>
+		<guid>7188bcb8-278e-4118-aaa7-8cb342d37e7a</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_WestPoint_Officer_SWAT_Navy.xml</path>
+		<guid>d0474e1f-a097-4f52-905c-ac72f25a3fcc</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_KSP_Officer_SWAT_Blue.xml</path>
+		<guid>94d47ef0-4199-4871-be61-7c580b6eefae</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_KSP_Officer_SWAT_Camo.xml</path>
+		<guid>3ed1206e-9b8b-448a-b9db-cfbcbe0107ed</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Sheriff_Meade_Officer_SWAT_Tan.xml</path>
+		<guid>d90d705d-abc3-437b-89b8-84e59d4c42a8</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Shirt_Police_Riverside_Officer_SWAT_Blue.xml</path>
+		<guid>797a0d94-88df-4dac-8823-bb10afe90517</guid>
+	</files>
+
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Police_Louisville_Officer_SWAT_Black.xml</path>
+		<guid>ccaf83eb-5ecd-4527-9cbd-5d36ac805f8f</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Police_Louisville_Officer_SWAT_Camo.xml</path>
+		<guid>81b44f21-7d58-4b31-9a7d-7fd641c5d39a</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Police_Jefferson_Officer_SWAT_Blue.xml</path>
+		<guid>e18ebbe4-4b44-4cd1-b68b-82d6092680bb</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Sheriff_Jefferson_Officer_SWAT_Green.xml</path>
+		<guid>03682352-35cc-4e66-b3be-d9c7383750e7</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Sheriff_Rosewood_Officer_SWAT_Green.xml</path>
+		<guid>fbaa1f47-35c2-4399-b168-4db9baf6e956</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Police_WestPoint_Officer_SWAT_Navy.xml</path>
+		<guid>b308299f-8745-49f1-ad84-a79f33a2ed1e</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Police_KSP_Officer_SWAT_Blue.xml</path>
+		<guid>b5a7c2a0-95f5-45af-a977-addb8f2b7927</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Police_KSP_Officer_SWAT_Camo.xml</path>
+		<guid>683d642e-fe6d-4694-8da6-cd70fb404d07</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Sheriff_Meade_Officer_SWAT_Tan.xml</path>
+		<guid>6a22764c-ce4a-4ed8-902c-4bc93fd2fc17</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_TShirt_Police_Riverside_Officer_SWAT_Blue.xml</path>
+		<guid>a2a95095-2042-47e9-8558-4a193fdea522</guid>
+	</files>
+
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Police_Louisville_SWAT_Black.xml</path>
+		<guid>62d70263-80cc-43ea-a03e-7aa92c3ea177</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Police_Louisville_SWAT_Camo.xml</path>
+		<guid>a93514d5-e01a-4a40-af56-789ab6d0abec</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Police_Jefferson_SWAT_Blue.xml</path>
+		<guid>d7cf20eb-52ab-4676-bee4-dc7b2d59cfd3</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Sheriff_Jefferson_SWAT_Green.xml</path>
+		<guid>178f0f4f-9f93-41b7-944a-1274fbb99514</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Sheriff_Rosewood_SWAT_Green.xml</path>
+		<guid>9518bd0d-b30f-4303-8e52-5fb895f7e787</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Police_WestPoint_SWAT_Navy.xml</path>
+		<guid>b0429f4b-f8c9-43af-9596-bd90c2263b27</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Police_KSP_SWAT_Blue.xml</path>
+		<guid>34682612-1e18-4324-84d2-f074826b6043</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Police_KSP_SWAT_Camo.xml</path>
+		<guid>826a3598-ad03-4c4d-844a-91be9ba406ca</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Sheriff_Meade_SWAT_Tan.xml</path>
+		<guid>f9ea0f66-2dec-4a57-9215-dad839200f03</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Trousers_Police_Riverside_SWAT_Blue.xml</path>
+		<guid>76f36e47-f199-4e22-adeb-74639c35e0ca</guid>
+	</files>
+
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_BonnieHat_Police_Louisville_Officer_SWAT_Black.xml</path>
+		<guid>4717689d-f8dd-465b-b592-a7e83defaaff</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_BonnieHat_Police_Louisville_Officer_SWAT_Camo.xml</path>
+		<guid>cf1c810c-c031-4c15-a73e-5770aa5f3117</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_BonnieHat_Police_Jefferson_Officer_SWAT_Blue.xml</path>
+		<guid>ef4071d7-02ae-4e9b-b8b5-c32fa54eb8fb</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_BonnieHat_Sheriff_Jefferson_Officer_SWAT_Green.xml</path>
+		<guid>9dc311b3-7979-4012-b770-d47d2257e69f</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_BonnieHat_Sheriff_Rosewood_Officer_SWAT_Green.xml</path>
+		<guid>77e1e9c7-96e4-4649-a838-e77230f468d9</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_BonnieHat_Police_WestPoint_Officer_SWAT_Navy.xml</path>
+		<guid>af6aa14b-d961-474e-bacb-dc33cf66bb96</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_BonnieHat_Police_KSP_Officer_SWAT_Camo.xml</path>
+		<guid>2b6258f4-b93a-4345-91af-86598e92acf9</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_BonnieHat_Police_KSP_Officer_SWAT_Blue.xml</path>
+		<guid>71a0c91a-6121-4586-bb6e-4e092f902222</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_BonnieHat_Sheriff_Meade_Officer_SWAT_Tan.xml</path>
+		<guid>4cb2d659-fa5c-4adf-8540-f7652a77704f</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Hat_BonnieHat_Police_Riverside_Officer_SWAT_Blue.xml</path>
+		<guid>702947c6-c8de-4aa8-9c3a-6a0cc250c14c</guid>
+	</files>
+
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Alicepack_Police_Louisville_SWAT_Black.xml</path>
+		<guid>f60a31ad-e808-4469-83ed-d38edd237fe7</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Alicepack_Police_Louisville_SWAT_Black_LHand.xml</path>
+		<guid>b1549a42-f6d9-4583-9e99-dbaff3baa7ef</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Alicepack_Police_Louisville_SWAT_Black_RHand.xml</path>
+		<guid>7e1230ea-a5bf-4b2d-824c-12a838f6c42f</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Alicepack_Police_Jefferson_SWAT_Blue.xml</path>
+		<guid>39133b8b-a3b3-41ff-9dff-c480f4fe4658</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Alicepack_Police_Jefferson_SWAT_Blue_LHand.xml</path>
+		<guid>2ac2badc-8583-4245-862b-6ddcbfdff622</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Alicepack_Police_Jefferson_SWAT_Blue_RHand.xml</path>
+		<guid>e0893bc6-2059-4f91-ba13-6464a4587c72</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Alicepack_Sheriff_Jefferson_SWAT_Green.xml</path>
+		<guid>89b79792-bde0-4e5b-979b-e33385148b48</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Alicepack_Sheriff_Jefferson_SWAT_Green_LHand.xml</path>
+		<guid>28964223-45a4-490b-9649-4d99bb563bd1</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Alicepack_Sheriff_Jefferson_SWAT_Green_RHand.xml</path>
+		<guid>bf810a65-a336-452b-8bb6-d713d4df4f07</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Alicepack_Sheriff_Rosewood_SWAT_Green.xml</path>
+		<guid>07c3ca17-a56f-462d-89a8-7b20da83cccc</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Alicepack_Sheriff_Rosewood_SWAT_Green_LHand.xml</path>
+		<guid>3182a09e-de72-4fb9-914d-29d79164565c</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Alicepack_Sheriff_Rosewood_SWAT_Green_RHand.xml</path>
+		<guid>d4cd54d8-0b73-405e-a62d-09f905cf7f5b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Alicepack_Police_WestPoint_SWAT_Navy.xml</path>
+		<guid>a81c9b23-63b3-47f6-a56a-661bfc6b365e</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Alicepack_Police_WestPoint_SWAT_Navy_LHand.xml</path>
+		<guid>a9997388-26dc-40f9-9d3d-b212aba7d798</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Alicepack_Police_WestPoint_SWAT_Navy_RHand.xml</path>
+		<guid>43b06fa7-03dd-4d4a-b545-5fb74fe389fb</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Alicepack_Police_KSP_SWAT_Black.xml</path>
+		<guid>9790034e-e18d-46dc-81d2-aae7b51495a0</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Alicepack_Police_KSP_SWAT_Black_LHand.xml</path>
+		<guid>39fe4650-6820-489a-851c-b33392a88832</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Alicepack_Police_KSP_SWAT_Black_RHand.xml</path>
+		<guid>1ccf16b5-8414-4d6e-a2fd-a14e08b5f27c</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Alicepack_Sheriff_Meade_SWAT_Tan.xml</path>
+		<guid>192a7095-0ed7-4715-b753-f5fd11b0004b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Alicepack_Sheriff_Meade_SWAT_Tan_LHand.xml</path>
+		<guid>1dfe42ac-e355-4096-bb12-78a1091435b5</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Alicepack_Sheriff_Meade_SWAT_Tan_RHand.xml</path>
+		<guid>33addd22-892a-4f9f-a626-417ab543b744</guid>
+	</files>
+
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Bag_DuffelBag_Police_Louisville_SWAT_Black.xml</path>
+		<guid>c5443d8e-7b2a-44b2-9070-f93e76e86a55</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Bag_DuffelBag_Police_Louisville_SWAT_Black_LHand.xml</path>
+		<guid>0089aa7d-6914-4221-98da-f75af6d35c30</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Bag_DuffelBag_Police_Louisville_SWAT_Black_RHand.xml</path>
+		<guid>0d54b278-1420-43b3-af9e-fc448c3d67dd</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Bag_DuffelBag_Police_Jefferson_SWAT_Blue.xml</path>
+		<guid>5d42feb3-4189-42dd-9ef1-495e5caf1926</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Bag_DuffelBag_Police_Jefferson_SWAT_Blue_LHand.xml</path>
+		<guid>940625d7-e161-4ab1-8d74-ac60ba3017a2</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Bag_DuffelBag_Police_Jefferson_SWAT_Blue_RHand.xml</path>
+		<guid>66d24534-698c-434b-9ed2-11ce01800246</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Bag_DuffelBag_Sheriff_Jefferson_SWAT_Green.xml</path>
+		<guid>feac2e33-2c3c-4a6c-9aa5-78eaa6844970</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Bag_DuffelBag_Sheriff_Jefferson_SWAT_Green_LHand.xml</path>
+		<guid>484f739f-35b0-4b13-9ed8-100758716c5b</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Bag_DuffelBag_Sheriff_Jefferson_SWAT_Green_RHand.xml</path>
+		<guid>e6f245aa-3585-4b53-8a05-eef6d70fdbe6</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Bag_DuffelBag_Sheriff_Rosewood_SWAT_Green.xml</path>
+		<guid>0e57d19d-54a9-408e-9c9d-cfae565a7a86</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Bag_DuffelBag_Sheriff_Rosewood_SWAT_Green_LHand.xml</path>
+		<guid>f0f2c898-c5f9-4058-86e3-9f4f0b9dfafd</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Bag_DuffelBag_Sheriff_Rosewood_SWAT_Green_RHand.xml</path>
+		<guid>e1c6d801-9472-43a8-a1b0-e9d0ac82fb40</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Bag_DuffelBag_Police_WestPoint_SWAT_Navy.xml</path>
+		<guid>23a20dbd-0972-4c44-bafc-7580479526dd</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Bag_DuffelBag_Police_WestPoint_SWAT_Navy_LHand.xml</path>
+		<guid>1fb78707-edd8-4cef-8912-9a9e0c2bb67d</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Bag_DuffelBag_Police_WestPoint_SWAT_Navy_RHand.xml</path>
+		<guid>1a8d5478-132e-4f27-a670-96c80e8b6bfb</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Bag_DuffelBag_Police_KSP_SWAT_Blue.xml</path>
+		<guid>65da5305-a999-462e-a234-7ea413f4bae3</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Bag_DuffelBag_Police_KSP_SWAT_Blue_LHand.xml</path>
+		<guid>f44080a3-a603-403c-b856-09f040be0611</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Bag_DuffelBag_Police_KSP_SWAT_Blue_RHand.xml</path>
+		<guid>3f48063a-1199-4a3c-9e72-52bf92d7c59e</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Bag_DuffelBag_Sheriff_Meade_SWAT_Tan.xml</path>
+		<guid>25b0a5ee-e3f2-4044-9e77-ec05d0da1de4</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Bag_DuffelBag_Sheriff_Meade_SWAT_Tan_LHand.xml</path>
+		<guid>69cc9710-31ef-4f8e-a9a1-a8c97bb34f96</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Bag_DuffelBag_Sheriff_Meade_SWAT_Tan_RHand.xml</path>
+		<guid>063320ec-408f-435a-a582-a008b4f40fb1</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Bag_DuffelBag_Police_Riverside_SWAT_Blue.xml</path>
+		<guid>d5426b86-a999-48c9-8b13-a922452661a3</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Bag_DuffelBag_Police_Riverside_SWAT_Blue_LHand.xml</path>
+		<guid>2218b572-bf91-4dc6-ade5-d5563c5abc40</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/STFR_Bag_DuffelBag_Police_Riverside_SWAT_Blue_RHand.xml</path>
+		<guid>93b3b14f-bad8-48e0-b275-eb1b3b7d407b</guid>
+	</files>
+
 
 	<files>
 		<path>media/clothing/clothingItems/STFR_Vest_BulletPolice_Meade.xml</path>
@@ -2264,17 +3102,6 @@
 	<files>
 		<path>media/clothing/clothingItems/Vest_BulletPolice.xml</path>
 		<guid>d234e3b1-4e68-41b9-a48c-5669a8a52629</guid>
-	</files>
-
-
-	<files>
-		<path>media/clothing/clothingItems/Trousers_Suit.xml</path>
-		<guid>52acd769-424a-4cbb-b02a-441cb723b747</guid>
-	</files>
-
-	<files>
-		<path>media/clothing/clothingItems/Shirt_FormalWhite.xml</path>
-		<guid>ac7976de-2c73-44ea-9392-5d24ac1fb649</guid>
 	</files>
 
 
@@ -2457,6 +3284,55 @@
 	<files>
 		<path>media/clothing/clothingItems/Bag_InmateEscapedBag.xml</path>
 		<guid>f276134e-0a64-4f48-8cae-76ac0e777949</guid>
+	</files>
+
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Suit.xml</path>
+		<guid>52acd769-424a-4cbb-b02a-441cb723b747</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Shirt_FormalWhite.xml</path>
+		<guid>ac7976de-2c73-44ea-9392-5d24ac1fb649</guid>
+	</files>
+
+
+
+
+	<files>
+		<path>media/clothing/clothingItems/Shoes_Random.xml</path>
+		<guid>7741404b-9689-4608-a0f5-4e06597776f9</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Denim.xml</path>
+		<guid>229b23f6-8e8f-4f16-837b-4fe950c48bfc</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Trousers_JeanBaggy.xml</path>
+		<guid>8973893f-f324-4cdb-a32b-43cd0378174f</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/TrousersMesh_DenimLight.xml</path>
+		<guid>06b8adc1-ef58-4545-a30a-6ca9920c1b82</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Shirt_HawaiianRed.xml</path>
+		<guid>6067cc54-e9f1-4731-a163-ba8f9d55bc03</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Shirt_HawaiianTINT.xml</path>
+		<guid>76ae98e6-10d4-4d89-a4eb-3f8f6642c897</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Tshirt_WhiteTINT.xml</path>
+		<guid>2256166c-64a6-4f81-8285-0779cab92fbd</guid>
 	</files>
 
 </fileGuidTable>
