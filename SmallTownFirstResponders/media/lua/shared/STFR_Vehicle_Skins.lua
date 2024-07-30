@@ -140,11 +140,11 @@ AddVehicleSkinLightsMask = function(vehicle, zone, texture, lights, mask, module
 			colour = LightbarColour.Red
 		elseif luautils.stringEnds(lights, "_yellow") then
 			colour = LightbarColour.Yellow
+		else
+			colour = LightbarColour.Default
 		end
-		if colour then
-			lightbarMap[fullName] = lightbarMap[fullName] or { default = LightbarColour.Default }
-			lightbarMap[fullName][newSkinNum] = colour
-		end
+		lightbarMap[fullName] = lightbarMap[fullName] or { default = LightbarColour.Default }
+		lightbarMap[fullName][newSkinNum] = colour
 	end
 end
 
