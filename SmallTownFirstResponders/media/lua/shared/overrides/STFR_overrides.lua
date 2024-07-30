@@ -57,7 +57,7 @@ Overrides.zonesLoot = {
 ---Returns the name of the zone in which the point at x,y lies. If the point does not lie in any zone, returns Overrides.defaultZone
 ---@param x number X coordinate to check
 ---@param y number Y coordinate to check
----@param zones table<integer, OverrideZone> Zones to search. Defaults to Overrides.zonesGeneric
+---@param zones? table<integer, OverrideZone> Zones to search. Defaults to Overrides.zonesGeneric
 ---@return string zone
 function Overrides.getZone(x,y,zones)
     zones = zones or Overrides.zonesGeneric
