@@ -80,7 +80,6 @@ end)
 ---@param zone ZoneName Zone ID for the skin
 ---@param texture string The new skin's texture
 ---@param module? string The vehicle's module
----@see DoVehicleParam
 AddVehicleSkin = function(vehicle, zone, texture, module)
 	AddVehicleSkinLightsMask(vehicle, zone, texture, nil, nil, module)
 end
@@ -91,7 +90,6 @@ end
 ---@param texture string The new skin's texture
 ---@param lights string The new skin's lights texture
 ---@param module? string The vehicle's module
----@see DoVehicleParam
 AddVehicleSkinLights = function(vehicle, zone, texture, lights, module)
 	AddVehicleSkinLightsMask(vehicle, zone, texture, lights, nil, module)
 end
@@ -103,7 +101,6 @@ end
 ---@param lights? string The new skin's lights texture
 ---@param mask? string The new skin's mask texture
 ---@param module? string The vehicle's module
----@see DoVehicleParam
 AddVehicleSkinLightsMask = function(vehicle, zone, texture, lights, mask, module)
 	module = module or "Base"
 
@@ -153,8 +150,6 @@ end
 ---@param texture string The new skin's texture
 ---@param replace int The skin number to replace. Only stable if overriding vanilla skins/skins from the mod that adds the vehicle
 ---@param module? string the module of the vehicle
----@see AddVehicleSkin
----@see DoVehicleParam
 AddVehicleSkinOverride = function(vehicle, replace, texture, module)
 	module = module or "Base"
 
@@ -169,7 +164,6 @@ end
 ---Utility to change the siren sound of a vehicle
 ---@param vehicle string Name of the vehicle script
 ---@param sound string Name of a sound
----@see DoVehicleParam
 SetSirenSound = function(vehicle, sound)
 	DoVehicleParam(vehicle, "lightbar { soundSiren = " .. sound .. ",}")
 end
@@ -177,8 +171,6 @@ end
 ---Utility to change the horn sound of a vehicle
 ---@param vehicle string Name of the vehicle script
 ---@param mask string Name of a mask
----@see DoVehicleParam
----@see SetSirenSound
 SetMask = function(vehicle, mask)
 	DoVehicleParam(vehicle, "textureMask = " .. mask .. ",}")
 end
@@ -186,8 +178,6 @@ end
 ---Utility to change the horn sound of a vehicle
 ---@param vehicle string Name of the vehicle script
 ---@param sound string Name of a sound
----@see DoVehicleParam
----@see SetSirenSound
 SetHornSound = function(vehicle, sound)
 	DoVehicleParam(vehicle, "sound { horn = " .. sound .. ",}")
 end
@@ -203,8 +193,6 @@ end
 ---Utility to change the radio of a vehicle
 ---@param vehicle string Name of the vehicle script
 ---@param radio string Name of a radio template
----@see DoVehicleParam
----@see SetSirenSound
 SetRadioType = function(vehicle, radio)
 	DoVehicleParam(vehicle, "template = " .. radio .. ",")
 end
