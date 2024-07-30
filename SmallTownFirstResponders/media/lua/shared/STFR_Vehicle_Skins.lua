@@ -13,9 +13,9 @@ end
 ---Like DoParam but for vehicles
 ---@param vehicle string Name of the vehicle script
 ---@param param string The parameter(s) to apply to this script
----@param module string Optional: the module of the vehicle
----@see Item#DoParam
----@see VehicleScript#Load
+---@param module? string the module of the vehicle
+---@see Item.DoParam
+---@see VehicleScript.Load
 local DoVehicleParam = function(vehicle, param, module)
 	module = module or "Base"
 	local vehicleScript = ScriptManager.instance:getVehicle(module .. "." .. vehicle)
@@ -152,7 +152,7 @@ end
 ---@param vehicle string Name of the vehicle script
 ---@param texture string The new skin's texture
 ---@param replace int The skin number to replace. Only stable if overriding vanilla skins/skins from the mod that adds the vehicle
----@param module string Optional: the module of the vehicle
+---@param module? string the module of the vehicle
 ---@see AddVehicleSkin
 ---@see DoVehicleParam
 AddVehicleSkinOverride = function(vehicle, replace, texture, module)
