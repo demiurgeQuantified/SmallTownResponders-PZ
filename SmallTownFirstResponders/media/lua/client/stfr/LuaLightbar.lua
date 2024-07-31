@@ -210,7 +210,7 @@ end
 
 Events.OnTick.Add(function(tick)
     currentTime = getTimeInMillis()
-    for i = 1, #LuaLightbar.list do
+    for i = #LuaLightbar.list, 1, -1 do
         LuaLightbar.list[i]:update()
     end
 end)
