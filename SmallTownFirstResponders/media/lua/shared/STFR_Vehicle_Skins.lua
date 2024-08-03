@@ -24,6 +24,32 @@ local DoVehicleParam = function(vehicle, param, module)
 	return true
 end
 
+---@param t any[]
+local getListString = function(t)
+	local pattern = "%s" .. string.rep(";%s", #t - 1)
+	return string.format(pattern, unpack(t))
+end
+
+---@param vehicle string
+---@param part string
+---@param name string
+---@param t table Keys must be primitives. Values can be primitives or list-like tables of primitives
+---@param module? string
+local addTableToPart = function(vehicle, part, name, t, module)
+	module = module or "Base"
+
+	local tableStr = ""
+	for k,v in pairs(t) do
+		if type(v) == "table" then
+			v = getListString(v)
+		end
+		tableStr = string.format("%s%s=%s,", tableStr, k, v)
+	end
+
+	ScriptManager.instance:getVehicle(module .. "." .. vehicle):Load(vehicle,
+		string.format("{ part %s { table %s { %s } } }", part, name, tableStr))
+end
+
 ---@enum LightbarColor
 LightbarColour = {
 	Default = {1, 0, 0, 0, 0, 1},
@@ -36,6 +62,10 @@ LightbarColour = {
 ---@field default LightbarColor
 ---@field [integer] LightbarColor
 
+---@class LightbarSirenScript
+---@field default string Semicolon separated sounds (e.g. YelpSound;WailSound;SirenSound)
+---@field [integer] string Semicolon separated sounds (e.g. YelpSound;WailSound;SirenSound)
+
 ---@type table<string, LightbarColourScript>
 local lightbarMap = {}
 
@@ -43,8 +73,9 @@ local lightbarMap = {}
 ---@param vehicle string Short type of the vehicle
 ---@param colours LightbarColourScript Vehicle lightbar colour map
 ---@param module? string Module of the vehicle. Defaults to Base
-local overrideVehicleLightbar = function(vehicle, colours, module)
+local setVehicleLightbars = function(vehicle, colours, module)
 	module = module or "Base"
+
 	local vehicleScript = ScriptManager.instance:getVehicle(module .. "." .. vehicle)
 	if not vehicleScript then
 		debugError("STFR: tried to override lightbar of non-existent vehicle " .. vehicle, 2)
@@ -63,16 +94,49 @@ local overrideVehicleLightbar = function(vehicle, colours, module)
 	end
 
 	vehicleScript:Load(vehicle, "{ lightbar { leftCol = 0;0;0, rightCol = 0;0;0, } }")
-	vehicleScript:Load(vehicle, "{ part lightbar { table colours { " .. coloursStr .. " } lua { init = LuaLightbar_Init,} } }")
+	addTableToPart(vehicle, "lightbar", "colours", colours, module)
+	vehicleScript:Load(vehicle, "{ part lightbar { lua { init = LuaLightbar_Init,} } }")
+end
+
+---@type table<string, LightbarSirenScript>
+local sirenMap = {}
+
+---@param vehicle string
+---@param sirens LightbarSirenScript
+---@param module? string
+local setVehicleSirens = function(vehicle, sirens, module)
+	module = module or "Base"
+	local vehicleScript = ScriptManager.instance:getVehicle(module .. "." .. vehicle)
+	if not vehicleScript then
+		debugError("STFR: tried to override siren of non-existent vehicle " .. vehicle, 2)
+		return
+	end
+
+	local lightbar = vehicleScript:getPartById("lightbar")
+	if not lightbar then
+		debugError("STFR: tried to override siren of vehicle with no lightbar " .. vehicle, 2)
+		return
+	end
+
+	vehicleScript:Load(vehicle, "{ lightbar { soundSiren0 = NONE, soundSiren1 = NONE, soundSiren2 = NONE, } }")
+	addTableToPart(vehicle, "lightbar", "sirens", sirens, module)
+	vehicleScript:Load(vehicle, "{ part lightbar { lua { init = LuaLightbar_Init,} } }")
 end
 
 Events.OnGameBoot.Add(function()
 	for vehicle, colours in pairs(lightbarMap) do
 		local module, name = unpack(luautils.split(vehicle, "."))
-		overrideVehicleLightbar(name, colours, module)
+		setVehicleLightbars(name, colours, module)
+	end
+
+	for vehicle, sirens in pairs(sirenMap) do
+		local module, name = unpack(luautils.split(vehicle, "."))
+		setVehicleSirens(name, sirens, module)
 	end
 	---@diagnostic disable-next-line: cast-local-type
 	lightbarMap = nil
+	---@diagnostic disable-next-line: cast-local-type
+	sirenMap = nil
 end)
 
 ---Utility to add new skins to vehicles
@@ -161,11 +225,37 @@ AddVehicleSkinOverride = function(vehicle, replace, texture, module)
 	vehicleToSkin[fullName].Replace[replace] = ScriptManager.instance:getVehicle(fullName):getSkinCount() - 1
 end
 
+---Utility for setting vehicle skin siren sounds. The vehicle's original siren sounds will be lost
+---@param vehicle string Short type of the vehicle
+---@param skin integer? Skin index to set siren for, or nil to set the siren for all skins without an override
+---@param yelp string Name of the yelp sound
+---@param wail string Name of the wail sound
+---@param alarm string Name of the alarm sound
+---@param module? string Module of the vehicle. Defaults to Base
+local setVehicleSkinSirens = function(vehicle, skin, yelp, wail, alarm, module)
+	local fullName = (module or "Base") .. "." .. vehicle
+	---@diagnostic disable-next-line: cast-local-type
+	skin = skin or "default"
+
+	sirenMap[fullName] = sirenMap[fullName] or {default="VehicleSirenYelp;VehicleSirenWall;VehicleSirenAlarm"}
+	sirenMap[fullName][skin] = string.format("%s;%s;%s", yelp, wail, alarm)
+end
+
+---Utility for setting vehicle skin siren sounds. The vehicle's original siren sounds will be lost
+---@param vehicle string Short type of the vehicle
+---@param skin integer? Skin index to set siren for, or nil to set the siren for all skins without an override
+---@param sound string Root of sound name for siren sounds. The final sounds will be this appended with "Yelp", "Wall"[sic] and "Alarm"
+---@param module? string Module of the vehicle. Defaults to Base
+local setVehicleSkinSirensAll = function(vehicle, skin, sound, module)
+	setVehicleSkinSirens(vehicle, skin, sound .. "Yelp", sound .. "Wall", sound .. "Alarm", module)
+end
+
+---@deprecated
 ---Utility to change the siren sound of a vehicle
 ---@param vehicle string Name of the vehicle script
 ---@param sound string Name of a sound
 SetSirenSound = function(vehicle, sound)
-	DoVehicleParam(vehicle, "lightbar { soundSiren = " .. sound .. ",}")
+	setVehicleSkinSirensAll(vehicle, nil, sound)
 end
 
 ---Utility to change the horn sound of a vehicle
