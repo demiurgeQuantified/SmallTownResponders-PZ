@@ -103,15 +103,23 @@ LuaLightbar.update = function(self)
         self:delete()
         return
     end
+
     ---@type LightbarMode
     local mode = self._vehicle:getLightbarLightsMode()
+
+    if self._vehicle:getBatteryCharge() <= 0 then
+        mode = 0
+    end
+
     if mode ~= self._lastMode then
         self._lastMode = mode
         self._startTime = getTimeInMillis()
-    end
-    if mode == 0 or self._vehicle:getBatteryCharge() <= 0 then
-        cell:removeLamppost(self._light)
-        self._lastSide = 0
+        if mode == 0 then
+            cell:removeLamppost(self._light)
+            self._lastSide = 0
+            return
+        end
+    elseif mode == 0 then
         return
     end
 
@@ -133,9 +141,14 @@ LuaLightbar.update = function(self)
         end
 
         self._vehicle:getWorldPos(x, y, z, vec3)
-        x = math.floor(vec3:x())
-        y = math.floor(vec3:y())
-        z = math.floor(vec3:z() + 1)
+        x = vec3:x()
+        y = vec3:y()
+        z = vec3:z() + 1
+
+        -- this is way faster than math.floor lol
+        x = x - x % 1
+        y = y - y % 1
+        z = z - z % 1
 
         if self._lastSide == activeSide and self._lastX == x and self._lastY == y and self._lastZ == z then
             return
