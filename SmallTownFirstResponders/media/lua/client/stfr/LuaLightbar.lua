@@ -58,8 +58,10 @@ LuaLightbar._handleEnterExitVehicle = function(character)
     for i = 1, #LuaLightbar.list, 1 do
         local lightbar = LuaLightbar.list[i]
         if lightbar._vehicle == vehicle then
-            if lightbar._sirenSound == -1 then return end
-            lightbar._emitter:set3D(lightbar._sirenSound, vehicle:isAnyListenerInside())
+            local shouldSpatialise = not vehicle:isAnyListenerInside()
+            if lightbar._sirenSound ~= -1 then
+                lightbar._emitter:set3D(lightbar._sirenSound, shouldSpatialise)
+            end
         end
     end
 end
